@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryList Component renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="summary-list"
+    data-testid="summary-list"
+  >
+    <li
+      class="summary-list-item"
+      data-testid="summary-list-item-0"
+    >
+      <div
+        class="summary-list-item-wrapper"
+        data-testid="summary-list-content"
+      >
+        <div
+          class="visual visual-ratio-default no-padding-all summary-list-product-image"
+          data-testid="visual"
+        >
+          <div
+            class="background-image ratio-16-9"
+            data-testid="image"
+          >
+            <div
+              aria-label="Item 1 image alt"
+              class="image-position-center"
+              role="img"
+              style="background-image: url(image1.jpg); background-size: contain;"
+            />
+          </div>
+        </div>
+        <div
+          class="summary-list-content"
+        >
+          <div
+            class="summary-list-heading"
+          >
+            <h3
+              class="heading heading-size-sm align-left"
+              data-testid="heading"
+              lang="nl"
+            >
+              Item 1
+            </h3>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

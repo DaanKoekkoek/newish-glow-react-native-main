@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as GlowGradient from "./GlowGradient.stories";
+
+<Meta of={GlowGradient} />
+
+# GlowGradient
+
+Uses `react-native-svg` to generate gradients of different variants. Currently only supports `linear` and `radial` gradients.
+Used in different components that require a gradient as backdrop, but is also usable as a standalone utility component.
+
+Only used by the Odido brand. Other brand won't display anything.
+
+## Basic GlowGradient
+
+<Canvas of={GlowGradient.Basic} />
+<Controls of={GlowGradient.Basic} />

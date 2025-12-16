@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> renders correctly basic badge default 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-default badge-palette-default"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Badge /> renders correctly basic badge inactive default 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-default badge-palette-default is-inactive"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Badge /> renders correctly outlined badge inactive outline 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-outline badge-palette-default is-inactive"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Badge /> renders correctly outlined badge outline 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-outline badge-palette-default"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Badge /> renders correctly subtle badge inactive subtle 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-subtle badge-palette-default is-inactive"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Badge /> renders correctly subtle badge subtle 1`] = `
+<DocumentFragment>
+  <div
+    class="badge badge-prominence-subtle badge-palette-default"
+  >
+    Badge
+  </div>
+</DocumentFragment>
+`;

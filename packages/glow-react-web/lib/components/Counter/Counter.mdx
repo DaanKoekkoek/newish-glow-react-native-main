@@ -1,0 +1,17 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CounterStories from "./Counter.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CounterStories} />
+
+# Counter
+
+### Token version: {getComponentVersion("counter.v1")}
+
+A Counter is an component for time counting. It can count from days to seconds by displaying from 1 - 4 digits.
+With size default or large can be set with `subtle` prominence and changed color by using palette. Counter can be also only hours variant.
+Can be stopped with `freeze` flag. If `digits` are set to `1` you can change displayed value by `digitDaysLabel` property.
+
+<Canvas of={CounterStories.Basic} />
+<Controls of={CounterStories.Basic} />

@@ -1,0 +1,132 @@
+@use "@odido-portals/glow-tokens/input-atoms-dropdown";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@odido-portals/glow-tokens/primitives-shadow-drop";
+@use "@internals/Form/InputIcon/mixins" as input-icon;
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  autosuggest,
+  (
+    assets-icons,
+    input-color,
+    input-atoms-dropdown,
+    shadow-drop
+  )
+) {}
+
+.autosuggest {
+  z-index: 3;
+  width: 100%;
+}
+
+.autosuggest-container {
+  background: var(--components-input-atoms-dropdown-color-background-default);
+  border-radius: var(--components-input-atoms-dropdown-radius-default);
+  box-shadow: var(--primitives-shadow-drop-shadow-x) var(--primitives-shadow-drop-shadow-y) var(--primitives-shadow-drop-shadow-blur) var(--primitives-shadow-drop-shadow-spread) var(--primitives-shadow-drop-shadow-color-web);
+  display: flex;
+  flex-direction: column;  
+  max-height: 100dvh;
+  max-height: 100vh;
+  gap: var(--components-input-atoms-dropdown-gap-horizontal);
+
+  &.has-results,
+  &.has-category-link {
+    padding: var(--components-input-atoms-dropdown-padding-list-vertical) var(--components-input-atoms-dropdown-padding-list-horizontal);
+  }
+
+  &.has-fill {
+    padding-inline: 0;
+    
+    @include mixins.above("laptop") {
+      padding-top: 0;
+    }
+  }
+
+  .autosuggest-fill & {
+    display: block;
+  }
+}
+
+.autosuggest-options {
+  display: flex;
+  flex-direction: column;
+
+  &.autosuggest-options-scrollable {
+    max-height: calc(5 * (var(--components-input-atoms-dropdown-padding-item-vertical) * 2 + (var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm, 24px))));
+    overflow-y: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: var(--components-input-atoms-dropdown-size-scrollbar-width);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--components-input-atoms-dropdown-color-scrollbar-default);
+    border-radius: var(--components-input-atoms-dropdown-radius-scrollbar);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--components-input-atoms-dropdown-color-background-default);
+  }
+
+  scrollbar-color: var(--components-input-atoms-dropdown-color-scrollbar-default) var(--components-input-atoms-dropdown-color-background-default);
+  scrollbar-width: thin;
+
+  .autosuggest-option {
+    background-color: transparent;
+    border: none; 
+    color: var(--components-input-color-text-default);
+    text-align: left;
+    display: flex;
+    gap: var(--components-input-atoms-dropdown-gap-horizontal);
+    width: 100%;
+    height: 100%;
+    padding: var(--components-input-atoms-dropdown-padding-item-vertical) var(--components-input-atoms-dropdown-padding-list-horizontal); 
+    border-radius: var(--components-input-atoms-dropdown-radius-hover);
+  
+    &:focus-visible {
+      background-color: var(--components-input-atoms-dropdown-color-background-match-palette-default, var(--components-input-atoms-dropdown-color-background-match));
+      outline: none;
+
+      > *:not([role="img"]) {
+        color: var(--components-input-atoms-dropdown-color-text-hover);
+      }
+    }
+  
+    &:hover {
+      background-color: var(--components-input-atoms-dropdown-color-background-hover);
+      cursor: pointer;
+
+      > *:not([role="img"]) {
+        color: var(--components-input-atoms-dropdown-color-text-hover);
+      }
+    }
+
+    .autosuggest-option-highlight {
+      font-weight: 400;
+      background-color: var(--components-input-atoms-dropdown-color-background-match-palette-default, var(--components-input-atoms-dropdown-color-background-match));
+    }
+
+    .autosuggest-option-icon {
+      align-self: center;
+    }
+  }
+}
+
+.autosuggest-search-current {
+  color: var(--components-input-atoms-dropdown-color-text-subtle);
+}
+
+.autosuggest-category {
+  padding: var(--components-input-atoms-dropdown-padding-item-vertical) var(--components-input-atoms-dropdown-padding-list-horizontal);
+
+  .autosuggest-category-text {
+    color: var(--components-input-atoms-dropdown-color-text-subtle);
+  }
+
+  .autosuggest-fill & {
+    padding-inline: 0;
+  }
+}

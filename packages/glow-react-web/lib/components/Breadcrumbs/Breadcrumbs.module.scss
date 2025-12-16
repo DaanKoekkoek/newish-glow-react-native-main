@@ -1,0 +1,90 @@
+@use "@odido-portals/glow-tokens/navigation-breadcrumbs-v1";
+@use "@odido-portals/glow-tokens/semantics-color-icon";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@odido-portals/glow-tokens/semantics-typography";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    breadcrumbs,
+    (
+        color-icon, 
+        color-text, 
+        typography, 
+        navigation-breadcrumbs-v1
+    )
+) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    &.gap-horizontal {
+        gap: var(--components-navigation-breadcrumbs-v1-gap-group-default);
+    }
+
+    .icon {
+        color: var(--semantics-color-icon-subtle);
+    }
+}
+
+.breadcrumb-toggle {
+    display: none;
+}
+
+.middle-item {
+    display: none;
+}
+
+.middle-dots {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.breadcrumb-toggle:checked~.middle-dots {
+    display: none;
+}
+
+.breadcrumb-toggle:checked~.middle-item {
+    align-items: center;
+    display: flex;
+    gap: var(--components-navigation-breadcrumbs-v1-atoms-gap-horizontal-default);
+}
+
+@layer component {
+    .breadcrumb-link {
+        .text-link-text {
+            color: var(--semantics-color-text-default);
+        }
+    
+        &.text-link {
+            text-decoration: none;
+            font-weight: var(--semantics-typography-font-weight-normal);
+    
+            .text-link-text {
+                &:hover:not([disabled]) {
+                    color: var(--semantics-color-text-link-default);
+                }
+    
+                text-decoration: none;
+            }
+    
+            &.disabled {
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.text-link-active {
+    pointer-events: none;
+
+    .text-link-text {
+        pointer-events: none;
+    }
+}
+
+.gap-default {
+    align-items: center;
+    display: flex;
+    gap: var(--components-navigation-breadcrumbs-v1-atoms-gap-horizontal-default);
+}

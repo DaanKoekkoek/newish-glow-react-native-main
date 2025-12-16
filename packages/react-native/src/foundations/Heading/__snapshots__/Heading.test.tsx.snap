@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component should apply correct center align 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "center",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Heading component should apply correct font 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Heading component should apply correct font weight 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Heading component should apply correct letterSpacing 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Heading component should apply correct lineheight 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Heading component should apply correct size 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Heading_Medium",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "letterSpacing": 0.23999999463558197,
+        "lineHeight": 28,
+        "marginVertical": 0,
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+  testID="heading"
+>
+  Testing font
+</Text>
+`;

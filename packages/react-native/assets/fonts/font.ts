@@ -1,0 +1,9 @@
+export const Icons_Outline_Default = require("./Odido-Icons-Outline-Default.ttf");
+export const Icons_Outline_SM = require("./Odido-Icons-Outline-SM.ttf");
+export const Display = require("./OtypicalHeadline-Medium.ttf");
+export const Heading = require("./OtypicalHeadline-Medium.ttf");
+export const Paragraph_Regular = require("./OtypicalText-Regular.ttf");
+export const Paragraph_RegularItalic = require("./OtypicalText-RegularItalic.ttf");
+export const Paragraph_Strong = require("./OtypicalText-Medium.ttf");
+export const Paragraph_Link = require("./OtypicalText-Medium.ttf");
+export const Paragraph_StrongItalic = require("./OtypicalText-MediumItalic.ttf");

@@ -1,0 +1,123 @@
+name: Deploy Storybook PR Previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+env:
+  GITHUB_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch entire commit history
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+          cache-dependency-path: "**/pnpm-lock.yaml"
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Generate token versions documentation
+        run: pnpm run generate-versions --only-current
+
+      - name: Build Storybooks
+        run: |
+          echo "Building Storybook for React Native..."
+          pnpm run storybook:build-grn
+          echo "Building Storybook for React Web..."
+          pnpm run storybook:build-grw
+
+      - name: Deploy React Web Storybook
+        if: github.event.action != 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: packages/glow-react-web/storybook-static
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview/react-web
+          action: auto
+
+      - name: Deploy React Native Storybook
+        if: github.event.action != 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: examples/storybook-react-native/storybook-static
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview/react-native
+          action: auto
+
+      - name: Post GitHub PR Comment with Storybook Links
+        if: github.event.action != 'closed'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo, number } = context.issue;
+            const prComment = `
+            🚀 **Storybook Previews Available** 🚀
+            - 💻 [React Web Storybook](https://odido-portals.github.io/glow-react-native/pr-preview/react-web/pr-${{ github.event.pull_request.number }})
+            `;
+
+            const comments = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number: number
+            });
+
+            // Search for the existing comment made by the bot
+            const botComment = comments.data.find(comment =>
+              comment.user.type === "Bot" &&
+              (comment.body.includes("Storybook Previews Available") ||
+              comment.body.includes("PR Preview Action"))
+            );
+
+            if (botComment) {
+              // Update the existing comment
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: botComment.id,
+                body: prComment
+              });
+            } else {
+              // Create a new comment if no existing one is found
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: number,
+                body: prComment
+              });
+            }
+
+      - name: Cleanup react web preview on PR close
+        if: github.event.action == 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview/react-web
+          action: remove
+
+      - name: Cleanup react-native preview on PR close
+        if: github.event.action == 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview/react-native
+          action: remove

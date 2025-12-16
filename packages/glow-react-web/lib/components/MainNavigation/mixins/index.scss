@@ -1,0 +1,79 @@
+@use "sass:map";
+@use "sass:string";
+@use "sass:meta";
+
+// Map for normal and promo layouts (key represents amount of columns + promo column) on desktop.
+// 3: (promo: 2 columns + 1 promo), 3: (normal: 3 columns), etc. 
+// This is capped at a total of 8 columns, and can be increased in case this is required.
+$navigation-column-config: (
+  2: (
+    normal: (columns: 2, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(2, 1fr)),
+    promo:  (columns: 2, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(2, 1fr))
+  ),
+  3: (
+    normal: (columns: 3, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(3, 1fr)),
+    promo:  (columns: 3, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(3, 1fr))
+  ),
+  4: (
+    normal: (columns: 4, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(4, 1fr)),
+    promo:  (columns: 4, grid-column: string.unquote("1 / 3"), grid-template-columns: repeat(2, 1fr))
+  ),
+  5: (
+    normal: (columns: 5, grid-column: string.unquote("1 / 3"), grid-template-columns: repeat(5, 1fr)),
+    promo:  (columns: 5, grid-column: string.unquote("1 / 3"), grid-template-columns: repeat(2, 1fr))
+  ),
+  6: (
+    normal: (columns: 6, grid-column: string.unquote("1 / -1"), grid-template-columns: repeat(6, 1fr)),
+    promo:  (columns: 6, grid-column: string.unquote("1 / 3"), grid-template-columns: repeat(3, 1fr))
+  )
+);
+
+@mixin navigation-dropdown-grid($max-columns: 10) {
+  display: grid;
+  grid-template-areas: "list";
+
+  .main-navigation-dropdown-lists {
+    grid-area: list;          
+  }
+    
+  .main-navigation-dropdown-promo {
+    grid-area: promos;
+  }
+
+  .main-navigation-link {
+    font-weight: 500;
+  }
+
+  &:has(.main-navigation-dropdown-promo) {
+    grid-template-areas: "list list promos";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @for $i from 2 through $max-columns {
+    &.has-#{$i}-columns {
+      $count-config: map.get($navigation-column-config, $i);
+      
+      // If more than 6 columns, fallback to 6.
+      @if meta.type-of($count-config) == "null" {
+        $count-config: map.get($navigation-column-config, 6);
+      }
+
+      $normal: map.get($count-config, normal);
+      $promo: map.get($count-config, promo);
+
+      .main-navigation-dropdown-lists {
+        display: grid;
+        align-self: start;
+        grid-auto-rows: auto;
+        grid-column: map.get($normal, grid-column);
+        grid-template-columns: map.get($normal, grid-template-columns);
+
+        &:has(+ .main-navigation-dropdown-promo) {
+          grid-column: map.get($promo, grid-column);
+          grid-template-columns: map.get($promo, grid-template-columns);
+        }
+      }
+    }
+  }
+}
+

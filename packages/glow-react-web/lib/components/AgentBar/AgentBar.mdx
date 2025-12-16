@@ -1,0 +1,17 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AgentBarStories from "./AgentBar.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={AgentBarStories} />
+
+# AgentBar
+
+#### Token version: {getComponentVersion("agent-bar.v1")}
+
+The `AgentBar` component is navigation bar with additional informations.
+
+### Default
+
+<Canvas of={AgentBarStories.Default} />
+<Controls of={AgentBarStories.Default} />

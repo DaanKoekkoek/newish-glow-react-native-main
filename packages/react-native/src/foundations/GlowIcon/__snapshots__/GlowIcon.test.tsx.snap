@@ -1,0 +1,462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GlowIcon /> a stable snapshot 1`] = `
+<View
+  style={
+    [
+      undefined,
+      {
+        "zIndex": -1,
+      },
+    ]
+  }
+>
+  <View>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={80}
+      bbWidth={80}
+      focusable={false}
+      height={80}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 80,
+            "width": 80,
+          },
+        ]
+      }
+      testID="icon-outline-svg"
+      vbHeight={80}
+      vbWidth={80}
+      width={80}
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGDefs>
+          <RNSVGMask
+            fill={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            height="100%"
+            maskContentUnits={1}
+            maskType={0}
+            maskUnits={0}
+            name="iconMask_80x80_outline_alert"
+            propList={
+              [
+                "fill",
+              ]
+            }
+            width="100%"
+            x="0%"
+            y="0%"
+          >
+            <RNSVGPath
+              d="M73.54 59.127c-2.724-2.505-7.29-7.621-7.29-13.735V30C66.25 15.525 54.474 3.75 40 3.75S13.75 15.525 13.75 30v15.392c0 6.114-4.567 11.23-7.29 13.735a2.63 2.63 0 0 0-.67 2.914 2.665 2.665 0 0 0 2.496 1.709H28.25v.75c0 6.479 5.27 11.75 11.75 11.75 6.479 0 11.75-5.271 11.75-11.75v-.75h19.963c1.111 0 2.09-.67 2.496-1.709.4-1.027.138-2.17-.67-2.914M49.25 64.5c0 5.1-4.15 9.25-9.25 9.25s-9.25-4.15-9.25-9.25v-.75h18.5zm22.63-3.368c-.046.118-.134.118-.167.118H8.286c-.033 0-.12 0-.167-.118-.038-.099.007-.14.034-.165 3.694-3.4 8.097-8.86 8.097-15.575V30C16.25 16.904 26.904 6.25 40 6.25S63.75 16.904 63.75 30v15.392c0 6.714 4.403 12.175 8.096 15.575.027.024.073.066.034.165"
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              matrix={
+                [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+            />
+          </RNSVGMask>
+        </RNSVGDefs>
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          mask="iconMask_80x80_outline_alert"
+        >
+          <RNSVGGroup
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            matrix={
+              [
+                0.09,
+                0,
+                0,
+                0.09,
+                0,
+                0,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
+              <RNSVGGroup
+                clipPath="clip0"
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint0_linear_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint1_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint2_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint3_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint4_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint5_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "paint6_radial_70_1095",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGLinearGradient
+                  gradient={
+                    [
+                      0,
+                      -10702935,
+                      0.493323,
+                      -5719882,
+                    ]
+                  }
+                  gradientTransform={null}
+                  gradientUnits={1}
+                  name="paint0_linear_70_1095"
+                  x1={0}
+                  x2={960}
+                  y1={540}
+                  y2={540}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0,
+                      -19783,
+                      0.574124,
+                      -858015301,
+                      1,
+                      14399931,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      -960,
+                      0,
+                      0,
+                      -513.965,
+                      960,
+                      70.237,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint1_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0,
+                      -19783,
+                      0.555385,
+                      -855657799,
+                      1,
+                      16757433,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      267.3265250873247,
+                      -225.2055437167033,
+                      268.3319698025894,
+                      318.51903764588747,
+                      910.4237990081651,
+                      765.2083362494316,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint2_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0.100755,
+                      -19783,
+                      1,
+                      16757433,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      0,
+                      450.748,
+                      -730.944,
+                      0,
+                      1085.51,
+                      397.157,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint3_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0,
+                      -19783,
+                      0.561177,
+                      -855657799,
+                      0.906892,
+                      16757433,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      0,
+                      604.749,
+                      -991.173,
+                      0,
+                      960,
+                      -84.854,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint4_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0.399652,
+                      -28597,
+                      0.741622,
+                      -28597,
+                      1,
+                      15707784,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      0,
+                      523.113,
+                      -1084.59,
+                      0,
+                      1010.43,
+                      1080,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint5_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGRadialGradient
+                  cx={0}
+                  cy={0}
+                  fx={0}
+                  fy={0}
+                  gradient={
+                    [
+                      0.334739,
+                      -33491,
+                      1,
+                      16743725,
+                    ]
+                  }
+                  gradientTransform={
+                    [
+                      0,
+                      -468.557,
+                      272.64,
+                      0,
+                      960,
+                      1080,
+                    ]
+                  }
+                  gradientUnits={1}
+                  name="paint6_radial_70_1095"
+                  rx={1}
+                  ry={1}
+                />
+                <RNSVGClipPath
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  name="clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0H960V1080H0z"
+                    fill={
+                      {
+                        "payload": 4294967295,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+</View>
+`;

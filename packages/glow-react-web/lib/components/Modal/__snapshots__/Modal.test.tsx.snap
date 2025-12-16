@@ -1,0 +1,694 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> Basic Modal renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Modal button
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> Basic Modal renders a stable snapshot 2`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Modal button
+    </span>
+  </button>
+  <div
+    data-testid="focus-trap"
+    tabindex="-1"
+  >
+    <div
+      class="scroll-container dialog-wrapper width-undefined"
+    >
+      <dialog
+        class="dialog-root backdrop backdrop-default"
+        data-open="false"
+        data-testid="dialog"
+        id="modal"
+      >
+        <div
+          class="dialog-content dialog dialog-wrapper position-default width-default"
+        >
+          <div
+            class="scroll-container-sticky"
+          >
+            <button
+              aria-label="Close"
+              class="button button-size-default button-prominence-default action-button-icon size-default modal-close-button"
+              data-testid="modal-close-icon"
+            >
+              <span
+                class="button-label"
+              >
+                <span
+                  aria-hidden="true"
+                  class="icon icon-size-default outline block"
+                  data-icon="close"
+                  data-testid="icon"
+                >
+                  
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="scrollable"
+          >
+            <header>
+              <div
+                class="header-background ratio-3-1"
+              >
+                <div
+                  class="background-image ratio-16-9"
+                  data-testid="image"
+                >
+                  <div
+                    aria-label="alt"
+                    class="image-position-center"
+                    role="img"
+                    style="background-image: url(test-file-stub); background-size: cover;"
+                  />
+                </div>
+              </div>
+              <h3
+                class="heading heading-size-lg align-left header"
+                data-testid="heading"
+                lang="nl"
+              >
+                Modal header text
+              </h3>
+            </header>
+            <div
+              class="content dialog-gap subtle-divider"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eros orci, nec mollis odio congue ac. Integer consequat magna et justo sodales, sit amet imperdiet erat varius. Suspendisse at magna pretium, sagittis justo nec, ultrices ipsum. Ut ultricies eu lorem vitae hendrerit. Nulla lobortis odio augue, ac varius turpis maximus ac. Integer sed nibh in leo vulputate sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mi dolor, maximus sed ex a, lobortis accumsan neque. Donec hendrerit at nulla vitae vulputate. Aliquam rutrum metus sed aliquet scelerisque. Vivamus accumsan porta quam, posuere venenatis mauris sagittis at. Donec gravida turpis nec aliquet vehicula. Donec quis fermentum est, id mollis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ipsum ante, vulputate ac ex vel, tincidunt hendrerit dui. In interdum iaculis enim in rhoncus. Proin venenatis nec tellus vitae eleifend. Aenean maximus posuere sapien, a commodo nisi congue ut. Donec faucibus dui a sapien convallis, id sollicitudin ante tincidunt. Nulla ultrices mauris sit amet lacus convallis iaculis. Sed nec volutpat purus. Aenean at arcu id velit suscipit laoreet. Phasellus elementum aliquam purus laoreet vehicula. Pellentesque blandit, risus nec venenatis dignissim, sem felis convallis enim, vel tempus lectus ligula ac erat. Proin cursus maximus velit in congue. Nunc in gravida eros. Etiam vitae cursus magna, id ullamcorper mi. Etiam maximus dui vel lectus tristique laoreet.
+              </p>
+            </div>
+          </div>
+          <footer
+            class="footer"
+          >
+            <hr
+              class="divider divider-prominence-default divider-variant-default"
+              data-testid="divider"
+            />
+            <div
+              class="footer-container footer-padding-default"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                displayed on top of buttons
+              </p>
+              <div
+                class="footer-buttons"
+              >
+                <button
+                  class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-secondary footer-button"
+                  data-testid="modal-close"
+                >
+                  <span
+                    class="button-label"
+                  >
+                    Close
+                  </span>
+                </button>
+                <button
+                  class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-default footer-button"
+                  data-testid="button"
+                >
+                  <span
+                    class="button-label"
+                  >
+                    Submit
+                  </span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> Bottom Modal renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Bottom Modal
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> Bottom Modal renders a stable snapshot 2`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Bottom Modal
+    </span>
+  </button>
+  <div
+    data-testid="focus-trap"
+    tabindex="-1"
+  >
+    <div
+      class="scroll-container scroll-container-bottom dialog-wrapper width-undefined"
+    >
+      <dialog
+        class="dialog-root backdrop backdrop-default"
+        data-open="false"
+        data-testid="dialog"
+        id="modal"
+      >
+        <div
+          class="dialog-content dialog dialog-wrapper position-bottom width-default"
+        >
+          <div
+            class="scroll-container-sticky"
+          >
+            <button
+              aria-label="Close"
+              class="button button-size-default button-prominence-default action-button-icon size-default modal-close-button"
+              data-testid="modal-close-icon"
+            >
+              <span
+                class="button-label"
+              >
+                <span
+                  aria-hidden="true"
+                  class="icon icon-size-default outline block"
+                  data-icon="close"
+                  data-testid="icon"
+                >
+                  
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="scrollable"
+          >
+            <header>
+              <div
+                class="header-background ratio-3-1"
+              >
+                <div
+                  class="background-image ratio-16-9"
+                  data-testid="image"
+                >
+                  <div
+                    aria-label="alt"
+                    class="image-position-center"
+                    role="img"
+                    style="background-image: url(test-file-stub); background-size: cover;"
+                  />
+                </div>
+              </div>
+              <h3
+                class="heading heading-size-lg align-left header"
+                data-testid="heading"
+                lang="nl"
+              >
+                Modal header text
+              </h3>
+            </header>
+            <div
+              class="content dialog-gap subtle-divider"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eros orci, nec mollis odio congue ac. Integer consequat magna et justo sodales, sit amet imperdiet erat varius. Suspendisse at magna pretium, sagittis justo nec, ultrices ipsum. Ut ultricies eu lorem vitae hendrerit. Nulla lobortis odio augue, ac varius turpis maximus ac. Integer sed nibh in leo vulputate sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mi dolor, maximus sed ex a, lobortis accumsan neque. Donec hendrerit at nulla vitae vulputate. Aliquam rutrum metus sed aliquet scelerisque. Vivamus accumsan porta quam, posuere venenatis mauris sagittis at. Donec gravida turpis nec aliquet vehicula. Donec quis fermentum est, id mollis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ipsum ante, vulputate ac ex vel, tincidunt hendrerit dui. In interdum iaculis enim in rhoncus. Proin venenatis nec tellus vitae eleifend. Aenean maximus posuere sapien, a commodo nisi congue ut. Donec faucibus dui a sapien convallis, id sollicitudin ante tincidunt. Nulla ultrices mauris sit amet lacus convallis iaculis. Sed nec volutpat purus. Aenean at arcu id velit suscipit laoreet. Phasellus elementum aliquam purus laoreet vehicula. Pellentesque blandit, risus nec venenatis dignissim, sem felis convallis enim, vel tempus lectus ligula ac erat. Proin cursus maximus velit in congue. Nunc in gravida eros. Etiam vitae cursus magna, id ullamcorper mi. Etiam maximus dui vel lectus tristique laoreet.
+              </p>
+            </div>
+          </div>
+          <footer
+            class="footer"
+          >
+            <hr
+              class="divider divider-prominence-default divider-variant-default"
+              data-testid="divider"
+            />
+            <div
+              class="footer-container footer-padding-default"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                displayed on top of buttons
+              </p>
+              <div
+                class="footer-buttons"
+              >
+                <button
+                  class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-secondary footer-button"
+                  data-testid="modal-close"
+                >
+                  <span
+                    class="button-label"
+                  >
+                    Close
+                  </span>
+                </button>
+                <button
+                  class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-default footer-button"
+                  data-testid="button"
+                >
+                  <span
+                    class="button-label"
+                  >
+                    Submit
+                  </span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> Right Modal renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Right Modal
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> Right Modal renders a stable snapshot 2`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Right Modal
+    </span>
+  </button>
+  <div
+    data-testid="focus-trap"
+    tabindex="-1"
+  >
+    <dialog
+      class="dialog-root backdrop backdrop-default"
+      data-open="false"
+      data-testid="dialog"
+      id="modal"
+    >
+      <div
+        class="dialog-content dialog dialog-wrapper position-right width-default"
+      >
+        <div
+          class=""
+        >
+          <button
+            aria-label="Close"
+            class="button button-size-default button-prominence-default action-button-icon size-default modal-close-button"
+            data-testid="modal-close-icon"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="close"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          class="scrollable"
+        >
+          <header>
+            <div
+              class="header-background ratio-3-1"
+            >
+              <div
+                class="background-image ratio-16-9"
+                data-testid="image"
+              >
+                <div
+                  aria-label="alt"
+                  class="image-position-center"
+                  role="img"
+                  style="background-image: url(test-file-stub); background-size: cover;"
+                />
+              </div>
+            </div>
+            <h3
+              class="heading heading-size-lg align-left header"
+              data-testid="heading"
+              lang="nl"
+            >
+              Modal header text
+            </h3>
+          </header>
+          <div
+            class="content dialog-gap subtle-divider"
+          >
+            <p
+              class="paragraph paragraph-size-default"
+              data-testid="paragraph"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eros orci, nec mollis odio congue ac. Integer consequat magna et justo sodales, sit amet imperdiet erat varius. Suspendisse at magna pretium, sagittis justo nec, ultrices ipsum. Ut ultricies eu lorem vitae hendrerit. Nulla lobortis odio augue, ac varius turpis maximus ac. Integer sed nibh in leo vulputate sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mi dolor, maximus sed ex a, lobortis accumsan neque. Donec hendrerit at nulla vitae vulputate. Aliquam rutrum metus sed aliquet scelerisque. Vivamus accumsan porta quam, posuere venenatis mauris sagittis at. Donec gravida turpis nec aliquet vehicula. Donec quis fermentum est, id mollis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ipsum ante, vulputate ac ex vel, tincidunt hendrerit dui. In interdum iaculis enim in rhoncus. Proin venenatis nec tellus vitae eleifend. Aenean maximus posuere sapien, a commodo nisi congue ut. Donec faucibus dui a sapien convallis, id sollicitudin ante tincidunt. Nulla ultrices mauris sit amet lacus convallis iaculis. Sed nec volutpat purus. Aenean at arcu id velit suscipit laoreet. Phasellus elementum aliquam purus laoreet vehicula. Pellentesque blandit, risus nec venenatis dignissim, sem felis convallis enim, vel tempus lectus ligula ac erat. Proin cursus maximus velit in congue. Nunc in gravida eros. Etiam vitae cursus magna, id ullamcorper mi. Etiam maximus dui vel lectus tristique laoreet.
+            </p>
+          </div>
+        </div>
+        <footer
+          class="footer"
+        >
+          <hr
+            class="divider divider-prominence-default divider-variant-default"
+            data-testid="divider"
+          />
+          <div
+            class="footer-container footer-padding-default"
+          >
+            <p
+              class="paragraph paragraph-size-default"
+              data-testid="paragraph"
+            >
+              displayed on top of buttons
+            </p>
+            <div
+              class="footer-buttons"
+            >
+              <button
+                class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-secondary footer-button"
+                data-testid="modal-close"
+              >
+                <span
+                  class="button-label"
+                >
+                  Close
+                </span>
+              </button>
+              <button
+                class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-default footer-button"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  Submit
+                </span>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </dialog>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> WithoutFooter Modal renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Without footer
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> WithoutFooter Modal renders a stable snapshot 2`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Without footer
+    </span>
+  </button>
+  <div
+    data-testid="focus-trap"
+    tabindex="-1"
+  >
+    <div
+      class="scroll-container dialog-wrapper width-undefined"
+    >
+      <dialog
+        class="dialog-root backdrop backdrop-default scrollable"
+        data-open="false"
+        data-testid="dialog"
+        id="modal"
+      >
+        <div
+          class="dialog-content dialog dialog-wrapper position-default width-default"
+        >
+          <div
+            class="scroll-container-sticky"
+          >
+            <button
+              aria-label="Close"
+              class="button button-size-default button-prominence-default action-button-icon size-default modal-close-button"
+              data-testid="modal-close-icon"
+            >
+              <span
+                class="button-label"
+              >
+                <span
+                  aria-hidden="true"
+                  class="icon icon-size-default outline block"
+                  data-icon="close"
+                  data-testid="icon"
+                >
+                  
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="scrollable"
+          >
+            <header>
+              <div
+                class="header-background ratio-3-1"
+              >
+                <div
+                  class="background-image ratio-16-9"
+                  data-testid="image"
+                >
+                  <div
+                    aria-label="alt"
+                    class="image-position-center"
+                    role="img"
+                    style="background-image: url(test-file-stub); background-size: cover;"
+                  />
+                </div>
+              </div>
+              <h3
+                class="heading heading-size-lg align-left header"
+                data-testid="heading"
+                lang="nl"
+              >
+                Modal header text
+              </h3>
+            </header>
+            <div
+              class="content dialog-gap subtle-divider"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque eros orci, nec mollis odio congue ac. Integer consequat magna et justo sodales, sit amet imperdiet erat varius. Suspendisse at magna pretium, sagittis justo nec, ultrices ipsum. Ut ultricies eu lorem vitae hendrerit. Nulla lobortis odio augue, ac varius turpis maximus ac. Integer sed nibh in leo vulputate sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mi dolor, maximus sed ex a, lobortis accumsan neque. Donec hendrerit at nulla vitae vulputate. Aliquam rutrum metus sed aliquet scelerisque. Vivamus accumsan porta quam, posuere venenatis mauris sagittis at. Donec gravida turpis nec aliquet vehicula. Donec quis fermentum est, id mollis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ipsum ante, vulputate ac ex vel, tincidunt hendrerit dui. In interdum iaculis enim in rhoncus. Proin venenatis nec tellus vitae eleifend. Aenean maximus posuere sapien, a commodo nisi congue ut. Donec faucibus dui a sapien convallis, id sollicitudin ante tincidunt. Nulla ultrices mauris sit amet lacus convallis iaculis. Sed nec volutpat purus. Aenean at arcu id velit suscipit laoreet. Phasellus elementum aliquam purus laoreet vehicula. Pellentesque blandit, risus nec venenatis dignissim, sem felis convallis enim, vel tempus lectus ligula ac erat. Proin cursus maximus velit in congue. Nunc in gravida eros. Etiam vitae cursus magna, id ullamcorper mi. Etiam maximus dui vel lectus tristique laoreet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Modal /> applies gradient to emphasised variant of customHeader 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Custom header modal
+    </span>
+  </button>
+  <div
+    data-testid="focus-trap"
+    tabindex="-1"
+  >
+    <div
+      class="scroll-container dialog-wrapper width-undefined"
+    >
+      <dialog
+        class="dialog-root backdrop backdrop-default"
+        data-open="false"
+        data-testid="dialog"
+        id="modal"
+      >
+        <div
+          class="dialog-content dialog dialog-wrapper position-default width-default"
+        >
+          <div
+            class="scroll-container-sticky"
+          >
+            <button
+              aria-label="Sluiten"
+              class="button button-size-default button-prominence-default action-button-icon size-default modal-close-button"
+              data-testid="modal-close-icon"
+            >
+              <span
+                class="button-label"
+              >
+                <span
+                  aria-hidden="true"
+                  class="icon icon-size-default outline block"
+                  data-icon="close"
+                  data-testid="icon"
+                >
+                  
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="scrollable"
+          >
+            <header>
+              <div
+                class="header-background ratio-3-1"
+              >
+                <div
+                  class="visual visual-ratio-default fill-height no-padding-none custom-header"
+                  data-testid="modal-custom-header"
+                >
+                  <div
+                    class="background-image ratio-16-9"
+                    data-testid="image"
+                  >
+                    <div
+                      aria-label="alt text"
+                      class="image-position-center"
+                      role="img"
+                      style="background-image: url(test-file-stub); background-size: contain;"
+                    >
+                      <div
+                        class="background-image ratio-16-9"
+                        data-testid="image"
+                      >
+                        <div
+                          aria-label="alt text"
+                          class="image-position-center"
+                          role="img"
+                          style="background-image: url(test-file-stub); background-size: contain;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                class="heading heading-size-lg align-left header header-right-offset"
+                data-testid="heading"
+                lang="nl"
+              >
+                Custom header modal
+              </h3>
+            </header>
+            <div
+              class="content dialog-gap subtle-divider"
+            />
+          </div>
+          <footer
+            class="footer"
+          >
+            <hr
+              class="divider divider-prominence-default divider-variant-default"
+              data-testid="divider"
+            />
+            <div
+              class="footer-container footer-padding-default"
+            >
+              <div
+                class="footer-buttons"
+              >
+                <button
+                  class="fill-mobile-small fill-tablet-reset button button-size-default button-prominence-default footer-button"
+                  data-testid="modal-close"
+                >
+                  <span
+                    class="button-label"
+                  >
+                    Sluiten
+                  </span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</DocumentFragment>
+`;

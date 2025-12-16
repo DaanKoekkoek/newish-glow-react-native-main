@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixedSettingsNavigation Component Component Integration renders complete structure with all sections 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed-settings-navigation"
+    data-testid="fixed-settings-navigation"
+  >
+    <div
+      class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+      style="height: 40px;"
+    >
+      <a
+        class="text-link size-xs text-only columnGapSm top-links"
+        data-testid="text-link"
+        href="/"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+          style="color: black;"
+        >
+          Terug naar Odido.nl
+        </span>
+      </a>
+      <a
+        class="text-link size-xs text-only columnGapSm top-links"
+        data-testid="text-link"
+        href="/service"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+          style="color: black;"
+        >
+          Naar service
+        </span>
+      </a>
+    </div>
+    <div
+      class="box box-prominence-emphasised box-size-sm"
+      data-testid="box"
+      style="border-radius: 0;"
+    >
+      <div
+        aria-hidden="true"
+        class="glow-gradient glow4 box-gradient no-hover"
+        data-testid="glow-gradient"
+        style="z-index: -1;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rk:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rk:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rk:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rk:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rk:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12 emphasised-stack"
+        data-testid="stack"
+      >
+        <a
+          class="user-profile-link"
+          href="/my"
+        >
+          <div
+            class="stack direction-row align-center justify-flex-start gap-100 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+            data-testid="stack"
+          >
+            <div
+              class="user-avatar"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                JD
+              </p>
+            </div>
+            <p
+              class="paragraph paragraph-size-sm user-account-label"
+              data-testid="paragraph"
+            >
+              Account
+            </p>
+          </div>
+        </a>
+        <div
+          style="display: flex; gap: var(--semantics-gap-100);"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline"
+            data-icon="internet"
+            data-testid="icon"
+          >
+            
+          </span>
+          <p
+            class="paragraph paragraph-size-sm"
+            data-testid="paragraph"
+          >
+            Internet + TV
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FixedSettingsNavigation Component Component Integration renders without required sections when props are omitted 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed-settings-navigation"
+    data-testid="fixed-settings-navigation"
+  >
+    <div
+      class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+      style="height: 40px;"
+    />
+    <div
+      class="box box-prominence-emphasised box-size-sm"
+      data-testid="box"
+      style="border-radius: 0;"
+    >
+      <div
+        aria-hidden="true"
+        class="glow-gradient glow4 box-gradient no-hover"
+        data-testid="glow-gradient"
+        style="z-index: -1;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rl:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rl:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rl:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rl:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rl:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12 emphasised-stack"
+        data-testid="stack"
+      >
+        <a
+          class="user-profile-link"
+          href="/my"
+        >
+          <div
+            class="stack direction-row align-center justify-flex-start gap-100 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+            data-testid="stack"
+          >
+            <div
+              class="user-avatar"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                JD
+              </p>
+            </div>
+            <p
+              class="paragraph paragraph-size-sm user-account-label"
+              data-testid="paragraph"
+            >
+              Account
+            </p>
+          </div>
+        </a>
+        <div
+          style="display: flex; gap: var(--semantics-gap-100);"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FixedSettingsNavigation Component renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed-settings-navigation"
+    data-testid="fixed-settings-navigation"
+  >
+    <div
+      class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+      style="height: 40px;"
+    >
+      <a
+        class="text-link size-xs text-only columnGapSm top-links"
+        data-testid="text-link"
+        href="/"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+          style="color: black;"
+        >
+          Terug naar Odido.nl
+        </span>
+      </a>
+      <a
+        class="text-link size-xs text-only columnGapSm top-links"
+        data-testid="text-link"
+        href="/service"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+          style="color: black;"
+        >
+          Naar service
+        </span>
+      </a>
+    </div>
+    <div
+      class="box box-prominence-emphasised box-size-sm"
+      data-testid="box"
+      style="border-radius: 0;"
+    >
+      <div
+        aria-hidden="true"
+        class="glow-gradient glow4 box-gradient no-hover"
+        data-testid="glow-gradient"
+        style="z-index: -1;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:r0:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:r0:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:r0:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:r0:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:r0:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:r0:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:r0:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:r0:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:r0:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:r0:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:r0:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:r0:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="stack direction-row align-center justify-space-around gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12 emphasised-stack"
+        data-testid="stack"
+      >
+        <a
+          class="user-profile-link"
+          href="/my"
+        >
+          <div
+            class="stack direction-row align-center justify-flex-start gap-100 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+            data-testid="stack"
+          >
+            <div
+              class="user-avatar"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                AD
+              </p>
+            </div>
+            <p
+              class="paragraph paragraph-size-sm user-account-label"
+              data-testid="paragraph"
+            >
+              Mijn account
+            </p>
+          </div>
+        </a>
+        <div
+          style="display: flex; gap: var(--semantics-gap-100);"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline"
+            data-icon="internet"
+            data-testid="icon"
+          >
+            
+          </span>
+          <p
+            class="paragraph paragraph-size-sm"
+            data-testid="paragraph"
+          >
+            Internet + TV + Vast bellen
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

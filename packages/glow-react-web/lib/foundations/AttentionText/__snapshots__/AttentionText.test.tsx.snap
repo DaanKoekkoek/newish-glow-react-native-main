@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttentionText component should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="attention-text attention-text-size-default"
+    role="status"
+  >
+    <p
+      class="paragraph paragraph-size-default message-variant-success"
+      data-testid="paragraph"
+    >
+      Snapshot Test
+    </p>
+  </div>
+</DocumentFragment>
+`;

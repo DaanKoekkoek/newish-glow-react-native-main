@@ -1,0 +1,34 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MySectionStories from "./MySection.stories";
+
+<Meta of={MySectionStories} />
+
+# MySection
+
+The `MySection` component organizes content by providing a structured layout for grouping related components or information. It ensures a cohesive design and is especially useful for segmenting content in a meaningful and visually appealing way.
+
+## Purpose
+
+The `MySection` component creates distinct sections, allowing for the logical grouping of related elements. This makes the layout more organized and easier to navigate.
+
+## Usage
+
+The `MySection` only allows `<MySection.Main />`, `<MySection.Grid />` and `<MySection.Title />` children.
+
+### Default Example
+
+<Canvas of={MySectionStories.Default} />
+<Controls of={MySectionStories.Default} />
+
+### Emphasised
+
+<Canvas of={MySectionStories.Emphasised} />
+
+### With image
+
+<Canvas of={MySectionStories.Image} />
+
+### With palette
+
+<Canvas of={MySectionStories.Subtle} />
+<Controls of={MySectionStories.Subtle} />

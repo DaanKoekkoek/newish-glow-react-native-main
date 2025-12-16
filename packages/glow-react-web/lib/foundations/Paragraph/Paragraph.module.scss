@@ -1,0 +1,42 @@
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/mixins";
+
+$paragraph-sizes: xxs, xs, sm, default, lg;
+
+@include mixins.token-scope(
+  paragraph,
+  (paragraph), 
+) {}
+
+@layer main.foundation {
+  .paragraph {
+    font-family: var(
+        --components-foundations-typography-text-styles-v1-paragraph-font-family-default
+    );
+    font-weight: var(
+        --components-foundations-typography-text-styles-v1-paragraph-font-weight-default
+    );
+  }
+  
+  .paragraph-align-center {
+    text-align: center;
+  }
+  
+  .paragraph-align-right {
+    text-align: right;
+  }
+  
+  @each $size in $paragraph-sizes {
+    .paragraph-size-#{$size} {
+      font-size: var(
+        --components-foundations-typography-text-styles-v1-paragraph-font-size-#{$size}
+      );
+      line-height: var(
+        --components-foundations-typography-text-styles-v1-paragraph-line-height-#{$size}
+      );
+      letter-spacing: var(
+        --components-foundations-typography-text-styles-v1-paragraph-letter-spacing-#{$size}
+      );
+    }
+  }
+}

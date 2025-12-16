@@ -1,0 +1,31 @@
+@use "@odido-portals/glow-tokens/foundations-typography";
+@use "@globals/mixins";
+
+$attention-text-sizes: sm, default;
+$attention-text-variants: success, error;
+
+@include mixins.token-scope(
+  attention-text,
+  foundations-typography
+) {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  flex-direction: row;
+}
+
+@each $size in $attention-text-sizes {
+  .attention-text-size-#{$size} {
+    gap: var(--components-foundations-typography-attention-text-gap-#{$size});
+  }
+}
+
+@each $variant in $attention-text-variants {
+  .icon-variant-#{$variant} {
+    color: var(--components-foundations-typography-attention-text-color-icon-#{$variant});
+  }
+
+  .message-variant-#{$variant} {
+    color: var(--components-foundations-typography-attention-text-color-text-#{$variant});
+  }
+}

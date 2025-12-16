@@ -1,0 +1,4929 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppIcon component for Essential renders correctly for Essential when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Essential-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r2e:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M43.2045 53.7257H20.7956C19.32 53.7257 18.1289 52.5346 18.1289 51.059V12.9435C18.1289 11.4679 19.32 10.2768 20.7956 10.2768H43.2045C44.68 10.2768 45.8711 11.4679 45.8711 12.9435V51.059C45.8711 52.5346 44.68 53.7257 43.2045 53.7257ZM20.3511 51.5035H43.6489V12.499H36.3908C36.2135 13.5389 35.3083 14.3302 34.2178 14.3302H29.7911C28.7006 14.3302 27.7954 13.5389 27.6182 12.499H20.3511V51.5035ZM36.4756 38.5079C36.5823 38.5168 36.6978 38.5168 36.8045 38.5168L36.7867 38.5079C37.4356 38.4902 38.04 38.1968 38.4934 37.7435L39.96 36.2768C40.8311 35.4057 40.8311 34.0013 39.96 33.1302L37.24 30.4102C36.5111 29.6813 35.3734 29.5568 34.4934 30.099L33.2578 30.8724L30.5823 28.1968L31.3556 26.9613C31.9067 26.0813 31.7734 24.9435 31.0445 24.2146L28.3245 21.4946C27.4534 20.6235 26.0489 20.6235 25.1778 21.4946L23.6667 23.0057C23.1423 23.5302 22.8845 24.259 22.9645 24.9968C23.1334 26.579 23.8889 30.6146 27.3734 34.099C30.8578 37.5835 34.9023 38.339 36.4756 38.5079ZM25.24 24.579L26.7511 23.0679L29.48 25.7968L27.7734 28.5346L32.9467 33.7079L35.6845 32.0013L38.4045 34.7213L36.8934 36.2324C36.84 36.2768 36.7778 36.2946 36.7067 36.2946C35.3645 36.1524 31.9245 35.5035 28.9467 32.5257C25.9689 29.5479 25.32 26.1079 25.1778 24.7657C25.1689 24.6946 25.1956 24.6235 25.24 24.579ZM31.9955 48.4901C34.0577 48.4901 35.7288 46.819 35.7288 44.7568H28.2621C28.2621 46.819 29.9333 48.4901 31.9955 48.4901Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r2f:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2g:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2h:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2i:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2j:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r2e:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Essential renders correctly for Essential when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Essential-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r28:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M43.2045 53.7257H20.7956C19.32 53.7257 18.1289 52.5346 18.1289 51.059V12.9435C18.1289 11.4679 19.32 10.2768 20.7956 10.2768H43.2045C44.68 10.2768 45.8711 11.4679 45.8711 12.9435V51.059C45.8711 52.5346 44.68 53.7257 43.2045 53.7257ZM20.3511 51.5035H43.6489V12.499H36.3908C36.2135 13.5389 35.3083 14.3302 34.2178 14.3302H29.7911C28.7006 14.3302 27.7954 13.5389 27.6182 12.499H20.3511V51.5035ZM36.4756 38.5079C36.5823 38.5168 36.6978 38.5168 36.8045 38.5168L36.7867 38.5079C37.4356 38.4902 38.04 38.1968 38.4934 37.7435L39.96 36.2768C40.8311 35.4057 40.8311 34.0013 39.96 33.1302L37.24 30.4102C36.5111 29.6813 35.3734 29.5568 34.4934 30.099L33.2578 30.8724L30.5823 28.1968L31.3556 26.9613C31.9067 26.0813 31.7734 24.9435 31.0445 24.2146L28.3245 21.4946C27.4534 20.6235 26.0489 20.6235 25.1778 21.4946L23.6667 23.0057C23.1423 23.5302 22.8845 24.259 22.9645 24.9968C23.1334 26.579 23.8889 30.6146 27.3734 34.099C30.8578 37.5835 34.9023 38.339 36.4756 38.5079ZM25.24 24.579L26.7511 23.0679L29.48 25.7968L27.7734 28.5346L32.9467 33.7079L35.6845 32.0013L38.4045 34.7213L36.8934 36.2324C36.84 36.2768 36.7778 36.2946 36.7067 36.2946C35.3645 36.1524 31.9245 35.5035 28.9467 32.5257C25.9689 29.5479 25.32 26.1079 25.1778 24.7657C25.1689 24.6946 25.1956 24.6235 25.24 24.579ZM31.9955 48.4901C34.0577 48.4901 35.7288 46.819 35.7288 44.7568H28.2621C28.2621 46.819 29.9333 48.4901 31.9955 48.4901Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r29:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2a:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2b:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2c:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2d:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r28:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r29:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2a:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2b:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2c:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2d:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Hosted Voice renders correctly for Hosted Voice when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Hosted Voice-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r22:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M20.7965 54.1155H27.2054V51.8933H20.3521V12.8889H27.6191C27.7964 13.9288 28.7016 14.72 29.7921 14.72H34.2188C35.3093 14.72 36.2145 13.9288 36.3918 12.8889H43.6499V33.5555H45.8721V13.3333C45.8721 11.8578 44.681 10.6667 43.2054 10.6667H20.7965C19.321 10.6667 18.1299 11.8578 18.1299 13.3333V51.4489C18.1299 52.9244 19.321 54.1155 20.7965 54.1155ZM29.0365 48.1422C29.0365 51.44 31.6587 54.1155 34.8942 54.1155H48.0142C51.2409 54.1155 53.872 51.44 53.872 48.1422C53.872 45.4667 52.112 43.1467 49.6498 42.4178C49.0187 38.4444 45.5698 35.4489 41.4542 35.4489C37.3387 35.4489 33.8898 38.4444 33.2587 42.4178C30.7965 43.1378 29.0365 45.4667 29.0365 48.1422ZM34.8942 44.4H34.9742L34.9654 44.3911C35.6409 44.4089 36.2809 44.6044 36.8142 44.96L38.0409 43.1111C37.3031 42.6222 36.4676 42.32 35.5609 42.2133C36.2365 39.5822 38.6276 37.6622 41.4454 37.6622C44.672 37.6622 47.3298 40.1778 47.5076 43.3867L47.5609 44.3111L48.4765 44.4355C50.2809 44.6755 51.6409 46.2667 51.6409 48.1422C51.6409 50.2133 50.0142 51.8933 48.0054 51.8933H34.8854C32.8854 51.8933 31.2498 50.2133 31.2498 48.1422C31.2498 46.2667 32.6187 44.6666 34.4498 44.4267C34.592 44.4 34.7432 44.4 34.8942 44.4Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r23:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r24:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r25:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r26:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r27:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r22:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Hosted Voice renders correctly for Hosted Voice when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Hosted Voice-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r1s:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M20.7965 54.1155H27.2054V51.8933H20.3521V12.8889H27.6191C27.7964 13.9288 28.7016 14.72 29.7921 14.72H34.2188C35.3093 14.72 36.2145 13.9288 36.3918 12.8889H43.6499V33.5555H45.8721V13.3333C45.8721 11.8578 44.681 10.6667 43.2054 10.6667H20.7965C19.321 10.6667 18.1299 11.8578 18.1299 13.3333V51.4489C18.1299 52.9244 19.321 54.1155 20.7965 54.1155ZM29.0365 48.1422C29.0365 51.44 31.6587 54.1155 34.8942 54.1155H48.0142C51.2409 54.1155 53.872 51.44 53.872 48.1422C53.872 45.4667 52.112 43.1467 49.6498 42.4178C49.0187 38.4444 45.5698 35.4489 41.4542 35.4489C37.3387 35.4489 33.8898 38.4444 33.2587 42.4178C30.7965 43.1378 29.0365 45.4667 29.0365 48.1422ZM34.8942 44.4H34.9742L34.9654 44.3911C35.6409 44.4089 36.2809 44.6044 36.8142 44.96L38.0409 43.1111C37.3031 42.6222 36.4676 42.32 35.5609 42.2133C36.2365 39.5822 38.6276 37.6622 41.4454 37.6622C44.672 37.6622 47.3298 40.1778 47.5076 43.3867L47.5609 44.3111L48.4765 44.4355C50.2809 44.6755 51.6409 46.2667 51.6409 48.1422C51.6409 50.2133 50.0142 51.8933 48.0054 51.8933H34.8854C32.8854 51.8933 31.2498 50.2133 31.2498 48.1422C31.2498 46.2667 32.6187 44.6666 34.4498 44.4267C34.592 44.4 34.7432 44.4 34.8942 44.4Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r1t:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1u:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1v:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r20:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r21:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r1s:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1t:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1u:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1v:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r20:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r21:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Klantkampioen renders correctly for Klantkampioen when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Klantkampioen-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r2q:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M40.8543 33.322L50.2383 18.8195C51.2634 17.2818 50.8363 15.2316 49.3841 14.2065L44.0023 10.277H19.9979L14.6161 14.2065C13.1639 15.2316 12.7367 17.2818 13.7618 18.8195L23.1586 33.2563C21.4501 34.3668 20.3396 36.2462 20.3396 38.3818C20.3396 40.4819 20.7526 41.4255 21.3349 42.756L21.3647 42.8239C21.7918 43.7636 22.3898 44.7033 23.0732 45.5575C24.0128 46.7535 25.0379 47.7786 26.1485 48.8037C26.2766 48.9318 26.4047 49.0386 26.5329 49.1454C26.661 49.2521 26.7892 49.3589 26.9173 49.4871L28.4549 50.7684C29.0529 51.281 29.7363 51.7935 30.3343 52.2207C30.6293 52.4665 30.9243 52.684 31.203 52.8896C31.4086 53.0411 31.6052 53.1861 31.7865 53.3312L32.0428 53.5875L32.2991 53.3312C32.3684 53.2757 32.4399 53.218 32.5134 53.1588C32.8925 52.8531 33.3219 52.5069 33.7513 52.2207C34.3493 51.7935 34.9472 51.281 35.5452 50.7684L37.0829 49.4871C37.211 49.3589 37.3391 49.2521 37.4673 49.1454C37.5954 49.0386 37.7236 48.9318 37.8517 48.8037C38.9622 47.7786 39.9873 46.7535 40.927 45.5575C41.6104 44.7033 42.1229 43.849 42.5501 42.8239C43.148 41.4571 43.5752 40.0049 43.5752 38.3818C43.5752 36.79 42.5071 34.4588 40.8543 33.322ZM38.7914 32.4875L49.1278 16.6839L49.0424 16.5984L43.8314 12.8397L30.3343 33.8543C31.0177 34.4523 31.5302 35.2211 31.8719 36.0753C32.8116 33.8543 34.9472 32.3166 37.51 32.3166C37.9371 32.3166 38.3642 32.4021 38.7914 32.4875ZM41.6104 12.498H30.7614H22.3043L31.9574 27.5328L36.7412 20.1009H29.9926L28.6258 17.9652H38.108L41.6104 12.498ZM19.9979 12.9252L14.7869 16.6839L25.1234 32.4875C25.4651 32.4021 25.5505 32.4021 26.3193 32.4021C27.0881 32.4021 27.857 32.5729 28.5404 32.8292L30.676 29.4976L19.9979 12.9252ZM25.0379 43.3365C26.4902 45.8138 29.1383 47.3514 31.9574 47.3514C34.7764 47.3514 37.4246 45.8138 38.8768 43.3365L37.5954 42.5676C36.4849 44.5324 34.2638 45.8138 31.9574 45.8138C29.6509 45.8138 27.5153 44.5324 26.3193 42.5676L25.0379 43.3365Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r2r:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2s:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2t:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2u:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2v:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r2q:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Klantkampioen renders correctly for Klantkampioen when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Klantkampioen-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r2k:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M40.8543 33.322L50.2383 18.8195C51.2634 17.2818 50.8363 15.2316 49.3841 14.2065L44.0023 10.277H19.9979L14.6161 14.2065C13.1639 15.2316 12.7367 17.2818 13.7618 18.8195L23.1586 33.2563C21.4501 34.3668 20.3396 36.2462 20.3396 38.3818C20.3396 40.4819 20.7526 41.4255 21.3349 42.756L21.3647 42.8239C21.7918 43.7636 22.3898 44.7033 23.0732 45.5575C24.0128 46.7535 25.0379 47.7786 26.1485 48.8037C26.2766 48.9318 26.4047 49.0386 26.5329 49.1454C26.661 49.2521 26.7892 49.3589 26.9173 49.4871L28.4549 50.7684C29.0529 51.281 29.7363 51.7935 30.3343 52.2207C30.6293 52.4665 30.9243 52.684 31.203 52.8896C31.4086 53.0411 31.6052 53.1861 31.7865 53.3312L32.0428 53.5875L32.2991 53.3312C32.3684 53.2757 32.4399 53.218 32.5134 53.1588C32.8925 52.8531 33.3219 52.5069 33.7513 52.2207C34.3493 51.7935 34.9472 51.281 35.5452 50.7684L37.0829 49.4871C37.211 49.3589 37.3391 49.2521 37.4673 49.1454C37.5954 49.0386 37.7236 48.9318 37.8517 48.8037C38.9622 47.7786 39.9873 46.7535 40.927 45.5575C41.6104 44.7033 42.1229 43.849 42.5501 42.8239C43.148 41.4571 43.5752 40.0049 43.5752 38.3818C43.5752 36.79 42.5071 34.4588 40.8543 33.322ZM38.7914 32.4875L49.1278 16.6839L49.0424 16.5984L43.8314 12.8397L30.3343 33.8543C31.0177 34.4523 31.5302 35.2211 31.8719 36.0753C32.8116 33.8543 34.9472 32.3166 37.51 32.3166C37.9371 32.3166 38.3642 32.4021 38.7914 32.4875ZM41.6104 12.498H30.7614H22.3043L31.9574 27.5328L36.7412 20.1009H29.9926L28.6258 17.9652H38.108L41.6104 12.498ZM19.9979 12.9252L14.7869 16.6839L25.1234 32.4875C25.4651 32.4021 25.5505 32.4021 26.3193 32.4021C27.0881 32.4021 27.857 32.5729 28.5404 32.8292L30.676 29.4976L19.9979 12.9252ZM25.0379 43.3365C26.4902 45.8138 29.1383 47.3514 31.9574 47.3514C34.7764 47.3514 37.4246 45.8138 38.8768 43.3365L37.5954 42.5676C36.4849 44.5324 34.2638 45.8138 31.9574 45.8138C29.6509 45.8138 27.5153 44.5324 26.3193 42.5676L25.0379 43.3365Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r2l:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2m:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2n:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2o:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2p:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r2k:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2l:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2m:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2n:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2o:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2p:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Klik & Klaar renders correctly for Klik & Klaar when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Klik & Klaar-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r6:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M15 63.9998H17.4927V37.374C20.6833 39.5775 26.4463 40.7341 32 40.7341C37.5537 40.7341 43.3167 39.5675 46.5073 37.374V63.9998H49V33.4555C49 30.5839 45.7296 28.2209 40.0264 26.9746L39.4979 29.4074C44.3138 30.4543 46.5073 32.2391 46.5073 33.4455C46.5073 35.4496 40.9836 38.2414 32 38.2414C23.0164 38.2414 17.4927 35.4496 17.4927 33.4455C17.4927 32.2191 19.7161 30.4344 24.5818 29.3875L24.0633 26.9447C18.3003 28.181 15 30.5441 15 33.4455V63.9998ZM22.7372 21.5106L22.7261 21.5008C24.9991 18.944 28.2956 17.3329 31.9801 17.3329C35.6692 17.3329 38.9795 18.9482 41.2428 21.5106L42.9977 19.9652C40.3056 16.9241 36.3672 14.9998 31.99 14.9998C27.6129 14.9998 23.6745 16.9241 20.9824 19.9652L22.7261 21.5008L22.7173 21.5106H22.7372ZM31.99 21.4508C29.5412 21.4537 27.3416 22.53 25.8282 24.2326L24.0733 22.6872C26.0076 20.4936 28.8393 19.1177 31.99 19.1177C35.1408 19.1177 37.9724 20.5036 39.9067 22.6872L38.1519 24.2326C36.6384 22.53 34.4388 21.4537 31.99 21.4508ZM32 23.4749C33.8545 23.4749 35.5196 24.2925 36.6563 25.5787L34.9114 27.1241L32 29.6966L29.0886 27.1241L27.3437 25.5787C28.4804 24.2925 30.1455 23.4749 32 23.4749Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r7:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r8:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r9:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":ra:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":rb:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r6:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Klik & Klaar renders correctly for Klik & Klaar when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Klik & Klaar-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r0:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M15 63.9998H17.4927V37.374C20.6833 39.5775 26.4463 40.7341 32 40.7341C37.5537 40.7341 43.3167 39.5675 46.5073 37.374V63.9998H49V33.4555C49 30.5839 45.7296 28.2209 40.0264 26.9746L39.4979 29.4074C44.3138 30.4543 46.5073 32.2391 46.5073 33.4455C46.5073 35.4496 40.9836 38.2414 32 38.2414C23.0164 38.2414 17.4927 35.4496 17.4927 33.4455C17.4927 32.2191 19.7161 30.4344 24.5818 29.3875L24.0633 26.9447C18.3003 28.181 15 30.5441 15 33.4455V63.9998ZM22.7372 21.5106L22.7261 21.5008C24.9991 18.944 28.2956 17.3329 31.9801 17.3329C35.6692 17.3329 38.9795 18.9482 41.2428 21.5106L42.9977 19.9652C40.3056 16.9241 36.3672 14.9998 31.99 14.9998C27.6129 14.9998 23.6745 16.9241 20.9824 19.9652L22.7261 21.5008L22.7173 21.5106H22.7372ZM31.99 21.4508C29.5412 21.4537 27.3416 22.53 25.8282 24.2326L24.0733 22.6872C26.0076 20.4936 28.8393 19.1177 31.99 19.1177C35.1408 19.1177 37.9724 20.5036 39.9067 22.6872L38.1519 24.2326C36.6384 22.53 34.4388 21.4537 31.99 21.4508ZM32 23.4749C33.8545 23.4749 35.5196 24.2925 36.6563 25.5787L34.9114 27.1241L32 29.6966L29.0886 27.1241L27.3437 25.5787C28.4804 24.2925 30.1455 23.4749 32 23.4749Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r1:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r2:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r3:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r4:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r5:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r0:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r2:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r3:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r4:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r5:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Overal Veilig Online renders correctly for Overal Veilig Online when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Overal Veilig Online-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r1m:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M11.2188 29.6267C11.2188 18.1956 20.5254 8.88889 31.9565 8.88889C43.3965 8.88889 52.7032 18.1956 52.7032 29.6267V30.7378H26.1165C26.321 40.7644 29.2899 48.1422 31.9565 48.1422V50.3644C20.8899 50.3644 11.8232 41.6622 11.2454 30.7378H11.2188V29.6267ZM13.4943 30.7378C13.9921 39.0222 19.9476 45.8489 27.8143 47.6622C25.3699 44.0533 24.0187 37.3511 23.8854 30.7378H13.4943ZM13.4943 28.5156H23.8854V28.5244C24.0276 21.9111 25.3699 15.2089 27.8143 11.6C19.9476 13.4044 13.9921 20.2311 13.4943 28.5156ZM31.9565 11.1111C29.2899 11.1111 26.321 18.48 26.1165 28.5156H37.7965C37.5921 18.4889 34.6232 11.1111 31.9565 11.1111ZM36.0987 11.5911C38.5432 15.2 39.8943 21.9022 40.0276 28.5156H50.4188C49.921 20.2311 43.9654 13.4044 36.0987 11.5911ZM40.4276 42.6133L38.8632 44.1867L42.6676 47.9911L48.3476 41.1733L46.641 39.7511L42.5165 44.7022L40.4276 42.6133ZM33.7343 44.4089V36.1156L43.6454 32.4L53.5565 36.1156V44.4089C53.5565 49.8756 49.1121 54.32 43.6454 54.32C38.1787 54.32 33.7343 49.8756 33.7343 44.4089ZM43.6543 52.0978C47.8943 52.0978 51.3432 48.6489 51.3432 44.4089V37.6533L43.6543 34.7644L35.9654 37.6533V44.4089C35.9654 48.6489 39.4143 52.0978 43.6543 52.0978Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r1n:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1o:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1p:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1q:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1r:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r1m:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Overal Veilig Online renders correctly for Overal Veilig Online when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Overal Veilig Online-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r1g:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M11.2188 29.6267C11.2188 18.1956 20.5254 8.88889 31.9565 8.88889C43.3965 8.88889 52.7032 18.1956 52.7032 29.6267V30.7378H26.1165C26.321 40.7644 29.2899 48.1422 31.9565 48.1422V50.3644C20.8899 50.3644 11.8232 41.6622 11.2454 30.7378H11.2188V29.6267ZM13.4943 30.7378C13.9921 39.0222 19.9476 45.8489 27.8143 47.6622C25.3699 44.0533 24.0187 37.3511 23.8854 30.7378H13.4943ZM13.4943 28.5156H23.8854V28.5244C24.0276 21.9111 25.3699 15.2089 27.8143 11.6C19.9476 13.4044 13.9921 20.2311 13.4943 28.5156ZM31.9565 11.1111C29.2899 11.1111 26.321 18.48 26.1165 28.5156H37.7965C37.5921 18.4889 34.6232 11.1111 31.9565 11.1111ZM36.0987 11.5911C38.5432 15.2 39.8943 21.9022 40.0276 28.5156H50.4188C49.921 20.2311 43.9654 13.4044 36.0987 11.5911ZM40.4276 42.6133L38.8632 44.1867L42.6676 47.9911L48.3476 41.1733L46.641 39.7511L42.5165 44.7022L40.4276 42.6133ZM33.7343 44.4089V36.1156L43.6454 32.4L53.5565 36.1156V44.4089C53.5565 49.8756 49.1121 54.32 43.6454 54.32C38.1787 54.32 33.7343 49.8756 33.7343 44.4089ZM43.6543 52.0978C47.8943 52.0978 51.3432 48.6489 51.3432 44.4089V37.6533L43.6543 34.7644L35.9654 37.6533V44.4089C35.9654 48.6489 39.4143 52.0978 43.6543 52.0978Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r1h:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1i:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1j:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1k:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1l:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r1g:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1h:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1i:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1j:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1k:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r1l:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for TV Anywhere renders correctly for TV Anywhere when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="TV Anywhere-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":ru:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M12.4979 16.4444H51.5023V27.1111H53.7245V16.4444C53.7245 15.2177 52.729 14.2222 51.5023 14.2222H12.4979C11.2712 14.2222 10.2756 15.2177 10.2756 16.4444V41.7066C10.2756 42.9333 11.2712 43.9289 12.4979 43.9289H35.129V41.7066H12.4979V16.4444ZM35.129 47.5911H19.4845V49.8133H35.129V47.5911ZM38.1245 29.0755L28.7023 23.1822V34.96L38.1245 29.0755ZM47.6356 29.8133C42.1245 29.8133 37.6356 34.3022 37.6356 39.8133C37.6356 45.3244 42.1245 49.8133 47.6356 49.8133C53.1467 49.8133 57.6356 45.3244 57.6356 39.8133C57.6356 34.3022 53.1467 29.8133 47.6356 29.8133ZM55.3245 38.7022H51.8756C51.7779 36.5066 51.4134 34.3377 50.7379 32.6844C53.1645 33.7422 54.9334 36 55.3245 38.7022ZM47.6356 47.5911C47.1467 47.5911 45.8134 45.2977 45.6179 40.9244H49.6534C49.4579 45.2977 48.1245 47.5911 47.6356 47.5911ZM45.6179 38.7022C45.8134 34.3289 47.1467 32.0355 47.6356 32.0355C48.1245 32.0355 49.4579 34.3289 49.6534 38.7022H45.6179ZM44.5334 32.6844C43.8579 34.3377 43.4845 36.5066 43.3956 38.7022H39.9467C40.3379 36 42.1156 33.7422 44.5334 32.6844ZM39.9467 40.9244H43.3956C43.4934 43.12 43.8579 45.2889 44.5334 46.9422C42.1067 45.8844 40.3379 43.6266 39.9467 40.9244ZM50.7379 46.9422C51.4134 45.2889 51.7868 43.12 51.8756 40.9244H55.3245C54.9334 43.6266 53.1556 45.8844 50.7379 46.9422Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":rv:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r10:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r11:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r12:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r13:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":ru:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for TV Anywhere renders correctly for TV Anywhere when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="TV Anywhere-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":ro:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M12.4979 16.4444H51.5023V27.1111H53.7245V16.4444C53.7245 15.2177 52.729 14.2222 51.5023 14.2222H12.4979C11.2712 14.2222 10.2756 15.2177 10.2756 16.4444V41.7066C10.2756 42.9333 11.2712 43.9289 12.4979 43.9289H35.129V41.7066H12.4979V16.4444ZM35.129 47.5911H19.4845V49.8133H35.129V47.5911ZM38.1245 29.0755L28.7023 23.1822V34.96L38.1245 29.0755ZM47.6356 29.8133C42.1245 29.8133 37.6356 34.3022 37.6356 39.8133C37.6356 45.3244 42.1245 49.8133 47.6356 49.8133C53.1467 49.8133 57.6356 45.3244 57.6356 39.8133C57.6356 34.3022 53.1467 29.8133 47.6356 29.8133ZM55.3245 38.7022H51.8756C51.7779 36.5066 51.4134 34.3377 50.7379 32.6844C53.1645 33.7422 54.9334 36 55.3245 38.7022ZM47.6356 47.5911C47.1467 47.5911 45.8134 45.2977 45.6179 40.9244H49.6534C49.4579 45.2977 48.1245 47.5911 47.6356 47.5911ZM45.6179 38.7022C45.8134 34.3289 47.1467 32.0355 47.6356 32.0355C48.1245 32.0355 49.4579 34.3289 49.6534 38.7022H45.6179ZM44.5334 32.6844C43.8579 34.3377 43.4845 36.5066 43.3956 38.7022H39.9467C40.3379 36 42.1156 33.7422 44.5334 32.6844ZM39.9467 40.9244H43.3956C43.4934 43.12 43.8579 45.2889 44.5334 46.9422C42.1067 45.8844 40.3379 43.6266 39.9467 40.9244ZM50.7379 46.9422C51.4134 45.2889 51.7868 43.12 51.8756 40.9244H55.3245C54.9334 43.6266 53.1556 45.8844 50.7379 46.9422Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":rp:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":rq:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":rr:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":rs:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":rt:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":ro:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rp:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rq:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rr:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rs:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rt:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for TV renders correctly for TV when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="TV-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":ri:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M51.5023 43.9287H12.4979C11.2712 43.9287 10.2756 42.9331 10.2756 41.7064V16.4442C10.2756 15.2176 11.2712 14.222 12.4979 14.222H51.5023C52.729 14.222 53.7245 15.2176 53.7245 16.4442V41.7064C53.7245 42.9331 52.729 43.9287 51.5023 43.9287ZM12.4979 41.7064H51.5023V16.4442H12.4979V41.7064ZM44.5156 47.5909H19.4845V49.8131H44.5156V47.5909ZM28.7645 23.182V34.9598L38.1868 29.0753L28.7645 23.182Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":rj:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":rk:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":rl:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":rm:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":rn:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":ri:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for TV renders correctly for TV when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="TV-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":rc:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M51.5023 43.9287H12.4979C11.2712 43.9287 10.2756 42.9331 10.2756 41.7064V16.4442C10.2756 15.2176 11.2712 14.222 12.4979 14.222H51.5023C52.729 14.222 53.7245 15.2176 53.7245 16.4442V41.7064C53.7245 42.9331 52.729 43.9287 51.5023 43.9287ZM12.4979 41.7064H51.5023V16.4442H12.4979V41.7064ZM44.5156 47.5909H19.4845V49.8131H44.5156V47.5909ZM28.7645 23.182V34.9598L38.1868 29.0753L28.7645 23.182Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":rd:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":re:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":rf:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":rg:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":rh:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":rc:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rd:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":re:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rf:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rg:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":rh:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Thuis Veilig Online renders correctly for Thuis Veilig Online when disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "transparent",
+      "borderColor": "#999999",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Thuis Veilig Online-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r1a:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M31.9797 51.6333H14.8864C13.4108 51.6333 12.2197 50.4422 12.2197 48.9667V27.2956L30.2108 11.34C31.2242 10.4422 32.7353 10.4422 33.7486 11.34L51.7397 27.2867V30.5222H49.5175V28.2822L31.9797 12.7444L14.4419 28.2911V49.4111H31.9797V51.6333ZM38.9487 43.4556L42.7532 47.26L48.4421 40.4333L46.7354 39.0111L42.6021 43.9711L40.5221 41.8822L38.9487 43.4556ZM33.8286 43.6867C33.8286 49.1533 38.2731 53.5978 43.7397 53.5978C49.2064 53.5978 53.6508 49.1533 53.6508 43.6867V35.3933L43.7397 31.6778L33.8286 35.3933V43.6867ZM36.0508 43.6867V36.9311L43.7397 34.0422L51.4286 36.9311V43.6867C51.4286 47.9267 47.9797 51.3756 43.7397 51.3756C39.4997 51.3756 36.0508 47.9267 36.0508 43.6867Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r1b:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1c:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1d:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1e:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r1f:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r1a:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          fillOpacity={1}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "payload": 4288256409,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
+exports[`AppIcon component for Thuis Veilig Online renders correctly for Thuis Veilig Online when not disabled 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "flex-start",
+      "backgroundColor": "#000000",
+      "borderColor": "#00000000",
+      "borderRadius": 12,
+      "borderWidth": 0,
+      "height": 64,
+      "justifyContent": "center",
+      "width": 64,
+    }
+  }
+  testID="Thuis Veilig Online-test"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight={64}
+    bbWidth={64}
+    fill="none"
+    focusable={false}
+    height={64}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    vbHeight={64}
+    vbWidth={64}
+    width={64}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name=":r14:"
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M31.9797 51.6333H14.8864C13.4108 51.6333 12.2197 50.4422 12.2197 48.9667V27.2956L30.2108 11.34C31.2242 10.4422 32.7353 10.4422 33.7486 11.34L51.7397 27.2867V30.5222H49.5175V28.2822L31.9797 12.7444L14.4419 28.2911V49.4111H31.9797V51.6333ZM38.9487 43.4556L42.7532 47.26L48.4421 40.4333L46.7354 39.0111L42.6021 43.9711L40.5221 41.8822L38.9487 43.4556ZM33.8286 43.6867C33.8286 49.1533 38.2731 53.5978 43.7397 53.5978C49.2064 53.5978 53.6508 49.1533 53.6508 43.6867V35.3933L43.7397 31.6778L33.8286 35.3933V43.6867ZM36.0508 43.6867V36.9311L43.7397 34.0422L51.4286 36.9311V43.6867C51.4286 47.9267 47.9797 51.3756 43.7397 51.3756C39.4997 51.3756 36.0508 47.9267 36.0508 43.6867Z"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGClipPath>
+        <RNSVGLinearGradient
+          gradient={
+            [
+              0.777327,
+              -6837761,
+              1,
+              -8344833,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name=":r15:"
+          x1="64"
+          x2="8.2695"
+          y1="-0.000211928"
+          y2="70.5337"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.65,
+              -5585153,
+              0.84,
+              -7623169,
+              1,
+              9154047,
+            ]
+          }
+          gradientTransform={
+            [
+              12.352640355320807,
+              73.82438328047245,
+              -45.165108456736874,
+              7.557236736479494,
+              34.1925,
+              -3.07197,
+            ]
+          }
+          gradientUnits={1}
+          name=":r16:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0,
+              -6976260,
+              0.33941,
+              -6976260,
+              0.739171,
+              -5659649,
+              1,
+              11117567,
+            ]
+          }
+          gradientTransform={
+            [
+              8.21454796064143,
+              51.11260895368502,
+              -33.373936474386,
+              5.363682414502906,
+              46.2691,
+              26.3235,
+            ]
+          }
+          gradientUnits={1}
+          name=":r17:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.578582,
+              -5335832,
+              0.697843,
+              -6976001,
+              1,
+              9998076,
+            ]
+          }
+          gradientTransform={
+            [
+              15.50668731580619,
+              59.80701836448474,
+              -32.069488800017204,
+              8.314936086078529,
+              42.6029,
+              6.97377,
+            ]
+          }
+          gradientUnits={1}
+          name=":r18:"
+          rx="1"
+          ry="1"
+        />
+        <RNSVGRadialGradient
+          cx="0"
+          cy="0"
+          fx="0"
+          fy="0"
+          gradient={
+            [
+              0.00787439,
+              -28338,
+              0.565,
+              -611693,
+              0.708535,
+              -2120780,
+              1,
+              14656436,
+            ]
+          }
+          gradientTransform={
+            [
+              3.0319376826910473e-15,
+              49.5153,
+              -37.0363,
+              2.2678193123630557e-15,
+              41.0544,
+              -3.35148,
+            ]
+          }
+          gradientUnits={1}
+          name=":r19:"
+          rx="1"
+          ry="1"
+        />
+      </RNSVGDefs>
+      <RNSVGGroup
+        clipPath=":r14:"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r15:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r16:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r17:",
+              "type": 1,
+            }
+          }
+          fillOpacity={0.9}
+          propList={
+            [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r18:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+        <RNSVGPath
+          d="M64 -0.000213623H0V63.9998H64V-0.000213623Z"
+          fill={
+            {
+              "brushRef": ":r19:",
+              "type": 1,
+            }
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;

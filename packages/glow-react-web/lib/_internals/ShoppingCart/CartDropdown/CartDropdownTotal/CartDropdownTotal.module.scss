@@ -1,0 +1,24 @@
+@use "@odido-portals/glow-tokens/navigation-atoms-panels";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(cart-dropdown-total,
+    navigation-atoms-panels) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: var(--components-navigation-atoms-panels-cart-dropdown-total-gap-vertical-default);
+}
+
+.label {
+    color: var(--components-navigation-atoms-panels-cart-dropdown-total-color-text-default);
+    flex: 1 0 0;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--components-navigation-atoms-panels-cart-dropdown-total-gap-horizontal-default);
+    align-self: stretch;
+}

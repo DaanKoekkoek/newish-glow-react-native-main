@@ -1,0 +1,119 @@
+name: Deploy Nextjs examples
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+env:
+  pnpm_config_cache: D:\.pnpm-store\
+  GITHUB_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set target folder environment variable
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "TARGET_FOLDER=" >> $GITHUB_ENV
+          else
+            echo "TARGET_FOLDER=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+          cache-dependency-path: "**/pnpm-lock.yaml"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install zip
+        run: sudo apt-get install zip
+
+      - name: Build Glow React Web packages
+        run: pnpm run grw:build
+
+      - name: Build static NextJS page
+        run: pnpm run grw:example-build
+
+      - name: Verify NextJS build output
+        run: |
+          if [ ! -d "examples/nextjs-web-ds/out" ]; then
+            echo "Error: NextJS build for Glow React Web is missing!"
+            exit 1
+          fi
+
+      - name: Generate zip
+        run: |
+          cd ${{ github.workspace }}/examples/nextjs-web-ds/out
+          zip -r ${{ github.workspace }}/nextjs-example-${{ env.TARGET_FOLDER }}.zip .
+
+      - name: Upload NextJS example
+        uses: actions/upload-artifact@v4
+        with:
+          name: nextjs-example-${{ env.TARGET_FOLDER }}
+          path: ${{ github.workspace }}/nextjs-example-${{ env.TARGET_FOLDER }}.zip
+          if-no-files-found: error
+
+  deploy:
+    needs: build
+    if: success()
+    runs-on: glow-react-native--ubuntu-large
+
+    steps:
+      - name: Set target folder environment variable
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "TARGET_FOLDER=" >> $GITHUB_ENV
+          else
+            echo "TARGET_FOLDER=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+
+      - name: Download NextJS example artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: nextjs-example-${{ env.TARGET_FOLDER }}
+
+      - name: Verify successful download
+        run: |
+          if [[ -f "${{ github.workspace }}/nextjs-example-${{ env.TARGET_FOLDER }}.zip" ]]; then
+            echo "$FILE exists."
+          else
+            echo "Error: $FILE does not exist."
+            exit 1
+          fi
+
+      - name: Login via Azure CLI
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI script
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az account show
+
+      - name: Azure CLI script deployment NextJS example page
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az webapp deploy \
+              --resource-group odido-portals-fasttrack-cicd \
+              --name fasttrack-cicd-webapp-unity \
+              --type zip \
+              --src-path ${{ github.workspace }}/nextjs-example-${{ env.TARGET_FOLDER }}.zip \
+              --target-path "/home/site/wwwroot-react-examples"

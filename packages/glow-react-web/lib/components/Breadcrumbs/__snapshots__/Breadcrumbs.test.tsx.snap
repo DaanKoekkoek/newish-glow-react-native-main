@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumbs /> renders more than two breadcrumbs 1`] = `
+<div>
+  <span
+    class="visible-below-tablet"
+    data-testid="visible"
+  >
+    <div
+      class="breadcrumbs gap-horizontal"
+    >
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 1
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <input
+        class="breadcrumb-toggle"
+        id="breadcrumbs-expand"
+        type="checkbox"
+      />
+      <label
+        class="gap-default middle-dots"
+        for="breadcrumbs-expand"
+      >
+        <strong
+          class="strong strong-size-sm label"
+          data-testid="strong"
+        >
+          ...
+        </strong>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </label>
+      <div
+        class="middle-item"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 2
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="middle-item"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 3
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link disabled"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 4
+          </span>
+        </a>
+      </div>
+    </div>
+  </span>
+  <span
+    class="visible-above-tablet"
+    data-testid="visible"
+  >
+    <div
+      class="breadcrumbs gap-horizontal"
+    >
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 1
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 2
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 3
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link disabled"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 4
+          </span>
+        </a>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`<Breadcrumbs /> renders one breadcrumb 1`] = `
+<div>
+  <div
+    class="breadcrumbs gap-default"
+  >
+    <span
+      aria-hidden="true"
+      class="icon icon-size-sm outline icon"
+      data-icon="chevron-left"
+      data-testid="icon"
+    >
+      
+    </span>
+    <p
+      class="paragraph paragraph-size-sm label"
+      data-testid="paragraph"
+    >
+      <a
+        class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+        data-testid="text-link"
+      >
+        <span
+          class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+          lang="nl"
+        >
+          Breadcrumbs 1
+        </span>
+      </a>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Breadcrumbs /> renders two breadcrumbs 1`] = `
+<div>
+  <span
+    class="visible-below-tablet"
+    data-testid="visible"
+  >
+    <div
+      class="breadcrumbs gap-horizontal"
+    >
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 1
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link disabled"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 2
+          </span>
+        </a>
+      </div>
+    </div>
+  </span>
+  <span
+    class="visible-above-tablet"
+    data-testid="visible"
+  >
+    <div
+      class="breadcrumbs gap-horizontal"
+    >
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 1
+          </span>
+        </a>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline icon"
+          data-icon="chevron-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </div>
+      <div
+        class="gap-default"
+      >
+        <a
+          class="text-link size-sm text-only columnGap breadcrumb-link text-link disabled"
+          data-testid="text-link"
+        >
+          <span
+            class="base-text base-paragraph text-link-text breadcrumb-link text-link-text"
+            lang="nl"
+          >
+            Breadcrumbs 2
+          </span>
+        </a>
+      </div>
+    </div>
+  </span>
+</div>
+`;

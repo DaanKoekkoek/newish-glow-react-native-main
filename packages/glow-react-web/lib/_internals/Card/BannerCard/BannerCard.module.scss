@@ -1,0 +1,104 @@
+@use "@odido-portals/glow-tokens/card-banner";
+@use "@odido-portals/glow-tokens/card-atoms-color";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$directions: vertical, horizontal;
+
+@include mixins.token-scope(
+    banner-card,
+    (card-banner, card-atoms-color, color-text)
+) {}
+
+.banner-card {
+    background-color: var(--components-card-banner-card-color-background-default);
+    border-radius: var(--components-card-banner-card-radius-default);
+    color: var(--components-card-atoms-color-text-default);
+    overflow: hidden;
+    padding: var(--components-card-banner-card-padding-vertical) var(--components-card-banner-card-padding-horizontal);
+    position: relative;
+
+    button, a {
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+        }
+    }
+
+    &:has(button, a):hover {
+        box-shadow: inset 0 0 0 var(--components-card-banner-card-border-width-hover) var(--components-card-banner-card-color-border-hover);
+
+        picture {
+            pointer-events: none;
+        }
+    }
+
+    @each $palette in config.$odido-palette {
+        @each $variant in (default, emphasised) {
+            &.banner-card-variant-#{$variant}.banner-card-palette-#{$palette} {
+                background-color: var(--components-card-banner-card-color-background-#{$variant}-palette-#{$palette}, var(--components-card-banner-card-color-background-#{$variant}));
+            }
+        }
+    
+        &.banner-card-palette-#{$palette}:not(.banner-card-variant-emphasised) .banner-card-heading-highlight {
+            color: var(--semantics-color-text-strong-palette-#{$palette});
+        }
+    }
+}
+
+.banner-card-image {
+  border-radius: var(--components-card-banner-card-radius-visual);
+  overflow: hidden;
+}
+
+@each $direction in $directions {
+    .banner-card-direction-#{$direction} {
+        display: flex;
+        gap: var(--components-card-banner-card-gap-#{$direction}-default);
+
+        @if $direction == "vertical" {
+            flex-direction: column;
+        } @else {
+            .banner-card-image {
+                width: var(--components-card-banner-card-size-visual-width);
+            }
+        }
+    }
+
+    @each $breakpoint, $value in config.$global-min-width {
+        @media (min-width: $value) {
+            .banner-card-direction-#{$direction}-#{$breakpoint} {
+                display: flex;
+                gap: var(--components-card-banner-card-gap-#{$direction}-default);
+    
+                @if $direction == "vertical" {
+                    flex-direction: column;
+                } @else {
+                    flex-direction: row;
+
+                    .banner-card-image {
+                        width: var(--components-card-banner-card-size-visual-width);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--components-card-banner-card-gap-vertical-body);
+    flex: 1 0 0;
+}
+
+.banner-card-content {
+    display: flex;
+    gap: var(--components-card-banner-card-gap-horizontal-default);
+    align-self: stretch;
+    align-items: center;
+    flex: 1;
+}

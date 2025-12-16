@@ -1,0 +1,74 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as RadioButtonGroupStories from "./RadioButtonGroup.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={RadioButtonGroupStories} />
+
+# RadioButtonGroup
+
+### Token version: {getComponentVersion("radio-button-group.v1")}
+
+The `RadioButtonGroup` component is used to group multiple `<RadioButton />` components, allowing users to select one option from a predefined set.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- `onPress` became `onChange`. The prop previously named onPress has been renamed to onChange for better alignment with standard form input behavior.
+- The `state` prop has been removed in favor of using explicit props for different states. Now, instead of `state="error"` or `state="disabled"`, you can directly use:
+  - `validated: { success: false, message: "Error message" }` → Triggers the error state
+  - `disabled` → Disables the component
+
+## Purpose
+
+`RadioButtonGroup` provides a consistent and accessible way to group radio button options. It ensures that only one option can be selected at a time and supports features like validation, helper text, and disabling the entire group.
+
+## Usage
+
+For better server-side rendering (SSR) compatibility, `RadioButtonGroup` itself does not manage internal state. In the examples below, states are managed via `useState`. This ensures that the selected option updates correctly without relying on client-side state within the component.
+Below is an example of how you could consume the radio button and make it controlled.
+
+```jsx
+import { useState } from "react";
+import { useTheme } from "@odido-portals/glow-react-web/theme-provider";
+import { RadioButtonGroup, type RadioButtonGroupProps } from "@odido-portals/glow-react-web/radio-button-group";
+
+const Component = ({options, ...props}: RadioButtonGroupProps) => {
+    const [selected, setSelected] = useState(
+      options.find((option) => option.checked)?.value
+    );
+
+    const { brand } = useTheme();
+
+    const handleSelection = (value?: string | number | readonly string[] | undefined) => {
+      setSelected(value);
+    };
+
+    const optionsWithState = options.map((option) => ({
+      ...option,
+      checked: option.value === selected,
+    }));
+
+    return <RadioButtonGroup {...props} brand={brand} options={optionsWithState} onChange={handleSelection} validated={selected ? { success: true } : props.validated} />;
+}
+```
+
+### Default Example
+
+This example shows a `RadioButtonGroup` with three options, one of which is preselected.
+
+<Canvas of={RadioButtonGroupStories.Default} />
+<Controls of={RadioButtonGroupStories.Default} />
+
+### Error State
+
+Use the `validated: { success: false, message: "message" }` prop to display an error message when validation fails.
+
+<Canvas of={RadioButtonGroupStories.Error} />
+
+### Disabled State
+
+The `disabled` prop prevents user interaction with all radio buttons in the group.
+
+<Canvas of={RadioButtonGroupStories.Disabled} />

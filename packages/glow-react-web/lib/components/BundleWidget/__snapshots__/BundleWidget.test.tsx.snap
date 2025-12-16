@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BundleWidget /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="bundle-widget bundle-widget-palette-default"
+    data-testid="bundle-widget"
+  >
+    <div
+      class="bundle-widget-graph"
+      style="--used-scale: 0.25;"
+    >
+      <div
+        class="bundle-widget-bar"
+      >
+        <div
+          class="bundle-widget-fill"
+        />
+        <div
+          class="bundle-widget-content-left"
+        >
+          <p
+            class="display display-size-sm bundle-widget-remaining-value"
+            lang="nl"
+          >
+            12,5
+          </p>
+          <span
+            class="bundle-widget-unit"
+          >
+            GB
+          </span>
+        </div>
+        <div
+          class="bundle-widget-content-right"
+        >
+          <div
+            class="bundle-widget-content-title"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-sm outline bundle-widget-content-icon"
+              data-icon="unlimited"
+              data-testid="icon"
+            >
+              
+            </span>
+            Title
+          </div>
+          <div
+            class="bundle-widget-content-total"
+          >
+            50 GB
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

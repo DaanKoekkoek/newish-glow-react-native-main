@@ -1,0 +1,29 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    cart-details,
+    shopping-cart-shopping-cart-v1
+) {
+    border-radius: var(--components-shopping-cart-shopping-cart-v1-radius-cart-details-background-default);
+    padding: var(--components-shopping-cart-shopping-cart-v1-padding-cart-details-vertical) var(--components-shopping-cart-shopping-cart-v1-padding-cart-details-horizontal);    display: flex;
+    flex-direction: column;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-lg);
+}
+
+@each $palette in config.$odido-palette {
+    .cart-details-palette-#{$palette} {
+        background-color: var(--components-shopping-cart-shopping-cart-v1-color-cart-details-background-default-palette-#{$palette}, var(--components-shopping-cart-shopping-cart-v1-color-cart-details-background-default));
+    }
+  }
+
+.category-title {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-cart-category-text-default);
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-default);
+}

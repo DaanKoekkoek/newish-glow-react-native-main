@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Strong component should apply correct center align 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Strong",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+        "textAlign": "center",
+      },
+      undefined,
+    ]
+  }
+  testID="strong"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Strong component should apply correct font 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Strong",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+  testID="strong"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Strong component should apply correct letterSpacing 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Strong",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+  testID="strong"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Strong component should apply correct lineheight 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Strong",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+  testID="strong"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Strong component should apply correct size 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Strong",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+      },
+      undefined,
+    ]
+  }
+  testID="strong"
+>
+  Testing font
+</Text>
+`;

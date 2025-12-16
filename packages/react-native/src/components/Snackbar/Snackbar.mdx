@@ -1,0 +1,165 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Snackbar from "./Snackbar.stories";
+
+<Meta of={Snackbar} />
+
+# Snackbar
+
+The `<Snackbar />` component is used as a collection component with "snack" components as children.
+
+## Purpose
+
+The `<Snackbar />` can be used to give the user feedback on an action they performed.
+The snackbar is able to show multiple feedback messages at the same time.
+The component will stack, the different snacks from 'top' to 'bottom' or the reverse.
+
+## Usage
+
+### Component JSX
+
+The `<Snackbar />` can only be used if the **Application JSX** is wrapped within the `<SafeAreaProvider />` and the `<GestureHandlerRootView />`.
+Make sure you only import them one time in your application, and wrap them around the app at root level, so as high as possible in the component tree.
+Or if you use the `<Main />` component then you don't need to wrap you app in the `<GestureHandlerRootView />`. Because the already contains it.
+To make sure the `<StickyBar />` takes the safe areas into account you need to use `useSafeAreaContext()` hook to retrieve the safe inset values,
+and you need to pass the insets as `safeAreaInsets` prop into the `<Snackbar />` or if you are using the `<Main />` component, then you can pass it into the `<Main />`.
+
+**Example**:
+
+```jsx
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import {
+  SafeAreaProvider,
+  useSafeAreaContext,
+} from "react-native-safe-area-context";
+import { snackbarHelper, Snackbar } from "package-import-path-goes-here";
+import { useEffect } from "react";
+
+export default function App() {
+  const insets = useSafeAreaContext();
+
+  useEffect(() => {
+    snackbarHelper({ message: "Your message goes here.." });
+  }, []);
+
+  return (
+    <SafeAreaProvider>
+      <GestureHandlerRootView style={{ overflow: "hidden" }}>
+        <View>{/*The rest of your app*/}</View>
+        <Snackbar safeAreaInsets={insets} /> {/* <---- Add Here */}
+      </GestureHandlerRootView>
+    </SafeAreaProvider>
+  );
+}
+```
+
+or
+
+```jsx
+import {
+  SafeAreaProvider,
+  useSafeAreaContext,
+} from "react-native-safe-area-context";
+import { snackbarHelper } from "package-import-path-goes-here";
+import { useEffect } from "react";
+
+export default function App() {
+  const insets = useSafeAreaContext();
+
+  useEffect(() => {
+    snackbarHelper({ message: "Your message goes here.." });
+  }, []);
+
+  return (
+    <SafeAreaProvider>
+      <Main safeAreaInsets={insets}>{/*The rest of your app*/}</Main>
+    </SafeAreaProvider>
+  );
+}
+```
+
+### snackbarHelper() API
+
+The `snackbarHelper` function can be used to 'add', 'update', 'dismiss'(leaving the viewport) or 'remove'(instant removal) snacks.
+
+#### Adding:
+
+To add a snack to the snackbar you can import the `snackbarHelper`. To add a snack to the snackbar you can call the function
+with een object of options. See the options listed below:
+
+- **id**: The unique identifier of the snack. This identifier can be used to dismiss or remove a snack in a programmatic way.
+  The with adding a snack you don't need to explicitly add an id, if the id is not provided it will generate an id automatically,
+  based on the time value of the current date `String(new Date().getTime())`.
+- **type**: The type which will affect the behavior and appearance of the snack.
+  There are 4 options:
+  - `'default'`: A message with the option to add an icon from the "glow-icon" package.
+  - `'error'`: An error message, typically used when a user interaction results in an successful action. It will appear with the `'status-error'` icon from the "glow-icon" package.
+  - `'loading'`: A message which indicates that the application is in a loading state. It will appear with the `<Spinner />` component and a `<Button />` component to cancel the action.
+  - `'success'`: A message which indicates a successful action. It will appear with the `'status-success'` icon from the `glow-icon` package.
+- **message**: The text that will appear within the snack.
+- **cancelButtonText**: The text that will appear within the cancel button. This is to overwrite the default button text.
+- **icon**: The custom icon that can be shown when the `type === 'default'`, this is an object which can contain the `name` and `solid` prop. You can add any icon from the "glow-icon" package.
+- **accessabilityMessage**: The additional message for accessability reasons. This will be picked up and will be pronounced by screen readers.
+- **duration**: Can be used to set the duration of the appearance, the duration is expressed in milliseconds. After the duration expired the exit animation starts.
+- **position**: To set the position of the snackbar relative to the viewport, it can be 'top' or 'bottom'.
+- **context**: This option can be passed if the snack only should be displayed on the specified locations. The default settings
+  is "persists". The 3 options are explained below are:
+  - `'persists'`: This will make sure the snack will persists through different instances of the `<Snackbar />`, for example if the
+    snack is added in the `<Main />` component and the user will open the `<Modal />`. The snack will persists between the
+    usage of the different components. This is the default option.
+  - `'default'`: When you only want to use the snack in a component which does not has an explicit high z-index (like a modal).
+  - `'modal'`: When you only want to use the snack in a `native-modal` component.
+- **isSwipeable**: Gives the used the option to dismiss the snack by swiping it back into de direction it entered the viewport, 'top' or 'bottom'.
+
+**Example**:
+
+```jsx
+snackbarHelper({
+  position: "bottom",
+  type: "default",
+  message: "Your message goes here...",
+  icon: { name: "chat", solid: true },
+});
+```
+
+#### Updating:
+
+To update a snack which is already present in the `<Snackbar />`, you need to use the `snackbarHelper`.
+To update a snack to the snackbar you can call the function
+with the same object of options which is listed under the **Adding** section above.
+But with the an update action you need pass the snack id explicitly with the options.
+The options that do not require a change. Do not needs to be passed as an option.
+
+**Example**:
+
+```jsx
+snackbarHelper({
+  id: "1",
+  message: "Your UPDATED message goes here...",
+});
+```
+
+#### Dismissing
+
+A dismiss action will make sure the snack will leave the viewport. You can dismiss all snacks at once, by leaving out the `id` parameter.
+
+```jsx
+snackbarHelper.dismiss(id);
+
+// or all at once
+
+snackbarHelper.dismiss();
+```
+
+#### Removing
+
+A remove action will make sure the snack will be removed instantly. You can remove all snacks at once, by leaving out the `id` parameter.
+
+**Example**:
+
+```jsx
+snackbarHelper.remove(id);
+
+// or all at once
+
+snackbarHelper.remove();
+```

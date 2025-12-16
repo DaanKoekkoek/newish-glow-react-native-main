@@ -1,0 +1,22 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SelectorImageStories from "./SelectorImage.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SelectorImageStories} />
+
+# SelectorImage
+
+### Token version: {getComponentVersion("selector-image.v1")}
+
+The `SelectorImage` component is a variant of the `Selector` designed for visually rich options with **images, labels, and pricing information**.  
+It is typically used for product cards, plans, or offers where imagery and descriptive text help users make a choice.
+
+### Vertical Example
+
+<Canvas of={SelectorImageStories.Vertical} />
+<Controls of={SelectorImageStories.Vertical} />
+
+### Horizontal Example
+
+<Canvas of={SelectorImageStories.Horizontal} />

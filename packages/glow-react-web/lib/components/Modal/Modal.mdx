@@ -1,0 +1,76 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ModalStories from "./Modal.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ModalStories} />
+
+# SSR Modal
+
+### Token version: {getComponentVersion("modal.v1")}
+
+To support server side rendering and ensure modals open correctly on initial load, you must include the following script once in your application's layout:
+
+```sh
+import SsrShowDialogScript from "@odido-portals/glow-react-web/ssr-show-dialog-script";
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html data-theme="odido-light" lang="en">
+      <head>
+        <SsrShowDialogScript />
+      </head>
+      <body>
+        <Main>
+          {children}
+        </Main>
+      </body>
+    </html>
+  )
+};
+```
+
+This script is responsible for rehydrating and syncing modal state between the server and client.
+
+When to Include It:
+
+- You are using SSR and modals might be rendered on the server.
+
+- You want to preserve the open state of the modal on hydration.
+
+- You're relying on modal behavior being immediately interactive after SSR.
+
+If you're only using the modal on the client side, you do not need to include this script.
+
+# Modal
+
+Modals focus the user's attention exclusively on one task or piece of information via a window that sits on top of the page content.
+
+<Canvas of={ModalStories.Basic} />
+<Controls of={ModalStories.Basic} />
+
+## Position Right
+
+<Canvas of={ModalStories.Right} />
+
+## Position Bottom
+
+<Canvas of={ModalStories.Bottom} />
+
+## Without footer
+
+<Canvas of={ModalStories.WithoutFooter} />
+
+## External triggers
+
+You also have the option to open or close the modal through external options.
+
+<Canvas of={ModalStories.OpenOrCloseWithoutTrigger} />
+
+## Wrap to content
+
+<Canvas of={ModalStories.WrapContent} />

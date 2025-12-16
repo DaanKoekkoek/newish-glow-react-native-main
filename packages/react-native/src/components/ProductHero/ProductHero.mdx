@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ProductHeroStories from "./ProductHero.stories";
+
+<Meta of={ProductHeroStories} />
+
+# Product Hero
+
+## Purpose
+
+A Product hero is a component that can display Status and content presented within LargeSticker over image background.
+
+LargeSticker can be used with two variants:
+
+- variant `USP` with List items
+- variant `default` with promotional description
+
+## Default
+
+A default version Product hero with status and LargeSticker.List
+
+<Canvas of={ProductHeroStories.Default} />
+<Controls of={ProductHeroStories.Default} />
+
+## Promo
+
+A promo version Product hero with status and LargeSticker.Price
+
+<Canvas of={ProductHeroStories.Promo} />
+<Controls of={ProductHeroStories.Promo} />

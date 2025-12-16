@@ -1,0 +1,59 @@
+@use "@odido-portals/glow-tokens/notifications-notify-bar-v1";
+@use "@odido-portals/glow-tokens/semantics-padding";
+@use "@odido-portals/glow-tokens/grid-margin";
+@use "@globals/mixins";
+
+$state: "default", "success", "error";
+
+@include mixins.token-scope(
+    notifybar,
+    (
+        notifications-notify-bar-v1,
+        padding,
+        margin
+    )
+) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--semantics-padding-150) var(--grid-margin);
+    gap: var(--components-notifications-notify-bar-v1-gap-vertical-default) var(--components-notifications-notify-bar-v1-gap-horizontal-lg);
+
+    @include mixins.above("laptop") {
+        flex-direction: row;
+    }
+
+    @each $st in $state {
+        &.state-#{$st} {
+            background: var(--components-notifications-notify-bar-v1-color-background-#{$st});
+        }
+    }
+}
+
+.notifybar-icon {
+    color: var(--components-notifications-notify-bar-v1-color-icon-default);
+}
+
+.notifybar-text {
+    color: var(--components-notifications-notify-bar-v1-color-text-default);
+}
+
+.notifybar-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--components-notifications-notify-bar-v1-gap-vertical-sm) var(--components-notifications-notify-bar-v1-gap-horizontal-default);
+
+    @include mixins.above("laptop") {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.notifybar-actions {
+    display: flex;
+    gap: var(--components-notifications-notify-bar-v1-gap-horizontal-default);
+}

@@ -1,0 +1,70 @@
+@use "@odido-portals/glow-tokens/badges-badge-status-v1";
+@use "@globals/mixins";
+
+$sizes: default, sm;
+$variants: default, information, error, success;
+
+@include mixins.token-scope(
+  badge-status,
+  badges-badge-status-v1
+) {}
+
+.badge-status {
+  align-items: center;
+  border-radius: var(--components-badges-badge-status-v1-radius-default);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@each $size in $sizes {
+    .badge-status-size-#{$size} {
+      height: var(--components-badges-badge-status-v1-size-badge-#{$size});
+      min-width: var(--components-badges-badge-status-v1-size-badge-#{$size});
+    }
+  }
+
+  @each $variant in $variants {
+    .badge-status-variant-#{$variant} {
+      @if $variant != "information" {
+        background-color: var(--components-badges-badge-status-v1-color-background-#{$variant});
+      } @else {
+        background-color: var(--components-badges-badge-status-v1-color-background-default);
+      }
+    }
+  }
+
+.badge-status-number {
+  color: var(--components-badges-badge-status-v1-color-text-default);
+  font-family: var(--components-badges-badge-status-v1-typography-font-family-default);
+}
+
+@each $size in $sizes {
+  .badge-status-size-#{$size}-number {
+    font-size: var(--components-badges-badge-status-v1-typography-font-size-#{$size});
+    letter-spacing: var(--components-badges-badge-status-v1-typography-letter-spacing-#{$size});
+    line-height: var(--components-badges-badge-status-v1-typography-line-height-#{$size});
+    padding: var(--components-badges-badge-status-v1-padding-vertical-number-#{$size})
+      var(--components-badges-badge-status-v1-padding-horizontal-number-#{$size});
+  }
+}
+
+.badge-status-icon {
+  color: var(--components-badges-badge-status-v1-color-icon-default);
+  line-height: 1;
+  width: auto;
+}
+
+@each $size in $sizes {
+    .badge-status-size-#{$size}-icon {
+      font-size: var(--components-badges-badge-status-v1-size-icon-#{$size});
+      padding: var(
+          --components-badges-badge-status-v1-padding-vertical-icon-#{$size}
+        )
+        var(
+          --components-badges-badge-status-v1-padding-horizontal-icon-#{$size}
+        );
+    }
+  }

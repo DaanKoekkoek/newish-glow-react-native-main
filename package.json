@@ -1,0 +1,95 @@
+{
+  "name": "glow-react-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm run grn:build && pnpm run grw:build",
+    "build:mock-components": "ts-node packages/react-native/utils/generateMockComponents.ts",
+    "clean": "bash ./.scripts/clean.sh",
+    "format": "prettier \"*.{js,jsx,ts,tsx,json,jsonc,css,scss,md}\" \"examples/**/*\" \"packages/**/*\" \".github/**/*\" \".vscode/**/*\" --write --ignore-unknown",
+    "format:components": "prettier  \"packages/react-native/src/**/*\" \"packages/glow-react-web/lib/**/*\"  --write --ignore-unknown",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "lint:ci": "eslint . --ext .js,.jsx,.ts,.tsx && prettier . --check && pnpm run lint:styles",
+    "lint:styles": "pnpm --filter \"@odido-portals/glow-react-web\" run lint:styles && pnpm --filter \"@odido-portals/glow-react-web\" run lint:styles:check",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "plop:grn": "pnpm --filter \"@odido-portals/glow-react-native\" plop",
+    "plop:grw": "pnpm --filter \"@odido-portals/glow-react-web\" plop",
+    "preinstall": "npx only-allow pnpm",
+    "prepublish-only": "husky install && pnpm run build",
+    "---testing": " ------------",
+    "test": "pnpm -r test --if-present",
+    "test:clear": "pnpm -r test:clear",
+    "test:update": "pnpm -r test -- -u",
+    "---publishing": " ------------",
+    "changeset": "pnpm exec changeset",
+    "changeset:publish": "pnpm exec changeset publish",
+    "changeset:version": "pnpm exec changeset version && pnpm run generate-versions --only-timeline",
+    "---storybook-glow-react-native": " ------------ @odido-portals/glow-storybook-react-native ------------ ",
+    "storybook:grn": "pnpm --filter \"@odido-portals/glow-storybook-react-native\" run storybook:web",
+    "storybook:build-grn": "pnpm --filter \"@odido-portals/glow-storybook-react-native\" run storybook:web-build",
+    "storybook:grn-ios": "pnpm --filter \"@odido-portals/glow-storybook-react-native\" run storybook-rn:ios",
+    "storybook:grn-android": "pnpm --filter \"@odido-portals/glow-storybook-react-native\" run storybook-rn:android",
+    "---vrt": " ------------ @odido-portals/glow-visual-regression-tests ------------ ",
+    "vrt:build": "pnpm --filter \"@odido-portals/glow-visual-regression-tests\" build:vrt:types",
+    "vrt:android-build": "pnpm --filter \"@odido-portals/glow-visual-regression-tests\" owl:android-build",
+    "vrt:android-test": "pnpm --filter \"@odido-portals/glow-visual-regression-tests\" owl:android-test",
+    "vrt:android-update": "pnpm --filter \"@odido-portals/glow-visual-regression-tests\" owl:android-update",
+    "---nextjs-web-ds": " ------------ @odido-portals/nextjs-web-ds ------------ ",
+    "grw:example-build": "pnpm --filter \"@odido-portals/nextjs-web-ds\" build",
+    "grw:example-dev": "pnpm --filter \"@odido-portals/nextjs-web-ds\" dev",
+    "grw:example-serve": "pnpm --filter \"@odido-portals/nextjs-web-ds\" build-serve && pnpm --filter \"@odido-portals/nextjs-web-ds\" start",
+    "---glow-react-native": " ------------ @odido-portals/glow-react-native ------------ ",
+    "grn:build": "pnpm --filter \"@odido-portals/glow-react-native\" build",
+    "grn:test-coverage": "pnpm --filter \"@odido-portals/glow-react-native\" test:coverage",
+    "---glow-react-web": " ------------ @odido-portals/glow-react-web ------------ ",
+    "grw:build": "pnpm --filter \"@odido-portals/glow-react-web\" build",
+    "grw:lint": "pnpm --filter \"@odido-portals/glow-react-web\" lint",
+    "grw:test": "pnpm --filter \"@odido-portals/glow-react-web\" test",
+    "grw:test-coverage": "pnpm --filter \"@odido-portals/glow-react-web\" test:coverage",
+    "storybook:grw": "pnpm --filter \"@odido-portals/glow-react-web\" run storybook",
+    "storybook:build-grw": "pnpm --filter \"@odido-portals/glow-react-web\" run storybook:build",
+    "generate-versions": "node .scripts/generate-token-versions.js"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "cross-var": "^1.1.0",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.1",
+    "eslint": "^8.56.0",
+    "eslint-config-universe": "^12.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.5",
+    "ts-morph": "^25.0.0",
+    "typescript": "catalog:current"
+  },
+  "pnpm": {
+    "overrides": {
+      "react-docgen-typescript": "2.2.2",
+      "@odido-portals/glow-icon>react-native": "catalog:current",
+      "@odido-portals/glow-icon>react": "catalog:current",
+      "@babel/core": "catalog:current"
+    },
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "react": "18.3.1"
+      }
+    }
+  },
+  "workspaces": [
+    "examples/storybook-react-native",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "20.19.4"
+  },
+  "dependencies": {
+    "flubber": "^0.4.2"
+  }
+}

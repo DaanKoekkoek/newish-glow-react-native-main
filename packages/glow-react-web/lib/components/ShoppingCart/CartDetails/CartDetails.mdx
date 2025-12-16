@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartDetails from "./CartDetails.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartDetails} />
+
+# CartDetails
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartDetails>` atom is used to display categorized line items within the Shopping Cart. It supports an optional `palette` prop to apply different visual themes and accepts one or more `<CartCategory>` components as children.
+
+Each `<CartCategory>` groups related line items under a shared title.
+
+### Basic example
+
+<Canvas of={CartDetails.Basic} />
+<Controls of={CartDetails.Basic} />

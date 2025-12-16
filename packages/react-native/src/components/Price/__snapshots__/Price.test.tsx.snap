@@ -1,0 +1,1758 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Price /> a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays VAT 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Regular",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 18,
+          "letterSpacing": 0.27000001072883606,
+          "lineHeight": 28,
+          "textAlign": "left",
+        },
+        {
+          "color": "#666666",
+          "fontSize": 14,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 16,
+        },
+      ]
+    }
+    testID="after_paragraph"
+  >
+    excl. btw
+  </Text>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59 exclusief btw
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays before value 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+      Van
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays currency despite value not containing currency 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁹⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    100,99
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays frequency 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "marginLeft": -2,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="frequency_display"
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59 per maand
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays frequency with asterix 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "marginLeft": -2,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="frequency_display"
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59 per maand
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays negative value 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="negative_display"
+      >
+        -
+      </Text>
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          5
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁹⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    -€ 5,99
+  </Text>
+</View>
+`;
+
+exports[`<Price /> displays properly with only value prop provided 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          5
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁹⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 5,99
+  </Text>
+</View>
+`;
+
+exports[`<Price /> sets inverted text color when inverted prop is provided 1`] = `
+<View
+  style={
+    {
+      "rowGap": 0,
+    }
+  }
+  testID="price"
+>
+  <View
+    aria-hidden={true}
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 14,
+          },
+        ]
+      }
+      testID="before_paragraph"
+    >
+       
+      <Text
+        style={
+          {
+            "textDecorationLine": "line-through",
+          }
+        }
+      >
+        €
+        100
+        ,59
+      </Text>
+    </Text>
+  </View>
+  <View
+    aria-hidden={true}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "odido_Display",
+            "fontSize": 24,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginBottom": 0,
+            "marginRight": 4,
+            "marginTop": 0,
+            "marginVertical": 32,
+            "textAlign": "left",
+          }
+        }
+        testID="currency_display"
+      >
+        €
+      </Text>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#ffffff",
+              "fontFamily": "odido_Display",
+              "fontSize": 24,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 28,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="whole_display"
+        >
+          100
+        </Text>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "bottom": 0,
+                "color": "#ffffff",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "left": 0,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "position": "absolute",
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            ,
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#ffffff",
+                "fontFamily": "odido_Display",
+                "fontSize": 24,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 28,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="decimals_display"
+          >
+            ⁵⁹
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "height": 1,
+        "margin": -1,
+        "opacity": 1e-8,
+        "overflow": "hidden",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": 1,
+        "zIndex": -10000,
+      }
+    }
+    testID="price-description_hidden"
+  >
+    € 100,59
+  </Text>
+</View>
+`;

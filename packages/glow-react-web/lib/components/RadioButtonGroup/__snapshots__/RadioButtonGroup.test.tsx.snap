@@ -1,0 +1,620 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButtonGroup /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="radio-button-group"
+    data-testid="radio-buttton-group"
+    id="radio-group-default"
+  >
+    <div
+      class="legend"
+      data-testid="radio-legend"
+    >
+      <span
+        class="base-text base-paragraph legend-label"
+      >
+        Legend
+      </span>
+      <span
+        class="info-container"
+      >
+        <p
+          class="paragraph paragraph-size-sm optional-text"
+          data-testid="paragraph"
+        >
+          Optional
+        </p>
+        <button
+          aria-label="Optional"
+          class="info-button"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline info-icon"
+            data-icon="status-info"
+            data-testid="info-icon"
+          >
+            
+          </span>
+        </button>
+      </span>
+    </div>
+    <div
+      class="radio-button-group-radios"
+    >
+      <div
+        class="radio-button"
+        data-testid="radio-buttton-group"
+      >
+        <input
+          checked=""
+          class="radio-button-input"
+          id="radio-default-1"
+          name="default"
+          type="radio"
+          value="value 1"
+        />
+        <label
+          class="base-text base-paragraph label radio-button-label"
+          data-testid="radio-buttton-group-label"
+          for="radio-default-1"
+        >
+          <span
+            aria-hidden="true"
+            class="glow-gradient glow4 radio-button-gradient"
+            data-testid="glow-gradient"
+            style="z-index: 0;"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+              viewBox="0 0 960 1080"
+              width="100%"
+            >
+              <g>
+                <g
+                  clip-path="url(#clip:r0:)"
+                >
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_linear_1_214-:r0:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_215-:r0:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_216-:r0:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_217-:r0:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_218-:r0:)"
+                  />
+                </g>
+                <defs>
+                  <lineargradient
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_linear_1_214-:r0:"
+                    x1="960"
+                    x2="3.57628e-05"
+                    y1="2.86102e-05"
+                    y2="1080"
+                  >
+                    <stop
+                      offset="0.777327"
+                      stop-color="var(--linear-stop-1)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--linear-stop-2)"
+                    />
+                  </lineargradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_215-:r0:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.66"
+                      stop-color="var(--radial-stop-1)"
+                    />
+                    <stop
+                      offset="0.84"
+                      stop-color="var(--radial-stop-2)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-3)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_216-:r0:"
+                    r="1"
+                  >
+                    <stop
+                      stop-color="var(--radial-stop-4)"
+                    />
+                    <stop
+                      offset="0.33941"
+                      stop-color="var(--radial-stop-5)"
+                    />
+                    <stop
+                      offset="0.739171"
+                      stop-color="var(--radial-stop-6)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-7)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_217-:r0:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.578582"
+                      stop-color="var(--radial-stop-8)"
+                    />
+                    <stop
+                      offset="0.697843"
+                      stop-color="var(--radial-stop-9)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-10)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_218-:r0:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.00787439"
+                      stop-color="var(--radial-stop-11)"
+                    />
+                    <stop
+                      offset="0.565"
+                      stop-color="var(--radial-stop-12)"
+                    />
+                    <stop
+                      offset="0.708535"
+                      stop-color="var(--radial-stop-13)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-14)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <clippath
+                    id="clip:r0:"
+                  >
+                    <path
+                      d="M0 0H960V1080H0z"
+                      fill="#fff"
+                    />
+                  </clippath>
+                </defs>
+              </g>
+            </svg>
+          </span>
+          <span
+            class="radio-button-label-text"
+          >
+            Radio 1
+          </span>
+        </label>
+      </div>
+      <div
+        class="radio-button"
+        data-testid="radio-buttton-group"
+      >
+        <input
+          class="radio-button-input"
+          id="radio-default-2"
+          name="default"
+          type="radio"
+          value="value 2"
+        />
+        <label
+          class="base-text base-paragraph label radio-button-label"
+          data-testid="radio-buttton-group-label"
+          for="radio-default-2"
+        >
+          <span
+            aria-hidden="true"
+            class="glow-gradient glow4 radio-button-gradient"
+            data-testid="glow-gradient"
+            style="z-index: 0;"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+              viewBox="0 0 960 1080"
+              width="100%"
+            >
+              <g>
+                <g
+                  clip-path="url(#clip:r1:)"
+                >
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_linear_1_214-:r1:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_215-:r1:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_216-:r1:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_217-:r1:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_218-:r1:)"
+                  />
+                </g>
+                <defs>
+                  <lineargradient
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_linear_1_214-:r1:"
+                    x1="960"
+                    x2="3.57628e-05"
+                    y1="2.86102e-05"
+                    y2="1080"
+                  >
+                    <stop
+                      offset="0.777327"
+                      stop-color="var(--linear-stop-1)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--linear-stop-2)"
+                    />
+                  </lineargradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_215-:r1:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.66"
+                      stop-color="var(--radial-stop-1)"
+                    />
+                    <stop
+                      offset="0.84"
+                      stop-color="var(--radial-stop-2)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-3)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_216-:r1:"
+                    r="1"
+                  >
+                    <stop
+                      stop-color="var(--radial-stop-4)"
+                    />
+                    <stop
+                      offset="0.33941"
+                      stop-color="var(--radial-stop-5)"
+                    />
+                    <stop
+                      offset="0.739171"
+                      stop-color="var(--radial-stop-6)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-7)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_217-:r1:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.578582"
+                      stop-color="var(--radial-stop-8)"
+                    />
+                    <stop
+                      offset="0.697843"
+                      stop-color="var(--radial-stop-9)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-10)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_218-:r1:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.00787439"
+                      stop-color="var(--radial-stop-11)"
+                    />
+                    <stop
+                      offset="0.565"
+                      stop-color="var(--radial-stop-12)"
+                    />
+                    <stop
+                      offset="0.708535"
+                      stop-color="var(--radial-stop-13)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-14)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <clippath
+                    id="clip:r1:"
+                  >
+                    <path
+                      d="M0 0H960V1080H0z"
+                      fill="#fff"
+                    />
+                  </clippath>
+                </defs>
+              </g>
+            </svg>
+          </span>
+          <span
+            class="radio-button-label-text"
+          >
+            Radio 2
+          </span>
+        </label>
+      </div>
+      <div
+        class="radio-button"
+        data-testid="radio-buttton-group"
+      >
+        <input
+          class="radio-button-input"
+          id="radio-default-3"
+          name="default"
+          type="radio"
+          value="value 3"
+        />
+        <label
+          class="base-text base-paragraph label radio-button-label"
+          data-testid="radio-buttton-group-label"
+          for="radio-default-3"
+        >
+          <span
+            aria-hidden="true"
+            class="glow-gradient glow4 radio-button-gradient"
+            data-testid="glow-gradient"
+            style="z-index: 0;"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+              viewBox="0 0 960 1080"
+              width="100%"
+            >
+              <g>
+                <g
+                  clip-path="url(#clip:r2:)"
+                >
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_linear_1_214-:r2:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_215-:r2:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_216-:r2:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_217-:r2:)"
+                  />
+                  <path
+                    d="M960 0H0v1080h960V0z"
+                    fill="url(#paint0_radial_1_218-:r2:)"
+                  />
+                </g>
+                <defs>
+                  <lineargradient
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_linear_1_214-:r2:"
+                    x1="960"
+                    x2="3.57628e-05"
+                    y1="2.86102e-05"
+                    y2="1080"
+                  >
+                    <stop
+                      offset="0.777327"
+                      stop-color="var(--linear-stop-1)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--linear-stop-2)"
+                    />
+                  </lineargradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_215-:r2:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.66"
+                      stop-color="var(--radial-stop-1)"
+                    />
+                    <stop
+                      offset="0.84"
+                      stop-color="var(--radial-stop-2)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-3)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_216-:r2:"
+                    r="1"
+                  >
+                    <stop
+                      stop-color="var(--radial-stop-4)"
+                    />
+                    <stop
+                      offset="0.33941"
+                      stop-color="var(--radial-stop-5)"
+                    />
+                    <stop
+                      offset="0.739171"
+                      stop-color="var(--radial-stop-6)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-7)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_217-:r2:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.578582"
+                      stop-color="var(--radial-stop-8)"
+                    />
+                    <stop
+                      offset="0.697843"
+                      stop-color="var(--radial-stop-9)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-10)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <radialgradient
+                    cx="0"
+                    cy="0"
+                    gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                    gradientUnits="userSpaceOnUse"
+                    id="paint0_radial_1_218-:r2:"
+                    r="1"
+                  >
+                    <stop
+                      offset="0.00787439"
+                      stop-color="var(--radial-stop-11)"
+                    />
+                    <stop
+                      offset="0.565"
+                      stop-color="var(--radial-stop-12)"
+                    />
+                    <stop
+                      offset="0.708535"
+                      stop-color="var(--radial-stop-13)"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="var(--radial-stop-14)"
+                      stop-opacity="0"
+                    />
+                  </radialgradient>
+                  <clippath
+                    id="clip:r2:"
+                  >
+                    <path
+                      d="M0 0H960V1080H0z"
+                      fill="#fff"
+                    />
+                  </clippath>
+                </defs>
+              </g>
+            </svg>
+          </span>
+          <span
+            class="radio-button-label-text"
+          >
+            Radio 3
+          </span>
+        </label>
+      </div>
+    </div>
+    <small
+      aria-live="polite"
+      class="base-text base-paragraph helper-message"
+      data-testid="helper-message"
+      id="radio-group-default-helper"
+    >
+      Helper
+    </small>
+  </div>
+</div>
+`;

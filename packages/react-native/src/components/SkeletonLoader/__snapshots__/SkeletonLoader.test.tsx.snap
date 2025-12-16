@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders most default skeleton loader 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ebebeb",
+      "borderRadius": 16,
+      "height": 96,
+      "overflow": "hidden",
+      "width": "100%",
+    }
+  }
+  testID="skeleton-loader"
+>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "translateX": -2000,
+            },
+          ],
+        },
+      }
+    }
+    style={
+      {
+        "height": "100%",
+        "transform": [
+          {
+            "translateX": -2000,
+          },
+        ],
+        "width": "200%",
+      }
+    }
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      colors={
+        [
+          4293651435,
+          14540253,
+          4292730333,
+          4292730333,
+          14540253,
+          4293651435,
+        ]
+      }
+      endPoint={
+        [
+          0.3,
+          1,
+        ]
+      }
+      startPoint={
+        [
+          0.7,
+          0,
+        ]
+      }
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;

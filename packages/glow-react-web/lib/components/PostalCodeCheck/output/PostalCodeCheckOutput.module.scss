@@ -1,0 +1,78 @@
+@use "@odido-portals/glow-tokens/postal-code-check-output-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  postal-code-output,
+  postal-code-check-output-v1
+) {
+  gap: var(--components-postal-code-check-output-v1-gap-vertical);
+  display: flex;
+  flex-direction: column;
+}
+
+.postal-code-output-description,
+.postal-code-output-content,
+.postal-code-output-definition-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.postal-code-output-container {
+  border-radius: var(--components-postal-code-check-output-v1-radius-default);
+
+  &.postal-code-output-state-information {
+    background-color: var(--components-postal-code-check-output-v1-color-background-information);
+  }
+
+  &.postal-code-output-state-success {
+    background-color: var(--components-postal-code-check-output-v1-color-background-success);
+  }
+}
+
+.postal-code-output-definition-lists {
+  /* NOTE: 8px since there's no token defined for this (yet). Hardcoded in Figma as well. */
+  padding: calc(var(--components-postal-code-check-output-v1-padding-input-vertical) + 8px) var(--components-postal-code-check-output-v1-padding-horizontal);
+  gap: var(--components-postal-code-check-output-v1-gap-input-vertical) var(--components-postal-code-check-output-v1-gap-input-horizontal);
+
+  @include mixins.above("tablet") {
+    flex-direction: row;
+
+    dl {
+      min-width: var(--components-postal-code-check-output-v1-size-min-width-definition-list);
+      flex: 1;
+    }
+  }
+}
+
+.postal-code-output-content {
+  gap: var(--components-postal-code-check-output-v1-gap-top-vertical);
+  padding: var(--components-postal-code-check-output-v1-padding-vertical) var(--components-postal-code-check-output-v1-padding-horizontal);
+}
+
+.postal-code-output-title {
+  align-items: center;
+  display: flex;
+  column-gap: var(--components-postal-code-check-output-v1-gap-title-horizontal);
+}
+
+.postal-code-output-description {
+  gap: var(--components-postal-code-check-output-v1-gap-content-vertical);
+}
+
+.postal-code-output-cta {
+    display: flex;
+    gap: var(--components-postal-code-check-output-v1-gap-call-to-action-vertical) var(--components-postal-code-check-output-v1-gap-call-to-action-horizontal);
+    flex-wrap: wrap;
+}
+
+.postal-code-output-address {
+  dt {
+    width: 100%;
+  }
+
+  .postal-code-output-address-wrapper {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+}

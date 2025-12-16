@@ -1,0 +1,42 @@
+@use "@odido-portals/glow-tokens/semantics-color-icon";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    technology,
+    color-icon
+) {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: min-content;
+
+    // NOTE: This token var(--components-postal-code-check-output-v1-size-icon-with-badge) seems 
+    // incorrect, in Figma its supposed to be 56px, but I get 28px from this.
+    height: 56px;
+
+    // Firefox width: min-content doesn't behave as expected
+    @-moz-document url-prefix() {
+        min-width: 56px;
+
+        &[data-technology="Klik & Klaar"] {
+            min-width: 46px;
+        }
+    }
+}
+
+.technology-icon {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    path {
+        fill: var(--semantics-color-icon-default);
+    }
+}
+
+.technology-badge {
+    grid-column: 3;
+    grid-row: 3;
+    place-self: end end;
+    margin-left: 4px;
+}   

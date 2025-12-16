@@ -1,0 +1,123 @@
+@use "@odido-portals/glow-tokens/lists-default-list-v1";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$default-list-sizes: default, sm;
+
+@include mixins.token-scope(
+    default-list,
+    (paragraph, lists-default-list-v1)
+) {
+    --left-column-item-color: var(--components-lists-default-list-v1-color-icon-default);
+    --right-column-color: var(--components-lists-default-list-v1-color-text-default);
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--list-gap);
+    padding: 0;
+    margin: 0;
+    counter-reset: numbers;
+    list-style-position: inside;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        gap: var(--list-item-gap);
+        color: var(--left-column-item-color);
+        font-size: var(--list-item-text-font-size);
+        line-height: var(--list-item-text-line-height);
+        letter-spacing: var(--list-item-text-letter-spacing);
+        font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+        font-weight: var(--components-foundations-typography-text-styles-v1-paragraph-font-weight-default);
+               
+        &.list-state-inactive {
+            color: var(--components-lists-default-list-v1-color-icon-inactive);
+        }
+
+        &.list-variant-bullet::before {
+            content: "•";
+            font-size: var(--list-item-text-font-size);
+            line-height: var(--list-item-text-line-height);
+            letter-spacing: var(--list-item-text-letter-spacing);
+            height: var(--components-lists-default-list-v1-size-icon);
+            width: var(--components-lists-default-list-v1-size-icon);
+            min-width: var(--components-lists-default-list-v1-size-icon);
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+        }
+
+        &.list-variant-numbered::before {
+            counter-increment: numbers;
+            content: counter(numbers) ". ";
+            font-size: var(--list-item-text-font-size);
+            line-height: var(--list-item-text-line-height);
+            letter-spacing: var(--list-item-text-letter-spacing);
+            height: var(--components-lists-default-list-v1-size-icon);
+            width: var(--components-lists-default-list-v1-size-icon);
+            min-width: var(--components-lists-default-list-v1-size-icon);
+            font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &.default-list-inverted {
+        --left-column-item-color: var(--components-lists-default-list-v1-color-icon-inverted-default);
+        --right-column-color: var(--components-lists-default-list-v1-color-text-inverted-default);
+
+
+    }
+
+    @each $size in $default-list-sizes {
+        &.default-list-size-#{$size} {
+            --list-item-text-font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-#{$size});
+            --list-item-text-line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-#{$size});
+            --list-item-text-letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-#{$size});
+            --list-item-gap: var(--components-lists-default-list-v1-gap-horizontal-#{$size});
+            --list-item-icon-padding-top: var(--components-lists-default-list-v1-padding-container-icon-default-#{$size}-top);
+            --list-gap: var(--components-lists-default-list-v1-gap-vertical-#{$size});
+
+            @if $size == "sm" {
+                li {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.default-list-icon {
+    align-self: flex-start;
+    color: var(--left-column-item-color);
+    height: var(--components-lists-default-list-v1-size-icon);
+    width: var(--components-lists-default-list-v1-size-icon);
+    padding-top: var(--list-item-icon-padding-top);
+
+    @each $palette in config.$odido-palette {
+        &.default-list-icon-palette-#{$palette} {
+            color: var(--components-lists-default-list-v1-color-icon-accent-palette-#{$palette}, var(--components-lists-default-list-v1-color-icon-accent));
+        }
+    }
+
+    .list-state-inactive & {
+        color: var(--components-lists-default-list-v1-color-icon-inactive);
+    }
+}
+
+.default-list-text {
+    color: var(--right-column-color);
+
+    &.default-list-text-root {
+        font-size: var(--list-item-text-font-size);
+        line-height: var(--list-item-text-line-height);
+        letter-spacing: var(--list-item-text-letter-spacing);
+        font-weight: var(--components-foundations-typography-text-styles-v1-paragraph-font-weight-default);
+    }
+
+    .list-state-inactive & {
+        color: var(--components-lists-default-list-v1-color-text-inactive);
+    }
+}

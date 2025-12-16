@@ -1,0 +1,90 @@
+@use "@odido-portals/glow-tokens/notifications-callout-v2";
+@use "@globals/mixins";
+
+$statuses: info, error, success, warning;
+
+@include mixins.token-scope(
+  callout,
+  notifications-callout-v2
+) {
+  display: flex;
+  padding: var(--components-notifications-callout-v2-padding-vertical) var(--components-notifications-callout-v2-padding-horizontal);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--components-notifications-callout-v2-gap-vertical-lg);
+  border: var(--components-notifications-callout-v2-border-width-default) solid var(--components-notifications-callout-v2-color-border-information);
+  border-radius: var(--components-notifications-callout-v2-radius-default);
+  flex: 1;
+
+  &.tip-position-default {
+    border-top-left-radius: var(--components-notifications-callout-v2-radius-default);
+
+    [data-theme^="odido-"] & {
+      border-bottom-left-radius: var(--components-notifications-callout-v2-radius-none);
+    }
+  }
+
+  &.tip-position-top {
+    border-bottom-left-radius: var(--components-notifications-callout-v2-radius-default);
+
+    [data-theme^="odido-"] & {
+      border-top-left-radius: var(--components-notifications-callout-v2-radius-none);
+    }
+  }
+
+  @each $status in $statuses {
+    $token-status: if($status == "info", "information", $status);
+
+    &.status-#{$status} {
+      border-color: var(--components-notifications-callout-v2-color-border-#{$token-status});
+
+      &.prominence-default {
+        background-color: var(--components-notifications-callout-v2-color-background-default-#{$token-status});
+        border-color: var(--components-notifications-callout-v2-color-border-#{$token-status});
+      }
+
+      &.prominence-subtle {
+        background-color: var(--components-notifications-callout-v2-color-background-subtle-#{$token-status});
+      }
+
+      .callout-header-icon {
+        color: var(--components-notifications-callout-v2-color-icon-#{$token-status});
+      }
+    }
+  }
+}
+
+.callout-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--components-notifications-callout-v2-gap-vertical-default);
+  align-self: stretch;
+}
+
+.callout-header {
+  display: flex;
+  align-items: center;
+  gap: var(--components-notifications-callout-v2-gap-horizontal-default);
+  align-self: stretch;
+}
+
+.callout-header-heading {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  color: var(--components-notifications-callout-v2-color-text-default);
+}
+
+.callout-paragraph {
+  color: var(--components-notifications-callout-v2-color-text-default);
+}
+
+.callout-call-to-actions {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--components-notifications-callout-v2-gap-horizontal-default);
+  align-self: stretch;
+  flex-wrap: wrap;
+}

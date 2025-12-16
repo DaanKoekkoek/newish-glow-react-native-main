@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartProduct from "./CartProduct.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartProduct} />
+
+# CartProduct
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartProduct>` atom is used to visually represent a product within the Shopping Cart. It displays an optional image, a product title, and a short description. The component supports theming through the `palette` prop, which modifies the background styling of the image container. It can be used within the `<ProductGroupList>` atom.
+
+### Basic example
+
+<Canvas of={CartProduct.Basic} />
+<Controls of={CartProduct.Basic} />

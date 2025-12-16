@@ -1,0 +1,90 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as FooterStories from "./Footer.stories";
+
+<Meta of={FooterStories} />
+
+# Footer
+
+The `Footer` component is a flexible and structured container for organizing sections of content. It provides a standardized layout that can include navigational elements, social icons, copyright information, and more. It ensures consistent styling and logical grouping of content, making it visually cohesive and user-friendly.
+
+**Note**: This component is still a work in progress. Style tokens are currently unavailable for this component, and some design aspects may be subject to change.
+
+## Purpose
+
+The `Footer` component is designed to organize and display information typically found at the bottom of a page, such as breadcrumbs, social links, or app store buttons. By breaking the content into distinct sections, it helps create a more navigable and accessible interface.
+
+## Composition
+
+The `Footer` component consists of several subcomponents, each with its specific purpose:
+
+- **`Footer.Top`**: Represents the upper section of the footer, often used for structured content like grids or navigation links.
+- **`Footer.Bottom`**: Represents the lower section of the footer, often used for additional information like copyright notices or smaller groups of items.
+- **`Footer.Grid`**: A flexible grid layout for organizing footer content into rows and columns. Makes use of the `<Grid />` component.
+- **`Footer.Breadcrumbs`**: A section dedicated to navigation breadcrumbs.
+- **`Footer.Assorted`**: A container for miscellaneous grouped elements.
+- **`Footer.AppStore`**: A section for displaying app store badges. Accepts `<StoreButton />` properties.
+- **`Footer.Socials`**: A section for social media links or icons.
+- **`Footer.Link`**: A link styled to match the footer's design. Accepts `<TextLink />` properties.
+- **`Footer.Icon`**: A reusable icon component for social links or other purposes. Accepts `<Icon />` properties.
+- **`Footer.Logo`**: A placeholder for a brand logo in the footer. Accepts `<Logos />` properties.
+
+## Usage
+
+The `Footer` component only allows specific child components such as `<Footer.Top />`, `<Footer.Bottom />`, or `<Footer.Breadcrumbs />`. This ensures a structured and maintainable layout.
+
+```jsx
+<Main
+  footerComponent={
+    <Footer>
+      <Footer.Breadcrumbs>
+        <Paragraph>Breadcrumb text</Paragraph>
+        <Footer.Link href="#">Breadcrumb link</Footer.Link>
+        <Footer.Link href="#">Breadcrumb link</Footer.Link>
+      </Footer.Breadcrumbs>
+      <Footer.Top>
+        <Footer.Grid>
+          <Footer.Grid.Column title="Column title 1" collapsible>
+            <Footer.Link href="#">Column link</Footer.Link>
+          </Footer.Grid.Column>
+          <Footer.Grid.Column title="Column title 2" collapsible>
+            <Footer.Link href="#">Column link</Footer.Link>
+          </Footer.Grid.Column>
+        </Footer.Grid>
+      </Footer.Top>
+      <Footer.Bottom copyright="© Copyright text">
+        <Footer.Grid>
+          <Footer.Grid.Column>
+            <Footer.Logo />
+          </Footer.Grid.Column>
+          <Footer.Grid.Column>
+            <Footer.Socials>
+              <Footer.Link href="#">
+                <Footer.Icon name="facebook" />
+              </Footer.Link>
+            </Footer.Socials>
+          </Footer.Grid.Column>
+          <Footer.Grid.Column>
+            <Footer.AppStores>
+              <Footer.Link href="#">
+                <Footer.AppStore brand="Apple" />
+              </Footer.Link>
+              <Footer.Link href="#">
+                <Footer.AppStore brand="Google" />
+              </Footer.Link>
+            </Footer.AppStores>
+          </Footer.Grid.Column>
+        </Footer.Grid>
+        <Footer.Assorted>
+          <Footer.Link href="#">Assorted link</Footer.Link>
+          <Footer.Link href="#">Assorted link</Footer.Link>
+        </Footer.Assorted>
+      </Footer.Bottom>
+    </Footer>
+  }
+></Main>
+```
+
+### Default Example
+
+<Canvas of={FooterStories.Default} />
+<Controls of={FooterStories.Default} />

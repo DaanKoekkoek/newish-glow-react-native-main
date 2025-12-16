@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserNavigation /> renders a stable snapshot 1`] = `
+<div>
+  <nav
+    class="user-navigation"
+    data-testid="user-navigation"
+  >
+    <div
+      class="container container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12 user-navigation-column"
+          data-testid="column"
+        >
+          <div
+            class="stack direction-row align-center justify-space-between gap-default wrap-wrap grow shrink stack-size-12 stack-column-12 user-navigation-stack"
+            data-testid="stack"
+          >
+            <a
+              class="text-link size-inherit text-only columnGap user-navigation-link user-navigation-avatar"
+              data-testid="text-link"
+              href="#"
+              initials="WL"
+            >
+              <div
+                class="stack direction-row align-center justify-flex-start gap-100 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+                data-testid="stack"
+              >
+                <div
+                  class="avatar avatar-size-default user-navigation-avatar-initials"
+                  data-testid="avatar"
+                >
+                  <span
+                    class="paragraph paragraph-size-sm"
+                    data-testid="paragraph"
+                  >
+                    WL
+                  </span>
+                </div>
+                <span>
+                  Content
+                </span>
+              </div>
+            </a>
+            <a
+              class="text-link size-inherit text-and-icon columnGap user-navigation-link"
+              data-testid="text-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline icon"
+                data-icon="logout"
+                data-testid="icon"
+              >
+                
+              </span>
+              <span
+                class="base-text base-paragraph text-link-text user-navigation-link-text"
+                lang="nl"
+              >
+                Uitloggen
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

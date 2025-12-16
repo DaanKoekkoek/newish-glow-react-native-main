@@ -1,0 +1,1599 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeatureCard component renders a background visual card correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  role="button"
+  style={
+    [
+      {
+        "borderRadius": 24,
+        "maxWidth": 343,
+        "minWidth": 304,
+        "overflow": "hidden",
+      },
+      false,
+      {
+        "backgroundColor": "#ecf2ff",
+      },
+    ]
+  }
+  testID="feature-card"
+>
+  <Image
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+        },
+      }
+    }
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP",
+      }
+    }
+    style={
+      {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "transform": [
+          {
+            "scale": 1,
+          },
+        ],
+        "width": "100%",
+      }
+    }
+  />
+  <ViewManagerAdapter_ExpoLinearGradient
+    colors={
+      [
+        3204448256,
+        0,
+        0,
+      ]
+    }
+    endPoint={
+      [
+        0,
+        0,
+      ]
+    }
+    locations={
+      [
+        0,
+        0.5,
+        1,
+      ]
+    }
+    startPoint={
+      [
+        0,
+        1,
+      ]
+    }
+    style={
+      {
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "gap": 16,
+          "justifyContent": "space-between",
+          "minHeight": 355,
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View />
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 16,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "flex-end",
+              "paddingBottom": 8,
+              "rowGap": 16,
+            }
+          }
+        >
+          <Text
+            accessibilityRole="header"
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#ffffff",
+                "fontFamily": "odido_Heading_Medium",
+                "fontSize": 28,
+                "fontWeight": "500",
+                "letterSpacing": 0.2800000011920929,
+                "lineHeight": 32,
+                "marginVertical": 0,
+                "textAlign": "left",
+              }
+            }
+            testID="heading"
+          >
+            test title
+          </Text>
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "odido_Paragraph_Regular",
+                },
+                {
+                  "color": "#000000",
+                  "fontSize": 22,
+                  "letterSpacing": 0,
+                  "lineHeight": 32,
+                  "textAlign": "left",
+                },
+                {
+                  "color": "#ffffff",
+                },
+              ]
+            }
+            testID="paragraph"
+          >
+            test description
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignSelf": "flex-end",
+            }
+          }
+        >
+          <Text
+            disabled={false}
+            style={
+              [
+                {
+                  "alignSelf": "flex-start",
+                  "pointerEvents": "none",
+                },
+                undefined,
+              ]
+            }
+            testID="button"
+          >
+            <View
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "backgroundColor": "rgba(255, 255, 255, 1)",
+                    "borderColor": "rgba(0, 0, 0, 0)",
+                  },
+                }
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgba(255, 255, 255, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                }
+              }
+              testID="button-visual"
+            >
+              <View
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "gap": 12,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text>
+                  <Text
+                    collapsable={false}
+                    jestAnimatedStyle={
+                      {
+                        "value": {
+                          "color": "rgba(0, 0, 0, 1)",
+                        },
+                      }
+                    }
+                    style={
+                      {
+                        "color": "rgba(0, 0, 0, 1)",
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={true}
+                      style={
+                        [
+                          {
+                            "fontFamily": "Icons_Outline_DEFAULT_odido",
+                            "fontSize": 24,
+                            "lineHeight": 24,
+                            "width": 24,
+                          },
+                          [
+                            {
+                              "display": "flex",
+                            },
+                            false,
+                          ],
+                        ]
+                      }
+                      testID="base-button-icon"
+                    >
+                      
+                    </Text>
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </ViewManagerAdapter_ExpoLinearGradient>
+</View>
+`;
+
+exports[`FeatureCard component renders a text card correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  role="button"
+  style={
+    [
+      {
+        "borderRadius": 24,
+        "maxWidth": 343,
+        "minWidth": 304,
+        "overflow": "hidden",
+      },
+      {
+        "backgroundColor": "none",
+      },
+      {
+        "backgroundColor": "#ecf2ff",
+      },
+    ]
+  }
+  testID="feature-card"
+>
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {
+          "opacity": 0,
+        },
+      }
+    }
+    style={
+      {
+        "flex": 1,
+        "height": "100%",
+        "opacity": 0,
+        "position": "absolute",
+        "width": "100%",
+        "zIndex": 2,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight="100%"
+      bbWidth="100%"
+      fill="none"
+      focusable={false}
+      height="100%"
+      meetOrSlice={1}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+      vbHeight={1080}
+      vbWidth={960}
+      width="100%"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGGroup
+            clipPath="clip0"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+          >
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint0_linear_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint1_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint2_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint3_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint4_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint5_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint6_radial_70_1096",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+          </RNSVGGroup>
+          <RNSVGDefs>
+            <RNSVGLinearGradient
+              gradient={
+                [
+                  0,
+                  -13591918,
+                  0.493323,
+                  -6970204,
+                ]
+              }
+              gradientTransform={null}
+              gradientUnits={1}
+              name="paint0_linear_70_1096"
+              x1={0}
+              x2={960}
+              y1={540}
+              y2={540}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -32885,
+                  0.574124,
+                  -858015301,
+                  1,
+                  14399931,
+                ]
+              }
+              gradientTransform={
+                [
+                  -960,
+                  0,
+                  0,
+                  -513.965,
+                  960,
+                  70.237,
+                ]
+              }
+              gradientUnits={1}
+              name="paint1_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -32885,
+                  0.555385,
+                  -855670901,
+                  1,
+                  16744331,
+                ]
+              }
+              gradientTransform={
+                [
+                  267.3265250873247,
+                  -225.2055437167033,
+                  268.3319698025894,
+                  318.51903764588747,
+                  910.4237990081651,
+                  765.2083362494316,
+                ]
+              }
+              gradientUnits={1}
+              name="paint2_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.100755,
+                  -32885,
+                  1,
+                  16744331,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  450.748,
+                  -730.944,
+                  0,
+                  1085.51,
+                  397.157,
+                ]
+              }
+              gradientUnits={1}
+              name="paint3_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -32885,
+                  0.561177,
+                  -855670901,
+                  0.906892,
+                  16744331,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  604.749,
+                  -991.173,
+                  0,
+                  960,
+                  -84.854,
+                ]
+              }
+              gradientUnits={1}
+              name="paint4_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.399652,
+                  -30661,
+                  0.741622,
+                  -28597,
+                  1,
+                  15707784,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  523.113,
+                  -1084.59,
+                  0,
+                  1010.43,
+                  1080,
+                ]
+              }
+              gradientUnits={1}
+              name="paint5_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.334739,
+                  -33491,
+                  1,
+                  16743725,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  -468.557,
+                  272.64,
+                  0,
+                  960,
+                  1080,
+                ]
+              }
+              gradientUnits={1}
+              name="paint6_radial_70_1096"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGClipPath
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              name="clip0"
+            >
+              <RNSVGPath
+                d="M0 0H960V1080H0z"
+                fill={
+                  {
+                    "payload": 4294967295,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+              />
+            </RNSVGClipPath>
+          </RNSVGDefs>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+          "height": "100%",
+          "position": "absolute",
+          "width": "100%",
+        },
+        {
+          "zIndex": 1,
+        },
+      ]
+    }
+    testID="glow-gradient"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight="100%"
+      bbWidth="100%"
+      fill="none"
+      focusable={false}
+      height="100%"
+      meetOrSlice={1}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": "100%",
+            "width": "100%",
+          },
+        ]
+      }
+      vbHeight={1080}
+      vbWidth={960}
+      width="100%"
+    >
+      <RNSVGGroup
+        fill={null}
+        propList={
+          [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGGroup
+            clipPath="clip0"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+          >
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint0_linear_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint1_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint2_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint3_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint4_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint5_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+            <RNSVGPath
+              d="M960 0H0v1080h960V0z"
+              fill={
+                {
+                  "brushRef": "paint6_radial_70_1095",
+                  "type": 1,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+          </RNSVGGroup>
+          <RNSVGDefs>
+            <RNSVGLinearGradient
+              gradient={
+                [
+                  0,
+                  -10702935,
+                  0.493323,
+                  -5719882,
+                ]
+              }
+              gradientTransform={null}
+              gradientUnits={1}
+              name="paint0_linear_70_1095"
+              x1={0}
+              x2={960}
+              y1={540}
+              y2={540}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -19783,
+                  0.574124,
+                  -858015301,
+                  1,
+                  14399931,
+                ]
+              }
+              gradientTransform={
+                [
+                  -960,
+                  0,
+                  0,
+                  -513.965,
+                  960,
+                  70.237,
+                ]
+              }
+              gradientUnits={1}
+              name="paint1_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -19783,
+                  0.555385,
+                  -855657799,
+                  1,
+                  16757433,
+                ]
+              }
+              gradientTransform={
+                [
+                  267.3265250873247,
+                  -225.2055437167033,
+                  268.3319698025894,
+                  318.51903764588747,
+                  910.4237990081651,
+                  765.2083362494316,
+                ]
+              }
+              gradientUnits={1}
+              name="paint2_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.100755,
+                  -19783,
+                  1,
+                  16757433,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  450.748,
+                  -730.944,
+                  0,
+                  1085.51,
+                  397.157,
+                ]
+              }
+              gradientUnits={1}
+              name="paint3_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0,
+                  -19783,
+                  0.561177,
+                  -855657799,
+                  0.906892,
+                  16757433,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  604.749,
+                  -991.173,
+                  0,
+                  960,
+                  -84.854,
+                ]
+              }
+              gradientUnits={1}
+              name="paint4_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.399652,
+                  -28597,
+                  0.741622,
+                  -28597,
+                  1,
+                  15707784,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  523.113,
+                  -1084.59,
+                  0,
+                  1010.43,
+                  1080,
+                ]
+              }
+              gradientUnits={1}
+              name="paint5_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGRadialGradient
+              cx={0}
+              cy={0}
+              fx={0}
+              fy={0}
+              gradient={
+                [
+                  0.334739,
+                  -33491,
+                  1,
+                  16743725,
+                ]
+              }
+              gradientTransform={
+                [
+                  0,
+                  -468.557,
+                  272.64,
+                  0,
+                  960,
+                  1080,
+                ]
+              }
+              gradientUnits={1}
+              name="paint6_radial_70_1095"
+              rx={1}
+              ry={1}
+            />
+            <RNSVGClipPath
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              name="clip0"
+            >
+              <RNSVGPath
+                d="M0 0H960V1080H0z"
+                fill={
+                  {
+                    "payload": 4294967295,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+              />
+            </RNSVGClipPath>
+          </RNSVGDefs>
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      {
+        "zIndex": 3,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "gap": 16,
+          "justifyContent": "space-between",
+          "minHeight": 355,
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            {
+              "display": "flex",
+              "justifyContent": "center",
+              "minHeight": 243,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              {
+                "color": "#000000",
+                "fontFamily": "odido_Display",
+                "fontSize": 42,
+                "letterSpacing": 0,
+                "lineHeight": 42,
+                "marginBottom": 0,
+                "marginTop": 0,
+                "marginVertical": 32,
+                "textAlign": "left",
+              }
+            }
+            testID="display"
+          >
+            test title
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "gap": 16,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "flex-end",
+              "paddingBottom": 8,
+              "rowGap": 16,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "odido_Paragraph_Regular",
+                },
+                {
+                  "color": "#000000",
+                  "fontSize": 22,
+                  "letterSpacing": 0,
+                  "lineHeight": 32,
+                  "textAlign": "left",
+                },
+                {
+                  "color": "#000000",
+                },
+              ]
+            }
+            testID="paragraph"
+          >
+            test description
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignSelf": "flex-end",
+            }
+          }
+        >
+          <Text
+            disabled={false}
+            style={
+              [
+                {
+                  "alignSelf": "flex-start",
+                  "pointerEvents": "none",
+                },
+                undefined,
+              ]
+            }
+            testID="button"
+          >
+            <View
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "backgroundColor": "rgba(0, 0, 0, 1)",
+                    "borderColor": "rgba(0, 0, 0, 0)",
+                  },
+                }
+              }
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgba(0, 0, 0, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                  "borderRadius": 100,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                  "paddingHorizontal": 24,
+                  "paddingVertical": 12,
+                }
+              }
+              testID="button-visual"
+            >
+              <View
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "gap": 12,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text>
+                  <Text
+                    collapsable={false}
+                    jestAnimatedStyle={
+                      {
+                        "value": {
+                          "color": "rgba(255, 255, 255, 1)",
+                        },
+                      }
+                    }
+                    style={
+                      {
+                        "color": "rgba(255, 255, 255, 1)",
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={true}
+                      style={
+                        [
+                          {
+                            "fontFamily": "Icons_Outline_DEFAULT_odido",
+                            "fontSize": 24,
+                            "lineHeight": 24,
+                            "width": 24,
+                          },
+                          [
+                            {
+                              "display": "flex",
+                            },
+                            false,
+                          ],
+                        ]
+                      }
+                      testID="base-button-icon"
+                    >
+                      
+                    </Text>
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FeatureCard component renders a visual card correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  role="button"
+  style={
+    [
+      {
+        "borderRadius": 24,
+        "maxWidth": 343,
+        "minWidth": 304,
+        "overflow": "hidden",
+      },
+      false,
+      {
+        "backgroundColor": "#ecf2ff",
+      },
+    ]
+  }
+  testID="feature-card"
+>
+  <View
+    style={
+      {
+        "gap": 16,
+        "justifyContent": "space-between",
+        "minHeight": 355,
+        "paddingHorizontal": 24,
+        "paddingVertical": 24,
+      }
+    }
+  >
+    <View>
+      <Image
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "transform": [
+                {
+                  "scale": 1,
+                },
+              ],
+            },
+          }
+        }
+        resizeMode="contain"
+        source={
+          {
+            "uri": "https://assets.odido.nl/305x450/8ca7287522/dvi-front-back_apple_iphone_15_kleur3_305x450_v1.png",
+          }
+        }
+        style={
+          {
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+        testID="visual"
+      />
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "gap": 16,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "flex-end",
+            "paddingBottom": 8,
+            "rowGap": 16,
+          }
+        }
+      >
+        <Text
+          accessibilityRole="header"
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Heading_Medium",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "letterSpacing": 0.2800000011920929,
+              "lineHeight": 32,
+              "marginVertical": 0,
+              "textAlign": "left",
+            }
+          }
+          testID="heading"
+        >
+          test title
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Regular",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 22,
+                "letterSpacing": 0,
+                "lineHeight": 32,
+                "textAlign": "left",
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+          testID="paragraph"
+        >
+          test description
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "alignSelf": "flex-end",
+          }
+        }
+      >
+        <Text
+          disabled={false}
+          style={
+            [
+              {
+                "alignSelf": "flex-start",
+                "pointerEvents": "none",
+              },
+              undefined,
+            ]
+          }
+          testID="button"
+        >
+          <View
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "backgroundColor": "rgba(0, 0, 0, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                },
+              }
+            }
+            style={
+              {
+                "alignItems": "center",
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+                "borderRadius": 100,
+                "borderStyle": "solid",
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+                "paddingHorizontal": 24,
+                "paddingVertical": 12,
+              }
+            }
+            testID="button-visual"
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text>
+                <Text
+                  collapsable={false}
+                  jestAnimatedStyle={
+                    {
+                      "value": {
+                        "color": "rgba(255, 255, 255, 1)",
+                      },
+                    }
+                  }
+                  style={
+                    {
+                      "color": "rgba(255, 255, 255, 1)",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "Icons_Outline_DEFAULT_odido",
+                          "fontSize": 24,
+                          "lineHeight": 24,
+                          "width": 24,
+                        },
+                        [
+                          {
+                            "display": "flex",
+                          },
+                          false,
+                        ],
+                      ]
+                    }
+                    testID="base-button-icon"
+                  >
+                    
+                  </Text>
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

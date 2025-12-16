@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Accordion from "./Accordion.stories";
+
+<Meta of={Accordion} />
+
+# Accordion Component
+
+## Basic Accordion
+
+The Accordion component is used to display collapsible content sections and allows users to select multiple items at once.
+It consists of a header and a content section that can be expanded or collapsed.
+
+### Props
+
+inverted: `boolean` default `false`
+
+<Canvas of={Accordion.Basic} />
+<Controls of={Accordion.Basic} />

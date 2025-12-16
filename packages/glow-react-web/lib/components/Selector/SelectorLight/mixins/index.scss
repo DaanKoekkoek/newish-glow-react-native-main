@@ -1,0 +1,45 @@
+@mixin direction($breakpoint: null) {
+    .is-direction-vertical#{$breakpoint} {
+        .selector-light-content {
+            flex-direction: column;
+        }
+
+        .selector-light-title {
+            text-align: center;
+        }
+
+        label::before {
+            grid-row: 3;
+            grid-column: 1 / -1;
+            justify-self: center;
+            margin-left: 0;
+            margin-bottom: var(--components-selector-padding-vertical-default);
+        }
+
+        &.is-checkbox .selector-light-content {
+            padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default) calc(var(--components-selector-padding-vertical-default) * 2 + var(--components-selector-gap-horizontal-default));
+        }
+    }
+
+    .is-direction-horizontal#{$breakpoint} {
+        .selector-light-content {
+            flex-direction: row;
+        }
+
+        .selector-light-title {
+            text-align: left;
+        }
+
+        label::before {
+            grid-column: 1;
+            grid-row: 2;
+            place-self: center start;
+            z-index: 1;
+            margin-left: var(--components-selector-padding-vertical-default);
+        }
+
+        &.is-checkbox .selector-light-content {
+            padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default) var(--components-selector-padding-vertical-default) calc(var(--components-selector-padding-vertical-default) * 2 + var(--components-selector-gap-horizontal-default));
+        }
+    }
+}

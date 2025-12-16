@@ -1,0 +1,230 @@
+@use "@odido-portals/glow-tokens/text-link-v1";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  text-link,
+  (
+    text-link-v1, 
+    paragraph,
+  )
+) {}
+
+@layer subcomponent {
+  .text-link-text {
+    color: var(--components-text-link-v1-color-text-default);
+    font-weight: 500;
+  
+    &.is-inverted {
+      color: var(--components-text-link-v1-color-text-inverted-default);
+    }
+  }
+  
+  .icon {
+    vertical-align: middle;
+    display: flex;
+    color: var(--components-text-link-v1-color-icon-default);
+  
+    &.is-inverted {
+      color: var(--components-text-link-v1-color-icon-inverted-default);
+    }
+  }
+  
+  .text-and-icon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: var(--components-text-link-v1-gap-default);
+    color: var(--components-text-link-v1-color-icon-default);
+  
+    // This condition is required to match the textlink alignment with paragraph contents.
+    &:has([data-icon="pdf"]) {
+      align-items: baseline;
+    }
+  
+    [data-icon="pdf"] {
+      transform: translateY(5px);
+    }
+  
+    &.is-inverted {
+      color: var(--components-text-link-v1-color-icon-inverted-default);
+    }
+  
+    &.size-xs {
+      gap: var(--components-text-link-v1-gap-sm);
+    }
+  }
+
+  .text-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--components-text-link-v1-color-text-default);
+  
+    &.text-only {
+      text-decoration: underline;
+    }
+  
+    &.has-ignore-stretched {
+      position: relative;
+      z-index: 1;
+    }
+  
+    &.is-stretched::before {
+      content: "";
+      inset: 0;
+      pointer-events: auto;
+      position: absolute;
+      z-index: 0;
+    }
+  
+    &.disabled,
+    &:disabled {
+      pointer-events: none;
+      color: var(--components-text-link-v1-color-text-inactive);
+  
+      .text-link-text {
+        color: var(--components-text-link-v1-color-text-inactive);
+        text-decoration: none;
+      }
+  
+      .icon {
+        color: var(--components-text-link-v1-color-icon-inactive);
+      }
+    }
+  
+    &:visited {
+      color: var(--components-text-link-v1-color-text-visited);
+  
+      .text-link-text {
+        color: var(--components-text-link-v1-color-text-visited);
+      }
+  
+      .icon {
+        color: var(--components-text-link-v1-color-icon-visited);
+      }
+    }
+  
+    &:hover {
+      text-decoration: none;
+  
+      .text-link-text {
+        color: var(--components-text-link-v1-color-text-hover);
+        text-decoration: underline;
+      }
+  
+      .icon {
+        color: var(--components-text-link-v1-color-icon-hover);
+      }
+  
+      &.text-only .text-link-text {
+        text-decoration: none;
+      }
+    }
+  
+    &:active {
+      color: var(--components-text-link-v1-color-text-pressed);
+      
+      span.text-link-text {
+        color: var(--components-text-link-v1-color-text-pressed);
+        text-decoration: none;
+      }
+  
+      .icon {
+        color: var(--components-text-link-v1-color-icon-pressed);
+      }
+  
+      &.text-only .text-link-text {
+        text-decoration: underline;
+      }
+    }
+  
+    &.is-inverted {
+      color: var(--components-text-link-v1-color-text-inverted-default);
+  
+      &:visited {
+        .text-link-text { 
+          color: var(--components-text-link-v1-color-text-inverted-visited);
+        }
+  
+        .icon {
+          color: var(--components-text-link-v1-color-icon-inverted-visited);
+        }
+      }
+  
+      &:active {
+        .text-link-text {
+           color: var(--components-text-link-v1-color-text-inverted-pressed);
+        }
+  
+        .icon {
+          color: var(--components-text-link-v1-color-icon-inverted-pressed);
+        }
+      }
+  
+      &:hover {
+        .text-link-text {
+          color: var(--components-text-link-v1-color-text-inverted-hover);
+        }
+    
+        .icon {
+          color: var(--components-text-link-v1-color-icon-inverted-hover);
+        }
+      }
+  
+      &.disabled,
+      &:disabled {
+        cursor: default;
+        color: var(--components-text-link-v1-color-text-inverted-inactive);
+  
+        .text-link-text {
+          color: var(--components-text-link-v1-color-text-inverted-inactive);
+  
+          :active & {
+            text-decoration: none;
+          }
+        }
+  
+        .icon {
+          color: var(--components-text-link-v1-color-icon-inverted-inactive);
+        }
+      }
+    }
+  
+    &.size-inherit {
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+    }
+  
+    &.size-lg {
+      font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-lg);
+      line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-lg);
+      letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-lg);
+    }
+  
+    &.size-default {
+      font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-default);
+      line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-default);
+      letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-default);
+    }
+  
+    &.size-sm {
+      font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+      line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+      letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+    }
+  
+    &.size-xs {
+      font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-xs);
+      line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-xs);
+      letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-xs);
+    }
+  
+    &.is-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+  }
+}

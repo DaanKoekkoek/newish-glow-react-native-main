@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stack /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="stack direction-column align-flex-start justify-flex-start gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+  >
+    <span>
+      Content 1
+    </span>
+    <span>
+      Content 2
+    </span>
+  </div>
+</DocumentFragment>
+`;

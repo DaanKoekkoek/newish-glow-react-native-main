@@ -1,0 +1,33 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PostalCodeCheckOutputStories from "./PostalCodeCheckOutput.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PostalCodeCheckOutputStories} />
+
+# PostalCodeCheck
+
+#### Token version: {getComponentVersion("postal-code-check-output.v1")}
+
+The `PostalCodeCheckOutput` component is used to display the result of a postal code lookup. It presents the user's address, available technology, promotional content, and actions they can take.
+
+## Purpose
+
+`PostalCodeCheckOutput` provides a structured layout to present address and TV availability information based on a user's postal code input.
+
+## Usage
+
+Wrap `PostalCodeCheckOutput` in a parent component that supplies postal code data, such as address and TV availability, based on user input.
+
+### Default
+
+<Canvas of={PostalCodeCheckOutputStories.Default} />
+<Controls of={PostalCodeCheckOutputStories.Default} />
+
+### Success state
+
+<Canvas of={PostalCodeCheckOutputStories.SuccessState} />
+
+### Full example
+
+<Canvas of={PostalCodeCheckOutputStories.Example} />

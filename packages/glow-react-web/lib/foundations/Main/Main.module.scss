@@ -1,0 +1,27 @@
+@use "@odido-portals/glow-tokens/foundations-focus";
+@use "@globals/mixins";
+
+@include mixins.token-scope(main, (
+  foundations-focus
+)) {}
+
+@layer main {
+  [data-theme] body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    a, button, [tabindex="-1"] {
+      &:focus-visible {
+        @include mixins.outline-focus;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+}

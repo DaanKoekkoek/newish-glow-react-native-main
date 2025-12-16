@@ -1,0 +1,33 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DividerStories from "./Divider.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DividerStories} />
+
+# Divider
+
+### Token version: {getComponentVersion("divider.v1")}
+
+A divider is a thin line that groups content in lists and layouts. It can be used to separate content in a list, a layout, or a card. It can also be used to create a visual separation between different sections of content.
+
+<Canvas of={DividerStories.Basic} />
+<Controls of={DividerStories.Basic} />
+
+## Basic Divider
+
+A basic divider.
+
+<Canvas of={DividerStories.Basic} />
+
+## Subtle Divider
+
+A subtle divider has a little less height, making it less prominent.
+
+<Canvas of={DividerStories.Subtle} />
+
+## Inverted
+
+When inverted, a divider's color scheme is inverted.
+
+<Canvas of={DividerStories.Inverted} />

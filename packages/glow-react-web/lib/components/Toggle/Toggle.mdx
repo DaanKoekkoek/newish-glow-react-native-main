@@ -1,0 +1,40 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ToggleStories from "./Toggle.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ToggleStories} />
+
+# Toggle
+
+### Token version: {getComponentVersion("toggle.v1")}
+
+The `Toggle` component is a switch that allows the user to toggle between two states, typically "on" and "off".
+
+The `Toggle` component can be used to represent a boolean value in your application. It is commonly used in settings panels, forms, and anywhere a simple on/off switch is needed.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- `onPress` became `onChange`
+- `isSelected` became `checked`
+- `inactive` became `disabled`
+
+### Controlled Example
+
+```
+const [checked, setChecked] = useState(false);
+const onChangeHandler = (event: ChangeEvent) => {
+    setChecked((event.target as HTMLInputElement).checked);
+};
+
+return (
+    <Toggle onChange={onChangeHandler} checked={checked} id="unique id" />;
+);
+```
+
+### Basic Example
+
+<Canvas of={ToggleStories.Basic} />
+<Controls of={ToggleStories.Basic} />

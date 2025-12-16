@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component renders basic Counter default 1`] = `
+<DocumentFragment>
+  <div
+    class="counter"
+    data-testid="counter"
+  >
+    <div
+      class="counter-digits-group size-default"
+    >
+      <div
+        class="counter-digits-and-label"
+        data-testid="counter-unit-days"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                3
+              </span>
+            </div>
+          </div>
+          <span
+            class="base-text base-paragraph counter-divider"
+          >
+            :
+          </span>
+        </div>
+        <span
+          class="paragraph paragraph-size-xs counter-label"
+          data-testid="counter-label"
+        >
+          Dagen
+        </span>
+      </div>
+      <div
+        class="counter-digits-and-label"
+        data-testid="counter-unit-hours"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+          </div>
+          <span
+            class="base-text base-paragraph counter-divider"
+          >
+            :
+          </span>
+        </div>
+        <span
+          class="paragraph paragraph-size-xs counter-label"
+          data-testid="counter-label"
+        >
+          Uur
+        </span>
+      </div>
+      <div
+        class="counter-digits-and-label"
+        data-testid="counter-unit-minutes"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+          </div>
+          <span
+            class="base-text base-paragraph counter-divider"
+          >
+            :
+          </span>
+        </div>
+        <span
+          class="paragraph paragraph-size-xs counter-label"
+          data-testid="counter-label"
+        >
+          Min.
+        </span>
+      </div>
+      <div
+        class="counter-digits-and-label"
+        data-testid="counter-unit-seconds"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+        <span
+          class="paragraph paragraph-size-xs counter-label"
+          data-testid="counter-label"
+        >
+          Sec.
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Counter component renders basic Counter hours variant sublte 1`] = `
+<DocumentFragment>
+  <div
+    class="counter"
+    data-testid="counter"
+  >
+    <div
+      class="counter-digits-group size-lg"
+    >
+      <div
+        class="counter-digits-and-label counter-subtle-default"
+        data-testid="counter-unit-hours"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                7
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                2
+              </span>
+            </div>
+          </div>
+          <span
+            class="base-text base-paragraph counter-divider"
+          >
+            :
+          </span>
+        </div>
+      </div>
+      <div
+        class="counter-digits-and-label counter-subtle-default"
+        data-testid="counter-unit-minutes"
+        role="timer"
+      >
+        <div
+          class="counter-digits-and-divider"
+        >
+          <div
+            class="counter-digits"
+          >
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+            <div
+              class="counter-digit"
+            >
+              <span
+                class="heading heading-size-xl align-left counter-digit-heading"
+                data-testid="counter-digit"
+                lang="nl"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span
+      class="paragraph paragraph-size-xs counter-label counter-label-hoursonly"
+      data-testid="counter-label-hoursonly"
+    >
+      Uur over
+    </span>
+  </div>
+</DocumentFragment>
+`;

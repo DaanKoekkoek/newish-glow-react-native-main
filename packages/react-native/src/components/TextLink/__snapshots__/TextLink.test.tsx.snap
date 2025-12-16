@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> renders correctly 1`] = `
+<Text
+  onPress={[Function]}
+  role="link"
+  style={
+    {
+      "fontFamily": "odido_Paragraph_Link",
+      "fontSize": 18,
+      "letterSpacing": 0.27000001072883606,
+      "lineHeight": 28,
+      "overflow": "visible",
+    }
+  }
+  testID="link"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "columnGap": 8,
+          "flexDirection": "row",
+          "gap": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "Icons_Outline_DEFAULT_odido",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "width": 24,
+            },
+            [
+              {
+                "color": "#1b5ee4",
+                "display": "flex",
+                "verticalAlign": "middle",
+              },
+              undefined,
+              false,
+            ],
+          ]
+        }
+        testID="link-icon"
+      >
+        
+      </Text>
+    </View>
+    <Text
+      style={
+        [
+          {
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
+          },
+          {
+            "color": "#1b5ee4",
+          },
+          {
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+          },
+          {
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="link-text"
+    >
+      Its on the left
+    </Text>
+  </View>
+</Text>
+`;
+
+exports[`<TextLink /> sets text styles correctly 1`] = `
+<Text
+  onPress={[Function]}
+  role="link"
+  style={
+    {
+      "fontFamily": "odido_Paragraph_Link",
+      "fontSize": 18,
+      "letterSpacing": 0.27000001072883606,
+      "lineHeight": 28,
+      "overflow": "visible",
+    }
+  }
+  testID="link"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "columnGap": 8,
+          "flexDirection": "row",
+          "gap": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "Icons_Outline_DEFAULT_odido",
+              "fontSize": 24,
+              "lineHeight": 24,
+              "width": 24,
+            },
+            [
+              {
+                "color": "#1b5ee4",
+                "display": "flex",
+                "verticalAlign": "middle",
+              },
+              undefined,
+              false,
+            ],
+          ]
+        }
+        testID="link-icon"
+      >
+        
+      </Text>
+    </View>
+    <Text
+      style={
+        [
+          {
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
+          },
+          {
+            "color": "#1b5ee4",
+          },
+          {
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+          },
+          {
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="link-text"
+    >
+      Its on the left
+    </Text>
+  </View>
+</Text>
+`;

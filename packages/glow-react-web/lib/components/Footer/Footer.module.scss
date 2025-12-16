@@ -1,0 +1,168 @@
+@use "@odido-portals/glow-tokens/foundations-focus";
+@use "@odido-portals/glow-tokens/navigation-footer-v1";
+@use "@odido-portals/glow-tokens/navigation-footer-v1-atoms-accordion-copy-v2";
+@use "@odido-portals/glow-tokens/navigation-content";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    footer,
+    (
+        foundations-focus,
+        navigation-content, 
+        navigation-footer-v1-atoms-accordion-copy-v2, 
+        navigation-footer-v1
+    )
+) {}
+
+.footer {
+    background-color: var(--components-navigation-footer-v1-color-background-default);
+    padding: var(--components-navigation-footer-v1-padding-default-top) 0 var(--components-navigation-footer-v1-padding-default-bottom);
+}
+
+.text-color span {
+    color: var(--components-navigation-footer-v1-color-text-default);
+}
+
+.link-color-decoration {
+    a, button {
+        text-decoration: none;
+
+        &:hover span {
+            color: var(--components-navigation-footer-v1-color-text-default);
+        }
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-navigation-footer-v1-gap-default);
+}
+
+.footer-accordion {
+    background-color: var(--components-navigation-footer-v1-color-background-main);
+    display: flex;
+
+    h3 {
+        color: var(--components-navigation-footer-v1-color-text-default);
+    }
+
+    .accordion {
+        border-top: none;
+    }
+
+    @include mixins.below("laptop") {
+        .footer-accordion-below-tablet {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .footer-accordion-above-tablet {
+        display: none;
+    }
+
+    @include mixins.above("laptop") {
+        .footer-accordion-below-tablet {
+            display: none;
+        }
+
+        .footer-accordion-above-tablet {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+            flex-basis: 100%;
+
+            .footer-accordion-above-tablet-item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: var(--components-navigation-footer-v1-atoms-accordion-copy-v2-gap-vertical);
+                min-width: var(--components-navigation-content-footer-columns);
+                padding: var(--components-navigation-footer-v1-atoms-accordion-copy-v2-padding-vertical, --components-navigation-footer-v1-atoms-accordion-copy-v2-padding-horizontal);
+
+                @for $i from 3 through 5 {
+                    .footer-accordion-above-tablet-item-col-#{$i} {
+                        min-width: var(--components-navigation-footer-columns-#{$i}-columns);
+                    }
+                }
+
+                .footer-accordion-above-tablet-item-col-links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--components-navigation-footer-v1-atoms-sitemap-links-gap);
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-navigation-footer-v1-gap-inner);
+
+.footer-bottom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--components-navigation-footer-v1-atoms-assorted-row-gap-vertical);
+
+        @include mixins.above("laptop") {
+        flex-direction: row;
+        gap: var(--components-navigation-footer-v1-atoms-assorted-row-gap-horizontal);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        color: var(--components-navigation-footer-v1-color-text-default);
+    }
+
+        .social-links-container {
+            display: flex;
+            gap: var(--components-navigation-footer-v1-atoms-assorted-row-gap-socials-horizontal);
+
+            .link-color-decoration a span {
+                color: var(--components-navigation-footer-v1-color-text-default);
+            }
+        }
+
+        .store-links-container {
+            display: flex;
+            column-gap: var(--components-navigation-footer-v1-atoms-assorted-row-gap-app-store-buttons-horizontal);
+        }
+    }
+
+    .footer-bottom-disclaimer {
+        display: flex;
+        flex-direction: column;
+        gap: var(--grid-gap);
+
+        .assorted-row {
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: var(--components-navigation-footer-v1-atoms-disclaimer-links-gap-horizontal);
+
+            .assorted-link-item {
+                padding-block: var(--components-navigation-footer-v1-atoms-footer-link-padding-vertical-sm);
+
+            @include mixins.above("laptop") {
+                padding-block: 0;
+            }
+        }
+    }
+
+        .copyright-row {
+            color: var(--components-navigation-footer-v1-color-text-default);
+        }
+    }
+}
+
+.footer-link-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}

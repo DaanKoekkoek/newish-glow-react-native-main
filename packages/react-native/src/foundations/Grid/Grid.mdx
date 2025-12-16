@@ -1,0 +1,56 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Grid from "./Grid.stories";
+
+<Meta of={Grid} />
+
+# Grid
+
+The `<Grid>` component creates a grid layout for organizing and aligning elements in a web page or application. It provides a flexible grid system that adjusts the layout based on different breakpoints, essential for creating structured and consistent interfaces.
+
+## Purpose
+
+The `<Grid>` component enables a responsive design by adapting the layout to different screen sizes. This flexibility is crucial for developing visually appealing and organized interfaces.
+
+### Breakpoints
+
+Breakpoints are defined by min-width attributes, ensuring that screen sizes between defined dimensions inherit the properties of the smaller breakpoint.
+
+- **desktop** _(1440px and up)_
+- **laptop** _(960px and 1439px)_
+- **tablet** _(530px and 959px)_
+- **mobile** _(360px and 529px)_
+- **mobileSmall** _(0px and 359px)_
+
+## Usage
+
+The `<Grid>` component sets `min-width`, `max-width`, `gap` spacing, and `marginHorizontal`. Both `min-width` and `max-width` can be set using the `variant` property in combination with the breakpoint properties mentioned above.
+The breakpoint properties apply a `max-width` to every `Grid.Column` component, but you can also use breakpoint properties on the `Grid.Column` itself, which will override the `Grid`'s properties.
+**Note: Since there is a `min-width` applied on the `<Grid>`, it is recommended to preview the grid on their respective pages instead of the Docs.**
+
+### Basic example
+
+<Canvas of={Grid.Basic} />
+<Controls of={Grid.Basic} />
+
+### Props in Grid.Column
+
+You can override the `<Grid>`'s breakpoint properties by directly applying breakpoint properties to a `<Grid.Column>`. This allows different widths for each column.
+
+<Canvas of={Grid.WidthOnColumn} />
+
+### Do's and Don'ts
+
+**Don't**
+
+1. Wrapping: The `<Grid />` and the `<Grid.Column />` are not intended to be able to `wrap` the grid content to the next row.
+   In that situation where a break point is hit and the content won't fit inside the grid anymore,
+   then is should change the flex direction (`row` or `column`).
+2. Overrun or fall short on grid width: The `<Grid />` and the `<Grid.Column />` can often be used with child components which do have a maximum and minimum width.
+   A good example of such component is a card component. The card components should always fill the full width of the grid.
+   They never should be overrunning the maximum width of the grid or falling short on filling the grid. If this is the case,
+   then it's showing that you are using the grid in an unintended way.
+
+**Do**
+
+1. Change direction: If you need multiple items inside the a `<Grid.Column>` then it's common to use the `<Stack>` component. Using the Stack
+   component inside the grid should also follow the principle as described in the **don't** section list item `1.`.

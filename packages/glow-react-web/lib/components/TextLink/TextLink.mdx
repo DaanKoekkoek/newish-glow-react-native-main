@@ -1,0 +1,38 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as TextLinkStories from "./TextLink.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta title="DesignSystem/Components/TextLink" of={TextLinkStories} />
+
+# TextLink
+
+```sh
+
+```
+
+### Token version: {getComponentVersion("text-link.v1")}
+
+The `TextLink` component provides a flexible way to create navigation links or interactive elements with various styling options. It can function as either a hyperlink or a button, supports icons, and comes with multiple size variants to fit different design contexts.
+
+## Usage
+
+The `TextLink` component can be used in multiple ways:
+
+- **As a hyperlink**: Provide an `href` prop to navigate to another page
+- **As a button**: Provide an `onClick` handler without an `href` prop. By default it will be applied `type=button` but it can be overwritten via `type` prop
+- **With icons**: Include `Icon` components as children alongside text
+- **In light or dark contexts**: Use the `inverted` prop for dark backgrounds
+
+### Basic Link
+
+<Canvas of={TextLinkStories.Basic} />
+<Controls of={TextLinkStories.Basic} />
+
+### Icon Left
+
+<Canvas of={TextLinkStories.IconLeft} />
+
+### Icon Right
+
+<Canvas of={TextLinkStories.IconRight} />

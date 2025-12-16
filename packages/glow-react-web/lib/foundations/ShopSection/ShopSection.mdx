@@ -1,0 +1,37 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ShopSectionStories from "./ShopSection.stories";
+
+<Meta of={ShopSectionStories} />
+
+# ShopSection
+
+The `ShopSection` component is a layout structure designed for the shop. It consists of a **main content area** and an **optional sidebar** for additional content, such as filters or promotions. The component utilizes `Grid` and `Column` from the design system to ensure a responsive and structured layout.
+
+## Migration Guide
+
+When migrating from the React Native implementation, the following changes should be applied:
+
+- **`<ShopSection.Container />`** → Has been removed. You can use the `children` property instead.
+
+- **`<ShopSection.Sidebar />`** → Has been removed. You can use the `aside` property instead.
+
+- **`showSidePanel` prop removed**  
+  Instead of relying on the `showSidePanel` prop, simply include the `aside` property when a sidebar is needed. If no sidebar is required, omit it.
+
+## Behavior
+
+- If only `children` is present, it spans the full width.
+- If both `children` and `aside` are used, the main content takes 8 columns, and the sidebar takes 4 columns (on larger screens).
+- The sidebar is wrapped in a sticky container to remain visible while scrolling.
+
+## Usage
+
+```tsx
+import { ShopSection } from "./ShopSection";
+
+<ShopSection
+  aside={<p>Sidebar content, such as shopping cart or promotions.</p>}
+>
+  <p>Main shop content goes here.</p>
+</ShopSection>;
+```

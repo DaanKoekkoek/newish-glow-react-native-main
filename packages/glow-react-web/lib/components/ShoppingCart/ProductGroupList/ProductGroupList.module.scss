@@ -1,0 +1,23 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    product-group-list,
+    shopping-cart-shopping-cart-v1
+) {
+    display: grid;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-lg);
+}
+
+.product-group-container {
+    display: grid;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-lg);
+}
+
+.title {   
+    color: var(--components-shopping-cart-shopping-cart-v1-color-product-title-default);
+}
+
+.product-group-list:has(hr) .title {
+    padding-top: var(--components-shopping-cart-shopping-cart-v1-padding-cart-accordion-summary-closed-top);
+}

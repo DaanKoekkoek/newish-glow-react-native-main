@@ -1,0 +1,690 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> renders a stable snapshot 1`] = `
+<div>
+  <ul
+    class="list background-default palette-default"
+    data-testid="list"
+  >
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content list-item-content-center"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-media-icon-lg list-media-icon-palette-default list-media-icon-font-size-md"
+            data-icon="laptop"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Lorem ipsum dolor sit amet
+            </span>
+          </div>
+        </span>
+        <button
+          class="text-link size-inherit is-stretched is-button text-and-icon columnGap list-item-text-link"
+          data-testid="text-link-list-item"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline list-icon-right"
+            data-icon="chevron-right"
+            data-testid="list-icon-right-list-item"
+          >
+            
+          </span>
+        </button>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content list-item-content-center"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-media-icon-sm list-media-icon-palette-default list-media-icon-font-size-sm"
+            data-icon="energy"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 2
+            </span>
+          </div>
+        </span>
+        <div
+          class="list-item-non-clickable"
+        >
+          <button
+            class="button button-size-sm button-prominence-default button-stretched"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              Button
+            </span>
+          </button>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-media-icon-sm list-media-icon-palette-default list-media-icon-font-size-sm"
+            data-icon="airplane"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 3
+            </span>
+            <span
+              class="list-item-description"
+            >
+              Description 1
+            </span>
+            <span
+              class="list-item-description"
+            >
+              Description 2
+            </span>
+            <span
+              class="list-item-attention attention-information"
+            >
+              Attention text
+            </span>
+          </div>
+        </span>
+        <div
+          class="list-item-non-clickable"
+        >
+          <div
+            class="price"
+          >
+            <div>
+              <div
+                class="before-text before-text-wrapper before-text-display before-text-size-default"
+                data-testid="before"
+              >
+                Van
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="price-wrapper"
+            >
+              <div
+                class="price"
+              >
+                <div
+                  class="price-text default currency"
+                  data-testid="currency"
+                >
+                  €
+                </div>
+                <div
+                  class="price-value-wrapper"
+                >
+                  <div
+                    class="price-text default"
+                    data-testid="whole"
+                  >
+                    100
+                  </div>
+                  <div
+                    class="decimal-wrapper"
+                  >
+                    <div
+                      class="comma-text price-text default comma-text-position"
+                    >
+                      ,
+                    </div>
+                    <div
+                      class="price-text default"
+                      data-testid="decimals"
+                    >
+                      ⁰⁰
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="frequency default"
+              >
+                <div
+                  class="price-text default"
+                  data-testid="frequency"
+                >
+                  
+                </div>
+              </div>
+            </div>
+            <div
+              class="tax-text default"
+              data-testid="after"
+            >
+              excl. btw
+            </div>
+            <div
+              class="price-sr-only"
+            >
+              <span
+                data-value="true"
+              >
+                Voor: 
+                €100
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content"
+        >
+          <div
+            class="background-image list-media-lg ratio-1-1"
+            data-testid="list-item-leading-content-list-item"
+          >
+            <div
+              aria-label=""
+              class="image-position-center"
+              role="img"
+              style="background-image: url(test-file-stub); background-size: cover;"
+            />
+          </div>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 4
+            </span>
+            <span
+              class="list-item-attention attention-success"
+            >
+              Attention text
+            </span>
+          </div>
+        </span>
+        <div
+          class="list-item-non-clickable"
+        >
+          <div
+            class="toggle toggle-size-default toggle-stretched"
+          >
+            <input
+              aria-label="Uit"
+              class="toggle-checkbox"
+              id="uniqueid"
+              type="checkbox"
+            />
+            <label
+              class="toggle-label"
+              for="uniqueid"
+            >
+              <span
+                class="toggle-gradient-wrapper"
+              >
+                <span
+                  aria-hidden="true"
+                  class="glow-gradient glow4 toggle-gradient"
+                  data-testid="glow-gradient"
+                  style="z-index: 1;"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="100%"
+                    preserveAspectRatio="xMidYMid slice"
+                    viewBox="0 0 960 1080"
+                    width="100%"
+                  >
+                    <g>
+                      <g
+                        clip-path="url(#clip:r0:)"
+                      >
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_linear_1_214-:r0:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_215-:r0:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_216-:r0:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_217-:r0:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_218-:r0:)"
+                        />
+                      </g>
+                      <defs>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_linear_1_214-:r0:"
+                          x1="960"
+                          x2="3.57628e-05"
+                          y1="2.86102e-05"
+                          y2="1080"
+                        >
+                          <stop
+                            offset="0.777327"
+                            stop-color="var(--linear-stop-1)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--linear-stop-2)"
+                          />
+                        </lineargradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_215-:r0:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.66"
+                            stop-color="var(--radial-stop-1)"
+                          />
+                          <stop
+                            offset="0.84"
+                            stop-color="var(--radial-stop-2)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-3)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_216-:r0:"
+                          r="1"
+                        >
+                          <stop
+                            stop-color="var(--radial-stop-4)"
+                          />
+                          <stop
+                            offset="0.33941"
+                            stop-color="var(--radial-stop-5)"
+                          />
+                          <stop
+                            offset="0.739171"
+                            stop-color="var(--radial-stop-6)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-7)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_217-:r0:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.578582"
+                            stop-color="var(--radial-stop-8)"
+                          />
+                          <stop
+                            offset="0.697843"
+                            stop-color="var(--radial-stop-9)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-10)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_218-:r0:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.00787439"
+                            stop-color="var(--radial-stop-11)"
+                          />
+                          <stop
+                            offset="0.565"
+                            stop-color="var(--radial-stop-12)"
+                          />
+                          <stop
+                            offset="0.708535"
+                            stop-color="var(--radial-stop-13)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-14)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <clippath
+                          id="clip:r0:"
+                        >
+                          <path
+                            d="M0 0H960V1080H0z"
+                            fill="#fff"
+                          />
+                        </clippath>
+                      </defs>
+                    </g>
+                  </svg>
+                </span>
+                <span
+                  class="toggle-knob"
+                />
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content"
+        >
+          <div
+            class="background-image list-media-xs ratio-1-1"
+            data-testid="list-item-leading-content-list-item"
+          >
+            <div
+              aria-label=""
+              class="image-position-center"
+              role="img"
+              style="background-image: url(test-file-stub); background-size: cover;"
+            />
+          </div>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 5
+            </span>
+            <span
+              class="list-item-attention attention-warning"
+            >
+              Attention text
+            </span>
+          </div>
+        </span>
+        <button
+          class="text-link size-inherit is-stretched is-button text-only columnGap list-item-text-link"
+          data-testid="text-link-list-item"
+          type="button"
+        >
+          <span
+            class="list-item-detail"
+          >
+            Detail
+          </span>
+        </button>
+        <button
+          class="text-link size-inherit is-stretched is-button text-only columnGap list-item-text-link"
+          data-testid="text-link-list-item"
+          type="button"
+        >
+          <div
+            class="badge-status badge-status-variant-default badge-status-size-default"
+            data-testid="badge-status"
+          >
+            <span
+              class="paragraph paragraph-size-default badge-status-number badge-status-variant-default-number badge-status-size-default-number"
+              data-testid="badge-status-number"
+            >
+              1
+            </span>
+          </div>
+        </button>
+        <button
+          class="text-link size-inherit is-stretched is-button text-and-icon columnGap list-item-text-link"
+          data-testid="text-link-list-item"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline list-icon-right"
+            data-icon="chevron-right"
+            data-testid="list-icon-right-list-item"
+          >
+            
+          </span>
+        </button>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-icon-left"
+            data-icon="comment"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 6
+            </span>
+            <span
+              class="list-item-attention attention-error"
+            >
+              Attention text
+            </span>
+          </div>
+        </span>
+        <div
+          class="list-item-non-clickable"
+        >
+          <span
+            class="list-item-detail"
+          >
+            Detail
+          </span>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-media-icon-sm list-media-icon-palette-default list-media-icon-font-size-sm"
+            data-icon="status-alert"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 7
+            </span>
+            <span
+              class="list-item-attention attention-error"
+            >
+              Attention text
+            </span>
+          </div>
+        </span>
+        <div
+          class="list-item-non-clickable"
+        >
+          <div
+            class="badge-status badge-status-variant-default badge-status-size-default"
+            data-testid="badge-status"
+          >
+            <span
+              class="paragraph paragraph-size-default badge-status-number badge-status-variant-default-number badge-status-size-default-number"
+              data-testid="badge-status-number"
+            >
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="list-item"
+      data-testid="list-item"
+    >
+      <div
+        class="wrapper"
+      >
+        <span
+          class="list-item-content list-item-content-center"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline list-icon-left"
+            data-icon="lock"
+            data-testid="list-item-leading-content-list-item"
+          >
+            
+          </span>
+          <div
+            class="list-item-text-wrapper"
+          >
+            <span
+              class="list-item-text"
+            >
+              Item 8
+            </span>
+          </div>
+        </span>
+      </div>
+      <hr
+        class="divider divider-prominence-subtle divider-variant-default list-divider"
+        data-testid="divider"
+      />
+    </li>
+  </ul>
+</div>
+`;

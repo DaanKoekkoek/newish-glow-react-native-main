@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Modal renders a stable snapshot 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Modal button
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Bottom Modal renders a stable snapshot 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Bottom Modal
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Right Modal renders a stable snapshot 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Right Modal
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`WithoutFooter Modal renders a stable snapshot 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Without footer
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

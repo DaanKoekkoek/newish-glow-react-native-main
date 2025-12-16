@@ -1,0 +1,47 @@
+@use "@odido-portals/glow-tokens/highlight-v1";
+@use "@globals/mixins";
+  
+@include mixins.token-scope(
+    highlight,
+    highlight-v1
+) {}
+
+.highlight {
+  background-color: var(--components-highlight-v1-color-background-default);
+  border-radius: var(--components-highlight-v1-radius-top-left-default) var(--components-highlight-v1-radius-top-right-default) var(--components-highlight-v1-radius-bottom-default) var(--components-highlight-v1-radius-bottom-default);
+  padding: var(--components-highlight-v1-padding-vertical-default) var(--components-highlight-v1-padding-horizontal-default);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &.is-inactive {
+    background-color: var(--components-highlight-v1-color-background-inactive);
+  }
+
+  &.is-spacious {
+    padding: var(--components-highlight-v1-padding-vertical-spacious) var(--components-highlight-v1-padding-horizontal-spacious);
+    border-radius: var(--components-highlight-v1-radius-top-left-spacious) var(--components-highlight-v1-radius-top-right-spacious) var(--components-highlight-v1-radius-bottom-default) var(--components-highlight-v1-radius-bottom-default);
+  }
+
+  &.is-compact {
+    padding: var(--components-highlight-v1-padding-vertical-compact) var(--components-highlight-v1-padding-horizontal-compact);
+    border-radius: var(--components-highlight-v1-radius-top-left-compact) var(--components-highlight-v1-radius-top-right-compact) var(--components-highlight-v1-radius-bottom-default) var(--components-highlight-v1-radius-bottom-default);
+  }
+}
+
+.highlight-heading {
+  color: var(--components-highlight-v1-color-text-default);
+
+  .is-inactive & {
+    color: var(--components-highlight-v1-color-text-inactive);
+  }
+}
+
+.highlight-gradient {
+  position: absolute;
+  inset: 0;
+
+  &::after {
+    content: "";
+  }
+}

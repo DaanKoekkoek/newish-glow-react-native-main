@@ -1,0 +1,128 @@
+@use "@odido-portals/glow-tokens/input-checkbox-v1";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@globals/mixins";
+
+/**
+  @mixin checkbox-base-style
+
+  Base styles for checkboxes and selector variants (with type checkbox), handling:
+    - hover, active, focus, disabled, invalid, and indeterminate states
+    - icons via CSS variables (--checkbox-icon-checked, --checkbox-icon-inderterminate)
+    - consistent size, border, color, and background using label::before
+*/
+@mixin checkbox-base-style {
+  @include mixins.token-scope(
+    checkbox,
+    (
+      input-gap, 
+      paragraph, 
+      input-checkbox-v1, 
+      assets-icons
+    )
+  ) {
+    label {
+      --checkbox-icon-checked: "\f127";
+      --checkbox-icon-inderterminate: "\f179";
+
+      &::before {
+        box-sizing: border-box;
+        border: var(--components-input-checkbox-v1-border-width-unselected-default) solid var(--components-input-checkbox-v1-color-border-unselected-default);
+        content: "";
+        font-family: var(--components-assets-icons-font-family-alternate-sm);
+        font-size: var(--components-input-checkbox-v1-size-icon-font-size);
+        line-height: var(--components-assets-icons-line-height-sm);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--components-input-checkbox-v1-size-default);
+        height: var(--components-input-checkbox-v1-size-default);
+        border-radius: var(--components-input-checkbox-v1-radius-default);
+        z-index: 1;
+      }
+  
+      &:hover::before {
+        content: var(--checkbox-icon-checked);
+        color: var(--components-input-checkbox-v1-color-icon-unselected-hover);
+        border: var(--components-input-checkbox-v1-border-width-unselected-hover) solid var(--components-input-checkbox-v1-color-border-unselected-hover);
+      }
+
+      &:active::before {
+        color: var(--components-input-checkbox-v1-color-icon-unselected-pressed);
+        border: var(--components-input-checkbox-v1-border-width-unselected-pressed) solid var(--components-input-checkbox-v1-color-border-unselected-pressed);
+      }
+    }
+    
+    input {
+      position: absolute;
+      opacity: 0;
+
+      &:focus-visible + label::before {
+        @include mixins.outline-focus;
+      }
+
+      &:active + label::before {
+        border: var(--components-input-checkbox-v1-border-width-unselected-pressed) solid var(--components-input-checkbox-v1-color-border-unselected-pressed);
+      }
+
+      &:disabled + label::before {
+        background-color: var(--components-input-checkbox-v1-color-background-inactive);
+        border: var(--components-input-checkbox-v1-border-width-inactive) solid var(--components-input-checkbox-v1-color-border-inactive);
+      }
+
+      &.is-invalid + label::before,
+      &:invalid + label::before {
+        border: var(--components-input-checkbox-v1-border-width-error) solid var(--components-input-checkbox-v1-color-border-error);
+      }
+
+      &:active:checked + label::before {
+        border: var(--components-input-checkbox-v1-border-width-selected-pressed) solid var(--components-input-checkbox-v1-color-border-selected-pressed);
+      }
+
+      &.is-invalid:checked + label::before,
+      &:invalid:checked + label::before {
+        background-image: none;
+      }
+
+      &:disabled:checked + label::before {
+        content: var(--checkbox-icon-checked);
+        color: var(--components-input-checkbox-v1-color-icon-inactive);
+      }
+
+      &.is-indeterminate + label:hover::before {
+        content: var(--checkbox-icon-inderterminate);
+      }
+  
+      &:checked:not(:disabled, :invalid, .is-invalid) {
+        + label {
+          &::before {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: var(--components-input-checkbox-v1-color-background-selected-default);
+            border: var(--components-input-checkbox-v1-border-width-selected-default) solid var(--components-input-checkbox-v1-color-border-selected-default);
+            color: var(--components-input-checkbox-v1-color-icon-selected-default);
+          }
+  
+          &:hover::before {
+            background-color: var(--components-input-checkbox-v1-color-background-selected-hover);
+            border: var(--components-input-checkbox-v1-border-width-selected-hover) solid var(--components-input-checkbox-v1-color-border-selected-hover);
+            color: var(--components-input-checkbox-v1-color-icon-selected-hover);
+          }
+        }
+
+        &.is-indeterminate + label::before {
+          content: var(--checkbox-icon-inderterminate);
+        }
+
+        &:not(.is-indeterminate) + label::before {
+          content: var(--checkbox-icon-checked);
+        }
+      }
+
+      &.is-indeterminate:disabled:checked + label::before {
+        content: var(--checkbox-icon-inderterminate);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SegmentedTabStories from "./SegmentedTab.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta
+  title="DesignSystem/Components/Tabs/SegmentedTab"
+  of={SegmentedTabStories}
+/>
+
+# SegmentedTab
+
+### Token version: {getComponentVersion("segmented-tab.v1")}
+
+The `SegmentedTab` component has been migrated from a React Native implementation to a web-based component using React and SCSS. This migration introduces some differences while retaining core functionality.
+To maintain serverside rendering compatibility, we split the component into two components; `SegmentedTabButtons` and `SegmentedTabPanels`.
+
+## SegmentedTabButtons (clientside)
+
+First we load the `SegmentedTabButtons` component, which is responsible for rendering the tab buttons. This component is a client-side only component, and it is not rendered on the server.
+
+## SegmentedTabPanels (serverside)
+
+Next we load the `SegmentedTabPanels` component, which is responsible for rendering the tab panels. To stay indexable by search engines, the content of the panels is rendered on the server.
+
+## uuid
+
+Both components use the `uuid` component to generate unique IDs for each tab and panel. This ensures that the component is accessible and that the correct tab is selected when the user navigates to a specific tab.
+
+<Canvas of={SegmentedTabStories.WithIcon} />
+<Controls of={SegmentedTabStories.WithIcon} />
+
+## With Icon variant
+
+<Canvas of={SegmentedTabStories.WithIcon} />
+
+## Without Icon variant
+
+<Canvas of={SegmentedTabStories.WithoutIcon} />

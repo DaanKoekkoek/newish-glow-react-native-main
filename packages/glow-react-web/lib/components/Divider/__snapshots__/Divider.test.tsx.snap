@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Divider /> snapshot with subtle prominence 1`] = `
+<DocumentFragment>
+  <hr
+    class="divider divider-prominence-subtle divider-variant-default"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Divider /> snapshot with variant default and inverted false 1`] = `
+<DocumentFragment>
+  <hr
+    class="divider divider-prominence-default divider-variant-default"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Divider /> snapshot with variant default and inverted true 1`] = `
+<DocumentFragment>
+  <hr
+    class="divider divider-prominence-default divider-variant-default is-inverted"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Divider /> snapshot with variant strong and inverted false 1`] = `
+<DocumentFragment>
+  <hr
+    class="divider divider-prominence-default divider-variant-strong"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;
+
+exports[`<Divider /> snapshot with variant strong and inverted true 1`] = `
+<DocumentFragment>
+  <hr
+    class="divider divider-prominence-default divider-variant-strong is-inverted"
+    data-testid="divider"
+  />
+</DocumentFragment>
+`;

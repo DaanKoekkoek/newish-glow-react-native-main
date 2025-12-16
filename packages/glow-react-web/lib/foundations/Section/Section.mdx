@@ -1,0 +1,36 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SectionStories from "./Section.stories";
+
+<Meta of={SectionStories} />
+
+# Default Section
+
+The default `Section` component organizes content by providing a structured layout for grouping related components or information. It ensures a cohesive design and is especially useful for segmenting content in a meaningful and visually appealing way.
+
+## Purpose
+
+The default `Section` component creates distinct sections, allowing for the logical grouping of related elements. This makes the layout more organized and easier to navigate. Use the default `Section` component in combination with the [`Main`](?path=/docs/designsystem-layout-main--docs) component to maintain a consistent structure.
+
+## Usage
+
+The default `Section` component adds vertical padding and should only have `Grid` components as its children. The `Grid` component structures the content within the default `Section`, ensuring layout consistency and adherence to design principles.
+
+**Note: Since there is a `min-width` applied on the `Grid`, it is recommended to preview the grid on their respective pages instead of the Docs.**
+
+### Default Example
+
+<Canvas of={SectionStories.Default} />
+<Controls of={SectionStories.Default} />
+
+### Emphasised
+
+<Canvas of={SectionStories.Emphasised} />
+
+### With image
+
+<Canvas of={SectionStories.Image} />
+
+### With palette
+
+<Canvas of={SectionStories.Subtle} />
+<Controls of={SectionStories.Subtle} />

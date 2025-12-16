@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="base-text base-paragraph"
+  >
+    <div
+      class="avatar avatar-size-default"
+      data-testid="avatar"
+    >
+      <span
+        class="paragraph paragraph-size-sm"
+        data-testid="paragraph"
+      >
+        DS
+      </span>
+    </div>
+  </div>
+</div>
+`;

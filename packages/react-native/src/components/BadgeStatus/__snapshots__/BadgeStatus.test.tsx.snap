@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BadgeStatusStatus /> renders correctly badgeStatus with icon variant 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+      "borderColor": "#ccc",
+      "borderStyle": "dotted",
+      "borderWidth": 1,
+      "padding": 16,
+      "width": 300,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#2f9a92",
+        "borderRadius": 100,
+        "height": 24,
+        "justifyContent": "center",
+        "minWidth": 24,
+        "paddingHorizontal": 4,
+        "paddingVertical": 4,
+        "textAlign": "center",
+      }
+    }
+    testID="badge-status"
+  >
+    <View
+      style={
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "height": 16,
+            "position": "absolute",
+            "width": 16,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "Icons_Outline_SM_odido",
+                "fontSize": 16,
+                "lineHeight": 16,
+                "width": 16,
+              },
+              {
+                "color": "#ffffff",
+                "height": 16,
+                "position": "absolute",
+                "width": 16,
+              },
+            ]
+          }
+        >
+          
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<BadgeStatusStatus /> renders correctly basic badgeStatus 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+      "borderColor": "#ccc",
+      "borderStyle": "dotted",
+      "borderWidth": 1,
+      "padding": 16,
+      "width": 300,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#2c72ff",
+        "borderRadius": 100,
+        "height": 24,
+        "justifyContent": "center",
+        "minWidth": 24,
+        "paddingHorizontal": 2,
+        "paddingVertical": 2,
+        "textAlign": "center",
+      }
+    }
+    testID="badge-status"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "color": "#ffffff",
+            "display": "flex",
+            "fontSize": 14,
+            "justifyContent": "center",
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 20,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      1
+    </Text>
+  </View>
+</View>
+`;

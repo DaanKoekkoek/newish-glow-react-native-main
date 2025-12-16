@@ -1,0 +1,34 @@
+@use "@odido-portals/glow-tokens/responsive-gap";
+@use "@odido-portals/glow-tokens/hero-atoms-color";
+@use "@odido-portals/glow-tokens/section-default-section-v1";
+@use "@odido-portals/glow-tokens/hero-hero-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    hero-section,
+    (
+        gap,
+        section-default-section-v1,
+        hero-hero-v1,
+        hero-atoms-color
+    )
+) {
+    > *:first-of-type {
+        padding-bottom: var(--responsive-gap-xl);
+    }
+
+    > *:not(:first-of-type, :last-of-type) {
+        padding-bottom: var(--components-section-default-section-v1-gap-main-vertical);
+    }
+
+    @each $color in config.$odido-palette {
+        &.has-palette-#{$color} {
+            --palette-text: var(--components-hero-atoms-color-text-emphasized-palette-#{$color}, var(--components-hero-atoms-color-text-emphasized));
+        }
+    }
+    
+    .hero-section-title-highlight {
+        color: var(--palette-text);
+    }
+}

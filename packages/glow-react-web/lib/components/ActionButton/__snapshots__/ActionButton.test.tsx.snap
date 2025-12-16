@@ -1,0 +1,674 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionButton Component renders a stable snapshot across all variations 1`] = `
+<div>
+  <div
+    class="stack direction-column align-flex-start justify-flex-start gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+  >
+    <div
+      class="stack direction-column align-flex-start justify-flex-start gap-sm wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+    >
+      <h2
+        class="heading heading-size-md align-left"
+        data-testid="heading"
+        lang="nl"
+      >
+        State: default
+      </h2>
+      <div
+        class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+        data-testid="stack"
+      >
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 1"
+            class="button button-size-default button-prominence-default button-stretched action-button-icon size-default state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 1
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 4"
+            class="button button-size-default button-prominence-default is-inverted button-stretched action-button-icon size-default state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 4
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 7"
+            class="button button-size-default button-prominence-secondary button-stretched action-button-icon size-default prominence-secondary state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 7
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 10"
+            class="button button-size-default button-prominence-secondary is-inverted button-stretched action-button-icon size-default prominence-secondary state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 10
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 13"
+            class="button button-size-default button-prominence-emphasised button-stretched action-button-icon size-default prominence-emphasised state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 13
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 16"
+            class="button button-size-default button-prominence-emphasised is-inverted button-stretched action-button-icon size-default prominence-emphasised state-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 16
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="stack direction-column align-flex-start justify-flex-start gap-sm wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+    >
+      <h2
+        class="heading heading-size-md align-left"
+        data-testid="heading"
+        lang="nl"
+      >
+        State: inactive
+      </h2>
+      <div
+        class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+        data-testid="stack"
+      >
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 2"
+            class="button button-size-default button-prominence-default button-stretched action-button-icon size-default state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 2
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 5"
+            class="button button-size-default button-prominence-default is-inverted button-stretched action-button-icon size-default state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 5
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 8"
+            class="button button-size-default button-prominence-secondary button-stretched action-button-icon size-default prominence-secondary state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 8
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 11"
+            class="button button-size-default button-prominence-secondary is-inverted button-stretched action-button-icon size-default prominence-secondary state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 11
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 14"
+            class="button button-size-default button-prominence-emphasised button-stretched action-button-icon size-default prominence-emphasised state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 14
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-label="label text 17"
+            class="button button-size-default button-prominence-emphasised is-inverted button-stretched action-button-icon size-default prominence-emphasised state-inactive"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label inactive"
+            data-testid="paragraph"
+          >
+            label text 17
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="stack direction-column align-flex-start justify-flex-start gap-sm wrap-nowrap grow shrink stack-size-12 stack-column-12"
+      data-testid="stack"
+    >
+      <h2
+        class="heading heading-size-md align-left"
+        data-testid="heading"
+        lang="nl"
+      >
+        State: loading
+      </h2>
+      <div
+        class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+        data-testid="stack"
+      >
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 3"
+            class="button button-size-default button-prominence-default is-loading button-stretched action-button-icon size-default state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 3
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 6"
+            class="button button-size-default button-prominence-default is-inverted is-loading button-stretched action-button-icon size-default is-inverted state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 6
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 9"
+            class="button button-size-default button-prominence-secondary is-loading button-stretched action-button-icon size-default prominence-secondary state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 9
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 12"
+            class="button button-size-default button-prominence-secondary is-inverted is-loading button-stretched action-button-icon size-default prominence-secondary is-inverted state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 12
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 15"
+            class="button button-size-default button-prominence-emphasised is-loading button-stretched action-button-icon size-default prominence-emphasised state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 15
+          </p>
+        </div>
+        <div
+          class="action-button"
+        >
+          <button
+            aria-busy="true"
+            aria-label="label text 18"
+            class="button button-size-default button-prominence-emphasised is-inverted is-loading button-stretched action-button-icon size-default prominence-emphasised is-inverted state-loading"
+            data-testid="button"
+            disabled=""
+          >
+            <span
+              aria-busy="true"
+              aria-live="polite"
+              class="spinner"
+              role="status"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline spinner-icon spinner-icon-color-default spinner-icon-size-default button-loading-icon"
+                data-icon="loading"
+                data-testid="spinner-icon"
+              >
+                
+              </span>
+            </span>
+            <span
+              class="button-label"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline block"
+                data-icon="add"
+                data-testid="icon"
+              >
+                
+              </span>
+            </span>
+          </button>
+          <p
+            class="paragraph paragraph-size-xs action-button-label"
+            data-testid="paragraph"
+          >
+            label text 18
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

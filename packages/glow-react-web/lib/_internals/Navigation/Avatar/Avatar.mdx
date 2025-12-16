@@ -1,0 +1,32 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AvatarStories from "./Avatar.stories";
+
+<Meta of={AvatarStories} />
+
+# Avatar
+
+### Token version: unknown
+
+The `Avatar` component is a simple UI element used to display a user's profile image, initials, or icon within a circular container.
+
+---
+
+## Purpose
+
+The `Avatar` component is commonly used in user interfaces to represent a user in places like:
+
+- UserNavigation
+- Header component when logged in
+
+It ensures consistent sizing and styling for user representations across the UI.
+
+---
+
+## Usage
+
+The `Avatar` component wraps any content you pass to it — typically an image, icon, or text (like initials).
+
+### Default
+
+<Canvas of={AvatarStories.Default} />
+<Controls of={AvatarStories.Default} />

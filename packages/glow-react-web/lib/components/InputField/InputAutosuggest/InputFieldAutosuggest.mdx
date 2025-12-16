@@ -1,0 +1,82 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as InputFieldAutosuggest from "./InputFieldAutosuggest.stories";
+
+<Meta of={InputFieldAutosuggest} />
+
+# InputField Autosuggest
+
+The `InputFieldAutosuggest` component extends the `InputField` with a dropdown list of suggestions that appear as users type. It's especially useful for search inputs, filter forms, and places where contextual suggestions improve usability and speed.
+
+> The preview below is in a iFrame and does not reflect the floating UI behavior accurately. Please interact with the component the stories to see the correct dropdown positioning and behavior.
+> [Default Variant](?path=/story/designsystem-components-input-inputfield-autosuggest--default-variant) and
+> [Search Variant](?path=/story/designsystem-components-input-inputfield-autosuggest--search-variant)
+
+<Canvas of={InputFieldAutosuggest.SearchVariant} />
+<Controls of={InputFieldAutosuggest.SearchVariant} />
+
+## Migration Guide
+
+Previously, autosuggest functionality was attempted to be embedded directly within the `InputField` component. This approach became limiting due to several reasons:
+
+### Why It Didn't Work Well Inside `InputField`
+
+- **Tight coupling**: The autosuggest logic added complexity to the base `InputField`, which is meant to be a low-level input primitive.
+- **Portaling & positioning issues**: Floating UI logic (e.g., using `@floating-ui`) requires direct access to layout and refs that conflicted with `InputField`'s abstractions.
+- **Responsibility split**: InputField should be responsible for rendering a styled input, not managing dropdowns or keyboard navigation logic.
+
+### Why a Separate Component Works Better
+
+- **Separation of concerns**: `InputFieldAutosuggest` composes `InputField`, keeping logic isolated and testable.
+- **Improved testability**: Easier to write focused tests for autosuggestion behavior.
+- **Portability**: Developers can now use `InputFieldAutosuggest` only where necessary without bloating all `InputField` usages.
+- **Better UX control**: Allows developers to override suggestions, handle input-specific logic, and customize interactions with full flexibility.
+
+## Features
+
+- Dynamically filters suggestions based on user input.
+- Keyboard accessible with Escape/Arrow key handling.
+- Categorized suggestions (optional).
+- Focus trap ensures keyboard navigation stays within the dropdown.
+- Portal-based rendering for consistent floating UI positioning.
+- Optional `TextLink` integration for search actions like “Search for...”.
+
+## Behavior
+
+- The dropdown opens when the input is focused and contains at least **2 characters**.
+- It filters the `autoSuggestions` based on the input value, searching both the suggestion `text` and `category`.
+- The dropdown closes when clicking outside or pressing `Escape`.
+- Selecting a suggestion calls `onSuggestionSelect` and fills in the selected value.
+
+## Accessibility
+
+- Uses a `FocusTrap` to keep keyboard focus within the dropdown.
+- Keyboard support: Arrow keys, Escape, and Enter.
+- Each suggestion is rendered as a button, ensuring it's focusable and semantic.
+
+## Usage
+
+```tsx
+import { InputFieldAutosuggest } from "@odido-portals/glow-react-web/input-field-autosuggest";
+
+const Component = () => (
+  <InputFieldAutosuggest
+    id="search"
+    placeholder="Search cities"
+    value={value}
+    onChange={(e) => setValue(e.target.value)}
+    autoSuggestions={[
+      { text: "Amsterdam", value: "amsterdam", category: "Cities" },
+      { text: "Rotterdam", value: "rotterdam", category: "Cities" },
+      { text: "Utrecht", value: "utrecht", category: "Cities" },
+    ]}
+    onSuggestionSelect={(selected) => {
+      setValue(selected);
+      console.log("Selected:", selected);
+    }}
+    textLink={{
+      href: "/search",
+      children: "Search for",
+    }}
+  />
+);
+```

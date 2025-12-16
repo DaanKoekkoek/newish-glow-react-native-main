@@ -1,0 +1,111 @@
+@use "@odido-portals/glow-tokens/counter-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+@use "./mixins" as counter;
+
+$counter-sizes: default, lg;
+$counter-prominences: default, subtle;
+
+@include mixins.token-scope(
+  counter,
+  counter-v1
+) {
+  overflow: hidden;
+
+  .counter-digits-group,
+  .counter-digits-and-divider,
+  .counter-digits-and-label,
+  .counter-digits,
+  .counter-digit,
+  .counter-label,
+  .counter-divider {
+    display: flex;
+  }
+
+  .counter-digits-and-label {
+    flex-direction: column;
+    gap: var(--components-counter-v1-gap-vertical-default);
+  }
+
+  .counter-digit {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--components-counter-v1-color-background-default);
+    padding: var(--components-counter-v1-padding-vertical) var(--components-counter-v1-padding-horizontal);
+
+    .counter-digit-heading {
+      color: var(--components-counter-v1-color-text-digit-default);
+    }
+  }
+
+  .counter-label {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+
+    &.is-inactive {
+      color: var(--components-counter-v1-color-text-label-inactive);
+    }
+  }
+
+  .counter-label-hoursonly {
+    margin-top: var(--components-counter-v1-gap-vertical-default);
+  }
+
+  .counter-divider {
+    font-weight: 500;
+    color: var(--components-counter-v1-color-text-divider-default);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @each $color in config.$odido-palette {
+    .counter-subtle-#{$color} {
+
+      .counter-digit {
+        background-color: var(--components-counter-v1-color-background-subtle-palette-#{$color}, var(--components-counter-v1-color-background-subtle));
+
+        .counter-digit-heading {
+          color: var(--components-counter-v1-color-text-digit-subtle);
+        }
+      }
+
+      .counter-divider {
+        color: var(--components-counter-v1-color-text-divider-subtle);
+      }
+    }
+  }
+
+  .counter-digits-group,
+  .counter-digits-and-divider {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter-digits-group {
+    >.is-inactive .counter-digit {
+      background-color: var(--components-counter-v1-color-background-inactive);
+    }
+
+    >.is-inactive,
+    >.is-inactive .counter-divider {
+      color: var(--components-counter-v1-color-text-divider-inactive);
+    }
+  }
+
+  @each $size in $counter-sizes {
+    @include counter.size($size);
+  }
+
+  @each $breakpoint,
+  $width in config.$global-min-width {
+    @media (min-width: $width) {
+      @each $size in $counter-sizes {
+        @include counter.size($size, $breakpoint);
+      }
+    }
+  }
+}

@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartDropdown /> renders a stable snapshot when empty 1`] = `
+<div>
+  <div
+    class="cart-dropdown"
+  >
+    <div>
+      <div
+        class="cart-dropdown-empty cart-dropdown-palette-default"
+        tabindex="0"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-lg outline cart-dropdown-icon"
+          data-icon="shop"
+          data-testid="icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-sm cart-dropdown-empty-title"
+          data-testid="paragraph"
+        >
+          Je winkelwagen is leeg
+        </p>
+      </div>
+    </div>
+    <hr
+      class="divider divider-prominence-subtle divider-variant-default"
+      data-testid="divider"
+    />
+    <div
+      class="cart-dropdown-footer"
+      tabindex="0"
+    >
+      <button
+        class="fill button button-size-default button-prominence-default"
+        data-testid="button"
+      >
+        <span
+          class="button-label"
+        >
+          Naar winkelwagen
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CartDropdown /> renders a stable snapshot with products 1`] = `
+<div>
+  <div
+    class="cart-dropdown"
+  >
+    <div>
+      <div
+        class="cart-dropdown-top"
+        tabindex="0"
+      >
+        <div
+          class="cart-dropdown-product"
+        >
+          <div
+            class="background-image image ratio-16-9"
+            data-testid="image"
+          >
+            <div
+              aria-label="Product"
+              class="image-position-center"
+              role="img"
+              style="background-image: url(https://assets.odido.nl/305x450/671d6313b9/dvi-back-front_apple_iphone_15promax_kleur2_305x450_v1.webp); background-size: contain;"
+            />
+          </div>
+          <div
+            class="text-container"
+            tabindex="0"
+          >
+            <strong
+              class="strong strong-size-sm title"
+              data-testid="strong"
+            >
+              Product title
+            </strong>
+            <div
+              class="description"
+            >
+              <span
+                class="paragraph paragraph-size-sm"
+                data-testid="paragraph"
+              >
+                Description
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cart-dropdown-product"
+        >
+          <div
+            class="background-image image ratio-16-9"
+            data-testid="image"
+          >
+            <div
+              aria-label="Product"
+              class="image-position-center"
+              role="img"
+              style="background-image: url(https://assets.odido.nl/305x450/671d6313b9/dvi-back-front_apple_iphone_15promax_kleur2_305x450_v1.webp); background-size: contain;"
+            />
+          </div>
+          <div
+            class="text-container"
+            tabindex="0"
+          >
+            <strong
+              class="strong strong-size-sm title"
+              data-testid="strong"
+            >
+              Product title
+            </strong>
+            <div
+              class="description"
+            >
+              <span
+                class="paragraph paragraph-size-sm"
+                data-testid="paragraph"
+              >
+                Description
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      class="divider divider-prominence-subtle divider-variant-default"
+      data-testid="divider"
+    />
+    <div
+      class="cart-dropdown-footer"
+      tabindex="0"
+    >
+      <div
+        class="cart-dropdown-footer-content"
+      >
+        <div
+          class="cart-dropdown-total"
+        >
+          <div
+            class="row"
+          >
+            <span
+              class="heading heading-size-xs align-left label"
+              data-testid="heading"
+              lang="nl"
+            >
+              Totaal per maand
+            </span>
+            <div
+              class="price"
+            >
+              <div
+                aria-hidden="true"
+                class="price-wrapper"
+              >
+                <div
+                  class="price"
+                >
+                  <div
+                    class="price-text sm currency"
+                    data-testid="currency"
+                  >
+                    €
+                  </div>
+                  <div
+                    class="price-value-wrapper"
+                  >
+                    <div
+                      class="price-text sm"
+                      data-testid="whole"
+                    >
+                      69
+                    </div>
+                    <div
+                      class="decimal-wrapper"
+                    >
+                      <div
+                        class="comma-text price-text sm"
+                      >
+                        ,
+                      </div>
+                      <div
+                        class="price-text sm"
+                        data-testid="decimals"
+                      >
+                        00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="price-sr-only"
+              >
+                <span
+                  data-value="true"
+                >
+                  Voor: 
+                  69
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <span
+              class="heading heading-size-xs align-left label"
+              data-testid="heading"
+              lang="nl"
+            >
+              Totaal eenmalig
+            </span>
+            <div
+              class="price"
+            >
+              <div
+                aria-hidden="true"
+                class="price-wrapper"
+              >
+                <div
+                  class="price"
+                >
+                  <div
+                    class="price-text sm currency"
+                    data-testid="currency"
+                  >
+                    €
+                  </div>
+                  <div
+                    class="price-value-wrapper"
+                  >
+                    <div
+                      class="price-text sm"
+                      data-testid="whole"
+                    >
+                      123
+                    </div>
+                    <div
+                      class="decimal-wrapper"
+                    >
+                      <div
+                        class="comma-text price-text sm"
+                      >
+                        ,
+                      </div>
+                      <div
+                        class="price-text sm"
+                        data-testid="decimals"
+                      >
+                        00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="price-sr-only"
+              >
+                <span
+                  data-value="true"
+                >
+                  Voor: 
+                  123
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="fill button button-size-default button-prominence-emphasised"
+        data-testid="button"
+      >
+        <span
+          class="button-label"
+        >
+          Naar winkelwagen
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

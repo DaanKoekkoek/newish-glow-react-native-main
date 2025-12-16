@@ -1,0 +1,28 @@
+@use "@odido-portals/glow-tokens/semantics-typography";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/mixins";
+
+.base-paragraph,
+.base-heading,
+.base-display {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+@include mixins.token-scope(
+    base-text,
+    (typography, paragraph)
+) {
+    &.base-paragraph {
+        font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+    }
+
+    &.base-heading {
+        font-family: var(--semantics-typography-font-family-heading);
+    }
+
+    &.base-display {
+        font-family: var(--semantics-typography-font-family-display);
+    }
+}

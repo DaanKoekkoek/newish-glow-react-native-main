@@ -1,0 +1,71 @@
+@use "@odido-portals/glow-tokens/progress-indicators";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    stepper-vertical,
+    progress-indicators
+) {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--components-progress-indicators-gap-vertical-sm);
+}
+
+.label-wrapper {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--components-progress-indicators-gap-horizontal-default);
+}
+
+.marker {
+    margin-top: calc(var(--components-progress-indicators-atoms-vertical-step-padding-top-default) * -1);
+}
+
+.inactive-step {
+    padding: 0 var(--components-progress-indicators-atoms-vertical-step-padding-horizontal-default);
+}
+
+.stepper-step-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--components-progress-indicators-gap-horizontal-sm);
+    min-height: var(--components-progress-indicators-atoms-vertical-step-size-min-height);
+}
+
+.stepper-step-col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--components-progress-indicators-gap-vertical-sm);
+    padding-top: var(--components-progress-indicators-atoms-vertical-step-padding-top-default);
+    padding-bottom: var(--components-progress-indicators-atoms-vertical-step-padding-top-default);
+    min-height: var(--components-progress-indicators-atoms-vertical-step-size-min-height);
+}
+
+.stepper-step-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-progress-indicators-gap-vertical-default);
+    padding:
+    var(--components-progress-indicators-atoms-vertical-step-padding-text-vertical)
+    var(--components-progress-indicators-atoms-vertical-step-padding-text-horizontal);
+    flex: 1;
+};
+
+.step-content-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--components-progress-indicators-gap-vertical-default);
+    flex: 1;
+}
+
+
+.direction {
+    flex-direction: row;
+}
+
+.flex-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}

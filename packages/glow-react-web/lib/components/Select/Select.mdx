@@ -1,0 +1,106 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SelectStories from "./Select.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SelectStories} />
+
+# Select
+
+### Token version: {getComponentVersion("select.v1")}
+
+The `Select` component allows users to choose one option from a dropdown list. It is often used in forms or settings where the user must pick a predefined value. The component supports various configurations such as validation states, helper text, and custom options.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- `onValueChange` → `onChange` (The event handler for value changes should now use `onChange` instead of `onValueChange` to align with the web implementation.)
+- `disabled` → `inactive` (The prop to disable the select has been renamed from `disabled` to `inactive` for consistency. For backward compatibility, the `disabled` prop is still supported but deprecated.)
+- `showHelper` removed. Just using `helperText` will decide whether to render the hint or not.
+- `suffix` and `customSuffix` removed. Select uses a default `chevron-up` or `chevron-down` icon instead.
+- `onFocus` and `onBlur` removed. Uses native :focus state instead.
+
+## Purpose
+
+The `Select` component creates an accessible dropdown input. It is fully customizable and provides several props for controlling the look and behavior of the dropdown, including options, value, and validation states.
+
+## Usage
+
+To use the `Select` component, import it and provide the required `options` along with other customizable props like `label`, `placeholder`, and `onChange`.
+
+```tsx
+import { Select } from "@odido-portals/glow-react-web/select";
+import { useState } from "react";
+
+const ControlledSelect = () => {
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleChange = (value: string) => setSelectedValue(value);
+
+  return (
+    <Select
+      id="select-example"
+      legend={{
+        label: "Label text",
+        info: () => <Tooltip />,
+        optionalText: "Extra text",
+      }}
+      placeholder="Choose a fruit"
+      value={selectedValue}
+      options={[
+        { value: "tomato", name: "Tomato" },
+        { value: "apple", name: "Apple" },
+        { value: "banana", name: "Banana" },
+      ]}
+      onChange={handleChange}
+    />
+  );
+};
+```
+
+### Default Example
+
+The default story demonstrates a basic Select component with a set of options. It includes basic validation and helper text for a complete form element.
+
+<Canvas of={SelectStories.Default} />
+<Controls of={SelectStories.Default} />
+
+### Inactive state
+
+This story shows how the Select component behaves when it is inactive. When inactive is set to true, the dropdown is not interactive, and the user cannot make a selection.
+
+> **Note:** The component previously used the `disabled` prop which has been deprecated in favor of `inactive`.
+
+<Canvas of={SelectStories.Inactive} />
+
+### Success validation
+
+Illustrates how the Select component can be rendered in a success state. This is useful for displaying positive validation feedback after the user has made a valid selection.
+
+<Canvas of={SelectStories.Valid} />
+
+### Error validation
+
+Demonstrates how the component handles error validation. This state is used when the selected value does not meet the required criteria, and an error message is shown to the user.
+
+<Canvas of={SelectStories.Error} />
+
+### Grouped Options
+
+Shows how to use the Select component with grouped options. The component automatically detects when options have a `group` property and organizes them into categories using HTML `<optgroup>` elements.
+
+```tsx
+<Select
+  id="grouped-select"
+  options={[
+    { name: "Apple", value: "apple", group: "Fruits" },
+    { name: "Banana", value: "banana", group: "Fruits" },
+    { name: "Carrot", value: "carrot", group: "Vegetables" },
+    // ...more options with groups
+  ]}
+  onChange={handleChange}
+/>
+```
+
+<Canvas of={SelectStories.GroupedOptions} />

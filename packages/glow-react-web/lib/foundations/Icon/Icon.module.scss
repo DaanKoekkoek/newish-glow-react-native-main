@@ -1,0 +1,26 @@
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@globals/mixins";
+
+$icon-sizes: sm, default, md, lg, xl, xxl;
+
+@layer main.foundation {
+  @include mixins.token-scope(
+    icon,
+    assets-icons
+  ) {}
+
+  @each $size in $icon-sizes {
+    .icon-size-#{$size} {
+      font-size: var(--components-assets-icons-font-size-#{$size});
+      line-height: var(--components-assets-icons-line-height-#{$size});
+      
+      &.outline {
+        font-family: var(--components-assets-icons-font-family-default-#{$size});
+      }
+      
+      &.solid {
+        font-family: var(--components-assets-icons-font-family-alternate-#{$size});
+      }
+    }
+  }
+}

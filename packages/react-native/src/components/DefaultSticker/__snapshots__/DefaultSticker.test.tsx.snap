@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic DefaultSticker renders a stable snapshot 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "baseline",
+          "overflow": "hidden",
+        },
+        {
+          "aspectRatio": "auto",
+        },
+        {
+          "alignItems": "flex-start",
+          "backgroundColor": "#2c72ff",
+          "borderRadius": 16,
+          "flexDirection": "column",
+          "gap": 0,
+          "maxWidth": 128,
+          "minWidth": 80,
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+    testID="background"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Strong",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 14,
+            "letterSpacing": 0.20999999344348907,
+            "lineHeight": 20,
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="strong"
+    >
+      Describe your promotion
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`WithImage DefaultSticker renders a stable snapshot 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "baseline",
+          "overflow": "hidden",
+        },
+        {
+          "aspectRatio": "auto",
+        },
+        {
+          "alignItems": "flex-start",
+          "backgroundColor": "#2c72ff",
+          "borderRadius": 16,
+          "flexDirection": "column",
+          "gap": 0,
+          "maxWidth": 128,
+          "minWidth": 80,
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        },
+      ]
+    }
+    testID="background"
+  >
+    <Image
+      accessibilityLabel="alt"
+      loadingIndicatorSource={
+        {
+          "uri": undefined,
+        }
+      }
+      onError={[Function]}
+      onLoad={[Function]}
+      resizeMode="cover"
+      source={
+        {
+          "uri": "https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP",
+        }
+      }
+      style={
+        [
+          {},
+          {
+            "alignSelf": "stretch",
+            "height": undefined,
+            "width": undefined,
+          },
+          {
+            "height": 56,
+            "width": 112,
+          },
+        ]
+      }
+      testID="image"
+    />
+  </View>
+</View>
+`;

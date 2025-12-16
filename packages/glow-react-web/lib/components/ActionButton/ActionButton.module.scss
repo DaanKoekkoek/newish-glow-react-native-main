@@ -1,0 +1,25 @@
+@use "@odido-portals/glow-tokens/button-action-button-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  action-button,
+  (button-action-button-v1)
+) {}
+  
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-block: var(--components-button-action-button-v1-padding-button-vertical-default);
+  row-gap: var(--components-button-action-button-v1-gap-vertical-default);
+}
+
+.action-button-label {
+  text-align: center;
+  color: var(--components-button-action-button-v1-color-text-default-default);
+}
+
+.inactive {
+  color: var(--components-button-action-button-v1-color-text-default-inactive);
+}

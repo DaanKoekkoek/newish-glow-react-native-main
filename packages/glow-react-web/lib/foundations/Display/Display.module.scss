@@ -1,0 +1,40 @@
+@use "@odido-portals/glow-tokens/display";
+@use "@globals/mixins";
+
+$display-sizes: sm, md;
+
+@include mixins.token-scope(
+  display,
+  display
+) {
+  font-family: var(--components-foundations-typography-text-styles-v1-display-font-family-default);
+  color: var(--semantics-color-text-default);
+  font-weight: var(--components-foundations-typography-text-styles-v1-display-font-weight-default);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+
+  &.is-inverted {
+    color: var(--semantics-color-text-inverted-default);
+  }
+}
+
+.display-align-center {
+  text-align: center;
+}
+
+.display-align-left {
+  text-align: left;
+}
+
+.display-highlight {
+  color: var(--palette-title-text, var(--semantics-color-text-default));
+}
+
+@each $size in $display-sizes {
+  .display-size-#{$size} {
+    font-size: var(--components-foundations-typography-text-styles-v1-display-font-size-#{$size});
+    line-height: var(--components-foundations-typography-text-styles-v1-display-line-height-#{$size});
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-display-letter-spacing-#{$size});
+  }
+}

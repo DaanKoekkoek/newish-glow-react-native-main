@@ -1,0 +1,62 @@
+@use "@odido-portals/glow-tokens/foundations-focus";
+@use "@odido-portals/glow-tokens/overlay-color";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@odido-portals/glow-tokens/assets-logos-and-visuals-afm-v1";
+@use "@odido-portals/glow-tokens/navigation-main-navigation-v1";
+@use "@odido-portals/glow-tokens/navigation-atoms-header";
+@use "@odido-portals/glow-tokens/navigation-agent-bar-v1";
+@use "@globals/mixins";
+@use "./shared";
+@use "./desktop";
+@use "./mobile";
+
+@layer nav {
+  @include mixins.token-scope(
+    main-navigation,
+    (
+      overlay-color,
+      assets-icons,
+      foundations-focus,
+      navigation-main-navigation-v1, 
+      navigation-atoms-header,
+      assets-logos-and-visuals-afm-v1,
+      navigation-agent-bar-v1
+    )
+  ) {
+    --main-navigation-height: calc(var(--components-navigation-atoms-header-menu-button-typography-line-height) + var(--main-navigation-link-padding-top) + var(--main-navigation-link-padding-bottom));
+    --main-navigation-link-padding-top: calc(var(--components-navigation-main-navigation-v1-menu-padding-top) + var(--components-navigation-atoms-header-menu-button-padding-vertical-default));
+    --main-navigation-link-padding-bottom: calc(var(--components-navigation-main-navigation-v1-menu-padding-bottom) + var(--components-navigation-atoms-header-menu-button-padding-vertical-default));
+    --main-navigation-afm-height: calc(var(--components-assets-logos-and-visuals-afm-v1-size-height-default) + var(--components-navigation-atoms-header-afm-banner-padding-vertical) * 2);
+    --main-navigation-meta-height: calc(var(--components-navigation-atoms-header-meta-nav-padding-top) + var(--components-navigation-atoms-header-meta-nav-typography-line-height-default) + var(--components-navigation-atoms-header-meta-nav-padding-tab-vertical) * 2);
+    --main-navigation-agent-bar-height: calc(var(--components-navigation-agent-bar-v1-padding-default-top) + var(--components-navigation-agent-bar-v1-padding-default-bottom) + 24px);
+    --main-navigation-top-offset: var(--main-navigation-height);
+  
+    &:has(.main-navigation-agent-bar) {
+      --main-navigation-top-offset: calc(var(--main-navigation-agent-bar-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-afm) {
+      --main-navigation-top-offset: calc(var(--main-navigation-afm-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-meta) {
+      --main-navigation-top-offset: calc(var(--main-navigation-meta-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-afm):has(.main-navigation-agent-bar) {
+      --main-navigation-top-offset: calc(var(--main-navigation-afm-height) + var(--main-navigation-agent-bar-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-meta):has(.main-navigation-agent-bar) {
+      --main-navigation-top-offset: calc(var(--main-navigation-agent-bar-height) + var(--main-navigation-meta-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-afm):has(.main-navigation-meta) {
+      --main-navigation-top-offset: calc(var(--main-navigation-afm-height) + var(--main-navigation-meta-height) + var(--main-navigation-height));
+    }
+  
+    &:has(.main-navigation-afm):has(.main-navigation-meta):has(.main-navigation-agent-bar) {
+      --main-navigation-top-offset: calc(var(--main-navigation-afm-height) + var(--main-navigation-agent-bar-height) + var(--main-navigation-meta-height) + var(--main-navigation-height));
+    }
+  }
+}

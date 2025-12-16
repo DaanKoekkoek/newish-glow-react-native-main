@@ -1,0 +1,105 @@
+@use "@odido-portals/glow-tokens/card-promotional-card-v1";
+@use "@odido-portals/glow-tokens/primitives-color";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$promotion-contents: "default", "countdown", "image";
+
+@include mixins.token-scope(
+  promotional-card,
+  (card-promotional-card-v1, color)
+) {}
+
+.promotional-card {
+  display: flex;
+  position: relative;
+  padding: var(--components-card-promotional-card-v1-padding-vertical) var(--components-card-promotional-card-v1-padding-horizontal);
+  align-items: flex-start;
+  gap: var(--components-card-promotional-card-v1-gap-vertical);
+  border-radius: var(--components-card-promotional-card-v1-radius-card-default);
+  background: var(--components-card-promotional-card-v1-color-background-default);
+
+  &.promotional-variant-default {
+    border: var(--components-card-promotional-card-v1-border-width-default) solid var(--components-card-promotional-card-v1-color-border-default-palette-default, var(--components-card-promotional-card-v1-color-border-default));
+  }
+
+  &.promotional-variant-emphasised {
+    border-color: var(--components-card-promotional-card-v1-color-border-emphasised);
+
+    .countdown-container p {
+      color: var(--primitives-color-white);
+    }
+  }
+
+  &.promotional-variant-black-friday {
+    border-color: var(--components-card-promotional-card-v1-color-border-black-friday);
+    background: var(--components-card-promotional-card-v1-color-background-black-friday);
+
+    .countdown-container p {
+      color: var(--primitives-color-white);
+    }
+  }
+
+  // Palette styles for emphasized variant
+  @each $color in config.$odido-palette {
+    &.palette-#{$color} {
+      background-color: var(--components-card-promotional-card-v1-color-background-emphasised-palette-#{$color}, var(--components-card-promotional-card-v1-color-background-emphasised));
+    }
+
+    // Content specific styles
+    @each $content in $promotion-contents {
+      &.content-#{$content}-#{$color} {
+        border-color: var(--components-card-promotional-card-v1-color-border-default-palette-#{$color}, var(--components-card-promotional-card-v1-color-border-default-palette-default));
+      }
+    }
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--components-card-promotional-card-v1-gap-horizontal);
+  flex: 1 0 0;
+}
+
+.image-container {
+  display: flex;
+  height: auto;
+  width: var(--components-card-promotional-card-v1-size-image-default);
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--components-card-promotional-card-v1-radius-image-default);
+  overflow: hidden;
+}
+
+// Heading styles for variants
+.heading-emphasised,
+.heading-black-friday {
+  color: var(--primitives-color-white);
+}
+
+//  Description styles for variants
+.description-emphasised,
+.description-black-friday {
+  color: var(--primitives-color-white);
+}
+
+// Text link
+.promotional-text-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+// Text link styles for variants
+.text-link-emphasised span {
+  color: var(--primitives-color-white);
+}
+
+.text-link-black-friday  {
+  span,
+  &:hover span {
+    color: var(--primitives-color-white);
+  }
+}

@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as RadioButtonStories from "./RadioButton.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={RadioButtonStories} />
+
+# RadioButton
+
+### Token version: {getComponentVersion("skip")}
+
+The `RadioButton` component allows users to select a single option from a list. It supports various states, including error and disabled modes, and integrates with form validation.
+
+### Default Example
+
+This example shows a basic `RadioButton`.
+
+<Canvas of={RadioButtonStories.Default} />
+<Controls of={RadioButtonStories.Default} />
+
+### Error State
+
+Use the `validated: { success: false, message: "message" }` prop to display an error message when validation fails.
+
+<Canvas of={RadioButtonStories.Error} />
+
+### Disabled State
+
+The `disabled` prop prevents user interaction with the radio button.
+
+<Canvas of={RadioButtonStories.Disabled} />

@@ -1,0 +1,35 @@
+@use "@odido-portals/glow-tokens/divider-v1";
+@use "@globals/mixins";
+
+$prominences: default, subtle;
+
+@include mixins.token-scope(
+  divider,
+  divider-v1
+) {}
+
+.divider {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@each $prominence in $prominences {
+  .divider-prominence-#{$prominence} {
+    height: var(--components-divider-v1-size-height-#{$prominence});
+    border: none;
+    border-top: var(--components-divider-v1-size-height-#{$prominence}) solid var(--components-divider-v1-color-background-default);
+  
+    &.is-inverted {
+      border-color: var(--components-divider-v1-color-background-inverted-default);
+    }
+  }
+}
+
+.divider-variant-strong {
+  border-color: var(--components-divider-v1-color-background-strong);
+
+  &.is-inverted {
+    border-color: var(--components-divider-v1-color-background-inverted-strong);
+  }
+}

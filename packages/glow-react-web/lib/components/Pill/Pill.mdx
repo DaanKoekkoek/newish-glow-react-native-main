@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PillStories from "./Pill.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PillStories} />
+
+# Pill
+
+### Token version: {getComponentVersion("pill.v1")}
+
+The `Pill` component is a UI element that represents a small, rounded rectangle that can contain text Title or a Phonebrand Logo.
+
+## Purpose
+
+The `Pill` component creates a visual representation of a single item or a group of items.
+It is often used to display tags, categories, or labels for content. Representing status indicators or filters
+
+## Usage
+
+**Note:** When selecting the `Logo` variant you also **need** to select a `Phonebrand` to display the logo.
+
+### Default Example
+
+<Canvas of={PillStories.Default} />
+<Controls of={PillStories.Default} />
+
+### Multiple Example
+
+<Canvas of={PillStories.Multiple} />

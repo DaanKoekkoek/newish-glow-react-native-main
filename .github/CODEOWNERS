@@ -1,0 +1,8 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+# Order is important. The last matching pattern has the most precedence.
+# These owners will be the default owners for everything in the repo.
+* @odido-portals/design-system
+# The UX team would like to do UAT on any visual changes. this seemed like
+# a sensible way to enforce that for now without being to heavy handed.
+examples/visual-regression-tests/.owl/baseline/ @odido-portals/ux

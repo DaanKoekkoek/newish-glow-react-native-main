@@ -1,0 +1,25 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as {{pascalCase name}}Stories from "./{{pascalCase name}}.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ {{pascalCase name}}Stories } />
+
+# {{pascalCase name}}
+
+#### Token version: {getComponentVersion("component-key.v1")}
+
+The `{{pascalCase name}}` component
+
+## Purpose
+
+The `{{pascalCase name}}` component creates
+
+## Usage
+
+The `{{pascalCase name}}`
+
+### Default Example
+
+<Canvas of={ {{pascalCase name}}Stories.Default } />
+<Controls of={ {{pascalCase name}}Stories.Default } />

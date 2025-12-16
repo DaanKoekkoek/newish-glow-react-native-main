@@ -1,0 +1,33 @@
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(avatar, semantics-color-text) {}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--semantics-color-text-default);
+}
+
+@each $palette in config.$odido-palette {
+    .avatar-palette-#{$palette} {
+        @include mixins.glow-gradient-image(
+            $palette: $palette, 
+            $fallback-color: var(--semantics-color-text-accent)
+        );
+    }
+}
+
+.avatar-size-default {
+    border-radius: 36px;
+    width: 36px;
+    height: 36px;
+}
+
+.avatar-size-sm {
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+}

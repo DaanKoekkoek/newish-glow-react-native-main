@@ -1,0 +1,47 @@
+@use "@odido-portals/glow-tokens/navigation-atoms-header";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  nav-icon,
+  navigation-atoms-header,
+) {}
+
+@layer main.internals {
+  .nav-icon {
+    position: relative;
+    display: flex;
+    width: max-content;
+  
+    svg {
+      display: none;
+  
+      [data-theme^="odido-"] & {
+        display: flex;
+      }
+    }
+  
+    svg + [data-icon="self-service"],
+    svg + [data-icon="shop"] {
+        [data-theme^="odido-"] &  {
+          display: none;
+        }
+    }
+  
+    path {
+      fill: var(--components-navigation-atoms-header-nav-icon-color-icon-utility-default);
+    }
+  
+    &:hover path {
+      fill: var(--components-navigation-atoms-header-nav-icon-color-icon-utility-hover);
+    }
+  }
+}
+  
+.nav-icon-badge {
+    position: absolute;
+    top: 2px;
+    right: -4px;
+    aspect-ratio: 1/1;
+    height: var(--components-navigation-atoms-header-nav-icon-size-badge-status-clip-border-default);
+    width: var(--components-navigation-atoms-header-nav-icon-size-badge-status-clip-border-default);
+}

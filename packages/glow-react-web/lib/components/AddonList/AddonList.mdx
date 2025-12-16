@@ -1,0 +1,19 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AddonListStories from "./AddonList.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={AddonListStories} />
+
+# AddonList
+
+### Token version: {getComponentVersion("add-on-list.v1")}
+
+The `<AddonList />` component is used to render a list of items with various customization options.
+List item can contain title, description, attention text, add on and button. If variant of list is `default`
+than button prominence is `emphasised`, in other variants it's `secondary` prominence.
+
+## Basic Usage
+
+<Canvas of={AddonListStories.Basic} />
+<Controls of={AddonListStories.Basic} />

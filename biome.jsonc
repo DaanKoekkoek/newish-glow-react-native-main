@@ -1,0 +1,112 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+  },
+  "files": {
+    "ignoreUnknown": true,
+  },
+  "overrides": [
+    {
+      // Skip linting for all dependencies and build outputs
+      "includes": [
+        "**/node_modules/**",
+        "**/.*/**",
+        "**/dist/**",
+        "**/coverage/**",
+      ],
+      "linter": {
+        "enabled": false,
+      },
+      "formatter": {
+        "enabled": false,
+      },
+    },
+    {
+      "includes": ["**/*.spec.ts", "**/*.test.ts", "**/__tests__/**/*.ts"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            // "Testing regularly requires breaking type rules in order to more easily test edge cases".
+            "noExplicitAny": "off",
+          },
+          "style": {
+            // Allow non-null assertions in test files for testing edge cases
+            "noNonNullAssertion": "off",
+          },
+        },
+      },
+    },
+    {
+      "includes": ["**/nest-mono/**/*.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            // This rule does not respect classes injected by decorators.
+            // This is a common pattern in NestJS.
+            // See here for more: https://github.com/biomejs/biome/issues/4514
+            "useImportType": "off",
+          },
+        },
+      },
+    },
+    {
+      "includes": [
+        "**/src/http-client/types/**/*.gen.ts",
+        "**/api-client/**/*.js",
+      ],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noExplicitAny": "off",
+            "noTemplateCurlyInString": "off",
+          },
+          "style": {
+            "useImportType": "off",
+          },
+        },
+      },
+    },
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "off",
+      },
+    },
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "useImportType": "error",
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+      },
+    },
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+  },
+  "json": {
+    "formatter": {
+      "enabled": false,
+    },
+  },
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true,
+    },
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "all",
+    },
+  },
+}

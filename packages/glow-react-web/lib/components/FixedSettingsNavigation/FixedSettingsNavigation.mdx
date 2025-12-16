@@ -1,0 +1,47 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as FixedSettingsNavigationStories from "./FixedSettingsNavigation.stories";
+
+<Meta of={FixedSettingsNavigationStories} />
+
+# FixedSettingsNavigation
+
+The `FixedSettingsNavigation` component provides a fixed navigation bar for settings pages with customizable top links, user information, and product details. It is fully responsive and adapts to different viewport sizes.
+
+> **Note**: This custom navigation is currently used in the Wifi, TV, and VOIP settings pages. It will be replaced with a new navigation system eventually.
+
+## Usage
+
+The component is highly flexible and allows you to customize:
+
+- **Top navigation links** - Back to main site and service links
+- **User information** - Display user initials and account label
+- **Product information** - Show product icon and label
+
+All props are optional, allowing you to compose the navigation exactly as needed for your use case.
+
+## Default Example
+
+Shows the full navigation with all sections visible.
+
+<Canvas of={FixedSettingsNavigationStories.Default} />
+<Controls of={FixedSettingsNavigationStories.Default} />
+
+## Custom Labels and URLs
+
+Demonstrates how to customize all text labels and navigation URLs to fit your specific requirements.
+
+<Canvas of={FixedSettingsNavigationStories.CustomLabelsAndUrls} />
+<Controls of={FixedSettingsNavigationStories.CustomLabelsAndUrls} />
+
+## Responsive Behavior
+
+The component automatically adapts to different viewport sizes:
+
+- **Mobile (< 1024px)**:
+  - Top links spread apart with `space-between` justification
+  - Full width layout
+- **Desktop (≥ 1024px)**:
+  - Top links aligned to `flex-start`
+  - Uses columnSize 5 layout
+
+No mobile prop is needed - the component handles this entirely through CSS media queries.

@@ -1,0 +1,60 @@
+import {
+  Meta,
+  Canvas,
+  Controls,
+  Description,
+  ArgsTable,
+  Stories,
+  Story,
+} from "@storybook/blocks";
+import * as SummaryListStories from "./SummaryList.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SummaryListStories} />
+
+# SummaryList
+
+### Token version: {getComponentVersion("summary-list.v1")}
+
+The `SummaryList` component is a layout utility used to display summarized content in a structured list format, commonly seen in overviews like shopping carts, comparisons, or checkout flows.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- `<SummaryList.Button />`, `<SummaryList.NumberInput />` and `<SummaryList.ActionButton />` are replaced by `<SummaryListAction />`
+- `<SummaryList.List />` -- which is used as component within the `list` property -- is replaced by `ListProps`.
+- `<SummaryList.Price />` -- which is used as component within the `price` property -- is replaced by `PriceProps`.
+
+## Purpose
+
+The `SummaryList` component presents a list of summarized items with optional imagery, headings, statuses, prices, and interactive elements. It's primarily used in the checkout flow after an order is placed — each `SummaryListItem` typically represents a purchased product, providing a clear and structured overview of the order. It supports multiple states and ensures consistent layout with built-in dividers.
+
+## Subcomponents
+
+### SummaryList
+
+The container component that wraps one or more `SummaryListItem` components. It applies standard list spacing and dividers.
+
+### SummaryListItem
+
+A [single row](/story/designsystem-components-lists-summarylist-item--default) in the summary list. This typically represents an ordered product in a checkout summary.
+
+#### Usage
+
+The `image` property of a `<SummaryListItem />` can render a different component based on the properties passed down.
+
+- **When image is provided and has a name**: Renders an `Addon` component.
+- **When image is provided but has no name**: Rendera a `Visual` and accepts `ImageProps` from the `<Image />` component.
+
+### SummaryListAction
+
+An [optional interactive element](/docs/designsystem-components-lists-summarylist-action--docs) rendered in the `actions` slot of a `SummaryListItem`.
+
+## Usage
+
+### Default Example
+
+<Canvas of={SummaryListStories.Default} />
+<Controls of={SummaryListStories.Default} />

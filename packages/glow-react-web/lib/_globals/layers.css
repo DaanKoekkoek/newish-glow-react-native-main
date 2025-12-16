@@ -1,0 +1,26 @@
+/* 
+  Establishes the global CSS cascade layer order for the entire application. Use sparingly, since orders might change depending
+  on the environment (due to import order of source files).
+  This file must be imported before any other layered styles (e.g., component CSS modules).
+
+  ⚠️ Important: Layer names are **namespaced (nested)** (e.g. `main.foundation` instead of `foundation`).
+  This ensures predictable cascade order even when other packages or external CSS files
+  declare their own layers with the same names (e.g. `foundation`, `component`, etc.).
+  
+  Without the namespace prefix (`main.`), CSS bundlers (like Next.js or Vite)
+  may merge or reorder layers with identical names across packages.
+
+  Layer intent and hierarchy:
+  1. main.foundation   — Base tokens, resets, and global primitives (e.g. typography, color vars, spacing).
+  2. main.internals    — Framework-level or system styles (layout wrappers, design-system internals).
+  3. subcomponent      — Styles for composed parts of components (nested visuals, states, variants).
+  4. component         — Application- or page-level component styles that should override all others.
+  5. nav.shared        — Shared navigation styles.
+  6. nav.desktop       — Desktop-specific navigation styles.
+  7. nav.mobile        — Mobile-specific navigation styles.
+
+  The order ensures predictable overrides:
+  main.foundation < main.internals < subcomponent < component < nav.shared < nav.desktop < nav.mobile
+*/
+
+@layer main.foundation, main.internals, subcomponent, component, nav.shared, nav.desktop, nav.mobile;

@@ -1,0 +1,5 @@
+## Git attributes for React Native mono-repo
+
+# Ignore generated files from storybook example app
+examples/storybook-react-native/.storybook-rn/storybook.requires.ts linguist-generated
+examples/storybook-react-native/.storybook-rn/storybook.requires.js linguist-generated

@@ -1,0 +1,158 @@
+@use "@odido-portals/glow-tokens/price-price-v2";
+@use "@odido-portals/glow-tokens/heading";
+@use "@globals/mixins";
+
+$before-text-sizes: default, sm, lg;
+$tax-text-sizes: default, lg, xl;
+$price-text-sizes: sm, default, lg, xl;
+
+@include mixins.token-scope(
+  price,
+  (price-price-v2, heading)
+) {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--components-price-price-v2-gap-vertical-none);
+
+  &.price-size-xl {
+    row-gap: var(--components-price-price-v2-gap-vertical-default);
+  }
+}
+
+.before-text {
+  gap: var(--components-price-price-v2-gap-horizontal-before-default);
+
+  &.before-text-display {
+    color: var(--components-price-price-v2-color-text-before-default);
+    font-family: var(--components-price-price-v2-typography-before-font-family-default);
+  }
+
+  @each $size in $before-text-sizes {
+    &.before-text-size-#{$size} {
+      font-size: var(--components-price-price-v2-typography-before-font-size-#{$size});
+      line-height: var(--components-price-price-v2-typography-before-line-height-#{$size});
+      letter-spacing: var(--components-price-price-v2-typography-before-letter-spacing-#{$size});
+    }
+  }
+  
+  &.before-text-size-xl {
+    font-size: var(--components-price-price-v2-typography-before-font-size-lg);
+    line-height: var(--components-price-price-v2-typography-before-line-height-lg);
+    letter-spacing: var(--components-price-price-v2-typography-before-letter-spacing-lg);
+  }
+
+  &.inverted {
+    color: var(--components-price-price-v2-color-text-before-inverted);
+  }
+
+  &.inactive {
+    color: var(--components-price-price-v2-color-text-before-inactive);
+  }
+}
+
+.price-text {
+  color: var(--components-price-price-v2-color-text-default);
+  font-weight: var(--components-foundations-typography-text-styles-v1-heading-font-weight-default);
+  font-family: var(--components-price-price-v2-typography-main-font-family-default);
+
+  @each $size in $price-text-sizes {
+    &.#{$size} {
+      $font-size-var: --components-price-price-v2-typography-main-font-size-#{$size};
+      $line-height-var: --components-price-price-v2-typography-main-line-height-#{$size};
+      $letter-spacing-var: --components-price-price-v2-typography-main-letter-spacing-#{$size};
+
+      font-size: var(#{$font-size-var});
+      line-height: var(#{$line-height-var});
+      letter-spacing: var(#{$letter-spacing-var});
+    }
+  }
+
+  &.inverted {
+    color: var(--components-price-price-v2-color-text-inverted);
+  }
+
+  &.inactive {
+    color: var(--components-price-price-v2-color-text-inactive);
+  }
+}
+
+.tax-text {
+  color: var(--components-price-price-v2-color-text-after-vat-default);
+  font-family: var(--components-price-price-v2-typography-after-font-family-default);
+
+  @each $size in $tax-text-sizes {
+    &.#{$size} {
+      font-size: var(--components-price-price-v2-typography-after-font-size-default);
+      line-height: var(--components-price-price-v2-typography-after-line-height-default);
+      letter-spacing: var(--components-price-price-v2-typography-after-letter-spacing-default);
+    }
+  }
+
+  &.sm {
+    font-size: var(--components-price-price-v2-typography-after-font-size-sm);
+    line-height: var(--components-price-price-v2-typography-after-line-height-sm);
+    letter-spacing: var(--components-price-price-v2-typography-after-letter-spacing-sm);
+  }
+
+  &.inverted {
+    color: var(--components-price-price-v2-color-text-after-vat-inactive);
+  }
+
+  &.inactive {
+    color: var(--components-price-price-v2-color-text-after-vat-inverted);
+  }
+}
+
+.price-sr-only {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+.from-value {
+  text-decoration: line-through;
+}
+
+.currency {
+  margin-right: var(--components-price-price-v2-gap-horizontal-amount-default);
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+}
+
+.price-value-wrapper {
+  display: flex;
+}
+
+.price-wrapper {
+  display: flex;
+}
+
+.decimal-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.before-text-wrapper {
+  display: flex;
+}
+
+.frequency {
+  margin-left: var(--components-price-price-v2-margin-left-frequency-default);
+
+  &.sm {
+    margin-left: var(--components-price-price-v2-margin-left-frequency-sm);
+  }
+}
+
+.comma-text {
+  left: 0;
+  bottom: 0;
+
+  &.comma-text-position {
+    position: absolute;
+  }
+}

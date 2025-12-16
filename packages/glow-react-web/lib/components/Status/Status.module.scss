@@ -1,0 +1,38 @@
+@use "@odido-portals/glow-tokens/status-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    status,
+    status-v1
+) {}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--components-status-v1-gap-horizontal-default);
+}
+
+.status-indicator {
+    border-radius: var(--components-status-v1-radius-indicator-default);
+    width: var(--components-status-v1-size-indicator-width-default);
+
+    &.success {
+        background-color: var(--components-status-v1-color-indicator-success);
+        height: var(--components-status-v1-size-indicator-height-success);
+    }
+
+    &.warning {
+        background-color: var(--components-status-v1-color-indicator-warning);
+        height: var(--components-status-v1-size-indicator-height-warning);
+    }
+
+    &.error {
+        background-color: var(--components-status-v1-color-indicator-error);
+        height: var(--components-status-v1-size-indicator-height-error);
+    }
+}
+
+.status-text {
+    font-weight: 400;
+    color: var(--components-status-v1-color-text-default);
+}

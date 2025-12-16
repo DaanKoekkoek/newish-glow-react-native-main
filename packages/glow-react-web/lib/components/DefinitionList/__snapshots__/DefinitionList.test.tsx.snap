@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefinitionList /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <dl
+    class="definition-list"
+    data-testid="definition-list"
+  >
+    <dt
+      class="base-text base-paragraph definition-list-text definition-list-title"
+      data-testid="definition-list-title"
+    >
+      Title
+    </dt>
+    <dd
+      class="base-text base-paragraph definition-list-text"
+      data-testid="definition-list-description"
+    >
+      Description
+    </dd>
+  </dl>
+</DocumentFragment>
+`;

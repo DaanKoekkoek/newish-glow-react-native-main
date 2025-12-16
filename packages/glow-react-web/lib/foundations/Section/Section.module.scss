@@ -1,0 +1,72 @@
+@use "sass:list";
+@use "@odido-portals/glow-tokens/section-atoms-color";
+@use "@odido-portals/glow-tokens/section-default-section-v1";
+@use "@odido-portals/glow-tokens/semantics-padding";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@odido-portals/glow-tokens/hero-hero-v1";
+@use "@odido-portals/glow-tokens/hero-atoms-color";
+@use "@odido-portals/glow-tokens/box-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(section,
+  (section-atoms-color,
+    section-default-section-v1,
+    padding,
+    color-text,
+    hero-hero-v1,
+    hero-atoms-color,
+    box-v1)) {}
+
+.section {
+  padding-block: var(--components-section-default-section-v1-padding-vertical-default);
+  background-color: var(--components-section-atoms-color-background-default);
+  color: var(--components-section-atoms-color-text-default);
+  width: 100%;
+  flex: 1 0 auto;
+  gap: var(--components-section-default-section-v1-gap-main-vertical);
+
+  &.section-subtle {
+    background-color: var(--palette-section, var(--components-section-atoms-color-background-subtle));
+  }
+}
+
+/* Variants */
+.section-default {
+  background-color: var(--components-section-atoms-color-background-default);
+}
+
+.section-subtle {
+  background-color: var(--components-section-atoms-color-background-subtle);
+}
+
+.section-emphasised {
+  position: relative;
+  z-index: 0;
+  background-color: var(--components-section-atoms-color-background-emphasised);
+
+  .section-glow-gradient {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.section-image {
+  background-color: var(--components-section-atoms-color-background-image);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Padding */
+.section-padding-top-none {
+  padding-block-start: var(--components-section-default-section-v1-padding-top-none);
+}
+
+@each $color in config.$odido-palette {
+  .section-palette-#{$color} {
+    --palette-section: var(--components-section-atoms-color-background-subtle-palette-#{$color}, var(--components-section-atoms-color-background-subtle));
+    --palette-box: var(--components-box-v1-color-background-color-palette-#{$color}, var(--components-box-v1-color-background-color));
+    --palette-title-text: var(--components-hero-atoms-color-text-emphasized-palette-#{$color}, var(--components-hero-atoms-color-text-emphasized));
+    --palette-strong-text: var(--semantics-color-text-strong-palette-#{$color}, var(--semantics-color-text-strong));
+  }
+}

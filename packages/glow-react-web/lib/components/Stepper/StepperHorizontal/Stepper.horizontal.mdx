@@ -1,0 +1,25 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Stepper from "./Stepper.horizontal.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={Stepper} />
+
+# Stepper Component
+
+### Token version: {getComponentVersion("horizontal-stepper.v1")}
+
+This file contains the implementation of the Stepper component. Steppers typically show the user’s progress through a series of distinct steps.
+
+## Horizontal stepper
+
+The horizontal stepper component allows you to create a step-by-step process
+with a title and state for each step.
+
+#### Breakpoint
+
+From **tablet and up**: items size large, title enabled <br/>
+From **mobileSmall and up**: items size small, title disabled
+
+<Canvas of={Stepper.Horizontal} />
+<Controls of={Stepper.Horizontal} />

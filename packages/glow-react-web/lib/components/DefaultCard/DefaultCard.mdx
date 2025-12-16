@@ -1,0 +1,74 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefaultCardStories from "./DefaultCard.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DefaultCardStories} />
+
+# DefaultCard
+
+#### Token version: {getComponentVersion("default-card.v1")}
+
+The `DefaultCard` component is a versatile card that can be used in various layouts with options to customize its content, appearance, and behavior.
+
+## Purpose
+
+The `DefaultCard` component is designed to provide a flexible, styled container for displaying various types of content. This component can include text, images, icons, badges, and pricing information. It allows customization through props like `variant`, `palette`, and `type`, making it suitable for different use cases.
+
+## Usage
+
+> The `DefaultCard` component can be used to display a variety of content, such as an image, title, badge, and pricing information.
+>
+> The `palette` prop only affects the appearance when `variant`= `outline` or `alternate`. It also affect children elements like `Badge`.
+
+## Migration Guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+> **variant property value emphasized → emphasised**:
+> In previous versions, the `variant` prop used the value `emphasized`.
+>
+> **paragraph + list properties → children**:
+> The `DefaultCard` component previously used `paragraph` and `list` props to render content. These are now handled as children, providing a more flexible way to pass elements into the card.
+
+### Default Example
+
+<Canvas of={DefaultCardStories.Default} />
+<Controls of={DefaultCardStories.Default} />
+
+### With illustration
+
+This example shows how the card can be customized to include an illustration, providing more visual appeal.
+
+<Canvas of={DefaultCardStories.WithIllustration} />
+
+### With image
+
+An example demonstrating the card's flexibility when used with an image. The image can be adjusted for different layouts.
+Images can also be resized using the `ratio` property.
+
+<Canvas of={DefaultCardStories.WithImage} />
+
+### With icon
+
+This example highlights how the `DefaultCard` can include an icon for added functionality or styling.
+
+<Canvas of={DefaultCardStories.WithIcon} />
+
+### Buttons and link
+
+Here, the card is paired with buttons and a link, allowing for interactive elements within the card.
+
+<Canvas of={DefaultCardStories.WithButtonAndLink} />
+
+### With outline
+
+This demo has a wrapper with `padding and width` around the `DefaultCard` to demo purposes.
+
+<Canvas of={DefaultCardStories.WithOutline} />
+
+### Emphasised
+
+This example showcases the `DefaultCard` with the `emphasised` variant, which provides a more pronounced visual style.
+
+<Canvas of={DefaultCardStories.Emphasised} />

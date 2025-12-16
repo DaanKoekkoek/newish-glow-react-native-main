@@ -1,0 +1,120 @@
+@use "@odido-portals/glow-tokens/navigation-local-navigation-v1";
+@use "@odido-portals/glow-tokens/semantics-color-background";
+@use "@globals/mixins";
+
+$title-sizes: sm, default, lg;
+
+@include mixins.token-scope(
+  local-navigation,
+  (navigation-local-navigation-v1, color-background)
+) {}
+
+.local-navigation-action {
+  align-items: center;
+  display: flex;
+  min-height: var(--components-navigation-local-navigation-v1-size-actions-min-height-default);
+}
+
+.local-navigation-variant {
+  display: grid;
+
+  &-no-actions {
+    grid-template-areas:
+      "middle middle";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-default {
+    grid-template-areas:
+      "left right"
+      "middle middle";
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--components-navigation-local-navigation-v1-gap-vertical-container);
+
+    &:not(:has(.local-navigation-action-right)) {
+      grid-template-areas:
+      "left left"
+      "middle middle"
+    }
+  }
+
+  &-compact {
+    align-items: center;
+    grid-template-areas:
+      "left middle right";
+    grid-template-columns: repeat(3, 1fr);
+
+    & > div {
+      flex: auto;
+    }
+  }
+}
+
+.local-navigation {
+  flex: none;
+  padding-bottom: var(--components-navigation-local-navigation-v1-padding-default-bottom);
+  padding-top: var(--components-navigation-local-navigation-v1-padding-default-top);
+
+
+  @each $size in $title-sizes {
+    &:has(.local-navigation-variant-compact .local-navigation-title-size-#{$size}) {
+      padding-bottom: var(--components-navigation-local-navigation-v1-padding-compact-bottom-#{$size});
+      padding-top: var(--components-navigation-local-navigation-v1-padding-compact-top-#{$size});
+    }
+  }
+
+  &:has(.local-navigation-variant-compact) .local-navigation-action {
+    min-height: var(--components-navigation-local-navigation-v1-size-actions-min-height-compact);
+  }
+  
+  &.local-navigation-prominence-default {
+    background-color: var(--semantics-color-background-default);
+  }
+  
+  &.local-navigation-prominence-subtle {
+    background-color: var(--semantics-color-background-subtle-palette-default, var(--semantics-color-background-subtle));
+  }
+}
+
+.local-navigation-action-left {
+  grid-area: left;
+  justify-content: left;
+}
+
+.local-navigation-action-right {
+  grid-area: right;
+  justify-content: right;
+}
+
+.local-navigation-middle {
+  display: flex;
+  flex-direction: column;
+  grid-area: middle;
+  row-gap: var(--components-navigation-local-navigation-v1-gap-vertical-text);
+}
+
+.local-navigation-paragraph {
+  max-width: var(--components-navigation-local-navigation-v1-size-paragraph-max-width);
+}
+
+.local-navigation-title {
+  color: var(--components-navigation-local-navigation-v1-color-text-title-default);
+
+  @each $size in $title-sizes {
+    &.local-navigation-title-size-#{$size} {
+      font-size: var(--components-navigation-local-navigation-v1-typography-compact-title-#{$size}-font-size);
+      letter-spacing: var(--components-navigation-local-navigation-v1-typography-compact-title-#{$size}-letter-spacing);
+      line-height: var(--components-navigation-local-navigation-v1-typography-compact-title-#{$size}-line-height);
+    }
+  }
+}
+
+.action-button {
+  & > span:not([data-icon]) {
+    @include mixins.visually-hidden;
+
+    @include mixins.above("tablet") {
+      @include mixins.visually-visible;
+    }
+  }
+}

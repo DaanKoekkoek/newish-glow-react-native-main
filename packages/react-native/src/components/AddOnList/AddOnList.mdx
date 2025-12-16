@@ -1,0 +1,39 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AddOnListStories from "./AddOnList.stories";
+
+<Meta of={AddOnListStories} />
+
+# AddOnList
+
+The `<AddOnList />` component is used to render a list of items with various customization options.
+
+## Basic Usage
+
+<Canvas of={AddOnListStories.Basic} />
+<Controls of={AddOnListStories.Basic} />
+
+## Props
+
+### AddOnList Props
+
+| Name          | Type              | Description                    |
+| ------------- | ----------------- | ------------------------------ |
+| `headerImage` | `string`          | Image to display in the header |
+| `headerText`  | `string`          | Text to display in the header  |
+| `children`    | `AddOnListItem[]` | List items to display          |
+
+### AddOnList.Item Props
+
+| Name           | Type       | Description                                          |
+| -------------- | ---------- | ---------------------------------------------------- |
+| `variant`      | `string`   | Whether the list item                                |
+| `index`        | `number`   | Index of the list item is a Default or Added variant |
+| `action`       | `Button`   | Action to perform on click                           |
+| 'addOn'        | `AddOn`    | Add on content to display                            |
+| `title`        | `string`   | Title of the list item                               |
+| `description`  | `string`   | Description of the list item                         |
+| `promo`        | `string`   | Promo of the list item                               |
+| `handlePress`  | `function` | Callback for when the item has been clicked          |
+| `isFirstChild` | `boolean`  | Whether the item is the first child in the AddOnList |
+| `isLastChild`  | `boolean`  | Whether the item is the last child in the AddOnList  |
+| `handlePress`  | `function` | Callback for when the item is clicked on             |

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlight component renders stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="highlight"
+    data-testid="highlight"
+  >
+    <span
+      class="heading heading-size-sm align-left highlight-heading"
+      data-testid="heading"
+      lang="nl"
+    >
+      Test Highlight
+    </span>
+  </div>
+</DocumentFragment>
+`;

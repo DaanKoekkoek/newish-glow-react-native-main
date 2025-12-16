@@ -1,0 +1,21 @@
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    radio-button-group,
+    token-input-gap
+) {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button-group-radios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.is-in-row {
+        column-gap: var(--components-input-gap-horizontal-default);
+        flex-flow: row wrap;
+    }
+}

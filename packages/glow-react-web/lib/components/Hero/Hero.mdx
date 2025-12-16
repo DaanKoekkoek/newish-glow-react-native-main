@@ -1,0 +1,58 @@
+import { Canvas, Meta, Controls, Story } from "@storybook/blocks";
+import * as HeroStories from "./Hero.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={HeroStories} />
+
+# Hero
+
+### Token version: {getComponentVersion("hero.v2")}
+
+The `Hero` component is a flexible and composable banner section used to highlight key content, promotions, or calls to action on a page. It supports multiple layout variants, visuals, and sticker options to match different branding or design needs.
+
+<Canvas of={HeroStories.Default} />
+<Controls of={HeroStories.Default} />
+
+## Purpose
+
+The `Hero` component is typically used at the top of a page to:
+
+- Introduce a key product or feature.
+- Display promotional content with call-to-action buttons.
+- Visually engage the user with a combination of text, image, and optional sticker content.
+
+## Features
+
+- Customizable layout via `variant`, `order`, and `layout`.
+- Support for highlighting and adding breaks in both `title` and `subtitle` via `useFormattedStringWithTag`.
+- Optional `sticker` content that can appear before or after the main content based on the `order`.
+- Optional `callToAction` to display one or more call-to-action buttons.
+- Responsive image rendering via `visual` props.
+- Semantic structure using `Heading`, `Paragraph`, and structured content blocks.
+
+## Usage
+
+```tsx
+import { Hero } from "@odido-portals/glow-react-web/hero";
+
+<Hero
+  heading={{
+    title: "Welcome to [Hero]",
+    subTitle: "Discover our [features]",
+  }}
+  footnote="Terms and conditions apply."
+  visual={{
+    src: "/path/to/image.png",
+    ratio: { mobileSmall: "1/1", tablet: "16/9" },
+  }}
+  sticker={{
+    type: "default",
+    description: "Hot Deal",
+    price: <Price value="10" beforeText="Vanaf" />,
+  }}
+  callToAction={<Button>Click me</Button>}
+/>
+  This is a short description of the hero section.
+</Hero>;
+```

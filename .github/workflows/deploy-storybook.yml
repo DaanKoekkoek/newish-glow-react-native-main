@@ -1,0 +1,160 @@
+name: Deploy Storybook
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main # Run only on push events to the main branch
+
+env:
+  pnpm_config_cache: D:\.pnpm-store\
+  GITHUB_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set target folder environment variable
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "TARGET_FOLDER=" >> $GITHUB_ENV
+          else
+            echo "TARGET_FOLDER=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        # will install the version specified in the packageManager field in the package.json.
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+          cache-dependency-path: "**/pnpm-lock.yaml"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Generate token versions documentation
+        run: pnpm run generate-versions --only-current
+
+      - name: Install zip
+        run: |
+          sudo apt-get install zip
+          # Ensures zip is installed. Usually, it's already installed on ubuntu-latest, but this is a safeguard.
+
+      - name: Build static Storybook sites
+        run: |
+          pnpm run storybook:build-grn
+          pnpm run storybook:build-grw
+
+      - name: Verify Storybook build outputs
+        run: |
+          if [ ! -d "examples/storybook-react-native/storybook-static" ]; then
+            echo "Error: Storybook build for React Native is missing!"
+            exit 1
+          fi
+          if [ ! -d "packages/glow-react-web/storybook-static" ]; then
+            echo "Error: Storybook build for Glow React Web is missing!"
+            exit 1
+          fi
+
+      - name: Generate zip
+        run: |
+          cd ${{ github.workspace }}/examples/storybook-react-native/storybook-static
+          zip -r ${{ github.workspace }}/storybook-static-react-native-${{ env.TARGET_FOLDER }}.zip .
+          cd ${{ github.workspace }}/packages/glow-react-web/storybook-static
+          zip -r ${{ github.workspace }}/storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}.zip .
+
+      - name: Upload React Native artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static-react-native-${{ env.TARGET_FOLDER }}
+          path: ${{ github.workspace }}/storybook-static-react-native-${{ env.TARGET_FOLDER }}.zip
+          if-no-files-found: error
+
+      - name: Upload Glow React Web artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}
+          path: ${{ github.workspace }}/storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}.zip
+          if-no-files-found: error
+
+  deploy:
+    needs: build
+    if: success()
+    runs-on: glow-react-native--ubuntu-large
+
+    steps:
+      - name: Set target folder environment variable
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "TARGET_FOLDER=" >> $GITHUB_ENV
+          else
+            echo "TARGET_FOLDER=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+
+      - name: Download React Native artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: storybook-static-react-native-${{ env.TARGET_FOLDER }}
+
+      - name: Download Glow React Web artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}
+
+      - name: Verify successful download
+        run: |
+          FILE1="${{ github.workspace }}/storybook-static-react-native-${{ env.TARGET_FOLDER }}.zip"
+          FILE2="${{ github.workspace }}/storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}.zip"
+          for FILE in $FILE1 $FILE2; do
+            if [[ -f "$FILE" ]]; then
+              echo "$FILE exists."
+            else
+              echo "Error: $FILE does not exist."
+              exit 1
+            fi
+          done
+
+      - name: Login via Azure CLI
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI script
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az account show
+
+      - name: Azure CLI script deployment for React Native
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az webapp deploy \
+              --resource-group odido-portals-fasttrack-cicd \
+              --name fasttrack-cicd-webapp-unity \
+              --type zip \
+              --src-path ${{ github.workspace }}/storybook-static-react-native-${{ env.TARGET_FOLDER }}.zip \
+              --target-path "/home/site/wwwroot-react-native"
+
+      - name: Azure CLI script deployment for Glow React Web
+        uses: azure/CLI@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az webapp deploy \
+              --resource-group odido-portals-fasttrack-cicd \
+              --name fasttrack-cicd-webapp-unity \
+              --type zip \
+              --src-path ${{ github.workspace }}/storybook-static-glow-react-web-${{ env.TARGET_FOLDER }}.zip \
+              --target-path "/home/site/wwwroot-react"

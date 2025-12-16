@@ -1,0 +1,27 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PhoneBrandStories from "./PhoneBrand.stories";
+
+<Meta of={PhoneBrandStories} />
+
+# PhoneBrand
+
+The `PhoneBrand` component displays SVG logos for various phone brands.
+
+## Usage
+
+- `variant`: Use the **inverted** option when the logo is placed on a dark background to ensure visibility.
+- `ariaLabel`: Use this prop to provide multi-language support.
+  The string should include `{brand}` which will be replaced with the actual brand name.
+
+### Default
+
+<Canvas of={PhoneBrandStories.Basic} />
+<Controls of={PhoneBrandStories.Basic} />
+
+### Inverted Example
+
+When the Logo is used on a dark background, the inverted variant is recommended.
+This ensures that the logo remains visible and maintains its color against the background color.
+
+<Canvas of={PhoneBrandStories.Inverted} />
+<Controls of={PhoneBrandStories.Inverted} />

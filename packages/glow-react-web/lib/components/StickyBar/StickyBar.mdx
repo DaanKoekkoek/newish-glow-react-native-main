@@ -1,0 +1,49 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as StickyBarStories from "./StickyBar.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={StickyBarStories} />
+
+# StickyBar
+
+### Token version: {getComponentVersion("sticky-bar.v1")}
+
+The `StickyBar` component is a container that sticks to the bottom or top of the screen. It is used to display a message or a call to action that is always visible to the user.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+In this version, you don't have to deal with `SafeAreaProvider`, `GestureHandlerRootView`, or `safeAreaInsets`. Follow the `Usage` guide below to use the component.
+
+- **`button`** prop became **`callToAction`**, since the Figma implementation allows multiple buttons within the stickybar.
+
+## Usage
+
+The `StickyBar` must be used within the `<Main />` component.
+
+```tsx
+import { Main } from "./main";
+import { Section } from "./section";
+import { StickyBar, StickyBarActionButton } from "./stickybar";
+
+<Main hasStickyBar>
+  <Section />
+  <Section />
+  <StickyBar
+    modal={{
+      trigger: <StickyBarActionButton onClick={() => {}} />,
+      title: "Modal title",
+      children: <Component />,
+    }}
+    callToAction={<Button prominence="emphasised">Button</Button>}
+  >
+    Contents of the stickybar
+  </StickyBar>
+</Main>;
+```
+
+### Default
+
+<Canvas of={StickyBarStories.Default} />
+<Controls of={StickyBarStories.Default} />

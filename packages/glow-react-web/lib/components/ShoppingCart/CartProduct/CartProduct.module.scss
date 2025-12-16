@@ -1,0 +1,49 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    cart-product,
+    shopping-cart-shopping-cart-v1
+) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-md);
+}
+
+.image-background {
+    width: var(	--components-shopping-cart-shopping-cart-v1-size-product-image-width);
+    border-radius: var(--components-shopping-cart-shopping-cart-v1-radius-product-image-default);
+    padding: var(--components-shopping-cart-shopping-cart-v1-padding-product-image-vertical)
+        var(--components-shopping-cart-shopping-cart-v1-padding-product-image-horizontal);
+}
+
+.image {
+    width: var(--components-shopping-cart-shopping-cart-v1-size-product-image-width);
+    height: 100%;
+    aspect-ratio: 2/3;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-sm);
+    padding-bottom: var(--components-shopping-cart-shopping-cart-v1-padding-product-details-bottom);
+}
+
+.title {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-product-title-default);
+}
+
+.description {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-product-description-default);
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+@each $palette in config.$odido-palette {
+    .image-background-#{$palette} {
+        background-color: var(--components-shopping-cart-shopping-cart-v1-color-product-product-image-background-default-palette-#{$palette}, var(--components-shopping-cart-shopping-cart-v1-color-product-product-image-background-default));
+    }
+  }

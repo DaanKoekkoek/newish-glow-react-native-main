@@ -1,0 +1,38 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as LocalNavigationStories from "./LocalNavigation.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta
+  title="DesignSystem/Components/LocalNavigation"
+  of={LocalNavigationStories}
+/>
+
+# Local Navigation
+
+### Token version: {getComponentVersion("local-navigation.v1")}
+
+## Defaults
+
+<Canvas of={LocalNavigationStories.Default} />
+<Controls of={LocalNavigationStories.Default} />
+
+## Variant: Compact
+
+<Canvas of={LocalNavigationStories.Compact} />
+
+## Prominence: Emphasised
+
+<Canvas of={LocalNavigationStories.Emphasised} />
+
+## With Left Action
+
+<Canvas of={LocalNavigationStories.WithLeftAction} />
+
+## With Right Action
+
+<Canvas of={LocalNavigationStories.WithRightAction} />
+
+## Variant: Compact with Right Action
+
+<Canvas of={LocalNavigationStories.WithRightActionCompact} />

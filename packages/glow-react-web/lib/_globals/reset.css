@@ -1,0 +1,182 @@
+@layer main.foundation {
+
+    html,
+    body,
+    div,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    /* Remove default fieldset styling */
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Remove default legend padding */
+    legend {
+        padding: 0;
+    }
+
+    /* Set a consistent line-height across browsers */
+    html {
+        line-height: 1.5;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    /* Normalize anchor appearance */
+    a {
+        cursor: pointer;
+    }
+
+    /* Ensure media elements scale properly */
+    img,
+    picture,
+    video,
+    canvas {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Normalize SVG display */
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    /* Normalize form controls to inherit styles */
+    input,
+    button,
+    textarea,
+    select {
+        color: inherit;
+        background: none;
+    }
+
+    /* Remove default button styles */
+    button {
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Normalize table layout */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* Prevent text overflow in headings and paragraphs */
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    /* Reduce motion for users who prefer minimal animations */
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms;
+            animation-iteration-count: 1;
+            transition-duration: 0.01ms;
+            scroll-behavior: auto;
+        }
+    }
+}
+
+/* Remove list styles for semantic lists */
+ol,
+ul {
+    list-style: none;
+}

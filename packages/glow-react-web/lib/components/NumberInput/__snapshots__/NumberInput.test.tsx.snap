@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberInput /> renders correctly a Number input 1`] = `
+<DocumentFragment>
+  <div
+    class="number-input size-default"
+  >
+    <button
+      class="button button-size-default button-prominence-default action-button-icon size-default state-inactive"
+      data-testid="number-input-button"
+      disabled=""
+    >
+      <span
+        class="button-label"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline block"
+          data-icon="min"
+          data-testid="icon"
+        >
+          
+        </span>
+      </span>
+    </button>
+    <input
+      aria-disabled="false"
+      class="number-field size-default state-default"
+      data-testid="input-number-field"
+      inputmode="numeric"
+      type="number"
+      value="1"
+    />
+    <button
+      class="button button-size-default button-prominence-default action-button-icon size-default"
+      data-testid="number-input-button"
+    >
+      <span
+        class="button-label"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline block"
+          data-icon="plus"
+          data-testid="icon"
+        >
+          
+        </span>
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<NumberInput /> renders small size 1`] = `
+<DocumentFragment>
+  <div
+    class="number-input size-sm"
+  >
+    <div
+      class="small-button"
+      style="left: 0px;"
+    >
+      <button
+        class="button button-size-sm button-prominence-secondary action-button-icon size-sm prominence-secondary state-inactive token-button-number-input-button-v1 small-button-action"
+        data-testid="number-input-button"
+        disabled=""
+      >
+        <span
+          class="button-label"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline block"
+            data-icon="min"
+            data-testid="icon"
+          >
+            
+          </span>
+        </span>
+      </button>
+    </div>
+    <input
+      aria-disabled="false"
+      class="number-field size-sm state-default"
+      data-testid="number-field"
+      inputmode="numeric"
+      type="number"
+      value="1"
+    />
+    <div
+      class="small-button"
+      style="right: 0px;"
+    >
+      <button
+        class="button button-size-sm button-prominence-secondary action-button-icon size-sm prominence-secondary token-button-number-input-button-v1 small-button-action"
+        data-testid="number-input-button"
+      >
+        <span
+          class="button-label"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline block"
+            data-icon="plus"
+            data-testid="icon"
+          >
+            
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,89 @@
+@use "@components/Checkbox/mixins" as checkbox;
+
+@layer subcomponent {
+  @include checkbox.checkbox-base-style;
+}
+
+@layer component {
+  .checkbox-gradient {
+    grid-column: 1;
+    grid-row: 1;
+    width: var(--components-input-checkbox-v1-size-default);
+    height: var(--components-input-checkbox-v1-size-default);
+    border-radius: var(--components-input-checkbox-v1-radius-default);
+    opacity: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 0;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+  
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  
+    [data-theme^="odido-"] & {
+      input:checked:not(:disabled, :invalid, .is-invalid) + label {
+        &::before {
+          background-color: transparent;
+        }
+    
+        .checkbox-gradient {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.checkbox-label-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  gap: var(--components-input-gap-horizontal-default);
+  padding: var(--components-input-checkbox-v1-padding-vertical) 0;
+
+  &::before {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &.start-aligned {
+    align-items: flex-start;
+  }
+
+  &.is-stretched::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 0;
+    cursor: pointer;
+  }
+}
+
+.text-label {
+  user-select: none;
+  cursor: pointer;
+  color: var(--components-input-checkbox-v1-color-text-default);
+  font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.text-label-disabled {
+  color: var(--components-input-checkbox-v1-color-text-inactive);
+  pointer-events: none;
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+}

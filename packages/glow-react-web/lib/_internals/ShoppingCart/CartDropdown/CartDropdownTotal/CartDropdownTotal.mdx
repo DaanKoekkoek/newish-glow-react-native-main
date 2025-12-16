@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartDropdownTotal from "./CartDropdownTotal.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartDropdownTotal} />
+
+# CartDropdownTotal
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartDropdownTotal>` atom is used to visually represent total amount for products in CartDropdown.
+
+### Default example
+
+<Canvas of={CartDropdownTotal.Default} />
+<Controls of={CartDropdownTotal.Default} />

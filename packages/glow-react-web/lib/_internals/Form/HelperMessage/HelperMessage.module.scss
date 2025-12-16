@@ -1,0 +1,14 @@
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/foundations-typography";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  helper-message,
+  (input-color, foundations-typography)
+) {
+  color: var(--components-input-color-text-subtle);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  font-weight: 400;
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+}

@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> renders correctly basic badge default 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 6,
+      },
+      {
+        "backgroundColor": "#2c72ff",
+        "borderColor": "#00000000",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#ffffff",
+          },
+          {},
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;
+
+exports[`<Badge /> renders correctly basic badge inactive default 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 6,
+      },
+      {
+        "backgroundColor": "#999999",
+        "borderColor": "#00000000",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;
+
+exports[`<Badge /> renders correctly outlined badge inactive outline 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10,
+        "paddingVertical": 4,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#999999",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#000000",
+          },
+          {
+            "color": "#999999",
+          },
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;
+
+exports[`<Badge /> renders correctly outlined badge outline 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 10,
+        "paddingVertical": 4,
+      },
+      {
+        "backgroundColor": "#ffffff",
+        "borderColor": "#abc7ff",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#000000",
+          },
+          {},
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;
+
+exports[`<Badge /> renders correctly subtle badge inactive subtle 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 6,
+      },
+      {
+        "backgroundColor": "#dddddd",
+        "borderColor": "#00000000",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#000000",
+          },
+          {
+            "color": "#999999",
+          },
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;
+
+exports[`<Badge /> renders correctly subtle badge subtle 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 12,
+        "borderStyle": "solid",
+        "borderWidth": 0,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 12,
+        "paddingVertical": 6,
+      },
+      {
+        "backgroundColor": "#ecf2ff",
+        "borderColor": "#00000000",
+      },
+    ]
+  }
+  testID="badge"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Strong",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 16,
+          "letterSpacing": 0.23999999463558197,
+          "lineHeight": 24,
+        },
+        [
+          {
+            "color": "#000000",
+          },
+          {},
+        ],
+      ]
+    }
+    testID="strong"
+  >
+    Badge
+  </Text>
+</View>
+`;

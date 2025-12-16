@@ -1,0 +1,174 @@
+@use "@odido-portals/glow-tokens/input-toggle-v1";
+@use "@globals/mixins";
+
+$toggle-sizes: "default", "lg", "xl";
+
+@include mixins.token-scope(toggle,
+    input-toggle-v1) {
+    display: flex;
+    align-items: center;
+}
+
+@each $size in $toggle-sizes {
+    .toggle-size-#{$size} {
+
+        .toggle-label,
+        .toggle-gradient-wrapper {
+            border-radius: var(--components-input-toggle-v1-radius);
+        }
+
+        .toggle-label .toggle-gradient-wrapper {
+            width: var(--components-input-toggle-v1-size-background-width-#{$size});
+            padding: var(--components-input-toggle-v1-padding-#{$size});
+            border: var(--components-input-toggle-v1-border-width-#{$size}) solid var(--components-input-toggle-v1-color-border-unselected-default);
+
+            .toggle-knob {
+                display: flex;
+                width: var(--components-input-toggle-v1-size-knob-#{$size});
+                height: var(--components-input-toggle-v1-size-knob-#{$size});
+                flex-shrink: 0;
+                border-radius: var(--components-input-toggle-v1-radius);
+            }
+        }
+
+        .toggle-checkbox:checked+.toggle-label .toggle-knob {
+            transform: translateX(var(--components-input-toggle-v1-size-knob-#{$size}));
+        }
+    }
+}
+
+.toggle-stretched label::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.toggle-label {
+    background-color: var(--components-input-toggle-v1-color-background-unselected-default);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    color: var(--components-input-toggle-v1-color-text-unselected-default);
+    font-family: var(--components-input-toggle-v1-typography-label-font-family);
+    font-size: var(--components-input-toggle-v1-typography-label-font-size);
+    line-height: var(--components-input-toggle-v1-typography-label-line-height);
+    letter-spacing: var(--components-input-toggle-v1-typography-label-letter-spacing);
+}
+
+.toggle-knob {
+    background-color: var(--components-input-toggle-v1-color-knob-unselected-default);
+    position: relative;
+    transform: translateX(0);
+    transition: transform .3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.toggle-gradient-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.toggle-gradient {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.toggle-label-text {
+    will-change: opacity;
+    transition: opacity .3s;
+    width: 100%;
+    z-index: 2;
+    user-select: none;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column: 2;
+    grid-row: 1;
+    place-content: center;
+    pointer-events: none;
+
+    .is-checked,
+    .is-unchecked {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .is-checked {
+        opacity: 0;
+    }
+
+    .is-unchecked {
+        opacity: 1;
+    }
+}
+
+.toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked {
+        +.toggle-label {
+            color: var(--components-input-toggle-v1-color-text-selected-default);
+
+            .toggle-gradient {
+                opacity: 1;
+            }
+
+            .is-checked {
+                opacity: 1;
+            }
+
+            .is-unchecked {
+                opacity: 0;
+            }
+        }
+    }
+
+    &:focus-visible {
+        + .toggle-label {
+            @include mixins.outline-focus;
+        }
+    }
+
+    &:disabled {
+        background-color: var(--components-input-toggle-v1-color-background-unselected-inactive);
+
+        +.toggle-label {
+            color: var(--components-input-toggle-v1-color-text-unselected-inactive);
+
+            .toggle-gradient {
+                opacity: 0;
+            }
+
+            .toggle-knob {
+                background-color: var(--components-input-toggle-v1-color-knob-unselected-inactive);
+            }
+        }
+
+        &:checked+.toggle-label {
+            color: var(--components-input-toggle-v1-color-text-selected-inactive);
+        }
+    }
+
+    &:not(:disabled)+.toggle-label:hover {
+        cursor: pointer;
+        background-color: var(--components-input-toggle-v1-color-background-unselected-hover);
+
+        >.toggle-knob {
+            background-color: var(--components-input-toggle-v1-color-knob-unselected-hover);
+        }
+    }
+
+    &:checked:not(:disabled)+.toggle-label:hover .toggle-gradient {
+        opacity: 1;
+    }
+}

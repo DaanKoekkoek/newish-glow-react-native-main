@@ -1,0 +1,270 @@
+@use "@odido-portals/glow-tokens/hero-hero";
+@use "@odido-portals/glow-tokens/hero-hero-v1";
+@use "@odido-portals/glow-tokens/responsive-gap";
+@use "@odido-portals/glow-tokens/responsive-padding";
+@use "@odido-portals/glow-tokens/hero-atoms-color";
+@use "@odido-portals/glow-tokens/hero-atoms-heading";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    hero,
+    (
+        hero-hero,
+        hero-hero-v1,
+        hero-atoms-color,
+        hero-atoms-heading,
+        gap,
+        padding
+    )
+) {}
+
+.hero {
+    display: flex;
+    gap: var(--components-hero-hero-v1-gap-default);
+    width: 100%;
+
+    .is-variant-solid {
+        border-radius: var(--components-hero-hero-v1-radius-default);
+        flex-direction: row;
+    }
+
+    @each $color in config.$odido-palette {
+        &.has-palette-#{$color} {
+            --palette-text: var(--components-hero-atoms-color-text-emphasized-palette-#{$color}, var(--components-hero-atoms-color-text-emphasized));
+            --palette-background: var(--components-hero-hero-v1-color-background-default-palette-#{$color}, var(--components-hero-hero-v1-color-background-default));
+
+            &.is-variant-solid>.hero-content,
+            &.is-variant-default>.hero-content,
+            &.is-variant-default>.hero-image {
+                background-color: var(--palette-background, var(--components-hero-hero-v1-color-background-default));
+            }
+        }
+    }
+
+    @include mixins.below("laptop") {
+        flex-direction: column;
+    }
+}
+
+.hero-content {
+    border-radius: var(--components-hero-hero-v1-radius-default);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: var(--components-hero-hero-size-min-height-default);
+    order: 2;
+    overflow: hidden;
+
+    .hero-content-copy {
+        flex: 1;
+        order: 2;
+        justify-content: flex-end;
+    }
+
+    .hero-content-copy-description {
+        display: flex;
+        flex-direction: column;
+        gap: var(--components-hero-hero-v1-gap-text-default);
+        padding-top: var(--responsive-gap-sm);
+        padding-bottom: var(--responsive-gap-lg);
+    }
+
+    .hero-content-image {
+        flex: 1;
+        order: 1;
+    }
+
+    .hero-image-visual {
+        border-radius: var(--components-hero-hero-v1-radius-none);
+    }
+
+    .hero-content-copy-title,
+    .hero-content-copy-cta,
+    .hero-content-copy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content-copy-title {
+        gap: var(--components-hero-atoms-heading-gap-vertical);
+    }
+
+    .hero-content-copy-title-highlight {
+        color: var(--palette-text);
+    }
+
+    .hero-content-copy-cta {
+        gap: var(--responsive-gap-xs);
+        flex-wrap: wrap;
+
+        button,
+        a {
+            width: 100%;
+        }
+    }
+
+    .hero-content-copy-footnote {
+        padding-top: var(--responsive-gap-sm);
+    }
+
+    .is-variant-solid & {
+        column-gap: var(--responsive-padding-default);
+
+        .hero-content-copy {
+            padding: var(--responsive-padding-default);
+        }
+    }
+
+    .is-variant-default & {
+        padding: var(--responsive-padding-default);
+    }
+
+    .is-layout-no-padding & {
+        padding: 0;
+
+        .hero-content-copy {
+            padding: var(--responsive-padding-default);
+        }
+    }
+
+    @include mixins.above("tablet") {
+        .hero-size-compact & {
+            min-height: var(--components-hero-hero-size-min-height-compact);
+        }
+    }
+
+    @include mixins.above("laptop") {
+        flex-direction: row;
+        order: 1;
+
+        .hero-image {
+            order: 2;
+        }
+
+        .hero-content-copy {
+            order: 1;
+        }
+
+        .hero-content-copy-cta {
+            flex-direction: row;
+
+            button {
+                width: auto;
+            }
+        }
+
+        .is-order-inverted & .hero-content-copy {
+            order: 2;
+        }
+
+        .is-variant-solid & .hero-content-copy {
+            padding-right: 0;
+        }
+
+        .is-order-inverted:not(.is-variant-default) & .hero-content-copy {
+            padding-right: var(--responsive-padding-default);
+            padding-left: 0;
+        }
+
+        .is-layout-uneven & {
+            flex: 1 0 0%;
+        }
+
+        .is-layout-no-padding:not(.is-variant-default) & .hero-content-copy {
+            padding-right: 0;
+        }
+
+        .is-layout-no-padding.is-order-inverted:not(.is-variant-default) & .hero-content-copy {
+            padding-left: 0;
+        }
+
+        .is-order-inverted & {
+            order: 2;
+
+            .hero-image {
+                order: 1;
+            }
+        }
+    }
+}
+
+.hero-image {
+    flex: 1;
+    min-height: var(--components-hero-hero-size-min-height-default);
+    order: 1;
+    position: relative;
+    padding: var(--responsive-padding-default);
+
+    @include mixins.above("tablet") {
+           .hero-size-compact & {
+                min-height: var(--components-hero-hero-size-min-height-compact);
+        }
+    }
+
+    .hero-image-sticker {
+        position: absolute;
+        bottom: var(--components-hero-hero-margin-sticker-position-bottom);
+        left: var(--components-hero-hero-padding-sticker-position-default);
+        right: var(--components-hero-hero-padding-sticker-position-default);
+        z-index: 1;
+        display: block;
+    }
+
+    .is-variant-default & {
+        border-radius: var(--components-hero-hero-v1-radius-default);
+    }
+
+    .is-layout-uneven &,
+    .is-layout-no-padding & {
+        padding: 0;
+
+        .hero-image-visual {
+            border-radius: var(--components-hero-hero-v1-radius-default);
+        }
+    }
+
+    .is-variant-solid & .hero-image-visual {
+        border-radius: 0;
+
+        +.hero-image-sticker {
+            bottom: 0;
+        }
+    }
+
+    @include mixins.above("laptop") {
+        overflow: hidden;
+        order: 2;
+
+        .is-layout-uneven & {
+            flex: 2 0 0%;
+        }
+
+        .is-order-inverted & {
+            order: 1;
+        }
+
+        .is-variant-default & .hero-image-sticker {
+            bottom: var(--responsive-padding-default);
+        }
+
+        .is-layout-uneven &,
+        .is-layout-no-padding & {
+            .hero-image-visual {
+                border-radius: 0;
+            }
+        }
+
+        .is-variant-solid & .hero-image-sticker {
+            display: none;
+        }
+    }
+}
+
+.hero-sticker {
+    margin-top: auto;
+}
+
+.hero-sticker-order {
+    order: 2;
+}

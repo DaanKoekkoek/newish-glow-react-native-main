@@ -1,0 +1,55 @@
+@use "@odido-portals/glow-tokens/slider-dotnav-v1";
+@use "@odido-portals/glow-tokens/slider-atoms-radius";
+@use "@odido-portals/glow-tokens/slider-atoms-size";
+@use "@odido-portals/glow-tokens/slider-atoms-color";
+@use "@globals/mixins";
+
+@include mixins.token-scope(dot-nav, (slider-atoms-radius, slider-atoms-size, slider-atoms-color, slider-dotnav-v1)) {
+    display: flex;
+    gap: var(--components-slider-dotnav-v1-gap-default);
+    justify-content: center;
+    align-items: flex-start;
+};
+
+.dot-nav-button {
+  position: relative;
+  background: var(--components-slider-atoms-color-background-default);
+  width: var(--components-slider-atoms-size-width-default);
+  height: var(--components-slider-atoms-size-height-default);
+  border: none;
+  border-radius: var(--components-slider-atoms-radius-default);
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-active {
+    width: var(--components-slider-atoms-size-width-active);
+    background: var(--components-slider-atoms-color-background-active);
+  }
+
+  &.has-timer {
+    background: var(--components-slider-atoms-color-background-default);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dot-nav-button-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--components-slider-atoms-color-background-active);
+  transform-origin: left center;
+  transform: scaleX(var(--progress-active, 0));
+  transition: transform linear var(--timer-duration, 0ms);
+
+  /* Prevent reverse animation for previous dots */
+  &[style*="--progress-active: 0"] {
+    transition: none;
+  }
+}

@@ -1,0 +1,84 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ListStories from "./List.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ListStories} />
+
+# List
+
+### Token version: {getComponentVersion("lists.v2")}
+
+The `List` component creates a consistent way to display related items with optional interactive elements. It's designed to present data in a scannable format, with support for icons, descriptions, and actions. Lists can be used for navigation, displaying data collections, or presenting options to users.
+
+## Usage
+
+The `List` component consists of two main parts:
+
+- **List**: The container component that sets the overall styling
+- **ListItem**: Individual items within the list that can contain various elements
+
+### Default Example
+
+<Canvas of={ListStories.Default} />
+<Controls of={ListStories.Default} />
+
+### Code Example
+
+This example demonstrates how to use interactive components like `Button` and `Toggle` within a `ListItem`. To ensure these components capture click events instead of the parent `ListItem`, apply the `stretched` prop to them.
+
+```jsx
+import { List, ListItem } from "@your-package/components";
+
+const MyComponent = () => {
+  const [toggle, setToggle] = useState(false);
+
+  return (
+    <List {...args}>
+      <ListItem
+        key={1}
+        iconLeft="energy"
+        text="Item 1"
+        action={
+          <Button size="sm" onClick={() => alert("clicked")} stretched>
+            button
+          </Button>
+        }
+      />
+      <ListItem
+        key={2}
+        iconLeft="comment"
+        text="Item 2"
+        attention={{ text: "Attention text", variant: "success" }}
+        onClick={() => {
+          setToggle(!toggle);
+          console.log("Pressed item 2");
+        }}
+        action={<Toggle checked={toggle} stretched />}
+      />
+    </List>
+  );
+};
+```
+
+### Props
+
+#### List Props
+
+- `background`: Controls the background style ("default", "subtle", "none")
+- `palette`: Sets the color theme (from OdidoPalette)
+- `children`: List items to be rendered
+
+#### ListItem Props
+
+- `text`: Main text content (required)
+- `leadingContent`: Icon, image or media icon displayed on left side of ListItem
+- `iconRight`: Icon displayed on the right side (automatically added when `clickable` is true)
+- `description1`: First line of description text
+- `description2`: Second line of description text
+- `attention`: Highlighted text with variant styling ("information", "success", "warning", "error")
+- `action`: Custom React element for interactive controls
+- `detail`: Text displayed on the right side
+- `notification`: Number displayed as a notification badge
+- `clickable`: Whether the item shows a chevron and can be clicked
+- `onClick`: Function to execute on click/tap

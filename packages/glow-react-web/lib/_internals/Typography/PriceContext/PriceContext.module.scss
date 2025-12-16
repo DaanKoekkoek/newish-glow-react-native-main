@@ -1,0 +1,28 @@
+@use "@odido-portals/glow-tokens/card-atoms-price";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    price-context,
+    card-atoms-price
+) {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--components-card-atoms-price-context-gap-vertical);
+    color: var(--components-card-atoms-price-context-color-icon);
+}
+
+.price-context-inline {
+    display: flex;
+    column-gap: var(--components-card-atoms-price-context-gap-horizontal);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.price-context-description {
+    color: var(--components-card-atoms-price-context-color-text-description);
+}
+
+.price-context-disclaimer {
+    color: var(--components-card-atoms-price-context-color-text-disclaimer);
+}

@@ -1,0 +1,41 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PromotionalCardStories from "./PromotionalCard.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PromotionalCardStories} />
+
+# Promotional Card
+
+### Token version: {getComponentVersion("promotional-card.v1")}
+
+The `PromotionalCard` component is a versatile UI element designed to showcase promotional content in various formats.
+
+## Features
+
+- Multiple content types: text-only, image with text, or countdown timer
+- Various styling variants including `default`, `emphasized`, and special `Black Friday` theme
+
+### Potential Considerations
+
+While the component itself is SSR friendly, be mindful of:
+
+- The `countdown` prop - If this contains any client-side timer logic, ensure that's handled properly for SSR
+- The `image` prop - Make sure any image loading logic works correctly in SSR contexts
+- The imported components (`Paragraph`, `Heading`, `TextLink`) - These should also be SSR-compatible for the entire tree to work correctly
+
+<Canvas of={PromotionalCardStories.Basic} />
+<Controls of={PromotionalCardStories.Basic} />
+
+### Black Friday Special Variant
+
+A special dark-themed variant ideal for `Black Friday` promotions with integrated countdown:
+
+<Canvas of={PromotionalCardStories.BlackFriday} />
+
+### All the Options
+
+The component supports different content types including `images` and `countdown` timers:
+
+<Canvas of={PromotionalCardStories.ContentOptions} />
+<Controls of={PromotionalCardStories.ContentOptions} />

@@ -1,0 +1,153 @@
+@use "@odido-portals/glow-tokens/selector-color";
+@use "@odido-portals/glow-tokens/selector-border";
+@use "@odido-portals/glow-tokens/selector-radius";
+@use "@odido-portals/glow-tokens/highlight-v1";
+@use "@components/Checkbox/mixins" as checkbox;
+@use "@globals/mixins";
+@use "@globals/config";
+@include checkbox.checkbox-base-style;
+
+@include mixins.token-scope(
+    selector-container,
+    (
+        highlight-v1,
+        selector-color,
+        selector-border,
+        selector-radius,
+        color-border 
+    )
+) {
+    flex: 1;
+}
+
+.selector-container {
+    & :not(.is-disabled) {
+        cursor: pointer;
+    }
+}
+
+.selector-container-highlight {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.selector-container-content {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background: var(--components-selector-color-background-default);
+    border: var(--components-selector-border-width-default) solid var(--components-selector-color-border-default);
+    border-radius: var(--components-selector-radius-default);
+
+    &.has-highlight {
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.selector-container label {
+    overflow: hidden;
+}
+
+.selector-container input {
+    position: absolute;
+    opacity: 0;
+
+    &:focus-visible + label {
+        @include mixins.outline-focus;
+        
+        border-radius: var(--components-selector-radius-default);
+
+        &:has(.has-highlight) {
+            border-top-left-radius: 0;
+        }
+    }
+
+    &:disabled + label .selector-container-content {
+        background: var(--components-selector-color-background-inactive);
+    }
+
+    &:disabled:checked + label .selector-container-content {
+        border: var(--components-selector-border-width-selected-inactive) solid var(--components-selector-color-border-selected-inactive);
+
+        &.has-highlight {
+            border-top: none;
+        }
+    }
+
+    &:not(:disabled) + label:hover .selector-container-content {
+        border: var(--components-selector-border-width-hover) solid var(--components-selector-color-border-hover);
+
+        &.has-highlight {
+            border-top: none;
+        }
+    }
+
+    &:not(:disabled):checked + label {
+        .selector-container-content {
+            border-color: transparent;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: calc(var(--components-selector-border-width-selected-default) / 2 * -1);
+                background-color: var(--components-selector-color-border-selected-default-palette-default, var(--components-selector-color-border-selected-default));
+                padding: var(--components-selector-border-width-selected-default);
+                mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+                mask-composite: exclude;
+                border-radius: var(--components-selector-radius-default);
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            &.has-highlight::after {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+        
+        .selector-container-highlight {
+            background-color: var(--components-highlight-v1-color-background-selected);
+        }
+
+        .selector-container-highlight-text {
+            color: var(--components-highlight-v1-color-text-selected);
+        }
+
+        &:hover {
+            .selector-container-highlight-text {
+                color: var(--components-highlight-v1-color-text-hover);
+            }
+
+            .selector-container-content::after {
+                padding: var(--components-selector-border-width-selected-hover);
+            }
+        }
+    }
+}
+
+@each $palette in config.$odido-palette {
+    .selector-container-palette-#{$palette} input:not(:disabled):checked + label {
+        &::before,
+        .selector-container-content::after,
+        .selector-container-highlight {
+            @include mixins.glow-gradient-image(
+                $palette: $palette, 
+                $fallback-color: var(--components-selector-color-border-selected-default)
+            );
+        }
+
+        &:hover {
+            &::before,
+            .selector-container-content::after,
+            .selector-container-highlight {
+                @include mixins.glow-gradient-image(
+                    $palette: $palette, 
+                    $hover: true, 
+                    $fallback-color: var(--components-selector-color-border-selected-hover)
+                );
+            }
+        }
+    }
+}

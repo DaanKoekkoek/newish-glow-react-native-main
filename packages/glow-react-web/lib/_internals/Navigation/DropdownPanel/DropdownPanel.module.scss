@@ -1,0 +1,37 @@
+@use "@odido-portals/glow-tokens/navigation-dropdown-panel-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(dropdown-panel,
+  navigation-dropdown-panel-v1) {};
+
+.dropdown-panel {
+  width: var(--components-navigation-dropdown-panel-v1-size-width);
+  flex-direction: column;
+  gap: var(--components-navigation-dropdown-panel-v1-gap-default);
+  align-items: center;
+  border-radius: var(--components-navigation-dropdown-panel-v1-radius-default);
+  background: var(--components-navigation-dropdown-panel-v1-color-background-default);
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 4%), 0 0 2px 0 rgb(0 0 0 / 12%);
+
+  .dropdown-panel-container {
+    padding: var(--components-navigation-dropdown-panel-v1-padding-default);
+    gap: var(--components-navigation-dropdown-panel-v1-gap-default);
+    display: flex;
+    flex-direction: column;
+
+    &.dropdown-panel-max-height {
+      max-height: 100px;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+  }
+
+}
+
+.dropdown-panel-corner-right {
+  border-top-right-radius: var(--components-navigation-dropdown-panel-v1-radius-none);
+}
+
+.dropdown-panel-corner-left {
+  border-top-left-radius: var(--components-navigation-dropdown-panel-v1-radius-none);
+}

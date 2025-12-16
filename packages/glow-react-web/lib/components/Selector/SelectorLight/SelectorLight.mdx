@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SelectorLightStories from "./SelectorLight.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SelectorLightStories} />
+
+# SelectorLight
+
+### Token version: {getComponentVersion("selectorLight.v1")}
+
+The `SelectorLight` component is a variant of the `Selector` designed for lightweight, visually focused options.  
+It is well-suited for scenarios where an icon or image represents the choice, accompanied by a short title and an optional highlight.
+
+### Default Example
+
+<Canvas of={SelectorLightStories.Default} />
+<Controls of={SelectorLightStories.Default} />

@@ -1,0 +1,123 @@
+@use "sass:math";
+@use "@odido-portals/glow-tokens/carousel-gap";
+@use "@odido-portals/glow-tokens/carousel-slide";
+@use "@odido-portals/glow-tokens/carousel-colour";
+@use "@odido-portals/glow-tokens/carousel-size";
+@use "@globals/mixins";
+@use "@globals/config";
+
+@include mixins.token-scope(
+  carousel,
+  (carousel-gap, carousel-slide, carousel-colour, carousel-size)
+) {
+  .carousel-slides-controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    [data-no-gutters] & {
+      @include mixins.grid-no-gutters;
+
+      padding: var(--grid-total-initial-padding);
+      max-width: var(--grid-total-initial-max-width);
+    }
+
+    .carousel-slides-indicator {
+      height: var(--components-carousel-size-slide-counter-height);
+      width: var(--components-carousel-size-slide-counter-width);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &[data-direction="up"] {
+        animation: slide-up 300ms ease-out;
+      }
+
+      &[data-direction="down"] {
+        animation: slide-down 300ms ease-out;
+      }
+    }
+
+    .carousel-slides-buttons {
+      display: flex;
+      gap: var(--components-carousel-gap-buttons-default);
+    }
+
+    .carousel-slides-legend {
+      display: flex;
+      column-gap: var(--components-carousel-gap-legend-default);
+      color: var(--components-carousel-colour-text-default);
+    }
+  }
+
+  .carousel-slide {
+    flex-shrink: 0;
+    max-width: 100%;
+
+    .carousel-slide-content {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.carousel-track {
+  margin-bottom: calc(var(--components-carousel-gap-vertical) * -1);
+
+  :global(.slick-track) {
+    display: flex;
+    align-items: stretch;
+    padding-block: var(--components-carousel-gap-vertical);
+    transition-timing-function: ease-in-out;
+  }
+  
+  :global(.slick-slide > div) {
+    padding-inline: calc(var(--components-carousel-gap-sliding-lg) / 2);
+  }
+
+  &.is-equal-size {
+    :global(.slick-slide),
+    :global(.slick-list),
+    .carousel-slide-content {
+      display: flex !important;
+    }
+
+    :global(.slick-slide)>div,
+    :global(.slick-slide) .carousel-slide,
+    .carousel-slide-content {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &:not(.is-equal-size) :global(.slick-slide)>div {
+   width: var(--components-carousel-slide-width);
+  }
+
+  &.is-centered .carousel-slide-content {
+    justify-content: center;
+  }
+}

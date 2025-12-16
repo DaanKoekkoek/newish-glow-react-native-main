@@ -1,0 +1,2306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepperInpage renders correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <Section>
+              <Grid>
+                <Grid.Column>
+                  <Unknown
+                    applyLoaders={[Function]}
+                    argTypes={
+                      {
+                        "children": {
+                          "control": {
+                            "type": "object",
+                          },
+                          "name": "children",
+                          "type": {
+                            "name": "array",
+                            "value": {
+                              "name": "object",
+                              "value": {
+                                "$$typeof": {
+                                  "name": "symbol",
+                                },
+                                "_owner": {
+                                  "name": "object",
+                                  "value": {},
+                                },
+                                "_store": {
+                                  "name": "object",
+                                  "value": {},
+                                },
+                                "key": {
+                                  "name": "string",
+                                },
+                                "props": {
+                                  "name": "object",
+                                  "value": {
+                                    "badgeText": {
+                                      "name": "string",
+                                    },
+                                    "content": {
+                                      "name": "object",
+                                      "value": {
+                                        "$$typeof": {
+                                          "name": "symbol",
+                                        },
+                                        "_owner": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "_store": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "key": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "props": {
+                                          "name": "object",
+                                          "value": {
+                                            "children": {
+                                              "name": "string",
+                                            },
+                                            "size": {
+                                              "name": "string",
+                                            },
+                                          },
+                                        },
+                                        "ref": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "type": {
+                                          "name": "function",
+                                        },
+                                      },
+                                    },
+                                    "textLink": {
+                                      "name": "object",
+                                      "value": {
+                                        "$$typeof": {
+                                          "name": "symbol",
+                                        },
+                                        "_owner": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "_store": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "key": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "props": {
+                                          "name": "object",
+                                          "value": {
+                                            "children": {
+                                              "name": "array",
+                                              "value": {
+                                                "name": "object",
+                                                "value": {
+                                                  "$$typeof": {
+                                                    "name": "symbol",
+                                                  },
+                                                  "_owner": {
+                                                    "name": "object",
+                                                    "value": {},
+                                                  },
+                                                  "_store": {
+                                                    "name": "object",
+                                                    "value": {},
+                                                  },
+                                                  "key": {
+                                                    "name": "object",
+                                                    "value": {},
+                                                  },
+                                                  "props": {
+                                                    "name": "object",
+                                                    "value": {
+                                                      "name": {
+                                                        "name": "string",
+                                                      },
+                                                    },
+                                                  },
+                                                  "ref": {
+                                                    "name": "object",
+                                                    "value": {},
+                                                  },
+                                                  "type": {
+                                                    "name": "function",
+                                                  },
+                                                },
+                                              },
+                                            },
+                                            "href": {
+                                              "name": "string",
+                                            },
+                                            "size": {
+                                              "name": "string",
+                                            },
+                                          },
+                                        },
+                                        "ref": {
+                                          "name": "object",
+                                          "value": {},
+                                        },
+                                        "type": {
+                                          "name": "function",
+                                        },
+                                      },
+                                    },
+                                    "title": {
+                                      "name": "string",
+                                    },
+                                  },
+                                },
+                                "ref": {
+                                  "name": "object",
+                                  "value": {},
+                                },
+                                "type": {
+                                  "name": "function",
+                                },
+                              },
+                            },
+                          },
+                        },
+                        "palette": {
+                          "control": {
+                            "type": "select",
+                          },
+                          "description": "Set the colour palette of the Box.",
+                          "name": "palette",
+                          "options": [
+                            "blue",
+                            "default",
+                            "green",
+                            "orange",
+                            "pink",
+                            "purple",
+                            "red",
+                            "yellow",
+                          ],
+                          "type": {
+                            "name": "string",
+                          },
+                        },
+                      }
+                    }
+                    args={
+                      {
+                        "children": [
+                          <StepperInpage.Step
+                            badgeText="Klantvoordeel"
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                <TextLink.Icon
+                                  name="add"
+                                />
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 1 title default"
+                          />,
+                          <StepperInpage.Step
+                            button={
+                              <Button
+                                fill={true}
+                                prominence="emphasised"
+                              >
+                                Button text
+                              </Button>
+                            }
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="active"
+                            title="Step 2 title with extra long title that should wrap"
+                          />,
+                          <StepperInpage.Step
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="inactive"
+                            title="Step 3 title disabled"
+                          />,
+                          <StepperInpage.Step
+                            status="completed"
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 4 title completed"
+                          />,
+                        ],
+                        "palette": "default",
+                      }
+                    }
+                    component={[Function]}
+                    componentId="designsystem-components-progressindicators-stepper-inpage"
+                    globals={{}}
+                    hooks={
+                      _HooksContext {
+                        "currentContext": {
+                          "allArgs": undefined,
+                          "applyLoaders": [Function],
+                          "argTypes": {
+                            "children": {
+                              "control": {
+                                "type": "object",
+                              },
+                              "name": "children",
+                              "type": {
+                                "name": "array",
+                                "value": {
+                                  "name": "object",
+                                  "value": {
+                                    "$$typeof": {
+                                      "name": "symbol",
+                                    },
+                                    "_owner": {
+                                      "name": "object",
+                                      "value": {},
+                                    },
+                                    "_store": {
+                                      "name": "object",
+                                      "value": {},
+                                    },
+                                    "key": {
+                                      "name": "string",
+                                    },
+                                    "props": {
+                                      "name": "object",
+                                      "value": {
+                                        "badgeText": {
+                                          "name": "string",
+                                        },
+                                        "content": {
+                                          "name": "object",
+                                          "value": {
+                                            "$$typeof": {
+                                              "name": "symbol",
+                                            },
+                                            "_owner": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "_store": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "key": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "props": {
+                                              "name": "object",
+                                              "value": {
+                                                "children": {
+                                                  "name": "string",
+                                                },
+                                                "size": {
+                                                  "name": "string",
+                                                },
+                                              },
+                                            },
+                                            "ref": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "type": {
+                                              "name": "function",
+                                            },
+                                          },
+                                        },
+                                        "textLink": {
+                                          "name": "object",
+                                          "value": {
+                                            "$$typeof": {
+                                              "name": "symbol",
+                                            },
+                                            "_owner": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "_store": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "key": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "props": {
+                                              "name": "object",
+                                              "value": {
+                                                "children": {
+                                                  "name": "array",
+                                                  "value": {
+                                                    "name": "object",
+                                                    "value": {
+                                                      "$$typeof": {
+                                                        "name": "symbol",
+                                                      },
+                                                      "_owner": {
+                                                        "name": "object",
+                                                        "value": {},
+                                                      },
+                                                      "_store": {
+                                                        "name": "object",
+                                                        "value": {},
+                                                      },
+                                                      "key": {
+                                                        "name": "object",
+                                                        "value": {},
+                                                      },
+                                                      "props": {
+                                                        "name": "object",
+                                                        "value": {
+                                                          "name": {
+                                                            "name": "string",
+                                                          },
+                                                        },
+                                                      },
+                                                      "ref": {
+                                                        "name": "object",
+                                                        "value": {},
+                                                      },
+                                                      "type": {
+                                                        "name": "function",
+                                                      },
+                                                    },
+                                                  },
+                                                },
+                                                "href": {
+                                                  "name": "string",
+                                                },
+                                                "size": {
+                                                  "name": "string",
+                                                },
+                                              },
+                                            },
+                                            "ref": {
+                                              "name": "object",
+                                              "value": {},
+                                            },
+                                            "type": {
+                                              "name": "function",
+                                            },
+                                          },
+                                        },
+                                        "title": {
+                                          "name": "string",
+                                        },
+                                      },
+                                    },
+                                    "ref": {
+                                      "name": "object",
+                                      "value": {},
+                                    },
+                                    "type": {
+                                      "name": "function",
+                                    },
+                                  },
+                                },
+                              },
+                            },
+                            "palette": {
+                              "control": {
+                                "type": "select",
+                              },
+                              "description": "Set the colour palette of the Box.",
+                              "name": "palette",
+                              "options": [
+                                "blue",
+                                "default",
+                                "green",
+                                "orange",
+                                "pink",
+                                "purple",
+                                "red",
+                                "yellow",
+                              ],
+                              "type": {
+                                "name": "string",
+                              },
+                            },
+                          },
+                          "args": {
+                            "children": [
+                              <StepperInpage.Step
+                                badgeText="Klantvoordeel"
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    <TextLink.Icon
+                                      name="add"
+                                    />
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 1 title default"
+                              />,
+                              <StepperInpage.Step
+                                button={
+                                  <Button
+                                    fill={true}
+                                    prominence="emphasised"
+                                  >
+                                    Button text
+                                  </Button>
+                                }
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="active"
+                                title="Step 2 title with extra long title that should wrap"
+                              />,
+                              <StepperInpage.Step
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="inactive"
+                                title="Step 3 title disabled"
+                              />,
+                              <StepperInpage.Step
+                                status="completed"
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 4 title completed"
+                              />,
+                            ],
+                            "palette": "default",
+                          },
+                          "argsByTarget": undefined,
+                          "component": [Function],
+                          "componentId": "designsystem-components-progressindicators-stepper-inpage",
+                          "globals": {},
+                          "hooks": [Circular],
+                          "id": "designsystem-components-progressindicators-stepper-inpage--unknown",
+                          "initialArgs": {
+                            "children": [
+                              <StepperInpage.Step
+                                badgeText="Klantvoordeel"
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    <TextLink.Icon
+                                      name="add"
+                                    />
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 1 title default"
+                              />,
+                              <StepperInpage.Step
+                                button={
+                                  <Button
+                                    fill={true}
+                                    prominence="emphasised"
+                                  >
+                                    Button text
+                                  </Button>
+                                }
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="active"
+                                title="Step 2 title with extra long title that should wrap"
+                              />,
+                              <StepperInpage.Step
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="inactive"
+                                title="Step 3 title disabled"
+                              />,
+                              <StepperInpage.Step
+                                status="completed"
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 4 title completed"
+                              />,
+                            ],
+                            "palette": "default",
+                          },
+                          "kind": "DesignSystem/Components/ProgressIndicators/Stepper/InPage",
+                          "moduleExport": {},
+                          "name": "Unknown",
+                          "originalStoryFn": [Function],
+                          "parameters": {
+                            "__isArgsStory": true,
+                            "fileName": undefined,
+                          },
+                          "playFunction": undefined,
+                          "story": "Unknown",
+                          "subcomponents": undefined,
+                          "tags": [
+                            "story",
+                          ],
+                          "title": "DesignSystem/Components/ProgressIndicators/Stepper/InPage",
+                          "unboundStoryFn": [Function],
+                          "undecoratedStoryFn": [Function],
+                          "unmappedArgs": {
+                            "children": [
+                              <StepperInpage.Step
+                                badgeText="Klantvoordeel"
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    <TextLink.Icon
+                                      name="add"
+                                    />
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 1 title default"
+                              />,
+                              <StepperInpage.Step
+                                button={
+                                  <Button
+                                    fill={true}
+                                    prominence="emphasised"
+                                  >
+                                    Button text
+                                  </Button>
+                                }
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="active"
+                                title="Step 2 title with extra long title that should wrap"
+                              />,
+                              <StepperInpage.Step
+                                content={
+                                  <Paragraph
+                                    size="sm"
+                                  >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                                  </Paragraph>
+                                }
+                                status="inactive"
+                                title="Step 3 title disabled"
+                              />,
+                              <StepperInpage.Step
+                                status="completed"
+                                textLink={
+                                  <TextLink
+                                    href="#"
+                                    size="sm"
+                                  >
+                                    Text link
+                                  </TextLink>
+                                }
+                                title="Step 4 title completed"
+                              />,
+                            ],
+                            "palette": "default",
+                          },
+                        },
+                        "currentDecoratorName": null,
+                        "currentEffects": [],
+                        "currentHooks": [],
+                        "currentPhase": "NONE",
+                        "hasUpdates": false,
+                        "hookListsMap": WeakMap {},
+                        "mountedDecorators": Set {
+                          [Function],
+                          [Function],
+                        },
+                        "nextHookIndex": 0,
+                        "prevEffects": [],
+                        "prevMountedDecorators": Set {
+                          [Function],
+                          [Function],
+                        },
+                        "renderListener": [Function],
+                      }
+                    }
+                    id="designsystem-components-progressindicators-stepper-inpage--unknown"
+                    initialArgs={
+                      {
+                        "children": [
+                          <StepperInpage.Step
+                            badgeText="Klantvoordeel"
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                <TextLink.Icon
+                                  name="add"
+                                />
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 1 title default"
+                          />,
+                          <StepperInpage.Step
+                            button={
+                              <Button
+                                fill={true}
+                                prominence="emphasised"
+                              >
+                                Button text
+                              </Button>
+                            }
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="active"
+                            title="Step 2 title with extra long title that should wrap"
+                          />,
+                          <StepperInpage.Step
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="inactive"
+                            title="Step 3 title disabled"
+                          />,
+                          <StepperInpage.Step
+                            status="completed"
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 4 title completed"
+                          />,
+                        ],
+                        "palette": "default",
+                      }
+                    }
+                    kind="DesignSystem/Components/ProgressIndicators/Stepper/InPage"
+                    moduleExport={{}}
+                    name="Unknown"
+                    originalStoryFn={[Function]}
+                    parameters={
+                      {
+                        "__isArgsStory": true,
+                        "fileName": undefined,
+                      }
+                    }
+                    story="Unknown"
+                    tags={
+                      [
+                        "story",
+                      ]
+                    }
+                    title="DesignSystem/Components/ProgressIndicators/Stepper/InPage"
+                    unboundStoryFn={[Function]}
+                    undecoratedStoryFn={[Function]}
+                    unmappedArgs={
+                      {
+                        "children": [
+                          <StepperInpage.Step
+                            badgeText="Klantvoordeel"
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                <TextLink.Icon
+                                  name="add"
+                                />
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 1 title default"
+                          />,
+                          <StepperInpage.Step
+                            button={
+                              <Button
+                                fill={true}
+                                prominence="emphasised"
+                              >
+                                Button text
+                              </Button>
+                            }
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="active"
+                            title="Step 2 title with extra long title that should wrap"
+                          />,
+                          <StepperInpage.Step
+                            content={
+                              <Paragraph
+                                size="sm"
+                              >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                              </Paragraph>
+                            }
+                            status="inactive"
+                            title="Step 3 title disabled"
+                          />,
+                          <StepperInpage.Step
+                            status="completed"
+                            textLink={
+                              <TextLink
+                                href="#"
+                                size="sm"
+                              >
+                                Text link
+                              </TextLink>
+                            }
+                            title="Step 4 title completed"
+                          />,
+                        ],
+                        "palette": "default",
+                      }
+                    }
+                  />
+                </Grid.Column>
+              </Grid>
+            </Section>,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      testID="stepper"
+                    >
+                      <View
+                        style={
+                          {
+                            "flexDirection": "column",
+                            "gap": 24,
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            {
+                              "flexDirection": "column",
+                              "gap": 24,
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                                "gap": 16,
+                                "marginTop": 0,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignContent": "center",
+                                    "alignItems": "center",
+                                    "borderRadius": 100,
+                                    "flexDirection": "row",
+                                    "height": 48,
+                                    "justifyContent": "center",
+                                    "overflow": "hidden",
+                                    "position": "relative",
+                                    "width": 48,
+                                  },
+                                  {
+                                    "backgroundColor": "#abc7ff",
+                                  },
+                                  false,
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "alignContent": "center",
+                                      "alignItems": "center",
+                                      "backgroundColor": "#ffffff",
+                                      "borderRadius": 100,
+                                      "height": 40,
+                                      "justifyContent": "center",
+                                      "width": 40,
+                                      "zIndex": 3,
+                                    },
+                                    false,
+                                  ]
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "odido_Heading_Medium",
+                                      },
+                                      {
+                                        "color": "#000000",
+                                        "fontSize": 24,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.23999999463558197,
+                                        "lineHeight": 28,
+                                        "marginVertical": 0,
+                                        "textAlign": "left",
+                                      },
+                                      {
+                                        "alignContent": "center",
+                                        "alignItems": "center",
+                                        "color": "#000000",
+                                        "flex": 1,
+                                        "justifyContent": "center",
+                                        "verticalAlign": "middle",
+                                      },
+                                    ]
+                                  }
+                                  testID="heading"
+                                >
+                                  1
+                                </Text>
+                              </View>
+                            </View>
+                            <View
+                              style={
+                                {
+                                  "alignContent": "flex-start",
+                                  "alignItems": "center",
+                                  "columnGap": 16,
+                                  "display": "flex",
+                                  "flex": 1,
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "rowGap": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                allowFontScaling={true}
+                                style={
+                                  [
+                                    {
+                                      "fontFamily": "odido_Heading_Medium",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "fontSize": 24,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.23999999463558197,
+                                      "lineHeight": 28,
+                                      "marginVertical": 0,
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "maxWidth": 240,
+                                    },
+                                  ]
+                                }
+                                testID="heading"
+                              >
+                                Step 1 title default
+                              </Text>
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "alignItems": "center",
+                                      "alignSelf": "flex-start",
+                                      "borderRadius": 12,
+                                      "borderStyle": "solid",
+                                      "borderWidth": 0,
+                                      "flexShrink": 1,
+                                      "justifyContent": "center",
+                                      "paddingHorizontal": 12,
+                                      "paddingVertical": 6,
+                                    },
+                                    {
+                                      "backgroundColor": "#2f9a92",
+                                      "borderColor": "#00000000",
+                                    },
+                                  ]
+                                }
+                                testID="badge"
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "odido_Paragraph_Strong",
+                                      },
+                                      {
+                                        "color": "#000000",
+                                        "fontSize": 16,
+                                        "letterSpacing": 0.23999999463558197,
+                                        "lineHeight": 24,
+                                      },
+                                      [
+                                        {
+                                          "color": "#ffffff",
+                                        },
+                                        {},
+                                      ],
+                                    ]
+                                  }
+                                  testID="strong"
+                                >
+                                  Klantvoordeel
+                                </Text>
+                              </View>
+                            </View>
+                          </View>
+                          <View>
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "odido_Paragraph_Regular",
+                                  },
+                                  {
+                                    "color": "#000000",
+                                    "fontSize": 16,
+                                    "letterSpacing": 0.23999999463558197,
+                                    "lineHeight": 24,
+                                    "textAlign": "left",
+                                  },
+                                  undefined,
+                                ]
+                              }
+                              testID="paragraph"
+                            >
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                            </Text>
+                          </View>
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                        "fontSize": 24,
+                                        "lineHeight": 24,
+                                        "width": 24,
+                                      },
+                                      [
+                                        {
+                                          "color": "#1b5ee4",
+                                          "display": "flex",
+                                          "verticalAlign": "middle",
+                                        },
+                                        undefined,
+                                        false,
+                                      ],
+                                    ]
+                                  }
+                                  testID="link-icon"
+                                >
+                                  
+                                </Text>
+                              </View>
+                              <Text
+                                style={
+                                  [
+                                    {
+                                      "textDecorationLine": "underline",
+                                      "textDecorationStyle": "solid",
+                                    },
+                                    {
+                                      "color": "#1b5ee4",
+                                    },
+                                    {
+                                      "fontSize": 16,
+                                      "letterSpacing": 0.23999999463558197,
+                                      "lineHeight": 24,
+                                    },
+                                    {
+                                      "textDecorationLine": "none",
+                                      "textDecorationStyle": "solid",
+                                    },
+                                    false,
+                                    undefined,
+                                  ]
+                                }
+                                testID="link-text"
+                              >
+                                Text link
+                              </Text>
+                            </View>
+                          </Text>
+                          <View
+                            style={
+                              {
+                                "paddingTop": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "backgroundColor": "#dddddd",
+                                  "height": 2,
+                                  "width": "100%",
+                                }
+                              }
+                              testID="divider"
+                            />
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "flexDirection": "column",
+                              "gap": 24,
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                                "gap": 16,
+                                "marginTop": 0,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "alignItems": "center",
+                                  "justifyContent": "center",
+                                  "position": "relative",
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "alignContent": "center",
+                                      "alignItems": "center",
+                                      "borderRadius": 100,
+                                      "flexDirection": "row",
+                                      "height": 48,
+                                      "justifyContent": "center",
+                                      "overflow": "hidden",
+                                      "position": "relative",
+                                      "width": 48,
+                                    },
+                                    {
+                                      "zIndex": 1,
+                                    },
+                                  ]
+                                }
+                                testID="glow-gradient"
+                              >
+                                <RNSVGSvgView
+                                  align="xMidYMid"
+                                  bbHeight="100%"
+                                  bbWidth="100%"
+                                  fill="none"
+                                  focusable={false}
+                                  height="100%"
+                                  meetOrSlice={1}
+                                  minX={0}
+                                  minY={0}
+                                  style={
+                                    [
+                                      {
+                                        "backgroundColor": "transparent",
+                                        "borderWidth": 0,
+                                      },
+                                      {
+                                        "flex": 0,
+                                        "height": "100%",
+                                        "width": "100%",
+                                      },
+                                    ]
+                                  }
+                                  vbHeight={1080}
+                                  vbWidth={960}
+                                  width="100%"
+                                >
+                                  <RNSVGGroup
+                                    fill={null}
+                                    propList={
+                                      [
+                                        "fill",
+                                      ]
+                                    }
+                                  >
+                                    <RNSVGGroup
+                                      fill={
+                                        {
+                                          "payload": 4278190080,
+                                          "type": 0,
+                                        }
+                                      }
+                                    >
+                                      <RNSVGGroup
+                                        clipPath="clip0"
+                                        fill={
+                                          {
+                                            "payload": 4278190080,
+                                            "type": 0,
+                                          }
+                                        }
+                                      >
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_linear_1_220",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_radial_1_221",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_radial_1_222",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_radial_1_223",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_radial_1_224",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                        <RNSVGPath
+                                          d="M960 0H0v1080h960V0z"
+                                          fill={
+                                            {
+                                              "brushRef": "paint0_radial_1_225",
+                                              "type": 1,
+                                            }
+                                          }
+                                          propList={
+                                            [
+                                              "fill",
+                                            ]
+                                          }
+                                        />
+                                      </RNSVGGroup>
+                                      <RNSVGDefs>
+                                        <RNSVGLinearGradient
+                                          gradient={
+                                            [
+                                              0.777327,
+                                              -11498753,
+                                              1,
+                                              -13798401,
+                                            ]
+                                          }
+                                          gradientTransform={null}
+                                          gradientUnits={0}
+                                          name="paint0_linear_1_220"
+                                          x1={960}
+                                          x2="3.57628e-05"
+                                          y1="2.86102e-05"
+                                          y2={1080}
+                                        />
+                                        <RNSVGRadialGradient
+                                          cx={0}
+                                          cy={0}
+                                          fx={0}
+                                          fy={0}
+                                          gradient={
+                                            [
+                                              0.665,
+                                              -8477697,
+                                              0.81,
+                                              -9266945,
+                                              0.885,
+                                              -2139184129,
+                                              1,
+                                              8299519,
+                                            ]
+                                          }
+                                          gradientTransform={
+                                            [
+                                              185.29044965962717,
+                                              1245.7859002914317,
+                                              -681.3706738363603,
+                                              101.34283789091515,
+                                              512.887,
+                                              -51.8359,
+                                            ]
+                                          }
+                                          gradientUnits={1}
+                                          name="paint0_radial_1_221"
+                                          rx={1}
+                                          ry={1}
+                                        />
+                                        <RNSVGRadialGradient
+                                          cx={0}
+                                          cy={0}
+                                          fx={0}
+                                          fy={0}
+                                          gradient={
+                                            [
+                                              0,
+                                              -7765505,
+                                              0.33941,
+                                              -8094977,
+                                              0.739171,
+                                              -7568129,
+                                              1,
+                                              9209087,
+                                            ]
+                                          }
+                                          gradientTransform={
+                                            [
+                                              123.21784666591678,
+                                              862.5251797988362,
+                                              -503.2685466425023,
+                                              71.89548556302717,
+                                              694.036,
+                                              444.213,
+                                            ]
+                                          }
+                                          gradientUnits={1}
+                                          name="paint0_radial_1_222"
+                                          rx={1}
+                                          ry={1}
+                                        />
+                                        <RNSVGRadialGradient
+                                          cx={0}
+                                          cy={0}
+                                          fx={0}
+                                          fy={0}
+                                          gradient={
+                                            [
+                                              0.578582,
+                                              -9279489,
+                                              0.697843,
+                                              -428709889,
+                                              1,
+                                              7497727,
+                                            ]
+                                          }
+                                          gradientTransform={
+                                            [
+                                              232.59958647478993,
+                                              1009.243242420655,
+                                              -487.48777556826667,
+                                              112.35096777733294,
+                                              639.043,
+                                              117.686,
+                                            ]
+                                          }
+                                          gradientUnits={1}
+                                          name="paint0_radial_1_223"
+                                          rx={1}
+                                          ry={1}
+                                        />
+                                        <RNSVGRadialGradient
+                                          cx={0}
+                                          cy={0}
+                                          fx={0}
+                                          fy={0}
+                                          gradient={
+                                            [
+                                              0.00787439,
+                                              -33501,
+                                              0.565,
+                                              -819376,
+                                              0.708535,
+                                              -420511650,
+                                              1,
+                                              15695966,
+                                            ]
+                                          }
+                                          gradientTransform={
+                                            [
+                                              26.255273739945604,
+                                              824.818232277173,
+                                              -548.3952396141386,
+                                              17.45629105942685,
+                                              682.708,
+                                              -34.0676,
+                                            ]
+                                          }
+                                          gradientUnits={1}
+                                          name="paint0_radial_1_224"
+                                          rx={1}
+                                          ry={1}
+                                        />
+                                        <RNSVGRadialGradient
+                                          cx={0}
+                                          cy={0}
+                                          fx={0}
+                                          fy={0}
+                                          gradient={
+                                            [
+                                              0.651831,
+                                              -33501,
+                                              1,
+                                              16743715,
+                                            ]
+                                          }
+                                          gradientTransform={
+                                            [
+                                              3.65332959181241e-14,
+                                              596.634,
+                                              -349.9,
+                                              2.1425195751082944e-14,
+                                              480,
+                                              -56.6343,
+                                            ]
+                                          }
+                                          gradientUnits={1}
+                                          name="paint0_radial_1_225"
+                                          rx={1}
+                                          ry={1}
+                                        />
+                                        <RNSVGClipPath
+                                          fill={
+                                            {
+                                              "payload": 4278190080,
+                                              "type": 0,
+                                            }
+                                          }
+                                          name="clip0"
+                                        >
+                                          <RNSVGPath
+                                            d="M0 0H960V1080H0z"
+                                            fill={
+                                              {
+                                                "payload": 4294967295,
+                                                "type": 0,
+                                              }
+                                            }
+                                            propList={
+                                              [
+                                                "fill",
+                                              ]
+                                            }
+                                          />
+                                        </RNSVGClipPath>
+                                      </RNSVGDefs>
+                                    </RNSVGGroup>
+                                  </RNSVGGroup>
+                                </RNSVGSvgView>
+                              </View>
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "position": "absolute",
+                                    },
+                                    {
+                                      "alignContent": "center",
+                                      "alignItems": "center",
+                                      "backgroundColor": "#ffffff",
+                                      "borderRadius": 100,
+                                      "height": 40,
+                                      "justifyContent": "center",
+                                      "width": 40,
+                                      "zIndex": 3,
+                                    },
+                                  ]
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "odido_Heading_Medium",
+                                      },
+                                      {
+                                        "color": "#000000",
+                                        "fontSize": 24,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.23999999463558197,
+                                        "lineHeight": 28,
+                                        "marginVertical": 0,
+                                        "textAlign": "left",
+                                      },
+                                      undefined,
+                                    ]
+                                  }
+                                  testID="heading"
+                                >
+                                  2
+                                </Text>
+                              </View>
+                            </View>
+                            <View
+                              style={
+                                {
+                                  "alignContent": "flex-start",
+                                  "alignItems": "center",
+                                  "columnGap": 16,
+                                  "display": "flex",
+                                  "flex": 1,
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "rowGap": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                allowFontScaling={true}
+                                style={
+                                  [
+                                    {
+                                      "fontFamily": "odido_Heading_Medium",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "fontSize": 24,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.23999999463558197,
+                                      "lineHeight": 28,
+                                      "marginVertical": 0,
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "maxWidth": 240,
+                                    },
+                                  ]
+                                }
+                                testID="heading"
+                              >
+                                Step 2 title with extra long title that should wrap
+                              </Text>
+                            </View>
+                          </View>
+                          <View>
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "odido_Paragraph_Regular",
+                                  },
+                                  {
+                                    "color": "#000000",
+                                    "fontSize": 16,
+                                    "letterSpacing": 0.23999999463558197,
+                                    "lineHeight": 24,
+                                    "textAlign": "left",
+                                  },
+                                  undefined,
+                                ]
+                              }
+                              testID="paragraph"
+                            >
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+                            </Text>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "alignSelf": "stretch",
+                                "maxWidth": 343,
+                              }
+                            }
+                          >
+                            <View
+                              accessibilityState={
+                                {
+                                  "busy": undefined,
+                                  "checked": undefined,
+                                  "disabled": false,
+                                  "expanded": undefined,
+                                  "selected": undefined,
+                                }
+                              }
+                              accessibilityValue={
+                                {
+                                  "max": undefined,
+                                  "min": undefined,
+                                  "now": undefined,
+                                  "text": undefined,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              role="button"
+                              style={
+                                [
+                                  {},
+                                  undefined,
+                                ]
+                              }
+                              testID="button"
+                            >
+                              <View
+                                collapsable={false}
+                                jestAnimatedStyle={
+                                  {
+                                    "value": {
+                                      "backgroundColor": "rgba(27, 94, 228, 1)",
+                                      "borderColor": "rgba(0, 0, 0, 0)",
+                                    },
+                                  }
+                                }
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "backgroundColor": "rgba(27, 94, 228, 1)",
+                                    "borderColor": "rgba(0, 0, 0, 0)",
+                                    "borderRadius": 100,
+                                    "borderStyle": "solid",
+                                    "borderWidth": 0,
+                                    "flexDirection": "row",
+                                    "gap": 12,
+                                    "justifyContent": "center",
+                                    "paddingHorizontal": 20,
+                                    "paddingVertical": 12,
+                                  }
+                                }
+                                testID="button-visual"
+                              >
+                                <View
+                                  onLayout={[Function]}
+                                  style={
+                                    {
+                                      "alignItems": "center",
+                                      "flexDirection": "row",
+                                      "gap": 12,
+                                      "justifyContent": "center",
+                                    }
+                                  }
+                                >
+                                  <Text
+                                    collapsable={false}
+                                    jestAnimatedStyle={
+                                      {
+                                        "value": {
+                                          "color": "rgba(255, 255, 255, 1)",
+                                        },
+                                      }
+                                    }
+                                    style={
+                                      {
+                                        "color": "rgba(255, 255, 255, 1)",
+                                        "display": "flex",
+                                        "fontFamily": "odido_Paragraph_Strong",
+                                        "fontSize": 18,
+                                        "gap": 12,
+                                        "letterSpacing": 0.27000001072883606,
+                                        "lineHeight": 24,
+                                      }
+                                    }
+                                  >
+                                    Button text
+                                  </Text>
+                                </View>
+                              </View>
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingTop": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "backgroundColor": "#dddddd",
+                                  "height": 2,
+                                  "width": "100%",
+                                }
+                              }
+                              testID="divider"
+                            />
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "flexDirection": "column",
+                              "gap": 24,
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                                "gap": 16,
+                                "marginTop": 0,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignContent": "center",
+                                    "alignItems": "center",
+                                    "backgroundColor": undefined,
+                                    "borderRadius": 100,
+                                    "color": "#999999",
+                                    "flexDirection": "row",
+                                    "height": 48,
+                                    "justifyContent": "center",
+                                    "overflow": "hidden",
+                                    "position": "relative",
+                                    "width": 48,
+                                  },
+                                  false,
+                                  {
+                                    "backgroundColor": "#ecf2ff",
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  [
+                                    {
+                                      "alignContent": "center",
+                                      "alignItems": "center",
+                                      "borderRadius": 100,
+                                      "height": 40,
+                                      "justifyContent": "center",
+                                      "width": 40,
+                                      "zIndex": 3,
+                                    },
+                                    {
+                                      "backgroundColor": "#ecf2ff",
+                                    },
+                                  ]
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "odido_Heading_Medium",
+                                      },
+                                      {
+                                        "color": "#000000",
+                                        "fontSize": 24,
+                                        "fontWeight": "500",
+                                        "letterSpacing": 0.23999999463558197,
+                                        "lineHeight": 28,
+                                        "marginVertical": 0,
+                                        "textAlign": "left",
+                                      },
+                                      {
+                                        "alignContent": "center",
+                                        "alignItems": "center",
+                                        "color": "#999999",
+                                        "flex": 1,
+                                        "justifyContent": "center",
+                                        "verticalAlign": "middle",
+                                      },
+                                    ]
+                                  }
+                                  testID="heading"
+                                >
+                                  3
+                                </Text>
+                              </View>
+                            </View>
+                            <View
+                              style={
+                                {
+                                  "alignContent": "flex-start",
+                                  "alignItems": "center",
+                                  "columnGap": 16,
+                                  "display": "flex",
+                                  "flex": 1,
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "rowGap": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                allowFontScaling={true}
+                                style={
+                                  [
+                                    {
+                                      "fontFamily": "odido_Heading_Medium",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "fontSize": 24,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.23999999463558197,
+                                      "lineHeight": 28,
+                                      "marginVertical": 0,
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#999999",
+                                      "maxWidth": 240,
+                                    },
+                                  ]
+                                }
+                                testID="heading"
+                              >
+                                Step 3 title disabled
+                              </Text>
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingTop": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "backgroundColor": "#dddddd",
+                                  "height": 2,
+                                  "width": "100%",
+                                }
+                              }
+                              testID="divider"
+                            />
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "flexDirection": "column",
+                              "gap": 24,
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                                "gap": 16,
+                                "marginTop": 0,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "alignContent": "center",
+                                  "alignItems": "center",
+                                  "backgroundColor": "#2f9a92",
+                                  "borderRadius": 100,
+                                  "flexDirection": "row",
+                                  "height": 48,
+                                  "justifyContent": "center",
+                                  "overflow": "hidden",
+                                  "position": "relative",
+                                  "width": 48,
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignContent": "center",
+                                    "alignItems": "center",
+                                    "backgroundColor": "#2f9a92",
+                                    "borderRadius": 100,
+                                    "height": 40,
+                                    "justifyContent": "center",
+                                    "width": 40,
+                                    "zIndex": 3,
+                                  }
+                                }
+                              >
+                                <Text
+                                  style={
+                                    {
+                                      "color": "#ffffff",
+                                      "display": "flex",
+                                    }
+                                  }
+                                >
+                                  <Text
+                                    allowFontScaling={true}
+                                    style={
+                                      [
+                                        {
+                                          "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                          "fontSize": 24,
+                                          "lineHeight": 24,
+                                          "width": 24,
+                                        },
+                                        undefined,
+                                      ]
+                                    }
+                                  >
+                                    
+                                  </Text>
+                                </Text>
+                              </View>
+                            </View>
+                            <View
+                              style={
+                                {
+                                  "alignContent": "flex-start",
+                                  "alignItems": "center",
+                                  "columnGap": 16,
+                                  "display": "flex",
+                                  "flex": 1,
+                                  "flexDirection": "row",
+                                  "flexWrap": "wrap",
+                                  "rowGap": 8,
+                                }
+                              }
+                            >
+                              <Text
+                                allowFontScaling={true}
+                                style={
+                                  [
+                                    {
+                                      "fontFamily": "odido_Heading_Medium",
+                                    },
+                                    {
+                                      "color": "#000000",
+                                      "fontSize": 24,
+                                      "fontWeight": "500",
+                                      "letterSpacing": 0.23999999463558197,
+                                      "lineHeight": 28,
+                                      "marginVertical": 0,
+                                      "textAlign": "left",
+                                    },
+                                    {
+                                      "color": "#666666",
+                                      "maxWidth": 240,
+                                    },
+                                  ]
+                                }
+                                testID="heading"
+                              >
+                                Step 4 title completed
+                              </Text>
+                            </View>
+                            <View>
+                              <Text
+                                onPress={[Function]}
+                                role="link"
+                                style={
+                                  {
+                                    "fontFamily": "odido_Paragraph_Link",
+                                    "fontSize": 16,
+                                    "letterSpacing": 0.23999999463558197,
+                                    "lineHeight": 24,
+                                    "overflow": "visible",
+                                  }
+                                }
+                                testID="link"
+                              >
+                                <Text
+                                  style={
+                                    [
+                                      {
+                                        "textDecorationLine": "underline",
+                                        "textDecorationStyle": "solid",
+                                      },
+                                      {
+                                        "color": "#1b5ee4",
+                                      },
+                                      {
+                                        "fontSize": 16,
+                                        "letterSpacing": 0.23999999463558197,
+                                        "lineHeight": 24,
+                                      },
+                                      false,
+                                      false,
+                                      undefined,
+                                    ]
+                                  }
+                                  testID="link-text"
+                                >
+                                  Text link
+                                </Text>
+                              </Text>
+                            </View>
+                          </View>
+                          <View
+                            style={
+                              {
+                                "paddingTop": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "backgroundColor": "#dddddd",
+                                  "height": 2,
+                                  "width": "100%",
+                                }
+                              }
+                              testID="divider"
+                            />
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -1,0 +1,228 @@
+import { Meta } from '@storybook/blocks';
+import { useState, useEffect } from 'react';
+
+<Meta title="Docs/Token Versions/Timeline" />
+
+export const TokenVersionsComponent = () => {
+  const [selectedVersion, setSelectedVersion] = useState('0.127.3');
+  const [historyData, setHistoryData] = useState(null);
+  const [currentData, setCurrentData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Fetch history data from JSON file
+    const fetchHistoryData = async () => {
+      try {
+        // Try relative path first (works in GitHub Pages preview)
+        let response = await fetch('./token-versions-history.json');
+
+        // Fallback to root path if relative fails (production hosting)
+        if (!response.ok) {
+          response = await fetch('/token-versions-history.json');
+        }
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch token versions history');
+        }
+        const data = await response.json();
+        setHistoryData(data);
+
+        // Check URL parameter on load
+        const urlParams = new URLSearchParams(window.location.search);
+        const packageParam = urlParams.get('package');
+        if (packageParam) {
+          const version = packageParam.replace(/_/g, '.');
+          if (data.versions[version]) {
+            setSelectedVersion(version);
+            setCurrentData(data.versions[version]);
+            setLoading(false);
+            return;
+          }
+        }
+
+        // Default to latest version
+        setCurrentData(data.versions['0.127.3']);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
+
+    fetchHistoryData();
+  }, []);
+
+  useEffect(() => {
+    if (historyData && historyData.versions[selectedVersion]) {
+      setCurrentData(historyData.versions[selectedVersion]);
+    }
+  }, [selectedVersion, historyData]);
+
+  const handleVersionChange = (e) => {
+    const newVersion = e.target.value;
+    setSelectedVersion(newVersion);
+
+    // Update URL without reload
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('package', newVersion.replace(/\./g, '_'));
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    window.history.pushState({}, '', newUrl);
+  };
+
+  const generateTable = (versionData) => {
+    if (!versionData || !versionData.componentData) return null;
+
+    return (
+      <table>
+        <thead>
+          <tr>
+            <th>Components</th>
+            <th>Component Linkage</th>
+            <th>Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          {versionData.componentData.map((item, index) => {
+            const { key, version, file, status, emoji, tooltip } = item;
+            const componentPath = file.replace(/\.mdx$/, "");
+
+            let componentCell = key;
+            let versionCell = version;
+
+            switch (status) {
+              case "tracked":
+                componentCell = key;
+                versionCell = version;
+                break;
+              case "untracked":
+                componentCell = <strong>{key}</strong>;
+                versionCell = <span><strong title={tooltip}>{emoji} {version}</strong></span>;
+                break;
+              case "undocumented":
+                componentCell = <strong><em>{key}</em></strong>;
+                versionCell = <span><strong><em title={tooltip}>{emoji} {version}</em></strong></span>;
+                break;
+              case "skipped":
+                componentCell = <span style={{fontStyle: 'italic'}}>-</span>;
+                versionCell = <span title={tooltip}>{emoji} {version}</span>;
+                break;
+            }
+
+            return (
+              <tr key={index}>
+                <td>{componentPath}</td>
+                <td>{componentCell}</td>
+                <td>{versionCell}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    );
+  };
+
+  if (loading) return <div>Loading token versions...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!currentData) return <div>No data available</div>;
+
+  // Create version options for dropdown
+  const versionOptions = Object.keys(historyData.versions)
+    .map((version) => (
+      <option key={version} value={version}>
+        v{version}{version === '0.127.3' ? ' (latest)' : ''}
+      </option>
+    ));
+
+  return (
+    <div>
+      <h3>Versions Timeline</h3>
+      <div style={{marginBottom: '20px'}}>
+        <details style={{marginBottom: '20px', padding: '10px', border: '1px solid #e0e0e0', borderRadius: '4px'}}>
+          <summary style={{cursor: 'pointer', fontWeight: 'bold'}}>
+            📋 Information
+          </summary>
+          <div style={{paddingLeft: '10px'}}>
+            <p><em><strong>Note:</strong> This is a <strong>version history timeline</strong> only.
+            Changing the dropdown version shows historical data but does <strong>NOT</strong> change the actual component versions in Storybook.</em></p>
+            <p>You can link to a specific version with a URL <strong>parameters</strong>, like: <code>&package=0_90_0</code></p>
+            <p><strong>Generation and Repository Commit Workflow</strong></p>
+            <p>When you update component version, by using <code>pnpm run changeset:version</code> both the package version and this Token Version History will be generated.</p>
+            <p>If you need to update the timeline manually for testing or development: <code>pnpm run generate-versions --only-timeline</code></p>
+          </div>
+        </details>
+
+        <p>Select a package version to view its component history.</p>
+        <label htmlFor="version-select" style={{marginRight: '10px', fontWeight: 'bold'}}>
+          Select Package Version:
+        </label>
+        <select
+          id="version-select"
+          value={selectedVersion}
+          onChange={handleVersionChange}
+          style={{
+            padding: '8px 12px',
+            borderRadius: '4px',
+            border: '1px solid #ccc',
+            fontSize: '14px'
+          }}
+        >
+          {versionOptions}
+        </select>
+      </div>
+
+      <p><small><em>Report generated: {currentData.generatedDate}</em></small></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Version</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>@odido-portals/glow-react-web</strong></td>
+            <td>{selectedVersion}</td>
+            <td>{currentData.componentCount}</td>
+          </tr>
+          <tr>
+            <td><strong>@odido-portals/glow-tokens</strong></td>
+            <td>{currentData.glowTokensVersion}</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      {generateTable(currentData)}
+
+      <h5>Component Version Summary</h5>
+
+      <p>1. ✅ Version - component is documented and has token version<br/></p>
+      <p>2. ⚠️ Missing<br/>
+        Tooltip: "Component lacks version documentation"<br/>
+        Status: Component exists but no version tracking in MDX<br/></p>
+      <p>3. ❌ Not Found<br/>
+        Tooltip: "Component is documented but can't find token version"<br/>
+        Status: Might be a 'typo' or no token version found<br/><br/></p>
+
+      <p>4. ⏭️ Intentionally Skipped<br/>
+        Display: "Skipped"<br/>
+        Status: Component marked as not part of versioning system<br/></p>
+
+      <p><strong>Use Cases for "skip":</strong></p>
+      <ul>
+        <li>Build on top of existing components that don't have versioning (yet)</li>
+        <li>Wrapper/Layout components that don't have design tokens</li>
+        <li>Third-party components not part of your design system</li>
+        <li>Deprecated components being phased out</li>
+        <li>Documentation-only components</li>
+      </ul>
+
+      <p><small><em>Report generated: {currentData.generatedDate}</em></small></p>
+    </div>
+  );
+};
+
+<TokenVersionsComponent />

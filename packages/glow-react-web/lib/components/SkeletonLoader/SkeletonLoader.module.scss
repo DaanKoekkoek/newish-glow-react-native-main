@@ -1,0 +1,47 @@
+@use "@odido-portals/glow-tokens/progress-indicators-skeleton-loader-v1";
+@use "@globals/mixins";
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@include mixins.token-scope(
+    skeleton-loader,
+    progress-indicators-skeleton-loader-v1   
+) {
+    width: 100%;
+    height: var(--components-progress-indicators-skeleton-loader-v1-size-height-default);
+    border-radius: var(--components-progress-indicators-skeleton-loader-v1-radius);
+    background-color: var(--components-progress-indicators-skeleton-loader-v1-color-background);
+    overflow: hidden;
+    position: relative;
+
+    &.skeleton-loader-size-sm {
+        height: var(--components-progress-indicators-skeleton-loader-v1-size-height-sm);
+    }
+
+    &.skeleton-loader-size-lg {
+        height: var(--components-progress-indicators-skeleton-loader-v1-size-height-lg);
+    }
+}
+
+.skeleton-loader-gradient {
+    @include mixins.glow-gradient-background(
+        $pattern: "--components-progress-indicators-skeleton-loader-v1-color-gradient-stop-{i}", 
+        $percentages: (25%, 50%, 75%, 100%), 
+        $angle: 90deg);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    border-radius: var(--components-progress-indicators-skeleton-loader-v1-radius);
+    animation: shimmer 1.5s ease-in-out infinite;
+}

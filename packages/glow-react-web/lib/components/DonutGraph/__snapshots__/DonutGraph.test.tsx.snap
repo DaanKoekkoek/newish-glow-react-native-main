@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DonutGraph /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="donut-graph-wrapper"
+  >
+    <div
+      class="donut-graph size-md palette-default"
+      data-testid="donut-graph"
+    >
+      <svg
+        class="donut-graph-svg"
+        shape-rendering="geometricPrecision"
+        viewBox="0 0 122.075 122.075"
+      >
+        <circle
+          class="donut-base size-md"
+          cx="50%"
+          cy="50%"
+          r="58.0375"
+        />
+        <circle
+          class="donut-progress palette-default size-md"
+          cx="50%"
+          cy="50%"
+          r="58.0375"
+          stroke-dasharray="364.66036726543524"
+          stroke-dashoffset="273.4952754490764"
+          stroke-linecap="round"
+          stroke-width="6"
+          transform="rotate(-90 61.0375 61.0375)"
+        />
+      </svg>
+      <div
+        class="donut-graph-text-container"
+      >
+        <span
+          class="donut-graph-number-md"
+        >
+          25
+        </span>
+        <p
+          class="paragraph paragraph-size-default donut-graph-label"
+          data-testid="paragraph"
+        >
+          Days left
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

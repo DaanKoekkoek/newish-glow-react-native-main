@@ -1,0 +1,343 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MainNavigationStories from "./MainNavigation.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={MainNavigationStories} />
+
+# MainNavigation
+
+### Token version: {getComponentVersion("mainNavigation.v1")}
+
+The `MainNavigation` component provides the primary navigation interface for pages built with the `Main` layout.
+It supports responsive layouts, accessibility features, nested navigation, and integrated search behavior.
+
+## Purpose
+
+`MainNavigation` serves as the top-level navigation component for applications.
+It contains key links as well as utility actions like search and menu toggling on smaller screens.
+
+This component is designed to:
+
+- Maintain a consistent brand and layout across all pages.
+- Provide quick access to high-level sections and user tools.
+- Offer accessible navigation that adheres to ARIA and keyboard-interaction standards.
+- Handle responsive behavior gracefully, collapsing into a mobile-friendly menu when required.
+
+## Usage
+
+Use `MainNavigation` inside the `header` property of the `<Main />` component.
+It automatically manages focus states, keyboard navigation, backdrop handling, and responsive layout switching.
+
+<Canvas of={MainNavigationStories.Default} />
+<Controls of={MainNavigationStories.Default} />
+
+## Data structures
+
+### MetaNavItems structure
+
+Meta navigation items are rendered above the main header (except in subtle variant) and represent secondary navigation options.
+Accepts either `onClick` or `href`.
+
+```tsx
+const metaNavItems: MainNavigationMetaLink[] = [
+  {
+    href: "#",
+    title: "Go to consumer",
+    label: "Consumer",
+    active: true,
+  },
+  {
+    onClick: () => {},
+    title: "Go to business",
+    label: "Business",
+  },
+];
+```
+
+### Logo structure
+
+The `logo` object defines the properties for the main navigation logo in the application. It supports clickable logos, brand-specific styling, and optional video background for specific brands.
+
+```tsx
+const logo: MainNavigationLogo = {
+  href: "#",
+  title: "Title of logo",
+  onClick?: () => {},
+  brand: "ben" | "odido" | "simpel",
+  videoSrc: "/path/to/video.mp4", // only applicable for odido brand
+};
+```
+
+### NavigationTree structure
+
+The main navigation tree defines the primary navigation options and their associated submenus. All links either accepts
+`onClick` or `href`.
+
+```tsx
+const mainNavigationTree: MainNavigationTree = [
+  {
+    id: 1,
+    href: "#",
+    label: "Branch 1",
+    links: [
+      {
+        href: "#",
+        label: "link 1",
+        title: "Title",
+        sublinks: [
+          {
+            href: "#",
+            label: "sublink 1.1",
+            title: "Title",
+          },
+        ],
+      },
+      {
+        onClick: () => {},
+        label: "link 2",
+        title: "Title",
+        sublinks: [
+          {
+            href: "#",
+            label: "sublink 2.1",
+            title: "Title",
+          },
+        ],
+      },
+    ],
+    promotions: [
+      {
+        title: "Promotion 1",
+        image: {
+          src: "/path/to/image.webp",
+          alt: "Promotion 1 alt text",
+        },
+        children: "promotion content",
+        callToAction: {
+          as: "a",
+          href: "#",
+          children: "Call to action",
+        },
+      },
+    ],
+  },
+  // Or without links / sublinks
+  {
+    id: 2,
+    href: "#",
+    label: "Branch 2",
+  },
+  // Additional branches here
+];
+```
+
+### Additions structure
+
+Next to the main navigation tree, we can also add additions to the main navigation, namely a shopping cart, user panel, search function and service-related content.
+
+```tsx
+const [value, setValue] = useState("");
+const mainNavigationAdditions: MainNavigationAdditions = {
+  status: {
+    type: "success",
+    statusText: "Status",
+  },
+  customerService: {
+    href: "#",
+    icon: "helpdesk",
+    phoneNumber: "08006565",
+    openingHours: {
+      href: "#",
+      onClick: () => {},
+      label: "Opening hours",
+      title: "Opening hours",
+    },
+  },
+  search: {
+    value,
+    onChange: (e) => setValue(e.target.value),
+    onSuggestionSelect: (suggestion) => setValue(suggestion),
+    onSearchClose: () => setValue(""),
+  },
+  ariaLabel: {
+    menu: {
+      open: "Open menu",
+      close: "Close menu",
+      return: "Return to top menu",
+    },
+    search: {
+      open: "Open searchbar",
+      close: "Close searchbar",
+    },
+    service: "Contact our service",
+    backdrop: "Close menu",
+  },
+};
+```
+
+### Full example structure
+
+Here's an example of how to integrate `MainNavigation` within a page layout:
+
+```tsx
+import { Main } from "@odido-portals/glow-react-native/main";
+import { Section } from "@odido-portals/glow-react-native/section";
+import { Grid, Column } from "@odido-portals/glow-react-native/grid";
+import { Button } from "@odido-portals/glow-react-native/button";
+import { MainNavigation } from "@odido-portals/glow-react-native/main-navigation";
+
+const Component = () => {
+  const [value, setValue] = useState("");
+
+  return (
+    <Main
+      header={
+        <MainNavigation
+          skip={{
+            label: "Skip to link",
+            href: "#skip-id",
+          }}
+          ariaLabel={{
+            menu: {
+              open: "Open menu",
+              close: "Close menu",
+              return: "Return to top menu",
+            },
+            search: {
+              open: "Open search bar",
+              close: "Close search bar",
+            },
+            backdrop: "Close menu",
+            service: "Contact our service",
+          }}
+          navigationTree={[
+            {
+              id: 1,
+              label: "Shop",
+              href: "/shop",
+              links: [
+                {
+                  label: "Shop pages",
+                  sublinks: [
+                    {
+                      label: "Shop PLP",
+                      title: "Ga naar overzichtpagina",
+                      href: "/shop/plp",
+                    },
+                    { label: "Shop PDP", href: "/shop/pdp" },
+                    { label: "Shop Checkout", href: "/shop/checkout" },
+                  ],
+                },
+                {
+                  label: "iPhone 14",
+                  href: "/shop/iphone-14",
+                },
+              ],
+              promotions: [
+                {
+                  title: "Title",
+                  children: "Paragraph",
+                  image: {
+                    src: "/path/to/image.webp",
+                    alt: "Promotion image",
+                  },
+                  callToAction: {
+                    as: "a",
+                    href: "#",
+                    ["aria-label"]: "Go to promotion",
+                  },
+                },
+              ],
+            },
+            {
+              id: 2,
+              label: "About",
+              href: "/about",
+              links: [
+                {
+                  label: "About pages",
+                  sublinks: [
+                    { label: "Business", href: "/about/business" },
+                    { label: "Company", href: "/about/company" },
+                  ],
+                },
+              ],
+            },
+          ]}
+          search={{
+            category: { children: "Zoeken naar" },
+            value,
+            onSearchClose: () => setValue(""),
+            onChange: (e) => setValue(e.target.value),
+            onSuggestionSelect: (item) => {
+              setValue(item.text);
+            },
+            autoSuggestions: [
+              { category: "Shop", text: "Shop PLP", value: "/shop" },
+              { category: "Shop", text: "Shop PDP", value: "/shop/pdp" },
+              {
+                category: "Shop",
+                text: "Shop Checkout",
+                value: "/shop/checkout",
+              },
+              { category: "My", text: "Login", value: "/my" },
+              {
+                category: "Components",
+                text: "Components",
+                value: "/components",
+              },
+            ],
+          }}
+          user={{
+            link: {
+              href: "#",
+              title: "User",
+              initials: "WB", // optional - renders an avatar instead of a regular link
+            },
+            panel: {
+              callToAction: {
+                as: "a",
+                href: "#",
+                children: "Button text",
+              },
+              children: <div>content</div>,
+            },
+          }}
+          cart={{
+            link: {
+              badge: { count: 1 },
+              href: "#",
+              title: "Cart",
+            },
+            panel: {
+              callToAction: {
+                as: "a",
+                children: "Naar winkelwagen",
+                href: "#",
+              },
+              items: [
+                {
+                  description: "Phone 1",
+                  image: {
+                    src: "/path/to/image.png",
+                    alt: "Phone 1 alt text",
+                  },
+                },
+              ],
+            },
+          }}
+        />
+      }
+    >
+      <Section>
+        <Grid>
+          <Column>
+            <Button id="skip-id">button</Button>
+          </Column>
+        </Grid>
+      </Section>
+    </Main>
+  );
+};
+```

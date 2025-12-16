@@ -1,0 +1,40 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ListItemStories from "./ListItem.stories";
+
+<Meta of={ListItemStories} />
+
+# List.Item
+
+The `<List.Item />` only allowed within `<List />` component.
+
+<Canvas of={ListItemStories.Default} />
+<Controls of={ListItemStories.Default} />
+
+## Button variant
+
+<Canvas of={ListItemStories.VariantButton} />
+
+## Price variant
+
+<Canvas of={ListItemStories.VariantPrice} />
+
+## Toggle variant
+
+<Canvas of={ListItemStories.VariantToggle} />
+
+## Wrapper variant
+
+Wrapper component for ListItem.
+This component is used to wrap the content of a list item, providing necessary styling and structure.
+
+// Usage example:
+
+```jsx
+    <List.Item
+    clickable: true,
+    wrapper: Text,
+    wrapperProps: { style: { backgroundColor: "red" } },
+    />
+```
+
+<Canvas of={ListItemStories.VariantWrapper} />

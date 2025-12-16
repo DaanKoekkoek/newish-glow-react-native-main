@@ -1,0 +1,17 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BadgeStories from "./Badge.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BadgeStories} />
+
+# Badge
+
+### Token version: {getComponentVersion("badge.v1")}
+
+The `<Badge>` component is a visually distinctive element designed to highlight and communicate special information.
+
+### Basic example
+
+<Canvas of={BadgeStories.Basic} />
+<Controls of={BadgeStories.Basic} />

@@ -1,0 +1,74 @@
+@use "sass:map";
+@use "@odido-portals/glow-tokens/semantics-gap";
+@use "@odido-portals/glow-tokens/responsive-gap";
+@use "@foundations/Stack/mixins" as stack;
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  stack,
+  gap
+) {
+  @each $breakpoint, $width in config.$global-min-width {
+    --gap-default-#{$breakpoint}: var(--semantics-gap-#{if($breakpoint == laptop or $breakpoint == desktop, 300, 200)});
+    --gap-lg-#{$breakpoint}: var(--semantics-gap-#{if($breakpoint == laptop or $breakpoint == desktop, 400, 300)});
+    --gap-sm-#{$breakpoint}: var(--semantics-gap-#{if($breakpoint == laptop or $breakpoint == desktop, 200, 150)});
+  }
+
+  --flex-grow: 1;
+  --flex-shrink: 1;
+  --direction-column: column;
+  --direction-row: row;
+  --direction-column-reverse: column-reverse;
+  --direction-row-reverse: row-reverse;
+  --align-flex-start: flex-start;
+  --align-center: center;
+  --align-flex-end: flex-end;
+  --align-stretch: stretch;
+  --align-self-flex-start: flex-start;
+  --align-self-center: center;
+  --align-self-flex-end: flex-end;
+  --align-self-stretch: stretch;
+  --justify-flex-start: flex-start;
+  --justify-center: center;
+  --justify-flex-end: flex-end;
+  --justify-space-between: space-between;
+  --justify-space-around: space-around;
+  --wrap: wrap;
+  --nowrap: nowrap;
+  --wrap-reverse: wrap-reverse;
+
+  display: flex;
+  width: inherit;
+  height: inherit;
+  
+  @include stack.flex-stack-utils;
+
+  @each $type, $gaps in stack.$gap-variants {
+    @each $gap-name in $gaps {
+      $is-semantic: $type == semantics;
+      $gap-token: if($is-semantic, "semantics-gap-#{$gap-name}", "responsive-gap-#{$gap-name}");
+
+       @include stack.responsive-width(
+          $breakpoint: null,
+          $gap-name: $gap-name,
+          $gap-token: $gap-token
+        );
+
+      @each $breakpoint, $value in config.$global-min-width {
+        @media (min-width: $value) {
+          @include stack.flex-stack-utils(
+            $suffix: "-#{$breakpoint}",
+            $gap-name: $gap-name,
+            $gap-token: $gap-token
+          );
+          @include stack.responsive-width(
+            $breakpoint: $breakpoint,
+            $gap-name: $gap-name,
+            $gap-token: $gap-token
+          );
+        }
+      }
+    }
+  }
+}

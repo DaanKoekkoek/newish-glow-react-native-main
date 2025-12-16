@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="progress-bar"
+  >
+    <div
+      class="progress-track palette-default"
+    >
+      <div
+        class="progress-fill palette-active-default"
+        style="--progress-scale: 0.44;"
+      />
+    </div>
+    <div
+      class="steps"
+    >
+      <span
+        class="paragraph paragraph-size-sm step step-active"
+        data-testid="paragraph"
+      >
+        Start 1
+      </span>
+      <span
+        class="paragraph paragraph-size-sm step"
+        data-testid="paragraph"
+      >
+        Step 2
+      </span>
+      <span
+        class="paragraph paragraph-size-sm step"
+        data-testid="paragraph"
+      >
+        Step 3
+      </span>
+      <span
+        class="paragraph paragraph-size-sm step"
+        data-testid="paragraph"
+      >
+        Step 4
+      </span>
+    </div>
+  </div>
+</div>
+`;

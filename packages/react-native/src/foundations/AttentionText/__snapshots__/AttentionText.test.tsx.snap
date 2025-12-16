@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AttentionText /> applies the correct styles based on size 1`] = `
+{
+  "alignItems": "center",
+  "alignSelf": "stretch",
+  "display": "flex",
+  "flexDirection": "row",
+  "gap": 4,
+}
+`;
+
+exports[`<AttentionText /> applies the correct styles based on variant 1`] = `
+{
+  "alignItems": "center",
+  "alignSelf": "stretch",
+  "display": "flex",
+  "flexDirection": "row",
+  "gap": 8,
+}
+`;
+
+exports[`<AttentionText /> renders a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "stretch",
+      "display": "flex",
+      "flexDirection": "row",
+      "gap": 8,
+    }
+  }
+  testID="attention-container"
+>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "Icons_Outline_DEFAULT_odido",
+          "fontSize": 24,
+          "lineHeight": 24,
+          "width": 24,
+        },
+        {
+          "color": "#2f9a92",
+        },
+      ]
+    }
+    testID="attention-text-icon"
+  >
+    
+  </Text>
+  <Text
+    allowFontScaling={true}
+    style={
+      [
+        {
+          "fontFamily": "odido_Paragraph_Regular",
+        },
+        {
+          "color": "#000000",
+          "fontSize": 18,
+          "letterSpacing": 0.27000001072883606,
+          "lineHeight": 28,
+          "textAlign": "left",
+        },
+        {
+          "color": "#2f9a92",
+        },
+      ]
+    }
+    testID="paragraph"
+  >
+    This is a default message.
+  </Text>
+</View>
+`;

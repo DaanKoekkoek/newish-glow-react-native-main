@@ -1,0 +1,1562 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component Checkbox snapshots renders basic checkbox correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class=""
+      data-testid="checkbox"
+      id="checkbox-snapshot-basic"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-basic"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:re:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:re:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:re:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:re:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:re:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:re:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:re:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:re:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:re:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:re:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:re:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:re:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Basic checkbox
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders checkbox with JSX label correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class=""
+      data-testid="checkbox"
+      id="checkbox-snapshot-jsx-label"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container start-aligned"
+      for="checkbox-snapshot-jsx-label"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rl:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rl:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rl:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rl:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rl:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rl:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rl:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          This is a JSX label
+        </p>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders checkbox with helper text correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class=""
+      data-testid="checkbox"
+      id="checkbox-snapshot-helper"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-helper"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rk:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rk:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rk:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rk:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rk:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rk:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rk:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Checkbox with helper text
+      </span>
+    </label>
+    <small
+      aria-live="polite"
+      class="base-text base-paragraph helper-message"
+      data-testid="helper-message"
+    >
+      This is helper text
+    </small>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders checkbox with legend correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <div
+      class="legend"
+    >
+      <span
+        class="base-text base-paragraph legend-label"
+      >
+        Legend label
+      </span>
+      <span
+        class="info-container"
+      >
+        <p
+          class="paragraph paragraph-size-sm optional-text"
+          data-testid="paragraph"
+        >
+          Optional
+        </p>
+      </span>
+    </div>
+    <input
+      class=""
+      data-testid="checkbox"
+      id="checkbox-snapshot-legend"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-legend"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rj:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rj:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rj:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rj:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rj:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rj:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rj:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rj:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rj:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rj:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rj:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rj:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Checkbox with legend
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders checked checkbox correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      checked=""
+      class=""
+      data-testid="checkbox"
+      id="checkbox-snapshot-checked"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-checked"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rf:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rf:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rf:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rf:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rf:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rf:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rf:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rf:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rf:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rf:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rf:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rf:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Checked checkbox
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders error state checkbox correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class="is-invalid"
+      data-testid="checkbox"
+      id="checkbox-snapshot-error"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-error"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rh:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rh:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rh:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rh:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rh:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rh:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rh:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rh:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rh:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rh:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rh:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rh:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Error checkbox
+      </span>
+    </label>
+    <small
+      aria-live="polite"
+      class="base-text base-paragraph error-message"
+      data-testid="error-message-container"
+      role="alert"
+    >
+      <span
+        aria-hidden="true"
+        class="icon icon-size-sm outline error-text"
+        data-icon="status-alert"
+        data-testid="status-alert"
+      >
+        
+      </span>
+      This is an error message
+    </small>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders inactive state checkbox correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class=""
+      data-testid="checkbox"
+      disabled=""
+      id="checkbox-snapshot-inactive"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container text-label-disabled"
+      for="checkbox-snapshot-inactive"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:ri:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:ri:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:ri:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:ri:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:ri:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:ri:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:ri:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:ri:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:ri:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:ri:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:ri:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:ri:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Inactive checkbox
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Checkbox component Checkbox snapshots renders indeterminate checkbox correctly 1`] = `
+<div>
+  <div
+    class="checkbox"
+  >
+    <input
+      class="is-indeterminate"
+      data-testid="checkbox"
+      id="checkbox-snapshot-indeterminate"
+      type="checkbox"
+    />
+    <label
+      class="checkbox-label-container"
+      for="checkbox-snapshot-indeterminate"
+    >
+      <span
+        aria-hidden="true"
+        class="glow-gradient glow4 checkbox-gradient"
+        data-testid="glow-gradient"
+        style="z-index: 0;"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+          viewBox="0 0 960 1080"
+          width="100%"
+        >
+          <g>
+            <g
+              clip-path="url(#clip:rg:)"
+            >
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_linear_1_214-:rg:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_215-:rg:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_216-:rg:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_217-:rg:)"
+              />
+              <path
+                d="M960 0H0v1080h960V0z"
+                fill="url(#paint0_radial_1_218-:rg:)"
+              />
+            </g>
+            <defs>
+              <lineargradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear_1_214-:rg:"
+                x1="960"
+                x2="3.57628e-05"
+                y1="2.86102e-05"
+                y2="1080"
+              >
+                <stop
+                  offset="0.777327"
+                  stop-color="var(--linear-stop-1)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--linear-stop-2)"
+                />
+              </lineargradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_215-:rg:"
+                r="1"
+              >
+                <stop
+                  offset="0.66"
+                  stop-color="var(--radial-stop-1)"
+                />
+                <stop
+                  offset="0.84"
+                  stop-color="var(--radial-stop-2)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-3)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_216-:rg:"
+                r="1"
+              >
+                <stop
+                  stop-color="var(--radial-stop-4)"
+                />
+                <stop
+                  offset="0.33941"
+                  stop-color="var(--radial-stop-5)"
+                />
+                <stop
+                  offset="0.739171"
+                  stop-color="var(--radial-stop-6)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-7)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_217-:rg:"
+                r="1"
+              >
+                <stop
+                  offset="0.578582"
+                  stop-color="var(--radial-stop-8)"
+                />
+                <stop
+                  offset="0.697843"
+                  stop-color="var(--radial-stop-9)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-10)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <radialgradient
+                cx="0"
+                cy="0"
+                gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                gradientUnits="userSpaceOnUse"
+                id="paint0_radial_1_218-:rg:"
+                r="1"
+              >
+                <stop
+                  offset="0.00787439"
+                  stop-color="var(--radial-stop-11)"
+                />
+                <stop
+                  offset="0.565"
+                  stop-color="var(--radial-stop-12)"
+                />
+                <stop
+                  offset="0.708535"
+                  stop-color="var(--radial-stop-13)"
+                />
+                <stop
+                  offset="1"
+                  stop-color="var(--radial-stop-14)"
+                  stop-opacity="0"
+                />
+              </radialgradient>
+              <clippath
+                id="clip:rg:"
+              >
+                <path
+                  d="M0 0H960V1080H0z"
+                  fill="#fff"
+                />
+              </clippath>
+            </defs>
+          </g>
+        </svg>
+      </span>
+      <span
+        class="base-text base-paragraph text-label"
+      >
+        Indeterminate checkbox
+      </span>
+    </label>
+  </div>
+</div>
+`;

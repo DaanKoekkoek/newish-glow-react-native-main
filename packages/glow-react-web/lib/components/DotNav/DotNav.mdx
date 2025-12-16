@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DotNavStories from "./DotNav.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DotNavStories} />
+
+# DotNav
+
+#### Token version: {getComponentVersion("dotnav.v1")}
+
+The `DotNav` component renders a set of dots for navigation (e.g., in a slider or carousel).
+
+## Purpose
+
+The `DotNav` component is used as a visual navigation indicator for sliders, carousels, or any component that requires step/dot tracking. It provides both **visual feedback** (progress fill) and **interactive control** (clickable dots).
+
+## Usage
+
+Simply render the component with the number of dots (`count`) and optionally provide `activeIndex`, `timerDuration`, `onNext`, and `onDotClick` callbacks:
+
+### Default Example
+
+<Canvas of={DotNavStories.Default} />
+<Controls of={DotNavStories.Default} />
+
+### With timer
+
+This example demonstrates the `DotNav` component with a timer enabled. The active dot will automatically advance to the next dot after the specified duration, and the progress of the active dot is visually shown with a filling animation.
+
+<Canvas of={DotNavStories.WithTimer} />

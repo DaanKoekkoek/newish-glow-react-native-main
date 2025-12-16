@@ -1,0 +1,74 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@odido-portals/glow-tokens/price-price-v2";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  cart-summary,
+  (price-price-v2, shopping-cart-shopping-cart-v1)
+) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-lg);
+}
+
+.row-container {
+  display: flex;
+  gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-default);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-sm);
+  padding: var(--components-shopping-cart-shopping-cart-v1-padding-cart-accordion-summary-closed-top) 0;
+
+  .row {
+    display: flex;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-default);
+
+    .title {
+      flex: 1;
+      color: var(--components-shopping-cart-shopping-cart-v1-color-cart-accordion-text-default);
+    }
+
+    .price-container {
+      display: flex;
+      gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-default);
+      align-items: center;
+
+      .before-price {
+        font-family: var(--components-price-price-v2-typography-main-font-family-default);
+        color: var(--components-shopping-cart-shopping-cart-v1-color-cart-accordion-text-before);
+        text-decoration-line: line-through;
+      }
+
+      .price {
+        display: flex;
+        text-align: right;
+        flex: 1;
+
+        .currency {
+          padding-right: var(--components-shopping-cart-shopping-cart-v1-padding-line-item-currency-right);
+          width: var(--components-shopping-cart-shopping-cart-v1-size-line-item-currency-width);
+        }
+      }
+    }
+  }
+}
+
+.cart-details {
+  padding-bottom: var(--components-shopping-cart-shopping-cart-v1-padding-cart-accordion-summary-open-bottom);
+}
+
+.extra-line {
+  padding: var(--components-shopping-cart-shopping-cart-v1-padding-cart-lines-extra-line-vertical) 0;
+}
+
+.text {
+  color: var(--components-shopping-cart-shopping-cart-v1-color-cart-accordion-text-default);
+}
+
+.promotion {
+  color: var(--semantics-color-text-success);
+}

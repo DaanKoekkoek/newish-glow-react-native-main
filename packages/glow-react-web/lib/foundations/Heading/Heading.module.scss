@@ -1,0 +1,46 @@
+@use "@odido-portals/glow-tokens/heading";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@globals/mixins";
+
+$heading-sizes: xs, sm, md, lg, xl;
+
+@include mixins.token-scope(
+  heading,
+  (heading, color-text)
+) {}
+
+.heading {
+  font-family: var(--components-foundations-typography-text-styles-v1-heading-font-family-default);
+  font-weight: var(--components-foundations-typography-text-styles-v1-heading-font-weight-default);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+
+  &.align-left {
+    text-align: left;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+}
+
+.heading-highlight {
+  color: var(--palette-title-text, inherit);
+}
+
+.heading-color-default {
+  color: var(--semantics-color-text-default);
+}
+
+.heading-color-inverted {
+  color: var(--semantics-color-text-inverted-default);
+}
+
+@each $size in $heading-sizes {
+  .heading-size-#{$size} {
+    font-size: var(--components-foundations-typography-text-styles-v1-heading-font-size-#{$size});
+    line-height: var(--components-foundations-typography-text-styles-v1-heading-line-height-#{$size});
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-heading-letter-spacing-#{$size});
+  }
+}

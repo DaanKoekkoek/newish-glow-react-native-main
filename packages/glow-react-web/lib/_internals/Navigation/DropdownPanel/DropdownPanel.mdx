@@ -1,0 +1,26 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DropdownPanelStories from "./DropdownPanel.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DropdownPanelStories} />
+
+# DropdownPanel
+
+### Token version: {getComponentVersion("dropdownPanel.v1")}
+
+The `DropdownPanel` component provides a structured, token-based container for dropdown menus, user panels, or action lists. It supports an optional footer (e.g. for call-to-action buttons) and configurable corner alignment to visually connect it to its trigger element.
+
+## Purpose
+
+Use `DropdownPanel` when you need a **consistent panel layout** for dropdowns or popovers that:
+
+- Maintain design token spacing and corner treatments.
+- Optionally include footer actions.
+- Align precisely to an anchor element (via the `cornerPosition` prop).
+
+## Examples
+
+### Default Panel
+
+<Canvas of={DropdownPanelStories.Default} />
+<Controls of={DropdownPanelStories.Default} />

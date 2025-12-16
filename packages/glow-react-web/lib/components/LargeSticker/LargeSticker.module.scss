@@ -1,0 +1,56 @@
+@use "@odido-portals/glow-tokens/sticker-large-sticker-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  large-sticker,
+  sticker-large-sticker-v1
+) {
+  border-radius: var(--components-sticker-large-sticker-v1-radius-default);
+  border-top-left-radius: var(--components-sticker-large-sticker-v1-radius-none);
+  padding: var(--components-sticker-large-sticker-v1-padding-top) var(--components-sticker-large-sticker-v1-padding-right) var(--components-sticker-large-sticker-v1-padding-bottom) var(--components-sticker-large-sticker-v1-padding-left);
+  gap: var(--components-sticker-large-sticker-v1-gap-large);
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.large-sticker-text,
+.large-sticker-price,
+.large-sticker-list {
+  z-index: 0;
+  position: relative;
+}
+
+.large-sticker-palette {
+  @each $color in config.$odido-palette {
+    &-#{$color} {
+      background-color: var(--components-sticker-large-sticker-v1-color-background-default-palette-#{$color}, var(--components-sticker-large-sticker-v1-color-background-default));
+
+      .large-sticker-text,
+      .large-sticker-price,
+      .large-sticker-list span,
+      .large-sticker-list p {
+        color: var(--components-sticker-large-sticker-v1-color-text-default-palette-#{$color}, var(--components-sticker-large-sticker-v1-color-text-default));
+      }
+    }
+  }
+}
+
+.large-sticker-variant-emphasised {
+  background-color: var(--components-sticker-large-sticker-v1-color-background-emphasised);
+
+  .large-sticker-text,
+  .large-sticker-price,
+  .large-sticker-list,
+  .large-sticker-list span,
+  .large-sticker-list p {
+    color: var(--components-sticker-large-sticker-v1-color-text-emphasised);
+  }
+}
+
+.large-sticker-gradient {
+  position: absolute;
+  inset: 0;
+}

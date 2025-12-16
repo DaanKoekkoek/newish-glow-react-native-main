@@ -1,0 +1,42 @@
+@use "@odido-portals/glow-tokens/progress-indicators";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  stepper-dotted-line,
+  progress-indicators
+) {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.dots {
+  fill: var(
+    --components-progress-indicators-atoms-line-color-border-incomplete
+  );
+}
+
+.dots-active {
+  fill: var(
+    --components-progress-indicators-atoms-line-color-border-completed
+  );
+}
+
+.svg-vertical {
+  position: absolute;
+}
+
+.horizontal-space {
+  min-width: var(
+    --components-progress-indicators-atoms-horizontal-step-size-line-min-width
+  );
+  max-width: var(
+    --components-progress-indicators-atoms-horizontal-step-size-line-max-width
+  );
+  display: flex;
+  flex-direction: row;
+}

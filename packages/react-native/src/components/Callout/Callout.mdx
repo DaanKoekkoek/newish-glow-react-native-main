@@ -1,0 +1,39 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CalloutStories from "./Callout.stories";
+
+<Meta of={CalloutStories} />
+
+# Callout
+
+Callout messages provide contextual feedback for typical user actions. Callout messages show pressing and high-signal feedback, such as success, information, warning and error context. They are meant to be noticed and prompt users to take action.
+
+<Canvas of={CalloutStories.Basic} />
+<Controls of={CalloutStories.Basic} />
+
+## Without buttons
+
+The `triggers` property is optional, and can be left out. Doing so results into rendering a `Callout` without any `Button` components.
+
+<Canvas of={CalloutStories.WithoutButtons} />
+
+## With 1 buttons
+
+You also have the option to just pass in one `Button` component. The `prominence` prop automatically adjusts based on the index of the button.
+
+<Canvas of={CalloutStories.OneButton} />
+
+## Other status variants
+
+Changing the `status` property into something other than `default` results in the following.
+
+### Success
+
+<Canvas of={CalloutStories.Success} />
+
+### Warning
+
+<Canvas of={CalloutStories.Warning} />
+
+### Error
+
+<Canvas of={CalloutStories.Error} />

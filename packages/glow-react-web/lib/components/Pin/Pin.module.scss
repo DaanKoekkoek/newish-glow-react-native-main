@@ -1,0 +1,117 @@
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/mixins";
+
+@keyframes caret-blink {
+  0%, 70%, 100% { opacity: 1}
+  20%, 50% { opacity: 0}
+}
+
+@include mixins.token-scope(
+  pin,
+  (
+    input-gap,
+    input-atoms-field,
+    input-color,
+    paragraph 
+  )
+) {
+  flex-direction: column;
+  display: flex;
+  gap: var(--components-input-gap-vertical-default);
+}
+
+.slots-wrapper {
+  align-items: center;
+  display: flex;
+  gap: var(--components-input-gap-horizontal-sm);
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.pincode-message {
+  align-items: center;
+  display: flex; 
+  gap: var(--components-input-gap-horizontal-default);
+  align-self: stretch;
+
+  &--error {
+    color: var(--components-input-color-text-error);
+  }
+  
+  &--loading {
+    color: var(--components-input-color-text-loading);
+  }
+  
+  &--success {
+    color: var(--components-input-color-text-success);
+  }
+}
+
+.slot-wrapper {
+  background-color: var(--components-input-color-background-default);
+  border-color: var(--components-input-color-border-default);
+  border-radius: var(--components-input-atoms-field-radius-number);
+  border-style: solid;
+  border-width: var(--components-input-border-width-default);
+  color: var(--components-input-color-text-default);
+  font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  font-weight: 400;
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  padding-block: var(--components-input-atoms-field-padding-vertical-default);
+  padding-inline: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &--disabled, &--loading {
+    background-color: var(--components-input-color-background-inactive);
+    border-color: var(--components-input-color-border-inactive);
+    color: var(--components-input-color-text-value-inactive);
+
+    &:focus-visible {
+      border-color: var(--components-input-color-border-inactive);
+    }
+  }
+
+  &--error {
+    border-color: var(--components-input-color-border-error);
+  }
+
+  &--success {
+    border-color: var(--components-input-color-border-success);
+  }
+
+  &--active {
+    border-color: var(--components-input-color-border-active);
+    outline: none;
+  }
+}
+
+.slot-char {
+  min-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+}
+
+.fake-caret-wrapper {
+  align-items: center;
+  animation: caret-blink 1.2s ease-out infinite;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+}
+
+.fake-caret {
+    background: black;
+    height: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+    width: 2px;
+}
+
+.pin-message-spinner {
+  color: var(--components-input-color-text-loading) !important;
+}

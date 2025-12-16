@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="section section-subtle section-palette-default section-subtle"
+    data-section-type="default"
+    data-testid="section"
+  >
+    <div
+      class="container container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12"
+          data-testid="column"
+        >
+          <div
+            class="box box-size-sm"
+            data-testid="box"
+          >
+            <p
+              class="paragraph paragraph-size-default paragraph-align-center"
+              data-testid="paragraph"
+            >
+              Column 1
+            </p>
+          </div>
+        </div>
+        <div
+          class="column grid-column-12"
+          data-testid="column"
+        >
+          <div
+            class="box box-size-sm"
+            data-testid="box"
+          >
+            <p
+              class="paragraph paragraph-size-default paragraph-align-center"
+              data-testid="paragraph"
+            >
+              Column 2
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

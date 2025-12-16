@@ -1,0 +1,98 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as TopNavigationStories from "./TopNavigation.stories";
+
+<Meta of={TopNavigationStories} />
+
+# TopNavigation Component
+
+The `<TopNavigation />` component is a container that sticks to the top of the screen. It is used to display a title and/or a call to action that is always visible to the user. It visually changes based on the scroll position of the page.
+This component is currently used as part of the Skyfall project and isn't intended to be used anywhere else.
+
+**Please note: The TopNavigation runs sub-optimal with `mirrorColor: true` on Android due to a bug with measuring the items within a virtualized list.**
+
+## Usage
+
+Must be used within a [`<Main />`](?path=/story/designsystem-layout-main--basic) component.
+
+### Pre requirements
+
+To be sure that the `<TopNavigation />` works as expected, you need to use it combination with `<Main />`. The `<Main />` component offers a property to render the actual `<TopNavigation />` component.
+Please look at the `<TopNavigation />` [example page](?path=/story/designsystem-components-topnavigation--basic) to see the component in action with `<Header />` and `<Footer />`.
+
+### Props
+
+The following props are only applicable on the `<Main />` component. All other props are applied on the `<TopNavigation />` JSX.
+
+- `hasTopNavigation`: Required to render a TopNavigation.
+
+## Basic
+
+The `<TopNavigation />` can render a title when a `<SubscriptionHero />` is present. It'll take the `title` and `titleSecondary` props from the component and renders it within the navigation bar.
+Based on the position. You also have the option to mirror the background color, based on your scroll position. You can enable this by enabling `mirrorColor`.
+The following configuration is enough to render a `<TopNavigation />`.
+
+```jsx
+<Main hasTopNavigation>
+  <Section palette="red" variant="subtle">
+    <Grid>
+      <Grid.Column>
+        <TopNavigation action={{ left: <>Action left</> }} />
+        <SubscriptionHero
+          title="title text"
+          titleSecondary="title secondary text"
+        />
+      </Grid.Column>
+    </Grid>
+  </Section>
+</Main>
+```
+
+<Canvas of={TopNavigationStories.Basic} />
+<Controls of={TopNavigationStories.Basic} />
+
+## With mirrored color
+
+Mirrors the color of the section or subscription hero, based on the scroll's _y position_. Since it calculates the section position within a virtualized list, it is recommended not to use this in Android/iOS due to measurement bugs.
+Also, it is recommended to view this on a separate page, without the iframe preview window.
+
+## Without subscription hero
+
+It is also possible to render a `<TopNavigation />` without the `<SubscriptionHero />`.
+
+```jsx
+<Main hasTopNavigation>
+  <Section palette="red" variant="subtle">
+    <Grid>
+      <Grid.Column>
+        <TopNavigation title="Without subscription hero" />
+      </Grid.Column>
+    </Grid>
+  </Section>
+</Main>
+```
+
+<Canvas of={TopNavigationStories.WithoutSubscriptionHero} />
+
+## Without actions
+
+It is also possible to render a `<TopNavigation />` without any actions.
+
+```jsx
+<Main hasTopNavigation>
+  <Section palette="red" variant="subtle">
+    <Grid>
+      <Grid.Column>
+        <TopNavigation title="Without subscription hero" />
+        // or
+        <TopNavigation />
+        <SubscriptionHero
+          title="title text"
+          titleSecondary="title secondary text"
+        />
+      </Grid.Column>
+    </Grid>
+  </Section>
+</Main>
+```
+
+<Canvas of={TopNavigationStories.WithoutActions} />

@@ -1,0 +1,945 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmphasizedHeroSection /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-default section-palette-purple emphasised-hero section-padding-top-none"
+      data-section-type="default"
+      data-testid="emphasized-hero-section"
+    >
+      <div
+        class="emphasised-hero-container"
+        data-testid="emphasized-hero-section-container"
+      >
+        <div
+          class="container emphasised-gradient-container container-width-default"
+          data-testid="grid-gradient-container"
+        >
+          <div
+            class="grid grid-direction-row emphasised-gradient-grid"
+            data-testid="grid-gradient-grid"
+          >
+            <div
+              class="column grid-column-12 grid-column-9-tablet emphasised-gradient-column"
+              data-testid="column"
+            >
+              <div
+                aria-hidden="true"
+                class="glow-gradient glow4 emphasised-gradient emphasised-gradient-left no-hover"
+                data-testid="glow-gradient"
+                style="z-index: 0;"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="100%"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 960 1080"
+                  width="100%"
+                >
+                  <g>
+                    <g
+                      clip-path="url(#clip:r4:)"
+                    >
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_linear_1_214-:r4:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_215-:r4:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_216-:r4:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_217-:r4:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_218-:r4:)"
+                      />
+                    </g>
+                    <defs>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_linear_1_214-:r4:"
+                        x1="960"
+                        x2="3.57628e-05"
+                        y1="2.86102e-05"
+                        y2="1080"
+                      >
+                        <stop
+                          offset="0.777327"
+                          stop-color="var(--linear-stop-1)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--linear-stop-2)"
+                        />
+                      </lineargradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_215-:r4:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.66"
+                          stop-color="var(--radial-stop-1)"
+                        />
+                        <stop
+                          offset="0.84"
+                          stop-color="var(--radial-stop-2)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-3)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_216-:r4:"
+                        r="1"
+                      >
+                        <stop
+                          stop-color="var(--radial-stop-4)"
+                        />
+                        <stop
+                          offset="0.33941"
+                          stop-color="var(--radial-stop-5)"
+                        />
+                        <stop
+                          offset="0.739171"
+                          stop-color="var(--radial-stop-6)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-7)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_217-:r4:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.578582"
+                          stop-color="var(--radial-stop-8)"
+                        />
+                        <stop
+                          offset="0.697843"
+                          stop-color="var(--radial-stop-9)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-10)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_218-:r4:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.00787439"
+                          stop-color="var(--radial-stop-11)"
+                        />
+                        <stop
+                          offset="0.565"
+                          stop-color="var(--radial-stop-12)"
+                        />
+                        <stop
+                          offset="0.708535"
+                          stop-color="var(--radial-stop-13)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-14)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <clippath
+                        id="clip:r4:"
+                      >
+                        <path
+                          d="M0 0H960V1080H0z"
+                          fill="#fff"
+                        />
+                      </clippath>
+                    </defs>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="column grid-column-12 grid-column-3-tablet emphasised-gradient-column"
+              data-testid="column"
+            >
+              <div
+                aria-hidden="true"
+                class="glow-gradient glow4 emphasised-gradient emphasised-gradient-right no-hover"
+                data-testid="glow-gradient"
+                style="z-index: 0;"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="100%"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 960 1080"
+                  width="100%"
+                >
+                  <g>
+                    <g
+                      clip-path="url(#clip:r5:)"
+                    >
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_linear_1_214-:r5:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_215-:r5:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_216-:r5:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_217-:r5:)"
+                      />
+                      <path
+                        d="M960 0H0v1080h960V0z"
+                        fill="url(#paint0_radial_1_218-:r5:)"
+                      />
+                    </g>
+                    <defs>
+                      <lineargradient
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_linear_1_214-:r5:"
+                        x1="960"
+                        x2="3.57628e-05"
+                        y1="2.86102e-05"
+                        y2="1080"
+                      >
+                        <stop
+                          offset="0.777327"
+                          stop-color="var(--linear-stop-1)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--linear-stop-2)"
+                        />
+                      </lineargradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_215-:r5:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.66"
+                          stop-color="var(--radial-stop-1)"
+                        />
+                        <stop
+                          offset="0.84"
+                          stop-color="var(--radial-stop-2)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-3)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_216-:r5:"
+                        r="1"
+                      >
+                        <stop
+                          stop-color="var(--radial-stop-4)"
+                        />
+                        <stop
+                          offset="0.33941"
+                          stop-color="var(--radial-stop-5)"
+                        />
+                        <stop
+                          offset="0.739171"
+                          stop-color="var(--radial-stop-6)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-7)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_217-:r5:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.578582"
+                          stop-color="var(--radial-stop-8)"
+                        />
+                        <stop
+                          offset="0.697843"
+                          stop-color="var(--radial-stop-9)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-10)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <radialgradient
+                        cx="0"
+                        cy="0"
+                        gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                        gradientUnits="userSpaceOnUse"
+                        id="paint0_radial_1_218-:r5:"
+                        r="1"
+                      >
+                        <stop
+                          offset="0.00787439"
+                          stop-color="var(--radial-stop-11)"
+                        />
+                        <stop
+                          offset="0.565"
+                          stop-color="var(--radial-stop-12)"
+                        />
+                        <stop
+                          offset="0.708535"
+                          stop-color="var(--radial-stop-13)"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="var(--radial-stop-14)"
+                          stop-opacity="0"
+                        />
+                      </radialgradient>
+                      <clippath
+                        id="clip:r5:"
+                      >
+                        <path
+                          d="M0 0H960V1080H0z"
+                          fill="#fff"
+                        />
+                      </clippath>
+                    </defs>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="emphasised-children"
+        >
+          <div
+            class="emphasised-hero emphasised-palette-purple"
+            data-testid="emphasized-hero"
+          >
+            <div
+              class="emphasised-grid"
+            >
+              <div
+                class="emphasised-content-column"
+              >
+                <div
+                  class="emphasised-content-background emphasised-content-background-description visible-below-laptop"
+                  data-testid="visible"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="glow-gradient glow4 emphasised-content-gradient no-hover"
+                    data-testid="glow-gradient"
+                    style="z-index: 0;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      height="100%"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 960 1080"
+                      width="100%"
+                    >
+                      <g>
+                        <g
+                          clip-path="url(#clip:r6:)"
+                        >
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_linear_1_214-:r6:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_215-:r6:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_216-:r6:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_217-:r6:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_218-:r6:)"
+                          />
+                        </g>
+                        <defs>
+                          <lineargradient
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_linear_1_214-:r6:"
+                            x1="960"
+                            x2="3.57628e-05"
+                            y1="2.86102e-05"
+                            y2="1080"
+                          >
+                            <stop
+                              offset="0.777327"
+                              stop-color="var(--linear-stop-1)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--linear-stop-2)"
+                            />
+                          </lineargradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_215-:r6:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.66"
+                              stop-color="var(--radial-stop-1)"
+                            />
+                            <stop
+                              offset="0.84"
+                              stop-color="var(--radial-stop-2)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-3)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_216-:r6:"
+                            r="1"
+                          >
+                            <stop
+                              stop-color="var(--radial-stop-4)"
+                            />
+                            <stop
+                              offset="0.33941"
+                              stop-color="var(--radial-stop-5)"
+                            />
+                            <stop
+                              offset="0.739171"
+                              stop-color="var(--radial-stop-6)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-7)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_217-:r6:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.578582"
+                              stop-color="var(--radial-stop-8)"
+                            />
+                            <stop
+                              offset="0.697843"
+                              stop-color="var(--radial-stop-9)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-10)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_218-:r6:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.00787439"
+                              stop-color="var(--radial-stop-11)"
+                            />
+                            <stop
+                              offset="0.565"
+                              stop-color="var(--radial-stop-12)"
+                            />
+                            <stop
+                              offset="0.708535"
+                              stop-color="var(--radial-stop-13)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-14)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <clippath
+                            id="clip:r6:"
+                          >
+                            <path
+                              d="M0 0H960V1080H0z"
+                              fill="#fff"
+                            />
+                          </clippath>
+                        </defs>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="emphasised-content"
+                >
+                  <div
+                    class="emphasised-content-description"
+                  >
+                    <div
+                      class="emphasised-content-heading"
+                    >
+                      <div
+                        class="display display-size-sm"
+                        lang="nl"
+                      >
+                        Title
+                      </div>
+                      <div
+                        class="heading heading-size-lg align-left"
+                        data-testid="heading"
+                        lang="nl"
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      class="emphasised-content-children"
+                    >
+                      <p
+                        class="paragraph paragraph-size-default"
+                        data-testid="paragraph"
+                      >
+                        Emphasized Hero content
+                      </p>
+                      <ul
+                        class="default-list default-list-size-default"
+                        data-testid="default-list"
+                      >
+                        <li
+                          class="list-variant-icon"
+                          data-testid="default-list-list-item"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                            data-icon="checkmark"
+                            data-testid="icon"
+                          >
+                            
+                          </span>
+                          <p
+                            class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                            data-testid="paragraph"
+                          >
+                            List item 1
+                          </p>
+                        </li>
+                        <li
+                          class="list-variant-icon"
+                          data-testid="default-list-list-item"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                            data-icon="checkmark"
+                            data-testid="icon"
+                          >
+                            
+                          </span>
+                          <p
+                            class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                            data-testid="paragraph"
+                          >
+                            List item 2
+                          </p>
+                        </li>
+                        <li
+                          class="list-variant-icon"
+                          data-testid="default-list-list-item"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                            data-icon="checkmark"
+                            data-testid="icon"
+                          >
+                            
+                          </span>
+                          <p
+                            class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                            data-testid="paragraph"
+                          >
+                            List item 3
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="emphasised-content-cta"
+                  >
+                    <button
+                      class="fill-mobile-small fill-laptop-reset button button-size-default button-prominence-default"
+                      data-testid="button"
+                    >
+                      <span
+                        class="button-label"
+                      >
+                        Button 1
+                      </span>
+                    </button>
+                    <button
+                      class="fill-mobile-small fill-laptop-reset button button-size-default button-prominence-secondary"
+                      data-testid="button"
+                    >
+                      <span
+                        class="button-label"
+                      >
+                        Button 2
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emphasised-media-column"
+              >
+                <div
+                  class="emphasised-content-background emphasised-content-background-image visible-below-laptop"
+                  data-testid="visible"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="glow-gradient glow4 emphasised-content-gradient no-hover"
+                    data-testid="glow-gradient"
+                    style="z-index: 0;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      height="100%"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 960 1080"
+                      width="100%"
+                    >
+                      <g>
+                        <g
+                          clip-path="url(#clip:r7:)"
+                        >
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_linear_1_214-:r7:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_215-:r7:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_216-:r7:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_217-:r7:)"
+                          />
+                          <path
+                            d="M960 0H0v1080h960V0z"
+                            fill="url(#paint0_radial_1_218-:r7:)"
+                          />
+                        </g>
+                        <defs>
+                          <lineargradient
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_linear_1_214-:r7:"
+                            x1="960"
+                            x2="3.57628e-05"
+                            y1="2.86102e-05"
+                            y2="1080"
+                          >
+                            <stop
+                              offset="0.777327"
+                              stop-color="var(--linear-stop-1)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--linear-stop-2)"
+                            />
+                          </lineargradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_215-:r7:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.66"
+                              stop-color="var(--radial-stop-1)"
+                            />
+                            <stop
+                              offset="0.84"
+                              stop-color="var(--radial-stop-2)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-3)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_216-:r7:"
+                            r="1"
+                          >
+                            <stop
+                              stop-color="var(--radial-stop-4)"
+                            />
+                            <stop
+                              offset="0.33941"
+                              stop-color="var(--radial-stop-5)"
+                            />
+                            <stop
+                              offset="0.739171"
+                              stop-color="var(--radial-stop-6)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-7)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_217-:r7:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.578582"
+                              stop-color="var(--radial-stop-8)"
+                            />
+                            <stop
+                              offset="0.697843"
+                              stop-color="var(--radial-stop-9)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-10)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <radialgradient
+                            cx="0"
+                            cy="0"
+                            gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                            gradientUnits="userSpaceOnUse"
+                            id="paint0_radial_1_218-:r7:"
+                            r="1"
+                          >
+                            <stop
+                              offset="0.00787439"
+                              stop-color="var(--radial-stop-11)"
+                            />
+                            <stop
+                              offset="0.565"
+                              stop-color="var(--radial-stop-12)"
+                            />
+                            <stop
+                              offset="0.708535"
+                              stop-color="var(--radial-stop-13)"
+                            />
+                            <stop
+                              offset="1"
+                              stop-color="var(--radial-stop-14)"
+                              stop-opacity="0"
+                            />
+                          </radialgradient>
+                          <clippath
+                            id="clip:r7:"
+                          >
+                            <path
+                              d="M0 0H960V1080H0z"
+                              fill="#fff"
+                            />
+                          </clippath>
+                        </defs>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="visual visual-ratio-default no-padding-all-mobile-small no-padding-bottom-laptop emphasised-media-visual"
+                  data-testid="visual"
+                >
+                  <picture
+                    class="picture"
+                    data-testid="image-picture"
+                  >
+                    <img
+                      alt=""
+                      class="image image-position-bottom ratio-4-3-mobile-small ratio-16-9-mobile ratio-1-1-laptop"
+                      data-testid="image-img"
+                      loading="lazy"
+                      src="test-file-stub"
+                      style="object-fit: contain;"
+                    />
+                  </picture>
+                  <div
+                    class="emphasised-media-sticker-container"
+                  >
+                    <div
+                      class="large-sticker large-sticker-palette-purple emphasised-media-sticker"
+                      data-testid="large-sticker"
+                    >
+                      <h3
+                        class="heading heading-size-xs align-left large-sticker-text"
+                        data-testid="heading"
+                        lang="nl"
+                      >
+                        Content of the sticker
+                      </h3>
+                      <div
+                        class="price price"
+                      >
+                        <div>
+                          <div
+                            class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+                            data-testid="before"
+                          >
+                            Vanaf
+                          </div>
+                        </div>
+                        <div
+                          aria-hidden="true"
+                          class="price-wrapper"
+                        >
+                          <div
+                            class="price"
+                          >
+                            <div
+                              class="price-text lg currency large-sticker-price"
+                              data-testid="currency"
+                            >
+                              €
+                            </div>
+                            <div
+                              class="price-value-wrapper"
+                            >
+                              <div
+                                class="price-text lg large-sticker-price"
+                                data-testid="whole"
+                              >
+                                10
+                              </div>
+                              <div
+                                class="decimal-wrapper"
+                              >
+                                <div
+                                  class="comma-text price-text lg comma-text-position large-sticker-price"
+                                >
+                                  ,
+                                </div>
+                                <div
+                                  class="price-text lg large-sticker-price"
+                                  data-testid="decimals"
+                                >
+                                  ⁰⁰
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="price-sr-only"
+                        >
+                          <span
+                            data-value="true"
+                          >
+                            Voor: 10,00
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;

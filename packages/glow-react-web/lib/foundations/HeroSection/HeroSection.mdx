@@ -1,0 +1,28 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as HeroSectionStories from "./HeroSection.stories";
+
+<Meta of={HeroSectionStories} />
+
+# HeroSection component
+
+HeroSection is a section variant that is intended for the [Hero Component](?path=/docs/designsystem-components-hero-hero--docs).
+
+## Purpose
+
+`HeroSection` is a layout wrapper designed to render one or more [`Hero`](?path=/docs/designsystem-components-hero-hero--docs) components in a flexible, stacked format. It simplifies scenarios where multiple Hero blocks need to be shown together — for instance, in promotional landing pages or campaign sections.
+
+## Usage
+
+Use `HeroSection` when you want to:
+
+- Display multiple `<Hero />` components in sequence with consistent spacing and structure.
+- Manage visual variation or alternating layout patterns across heroes (e.g., alternating image-text order).
+- Provide a clean and consistent container for `<Hero />` content within a larger page structure.
+
+## Features
+
+- Automatically alternates the `order` prop for visual variety (`default` vs. `inverted`).
+- Helps avoid repetitive boilerplate when rendering multiple `<Hero />` components.
+
+<Canvas of={HeroSectionStories.Default} />
+<Controls of={HeroSectionStories.Default} />

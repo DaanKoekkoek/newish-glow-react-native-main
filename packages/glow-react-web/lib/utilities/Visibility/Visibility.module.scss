@@ -1,0 +1,28 @@
+@use "@globals/config";
+@use "@globals/mixins";
+
+@each $breakpoint, $value in config.$global-min-width {
+  .visible-above-#{$breakpoint} {
+    display: none;
+
+    @include mixins.above($breakpoint) {
+      display: inherit;
+    }
+  }
+
+  .visible-below-#{$breakpoint} {
+    display: none;
+    
+    @include mixins.below($breakpoint) {
+      display: inherit;
+    }
+  }
+
+  .visible-only-#{$breakpoint} {
+    display: none;
+    
+    @include mixins.only($breakpoint) {
+      display: inherit;
+    }
+  }
+}

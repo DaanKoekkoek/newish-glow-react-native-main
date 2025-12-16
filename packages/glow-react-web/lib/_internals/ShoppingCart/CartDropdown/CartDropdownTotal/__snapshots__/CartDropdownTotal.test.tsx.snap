@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartDropdownTotal /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="cart-dropdown-total"
+  >
+    <div
+      class="row"
+    >
+      <span
+        class="heading heading-size-xs align-left label"
+        data-testid="heading"
+        lang="nl"
+      >
+        Totaal per maand
+      </span>
+      <div
+        class="price"
+      >
+        <div
+          aria-hidden="true"
+          class="price-wrapper"
+        >
+          <div
+            class="price"
+          >
+            <div
+              class="price-text sm currency"
+              data-testid="currency"
+            >
+              €
+            </div>
+            <div
+              class="price-value-wrapper"
+            >
+              <div
+                class="price-text sm"
+                data-testid="whole"
+              >
+                69
+              </div>
+              <div
+                class="decimal-wrapper"
+              >
+                <div
+                  class="comma-text price-text sm"
+                >
+                  ,
+                </div>
+                <div
+                  class="price-text sm"
+                  data-testid="decimals"
+                >
+                  00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="price-sr-only"
+        >
+          <span
+            data-value="true"
+          >
+            Voor: 
+            69
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <span
+        class="heading heading-size-xs align-left label"
+        data-testid="heading"
+        lang="nl"
+      >
+        Totaal eenmalig
+      </span>
+      <div
+        class="price"
+      >
+        <div
+          aria-hidden="true"
+          class="price-wrapper"
+        >
+          <div
+            class="price"
+          >
+            <div
+              class="price-text sm currency"
+              data-testid="currency"
+            >
+              €
+            </div>
+            <div
+              class="price-value-wrapper"
+            >
+              <div
+                class="price-text sm"
+                data-testid="whole"
+              >
+                123
+              </div>
+              <div
+                class="decimal-wrapper"
+              >
+                <div
+                  class="comma-text price-text sm"
+                >
+                  ,
+                </div>
+                <div
+                  class="price-text sm"
+                  data-testid="decimals"
+                >
+                  00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="price-sr-only"
+        >
+          <span
+            data-value="true"
+          >
+            Voor: 
+            123
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

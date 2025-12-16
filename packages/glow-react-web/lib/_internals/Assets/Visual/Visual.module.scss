@@ -1,0 +1,102 @@
+@use "sass:list";
+@use "@odido-portals/glow-tokens/section-atoms-color";
+@use "@odido-portals/glow-tokens/responsive-padding";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$no-padding-map: (
+    vertical: ("padding-block", 0),
+    horizontal: ("padding-inline", 0),
+    left: ("padding-left", 0),
+    right: ("padding-right", 0),
+    top: ("padding-top", 0),
+    bottom: ("padding-bottom", 0),
+    all: ("padding", 0),
+    none: ("padding", var(--responsive-padding-default)),
+);
+
+@include mixins.token-scope(visual,
+    (section-atoms-color, padding)) {}
+
+@layer main.internals {
+    .visual {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+
+        picture,
+        div[role="img"] {
+            z-index: 1;
+        }
+    }
+}
+
+@each $color in config.$odido-palette {
+    .palette-#{$color} {
+        background-color: var(--components-section-atoms-color-background-subtle-palette-#{$color}, var(--components-section-atoms-color-background-subtle));
+    }
+}
+
+@each $variation, $pair in $no-padding-map {
+    .no-padding-#{$variation} {
+        #{list.nth($pair, 1)}: #{list.nth($pair, 2)};
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+        @media (min-width: $width) {
+            .no-padding-#{$variation}-#{$breakpoint} {
+                #{list.nth($pair, 1)}: #{list.nth($pair, 2)};
+            }
+        }
+    }
+}
+
+.visual-ratio-fixed {
+    padding-inline: 0;
+}
+
+.glow {
+    inset: 0;
+    position: absolute;
+}
+
+.glow-style-zoom {
+    transform: scale(1.5);
+}
+
+.fill-height,
+.fill-height img,
+.fill-height picture {
+    height: 100%;
+    min-height: inherit;
+}
+
+.fill-width,
+.fill-width img,
+.fill-width picture {
+    width: 100%;
+}
+
+.children {
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+
+    &.fill-height {
+        height: inherit;
+        max-height: inherit;
+    }
+
+    &.fill-width {
+        max-width: inherit;
+        width: auto;
+    }
+
+    @each $ratio, $value in config.$aspect-ratios {
+        &.ratio-#{$ratio} {
+            aspect-ratio: #{$value};
+        }
+    }
+}

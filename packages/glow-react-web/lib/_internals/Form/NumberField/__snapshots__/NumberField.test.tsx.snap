@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberField /> Renders small size 1`] = `
+<DocumentFragment>
+  <input
+    aria-disabled="false"
+    class="number-field size-sm state-default"
+    data-testid="number-field"
+    inputmode="numeric"
+    type="number"
+    value="undefined"
+  />
+</DocumentFragment>
+`;
+
+exports[`<NumberField /> renders correctly a Number Field 1`] = `
+<DocumentFragment>
+  <input
+    aria-disabled="false"
+    class="number-field size-default state-default"
+    data-testid="number-field"
+    inputmode="numeric"
+    type="number"
+    value="undefined"
+  />
+</DocumentFragment>
+`;

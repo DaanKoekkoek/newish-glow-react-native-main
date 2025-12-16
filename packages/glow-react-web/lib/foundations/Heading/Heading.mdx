@@ -1,0 +1,20 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as HeadingStories from "./Heading.stories";
+
+<Meta of={HeadingStories} />
+
+# Heading
+
+Headings provide structure to content and create typographic hierarchy. Without them, users are presented with blocks of text that can be hard for them to understand and digest. Larger heading styles become smaller on small screens to make them easier to read.
+
+<Canvas of={HeadingStories.Basic} />
+<Controls of={HeadingStories.Basic} />
+
+## With highlights
+
+You can apply additional styling to your heading text using special formatting:
+
+- Wrap text in square brackets (`[ ]`) to apply a highlight style. By default, this uses the palette color defined in the surrounding `<Section />` component, but you can override it using the `highlightClassName` prop.
+- Use the pipe character (`|`) to insert a line break.
+
+<Canvas of={HeadingStories.WithHighlights} />

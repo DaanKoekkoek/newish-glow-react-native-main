@@ -1,0 +1,13 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    cart-description,
+    shopping-cart-shopping-cart-v1
+) {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-description);
+
+    &.inactive-text {
+        color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-inactive);
+    }
+}

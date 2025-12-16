@@ -1,0 +1,31 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as LineItem from "./LineItem.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={LineItem} />
+
+# LineItem
+
+### Token version: {getComponentVersion("skip")}
+
+The `<LineItem>` atom represents a product or service listed in the Shopping Cart. It supports multiple variants, displays pricing and optional discount information, and includes optional actions such as removal.
+
+This component is used within the `<CartDetails>` atom, where it is grouped into categories to create a detailed breakdown of cart contents.
+
+---
+
+### Basic Example
+
+<Canvas of={LineItem.Basic} />
+<Controls of={LineItem.Basic} />
+
+---
+
+## Variants
+
+- **default**: Standard layout with title, price, and optional description/discount.
+- **free item**: Displays a label like "Gratis" in place of a price.
+- **short description**: Compact format where `moreInfo` appears inline with the title.
+
+---

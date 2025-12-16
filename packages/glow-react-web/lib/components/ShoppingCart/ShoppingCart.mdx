@@ -1,0 +1,25 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ShoppingCart from "./ShoppingCart.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ShoppingCart} />
+
+# ShoppingCart
+
+### Token version: {getComponentVersion("shopping-cart.v1")}
+
+The `ShoppingCart` component displays a structured overview of a user's selected products or services. It supports:
+
+- A **title** and optional **info icon**
+
+- A **CartAccordion** with collapsible rows showing line items grouped by category
+
+- **Optional text link** (e.g. for adding items)
+
+- Primary and secondary **action buttons**
+
+- A **footnote** for additional information
+
+<Canvas of={ShoppingCart.PDP} />
+<Controls of={ShoppingCart.PDP} />

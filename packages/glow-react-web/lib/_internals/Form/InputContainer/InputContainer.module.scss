@@ -1,0 +1,42 @@
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  input-container,
+  (assets-icons, input-gap)
+) {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  row-gap: var(--components-input-gap-vertical-default);
+  flex: 1;
+
+  .group-container {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--components-input-gap-vertical-default);
+  }
+
+  .group {
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+
+    /* When group is hovered (including when any child is hovered), apply styles to both elements */
+    &:hover {
+      input[type="file"]:not(:disabled) {
+        border-color: var(--components-input-color-border-hover);
+      }
+
+      input[type="file"]:not(:disabled) ~ [class*="suffix-container"] [data-input-file-upload-button] {
+        background-color: var(--components-button-button-v2-color-background-default-hover);
+        box-shadow: 0 0 0 var(--components-button-button-v2-border-width-default-default) var(--components-button-button-v2-color-border-default-hover) inset;
+        color: var(--components-button-button-v2-color-text-default-hover);
+      }
+    }
+  }
+}

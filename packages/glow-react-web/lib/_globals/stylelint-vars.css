@@ -1,0 +1,24 @@
+/* 
+  This file exists ONLY to satisfy stylelint's `value-no-unknown-custom-properties` rule. 
+
+  We define scaffolding variables here (like `--palette-*`) so that stylelint recognizes 
+  them as "known". At runtime these variables are set dynamically in components, but 
+  stylelint has no way of knowing that. 
+
+  Without this file, stylelint would error with 
+  "Unexpected custom property --palette-strong-text" in components that reference them. 
+
+  ⚠️ Do not remove or import this file into production code — it's linting support only. 
+*/
+
+:root {
+  --palette-section: initial;
+  --palette-box: initial;
+  --palette-title-text: initial;
+  --palette-strong-text: initial;
+  --container-gutter: initial;
+  --container-gap: initial;
+  --container-max-width: initial;
+  --clip-path-mobile: initial;
+  --clip-path-desktop: initial;
+}

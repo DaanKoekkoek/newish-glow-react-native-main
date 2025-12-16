@@ -1,0 +1,40 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as EmphasizedHeroStories from "./EmphasizedHero.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={EmphasizedHeroStories} />
+
+# EmphasizedHero
+
+#### Token version: {getComponentVersion("emphasized-hero.v1")}
+
+The `EmphasizedHero` is a structured, visually-rich hero block intended to be used **only within** the `<EmphasizedHeroSection />`. It supports flexible layouts, gradients, countdown timers, stickers, and visuals like images or videos.
+
+## Purpose
+
+Use the `EmphasizedHero` component to display a prominent message or campaign with clear visual hierarchy—combining headline content and visual media in a responsive, split layout.
+
+> **Note:** This component is **not standalone** and should always be rendered inside `<EmphasizedHeroSection />` for proper theming and layout context.
+> When used inside `<EmphasizedHeroSection />`, each `<EmphasizedHero />` child is automatically enhanced with shared layout props such as `glow`, `theme`, `order`, and `palette`. These props are injected via `React.cloneElement`:
+
+## Usage
+
+Use `EmphasizedHero` when you want to:
+
+- Present structured content such as a headline, subheadline, and descriptive text.
+- Pair the message with a strong visual asset and optional sticker.
+- Add a countdown (e.g., for a launch or offer) using the `countdown` prop.
+- Provide CTAs or interactions via the `callToAction` prop.
+- Leverage responsive gradients and layout inversion with `order`.
+
+> **Note:** If using a `<Countdown />` component, ensure it’s handled as a **Client Component** in Next.js to avoid hydration mismatches.
+
+---
+
+## Default Example
+
+The default story shows a typical combination of heading, description, footnote, CTA, and a visual element.
+
+<Canvas of={EmphasizedHeroStories.Default} />
+<Controls of={EmphasizedHeroStories.Default} />

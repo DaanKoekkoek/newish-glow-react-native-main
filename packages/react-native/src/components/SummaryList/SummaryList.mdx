@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SummaryListStories from "./SummaryList.stories";
+
+<Meta of={SummaryListStories} />
+
+# SummaryList
+
+The `<SummaryList />` only allows `<SummaryList.Item />` children. You have the option to set the `state` for each `<SummaryList.Item />`
+
+<Canvas of={SummaryListStories.Basic} />
+<Controls of={SummaryListStories.Basic} />

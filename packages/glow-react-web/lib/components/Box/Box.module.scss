@@ -1,0 +1,62 @@
+@use "@odido-portals/glow-tokens/box-v1";
+@use "@odido-portals/glow-tokens/box-radius";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    box,
+    (box-v1, box-radius, color-text)
+) {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  position: relative;
+  overflow: hidden;
+  border: var(--components-box-v1-border-width-default) solid var(--components-box-v1-color-border-default);
+  background-color: var(--components-box-v1-color-background-default);
+  border-radius: var(--components-box-v1-radius-default);
+  padding: var(--components-box-v1-padding-default);
+  box-sizing: border-box;
+  color: var(--semantics-color-text-default);
+
+  &.box-size-sm {
+    border-radius: var(--components-box-v1-radius-sm);
+    padding: var(--components-box-v1-padding-sm);
+  }
+
+  &.box-prominence-outline {
+    background-color: var(--components-box-v1-color-background-outline);
+    border-color: var(--components-box-v1-color-border-outline);
+    border-width: var(--components-box-v1-border-width-outline);
+  }
+  
+  &.box-prominence-color {
+    background-color: var(--palette-box, var(--components-box-v1-color-background-color-palette-default, var(--components-box-v1-color-background-color)));
+  }
+  
+  &.box-prominence-emphasised {
+    background-color: var(--components-box-v1-color-background-emphasised-palette-default, var(--components-box-v1-color-background-emphasised));
+    z-index: 0;
+  }
+  
+  @each $color in config.$odido-palette {
+    &.box-prominence-emphasised.box-palette-#{$color} {
+      background-color: var(--components-box-v1-color-background-emphasised-palette-#{$color}, var(--components-box-v1-color-background-emphasised));
+    }
+  
+    &.box-prominence-color.box-palette-#{$color} {
+      background-color: var(--components-box-v1-color-background-color-palette-#{$color}, var(--components-box-v1-color-background-color));
+    }
+  }
+}
+
+.box-grow {
+  height: 100%;
+  width: 100%;
+}
+
+.box-gradient {
+  position: absolute;
+  inset: 0;
+}

@@ -1,0 +1,37 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as RangeSliderStories from "./RangeSlider.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={RangeSliderStories} />
+
+# RangeSlider
+
+#### Token version: {getComponentVersion("range-slider.v1")}
+
+The `RangeSlider` component allows users to select a numeric value or a range of values along a predefined scale. It supports optional increment/decrement buttons, customizable ranges, and formatted price labels.
+
+## Purpose
+
+The `RangeSlider` component is used to:
+
+- Select numeric values within a range.
+- Provide visual feedback using tooltips or custom labels.
+- Support both single-value and ranged selections.
+- Enhance UX with optional buttons for increment/decrement.
+
+## Usage
+
+The `RangeSlider` component can be used in forms, pricing modules, or anywhere a numeric selection is needed. It accepts props to customize:
+
+- `minValue` / `maxValue`: define the slider range.
+- `step`: increment steps.
+- `buttons`: show optional increment/decrement buttons.
+- `range`: display min/max labels.
+- `prices`: optional labels displayed in the tooltip.
+- `palette`: define visual style.
+
+### Default Example
+
+<Canvas of={RangeSliderStories.Default} />
+<Controls of={RangeSliderStories.Default} />

@@ -1,0 +1,75 @@
+
+@use "@odido-portals/glow-tokens/sticker-default-sticker-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  default-sticker,
+  sticker-default-sticker-v1
+) {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  text-align: left;
+  gap: var(--components-sticker-default-sticker-v1-gap-default);
+  min-width: var(--components-sticker-default-sticker-v1-size-min-width);
+  max-width: var(--components-sticker-default-sticker-v1-size-max-width);
+  padding: var(--components-sticker-default-sticker-v1-padding-vertical)
+    var(--components-sticker-default-sticker-v1-padding-horizontal);
+  border-radius: var(--components-sticker-default-sticker-v1-radius-default);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+.default-sticker-text {
+  position: relative;
+  color: var(--components-sticker-default-sticker-v1-color-text-default);
+  font-family: var(
+    --components-sticker-default-sticker-v1-typography-font-family
+  );
+  font-size: var(--components-sticker-default-sticker-v1-typography-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(
+    --components-sticker-default-sticker-v1-typography-line-height
+  );
+  letter-spacing: var(
+    --components-sticker-default-sticker-v1-typography-letter-spacing
+  );
+}
+
+.default-sticker-variant-emphasised {
+  background-color: var(--components-sticker-default-sticker-v1-color-background-emphasised);
+
+  .default-sticker-text {
+    color: var(--components-sticker-default-sticker-v1-color-text-emphasised);
+  }
+}
+
+.default-sticker-gradient {
+  position: absolute;
+  inset: 0;
+}
+
+.default-sticker-palette {
+  @each $color in config.$odido-palette {
+    &-#{$color} {
+      background-color: var(
+        --components-sticker-default-sticker-v1-color-background-default-palette-#{$color},
+        var(--components-sticker-default-sticker-v1-color-background-default)
+      );
+      
+      .default-sticker-text {
+        color: var(
+          --components-sticker-default-sticker-v1-color-text-default-palette-#{$color}, var(--components-sticker-default-sticker-v1-color-text-default)
+        );
+      }
+    }
+  }
+}

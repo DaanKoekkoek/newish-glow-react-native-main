@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AddonStories from "./Addon.stories";
+
+<Meta of={AddonStories} />
+
+# Addon
+
+An addon is an image containing an addon offering. You have the option to adjust the size of the addon container, but will automatically adjust its size based on the breakpoint.
+
+<Canvas of={AddonStories.Basic} />
+<Controls of={AddonStories.Basic} />
+
+## With Grid
+
+While `size` values of `"sm"` and `"xs"` have a fixed width and height, `default` does not. Default scales based on the parent container. In the example below, `Grid` in combination with `Stack`, `Heading` and `Paragraph` is used.
+
+<Canvas of={AddonStories.AddonWithGrid} />
+<Controls of={AddonStories.AddonWithGrid} />

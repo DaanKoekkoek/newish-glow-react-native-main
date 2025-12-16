@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefaultListStories from "./DefaultList.stories";
+
+<Meta of={DefaultListStories} />
+
+# DefaultList
+
+The `<DefaultList />` only allows `<DefaultList.item />` children.
+
+<Canvas of={DefaultListStories.Basic} />
+<Controls of={DefaultListStories.Basic} />

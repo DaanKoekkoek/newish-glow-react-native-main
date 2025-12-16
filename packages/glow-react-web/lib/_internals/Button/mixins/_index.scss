@@ -1,0 +1,141 @@
+@use "sass:map";
+@use "@globals/mixins";
+
+@mixin disabled() {
+  background-color: var(--components-button-button-v2-color-background-inactive-default);
+  box-shadow: 0 0 0 var(--components-button-button-v2-border-width-inactive-default) var(--components-button-button-v2-color-border-inactive-default) inset;
+  color: var(--components-button-button-v2-color-text-inactive-default);
+  position: relative;
+  pointer-events: none;
+
+  &.is-inverted {
+    background-color: var(--components-button-button-v2-color-background-inactive-inverted);
+    box-shadow: 0 0 0 var(--components-button-button-v2-border-width-inactive-inverted) var(--components-button-button-v2-color-border-inactive-inverted) inset;
+    color: var(--components-button-button-v2-color-text-inactive-inverted);
+  }
+}
+  
+@mixin size($size) {
+  border-radius: map.get($size, border-radius);
+  font-size: map.get($size, font-size);
+  font-weight: map.get($size, font-weight);
+  letter-spacing: map.get($size, letter-spacing);
+  line-height: map.get($size, line-height);
+  padding: map.get($size, padding);
+  transition:
+    opacity 150ms ease-in-out,
+    background-color 150ms ease-in-out,
+    color 150ms ease-in-out,
+    border-color 150ms ease-in-out;
+
+  &.is-loading {
+    column-gap: 0 !important;
+
+
+    >.button-label,
+    >.button-icon {
+      transition: opacity 250ms ease-in-out;
+      opacity: 0;
+    }
+
+    &.has-icon-left-and-text .button-icon {
+      padding-left: map.get($size, column-gap);
+    }
+
+    &.has-icon-right-and-text .button-icon {
+      padding-right: map.get($size, column-gap);
+    }
+
+    &.is-inverted.is-loading .button-loading-icon {
+      color: var(--components-button-button-v2-color-icon-default-inverted-loading) !important;
+    }
+  }
+
+  &.has-icon-right-and-text {
+    column-gap: map.get($size, column-gap);
+  }
+
+  &.has-icon-left-and-text {
+    column-gap: map.get($size, column-gap);
+  }
+
+  &.has-icon-only {
+    padding: map.get($size, icon-only-padding);
+  }
+}
+  
+  
+@mixin prominence($variant) {
+  background-color: map.get($variant, background-color);
+  box-shadow: 0 0 0 map.get($variant, border-width) map.get($variant, border-color) inset;
+  color: map.get($variant, color);
+
+  &.is-loading {
+    background-color: map.get($variant, loading-background-color);
+    box-shadow: 0 0 0 map.get($variant, loading-border-width) map.get($variant, border-color) inset;
+
+    &.is-inverted {
+      background-color: map.get($variant, loading-inverted-background-color);
+      box-shadow: 0 0 0 map.get($variant, loading-inverted-border-width) map.get($variant, border-color) inset;
+    }
+  }
+
+  .button-icon {
+    color: map.get($variant, color-icon);
+  }
+
+  &:disabled {
+    .button-icon {
+      color: map.get($variant, color-icon-disabled);
+    }
+  }
+
+  &:not([tabindex="-1"]),
+  &:not([disabled]) {
+    &:hover {
+      background-color: map.get($variant, hover-background-color);
+      box-shadow: 0 0 0 map.get($variant, border-width) map.get($variant, hover-border-color) inset;
+      color: map.get($variant, hover-color);
+
+      .button-icon {
+        color: map.get($variant, color-icon-hover);
+      }
+    }
+
+    &:active {
+      background-color: map.get($variant, active-background-color);
+      box-shadow: 0 0 0 map.get($variant, border-width) map.get($variant, active-border-color) inset;
+      color: map.get($variant, active-color);
+    }
+
+    &.is-inverted {
+      background-color: map.get($variant, inverted-background-color);
+      box-shadow: 0 0 0 map.get($variant, inverted-border-width) map.get($variant, inverted-border-color) inset;
+      color: map.get($variant, inverted-color);
+      
+      .button-icon {
+        color: map.get($variant, color-icon-inverted);
+      }
+
+      &:hover {
+        background-color: map.get($variant, hover-inverted-background-color);
+        box-shadow: 0 0 0 map.get($variant, inverted-border-width) map.get($variant, hover-inverted-border-color) inset;
+        color: map.get($variant, hover-inverted-color);
+      
+      .button-icon {
+        color: map.get($variant, color-icon-inverted-hover);
+      }
+      }
+
+      &:active {
+        background-color: map.get($variant, active-inverted-background-color);
+        box-shadow: 0 0 0 map.get($variant, inverted-border-width) map.get($variant, active-inverted-border-color) inset;
+        color: map.get($variant, active-inverted-color);
+      }
+    }
+
+    &:focus-visible .list-icon-right {
+      font-family: var(--components-lists-list-item-v2-size-icon-font-family-action-hover);
+    }
+  }
+}

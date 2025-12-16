@@ -1,0 +1,22 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@odido-portals/glow-tokens/semantics-padding";
+@use "@odido-portals/glow-tokens/primitives-color";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    afm,
+    (
+        assets-logos,
+        padding,
+        color
+    )
+) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.afm-svg {
+    height: var(--components-assets-logos-and-visuals-afm-v1-size-height-default);
+    width: var(--components-assets-logos-and-visuals-afm-v1-size-width-default);
+}

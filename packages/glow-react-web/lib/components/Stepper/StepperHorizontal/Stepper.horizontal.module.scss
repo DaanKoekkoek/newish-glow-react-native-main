@@ -1,0 +1,65 @@
+@use "@odido-portals/glow-tokens/progress-indicators";
+@use "@odido-portals/glow-tokens/progress-indicators-horizontal-stepper-v1";
+@use "@globals/mixins";
+
+$horizontal-states: default, active, inactive, completed;
+
+@include mixins.token-scope(
+    stepper-horizontal,
+    (progress-indicators, progress-indicators-horizontal-stepper-v1)
+) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--components-progress-indicators-gap-horizontal-sm);
+    padding: 0 var(--components-progress-indicators-horizontal-stepper-v1-padding-horizontal) var(--components-progress-indicators-horizontal-stepper-v1-padding-bottom) var(--components-progress-indicators-horizontal-stepper-v1-padding-horizontal);
+    justify-content: center;
+}
+
+.label-wrapper {
+    display: none;
+    position: absolute;
+    width: var(--components-progress-indicators-atoms-horizontal-step-size-title-max-width);
+    max-width: var(--components-progress-indicators-atoms-horizontal-step-size-title-max-width);
+    min-width: var(--components-progress-indicators-atoms-horizontal-step-size-title-min-width);
+    text-align: center;
+    margin: var(--components-progress-indicators-gap-vertical-default) calc(var(--components-progress-indicators-horizontal-stepper-padding-horizontal) * -1);
+
+    @include mixins.above("laptop") {
+        display: block;
+    };
+}
+
+.step {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: var(--components-progress-indicators-gap-horizontal-sm);
+}
+
+.label {
+    line-height: var(--components-progress-indicators-atoms-responsive-marker-typography-number-line-height);
+
+    @each $state in $horizontal-states {
+        &.label-state-#{$state} {
+            color: var(--components-progress-indicators-color-text-#{$state});
+            margin-inline: auto;
+        }
+    }
+}
+
+.stepper-step-container { 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+}
+
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

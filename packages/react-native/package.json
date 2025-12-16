@@ -1,0 +1,87 @@
+{
+  "name": "@odido-portals/glow-react-native",
+  "version": "0.50.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./theme/simpel": "./dist/theming/brands/simpel/index.js",
+    "./theme/odido": "./dist/theming/brands/odido/index.js",
+    "./assets/fonts": "./assets/fonts/font.ts",
+    "./jest-preset": "./jest/jest-preset.js"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "assets",
+    "dist",
+    "jest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odido-portals/glow-react-native.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "build:babel": "babel src --out-dir dist --extensions \".ts,.tsx,.js,.jsx\"",
+    "build:types": "tsc --project tsconfig.build.json",
+    "build": "pnpm run build:babel && pnpm run build:types",
+    "watch:babel": "babel src --out-dir dist --extensions \".ts,.tsx,.js,.jsx\" --watch",
+    "watch:types": "tsc --project tsconfig.build.json --watch",
+    "watch": "pnpm run watch:babel & pnpm run watch:types",
+    "test": "jest",
+    "test:update": "jest --updateSnapshot",
+    "test:clear": "jest --clearCache",
+    "test:coverage": "jest --coverage",
+    "plop": "plop",
+    "prepare": "pnpm run build"
+  },
+  "dependencies": {
+    "@expo/html-elements": "catalog:current",
+    "@odido-portals/glow-icon": "catalog:current",
+    "@odido-portals/glow-tokens": "catalog:current",
+    "@react-native-picker/picker": "2.11.0",
+    "expo-linear-gradient": "catalog:current",
+    "highlight-words-core": "^1.2.3",
+    "react": "catalog:current",
+    "react-dom": "catalog:current",
+    "react-native": "catalog:current",
+    "react-native-fast-shadow": "catalog:current",
+    "react-native-gesture-handler": "catalog:current",
+    "react-native-reanimated": "catalog:current",
+    "react-native-safe-area-context": "catalog:current",
+    "react-native-svg": "catalog:current",
+    "react-native-ui-datepicker": "2.0.3",
+    "react-native-unistyles": "catalog:current",
+    "react-native-web": "catalog:current",
+    "react-native-web-hooks": "catalog:current",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-export-namespace-from": "^7.24.7",
+    "@storybook/react": "^7.6.20",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react-native": "^12.4.4",
+    "@types/highlight-words-core": "^1.2.3",
+    "@types/jest": "^29.5.12",
+    "@types/react": "catalog:current",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "jest": "^29.7.0",
+    "jest-expo": "catalog:current",
+    "jest-junit": "^16.0.0",
+    "plop": "^4.0.1",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "catalog:current"
+  },
+  "peerDependencies": {
+    "@expo/html-elements": "catalog:current",
+    "react": "catalog:current",
+    "react-native": "catalog:current",
+    "react-native-reanimated": "catalog:current",
+    "react-native-svg": "catalog:current",
+    "react-native-unistyles": "catalog:current",
+    "react-native-web": "catalog:current"
+  }
+}

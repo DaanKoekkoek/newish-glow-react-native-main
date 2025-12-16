@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="slider"
+  >
+    <div
+      class="rail-wrapper"
+    >
+      <input
+        class="slider-input slider-palette-default slider-track-default"
+        max="100"
+        min="1"
+        step="1"
+        style="--progress: 0%;"
+        tabindex="-1"
+        type="range"
+        value="0"
+      />
+      <button
+        aria-hidden="true"
+        class="button button-size-default button-prominence-default has-icon-only custom-thumb"
+        data-testid="button"
+        style="left: 0px;"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline button-icon button-icon-size-default"
+          data-icon="slider"
+          data-testid="button-icon-left"
+        >
+          
+        </span>
+        <span
+          class="button-label"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

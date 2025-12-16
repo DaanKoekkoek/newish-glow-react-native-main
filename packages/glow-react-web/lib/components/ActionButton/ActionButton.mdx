@@ -1,0 +1,26 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ActionButtonStories from "./ActionButton.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ActionButtonStories} />
+
+# ActionButton
+
+#### Token version: {getComponentVersion("action-button.v1")}
+
+The Action Button combines an [**Icon Action Button** ↗️](?path=/docs/designsystem-components-button-actionbutton-iconactionbutton--docs) with a text label.
+It is also part of the [**Action Button Group** ↗️](?path=/docs/designsystem-components-button-actionbuttongroup-group--docs) component, which allows for multiple Action Buttons to be grouped together.
+
+## Migration Guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+> `onPress` is now `onClick`, but should work the same as before.
+>
+> `style` is removed in favour of `className`. This might require some rework on your side to abstract any custom styles into a class that can be applied.
+
+## Basic
+
+<Canvas of={ActionButtonStories.Basic} />
+<Controls of={ActionButtonStories.Basic} />

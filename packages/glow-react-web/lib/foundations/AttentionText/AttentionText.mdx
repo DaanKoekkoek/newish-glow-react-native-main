@@ -1,0 +1,21 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AttentionTextStories from "./AttentionText.stories";
+
+<Meta of={AttentionTextStories} />
+
+# AttentionText
+
+The Attention Text component is a foundation component used to draw attention to a specific piece of text.
+
+## Basic
+
+<Canvas of={AttentionTextStories.Basic} />
+<Controls of={AttentionTextStories.Basic} />
+
+## Without Icon
+
+<Canvas of={AttentionTextStories.WithoutIcon} />
+
+## Small Error
+
+<Canvas of={AttentionTextStories.Error} />

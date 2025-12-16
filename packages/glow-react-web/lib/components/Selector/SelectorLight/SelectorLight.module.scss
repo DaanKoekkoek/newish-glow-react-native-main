@@ -1,0 +1,107 @@
+@use "@odido-portals/glow-tokens/selector-padding";
+@use "@odido-portals/glow-tokens/selector-selector-light-v1";
+@use "@odido-portals/glow-tokens/selector-gap";
+@use "@odido-portals/glow-tokens/selector-size";
+@use "@odido-portals/glow-tokens/selector-typography";
+@use "@components/Selector/SelectorLight/mixins" as selector-light;
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    selector-light,
+    (
+        selector-padding,
+        selector-gap,
+        selector-size,
+        selector-typography,
+        selector-selector-light-v1
+    )
+) {
+    box-sizing: border-box;
+    flex: 1;
+
+    label {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .selector-light-mask {
+        @include mixins.gradient-vars;
+    }
+
+    input:disabled + label {        
+        .selector-light-visual {
+            background: var(--components-selector-color-image-inactive);
+            
+            img {
+                opacity: calc(var(--components-selector-opacity-image-inactive) / 100);
+                mix-blend-mode: luminosity;
+            }
+        }
+
+        .selector-light-icon {
+            color: var(--components-selector-color-icon-selected-inactive);
+        }
+    }
+}
+
+.selector-light-content {
+    display: flex;
+    align-items: center;
+    gap: var(--components-selector-gap-horizontal-default);
+    align-self: stretch;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default);
+
+    .selector-light-icon {
+        margin-inline: auto;
+    }
+
+    .selector-light-visual {
+        object-fit: cover;
+        opacity: var(--components-selector-opacity-image-default);
+        width: var(--components-selector-selector-light-v1-size-image-width);
+        
+        &,
+        img {
+            border-radius: var(--components-selector-selector-light-v1-radius-image-default);
+        }
+    }
+
+    .selector-light-title {
+        flex: 1;
+        color: var(--components-selector-color-text-default);
+        font-size: var(--components-selector-typography-font-size-title-default);
+        font-style: normal;
+        font-weight: 500;
+        line-height: var(--components-selector-typography-line-height-title-default);
+        letter-spacing: var(--components-selector-typography-letter-spacing-title-default);
+
+        @each $palette in config.$odido-palette {
+            &.selector-light-title-palette-#{$palette} .selector-highlighted-text {
+                color: var(--semantics-color-text-strong-palette-#{$palette}, var(--palette-strong-text));
+            }
+        }
+
+        &.is-inactive,
+        &.is-inactive .selector-highlighted-text {
+            color: var(--components-selector-color-text-inactive);
+        }
+
+    }
+}
+
+.selector-light-highlight {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+@include selector-light.direction;
+
+@each $breakpoint, $width in config.$global-min-width {
+    @include mixins.above($breakpoint) {
+        @include selector-light.direction($breakpoint: "-" + $breakpoint);
+    }
+}

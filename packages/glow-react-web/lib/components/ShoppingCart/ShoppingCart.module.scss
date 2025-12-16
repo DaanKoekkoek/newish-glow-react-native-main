@@ -1,0 +1,81 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    shopping-cart,
+    shopping-cart-shopping-cart-v1
+) {
+    display: flex;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-xl);
+    flex-direction: column;
+    border-radius: var(--components-shopping-cart-shopping-cart-v1-radius-default);
+    border: var(--components-shopping-cart-shopping-cart-v1-border-width-default) solid var(--components-shopping-cart-shopping-cart-v1-color-border);
+    padding: var(--components-shopping-cart-shopping-cart-v1-padding-vertical) var(--components-shopping-cart-shopping-cart-v1-padding-horizontal);
+}
+
+.shopping-cart-heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-sm);
+
+    .shopping-cart-title-and-info {
+        display: flex;
+        align-items: center;
+        column-gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-sm);
+        justify-content: space-between;
+
+        > a[target] {
+            margin-left: auto;
+        }
+    }
+}
+
+.promotion {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-discount-text-default);
+
+    &.promotion-inactive {
+        color: var(--components-shopping-cart-shopping-cart-v1-color-discount-text-inactive);
+    }
+}
+
+.shopping-cart-children {
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-xl);
+
+    .shopping-cart-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shopping-cart-product-child {
+        padding-top: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-xl);
+        padding-bottom: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-lg);
+    }
+}
+
+.shopping-cart-cta-footnote {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-xl);
+
+    .shopping-cart-cta {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-default);
+        width: 100%;
+
+        > a[target]:last-of-type {
+            margin-top: calc(var(--components-shopping-cart-shopping-cart-v1-gap-vertical-xl) - var(--components-shopping-cart-shopping-cart-v1-gap-vertical-default));
+        }
+    }
+    
+    .shopping-cart-footnote {
+        color: var(--components-shopping-cart-shopping-cart-v1-color-footnote-default);
+          
+        &.shopping-cart-footnote-inactive {
+            color: var(--components-shopping-cart-shopping-cart-v1-color-footnote-inactive);
+        }
+    }
+}

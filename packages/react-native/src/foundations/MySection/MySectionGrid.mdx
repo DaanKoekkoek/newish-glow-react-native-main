@@ -1,0 +1,32 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MySectionGridStories from "./MySectionGrid.stories";
+
+<Meta of={MySectionGridStories} />
+
+# MySection.Grid
+
+## Purpose
+
+`MySection.Grid` is a flexible subcomponent of `MySection` that utilizes a grid-based layout. It allows you to organize and align children elements effectively across breakpoints.
+
+## Features
+
+- **Responsive Grid**: Automatically adjusts child element alignment and positioning across defined breakpoints.
+- **Flexible Layout Options**: Supports passing multiple child elements, automatically wrapping each child inside a `<Grid.Column>`.
+- **Consistency**: Ensures your layout remains visually cohesive within the parent `MySection`.
+
+## Usage
+
+Within `<MySection>`, include a `<MySection.Grid />` block and pass child elements. The grid layout will automatically wrap children and align them appropriately.
+
+### Default Example
+
+<Canvas of={MySectionGridStories.Default} />
+<Controls of={MySectionGridStories.Default} />
+
+### Variants
+
+### Two Columns
+
+<Canvas of={MySectionGridStories.TwoColumns} />
+<Controls of={MySectionGridStories.TwoColumns} />

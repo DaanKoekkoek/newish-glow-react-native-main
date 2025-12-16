@@ -1,0 +1,138 @@
+name: Notify Teams on Changelog Changes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/CHANGELOG.md"
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compare changelogs and notify
+        env:
+          MS_TEAMS_WEBHOOK_URL: ${{ secrets.MS_TEAMS_WEBHOOK_URL }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+
+          # Ensure we have enough history to compare
+          if ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            echo "No HEAD~1 available, attempting to fetch more history..."
+            git fetch --prune --unshallow origin "${GITHUB_REF_NAME}" || git fetch origin "${GITHUB_REF_NAME}" --depth=50 || true
+          fi
+
+          # Choose base for diff: use event.before when available and not the zero SHA, else HEAD~1 if present
+          if [ -n "${GITHUB_EVENT_BEFORE:-}" ] && [ "${GITHUB_EVENT_BEFORE}" != "0000000000000000000000000000000000000000" ]; then
+            BASE_SHA="${GITHUB_EVENT_BEFORE}"
+          elif git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            BASE_SHA="HEAD~1"
+          else
+            BASE_SHA=""
+          fi
+
+          echo "Using base for diff: ${BASE_SHA:-<none>}"
+
+          # Determine changed changelogs for this push
+          if [ -z "$BASE_SHA" ]; then
+            # initial commit or no base available: list added files in the pushed commit
+            changed_files=$(git diff --name-only --diff-filter=A "${GITHUB_SHA}" | grep "CHANGELOG.md" || true)
+          else
+            changed_files=$(git diff --name-only "$BASE_SHA" "${GITHUB_SHA}" | grep "CHANGELOG.md" || true)
+          fi
+
+          if [ -z "$changed_files" ]; then
+            echo "No changed changelogs in this push."
+            exit 0
+          fi
+
+          for file in $changed_files; do
+            filepath=${file#./}
+            package_name=$(basename "$(dirname "$file")")
+            echo "Processing $filepath (package: $package_name)"
+
+            # find the first version header line number
+            latest=$(awk '/^## / {print NR; exit}' "$file" || true)
+            if [ -z "$latest" ]; then
+              echo "No version header (## ) found in $filepath — skipping"
+              continue
+            fi
+
+            next=$(awk "NR > $latest && /^## / {print NR; exit}" "$file" || true)
+            if [ -z "$next" ]; then
+              next='$'
+            else
+              next="$((next-1))"
+            fi
+
+            # extract current section (preserves newlines)
+            current_section=$(sed -n "${latest},${next}p" "$file" || true)
+
+            # try to extract previous section from BASE_SHA; if not present, treat as added
+            if [ -n "$BASE_SHA" ] && git show "$BASE_SHA":"$file" > /tmp/old_changelog.md 2>/dev/null; then
+              previous_section=$(sed -n "${latest},${next}p" /tmp/old_changelog.md || true)
+              rm -f /tmp/old_changelog.md
+            else
+              previous_section=""
+            fi
+
+            if [ "$current_section" = "$previous_section" ]; then
+              echo "No changelog change for $package_name"
+              continue
+            fi
+
+            echo "Changelog changed for $package_name — building payload"
+
+            # Build JSON payload safely with jq (handles escaping/newlines)
+            jq -n \
+              --arg pkg "$package_name" \
+              --arg ref "$GITHUB_REF_NAME" \
+              --arg repo "$GITHUB_REPOSITORY" \
+              --arg server "$GITHUB_SERVER_URL" \
+              --arg sha "$GITHUB_SHA" \
+              --arg filepath "$filepath" \
+              --arg section "$current_section" \
+              '{
+                "@type": "MessageCard",
+                "@context": "http://schema.org/extensions",
+                "summary": "Changelog update",
+                "themeColor": "0078D7",
+                "title": ("📦 Changelog updated in `" + $pkg + "`"),
+                "sections": [
+                  {
+                    "activityTitle": ("Branch: `" + $ref + "`"),
+                    "text": ("**Latest changes:**\n\n" + $section)
+                  }
+                ],
+                "potentialAction": [
+                  {
+                    "@type": "OpenUri",
+                    "name": "View Commit",
+                    "targets": [{ "os": "default", "uri": ($server + "/" + $repo + "/commit/" + $sha) }]
+                  },
+                  {
+                    "@type": "OpenUri",
+                    "name": "View Changelog",
+                    "targets": [{ "os": "default", "uri": ($server + "/" + $repo + "/blob/main/" + $filepath) }]
+                  }
+                ]
+              }' > payload.json
+
+            # Post to Teams
+            curl -sS -H 'Content-Type: application/json' -d @payload.json "${MS_TEAMS_WEBHOOK_URL}"
+            echo "Sent Teams notification for $package_name"
+          done

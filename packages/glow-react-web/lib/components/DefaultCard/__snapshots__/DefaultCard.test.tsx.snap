@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DefaultCard /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="default-card default-card-variant-default default-card-type-image has-default-palette default-card-highlight-outline default-card-variant-default-highlight"
+    data-testid="default-card"
+  >
+    <div
+      class="highlight default-card-highlight"
+      data-testid="highlight"
+    >
+      <span
+        class="heading heading-size-sm align-left highlight-heading default-card-highlight-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        Highlight
+      </span>
+    </div>
+    <div
+      class="default-card-image"
+    >
+      <div
+        class="visual visual-ratio-default palette-default fill-height no-padding-all default-card-image-style"
+        data-testid="visual"
+      >
+        <picture
+          class="picture"
+          data-testid="image-picture"
+        >
+          <img
+            alt="test image"
+            class="image image-position-center ratio-16-9"
+            data-testid="image-img"
+            loading="lazy"
+            src="test-image.jpg"
+            style="object-fit: contain;"
+          />
+        </picture>
+        <div
+          class="default-card-image-content"
+        >
+          <div
+            class="default-card-badge"
+          >
+            <div
+              class="badge badge-prominence-default badge-palette-default"
+            >
+              Badge
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="default-card-content"
+    >
+      <div
+        class="default-card-title"
+      >
+        <h3
+          class="heading heading-size-lg align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Title
+        </h3>
+      </div>
+      <div
+        class="default-card-content-children"
+      >
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Content
+        </p>
+        <ul
+          class="default-list default-list-size-default"
+          data-testid="default-list"
+        >
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 1
+            </p>
+          </li>
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 2
+            </p>
+          </li>
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 2
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="call-to-actions has-one-trigger fill default-card-call-to-action"
+        data-testid="call-to-actions"
+      >
+        <button
+          class="button button-size-default button-prominence-default button-stretched"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DefaultCard /> renders price context when price is passed 1`] = `
+<DocumentFragment>
+  <div
+    class="default-card default-card-variant-default default-card-type-none has-default-palette default-card-highlight-outline default-card-variant-default-highlight"
+    data-testid="default-card"
+  >
+    <div
+      class="highlight default-card-highlight"
+      data-testid="highlight"
+    >
+      <span
+        class="heading heading-size-sm align-left highlight-heading default-card-highlight-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        Highlight
+      </span>
+    </div>
+    <div
+      class="default-card-content"
+    >
+      <div
+        class="default-card-title"
+      >
+        <div
+          class="default-card-badge"
+        >
+          <div
+            class="badge badge-prominence-default badge-palette-default"
+          >
+            Badge
+          </div>
+        </div>
+        <h3
+          class="heading heading-size-lg align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Title
+        </h3>
+      </div>
+      <div
+        class="default-card-content-children"
+      >
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Content
+        </p>
+        <ul
+          class="default-list default-list-size-default"
+          data-testid="default-list"
+        >
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 1
+            </p>
+          </li>
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 2
+            </p>
+          </li>
+          <li
+            class="list-variant-icon"
+            data-testid="default-list-list-item"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline default-list-icon-root default-list-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+            <p
+              class="paragraph paragraph-size-default default-list-text-root default-list-text"
+              data-testid="paragraph"
+            >
+              List item 2
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="price-context"
+        data-testid="price-context"
+      >
+        <div
+          class="price-context-inline"
+        >
+          <div
+            class="price default-card-price price-size-xl"
+          >
+            <div
+              aria-hidden="true"
+              class="price-wrapper"
+            >
+              <div
+                class="price"
+              >
+                <div
+                  class="price-text xl currency"
+                  data-testid="currency"
+                >
+                  €
+                </div>
+                <div
+                  class="price-value-wrapper"
+                >
+                  <div
+                    class="price-text xl"
+                    data-testid="whole"
+                  >
+                    99
+                  </div>
+                  <div
+                    class="decimal-wrapper"
+                  >
+                    <div
+                      class="comma-text price-text xl comma-text-position"
+                    >
+                      ,
+                    </div>
+                    <div
+                      class="price-text xl"
+                      data-testid="decimals"
+                    >
+                      ⁹⁹
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="price-sr-only"
+            >
+              <span
+                data-value="true"
+              >
+                Voor: 99,99
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="call-to-actions has-one-trigger fill default-card-call-to-action"
+        data-testid="call-to-actions"
+      >
+        <button
+          class="button button-size-default button-prominence-default button-stretched"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            Button
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

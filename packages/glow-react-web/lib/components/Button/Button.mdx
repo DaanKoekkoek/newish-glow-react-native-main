@@ -1,0 +1,43 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ButtonStories from "./Button.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+#### Token version: {getComponentVersion("button.v2")}
+
+### Basic
+
+<Canvas of={ButtonStories.Basic} />
+<Controls of={ButtonStories.Basic} />
+
+## Variants
+
+### Icon and text
+
+Set the `icon` prop with the following structure: `{ name: 'icon-name', position: 'left' | 'right' }`.
+
+<Canvas of={ButtonStories.WithIconAndText} />
+<Controls of={ButtonStories.WithIconAndText} />
+
+### Icon only
+
+<Canvas of={ButtonStories.WithIconOnly} />
+<Controls of={ButtonStories.WithIconOnly} />
+
+### As anchor link
+
+You can also use the as prop with the value `a` to render the button as an anchor link. This allows you to pass anchor-specific properties such as `href` and `rel`.
+
+<Canvas of={ButtonStories.WithAnchorLink} />
+
+### Stretched
+
+<Canvas of={ButtonStories.WithStretched} />
+
+### State: Loading
+
+<Canvas of={ButtonStories.WithLoading} />

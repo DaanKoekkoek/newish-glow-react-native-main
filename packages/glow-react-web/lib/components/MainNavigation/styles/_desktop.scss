@@ -1,0 +1,247 @@
+@use "@globals/config";
+@use "@globals/mixins";
+@use "@components/MainNavigation/mixins" as main-navigation-desktop;
+
+@layer nav.desktop {
+  .main-navigation-actions-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+
+    .main-navigation-button {
+      background-color: transparent;
+    }
+
+    .main-navigation-icon {
+      color: var(--components-navigation-main-navigation-v1-menu-color-text-default-default);
+    }
+
+    .main-navigation-button,
+    .main-navigation-link,
+    .main-navigation-text {
+      color: var(--components-navigation-main-navigation-v1-menu-color-text-default-default);
+      text-decoration: none;
+      font-size: var(--components-navigation-atoms-header-menu-button-typography-font-size);
+      line-height: var(--components-navigation-atoms-header-menu-button-typography-line-height);
+      padding-top: var(--main-navigation-link-padding-top);
+      padding-bottom: var(--main-navigation-link-padding-bottom);
+      padding-inline: var(--components-navigation-atoms-header-menu-button-padding-horizontal-default);
+      gap: var(--components-navigation-atoms-header-menu-button-gap-default);
+      display: flex;
+      
+      > span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .main-navigation-controls {
+    display: grid;
+    grid-template-areas: "dropdowns logo actions";
+    grid-template-columns: 1fr auto 1fr;
+    gap: 16px;
+    grid-row: 1;
+    grid-column: 1 / -1;
+
+    @include mixins.only("laptop") {
+      grid-template-areas: "logo dropdowns actions";
+      grid-template-columns: auto auto 1fr;
+    }
+    
+    .is-alternate-layout & {
+      grid-template-areas: "logo dropdowns actions";
+      grid-template-columns: auto auto 1fr;
+
+      @include mixins.below("laptop") {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .main-navigation-button,
+    .main-navigation-link {
+      position: relative;
+      border: none;
+      text-wrap: nowrap;
+
+      &::after {
+        background-color: transparent;
+      }
+
+      &:has(.main-navigation-user-avatar) {
+        padding-block: 0;
+        align-items: center;
+      }
+
+      &:hover,
+      &.is-active {        
+        color: var(--components-navigation-main-navigation-v1-menu-color-text-default-hover);
+
+        .main-navigation-icon path {
+          fill: var(--components-navigation-main-navigation-v1-menu-color-text-default-hover);  
+        }
+
+        .main-navigation-icon [data-icon] {
+          color: var(--components-navigation-main-navigation-v1-menu-color-text-default-hover);
+        }
+      }
+
+      &:not(:has([class*="icon"], svg)) {
+        span {
+          z-index: 2;
+        }
+        
+        &::after {
+          border: var(--components-navigation-atoms-header-menu-button-border-width-default) solid var(--components-navigation-atoms-header-menu-button-color-border-default-default);
+          content: "";
+          position: absolute;
+          inset: 0;
+          margin-block: auto;
+          z-index: 1;
+        }
+      }
+
+      li:first-of-type & {
+        padding-left: 0;
+      }
+
+      li:last-of-type & {
+        padding-right: 0;
+      }
+    }
+
+    [data-theme] & {
+      .main-navigation-button::after,
+      .main-navigation-link::after {
+        background-color: var(--components-navigation-atoms-header-menu-button-color-background-primary-default);
+      }
+      
+      .main-navigation-button:hover::after,
+      .main-navigation-button.is-active::after,
+      .main-navigation-link:hover::after,
+      .main-navigation-link.is-active::after {
+        background-color: var(--components-navigation-atoms-header-menu-button-color-background-primary-hover);
+      }
+      
+      .main-navigation-button:not(:has([class*="icon"], svg))::after,
+      .main-navigation-link:not(:has([class*="icon"], svg))::after {
+        height: calc(var(--components-navigation-atoms-header-menu-button-typography-line-height) * 2);
+        border-radius: var(--components-navigation-atoms-header-menu-button-radius-default);
+      }
+    }
+
+    @include mixins.below("laptop") {
+      grid-area: logo;
+      grid-template-areas: "logo";
+      grid-template-columns: auto;
+
+      &.main-navigation-actions-list-subtle {
+        grid-template-areas: "logo actions";
+        grid-template-columns: repeat(2, auto);
+        grid-column: 1 / -1;
+      }
+    }
+
+    &.main-navigation-actions-list-subtle {
+      grid-template-areas: "content logo actions";
+      grid-template-columns: 1fr auto 1fr;
+      grid-column: 1 / -1;
+      grid-row: auto;
+      
+      .is-alternate-layout & {
+        grid-template-areas: "logo actions";
+        grid-template-columns: auto 1fr;
+      }
+
+      @include mixins.below("laptop") {
+        grid-template-areas: "logo actions";
+        grid-template-columns: 1fr auto;
+      }
+    }
+
+    .main-navigation-list-branches {
+      grid-area: dropdowns;
+      place-self: center start;
+      height: auto;
+      
+      @include mixins.below("laptop") {
+        display: none;
+      }
+
+      .main-navigation-button {
+        &.is-active:not(:focus-visible)::after,
+        &:hover::after {
+          @include mixins.glow-gradient-image(
+            $palette: "default", 
+            $mask-base: var(--components-navigation-main-navigation-v1-menu-color-background-default),  
+            $as-mask: true,
+          );
+        }
+      }
+    }
+
+    .main-navigation-actions-list-subtle,
+    .main-navigation-actions-list-actions {
+      grid-area: actions;
+      place-self: center end;
+    }
+
+    .main-navigation-actions-list-actions {
+      display: none;
+
+      @include mixins.above("laptop") {
+        display: flex;
+      }
+    }
+  }
+
+  .main-navigation-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--components-navigation-main-navigation-v1-submenu-color-background-default);
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-navigation-main-navigation-v1-submenu-gap-default);
+    z-index: 9999;
+
+    .is-sticky & {
+      position: fixed;
+      top: var(--main-navigation-top-offset);
+    }
+
+    > div {
+      padding-bottom: var(--components-navigation-main-navigation-v1-submenu-padding-vertical-bottom);
+    }
+  }
+
+  .main-navigation-dropdown-column {
+    padding-top: var(--components-navigation-main-navigation-v1-submenu-padding-vertical-top);
+    padding-bottom: var(--components-navigation-main-navigation-v1-submenu-padding-vertical-bottom);
+    gap: var(--components-navigation-atoms-header-columns-gap-vertical-default) var(--components-navigation-atoms-header-columns-gap-horizontal-default);
+
+    @include main-navigation-desktop.navigation-dropdown-grid;
+  }
+
+  .main-navigation-dropdown-item {
+    padding: var(--components-navigation-atoms-header-submenu-item-padding-vertical-desktop-top) 0 var(--components-navigation-atoms-header-submenu-item-padding-vertical-desktop-bottom) 0;
+  }
+
+  .main-navigation-branch-button,
+  .main-navigation-branch-link {
+    margin-top: var(--components-navigation-atoms-header-menu-column-gap-vertical-default);
+  }
+
+  .main-navigation-popup-cart-panel,
+  .main-navigation-popup-user-panel {
+    --anchored-panel-offset: 20px;
+
+    padding-top: var(--anchored-panel-offset);
+
+    &.has-avatar-button {
+      padding-top: calc(var(--anchored-panel-offset) * 2);
+    }
+  }
+}

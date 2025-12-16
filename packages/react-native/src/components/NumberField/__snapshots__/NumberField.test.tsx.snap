@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberField /> Renders small size 1`] = `
+<TextInput
+  allowFontScaling={true}
+  aria-disabled={false}
+  editable={true}
+  inputMode="numeric"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyPress={[Function]}
+  onPointerEnter={[Function]}
+  onPointerLeave={[Function]}
+  secureTextEntry={false}
+  style={
+    {
+      "borderColor": "#dddddd",
+      "borderRadius": 100,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "color": "#000000",
+      "flex": 1,
+      "fontFamily": "odido_Paragraph_Regular",
+      "fontSize": 16,
+      "height": 32,
+      "lineHeight": 19,
+      "minWidth": 61.333333333333336,
+      "paddingHorizontal": 16,
+      "paddingVertical": 6,
+      "textAlign": "center",
+      "width": "100%",
+    }
+  }
+  testID="number-field"
+  value="1"
+/>
+`;
+
+exports[`<NumberField /> renders correctly a Number Field 1`] = `
+<TextInput
+  allowFontScaling={true}
+  aria-disabled={false}
+  editable={true}
+  inputMode="numeric"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyPress={[Function]}
+  onPointerEnter={[Function]}
+  onPointerLeave={[Function]}
+  secureTextEntry={false}
+  style={
+    {
+      "borderColor": "#dddddd",
+      "borderRadius": 100,
+      "borderStyle": "solid",
+      "borderWidth": 2,
+      "color": "#000000",
+      "flex": 1,
+      "fontFamily": "odido_Paragraph_Regular",
+      "fontSize": 16,
+      "lineHeight": 19,
+      "minWidth": 61.333333333333336,
+      "paddingHorizontal": 14,
+      "paddingVertical": 10,
+      "textAlign": "center",
+      "width": "100%",
+    }
+  }
+  testID="number-field"
+  value="1"
+/>
+`;

@@ -1,0 +1,28 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    phone-brand,
+    assets-logos
+) {
+    --svg-invert-color: transparent;
+
+    display: inline-flex;
+    height: var(--components-assets-logos-and-visuals-phone-brands-size-height-default);
+    align-items: center;
+    flex-shrink: 0;
+
+    &.is-inverted {
+        --svg-invert-color: var(--primitives-color-white);
+        --svg-foreground-color: var(--primitives-color-white);
+        --svg-foreground-body-color: transparent;
+        --svg-background-color: transparent;
+    }
+
+    &.phone-brand-inactive {
+        --svg-invert-color: var(--components-assets-logos-and-visuals-phone-brands-color-inactive);
+        --svg-foreground-color: var(--components-assets-logos-and-visuals-phone-brands-color-inactive);
+        --svg-foreground-body-color: transparent;
+        --svg-background-color: transparent;
+    }
+}

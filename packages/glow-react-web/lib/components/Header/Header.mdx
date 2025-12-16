@@ -1,0 +1,306 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as HeaderStories from "./Header.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={HeaderStories} />
+
+# Header (deprecated)
+
+### Token version: {getComponentVersion("header.v1")}
+
+The `Header` component is a versatile navigation component that appears at the top of your application, providing a consistent user experience across both desktop and mobile interfaces.
+
+> Note:
+> This component is deprecated, please use [**Main Navigation** ↗️](?path=/docs/designsystem-components-navigation-mainnavigation--docs) instead.
+
+## Purpose
+
+The `Header` component delivers a comprehensive navigation experience with these main sections:
+
+- **MetaNav**: For secondary links (optional, not shown in subtle variant)
+- **Logo**: Always visible in all variants
+- **Navigation Items**: Main navigation buttons with submenu support
+- **Action Buttons**: For search, account, shopping cart, etc.
+- **Mobile Menu**: Adaptive navigation for smaller screens with multi-level menus
+
+## Component Architecture
+
+The Header system is composed of several subcomponents that work together to provide a complete navigation experience:
+
+1. **Header** - Main container that manages state and coordinates subcomponents
+2. **MetaNav** - Container for secondary navigation items displayed above the main header
+3. **MenuButton** - Individual navigation buttons with hover/touch behavior
+4. **HeaderSubmenu** - Container for dropdown submenu content on desktop
+5. **HeaderMobileSubmenu** - Mobile-specific navigation with level1 and level2 menus
+6. **HeaderBadgedIcon** - Icon with badge indicator for notifications/counts
+7. **HeaderNavHelp** - Component for displaying help contact information with status
+
+## State Management
+
+The Header manages four distinct states:
+
+- **default**: Normal navigation view
+- **search**: Search input is displayed
+- **level1**: First level of mobile menu is open
+- **level2**: Second level (submenu) of mobile menu is open
+
+## Props
+
+<Controls />
+
+### className
+
+The `className` prop is applied to the outermost container element of the Header component. This is the main header wrapper that contains all the subcomponents, including the meta navigation, main navigation, and action buttons. This allows for custom styling of the entire header component.
+
+## Interaction Patterns
+
+### Desktop Navigation
+
+- **Hover behavior**: Main navigation items show submenu after hover delay
+- **Submenu interaction**: Keeps submenu open when hovering between menu and submenu
+- **Touch detection**: Switches to touch-optimized behavior on touch-capable devices
+
+### Mobile Navigation
+
+- **Level 1**: Shows main navigation items in a full-screen overlay
+- **Level 2**: Deep navigation into a submenu with back button support
+- **Search**: Dedicated search view replaces normal navigation
+
+## Data Structures
+
+### MetaNavItems Structure
+
+Meta navigation items are rendered above the main header (except in subtle variant) and represent secondary navigation options:
+
+```tsx
+const metaNavItems: MetaNavItem[] = [
+  {
+    label: "Personal",
+    active: true,
+    onClick: () => handleMetaItemClick("Personal"),
+  },
+  {
+    label: "Business",
+    active: false,
+    onClick: () => handleMetaItemClick("Business"),
+  },
+  {
+    label: "Support",
+    active: false,
+    href: "/support",
+  },
+];
+```
+
+### MainLinks Structure
+
+Main links define the primary navigation options and their associated submenus:
+
+```tsx
+const mainLinks: MainNavigationLink[] = [
+  {
+    title: "Products",
+    submenu: {
+      columns: [
+        {
+          title: "Mobile",
+          links: [
+            { title: "Mobile plans", href: "/mobile-plans" },
+            { title: "Mobile phones", href: "/mobile-phones" },
+          ],
+        },
+        {
+          title: "Internet",
+          links: [
+            { title: "Broadband", href: "/broadband" },
+            { title: "Fiber", href: "/fiber" },
+          ],
+        },
+      ],
+      featured: [
+        <FeaturedContent title="Special offer!" />,
+        <FeaturedContent title="New product!" />,
+      ],
+    },
+  },
+  {
+    title: "Deals",
+    href: "/deals",
+  },
+  {
+    title: "Help",
+    submenu: {
+      columns: [
+        {
+          title: "Support",
+          links: [
+            { title: "FAQ", href: "/faq" },
+            { title: "Contact us", href: "/contact" },
+          ],
+        },
+      ],
+    },
+  },
+];
+```
+
+### ButtonOptions Structure
+
+Button options allow customization of the header action buttons:
+
+```tsx
+const buttonOptions = {
+  loginButton: {
+    label: "My Account",
+    iconName: "profile",
+    loggedIn: true,
+    onClick: () => handleLogin(),
+    onHover: () => console.log("Login button hovered"),
+    hideLabel: false,
+  },
+  searchButton: {
+    label: "Search",
+    iconName: "search",
+    onHover: () => console.log("Search button hovered"),
+    hideLabel: true,
+  },
+  shopButton: {
+    label: "Cart",
+    iconName: "shop",
+    value: 3, // Badge count
+    onClick: () => handleCartOpen(),
+    onHover: () => console.log("Shop button hovered"),
+    hideLabel: true,
+  },
+};
+```
+
+### HelpOptions Structure
+
+Help options configure the help section that appears in the subtle variant. This object is required when using the subtle variant to display help information:
+
+```tsx
+const helpOptions = {
+  phone: "0800-7123", // Phone number to display
+  link: <TextLink href="#">Openingstijden</TextLink>, // Help link component (JSX element)
+  status: false, // Whether the help service is currently open/available
+};
+```
+
+The component checks for both `phone` and `link` properties - if either is missing, the help section won't be displayed.
+
+## Usage Examples
+
+### Basic Header
+
+```tsx
+<Header
+  metaLinks={metaNavItems}
+  mainLinks={mainLinks}
+  variant="default"
+  layout="default"
+  searchAutoSuggestions={searchSuggestions}
+  onSearch={(term) => handleSearch(term)}
+/>
+```
+
+### Subtle Variant with Help Information
+
+```tsx
+<Header
+  variant="subtle"
+  helpOptions={{
+    phone: "0800-7123",
+    link: <TextLink href="#">Openingstijden</TextLink>,
+    status: true,
+  }}
+  mainLinks={mainLinks}
+/>
+```
+
+### Header with Custom Buttons
+
+```tsx
+<Header
+  metaLinks={metaNavItems}
+  mainLinks={mainLinks}
+  buttonOptions={{
+    loginButton: {
+      label: "Sign In",
+      loggedIn: false,
+      onClick: () => handleLogin(),
+      iconName: "profile", // Optional custom icon
+    },
+    shopButton: {
+      value: cartItemCount,
+      onClick: () => openCart(),
+      iconName: "shop", // Optional custom icon
+    },
+    searchButton: {
+      label: "Search",
+      hideLabel: false, // Show label text next to icon
+    },
+  }}
+/>
+```
+
+### AFM Banner and Sticky Header
+
+```tsx
+<Header
+  metaLinks={metaNavItems}
+  mainLinks={mainLinks}
+  AFMbanner={true} // Display AFM banner at top
+  sticky={true} // Make header stick to top when scrolling
+  brand="odido" // Brand identifier (default is "odido")
+/>
+```
+
+## Responsive Behavior
+
+The header adapts based on screen size:
+
+- **Mobile**:
+  - Simplified interface with essential action buttons
+  - Full-screen menu overlay when menu button is clicked
+  - Two-level navigation hierarchy with back button support
+  - Touch-optimized interactions
+- **Desktop**:
+  - Full navigation with hover submenu support
+  - Intelligent hover timing for user-friendly interactions
+  - Submenu panels with multi-column layout
+  - Featured content support in submenus
+
+## Layout Variations
+
+### Default Layout vs Alternate Layout
+
+The layout prop changes how elements are ordered:
+
+- **Default**: Standard layout with centered logo on mobile, shifted to right on desktop
+- **Alternate**: Logo aligned to left in both mobile and desktop
+
+### Subtle Variant
+
+When variant="subtle":
+
+- Meta navigation is hidden
+- Help information is displayed if helpOptions.phone and helpOptions.link are provided
+- Navigation items are hidden in the left column
+- The layout defaults to "alternate" on mobile regardless of the layout prop value
+- AFM banner is not shown even when AFMbanner is true
+
+## Best Practices
+
+1. Ensure mainLinks provide complete navigation structure including submenu content
+2. Use HeaderBadgedIcon to show notification counts (like cart items or alerts)
+3. For mobile optimization, prioritize essential actions in the visible toolbars
+4. Provide helpOptions with phone and link in subtle variant for customer service access
+5. Test both mouse and touch interactions to ensure proper behavior on all devices
+6. Use appropriate aria attributes and roles (these are built into the components)
+7. Consider performance implications when adding complex content to submenus
+8. Use buttonOptions to customize the appearance and behavior of action buttons
+9. In the subtle variant, always provide both phone and link in helpOptions for the help section to appear
+10. For mobile devices, use touch-optimized event handlers (the component automatically detects touch devices)
+11. When using the search feature, provide searchAutoSuggestions and onSearch handler for best user experience

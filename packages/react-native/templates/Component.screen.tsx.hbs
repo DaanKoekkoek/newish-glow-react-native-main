@@ -1,0 +1,21 @@
+import {
+  Main,
+  Section,
+  Grid,
+  {{pascalCase name}},
+} from "@odido-portals/glow-react-native";
+import React from "react";
+
+export function {{pascalCase name}}Screen() {
+  return (
+    <Main>
+      <Section>
+        <Grid>
+          <Grid.Column>
+            <{{pascalCase name}} />
+          </Grid.Column>
+        </Grid>
+      </Section>
+    </Main>
+  );
+}

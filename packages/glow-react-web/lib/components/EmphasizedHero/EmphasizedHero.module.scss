@@ -1,0 +1,196 @@
+@use "@odido-portals/glow-tokens/hero-emphasized-hero-v1";
+@use "@odido-portals/glow-tokens/hero-atoms-description";
+@use "@odido-portals/glow-tokens/hero-atoms-heading";
+@use "@odido-portals/glow-tokens/hero-atoms-color";
+@use "@odido-portals/glow-tokens/section-default-section-v1";
+@use "@globals/mixins";
+@use "@globals/config";
+
+@include mixins.token-scope(
+    emphasised-hero,
+    (
+        hero-emphasized-hero-v1, 
+        hero-atoms-color,
+        hero-atoms-description, 
+        hero-atoms-heading,
+        section-default-section-v1
+    )
+) {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: var(--components-hero-emphasized-hero-v1-size-min-width);
+    width: 100%;
+
+    .emphasised-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--components-hero-emphasized-hero-v1-gap-default);
+        width: 100%;
+    }
+
+    .emphasised-content-column {
+        display: flex;
+        order: 2;
+        padding-bottom: var(--components-section-default-section-v1-padding-vertical-default);
+        position: relative;
+    }
+    
+    .emphasised-hero-title-highlight {
+        color: var(--palette-text);
+    }
+
+    .emphasised-content,
+    .emphasised-content-description,
+    .emphasised-content-cta,
+    .emphasised-content-heading,
+    .emphasised-content-children {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .emphasised-content-background {
+        inset: 0;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .emphasised-content-background-image {
+        transform: rotate(180deg);
+    }
+
+    .emphasised-content-background-description {
+        top: calc(var(--components-hero-emphasized-hero-v1-gap-default) * -1);
+    }
+
+    .emphasised-content-gradient {
+        width: 100%;
+    }
+
+    .emphasised-content-counter {
+        display: flex;
+    }
+
+    .emphasised-content {
+        padding-inline: var(--components-hero-emphasized-hero-v1-padding-text-horizontal);
+        padding-top: var(--components-hero-emphasized-hero-v1-padding-text-top);
+        position: relative;
+        row-gap: var(--components-hero-emphasized-hero-v1-gap-text-lg);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .emphasised-content-description {
+        row-gap: var(--components-hero-emphasized-hero-v1-gap-text-default);
+    }
+
+    .emphasised-content-heading {
+        row-gap: var(--components-hero-atoms-heading-gap-vertical);
+    }
+
+    .emphasised-content-children {
+        row-gap: var(--components-hero-atoms-description-gap-vertical);
+    }
+
+    .emphasised-content-cta {
+        gap: var(--components-hero-emphasized-hero-v1-gap-button-default);
+    }
+
+    @each $color in config.$odido-palette {
+        &.emphasised-palette-#{$color} {
+            --palette-text: var(--components-hero-atoms-color-text-emphasized-palette-#{$color}, var(--components-hero-atoms-color-text-emphasized));
+        }
+    }
+
+    @include mixins.above("laptop") {
+        max-width: var(--components-hero-emphasized-hero-v1-size-max-width);
+        
+        .emphasised-grid {
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        .emphasised-content {
+            padding-top: 0;
+        }
+
+        .emphasised-content-column {
+            flex: 1 0 50%;
+            margin-block: auto;
+            order: initial;
+            padding-block: var(--components-section-default-section-v1-padding-vertical-default);
+
+            &.is-inverted {
+                order: 2;
+            }
+        }
+
+        .emphasised-content-cta {
+            flex-direction: row;
+        }
+    }
+}
+
+@layer component {
+    .emphasised-media-column {
+        display: flex;
+        justify-content: center;
+        order: 1;
+        position: relative;
+    
+        .emphasised-media-visual {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            overflow: visible;
+            width: 100%;
+    
+            picture {
+                border-radius: var(--components-hero-atoms-emphasized-hero-image-radius-default);
+                height: 100%;
+                grid-column: 1 / -1;
+                grid-row: 1 / -1;   
+                overflow: hidden;
+            }
+        }
+    
+        .emphasised-media-sticker-container {
+            display: flex;
+            grid-column: 1 / -1;
+            grid-row: 2;
+            margin-bottom: var(--components-hero-emphasized-hero-v1-margin-sticker-position-bottom);
+            max-width: var(--components-hero-emphasized-hero-v1-size-sticker-max-width);
+            padding-top: var(--components-hero-emphasized-hero-v1-padding-sticker-position-default);
+            padding-inline: var(--components-hero-emphasized-hero-v1-padding-sticker-position-default);
+            place-self: end stretch;
+        }
+    
+        .emphasised-media-sticker {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+    
+        @include mixins.above("laptop") {
+            order: initial;
+            padding-top: 0;
+    
+            &.is-inverted {
+                order: 1;
+            }
+            
+            .emphasised-media-sticker-container {
+                grid-column: 1;
+                padding-top: 0;
+                place-self: start end;
+            }
+        }
+    
+        @include mixins.above("desktop") {
+            .emphasised-media-sticker-container {
+                padding-inline: 0;
+            }
+        }
+    }
+}

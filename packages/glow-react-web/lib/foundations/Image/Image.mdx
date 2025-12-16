@@ -1,0 +1,57 @@
+import { Meta, Canvas, Controls, Story } from "@storybook/blocks";
+import * as ImageStories from "./Image.stories";
+
+<Meta of={ImageStories} />
+
+# Image Component
+
+The `Image` component displays an image using either a locally imported asset (`localSrc`) or a remote URL (`src`). It supports two rendering modes:
+
+> **Background mode** (default): renders the image using CSS `background-image`. <br /> **Foreground mode**: renders a standard `<img />` tag.
+
+It also supports responsive image sets via `srcSet` (only applicable in `type="foreground"` mode).
+
+### Wrapping Content Around Images
+
+In **background mode**, you can wrap content around the image by passing elements as children. This is useful for overlaying text, badges, or other UI elements on top of the image.
+
+```jsx
+<Image alt="Alt text" localSrc="assets/images/mid-hero-hero.webp">
+  <div style={{ padding: 16 }}>
+    <Badge text="Badge text" />
+  </div>
+</Image>
+```
+
+## Basic Example
+
+Renders an image using a local source in **background** mode. `children` property is rendered **inside** the image.
+
+<Canvas of={ImageStories.Basic} />
+<Controls of={ImageStories.Basic} />
+
+---
+
+## Foreground mode
+
+Renders an image using a local source in **foreground** mode. `children` property is rendered **below** the image.
+
+<Canvas of={ImageStories.Foreground} />
+
+## Responsive Image Example (sources)
+
+This example shows how to use the `sources` prop with the `Image` component for responsive image rendering.
+
+> **`sources`** defines an array of image sources, each with a corresponding `src` (image URL) and `breakpoint` (e.g., `"mobile"`, `"tablet"`, `"desktop"`).
+> The browser will automatically choose the appropriate image based on the viewport size.
+
+### Example usage
+
+- A `type="foreground"` renders the image as an `<img />` tag.
+- The `sources` prop is used to provide different image sources for different breakpoints, ensuring the correct image is selected for various screen sizes.
+
+<Canvas of={ImageStories.WithSources} />
+
+## Illustration
+
+<Canvas of={ImageStories.WithIllustration} />

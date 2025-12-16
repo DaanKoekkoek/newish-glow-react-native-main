@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Otypical Headline";
+  src: url("./fonts/OtypicalHeadline-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Otypical Headline";
+  src: url("./fonts/OtypicalHeadline-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Otypical Text";
+  src: url("./fonts/OtypicalText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Otypical Text";
+  src: url("./fonts/OtypicalText-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Otypical Text";
+  src: url("./fonts/OtypicalText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Otypical Text";
+  src: url("./fonts/OtypicalText-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}

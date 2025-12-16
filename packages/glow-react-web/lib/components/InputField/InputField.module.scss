@@ -1,0 +1,49 @@
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/input-border";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@globals/mixins";
+@use "@components/InputField/mixins" as input-field;
+
+@include mixins.token-scope(input-field,
+  (input-atoms-field,
+    input-border,
+    input-color,
+    input-gap,
+    assets-icons,
+    paragraph)) {}
+
+@layer subcomponent {
+  .input-field {
+    @include input-field.base-input-styles;
+
+    &[type="file"] {
+      color: var(--components-input-color-text-subtle);
+      padding-inline-start: 0;
+
+      &::file-selector-button {
+        visibility: hidden;
+        width: 0;
+        padding-inline-start: 0;
+      }
+    }
+
+    &:disabled {
+      color: var(--components-input-color-text-value-inactive);
+    }
+
+    &.file-selected {
+      color: var(--components-input-color-text-value-default);
+    }
+  }
+}
+
+.password {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}

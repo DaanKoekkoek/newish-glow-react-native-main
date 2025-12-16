@@ -1,0 +1,15 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Stepper from "./Stepper.inpage.item.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={Stepper} />
+
+# In-Page stepper item
+
+### Token version: {getComponentVersion("in-page-stepper.v1")}
+
+Use the **In-Page Stepper Item** component to represent a single step within a multi-step process or workflow. This component is typically used as part of a stepper navigation UI, allowing users to track their progress and navigate between steps.
+
+<Canvas of={Stepper.Item} />
+<Controls of={Stepper.Item} />

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> adapt the icon size for lg based on the link size 1`] = `
+<DocumentFragment>
+  <a
+    class="text-link size-lg text-and-icon columnGap"
+    data-testid="text-link"
+    href="https://google.com"
+  >
+    <span
+      aria-hidden="true"
+      class="icon icon-size-md outline icon"
+      data-icon="24h"
+      data-testid="icon"
+    >
+      
+    </span>
+    <span
+      class="base-text base-paragraph text-link-text"
+      lang="nl"
+    >
+      Text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`<TextLink /> adapt the icon size for xs based on the link size 1`] = `
+<DocumentFragment>
+  <a
+    class="text-link size-xs text-and-icon columnGapSm"
+    data-testid="text-link"
+    href="https://google.com"
+  >
+    <span
+      aria-hidden="true"
+      class="icon icon-size-sm outline icon"
+      data-icon="24h"
+      data-testid="icon"
+    >
+      
+    </span>
+    <span
+      class="base-text base-paragraph text-link-text"
+      lang="nl"
+    >
+      Text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`<TextLink /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="text-link size-inherit text-only columnGap"
+    data-testid="text-link"
+  >
+    <span
+      class="base-text base-paragraph text-link-text"
+      lang="nl"
+    >
+      Text
+    </span>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`<TextLink /> renders an icon when passed as a child 1`] = `
+<DocumentFragment>
+  <a
+    class="text-link size-inherit text-and-icon columnGap"
+    data-testid="text-link"
+    href="https://google.com"
+  >
+    <span
+      aria-hidden="true"
+      class="icon icon-size-default outline icon"
+      data-icon="24h"
+      data-testid="icon"
+    >
+      
+    </span>
+    <span
+      class="base-text base-paragraph text-link-text"
+      lang="nl"
+    >
+      Text
+    </span>
+  </a>
+</DocumentFragment>
+`;

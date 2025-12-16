@@ -1,0 +1,141 @@
+@use "@odido-portals/glow-tokens/overlay-tooltip-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    tooltip,
+    (overlay-tooltip-v1)
+) {
+    display: contents;
+}
+
+.tooltip-description {
+    max-width: var(--components-overlay-tooltip-v1-size-max-width);
+    color: var(--components-overlay-tooltip-v1-color-text-default);
+}
+
+.tooltip-button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0 var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+    outline: none;
+
+    &:focus-visible {
+        @include mixins.outline-focus;
+    }
+
+    &:disabled {
+        cursor: default;
+    }
+}
+
+.tooltip-box {
+    width: max-content;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: flex-start;
+    transform: scale(.1);
+    padding: var(--components-overlay-tooltip-v1-padding-vertical) var(--components-overlay-tooltip-v1-padding-horizontal);
+    gap: var(--components-overlay-tooltip-v1-gap-horizontal-default);
+    color: var(--components-overlay-tooltip-v1-color-text-default);
+    background: var(--components-overlay-tooltip-v1-color-background-default);
+    margin-bottom: var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+
+    button {
+        background: transparent;
+        border: none;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &.top-start {
+        transform-origin: bottom left;
+        margin-bottom: var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+        border-radius: var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-none);
+    }
+
+    &.top-end {
+        transform-origin: bottom right;
+        margin-bottom: var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+        border-radius: var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-none) var(--components-overlay-tooltip-v1-radius-default);
+    }
+
+    &.bottom-start {
+        transform-origin: top left;
+        margin-top: var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+        border-radius: var(--components-overlay-tooltip-v1-radius-none) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default);
+    }
+
+    &.bottom-end {
+        transform-origin: top right;
+        margin-top: var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+        border-radius: var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-none) var(--components-overlay-tooltip-v1-radius-default) var(--components-overlay-tooltip-v1-radius-default);
+    }
+}
+
+.tooltip-close-button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+
+    &:focus-visible {
+        @include mixins.outline-focus;
+    }
+}
+
+.tooltip-popup {
+    pointer-events: none;
+    width: max-content;
+    font-style: normal;
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
+
+    &.visible {
+        pointer-events: auto;
+
+        .tooltip-box {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &.hidden {
+        pointer-events: none;
+    }
+
+    &.animated {
+        .tooltip-description {
+            transition: transform .3s .3s linear, opacity .3s .3s ease;
+            transform: translateY(10px);
+            opacity: 0;
+        }
+
+        .tooltip-box {
+            transition: transform .3s ease, opacity .2s ease;
+            display: flex;
+        }
+
+        &.visible {
+            .tooltip-description {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}

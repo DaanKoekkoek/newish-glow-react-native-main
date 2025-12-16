@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DotNav /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="dot-nav"
+  >
+    <button
+      aria-label="Go to slide 1"
+      class="dot-nav-button is-active"
+      type="button"
+    >
+      <div
+        class="dot-nav-button-progress"
+        style="--progress-active: 0; --timer-duration: undefinedms;"
+      />
+    </button>
+    <button
+      aria-label="Go to slide 2"
+      class="dot-nav-button"
+      type="button"
+    >
+      <div
+        class="dot-nav-button-progress"
+        style="--progress-active: 0; --timer-duration: undefinedms;"
+      />
+    </button>
+    <button
+      aria-label="Go to slide 3"
+      class="dot-nav-button"
+      type="button"
+    >
+      <div
+        class="dot-nav-button-progress"
+        style="--progress-active: 0; --timer-duration: undefinedms;"
+      />
+    </button>
+    <button
+      aria-label="Go to slide 4"
+      class="dot-nav-button"
+      type="button"
+    >
+      <div
+        class="dot-nav-button-progress"
+        style="--progress-active: 0; --timer-duration: undefinedms;"
+      />
+    </button>
+    <button
+      aria-label="Go to slide 5"
+      class="dot-nav-button"
+      type="button"
+    >
+      <div
+        class="dot-nav-button-progress"
+        style="--progress-active: 0; --timer-duration: undefinedms;"
+      />
+    </button>
+  </div>
+</div>
+`;

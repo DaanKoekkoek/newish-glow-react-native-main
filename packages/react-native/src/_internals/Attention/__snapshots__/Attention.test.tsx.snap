@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`error Attention renders a stable snapshot 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Regular",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+        "textAlign": "left",
+      },
+      [
+        {
+          "color": "#f5463b",
+        },
+        undefined,
+      ],
+    ]
+  }
+  testID="paragraph"
+>
+  attention!
+</Text>
+`;
+
+exports[`information Attention renders a stable snapshot 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Regular",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+        "textAlign": "left",
+      },
+      [
+        {
+          "color": "#2c72ff",
+        },
+        undefined,
+      ],
+    ]
+  }
+  testID="paragraph"
+>
+  attention!
+</Text>
+`;
+
+exports[`success Attention renders a stable snapshot 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Regular",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+        "textAlign": "left",
+      },
+      [
+        {
+          "color": "#2f9a92",
+        },
+        undefined,
+      ],
+    ]
+  }
+  testID="paragraph"
+>
+  attention!
+</Text>
+`;
+
+exports[`warning Attention renders a stable snapshot 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    [
+      {
+        "fontFamily": "odido_Paragraph_Regular",
+      },
+      {
+        "color": "#000000",
+        "fontSize": 18,
+        "letterSpacing": 0.27000001072883606,
+        "lineHeight": 28,
+        "textAlign": "left",
+      },
+      [
+        {
+          "color": "#f05c00",
+        },
+        undefined,
+      ],
+    ]
+  }
+  testID="paragraph"
+>
+  attention!
+</Text>
+`;

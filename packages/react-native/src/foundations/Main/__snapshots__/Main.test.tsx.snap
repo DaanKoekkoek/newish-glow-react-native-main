@@ -1,0 +1,1108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main/> renders correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <MainChildrenMock />,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ecf2ff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "backgroundColor": "#ffffff",
+                            "borderColor": "#dddddd",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          {
+                            "padding": 22,
+                          },
+                          false,
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "left",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Box within Column
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#00000000",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#ecf2ff",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "left",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Box within Column
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ecf2ff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "backgroundColor": "#ffffff",
+                            "borderColor": "#dddddd",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          {
+                            "padding": 22,
+                          },
+                          false,
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "left",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Box within Column
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#00000000",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#ecf2ff",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "left",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Box within Column
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ecf2ff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "backgroundColor": "#ffffff",
+                            "borderColor": "#dddddd",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          {
+                            "padding": 22,
+                          },
+                          false,
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "left",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Box within Column
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`<Main/> renders multiple children correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <Section>
+              <Grid>
+                <Grid.Column>
+                  Column section 1
+                </Grid.Column>
+              </Grid>
+            </Section>,
+            <Section>
+              <Grid>
+                <Grid.Column>
+                  Column section 2
+                </Grid.Column>
+              </Grid>
+            </Section>,
+            <Section>
+              <Grid>
+                <Grid.Column>
+                  Column section 3
+                </Grid.Column>
+              </Grid>
+            </Section>,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    Column section 1
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    Column section 2
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    Column section 3
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -1,0 +1,135 @@
+@use "@odido-portals/glow-tokens/input-atoms-date-picker-v1";
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/input-border";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/heading";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@odido-portals/glow-tokens/primitives-shadow-drop";
+@use "@globals/mixins";
+@use "@globals/config";
+@use "@components/InputField/mixins" as input-field;
+
+@include mixins.token-scope(date-picker,
+  (input-atoms-date-picker-v1,
+    input-atoms-field,
+    input-border,
+    input-color,
+    input-gap,
+    heading,
+    paragraph,
+    shadow-drop,
+    assets-icons,
+  )) {}
+
+:global(.react-datepicker__header) {
+  background-color: transparent;
+  border-bottom: none;
+  padding: 0;
+}
+
+:global(.react-datepicker__day-names) {
+  margin-bottom: 0;
+}
+
+:global(.react-datepicker__day),
+:global(.react-datepicker__day-name) {
+  background-color: var(--components-input-atoms-date-picker-v1-color-background-date-default);
+  border-radius: var(--components-input-atoms-date-picker-v1-radius-date);
+  color: var(--components-input-atoms-date-picker-v1-color-text-date-default);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+  line-height: var(--components-input-atoms-date-picker-v1-size-date-default);
+  margin: 0;
+  text-align: center;
+  width: var(--components-input-atoms-date-picker-v1-size-date-default);
+}
+
+:global(.react-datepicker__day-name) {
+  text-transform: capitalize;
+  color: var(--components-input-atoms-date-picker-v1-color-text-weekday-default);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-xs);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-xs);
+  height: var(--components-input-atoms-date-picker-v1-size-weekday-default);
+  width: var(--components-input-atoms-date-picker-v1-size-weekday-default);
+}
+
+:global(.react-datepicker__day):hover:not([aria-disabled="true"]) {
+  background-color: transparent;
+  border-radius: var(--components-input-atoms-date-picker-v1-radius-date);
+  box-shadow: 0 0 0 var(--components-input-atoms-date-picker-v1-border-width-date-hover) var(--components-input-atoms-date-picker-v1-color-border-date-hover) inset;
+}
+
+:global(.react-datepicker__month) {
+  margin: 0;
+}
+
+:global(.react-datepicker__calendar) {
+  background-color: var(--components-input-atoms-date-picker-v1-color-background-default);
+  border: none;
+  border-radius: var(--components-input-atoms-date-picker-v1-radius-default);
+  box-shadow: var(--primitives-shadow-drop-shadow-x) var(--primitives-shadow-drop-shadow-y) var(--primitives-shadow-drop-shadow-blur) var(--primitives-shadow-drop-shadow-spread) var(--primitives-shadow-drop-shadow-color-web, var(--semantics-color-background-inverted));
+  font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+  padding: var(--components-input-atoms-date-picker-v1-padding-vertical-default) var(--components-input-atoms-date-picker-v1-padding-horizontal-default);
+}
+
+:global(.react-datepicker-wrapper) {
+  display: block;
+  width: 100%;
+}
+
+:global(.react-datepicker__day[aria-disabled="true"]) {
+  color: var(--components-input-atoms-date-picker-v1-color-text-date-inactive);
+}
+
+:global(.react-datepicker__day--selected) {
+  background-color: var(--components-input-atoms-date-picker-v1-color-background-date-selected);
+  color: var(--components-input-atoms-date-picker-v1-color-text-date-selected);
+  font-weight: 500;
+  position: relative;
+  transition: all 200ms ease-in-out;
+
+  &:focus-visible {
+    @include mixins.outline-focus;
+  }
+
+  &:hover:not([aria-disabled=true]) {
+    background-color: var(--components-input-atoms-date-picker-v1-color-background-date-selected);
+    box-shadow: none;
+  }
+}
+
+:global(.react-datepicker__day--today) {
+  font-weight: 400;
+}
+
+@each $palette in config.$odido-palette {
+  .date-picker-palette-#{$palette} :global(.react-datepicker__day--selected) {
+    @include mixins.glow-gradient-image($palette: $palette,
+      $size: var(--components-input-atoms-date-picker-v1-size-date-default),
+    );
+
+    &:hover {
+      @include mixins.glow-gradient-image($palette: $palette,
+        $hover: true,
+        $size: var(--components-input-atoms-date-picker-v1-size-date-default),
+      );
+    }
+  }
+}
+
+.date-picker-header-container {
+  display: flex;
+  padding-bottom: var(--components-input-atoms-date-picker-v1-gap-vertical);
+}
+
+.date-picker-header-text {
+  color: var(--components-input-atoms-date-picker-v1-color-text-month-year-default);
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

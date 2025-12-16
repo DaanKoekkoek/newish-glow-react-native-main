@@ -1,0 +1,58 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@odido-portals/glow-tokens/logos-and";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$addon-sizes: default, sm, xs;
+
+@include mixins.token-scope(
+    addons,
+    (
+        logos-and,
+        assets-logos
+    )
+) {
+    box-shadow: 0 0 var(--components-assets-logos-and-visuals-add-ons-border-width-default) 0 inset var(--components-assets-logos-and-visuals-add-ons-color-border-default);
+
+    &.is-inactive {
+        box-shadow: 0 0 var(--components-assets-logos-and-visuals-add-ons-border-width-inactive) 0 inset var(--components-assets-logos-and-visuals-add-ons-color-border-inactive);
+
+        rect {
+            fill: none;
+        }
+
+        path:not(:global(.ignore-fill)) { 
+            fill: var(--components-assets-logos-and-visuals-add-ons-color-fill-inactive);
+        }
+    }
+}
+
+@each $size in $addon-sizes {
+    .addon-size-#{$size} {
+        border-radius: var(--components-logos-and-visuals-add-ons-radius-#{$size});
+
+        @if $size == "default" {
+            width: min-content;
+            height: min-content;
+        } @else {
+            width: var(--components-logos-and-visuals-add-ons-size-#{$size});
+            height: var(--components-logos-and-visuals-add-ons-size-#{$size});
+        }
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+        @include mixins.above($breakpoint) {
+            .addon-size-#{$size}-#{$breakpoint} {
+                border-radius: var(--components-logos-and-visuals-add-ons-radius-#{$size});
+
+                @if $size == "default" {
+                    width: min-content;
+                    height: min-content;
+                } @else {
+                    width: var(--components-logos-and-visuals-add-ons-size-#{$size});
+                    height: var(--components-logos-and-visuals-add-ons-size-#{$size});
+                }
+            }
+        }
+    }
+}

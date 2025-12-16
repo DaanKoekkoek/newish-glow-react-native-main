@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductHero /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="product-hero"
+    data-testid="product-hero"
+  >
+    <div
+      class="product-hero-image-container"
+    >
+      <div
+        class="visual visual-ratio-default no-padding-all product-hero-image"
+        data-testid="product-hero-image"
+      >
+        <picture
+          class="picture"
+          data-testid="image-picture"
+        >
+          <img
+            alt="Alt text"
+            class="image image-position-center ratio-16-9"
+            data-testid="image-img"
+            loading="lazy"
+            src="https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP"
+            style="object-fit: cover;"
+          />
+        </picture>
+      </div>
+      <div
+        class="product-hero-large-sticker variant-default"
+        data-testid="product-hero-large-sticker"
+      >
+        <div
+          class="large-sticker large-sticker-palette-default"
+          data-testid="large-sticker"
+        >
+          <ul
+            class="default-list default-list-size-default default-list-inverted large-sticker-list"
+            data-testid="default-list"
+          >
+            <li
+              class="list-variant-icon"
+              data-testid="default-list-list-item"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                data-icon="checkmark"
+                data-testid="icon"
+              >
+                
+              </span>
+              <p
+                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                data-testid="paragraph"
+              >
+                List item 1
+              </p>
+            </li>
+            <li
+              class="list-variant-icon"
+              data-testid="default-list-list-item"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                data-icon="checkmark"
+                data-testid="icon"
+              >
+                
+              </span>
+              <p
+                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                data-testid="paragraph"
+              >
+                List item 2
+              </p>
+            </li>
+            <li
+              class="list-variant-icon"
+              data-testid="default-list-list-item"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline default-list-icon-root default-list-icon"
+                data-icon="checkmark"
+                data-testid="icon"
+              >
+                
+              </span>
+              <p
+                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                data-testid="paragraph"
+              >
+                List item 3
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="product-hero-status"
+    >
+      <div
+        class="status"
+        data-testid=""
+      >
+        <div
+          class="status-indicator success"
+          data-testid="-indicator"
+        />
+        <span
+          class="paragraph paragraph-size-sm status-text"
+          data-testid="paragraph"
+        >
+          Available
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

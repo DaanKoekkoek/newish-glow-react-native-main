@@ -1,0 +1,50 @@
+import { Meta, Story, Canvas, Controls, ArgsTable } from "@storybook/blocks";
+import * as AddOnCard from "./AddOnCard.stories";
+import { Grid } from "foundations/Grid";
+
+<Meta of={AddOnCard} />
+
+# Add-On Card Component
+
+The AddOnCard is a versatile and interactive component designed to showcase add-on items with additional information.
+This component is selectable, allowing users to choose among various add-on options.
+
+## Purpose
+
+Used mostly as **Extra's** Addon Product during the checkout process for items like Netflix, HBO, Deezer, etc.
+
+**Options** <br/>
+
+- Visual Addon Component. <br/>
+- Title. <br/>
+- Description text. <br/>
+- Promotion text. <br/>
+- Highlight text on top of the Card. <br/>
+- Add a `Price` ReactElement component. `<Price beforeText="vanaf" value="10,00"/>` <br/>
+- Direction layout. <br/>
+
+Glow border indicates whether the AddOnCard is selected.<br/>
+
+### Dependencies
+
+AddonCard makes use of the [Addon](./?path=/docs/designsystem-components-addon--docs) component to display the visuals.
+
+## Vertical Layout
+
+The vertical component allows you to create a vertical layout with a `default` visual and content at the bottom.
+
+<Canvas of={AddOnCard.Vertical} />
+<Controls of={AddOnCard.Vertical} />
+
+## Horizontal Layout
+
+The horizontal component allows you to create a horizontal layout with a `addon/small` visual and content at the right.
+This layout is recommended for mobile devices (mobile, mobileSmall and tablet).
+
+#### Breakpoint
+
+larger then **laptop**: Addon size large 96px <br/>
+larger then **mobileSmall**: Addon size mini 64px
+
+<Canvas of={AddOnCard.Horizontal} />
+<Controls of={AddOnCard.Horizontal} />

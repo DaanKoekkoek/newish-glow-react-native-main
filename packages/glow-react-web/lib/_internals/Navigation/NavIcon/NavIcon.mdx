@@ -1,0 +1,27 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as NavIconStories from "./NavIcon.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={NavIconStories} />
+
+# NavIcon
+
+### Token version: {getComponentVersion("navIcon")}
+
+The `NavIcon` component displays a navigation icon — either a **user** or **cart** symbol — with an optional status badge. It is designed for use in site headers or navigation bars, following token-based sizing and alignment conventions.
+
+## Purpose
+
+Use `NavIcon` when you need a **consistent icon button** in your navigation area that:
+
+- Represents key user actions such as **account access** or **shopping cart**.
+- Supports **status indicators** via the `BadgeStatus` component.
+- Aligns with design tokens for consistent icon sizing and spacing.
+- Integrates with both **default SVG icons** and internal **Glow Icon** components.
+
+## Examples
+
+### Default NavIcon
+
+<Canvas of={NavIconStories.Default} />
+<Controls of={NavIconStories.Default} />

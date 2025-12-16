@@ -1,0 +1,193 @@
+@use "@odido-portals/glow-tokens/button-button-v2";
+@use "@globals/config";
+@use "@globals/mixins";
+@use "@internals/Button/styles/Button.config.scss" as button-config;
+@use "@internals/Button/mixins" as button;
+
+$button-icon-sizes: "default", "sm", "lg";
+
+@include mixins.token-scope(
+  button,
+  button-button-v2,
+) {}
+
+@layer main.internals {
+  .button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--components-button-button-v2-typography-font-family-default);
+    font-style: var(--components-button-button-v2-typography-font-style-normal);
+    font-weight: var(--components-button-button-v2-typography-font-weight-strong);
+    justify-content: center;
+    white-space: nowrap;
+    width: min-content;
+  
+    @each $size, $values in button-config.$sizes {
+      &.button-size-#{$size} {
+        @include button.size($values);
+      }
+    }
+  
+    &.fill {
+      width: 100%;
+    }
+  
+    &.fill-reset {
+      width: min-content;
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+      @include mixins.above($breakpoint) {
+        &.fill-#{$breakpoint} {
+          width: 100%;
+        }
+  
+        &.fill-#{$breakpoint}-reset {
+          width: min-content;
+        }
+      }
+    }
+  
+    @each $prominence in (default, secondary) {
+      @each $status in (information, success, warning, error) {
+        &.status-#{$prominence}-#{$status} {
+          border-color: var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-default);
+          box-shadow: 0 0 0 var(--components-button-button-v2-border-width-#{$prominence}-default) var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-default) inset;
+          background: var(--components-button-button-v2-color-background-#{$prominence}-#{$status}-default);
+          color: var(--components-button-button-v2-color-text-#{$prominence}-#{$status}-default);
+  
+          .button-icon {
+            color: var(--components-button-button-v2-color-icon-#{$prominence}-#{$status}-default);
+          }
+  
+          &.is-loading {
+            border-color: var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-default);
+            box-shadow: 0 0 0 var(--components-button-button-v2-border-width-#{$prominence}-default) var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-default) inset;
+            background: var(--components-button-button-v2-color-background-#{$prominence}-#{$status}-default);
+            color: var(--components-button-button-v2-color-text-#{$prominence}-#{$status}-default);
+          }
+  
+          &:not([tabindex="-1"]),
+          &:not([disabled]) {
+            &:hover {
+              background: var(--components-button-button-v2-color-background-#{$prominence}-#{$status}-hover);
+              border-color: var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-hover);
+              box-shadow: 0 0 0 var(--components-button-button-v2-border-width-#{$prominence}-default) var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-hover) inset;
+              color: var(--components-button-button-v2-color-text-#{$prominence}-#{$status}-hover);
+  
+              .button-icon {
+                color: var(--components-button-button-v2-color-icon-#{$prominence}-#{$status}-hover);
+              }
+            }
+  
+            &:focus-visible,
+            &:active {
+              background: var(--components-button-button-v2-color-background-#{$prominence}-#{$status}-pressed);
+              border-color: var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-pressed);
+              box-shadow: 0 0 0 var(--components-button-button-v2-border-width-#{$prominence}-default) var(--components-button-button-v2-color-border-#{$prominence}-#{$status}-pressed) inset;
+              color: var(--components-button-button-v2-color-text-#{$prominence}-#{$status}-pressed);
+  
+              .button-icon {
+                color: var(--components-button-button-v2-color-icon-#{$prominence}-#{$status}-pressed);
+              }
+            }
+  
+            &:focus-visible  .list-icon-right {
+              font-family: var(--components-lists-list-item-v2-size-icon-font-family-action-hover);
+            }
+          }
+        }
+      }
+    }
+  
+    @each $prominence, $values in button-config.$prominences {
+      &.button-prominence-#{$prominence} {
+        @include button.prominence($values);
+      }
+    }
+  
+    &[tabindex="-1"],
+    &[disabled] {
+      @include button.disabled;
+    }
+  }
+
+  a.button {
+    max-width: min-content;
+    text-decoration: none;
+
+    &.is-loading {
+      position: relative;
+    }
+
+     &.fill {
+        max-width: none;
+        width: -webkit-fill-available;
+        width: -moz-available;
+     }
+
+    @each $breakpoint, $width in config.$global-min-width {
+      @include mixins.above($breakpoint) {
+  
+        &.fill-#{$breakpoint} {
+          max-width: none;
+          width: -webkit-fill-available;
+          width: -moz-available;
+        }
+  
+        &.fill-#{$breakpoint}-reset {
+          max-width: min-content;
+          width: min-content;
+        }
+      }
+    }
+  }
+
+  .button-loading-icon {
+    color: var(--components-button-button-v2-color-icon-default-loading) !important;
+    font-weight: 400;
+
+    .is-loading & {
+      align-items: center;
+      inset: 0;
+      display: flex;
+      margin: 0 auto;
+      position: absolute;
+      opacity: 1;
+    }
+  }
+
+  .loading-label {
+    .is-loading & {
+      opacity: 0;
+    }
+  }
+
+  .button-icon {
+    width: auto;
+
+    @each $size in $button-icon-sizes {
+      &.button-icon-size-#{$size} {
+        line-height: var(--components-button-button-v2-typography-line-height-#{$size});
+        font-size: var(--components-button-button-v2-size-icon-#{$size});
+      }
+    }
+  }
+
+  .button-ignore-stretched {
+    position: relative;
+    z-index: 1;
+  }
+
+  .button-stretched:not([tabindex="-1"])::after,
+  .button-stretched:not([disabled])::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+  }
+}

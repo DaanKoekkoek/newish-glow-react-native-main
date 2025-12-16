@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Circular Std 2024";
+  src: url("./fonts/CircularStd2024-Book.ttf") format("truetype");
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std 2024";
+  src: url("./fonts/CircularStd2024-BookItalic.ttf") format("truetype");
+  font-weight: 450;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std 2024";
+  src: url("./fonts/CircularStd2024-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std 2024";
+  src: url("./fonts/CircularStd2024-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}

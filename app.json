@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "@odido-portals/glow-react-native",
+    "slug": "@odido-portals-glow-react-native",
+    "version": "0.0.4",
+    "platforms": ["ios", "android", "web"]
+  }
+}

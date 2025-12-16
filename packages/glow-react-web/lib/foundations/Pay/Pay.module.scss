@@ -1,0 +1,10 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    pay,
+    assets-logos
+) {
+    width: var(--components-assets-logos-and-visuals-payment-provider-v1-size-width-default);
+    height: var(--components-assets-logos-and-visuals-payment-provider-v1-size-height-default);
+}

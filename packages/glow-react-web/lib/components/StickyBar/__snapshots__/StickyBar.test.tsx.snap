@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StickyBar renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="sticky-bar sticky-bar-position-bottom"
+    data-testid="sticky-bar"
+  >
+    <div
+      class="container sticky-bar-width-default container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12 sticky-bar-column sticky-bar-column-default"
+          data-testid="column"
+        >
+          <div
+            class="sticky-bar-content"
+          >
+            <div
+              class="sticky-bar-content-children"
+            >
+              Content
+            </div>
+            <button
+              aria-label="chevron-up"
+              class="button button-size-default button-prominence-default is-inverted action-button-icon size-default"
+              data-testid="button"
+            >
+              <span
+                class="button-label"
+              >
+                <span
+                  aria-hidden="true"
+                  class="icon icon-size-default outline block"
+                  data-icon="chevron-up"
+                  data-testid="icon"
+                >
+                  
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="sticky-bar-buttons"
+          >
+            <button
+              class="button button-size-default button-prominence-default"
+              data-testid="button"
+            >
+              <span
+                class="button-label"
+              >
+                Trigger button
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,72 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as InputField from "./InputField.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={InputField} />
+
+# InputField
+
+### Token version: {getComponentVersion("input-field.v1")}
+
+The input field is a customizable input component that extends from the `TextInput` component. It accepts a state, or the state can be set internally by providing the input
+with an `errorMessage` property. You also have the option to include callbacks that handles the `focus`, `change`, `blur` and `changeText` events.
+
+Note, that just like native `TextInput`, this is a [controlled](https://legacy.reactjs.org/docs/uncontrolled-components.html) component, which receives its current value via props and notifies changes through `onChangeText` callback, ensuring that React has full control over the value and its updates.
+
+<Canvas of={InputField.Basic} />
+<Controls of={InputField.Basic} />
+
+## InputField Optional with Info & Tooltip
+
+Tooltips can be added to the InputField legend to provide users with extra context or guidance.
+For the best UX, tooltips should be concise, relevant, and easy to dismiss.
+
+**Key options for tooltips:**
+
+- **description**: The text shown in the tooltip. Keep it short and clear.
+- **tipPosition**: Controls where the tooltip appears (e.g., `"right"`, `"left"`). Choose a position that does not obstruct important UI elements.
+- **closeButton**: If `true`, shows a close button in the tooltip. This is useful for persistent tips or longer explanations.
+- **animated**: Enables animation for the tooltip appearance. Use animation to draw attention, but avoid excessive motion.
+
+**Developer notes:**
+
+- Tooltips can be triggered by hovering, focusing, or clicking the info icon.
+- You can also provide a function for the `info` prop to handle custom actions (e.g., showing a modal or alert).
+- Always ensure tooltips are accessible: provide clear labels and keyboard support.
+
+**UX tip:**
+Use tooltips for helpful guidance, not for critical information.
+Critical instructions should be visible without requiring user interaction.
+
+<Canvas of={InputField.OptionalWithInfo} />
+
+## InputField File Upload
+
+### Dev Note:
+
+The File InputField supports two additional properties:
+
+**accept**: Specifies which file types users can select for upload. <br />
+**multiple**: Allows users to select more than one file at a time.
+
+> **Note:** The `accept` property only restricts file selection in the browser UI.
+> You should always validate file types in your own application logic after upload.
+> (e.g., `image/png`, `application/pdf`) or wildcards (e.g., `image/*` for all images).
+
+> ### Design Note:
+>
+> **File inputs cannot display placeholder text.**
+> This is a browser limitation: the placeholder attribute does not work for file input fields.
+> File inputs are designed for selecting files, not entering text, so any placeholder value will be ignored and not shown.
+
+<Canvas of={InputField.File} />
+<Controls of={InputField.File} />
+
+## InputField Valid
+
+<Canvas of={InputField.Valid} />
+
+## InputField Error
+
+<Canvas of={InputField.Error} />

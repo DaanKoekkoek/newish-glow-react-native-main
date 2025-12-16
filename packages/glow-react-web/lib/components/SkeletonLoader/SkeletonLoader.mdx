@@ -1,0 +1,19 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SkeletonLoaderStories from "./SkeletonLoader.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta
+  title="DesignSystem/Components/SkeletonLoader"
+  of={SkeletonLoaderStories}
+/>
+
+# SkeletonLoader
+
+### Token version: {getComponentVersion("skeleton-loader.v1")}
+
+The SkeletonLoader component is used to display a placeholder while content is loading.
+It provides a visual indication that data is being fetched, enhancing the user experience by preventing layout shifts.
+
+<Canvas of={SkeletonLoaderStories.Default} />
+<Controls of={SkeletonLoaderStories.Default} />

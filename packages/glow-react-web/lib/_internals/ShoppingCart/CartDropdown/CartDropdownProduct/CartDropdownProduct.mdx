@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartDropdownProduct from "./CartDropdownProduct.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartDropdownProduct} />
+
+# CartDropdownProduct
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartDropdownProduct>` atom is used to visually represent a product list within the Cart Dropdown. It displays an image, a product title, and a short description.
+
+### Default example
+
+<Canvas of={CartDropdownProduct.Default} />
+<Controls of={CartDropdownProduct.Default} />

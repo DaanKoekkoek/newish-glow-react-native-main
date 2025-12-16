@@ -1,0 +1,75 @@
+@use "@odido-portals/glow-tokens/lists-add";
+@use "@odido-portals/glow-tokens/lists-add-on-list-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  addon-list,
+  (lists-add, lists-add-on-list-v1)
+) {
+  min-width: var(--components-lists-add-on-list-size-min-width);
+  max-width: var(--components-lists-add-on-list-size-max-width);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-class {
+  aspect-ratio: 3/1;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0 0 0 / 0%) 50.34%, rgba(0 0 0 / 75%) 100%);
+}
+
+.header {
+  border-top-left-radius: var(--components-lists-add-on-list-v1-radius-header-default);
+  border-top-right-radius: var(--components-lists-add-on-list-v1-radius-header-default);
+  overflow: hidden;
+  position: relative;
+  max-height: 285px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+  border: var(--components-lists-add-on-list-v1-border-width-item-default) solid var(--components-lists-add-on-list-v1-color-border-item-default);
+  border-radius: var(--components-lists-add-on-list-radius-default);
+  overflow: hidden;
+
+  &.top-radius {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.heading-text {
+  position: absolute;
+  bottom: 0;
+  padding: var(--components-lists-add-on-list-v1-padding-vertical) var(--components-lists-add-on-list-v1-padding-horizontal) var(--components-lists-add-on-list-v1-padding-vertical) var(--components-lists-add-on-list-v1-padding-horizontal);
+  font-size: var(--components-lists-add-on-list-v1-typography-font-size-heading);
+  line-height: var(--components-lists-add-on-list-v1-typography-line-height-heading);
+  letter-spacing: var(--components-lists-add-on-list-v1-typography-letter-spacing-heading);
+  font-family: var(--components-lists-add-on-list-v1-typography-font-family-heading);
+
+  &.has-image {
+    color: var(--components-lists-add-on-list-v1-color-text-heading-on-image);
+  }
+
+  &.has-palette {
+    color: var(--components-lists-add-on-list-v1-color-text-heading-default);
+  }
+}

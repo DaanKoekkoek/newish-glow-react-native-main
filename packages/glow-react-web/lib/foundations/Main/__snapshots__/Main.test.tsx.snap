@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main/> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-color box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-color box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<Main/> renders stable snapshot with header and footer 1`] = `
+<DocumentFragment>
+  <nav
+    style="min-height: 36px; background-color: white;"
+  >
+    <div
+      class="container container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12"
+          data-testid="column"
+        >
+          <p
+            class="paragraph paragraph-size-default"
+            data-testid="paragraph"
+          >
+            Header
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr
+    class="divider divider-prominence-default divider-variant-default"
+    data-testid="divider"
+  />
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-color box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-color box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section section-subtle section-palette-default section-subtle"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="box box-prominence-outline box-size-sm"
+              data-testid="box"
+            >
+              <p
+                class="paragraph paragraph-size-default"
+                data-testid="paragraph"
+              >
+                Box within Column
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer
+    style="padding-block: 16px; background-color: black; color: white;"
+  >
+    <div
+      class="container container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12"
+          data-testid="column"
+        >
+          <p
+            class="paragraph paragraph-size-default"
+            data-testid="paragraph"
+          >
+            Footer
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

@@ -1,0 +1,72 @@
+@use "@odido-portals/glow-tokens/hero-product-hero-v2";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    product-hero,
+    hero-product-hero-v2   
+) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--components-hero-product-hero-v2-gap-default);
+    align-self: stretch;
+    margin-left: var(--components-hero-product-hero-v2-margin-horizontal);
+    margin-right: var(--components-hero-product-hero-v2-margin-horizontal);
+}
+
+.product-hero-image-container {
+    position: relative;
+    margin-inline: auto;
+}
+
+.product-hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--components-hero-product-hero-v2-radius-default);
+}
+
+.product-hero-large-sticker {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: calc(100% - var(--components-hero-product-hero-v2-padding-content-default-left) - var(--components-hero-product-hero-v2-padding-content-default-right));
+    padding: var(--components-hero-product-hero-v2-padding-content-default-top) var(--components-hero-product-hero-v2-padding-content-default-right) var(--components-hero-product-hero-v2-padding-content-default-bottom) var(--components-hero-product-hero-v2-padding-content-default-left);
+
+    &.variant-default {
+        margin-top: -3rem;
+        position: relative;
+
+        >div {
+            width: 100%;
+        }
+
+        @include mixins.above("tablet") {
+            position: absolute;
+        }
+    }
+
+    &.variant-promo {
+        width: var(--components-hero-product-hero-v2-size-max-width-wrapper);
+        padding: var(--components-hero-product-hero-v2-padding-content-promo-vertical) var(--components-hero-product-hero-v2-padding-content-promo-horizontal);
+
+    }
+
+    @include mixins.above("tablet") {
+        max-width: var(--components-hero-product-hero-v2-size-max-width-wrapper);
+        width: var(--components-hero-product-hero-v2-size-max-width-wrapper);
+    }
+
+}
+
+.product-hero-status {
+    margin-left: 0;
+    padding-inline: var(--components-hero-product-hero-v2-padding-status-horizontal);
+
+    @include mixins.above("tablet") {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefaultCardStories from "./DefaultCard.stories";
+
+<Meta of={DefaultCardStories} />
+
+# Default Card
+
+## Purpose
+
+A card is a a container that neatly hold and display small pieces of information in a clean and organized way.
+The default card is a basic implementation of this that is able to serve many purposes and has many possible visual possibilities.
+
+### Without call to action and image
+
+A default card without any visual and call to action.
+
+<Canvas of={DefaultCardStories.WithoutCallToAction} />
+<Controls of={DefaultCardStories.WithoutCallToAction} />
+
+### With two buttons
+
+<Canvas of={DefaultCardStories.WithTwoButtons} />
+
+### With Icon
+
+<Canvas of={DefaultCardStories.WithIcon} />
+
+### With Illustration
+
+<Canvas of={DefaultCardStories.WithIllustration} />

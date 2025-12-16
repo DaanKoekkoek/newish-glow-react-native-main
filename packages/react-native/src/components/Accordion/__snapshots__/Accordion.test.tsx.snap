@@ -1,0 +1,1236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> renders a stable snapshot 1`] = `
+<View
+  testID="accordion"
+>
+  <View
+    style={
+      [
+        {
+          "borderBottomWidth": 1,
+          "borderColor": "#dddddd",
+        },
+        {
+          "borderColor": "#dddddd",
+          "borderTopWidth": 1,
+        },
+      ]
+    }
+    testID="accordion-step"
+  >
+    <View
+      accessibilityLabel="Open Title 1"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 24,
+          "justifyContent": "space-between",
+          "paddingHorizontal": 0,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <Text
+        accessibilityRole="header"
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "flexShrink": 1,
+            "fontFamily": "odido_Heading_Medium",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginVertical": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="heading"
+      >
+        Title 1
+      </Text>
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 20,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "0deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "0deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "90deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "90deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        [
+          {
+            "color": "#000000",
+            "paddingBottom": 24,
+            "rowGap": 16,
+          },
+          {
+            "left": -9999,
+            "opacity": 0,
+            "position": "absolute",
+            "top": -9999,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        A palindrome is a word, number, phrase, or other sequence of symbols that reads the same 
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 18,
+                "letterSpacing": 0.27000001072883606,
+                "lineHeight": 28,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          backwards as forwards
+        </Text>
+        , such as the sentence: ‘A man, a plan, a canal –
+         
+        <Text
+          onPress={[Function]}
+          role="link"
+          style={
+            {
+              "fontFamily": "odido_Paragraph_Link",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "overflow": "visible",
+            }
+          }
+          testID="link"
+        >
+          <Text
+            style={
+              [
+                {
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+                {
+                  "color": "#1b5ee4",
+                },
+                {
+                  "fontSize": 18,
+                  "letterSpacing": 0.27000001072883606,
+                  "lineHeight": 28,
+                },
+                false,
+                false,
+                undefined,
+              ]
+            }
+            testID="link-text"
+          >
+            Panama
+          </Text>
+        </Text>
+        ’.
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderBottomWidth": 1,
+          "borderColor": "#dddddd",
+        },
+        false,
+      ]
+    }
+    testID="accordion-step"
+  >
+    <View
+      accessibilityLabel="Open Title 2"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 24,
+          "justifyContent": "space-between",
+          "paddingHorizontal": 0,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <Text
+        accessibilityRole="header"
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "flexShrink": 1,
+            "fontFamily": "odido_Heading_Medium",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginVertical": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="heading"
+      >
+        Title 2
+      </Text>
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 20,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "0deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "0deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "90deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "90deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        [
+          {
+            "color": "#000000",
+            "paddingBottom": 24,
+            "rowGap": 16,
+          },
+          {
+            "left": -9999,
+            "opacity": 0,
+            "position": "absolute",
+            "top": -9999,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        A palindrome is a word, number, phrase, or other sequence of symbols that reads the same 
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 18,
+                "letterSpacing": 0.27000001072883606,
+                "lineHeight": 28,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          backwards as forwards
+        </Text>
+        , such as the sentence: ‘A man, a plan, a canal –
+         
+        <Text
+          onPress={[Function]}
+          role="link"
+          style={
+            {
+              "fontFamily": "odido_Paragraph_Link",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "overflow": "visible",
+            }
+          }
+          testID="link"
+        >
+          <Text
+            style={
+              [
+                {
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+                {
+                  "color": "#1b5ee4",
+                },
+                {
+                  "fontSize": 18,
+                  "letterSpacing": 0.27000001072883606,
+                  "lineHeight": 28,
+                },
+                false,
+                false,
+                undefined,
+              ]
+            }
+            testID="link-text"
+          >
+            Panama
+          </Text>
+        </Text>
+        ’.
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderBottomWidth": 1,
+          "borderColor": "#dddddd",
+        },
+        false,
+      ]
+    }
+    testID="accordion-step"
+  >
+    <View
+      accessibilityLabel="Open Title 3"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 24,
+          "justifyContent": "space-between",
+          "paddingHorizontal": 0,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <Text
+        accessibilityRole="header"
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "flexShrink": 1,
+            "fontFamily": "odido_Heading_Medium",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginVertical": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="heading"
+      >
+        Title 3
+      </Text>
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 20,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "0deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "0deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "90deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "90deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        [
+          {
+            "color": "#000000",
+            "paddingBottom": 24,
+            "rowGap": 16,
+          },
+          {
+            "left": -9999,
+            "opacity": 0,
+            "position": "absolute",
+            "top": -9999,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        A palindrome is a word, number, phrase, or other sequence of symbols that reads the same 
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 18,
+                "letterSpacing": 0.27000001072883606,
+                "lineHeight": 28,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          backwards as forwards
+        </Text>
+        , such as the sentence: ‘A man, a plan, a canal –
+         
+        <Text
+          onPress={[Function]}
+          role="link"
+          style={
+            {
+              "fontFamily": "odido_Paragraph_Link",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "overflow": "visible",
+            }
+          }
+          testID="link"
+        >
+          <Text
+            style={
+              [
+                {
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+                {
+                  "color": "#1b5ee4",
+                },
+                {
+                  "fontSize": 18,
+                  "letterSpacing": 0.27000001072883606,
+                  "lineHeight": 28,
+                },
+                false,
+                false,
+                undefined,
+              ]
+            }
+            testID="link-text"
+          >
+            Panama
+          </Text>
+        </Text>
+        ’.
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderBottomWidth": 1,
+          "borderColor": "#dddddd",
+        },
+        false,
+      ]
+    }
+    testID="accordion-step"
+  >
+    <View
+      accessibilityLabel="Open Title 4"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 24,
+          "justifyContent": "space-between",
+          "paddingHorizontal": 0,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <Text
+        accessibilityRole="header"
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "flexShrink": 1,
+            "fontFamily": "odido_Heading_Medium",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginVertical": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="heading"
+      >
+        Title 4
+      </Text>
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 20,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "0deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "0deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "90deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "90deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        [
+          {
+            "color": "#000000",
+            "paddingBottom": 24,
+            "rowGap": 16,
+          },
+          {
+            "left": -9999,
+            "opacity": 0,
+            "position": "absolute",
+            "top": -9999,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        A palindrome is a word, number, phrase, or other sequence of symbols that reads the same 
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 18,
+                "letterSpacing": 0.27000001072883606,
+                "lineHeight": 28,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          backwards as forwards
+        </Text>
+        , such as the sentence: ‘A man, a plan, a canal –
+         
+        <Text
+          onPress={[Function]}
+          role="link"
+          style={
+            {
+              "fontFamily": "odido_Paragraph_Link",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "overflow": "visible",
+            }
+          }
+          testID="link"
+        >
+          <Text
+            style={
+              [
+                {
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+                {
+                  "color": "#1b5ee4",
+                },
+                {
+                  "fontSize": 18,
+                  "letterSpacing": 0.27000001072883606,
+                  "lineHeight": 28,
+                },
+                false,
+                false,
+                undefined,
+              ]
+            }
+            testID="link-text"
+          >
+            Panama
+          </Text>
+        </Text>
+        ’.
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "borderBottomWidth": 1,
+          "borderColor": "#dddddd",
+        },
+        false,
+      ]
+    }
+    testID="accordion-step"
+  >
+    <View
+      accessibilityLabel="Open Title 5"
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "gap": 24,
+          "justifyContent": "space-between",
+          "paddingHorizontal": 0,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <Text
+        accessibilityRole="header"
+        allowFontScaling={true}
+        style={
+          {
+            "color": "#000000",
+            "flexShrink": 1,
+            "fontFamily": "odido_Heading_Medium",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 28,
+            "marginVertical": 0,
+            "textAlign": "left",
+          }
+        }
+        testID="heading"
+      >
+        Title 5
+      </Text>
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 20,
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "0deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "0deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "transform": [
+                  {
+                    "rotate": "90deg",
+                  },
+                ],
+              },
+            }
+          }
+          style={
+            {
+              "backgroundColor": "#000000",
+              "height": 2,
+              "position": "absolute",
+              "transform": [
+                {
+                  "rotate": "90deg",
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        [
+          {
+            "color": "#000000",
+            "paddingBottom": 24,
+            "rowGap": 16,
+          },
+          {
+            "left": -9999,
+            "opacity": 0,
+            "position": "absolute",
+            "top": -9999,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        A palindrome is a word, number, phrase, or other sequence of symbols that reads the same 
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 18,
+                "letterSpacing": 0.27000001072883606,
+                "lineHeight": 28,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          backwards as forwards
+        </Text>
+        , such as the sentence: ‘A man, a plan, a canal –
+         
+        <Text
+          onPress={[Function]}
+          role="link"
+          style={
+            {
+              "fontFamily": "odido_Paragraph_Link",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "overflow": "visible",
+            }
+          }
+          testID="link"
+        >
+          <Text
+            style={
+              [
+                {
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+                {
+                  "color": "#1b5ee4",
+                },
+                {
+                  "fontSize": 18,
+                  "letterSpacing": 0.27000001072883606,
+                  "lineHeight": 28,
+                },
+                false,
+                false,
+                undefined,
+              ]
+            }
+            testID="link-text"
+          >
+            Panama
+          </Text>
+        </Text>
+        ’.
+      </Text>
+    </View>
+  </View>
+</View>
+`;

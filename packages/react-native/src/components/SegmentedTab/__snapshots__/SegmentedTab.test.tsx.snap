@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentedTab Component renders a stable snapshot 1`] = `
+[
+  <View
+    style={
+      [
+        {
+          "borderRadius": 100,
+          "flexDirection": "row",
+          "overflow": "hidden",
+          "padding": 8,
+        },
+        {
+          "backgroundColor": "#80aaff",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onLayout={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "paddingBottom": 8,
+            "paddingTop": 8,
+            "zIndex": 2,
+          },
+          {
+            "width": "33.333%",
+          },
+        ]
+      }
+    >
+      <View
+        aria-label="Labelmobile-phone"
+        aria-selected={true}
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+        testID="Label"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "Icons_Outline_DEFAULT_odido",
+                "fontSize": 24,
+                "lineHeight": 24,
+                "width": 24,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+          testID="strong"
+        >
+          Label
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onLayout={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "paddingBottom": 8,
+            "paddingTop": 8,
+            "zIndex": 2,
+          },
+          {
+            "width": "33.333%",
+          },
+        ]
+      }
+    >
+      <View
+        aria-label="Label 2mobile-phone"
+        aria-selected={false}
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+        testID="Label 2"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "Icons_Outline_DEFAULT_odido",
+                "fontSize": 24,
+                "lineHeight": 24,
+                "width": 24,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+          testID="strong"
+        >
+          Label 2
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onLayout={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "paddingBottom": 8,
+            "paddingTop": 8,
+            "zIndex": 2,
+          },
+          {
+            "width": "33.333%",
+          },
+        ]
+      }
+    >
+      <View
+        aria-label="Label 3mobile-phone"
+        aria-selected={false}
+        style={
+          {
+            "alignItems": "center",
+          }
+        }
+        testID="Label 3"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "Icons_Outline_DEFAULT_odido",
+                "fontSize": 24,
+                "lineHeight": 24,
+                "width": 24,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+              },
+              {
+                "color": "#000000",
+              },
+            ]
+          }
+          testID="strong"
+        >
+          Label 3
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "overflow": "hidden",
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "left": 0,
+              "shadowColor": "#2c72ff",
+              "shadowOffset": {
+                "height": 0,
+                "width": 24,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 15,
+              "width": 0,
+            },
+          }
+        }
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 100,
+            "bottom": 8,
+            "left": 0,
+            "position": "absolute",
+            "shadowColor": "#2c72ff",
+            "shadowOffset": {
+              "height": 0,
+              "width": 24,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 15,
+            "top": 8,
+            "width": 0,
+            "zIndex": 10,
+          }
+        }
+        testID="tab-selector"
+      />
+    </View>
+  </View>,
+  <View
+    style={
+      {
+        "display": "flex",
+      }
+    }
+    testID="segmented-tab-panel-child"
+  >
+    <View>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        Tab 1 Content
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      {
+        "display": "none",
+      }
+    }
+    testID="segmented-tab-panel-child"
+  >
+    <View>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        Tab 2 Content
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      {
+        "display": "none",
+      }
+    }
+    testID="segmented-tab-panel-child"
+  >
+    <View>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        Tab 3 Content
+      </Text>
+    </View>
+  </View>,
+]
+`;

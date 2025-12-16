@@ -1,0 +1,14 @@
+@mixin no-gutters {
+  --container-padding: 0;
+  
+  margin: 0;
+  padding: 0;
+
+  .grid {
+    margin-inline: 0;
+  }
+
+  .column {
+    padding: 0;
+  }
+}

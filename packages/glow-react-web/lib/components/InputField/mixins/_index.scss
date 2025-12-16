@@ -1,0 +1,84 @@
+@mixin base-input-styles {
+    appearance: none;
+    align-items: center;
+    background-color: var(--components-input-color-background-default);
+    border-radius: var(--components-input-atoms-field-radius-default);
+    border-width: var(--components-input-border-width-default);
+    border-color: var(--components-input-color-border-default);
+    border-style: solid;
+    caret-color: var(--components-input-color-text-default);
+    color: var(--components-input-color-text-default);
+    column-gap: var(--components-input-gap-horizontal-default);
+    display: flex;
+    font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+    flex: 1 1 0%;
+    font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+    line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+    overflow: hidden;
+    padding: calc(var(--components-input-atoms-field-padding-vertical-default) - var(--components-input-border-width-default)) calc(var(--components-input-atoms-field-padding-horizontal-default) - var(--components-input-border-width-default));
+    width: 100%;
+    text-align: left;
+    text-overflow: ellipsis;
+
+    &::placeholder {
+      color: var(--components-input-color-text-subtle);
+    }
+
+    &:disabled {
+      border-color: var(--components-input-color-border-inactive);
+      background-color: var(--components-input-color-background-inactive);
+      color: var(--components-input-color-text-inactive);
+
+      &::placeholder {
+        color: var(--components-input-color-text-value-inactive);
+      }
+    }
+
+    &:-moz-autofill {
+      filter: none;
+      background-color: var(--components-input-color-background-default);
+      box-shadow: 0 0 0 1000px var(--components-input-color-background-default) inset;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-color: var(--components-input-color-background-default) !important;
+      box-shadow: 0 0 0 1000px var(--components-input-color-background-default) inset;
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: var(--components-input-color-text-value-default);
+    }
+
+    &:hover:not(:disabled) {
+      border-color: var(--components-input-color-border-hover);
+    }
+
+    &:focus:not(:disabled) {
+      border-color: var(--components-input-color-border-active);
+      outline: none !important;
+    }
+
+    &.error {
+      border-color: var(--components-input-color-border-error);
+    }
+
+    &.valid {
+      border-color: var(--components-input-color-border-success);
+      padding-block: calc(var(--components-input-atoms-field-padding-vertical-default) - var(--components-input-border-width-default));
+      padding-inline: calc(var(--components-input-atoms-field-padding-horizontal-default) - var(--components-input-border-width-default)) calc(var(--components-assets-icons-font-size-sm) + calc(var(--components-input-atoms-field-padding-horizontal-default) * 2) - var(--components-input-border-width-default));
+    }
+
+    &.text-prefix {
+      padding-left: calc(var(--components-input-atoms-field-padding-horizontal-default) + var(--components-assets-icons-font-size-default) + 2 * var(--components-input-gap-horizontal-default));
+    }
+
+    &.text-suffix {
+      padding-right: calc(var(--components-input-atoms-field-padding-horizontal-default) + var(--components-assets-icons-font-size-sm) + 2 * var(--components-input-gap-horizontal-default));
+    }
+
+    &.group-suffix {
+      padding-right: calc(var(--components-input-atoms-field-padding-horizontal-default) + calc(2 * var(--components-assets-icons-font-size-sm)) + calc(4 * var(--components-input-gap-horizontal-default)));
+    }
+  }

@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputField /> renders correctly empty 1`] = `
+<div>
+  <div
+    class="input-container"
+  >
+    <label
+      class="legend input-container-label"
+      for="input-id"
+    >
+      <span
+        class="base-text base-paragraph legend-label"
+      >
+        Label
+      </span>
+      <span
+        class="info-container"
+      />
+    </label>
+    <div
+      class="group-container"
+      data-input-container="true"
+    >
+      <div
+        class="group"
+        data-testid="input-container"
+      >
+        <input
+          class="input-field text-suffix"
+          id="input-id"
+          placeholder="Placeholder text"
+          type="text"
+          value=""
+        />
+        <div
+          class="input-color suffix-container"
+        >
+          <div
+            class="suffix-group"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<InputField /> renders correctly for file input type 1`] = `
+<div>
+  <div
+    class="input-container"
+  >
+    <label
+      class="legend input-container-label"
+      for="input-file"
+    >
+      <span
+        class="base-text base-paragraph legend-label"
+      >
+        Upload File
+      </span>
+      <span
+        class="info-container"
+      />
+    </label>
+    <div
+      class="group-container"
+      data-input-container="true"
+    >
+      <div
+        class="group"
+        data-testid="input-container"
+      >
+        <input
+          accept="image/png, image/jpeg, application/pdf"
+          class="input-field"
+          id="input-file"
+          multiple=""
+          readonly=""
+          type="file"
+        />
+        <div
+          class="input-color suffix-container suffix-container-file-only"
+        >
+          <div
+            class="suffix-group"
+          >
+            <button
+              aria-label="Upload file"
+              class="button button-size-sm button-prominence-default has-icon-only"
+              data-input-file-upload-button="true"
+              data-testid="button"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline button-icon button-icon-size-sm"
+                data-icon="arrow-right"
+                data-testid="button-icon-left"
+              >
+                
+              </span>
+              <span
+                class="button-label"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <small
+      aria-live="polite"
+      class="base-text base-paragraph helper-message"
+      data-testid="helper-message"
+      id="input-file-helper"
+    >
+      Allowed file types: .jpg, .png, .pdf
+    </small>
+  </div>
+</div>
+`;
+
+exports[`<InputField /> toggles password visibility 1`] = `
+<div>
+  <div
+    class="input-container"
+  >
+    <label
+      class="legend input-container-label"
+      for="input-id"
+    >
+      <span
+        class="base-text base-paragraph legend-label"
+      >
+        Label
+      </span>
+      <span
+        class="info-container"
+      />
+    </label>
+    <div
+      class="group-container"
+      data-input-container="true"
+    >
+      <div
+        class="group"
+        data-testid="inputField-container"
+      >
+        <input
+          class="input-field text-suffix group-suffix"
+          data-testid="inputField"
+          id="input-id"
+          placeholder="Placeholder text"
+          type="text"
+          value="blur"
+        />
+        <div
+          class="input-color suffix-container"
+        >
+          <div
+            class="suffix-group"
+          >
+            <button
+              class="suffix-toggle"
+              data-testid="input-field-affix-password-toggle"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline suffix input-icon"
+                data-icon="invisible"
+                data-testid="icon-show-password"
+              >
+                
+              </span>
+            </button>
+            <button
+              aria-label="Clear input"
+              class="suffix-toggle suffix-clear-input"
+              data-testid="input-clear-button"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default solid"
+                data-icon="clear"
+                data-testid="icon-clear-search"
+              >
+                
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

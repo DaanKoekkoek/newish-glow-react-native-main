@@ -1,0 +1,32 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as LargeSticker from "./LargeSticker.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={LargeSticker} />
+
+# LargeSticker
+
+#### Token version: {getComponentVersion("large-sticker.v1")}
+
+## Purpose
+
+The `LargeSticker` component is large version of `Default Sticker` component, it can accept `Price` or `DefaultList` as components. `Default` variant accepts description with `description` property.
+
+> **Glow Options**: Select variant `emphasised` to use `glow` palette.
+
+## Price component
+
+`Price` component props that are overriden from basic component are:
+
+- `size=lg`
+- `inverted` controlled by palette of `LargeSticker`
+
+### Default
+
+<Canvas of={LargeSticker.Default} />
+<Controls of={LargeSticker.Default} />
+
+### USP
+
+<Canvas of={LargeSticker.USP} />

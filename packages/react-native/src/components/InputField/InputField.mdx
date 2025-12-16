@@ -1,0 +1,57 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as InputField from "./InputField.stories";
+
+<Meta of={InputField} />
+
+# InputField
+
+The input field is a customizable input component that extends from the `TextInput` component. It accepts a state, or the state can be set internally by providing the input
+with an `errorMessage` property. You also have the option to include callbacks that handles the `focus`, `change`, `blur` and `changeText` events.
+
+Note, that just like native `TextInput`, this is a [controlled](https://legacy.reactjs.org/docs/uncontrolled-components.html) component, which receives its current value via props and notifies changes through `onChangeText` callback, ensuring that React has full control over the value and its updates.
+
+<Canvas of={InputField.Basic} />
+<Controls of={InputField.Basic} />
+
+## InputField Success
+
+<Canvas of={InputField.Success} />
+
+## InputField Error
+
+<Canvas of={InputField.Error} />
+
+## InputField Optional with Info
+
+<Canvas of={InputField.OptionalWithInfo} />
+
+## InputField Password
+
+To convert the InputField into a password field, you include a `type="password"` property.
+
+<Canvas of={InputField.Password} />
+
+## InputField Date
+
+To convert the InputField into a password field, you include a `type="date"` property.
+To use this type of input field you need to make sure your component is inside the
+[`<Main />`](?path=/docs/designsystem-layout-main--docs) component.
+
+<Canvas of={InputField.Date} />
+
+## InputField AutoSuggest
+
+To convert the InputField into a AutoSuggest field, you include a `type="autoSuggest"` property.
+To pass auto suggestion options you need to use `autoSuggestions` property.
+To enable presenting category label for auto suggestions you can set property `autoSuggestCategory`.
+In web browser you are able to navigate through options using arrow keys and selecting option by enter key.
+
+<Canvas of={InputField.AutoSuggest} />
+
+## InputField Search
+
+To convert the InputField into a Search field, you include a `type="search"` property.
+To pass auto suggestion options you need to use `autoSuggestions` property.
+In web browser you are able to navigate through options using arrow keys and selecting option by enter key.
+
+<Canvas of={InputField.Search} />

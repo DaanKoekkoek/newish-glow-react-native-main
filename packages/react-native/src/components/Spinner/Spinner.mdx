@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SpinnerStories from "./Spinner.stories";
+
+<Meta of={SpinnerStories} />
+
+# Spinner
+
+When the state of a component is `loading`, you should use this component to give additional context to the user. Comes in two different sizes, along with the option to customize the text style of the indicator, for example, to match the loading icon style to that of text label style.
+
+<Canvas of={SpinnerStories.Basic} />
+<Controls of={SpinnerStories.Basic} />

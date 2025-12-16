@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display component should apply correct center align 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    {
+      "color": "#000000",
+      "fontFamily": "odido_Display",
+      "fontSize": 48,
+      "letterSpacing": 0,
+      "lineHeight": 48,
+      "marginBottom": 0,
+      "marginTop": 0,
+      "marginVertical": 32,
+      "textAlign": "center",
+    }
+  }
+  testID="display"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Display component should apply correct font 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    {
+      "color": "#000000",
+      "fontFamily": "odido_Display",
+      "fontSize": 48,
+      "letterSpacing": 0,
+      "lineHeight": 48,
+      "marginBottom": 0,
+      "marginTop": 0,
+      "marginVertical": 32,
+      "textAlign": "left",
+    }
+  }
+  testID="display"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Display component should apply correct lineheight 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    {
+      "color": "#000000",
+      "fontFamily": "odido_Display",
+      "fontSize": 48,
+      "letterSpacing": 0,
+      "lineHeight": 48,
+      "marginBottom": 0,
+      "marginTop": 0,
+      "marginVertical": 32,
+      "textAlign": "left",
+    }
+  }
+  testID="display"
+>
+  Testing font
+</Text>
+`;
+
+exports[`Display component should apply correct size 1`] = `
+<Text
+  allowFontScaling={true}
+  style={
+    {
+      "color": "#000000",
+      "fontFamily": "odido_Display",
+      "fontSize": 48,
+      "letterSpacing": 0,
+      "lineHeight": 48,
+      "marginBottom": 0,
+      "marginTop": 0,
+      "marginVertical": 32,
+      "textAlign": "left",
+    }
+  }
+  testID="display"
+>
+  Testing font
+</Text>
+`;

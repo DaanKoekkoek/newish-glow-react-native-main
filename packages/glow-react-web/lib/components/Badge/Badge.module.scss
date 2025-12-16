@@ -1,0 +1,78 @@
+@use "@odido-portals/glow-tokens/badges-badge-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$prominences-border: default, subtle;
+$prominences: default, subtle, outline;
+
+@include mixins.token-scope(
+    badge,
+    badges-badge-v1
+) {
+  display: inline-flex;
+  border-style: solid;
+  border-radius: var(--components-badges-badge-v1-radius-default);
+  text-align: center;
+  padding: var(--components-badges-badge-v1-padding-vertical-default)
+    var(--components-badges-badge-v1-padding-horizontal-default);
+  border-width: var(--components-badges-badge-v1-border-width-default);
+  line-height: var(--components-badges-badge-v1-typography-line-height);
+  letter-spacing: var(--components-badges-badge-v1-typography-letter-spacing);
+  font-size: var(--components-badges-badge-v1-typography-font-size);
+  font-weight: 500;
+  font-family: var(--components-badges-badge-v1-typography-font-family);
+}
+
+@each $prominence in $prominences {
+  .badge-prominence-#{$prominence} {
+    color: var(--components-badges-badge-v1-color-text-#{$prominence});
+
+    @each $palette in config.$odido-palette {
+      @if $prominence == outline {
+        &.badge-palette-#{$palette} {
+          border-color: var(--components-badges-badge-v1-color-border-outline-palette-#{$palette});
+          background-color: var(--components-badges-badge-v1-color-background-outline);
+          padding: calc(var(--components-badges-badge-v1-padding-vertical-default) - var(--components-badges-badge-v1-border-width-outline)) calc(var(--components-badges-badge-v1-padding-horizontal-default) - var(--components-badges-badge-v1-border-width-outline));
+          border-width: var(--components-badges-badge-v1-border-width-outline);
+        }
+      }
+    }
+
+    &.is-inactive {
+      color: var(--components-badges-badge-v1-color-text-inactive-#{$prominence});
+      border-color: var(--components-badges-badge-v1-color-border-inactive-#{$prominence});
+      background-color: var(--components-badges-badge-v1-color-background-inactive-#{$prominence});
+      padding: calc(var(--components-badges-badge-v1-padding-vertical-default) - var(--components-badges-badge-v1-border-width-outline))
+        calc(var(--components-badges-badge-v1-padding-horizontal-default) - var(--components-badges-badge-v1-border-width-outline));
+      border-width: var(--components-badges-badge-v1-border-width-outline);
+    }
+  }
+}
+
+@each $prominence in $prominences-border {
+  @each $palette in config.$odido-palette {
+    .badge-prominence-#{$prominence}.badge-palette-#{$palette} {
+        border-color: var(--components-badges-badge-v1-color-border-#{$prominence});
+        background-color: var(--components-badges-badge-v1-color-background-#{$prominence}-palette-#{$palette}, var(--components-badges-badge-v1-color-background-#{$prominence}));
+        border-width: var(--components-badges-badge-v1-border-width-#{$prominence});
+
+        &.is-inactive {
+          color: var(--components-badges-badge-v1-color-text-inactive-#{$prominence});
+          border-color: var(--components-badges-badge-v1-color-border-inactive-#{$prominence});
+          background-color: var(--components-badges-badge-v1-color-background-inactive-#{$prominence});
+          padding: calc(var(--components-badges-badge-v1-padding-vertical-default) - var(--components-badges-badge-v1-border-width-outline))
+            calc(var(--components-badges-badge-v1-padding-horizontal-default) - var(--components-badges-badge-v1-border-width-outline));
+          border-width: var(--components-badges-badge-v1-border-width-outline);
+        }
+    }
+  }
+}
+
+$black-text-palettes: 'yellow', 'pink', 'orange';
+
+@each $palette in $black-text-palettes {
+    .badge-prominence-default.badge-palette-#{$palette} {
+        color: var(--components-badges-badge-v1-color-text-default-palette-#{$palette}, var(--components-badges-badge-v1-color-text-default));
+    }
+}
+

@@ -1,0 +1,15 @@
+{
+  "ios": {
+    "workspace": "ios/OwlDemo.xcworkspace",
+    "scheme": "OwlDemo",
+    "configuration": "Release",
+    "device": "iPhone 13 Pro",
+    "quiet": true
+  },
+  "android": {
+    "packageName": "nl.odido.example.visualregressiontests",
+    "buildType": "release"
+  },
+  "debug": true,
+  "report": true
+}

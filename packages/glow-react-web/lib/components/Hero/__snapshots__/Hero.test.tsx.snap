@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="hero has-palette-default is-variant-default is-order-inverted"
+    data-testid="hero"
+  >
+    <div
+      class="hero-content"
+    >
+      <div
+        class="hero-content-copy"
+      >
+        <div
+          class="hero-content-copy-title"
+        >
+          <h3
+            class="heading heading-size-xl align-left"
+            data-testid="hero-heading-title"
+            lang="nl"
+          >
+            Title 
+            <span
+              class="hero-content-copy-title-highlight"
+            >
+              highlighted
+            </span>
+          </h3>
+          <h4
+            class="heading heading-size-lg align-left"
+            data-testid="hero-heading-subtitle"
+            lang="nl"
+          >
+            Subtitle 
+            <span
+              class="hero-content-copy-title-highlight"
+            >
+              highlighted
+            </span>
+          </h4>
+        </div>
+        <div
+          class="hero-content-copy-description"
+        >
+          <p
+            class="paragraph paragraph-size-default"
+            data-testid="hero-description"
+          >
+            Description
+          </p>
+        </div>
+        <div
+          class="hero-content-copy-cta"
+        >
+          <button
+            class="button button-size-default button-prominence-default"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              Button
+            </span>
+          </button>
+          <button
+            class="button button-size-default button-prominence-secondary"
+            data-testid="button"
+          >
+            <span
+              class="button-label"
+            >
+              Button
+            </span>
+          </button>
+        </div>
+        <div
+          class="hero-content-copy-footnote"
+        >
+          <p
+            class="paragraph paragraph-size-sm"
+            data-testid="hero-footnote"
+          >
+            Footnote
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hero-image"
+    >
+      <div
+        class="visual visual-ratio-default fill-height fill-width no-padding-all hero-image-visual"
+        data-testid="hero-image"
+      >
+        <div
+          class="background-image ratio-4-3"
+          data-testid="image"
+        >
+          <div
+            aria-label="Alt text"
+            class="image-position-center"
+            role="img"
+            style="background-image: url(test-file-stub); background-size: contain;"
+          />
+        </div>
+      </div>
+      <div
+        class="hero-image-sticker"
+      >
+        <div
+          class="large-sticker large-sticker-palette-default hero-sticker"
+          data-testid="large-sticker"
+        >
+          <h3
+            class="heading heading-size-xs align-left large-sticker-text"
+            data-testid="heading"
+            lang="nl"
+          >
+            Describe your promotion
+          </h3>
+          <div
+            class="price price"
+          >
+            <div>
+              <div
+                class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+                data-testid="before"
+              >
+                Vanaf
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="price-wrapper"
+            >
+              <div
+                class="price"
+              >
+                <div
+                  class="price-text lg currency large-sticker-price"
+                  data-testid="currency"
+                >
+                  €
+                </div>
+                <div
+                  class="price-value-wrapper"
+                >
+                  <div
+                    class="price-text lg large-sticker-price"
+                    data-testid="whole"
+                  >
+                    10
+                  </div>
+                  <div
+                    class="decimal-wrapper"
+                  >
+                    <div
+                      class="comma-text price-text lg comma-text-position large-sticker-price"
+                    >
+                      ,
+                    </div>
+                    <div
+                      class="price-text lg large-sticker-price"
+                      data-testid="decimals"
+                    >
+                      ⁰⁰
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="price-sr-only"
+            >
+              <span
+                data-value="true"
+              >
+                Voor: 10
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

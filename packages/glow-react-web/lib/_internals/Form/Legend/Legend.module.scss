@@ -1,0 +1,62 @@
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/overlay-tooltip-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(legend,
+  (input-color,
+    input-gap,
+    paragraph)) {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+@layer internal {
+  .legend-label {
+    font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+    font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+    font-style: normal;
+    font-weight: 500;
+    color: var(--components-input-color-text-default);
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+    line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  }
+}
+
+.info-container,
+.info-icon {
+  display: flex;
+  align-items: center;
+}
+
+.info-container {
+  column-gap: var(--components-input-gap-horizontal-default);
+}
+
+.optional-text {
+  color: var(--components-input-color-text-subtle);
+}
+
+.info-icon {
+  color: var(--components-input-color-icon-default);
+}
+
+.info-text {
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  font-weight: 400;
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+}
+
+.info-button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin: 0 var(--components-overlay-tooltip-v1-padding-white-space-bottom);
+}

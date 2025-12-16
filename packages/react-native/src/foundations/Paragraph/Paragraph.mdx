@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ParagraphStories from "./Paragraph.stories";
+
+<Meta of={ParagraphStories} />
+
+# Paragraph
+
+Making small font sizes smaller on small screens is not good for visually impaired users. That's why our paragraph styles don't scale or shrink on different screen sizes.
+
+<Canvas of={ParagraphStories.Basic} />
+<Controls of={ParagraphStories.Basic} />

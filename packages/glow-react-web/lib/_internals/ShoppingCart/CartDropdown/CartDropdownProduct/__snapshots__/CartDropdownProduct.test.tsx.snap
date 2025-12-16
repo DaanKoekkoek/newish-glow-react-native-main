@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartDropdownProduct /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="cart-dropdown-product"
+  >
+    <div
+      class="background-image image ratio-16-9"
+      data-testid="image"
+    >
+      <div
+        aria-label="Product"
+        class="image-position-center"
+        role="img"
+        style="background-image: url(https://assets.odido.nl/305x450/671d6313b9/dvi-back-front_apple_iphone_15promax_kleur2_305x450_v1.webp); background-size: contain;"
+      />
+    </div>
+    <div
+      class="text-container"
+      tabindex="0"
+    >
+      <strong
+        class="strong strong-size-sm title"
+        data-testid="strong"
+      >
+        Product Title
+      </strong>
+      <div
+        class="description"
+      >
+        <span
+          class="paragraph paragraph-size-sm"
+          data-testid="paragraph"
+        >
+          Description
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

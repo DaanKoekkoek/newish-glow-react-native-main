@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PromotionalCard /> Snapshot Tests renders Black Friday variant correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="promotional-card promotional-content-countdown promotional-variant-black-friday content-countdown-default"
+    data-testid="promotional-card"
+  >
+    <div
+      class="text-container"
+    >
+      <h3
+        class="heading heading-size-md align-left heading-black-friday"
+        data-testid="heading"
+        lang="nl"
+      >
+        Black Friday Deals
+      </h3>
+      <p
+        class="paragraph paragraph-size-default description-black-friday"
+        data-testid="paragraph"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a
+        class="text-link size-sm text-and-icon columnGap promotional-text-link text-link-black-friday"
+        data-testid="text-link"
+        href="#"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+        >
+          Meer over onze Black Friday Deals
+        </span>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline icon"
+          data-icon="arrow-right"
+          data-testid="icon"
+        >
+          
+        </span>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<PromotionalCard /> Snapshot Tests renders basic variant correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="promotional-card promotional-content-default promotional-variant-default content-default-default"
+    data-testid="promotional-card"
+  >
+    <div
+      class="text-container"
+    >
+      <h3
+        class="heading heading-size-md align-left heading-default"
+        data-testid="heading"
+        lang="nl"
+      >
+        Promotion
+      </h3>
+      <p
+        class="paragraph paragraph-size-default description-default"
+        data-testid="paragraph"
+      >
+        Description
+      </p>
+      <a
+        class="text-link size-sm text-and-icon columnGap promotional-text-link text-link-default"
+        data-testid="text-link"
+        href="#"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+        >
+          Text link
+        </span>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline icon"
+          data-icon="add"
+          data-testid="icon"
+        >
+          
+        </span>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<PromotionalCard /> Snapshot Tests renders content options variant correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="promotional-card promotional-content-image promotional-variant-emphasised content-image-green palette-green"
+    data-testid="promotional-card"
+  >
+    <div
+      class="text-container"
+    >
+      <h3
+        class="heading heading-size-md align-left heading-emphasised"
+        data-testid="heading"
+        lang="nl"
+      >
+        Promotion
+      </h3>
+      <p
+        class="paragraph paragraph-size-default description-emphasised"
+        data-testid="paragraph"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a
+        class="text-link size-sm text-and-icon columnGap promotional-text-link text-link-emphasised"
+        data-testid="text-link"
+        href="#"
+      >
+        <span
+          class="base-text base-paragraph text-link-text"
+          lang="nl"
+        >
+          Text link
+        </span>
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline icon"
+          data-icon="add"
+          data-testid="icon"
+        >
+          
+        </span>
+      </a>
+    </div>
+    <div
+      class="image-container"
+    >
+      <div
+        class="background-image ratio-1-1"
+        data-testid="image"
+      >
+        <div
+          aria-label="Image"
+          class="image-position-center"
+          role="img"
+          style="background-image: url(https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP); background-size: cover;"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

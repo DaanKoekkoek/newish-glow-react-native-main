@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Content
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Button /> should match the default snapshot when no props are passed 1`] = `
+<DocumentFragment>
+  <button
+    class="button button-size-default button-prominence-default"
+    data-testid="button"
+  >
+    <span
+      class="button-label"
+    >
+      Default Button
+    </span>
+  </button>
+</DocumentFragment>
+`;

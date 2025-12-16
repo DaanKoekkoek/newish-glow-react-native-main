@@ -1,0 +1,21 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefaultListStories from "./DefaultList.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DefaultListStories} />
+
+# DefaultList
+
+### Token version: {getComponentVersion("default-list.v1")}
+
+The `<DefaultList />` has a required property called `items`, which
+accepts an array of objects with a `text` for the list item content and an optional `icon` for the list item prefix. If the variant prop is set to `icon` or `iconColored`, and there is no icon provided in `items` props, the default icon will be `checkmark`.
+
+Items text can be purely a `String`, or `ReactNode`, which means you can include `<TextLink/>`s in the text.
+
+**Beware**, in the case you need to show a disabled List (passing a `disabled` prop), you are also responsible
+for keeping a consistent state in the TextLinks (or other component) that you are passing along in the text.
+
+<Canvas of={DefaultListStories.Basic} />
+<Controls of={DefaultListStories.Basic} />

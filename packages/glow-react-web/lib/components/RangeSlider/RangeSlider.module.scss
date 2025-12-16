@@ -1,0 +1,122 @@
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/input-slider-v1";
+@use "@odido-portals/glow-tokens/input-range-slider-v1";
+@use "@odido-portals/glow-tokens/overlay-tooltip-v1";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    range-slider,
+    (input-gap, input-color, input-slider-v1, input-range-slider-v1, overlay-tooltip-v1)
+) {}
+
+.range-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--components-input-slider-v1-gap-vertical-default);
+}
+
+.range-slider-tooltip-and-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--components-input-gap-vertical-lg);
+  flex: 1;
+}
+
+.range-slider-tooltip {
+    position: relative;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    max-width: var(--components-input-range-slider-v1-size-max-width);
+    min-width: min(var(--components-input-range-slider-v1-size-min-width), 40vw);
+    background-color: var(--components-overlay-tooltip-v1-color-background-default);
+    color: var(--components-overlay-tooltip-v1-color-text-default);
+    border-radius: var(--components-overlay-tooltip-v1-radius-default);
+    transition: border-radius 250ms ease-in-out;
+    padding: var(--components-overlay-tooltip-v1-padding-vertical) var(--components-overlay-tooltip-v1-padding-horizontal);
+    
+    [data-theme^="odido-"] &,
+    [data-theme="sim-wallet"] &  {
+        margin-left: var(--components-input-range-slider-v1-tooltip-padding-default);
+        
+        @include mixins.above("laptop") {
+            margin-inline: auto;
+        }
+    }
+
+
+    .is-near-max & {
+        border-bottom-right-radius: var(--components-overlay-tooltip-v1-radius-none);
+    }
+
+    .is-near-min & {
+        border-bottom-left-radius: var(--components-overlay-tooltip-v1-radius-none);
+    }
+}
+
+.range-slider-tooltip-content {
+    display: flex;
+    gap: var(--components-overlay-tooltip-v1-gap-horizontal-default);
+    justify-content: center;
+}
+
+.range-slider-tooltip-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.range-slider-tooltip-divider {
+    margin-block: auto;
+    height: 100%;
+    border-left: var(--components-overlay-tooltip-v1-size-divider-width-default) solid var(--components-overlay-tooltip-v1-color-divider-default);
+}
+
+.range-slider-tooltip-shape-container {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    fill: var(--components-overlay-tooltip-v1-color-background-default);
+    z-index: 0;
+
+    @include mixins.above("laptop") {
+        padding-inline: var(--components-input-range-slider-v1-tooltip-padding-default);
+    }
+}
+
+.range-slider-tooltip-shape {
+    transform: rotate(180deg);
+}
+
+.range-slider-container {
+    margin-top: auto;
+    flex: 1;
+    width: 100%;
+    
+    .has-buttons & {
+        gap: var(--components-input-gap-horizontal-default);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.range-slider-slide {
+    flex: 1;
+}
+
+.range-slider-button {
+    margin-top: auto;
+}
+
+.range-slider-range {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--components-input-color-text-subtle);
+
+    > span {
+        display: flex;
+        gap: 0.5ch;
+    }
+}

@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as GlowIconStories from "./GlowIcon.stories";
+
+<Meta of={GlowIconStories} />
+
+# GlowIcon component
+
+Glow Icon component is composed with svgs which are provided by another package `@odido-portals/glow-icon`. Odido will also apply a `GlowGradient` background. Other brands will apply a semantic text color by default.
+
+<Canvas of={GlowIconStories.Basic} />
+<Controls of={GlowIconStories.Basic} />

@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentedTab Component renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="tab-count-3"
+  >
+    <div
+      class="segmented-tab segmented-tab-variant-default-palette-default"
+    >
+      <div
+        class="tab-background-container"
+      >
+        <div
+          class="tab-background-sliding tab-palette-default tab-variant-default"
+          style="--active-tab: 0;"
+        />
+      </div>
+      <div
+        class="tab-container"
+      >
+        <button
+          class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            <div
+              aria-label="Homehome"
+              aria-selected="true"
+              class="tab"
+              data-testid="Home"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline tab-color-default bg-color"
+                data-icon="home"
+                data-testid="icon"
+              >
+                
+              </span>
+              <strong
+                class="strong strong-size-xs tab-color-default bg-color"
+                data-testid="strong"
+              >
+                Home
+              </strong>
+            </div>
+          </span>
+        </button>
+        <button
+          class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            <div
+              aria-label="Profileprofile"
+              aria-selected="false"
+              class="tab"
+              data-testid="Profile"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline tab-color-default bg-color"
+                data-icon="profile"
+                data-testid="icon"
+              >
+                
+              </span>
+              <strong
+                class="strong strong-size-xs tab-color-default bg-color"
+                data-testid="strong"
+              >
+                Profile
+              </strong>
+            </div>
+          </span>
+        </button>
+        <button
+          class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            <div
+              aria-label="Settingssettings"
+              aria-selected="false"
+              class="tab"
+              data-testid="Settings"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline tab-color-default bg-color"
+                data-icon="settings"
+                data-testid="icon"
+              >
+                
+              </span>
+              <strong
+                class="strong strong-size-xs tab-color-default bg-color"
+                data-testid="strong"
+              >
+                Settings
+              </strong>
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="tab-count-3"
+  >
+    <div
+      class="panel WITH_ICON-0 panel-show"
+      data-testid="segmented-tab-panel-child"
+      data-unique-id="WITH_ICON"
+    >
+      Welcome to the Home tab!
+    </div>
+    <div
+      class="panel WITH_ICON-1 panel-hide"
+      data-testid="segmented-tab-panel-child"
+      data-unique-id="WITH_ICON"
+    >
+      Welcome to the Profile tab!
+    </div>
+    <div
+      class="panel WITH_ICON-2 panel-hide"
+      data-testid="segmented-tab-panel-child"
+      data-unique-id="WITH_ICON"
+    >
+      Welcome to the Settings tab!
+    </div>
+  </div>
+</DocumentFragment>
+`;

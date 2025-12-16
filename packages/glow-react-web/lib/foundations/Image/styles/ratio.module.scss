@@ -1,0 +1,16 @@
+@use "@globals/mixins";
+@use "@globals/config";
+
+@each $ratio, $value in config.$aspect-ratios {
+  .ratio-#{$ratio} {
+    aspect-ratio: #{$value};
+  }
+
+  @each $breakpoint, $width in config.$global-min-width {
+    @include mixins.above($breakpoint) {
+      .ratio-#{$ratio}-#{$breakpoint} {
+        aspect-ratio: #{$value};
+      }
+    }
+  }
+}

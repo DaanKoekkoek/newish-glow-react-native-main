@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pin /> renders correctly a 4 length Pin component 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "column",
+      "gap": 8,
+    }
+  }
+  testID="pincode"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 4,
+        "justifyContent": "space-between",
+        "minWidth": 300,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-0_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-1_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-2_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-3_number-field"
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`<Pin /> renders correctly a 5 length Pin component 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "column",
+      "gap": 8,
+    }
+  }
+  testID="pincode"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 4,
+        "justifyContent": "space-between",
+        "minWidth": 300,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-0_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-1_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-2_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-3_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-4_number-field"
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`<Pin /> renders correctly a 6 length Pin component 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "column",
+      "gap": 8,
+    }
+  }
+  testID="pincode"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 4,
+        "justifyContent": "space-between",
+        "minWidth": 300,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-0_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-1_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-2_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-3_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-4_number-field"
+      value=""
+    />
+    <TextInput
+      allowFontScaling={true}
+      aria-disabled={false}
+      editable={true}
+      inputMode="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyPress={[Function]}
+      onPointerEnter={[Function]}
+      onPointerLeave={[Function]}
+      secureTextEntry={false}
+      selectTextOnFocus={true}
+      style={
+        {
+          "borderColor": "#dddddd",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "color": "#000000",
+          "flex": 1,
+          "fontFamily": "odido_Paragraph_Regular",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "minWidth": 61.333333333333336,
+          "paddingHorizontal": 14,
+          "paddingVertical": 10,
+          "textAlign": "center",
+          "width": "100%",
+        }
+      }
+      testID="pincode-5_number-field"
+      value=""
+    />
+  </View>
+</View>
+`;

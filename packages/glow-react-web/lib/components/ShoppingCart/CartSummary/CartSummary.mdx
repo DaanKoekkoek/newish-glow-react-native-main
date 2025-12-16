@@ -1,0 +1,27 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartSummary from "./CartSummary.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartSummary} />
+
+# CartSummary
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartSummary>` atom is used to present a summarized view of cart-related information. It renders multiple `<CartSummaryRow>` components, each representing a specific line item or category total.
+
+Rows can be toggled open or closed using a text link, allowing users to view or hide additional cart details.
+
+---
+
+## CartSummaryRow
+
+The `<CartSummaryRow>` component is a subcomponent used within `<CartSummary>`. It displays a title, optional before-price (e.g., strikethrough), current price, and a collapsible area for additional details.
+
+---
+
+### Basic Example
+
+<Canvas of={CartSummary.Basic} />
+<Controls of={CartSummary.Basic} />

@@ -1,0 +1,26 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PayStories from "./Pay.stories";
+
+<Meta of={PayStories} />
+
+# Payments Logos
+
+The `Pay` component is used to display various payment method logos in a consistent and visually appealing manner.
+
+## Purpose
+
+The `Pay` component creates a standardized way to present payment method logos across the application, ensuring that they are displayed correctly and uniformly.
+
+## Usage
+
+The `Pay` component can be used in any part of the application where payment method logos need to be displayed.
+It could supports multiple payment methods. Currently we have `iDEAL` & `iDIN`.
+
+### iDEAL
+
+<Canvas of={PayStories.Ideal} />
+<Controls of={PayStories.Ideal} />
+
+### iDIN
+
+<Canvas of={PayStories.Idin} />

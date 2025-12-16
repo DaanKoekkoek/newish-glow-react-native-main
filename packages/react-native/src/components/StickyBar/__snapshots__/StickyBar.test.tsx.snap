@@ -1,0 +1,826 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StickyBar /> renders correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <Section
+              variant="subtle"
+            >
+              <Grid>
+                <Grid.Column>
+                  <Paragraph>
+                    Grid paragraph
+                  </Paragraph>
+                  <StickyBar
+                    button={
+                      {
+                        "onPress": [Function],
+                        "text": "Button",
+                      }
+                    }
+                    layout="default"
+                    modal={
+                      {
+                        "children": <Stack
+                          gap={0}
+                        >
+                          <Stack
+                            direction="row"
+                            gap={0}
+                          >
+                            <View
+                              style={
+                                {
+                                  "flexGrow": 1,
+                                }
+                              }
+                            >
+                              <Paragraph>
+                                Maandelijks
+                              </Paragraph>
+                            </View>
+                            <View>
+                              <Paragraph>
+                                € 32,00
+                              </Paragraph>
+                            </View>
+                          </Stack>
+                          <Stack
+                            direction="row"
+                            gap={0}
+                          >
+                            <View
+                              style={
+                                {
+                                  "flexGrow": 1,
+                                }
+                              }
+                            >
+                              <Paragraph
+                                style={
+                                  {
+                                    "color": "gray",
+                                  }
+                                }
+                              >
+                                Extra's
+                              </Paragraph>
+                            </View>
+                            <View>
+                              <Paragraph
+                                style={
+                                  {
+                                    "color": "gray",
+                                  }
+                                }
+                              >
+                                € 1,00
+                              </Paragraph>
+                            </View>
+                          </Stack>
+                          <Stack
+                            direction="row"
+                            gap={0}
+                          >
+                            <View
+                              style={
+                                {
+                                  "flexGrow": 1,
+                                }
+                              }
+                            >
+                              <Paragraph
+                                style={
+                                  {
+                                    "color": "gray",
+                                  }
+                                }
+                              >
+                                Eenmalig
+                              </Paragraph>
+                            </View>
+                            <View>
+                              <Paragraph
+                                style={
+                                  {
+                                    "color": "gray",
+                                  }
+                                }
+                              >
+                                € 10,00
+                              </Paragraph>
+                            </View>
+                          </Stack>
+                        </Stack>,
+                        "title": "Cart title",
+                      }
+                    }
+                    position="bottom"
+                    width="default"
+                  >
+                    <Placeholder />
+                  </StickyBar>
+                </Grid.Column>
+              </Grid>
+            </Section>,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            [
+              {
+                "alignItems": "center",
+                "rowGap": 12,
+              },
+              {
+                "paddingHorizontal": 2,
+              },
+              {
+                "backgroundColor": "lightgray",
+                "paddingVertical": 16,
+              },
+            ]
+          }
+          testID="container"
+        >
+          <View
+            style={
+              [
+                {
+                  "flexGrow": 1,
+                  "rowGap": 12,
+                  "width": "100%",
+                },
+                {
+                  "maxWidth": undefined,
+                },
+                {
+                  "maxWidth": 355,
+                },
+                {
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                },
+                undefined,
+              ]
+            }
+            testID="grid"
+          >
+            <View
+              style={
+                [
+                  {
+                    "flexBasis": "auto",
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                  },
+                  {
+                    "paddingHorizontal": 6,
+                  },
+                  {
+                    "flexBasis": "100%",
+                    "maxWidth": "100%",
+                  },
+                  undefined,
+                ]
+              }
+              testID="column"
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "odido_Paragraph_Regular",
+                    },
+                    {
+                      "color": "#000000",
+                      "fontSize": 18,
+                      "letterSpacing": 0.27000001072883606,
+                      "lineHeight": 28,
+                      "textAlign": "left",
+                    },
+                    undefined,
+                  ]
+                }
+                testID="paragraph"
+              >
+                Header
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ecf2ff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <Text
+                      allowFontScaling={true}
+                      style={
+                        [
+                          {
+                            "fontFamily": "odido_Paragraph_Regular",
+                          },
+                          {
+                            "color": "#000000",
+                            "fontSize": 18,
+                            "letterSpacing": 0.27000001072883606,
+                            "lineHeight": 28,
+                            "textAlign": "left",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="paragraph"
+                    >
+                      Grid paragraph
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#ffffff",
+          "display": "flex",
+          "elevation": 2,
+          "left": 0,
+          "maxWidth": 750,
+          "position": "relative",
+          "right": 0,
+          "width": "100%",
+        },
+        {},
+        undefined,
+      ]
+    }
+    testID="sticky-bar-root"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {},
+        }
+      }
+      style={
+        {
+          "maxWidth": "100%",
+          "shadowColor": "#00000029",
+          "shadowOffset": {
+            "height": -4,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": "auto",
+              "maxWidth": "100%",
+              "paddingBottom": 16,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingVertical": 16,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": "100%",
+              },
+              {
+                "display": "flex",
+                "maxWidth": 343,
+              },
+              {
+                "columnGap": 8,
+                "rowGap": 16,
+              },
+            ]
+          }
+          testID="stickybar-content-layout"
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexBasis": 0,
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "justifyContent": "center",
+                  "overflow": "hidden",
+                  "width": "auto",
+                },
+                {
+                  "columnGap": 8,
+                  "rowGap": 16,
+                },
+              ]
+            }
+            testID="stickybar-content-wrapper"
+          >
+            <View
+              style={
+                {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "maxWidth": "100%",
+                }
+              }
+              testID="stickybar-children"
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "stretch",
+                    "borderColor": "black",
+                    "borderStyle": "dashed",
+                    "borderWidth": 2,
+                    "display": "flex",
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "justifyContent": "center",
+                    "padding": 16,
+                    "width": "100%",
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={true}
+                  style={
+                    [
+                      {
+                        "fontFamily": "odido_Paragraph_Regular",
+                      },
+                      {
+                        "color": "#000000",
+                        "fontSize": 18,
+                        "letterSpacing": 0.27000001072883606,
+                        "lineHeight": 28,
+                        "textAlign": "left",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="paragraph"
+                >
+                  Replace me
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                }
+              }
+              testID="stickybar-modal-wrapper"
+            >
+              <View>
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": false,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  baseStyle={
+                    [
+                      {
+                        "alignSelf": "center",
+                        "color": "#ffffff",
+                        "justifyContent": "center",
+                      },
+                      {
+                        "paddingHorizontal": 12,
+                        "paddingVertical": 12,
+                      },
+                      undefined,
+                    ]
+                  }
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  role="button"
+                  style={
+                    [
+                      {
+                        "alignSelf": "flex-start",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="button"
+                >
+                  <View
+                    collapsable={false}
+                    jestAnimatedStyle={
+                      {
+                        "value": {
+                          "backgroundColor": "rgba(255, 255, 255, 1)",
+                          "borderColor": "rgba(0, 0, 0, 0)",
+                        },
+                      }
+                    }
+                    style={
+                      {
+                        "alignItems": "center",
+                        "alignSelf": "center",
+                        "backgroundColor": "rgba(255, 255, 255, 1)",
+                        "borderColor": "rgba(0, 0, 0, 0)",
+                        "borderRadius": 100,
+                        "borderStyle": "solid",
+                        "borderWidth": 0,
+                        "color": "#ffffff",
+                        "flexDirection": "row",
+                        "gap": 12,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 12,
+                        "paddingVertical": 12,
+                      }
+                    }
+                    testID="button-visual"
+                  >
+                    <View
+                      onLayout={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "gap": 12,
+                          "justifyContent": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        collapsable={false}
+                        jestAnimatedStyle={
+                          {
+                            "value": {
+                              "color": "rgba(0, 0, 0, 1)",
+                            },
+                          }
+                        }
+                        style={
+                          {
+                            "color": "rgba(0, 0, 0, 1)",
+                          }
+                        }
+                      >
+                        <Text
+                          allowFontScaling={true}
+                          style={
+                            [
+                              {
+                                "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                "fontSize": 24,
+                                "lineHeight": 24,
+                                "width": 24,
+                              },
+                              {
+                                "color": "#ffffff",
+                              },
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "alignSelf": "center",
+                "flexGrow": 0,
+              }
+            }
+            testID="stickybar-button-wrapper"
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": false,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              baseStyle={{}}
+              collapsable={false}
+              focusable={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              pressableStyle={{}}
+              role="button"
+              style={
+                [
+                  {
+                    "alignSelf": "flex-start",
+                  },
+                  {},
+                ]
+              }
+              testID="button"
+            >
+              <View
+                collapsable={false}
+                jestAnimatedStyle={
+                  {
+                    "value": {
+                      "backgroundColor": "rgba(27, 94, 228, 1)",
+                      "borderColor": "rgba(0, 0, 0, 0)",
+                    },
+                  }
+                }
+                style={
+                  {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "rgba(27, 94, 228, 1)",
+                    "borderColor": "rgba(0, 0, 0, 0)",
+                    "borderRadius": 100,
+                    "borderStyle": "solid",
+                    "borderWidth": 0,
+                    "flexDirection": "row",
+                    "gap": 12,
+                    "justifyContent": "center",
+                    "paddingHorizontal": 24,
+                    "paddingVertical": 12,
+                  }
+                }
+                testID="button-visual"
+              >
+                <View
+                  onLayout={[Function]}
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "gap": 12,
+                      "justifyContent": "center",
+                    }
+                  }
+                >
+                  <Text>
+                    <Text
+                      collapsable={false}
+                      jestAnimatedStyle={
+                        {
+                          "value": {
+                            "color": "rgba(255, 255, 255, 1)",
+                          },
+                        }
+                      }
+                      style={
+                        {
+                          "color": "rgba(255, 255, 255, 1)",
+                        }
+                      }
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "Icons_Outline_DEFAULT_odido",
+                              "fontSize": 24,
+                              "lineHeight": 24,
+                              "width": 24,
+                            },
+                            [
+                              {
+                                "display": "flex",
+                              },
+                              false,
+                            ],
+                          ]
+                        }
+                        testID="base-button-icon"
+                      >
+                        
+                      </Text>
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

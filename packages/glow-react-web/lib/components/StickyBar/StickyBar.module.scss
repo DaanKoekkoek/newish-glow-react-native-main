@@ -1,0 +1,146 @@
+@use "@odido-portals/glow-tokens/overlay-sticky-bar-v1";
+@use "@odido-portals/glow-tokens/overlay-sticky";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    sticky-bar,
+    (overlay-sticky-bar-v1, overlay-sticky)
+) {}
+
+.sticky-bar {
+    background-color: var(--components-overlay-sticky-bar-v1-color-background);
+    left: 0;
+    padding-block: var(--components-overlay-sticky-bar-v1-padding-vertical);
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.sticky-bar-hide-bottom {
+  transform: translateY(100%);
+}
+
+.sticky-bar-hide-top {
+  transform: translateY(-100%);
+}
+
+.sticky-bar-position-top {
+    box-shadow: 0 -4px 12px 0 rgb(0 0 0 / 4%), 0 0 2px 0 rgb(0 0 0 / 12%);
+    top: 0;
+}
+
+.sticky-bar-position-bottom {
+    bottom: 0;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 4%), 0 0 2px 0 rgb(0 0 0 / 12%);
+}
+
+.sticky-bar-width-default {
+    max-width: var(--components-overlay-sticky-bar-v1-size-max-width-default);
+}
+
+.sticky-bar-width-narrow {
+    max-width: var(--components-overlay-sticky-bar-v1-size-max-width-narrow);
+}
+
+.sticky-bar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    > button {
+        @include mixins.below("mobile") {
+            width: 100%;
+        }
+    }
+
+    &.sticky-bar-buttons-only {
+        justify-content: flex-end;
+        width: 100%;
+
+        > button {
+            width: 100%;
+            flex-grow: 1;
+            
+            @include mixins.above("tablet") {
+                max-width: var(--components-overlay-sticky-bar-v1-size-button-max-width);
+            }
+        }
+
+        > button:first-of-type {
+            order: 1;
+            
+            @include mixins.above("tablet") {
+                order: 2;
+            }
+        }
+
+        > button:last-of-type {
+            order: 2;
+            
+            @include mixins.above("tablet") {
+                order: 1;
+            }
+        }
+    }
+}
+
+.sticky-bar-column {
+    align-items: center;
+    display: flex;
+    column-gap: var(--components-overlay-sticky-bar-v1-gap-horizontal);
+    justify-content: space-between;
+
+    &.sticky-bar-column-stacked {
+        flex-direction: column;
+        row-gap: var(--components-overlay-sticky-bar-v1-gap-vertical);
+    
+        .sticky-bar-buttons {
+            width: 100%;
+        }
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+        @include mixins.above($breakpoint) {
+            &.sticky-bar-column-stacked-#{$breakpoint} {
+                flex-direction: column;
+                row-gap: var(--components-overlay-sticky-bar-v1-gap-vertical);
+    
+                .sticky-bar-buttons {
+                    width: 100%;
+                }
+            }
+    
+            &.sticky-bar-column-default-#{$breakpoint} {
+                flex-direction: row;
+    
+                .sticky-bar-buttons {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+.sticky-bar-content {
+    align-items: center;
+    display: flex;
+    gap: var(--components-overlay-sticky-bar-v1-gap-vertical) var(--components-overlay-sticky-bar-v1-gap-horizontal);
+    justify-content: space-between;
+    width: 100%;
+
+    .sticky-bar-content-children {
+        width: 100%;
+        display: flex;
+
+        > *:first-of-type {
+            color: var(--components-overlay-sticky-bar-v1-color-text-monthly)
+        }
+        
+        > *:last-of-type {
+            color: var(--components-overlay-sticky-bar-v1-color-text-one-off);
+        }
+    }
+}

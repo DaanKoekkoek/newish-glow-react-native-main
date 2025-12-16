@@ -1,0 +1,15 @@
+@use "@odido-portals/glow-tokens/button-action-button-group-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  action-button-group,
+  button-action-button-group-v1
+) {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--components-button-action-button-group-v1-gap-horizontal);
+
+  > * {
+    flex: 1;
+  }
+}

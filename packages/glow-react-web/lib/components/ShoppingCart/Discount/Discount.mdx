@@ -1,0 +1,23 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Discount from "./Discount.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={Discount} />
+
+# Discount
+
+### Token version: {getComponentVersion("skip")}
+
+The `<Discount>` atom is used to display discount-related information in the Shopping Cart. It includes a title, the discounted price, and the associated currency. Optionally, it can also show additional context through the `moreInfo` prop.
+
+`<Discount>` components are grouped together via a `<DiscountGroup>` component. A `<DiscountGroup>` should consist of a maximum of 3 `<Discount>` components.
+
+This component is typically used within a `<LineItem>` atom to indicate a promotional price or savings on a product.
+
+---
+
+### Basic Example
+
+<Canvas of={Discount.Basic} />
+<Controls of={Discount.Basic} />

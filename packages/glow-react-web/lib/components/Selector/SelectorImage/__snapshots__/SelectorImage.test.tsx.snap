@@ -1,0 +1,1059 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compact ImageSelector renders a stable snapshot 1`] = `
+<div>
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12 grid-column-6-tablet"
+            data-testid="column"
+          >
+            <div
+              class="selector-container selector-container-palette-default selector-image token-input-checkbox-v1 token-input-gap token-paragraph token-assets-icons checkbox"
+            >
+              <input
+                class=""
+                data-testid="selector-image"
+                id=":r2:"
+                name="selector-image"
+                type="checkbox"
+              />
+              <label
+                data-testid="selector-image-label"
+                for=":r2:"
+              >
+                <div
+                  class="highlight is-compact selector-container-highlight"
+                  data-testid="highlight"
+                >
+                  <span
+                    class="heading heading-size-xs align-left highlight-heading selector-container-highlight-text"
+                    data-testid="heading"
+                    lang="nl"
+                  >
+                    Highlight
+                  </span>
+                </div>
+                <div
+                  class="selector-container-content has-highlight"
+                >
+                  <div
+                    class="selector-body is-highlighted"
+                    data-testid="image-selector"
+                  >
+                    <div
+                      class="selector-content-horizontal"
+                    >
+                      <div
+                        class="visual visual-ratio-default no-padding-all selector-image-visual"
+                        data-testid="selector-image"
+                      >
+                        <picture
+                          class="picture image-horizontal"
+                          data-testid="image-picture"
+                        >
+                          <img
+                            alt="Alt text"
+                            class="image image-position-center ratio-1-1"
+                            data-testid="image-img"
+                            loading="lazy"
+                            src="https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP"
+                            style="object-fit: cover;"
+                          />
+                        </picture>
+                      </div>
+                      <div
+                        class="selector-horizontal-labels"
+                      >
+                        <div
+                          class="selector-label-group"
+                        >
+                          <div
+                            class="selector-title-content"
+                          >
+                            <div
+                              class="badge-container horizontal"
+                            >
+                              <div
+                                class="badge badge-prominence-default badge-palette-default"
+                              >
+                                Badge
+                              </div>
+                            </div>
+                            <strong
+                              class="strong strong-size-default selector-title selector-title-palette-default"
+                              data-testid="strong"
+                            >
+                              <span>
+                                Title 
+                                <span
+                                  class="selector-image-highlighted-text"
+                                >
+                                  highlight
+                                </span>
+                              </span>
+                            </strong>
+                            <p
+                              class="paragraph paragraph-size-sm selector-promotion"
+                              data-testid="paragraph"
+                            >
+                              Promotion
+                            </p>
+                          </div>
+                          <p
+                            class="paragraph paragraph-size-sm selector-description"
+                            data-testid="paragraph"
+                          >
+                            Description
+                          </p>
+                          <div
+                            class="selector-list"
+                          >
+                            <ul
+                              class="default-list default-list-size-default"
+                              data-testid="default-list"
+                            >
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div
+                          class="selector-secondary-action"
+                        >
+                          <button
+                            class="text-link size-sm is-button text-and-icon columnGap"
+                            data-testid="text-link"
+                            type="button"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="icon icon-size-default outline icon"
+                              data-icon="add"
+                              data-testid="icon"
+                            >
+                              
+                            </span>
+                            <span
+                              class="base-text base-paragraph text-link-text"
+                              lang="nl"
+                            >
+                              Text link
+                            </span>
+                          </button>
+                        </div>
+                        <div
+                          class="price-content is-checkbox"
+                        >
+                          <div
+                            class="price"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="price-wrapper"
+                            >
+                              <div
+                                class="price"
+                              >
+                                <div
+                                  class="price-text default currency"
+                                  data-testid="currency"
+                                >
+                                  €
+                                </div>
+                                <div
+                                  class="price-value-wrapper"
+                                >
+                                  <div
+                                    class="price-text default"
+                                    data-testid="whole"
+                                  >
+                                    10
+                                  </div>
+                                  <div
+                                    class="decimal-wrapper"
+                                  >
+                                    <div
+                                      class="comma-text price-text default comma-text-position"
+                                    >
+                                      ,
+                                    </div>
+                                    <div
+                                      class="price-text default"
+                                      data-testid="decimals"
+                                    >
+                                      ⁴⁹
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="price-sr-only"
+                            >
+                              <span
+                                data-value="true"
+                              >
+                                Voor: 
+                                10,49
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div
+            class="column grid-column-12 grid-column-6-tablet"
+            data-testid="column"
+          >
+            <div
+              class="selector-container selector-container-palette-default selector-image token-input-checkbox-v1 token-input-gap token-paragraph token-assets-icons checkbox"
+            >
+              <input
+                class=""
+                data-testid="selector-image"
+                id=":r3:"
+                name="selector-image"
+                type="checkbox"
+              />
+              <label
+                data-testid="selector-image-label"
+                for=":r3:"
+              >
+                <div
+                  class="highlight is-compact selector-container-highlight"
+                  data-testid="highlight"
+                >
+                  <span
+                    class="heading heading-size-xs align-left highlight-heading selector-container-highlight-text"
+                    data-testid="heading"
+                    lang="nl"
+                  >
+                    Highlight
+                  </span>
+                </div>
+                <div
+                  class="selector-container-content has-highlight"
+                >
+                  <div
+                    class="selector-body is-highlighted"
+                    data-testid="image-selector"
+                  >
+                    <div
+                      class="selector-content-horizontal"
+                    >
+                      <div
+                        class="visual visual-ratio-default no-padding-all selector-image-visual"
+                        data-testid="selector-image"
+                      >
+                        <picture
+                          class="picture image-horizontal"
+                          data-testid="image-picture"
+                        >
+                          <img
+                            alt="Alt text"
+                            class="image image-position-center ratio-1-1"
+                            data-testid="image-img"
+                            loading="lazy"
+                            src="https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP"
+                            style="object-fit: cover;"
+                          />
+                        </picture>
+                      </div>
+                      <div
+                        class="selector-horizontal-labels"
+                      >
+                        <div
+                          class="selector-label-group"
+                        >
+                          <div
+                            class="selector-title-content"
+                          >
+                            <div
+                              class="badge-container horizontal"
+                            >
+                              <div
+                                class="badge badge-prominence-default badge-palette-default"
+                              >
+                                Badge
+                              </div>
+                            </div>
+                            <strong
+                              class="strong strong-size-default selector-title selector-title-palette-default"
+                              data-testid="strong"
+                            >
+                              <span>
+                                Title 
+                                <span
+                                  class="selector-image-highlighted-text"
+                                >
+                                  highlight
+                                </span>
+                              </span>
+                            </strong>
+                            <p
+                              class="paragraph paragraph-size-sm selector-promotion"
+                              data-testid="paragraph"
+                            >
+                              Promotion
+                            </p>
+                          </div>
+                          <p
+                            class="paragraph paragraph-size-sm selector-description"
+                            data-testid="paragraph"
+                          >
+                            Description
+                          </p>
+                          <div
+                            class="selector-list"
+                          >
+                            <ul
+                              class="default-list default-list-size-default"
+                              data-testid="default-list"
+                            >
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                              <li
+                                class="list-variant-iconColored"
+                                data-testid="default-list-list-item"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                  data-icon="checkmark"
+                                  data-testid="icon"
+                                >
+                                  
+                                </span>
+                                <p
+                                  class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                  data-testid="paragraph"
+                                >
+                                  List item
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div
+                          class="selector-secondary-action"
+                        >
+                          <button
+                            class="text-link size-sm is-button text-and-icon columnGap"
+                            data-testid="text-link"
+                            type="button"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="icon icon-size-default outline icon"
+                              data-icon="add"
+                              data-testid="icon"
+                            >
+                              
+                            </span>
+                            <span
+                              class="base-text base-paragraph text-link-text"
+                              lang="nl"
+                            >
+                              Text link
+                            </span>
+                          </button>
+                        </div>
+                        <div
+                          class="price-content is-checkbox"
+                        >
+                          <div
+                            class="price"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="price-wrapper"
+                            >
+                              <div
+                                class="price"
+                              >
+                                <div
+                                  class="price-text default currency"
+                                  data-testid="currency"
+                                >
+                                  €
+                                </div>
+                                <div
+                                  class="price-value-wrapper"
+                                >
+                                  <div
+                                    class="price-text default"
+                                    data-testid="whole"
+                                  >
+                                    10
+                                  </div>
+                                  <div
+                                    class="decimal-wrapper"
+                                  >
+                                    <div
+                                      class="comma-text price-text default comma-text-position"
+                                    >
+                                      ,
+                                    </div>
+                                    <div
+                                      class="price-text default"
+                                      data-testid="decimals"
+                                    >
+                                      ⁴⁹
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="price-sr-only"
+                            >
+                              <span
+                                data-value="true"
+                              >
+                                Voor: 
+                                10,49
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
+
+exports[`Vertical ImageSelector renders a stable snapshot 1`] = `
+<div>
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-default section-palette-default"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12 grid-column-6-tablet"
+            data-testid="column"
+          >
+            <div
+              class="selector-container selector-container-palette-default selector-image token-input-checkbox-v1 token-input-gap token-paragraph token-assets-icons checkbox"
+            >
+              <input
+                class=""
+                data-testid="selector-image"
+                id=":r0:"
+                name="selector-image"
+                type="checkbox"
+              />
+              <label
+                data-testid="selector-image-label"
+                for=":r0:"
+              >
+                <div
+                  class="highlight selector-container-highlight"
+                  data-testid="highlight"
+                >
+                  <span
+                    class="heading heading-size-sm align-left highlight-heading selector-container-highlight-text"
+                    data-testid="heading"
+                    lang="nl"
+                  >
+                    Highlight
+                  </span>
+                </div>
+                <div
+                  class="selector-container-content has-highlight"
+                >
+                  <div
+                    class="selector-body is-highlighted is-checkbox"
+                    data-testid="image-selector"
+                  >
+                    <div
+                      class="visual visual-ratio-default no-padding-all selector-image-visual is-highlighted"
+                      data-testid="selector-image"
+                    >
+                      <picture
+                        class="picture image"
+                        data-testid="image-picture"
+                      >
+                        <img
+                          alt="Alt text"
+                          class="image image-position-center ratio-16-9"
+                          data-testid="image-img"
+                          loading="lazy"
+                          src="https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP"
+                          style="object-fit: contain;"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="selector-content"
+                    >
+                      <div
+                        class="selector-label-group"
+                      >
+                        <div
+                          class="selector-title-content"
+                        >
+                          <strong
+                            class="strong strong-size-default selector-title selector-title-palette-default"
+                            data-testid="strong"
+                          >
+                            <span>
+                              Title 
+                              <span
+                                class="selector-image-highlighted-text"
+                              >
+                                highlight
+                              </span>
+                            </span>
+                          </strong>
+                          <p
+                            class="paragraph paragraph-size-sm selector-promotion"
+                            data-testid="paragraph"
+                          >
+                            Promotion
+                          </p>
+                        </div>
+                        <p
+                          class="paragraph paragraph-size-sm selector-description"
+                          data-testid="paragraph"
+                        >
+                          Description
+                        </p>
+                        <div
+                          class="selector-list"
+                        >
+                          <ul
+                            class="default-list default-list-size-default"
+                            data-testid="default-list"
+                          >
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="selector-secondary-action"
+                      >
+                        <button
+                          class="text-link size-sm is-button text-and-icon columnGap"
+                          data-testid="text-link"
+                          type="button"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="icon icon-size-default outline icon"
+                            data-icon="add"
+                            data-testid="icon"
+                          >
+                            
+                          </span>
+                          <span
+                            class="base-text base-paragraph text-link-text"
+                            lang="nl"
+                          >
+                            Text link
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="price-content is-checkbox"
+                      >
+                        <div
+                          class="price"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="price-wrapper"
+                          >
+                            <div
+                              class="price"
+                            >
+                              <div
+                                class="price-text default currency"
+                                data-testid="currency"
+                              >
+                                €
+                              </div>
+                              <div
+                                class="price-value-wrapper"
+                              >
+                                <div
+                                  class="price-text default"
+                                  data-testid="whole"
+                                >
+                                  10
+                                </div>
+                                <div
+                                  class="decimal-wrapper"
+                                >
+                                  <div
+                                    class="comma-text price-text default comma-text-position"
+                                  >
+                                    ,
+                                  </div>
+                                  <div
+                                    class="price-text default"
+                                    data-testid="decimals"
+                                  >
+                                    ⁴⁹
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="price-sr-only"
+                          >
+                            <span
+                              data-value="true"
+                            >
+                              Voor: 
+                              10,49
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div
+            class="column grid-column-12 grid-column-6-tablet"
+            data-testid="column"
+          >
+            <div
+              class="selector-container selector-container-palette-default selector-image token-input-checkbox-v1 token-input-gap token-paragraph token-assets-icons checkbox"
+            >
+              <input
+                class=""
+                data-testid="selector-image"
+                id=":r1:"
+                name="selector-image"
+                type="checkbox"
+              />
+              <label
+                data-testid="selector-image-label"
+                for=":r1:"
+              >
+                <div
+                  class="highlight selector-container-highlight"
+                  data-testid="highlight"
+                >
+                  <span
+                    class="heading heading-size-sm align-left highlight-heading selector-container-highlight-text"
+                    data-testid="heading"
+                    lang="nl"
+                  >
+                    Highlight
+                  </span>
+                </div>
+                <div
+                  class="selector-container-content has-highlight"
+                >
+                  <div
+                    class="selector-body is-highlighted is-checkbox"
+                    data-testid="image-selector"
+                  >
+                    <div
+                      class="visual visual-ratio-default no-padding-all selector-image-visual is-highlighted"
+                      data-testid="selector-image"
+                    >
+                      <picture
+                        class="picture image"
+                        data-testid="image-picture"
+                      >
+                        <img
+                          alt="Alt text"
+                          class="image image-position-center ratio-16-9"
+                          data-testid="image-img"
+                          loading="lazy"
+                          src="https://assets.odido.nl/1600x900/a2c094c8eb/mid-hero-stocksy_txpfcee7f02fc0400_originaldelivery_4220176.WebP"
+                          style="object-fit: contain;"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="selector-content"
+                    >
+                      <div
+                        class="selector-label-group"
+                      >
+                        <div
+                          class="selector-title-content"
+                        >
+                          <strong
+                            class="strong strong-size-default selector-title selector-title-palette-default"
+                            data-testid="strong"
+                          >
+                            <span>
+                              Title 
+                              <span
+                                class="selector-image-highlighted-text"
+                              >
+                                highlight
+                              </span>
+                            </span>
+                          </strong>
+                          <p
+                            class="paragraph paragraph-size-sm selector-promotion"
+                            data-testid="paragraph"
+                          >
+                            Promotion
+                          </p>
+                        </div>
+                        <p
+                          class="paragraph paragraph-size-sm selector-description"
+                          data-testid="paragraph"
+                        >
+                          Description
+                        </p>
+                        <div
+                          class="selector-list"
+                        >
+                          <ul
+                            class="default-list default-list-size-default"
+                            data-testid="default-list"
+                          >
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                            <li
+                              class="list-variant-iconColored"
+                              data-testid="default-list-list-item"
+                            >
+                              <span
+                                aria-hidden="true"
+                                class="icon icon-size-default outline default-list-icon-root default-list-icon default-list-icon-palette-default"
+                                data-icon="checkmark"
+                                data-testid="icon"
+                              >
+                                
+                              </span>
+                              <p
+                                class="paragraph paragraph-size-default default-list-text-root default-list-text"
+                                data-testid="paragraph"
+                              >
+                                List item
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="selector-secondary-action"
+                      >
+                        <button
+                          class="text-link size-sm is-button text-and-icon columnGap"
+                          data-testid="text-link"
+                          type="button"
+                        >
+                          <span
+                            aria-hidden="true"
+                            class="icon icon-size-default outline icon"
+                            data-icon="add"
+                            data-testid="icon"
+                          >
+                            
+                          </span>
+                          <span
+                            class="base-text base-paragraph text-link-text"
+                            lang="nl"
+                          >
+                            Text link
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="price-content is-checkbox"
+                      >
+                        <div
+                          class="price"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="price-wrapper"
+                          >
+                            <div
+                              class="price"
+                            >
+                              <div
+                                class="price-text default currency"
+                                data-testid="currency"
+                              >
+                                €
+                              </div>
+                              <div
+                                class="price-value-wrapper"
+                              >
+                                <div
+                                  class="price-text default"
+                                  data-testid="whole"
+                                >
+                                  10
+                                </div>
+                                <div
+                                  class="decimal-wrapper"
+                                >
+                                  <div
+                                    class="comma-text price-text default comma-text-position"
+                                  >
+                                    ,
+                                  </div>
+                                  <div
+                                    class="price-text default"
+                                    data-testid="decimals"
+                                  >
+                                    ⁴⁹
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="price-sr-only"
+                          >
+                            <span
+                              data-value="true"
+                            >
+                              Voor: 
+                              10,49
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;

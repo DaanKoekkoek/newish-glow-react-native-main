@@ -1,0 +1,22 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BreadcrumbsStories from "./Breadcrumbs.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BreadcrumbsStories} />
+
+# Breadcrumbs
+
+### Token version: {getComponentVersion("breadcrumbs.v1")}
+
+The `Breadcrumbs` component is a visual indicator of path that user is navigating through.
+On mobile if there is more than 2 paths, Breadcrumb is collapsed with 3 dots - it can be expanded to show whole path of Breadcrumbs.
+
+### Default
+
+<Canvas of={BreadcrumbsStories.Default} />
+<Controls of={BreadcrumbsStories.Default} />
+
+### Examples
+
+<Canvas of={BreadcrumbsStories.WithOnClick} />

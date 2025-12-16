@@ -1,0 +1,139 @@
+@use "@odido-portals/glow-tokens/widget-atoms-bundle";
+@use "@odido-portals/glow-tokens/widget-bundle";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  bundle-widget,
+  (widget-atoms-bundle, widget-bundle)
+) {
+  --used-scale: initial;
+
+  display: flex;
+  column-gap: var(--components-widget-bundle-widget-gap-horizontal-default);
+  min-width: var(--components-widget-bundle-widget-size-min-width);
+  max-width: var(--components-widget-bundle-widget-size-max-width);
+  
+  @each $palette in config.$odido-palette {
+    &.bundle-widget-palette-#{$palette} {
+      --widget-background-color: var(--components-widget-atoms-bundle-widget-color-graph-background-default-palette-#{$palette}, var(--components-widget-atoms-bundle-widget-color-graph-background-default));
+      --widget-graph-color: var(--components-widget-atoms-bundle-widget-color-graph-progress-default-palette-#{$palette}, var(--components-widget-atoms-bundle-widget-color-graph-progress-default));
+    }
+  }
+  
+  &.is-below-10-percent {
+    --widget-background-color: var(--components-widget-atoms-bundle-widget-color-graph-background-default-palette-red, var(--components-widget-atoms-bundle-widget-color-graph-background-default));
+    --widget-graph-color: var(--components-widget-atoms-bundle-widget-color-graph-progress-alert);
+  }
+}
+
+.bundle-widget,
+.bundle-widget-graph {
+  width: 100%;
+}
+  
+.bundle-widget-bar {
+  position: relative;
+  display: flex;
+  padding: var(--components-widget-bundle-widget-padding-vertical) var(--components-widget-bundle-widget-padding-horizontal);
+  border-radius: var(--components-widget-bundle-widget-radius-default);
+  overflow: hidden;
+  background-color: var(--widget-background-color);
+}
+  
+.bundle-widget-fill {
+  position: absolute;
+  inset: 0;
+  background-color: var(--widget-graph-color);
+  transform-origin: left center;
+  transform: scaleX(var(--used-scale));
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+  
+.bundle-widget-content-left {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  column-gap: var(--components-widget-bundle-widget-gap-horizontal-xs);
+
+  .bundle-widget-unit {
+    color: var(--components-widget-atoms-bundle-widget-color-text-default);
+    font-feature-settings: 'dlig' on;
+    font-family: var(--components-widget-atoms-bundle-widget-typography-font-family);
+    font-size: var(--components-widget-atoms-bundle-widget-typography-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--components-widget-atoms-bundle-widget-typography-line-height);
+    font-variant: small-caps;
+    letter-spacing: var(--components-widget-atoms-bundle-widget-typography-letter-spacing);
+    padding-bottom: var(--components-widget-bundle-widget-padding-bottom);
+  }
+}
+
+.bundle-widget-remaining-value {
+  color: var(--components-widget-bundle-widget-color-text-default);
+}
+  
+.bundle-widget-content-right {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  padding-left: var(--components-widget-bundle-widget-gap-horizontal-default);
+
+  .bundle-widget-content-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: var(--components-widget-bundle-widget-gap-horizontal-sm);
+    color: var(	--components-widget-bundle-widget-color-text-default);
+    font-family: var(--components-widget-bundle-widget-typography-font-family-title);
+    font-size: var(--components-widget-bundle-widget-typography-font-size-title);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--components-widget-bundle-widget-typography-line-height-title);
+    letter-spacing: var(--components-widget-bundle-widget-typography-letter-spacing-title);
+  }
+
+  .bundle-widget-content-total {
+    color: var(--components-widget-bundle-widget-color-text-default);
+    text-align: right;
+    font-family: var(--components-widget-bundle-widget-typography-font-family-description);
+    font-size: var(--components-widget-bundle-widget-typography-font-size-description);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--components-widget-bundle-widget-typography-line-height-description);
+    letter-spacing: var(--components-widget-bundle-widget-typography-letter-spacing-description);
+  }
+}
+
+.bundle-widget-content-icon {
+  color: var(--components-widget-bundle-widget-color-icon-default);
+}
+  
+.bundle-widget-button {
+  border-radius: var(--components-widget-atoms-bundle-widget-button-radius-default) !important;
+  display: inline-flex;
+  padding: var(--components-button-button-v2-padding-icon-only-vertical-lg) var(--components-button-button-v2-padding-horizontal-lg);
+
+  span {
+    display: flex;
+    align-items: center;
+    column-gap: var(--components-widget-atoms-bundle-widget-button-gap-default);
+  }
+
+  .bundle-widget-button-label {
+    display: none;
+
+    @include mixins.above("tablet") {
+      display: initial;
+    }
+  }
+}

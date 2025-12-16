@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List/> renders a basic list 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ecf2ff",
+      "borderRadius": 16,
+      "flexDirection": "column",
+    }
+  }
+  testID="list"
+>
+  <View
+    style={
+      {
+        "borderBottomLeftRadius": 0,
+        "borderBottomRightRadius": 0,
+        "borderTopLeftRadius": 16,
+        "borderTopRightRadius": 16,
+      }
+    }
+    testID="list-item"
+  >
+    <View
+      style={{}}
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "padding": 16,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "minHeight": 32,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "gap": 8,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flex": 1,
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "odido_Paragraph_Regular",
+                    },
+                    {
+                      "color": "#000000",
+                      "fontSize": 16,
+                      "letterSpacing": 0.23999999463558197,
+                      "lineHeight": 24,
+                      "textAlign": "left",
+                    },
+                    {
+                      "color": "#000000",
+                    },
+                  ]
+                }
+                testID="paragraph"
+              >
+                Item 2
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "gap": 8,
+                "justifyContent": "flex-end",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "paddingLeft": 16,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "height": 1,
+            "width": "100%",
+          }
+        }
+        testID="divider"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "borderTopLeftRadius": 0,
+        "borderTopRightRadius": 0,
+      }
+    }
+    testID="list-item"
+  >
+    <View
+      style={{}}
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "padding": 16,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "minHeight": 32,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "gap": 8,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "flex": 1,
+                  "flexDirection": "column",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "odido_Paragraph_Regular",
+                    },
+                    {
+                      "color": "#000000",
+                      "fontSize": 16,
+                      "letterSpacing": 0.23999999463558197,
+                      "lineHeight": 24,
+                      "textAlign": "left",
+                    },
+                    {
+                      "color": "#000000",
+                    },
+                  ]
+                }
+                testID="paragraph"
+              >
+                Item 3
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "gap": 8,
+                "justifyContent": "flex-end",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

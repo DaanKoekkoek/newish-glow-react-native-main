@@ -1,0 +1,1359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotifyBar /> Basic Callout renders a stable snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "flexDirection": "column",
+        "gap": 16,
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      },
+      {
+        "marginHorizontal": -8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "gap": 16,
+        },
+        {
+          "flexWrap": "nowrap",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        false,
+        {
+          "flexGrow": 0,
+          "width": undefined,
+        },
+        {
+          "flexShrink": 1,
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "gap": 4,
+        },
+      ]
+    }
+    testID="stack"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "Icons_Outline_DEFAULT_odido",
+            "fontSize": 24,
+            "lineHeight": 24,
+            "width": 24,
+          },
+          {
+            "color": "#ffffff",
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 24,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      This is a default notification.
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(0, 0, 0, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(0, 0, 0, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Call to action
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgba(255, 255, 255, 1)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 14,
+            "paddingVertical": 6,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(255, 255, 255, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(255, 255, 255, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Close
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<NotifyBar /> Error Callout renders a stable snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#f5463b",
+        "flexDirection": "column",
+        "gap": 16,
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      },
+      {
+        "marginHorizontal": -8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "gap": 16,
+        },
+        {
+          "flexWrap": "nowrap",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        false,
+        {
+          "flexGrow": 0,
+          "width": undefined,
+        },
+        {
+          "flexShrink": 1,
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "gap": 4,
+        },
+      ]
+    }
+    testID="stack"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "Icons_Outline_DEFAULT_odido",
+            "fontSize": 24,
+            "lineHeight": 24,
+            "width": 24,
+          },
+          {
+            "color": "#ffffff",
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 24,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      This is an error notification.
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgba(255, 255, 255, 1)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 14,
+            "paddingVertical": 6,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(255, 255, 255, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(255, 255, 255, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Close
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<NotifyBar /> FullExample Callout renders a stable snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "flexDirection": "column",
+        "gap": 16,
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      },
+      {
+        "marginHorizontal": -8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "gap": 16,
+        },
+        {
+          "flexWrap": "nowrap",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        false,
+        {
+          "flexGrow": 0,
+          "width": undefined,
+        },
+        {
+          "flexShrink": 1,
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "gap": 4,
+        },
+      ]
+    }
+    testID="stack"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 24,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      This is a notification with both an action and a close button and an icon.
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(0, 0, 0, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(0, 0, 0, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Refresh
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgba(255, 255, 255, 1)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 14,
+            "paddingVertical": 6,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(255, 255, 255, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(255, 255, 255, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Close
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<NotifyBar /> Success Callout renders a stable snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#2f9a92",
+        "flexDirection": "column",
+        "gap": 16,
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      },
+      {
+        "marginHorizontal": -8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "gap": 16,
+        },
+        {
+          "flexWrap": "nowrap",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        false,
+        {
+          "flexGrow": 0,
+          "width": undefined,
+        },
+        {
+          "flexShrink": 1,
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "gap": 4,
+        },
+      ]
+    }
+    testID="stack"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "Icons_Outline_DEFAULT_odido",
+            "fontSize": 24,
+            "lineHeight": 24,
+            "width": 24,
+          },
+          {
+            "color": "#ffffff",
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 24,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      This is a success notification.
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgba(255, 255, 255, 1)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 14,
+            "paddingVertical": 6,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(255, 255, 255, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(255, 255, 255, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Close
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<NotifyBar /> WithAction Callout renders a stable snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "flexDirection": "column",
+        "gap": 16,
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      },
+      {
+        "marginHorizontal": -8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "gap": 16,
+        },
+        {
+          "flexWrap": "nowrap",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        false,
+        {
+          "flexGrow": 0,
+          "width": undefined,
+        },
+        {
+          "flexShrink": 1,
+        },
+        {
+          "flexDirection": "column",
+        },
+        {
+          "gap": 4,
+        },
+      ]
+    }
+    testID="stack"
+  >
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 16,
+            "letterSpacing": 0.23999999463558197,
+            "lineHeight": 24,
+            "textAlign": "left",
+          },
+          {
+            "color": "#ffffff",
+          },
+        ]
+      }
+      testID="paragraph"
+    >
+      This is a notification with an action button.
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": 8,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(255, 255, 255, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(255, 255, 255, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 16,
+            "paddingVertical": 8,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(0, 0, 0, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(0, 0, 0, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Refresh
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgba(255, 255, 255, 1)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-start",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(255, 255, 255, 1)",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "gap": 8,
+            "justifyContent": "center",
+            "paddingHorizontal": 14,
+            "paddingVertical": 6,
+          }
+        }
+        testID="button-visual"
+      >
+        <View
+          onLayout={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "color": "rgba(255, 255, 255, 1)",
+                },
+              }
+            }
+            style={
+              {
+                "color": "rgba(255, 255, 255, 1)",
+                "display": "flex",
+                "fontFamily": "odido_Paragraph_Strong",
+                "fontSize": 14,
+                "gap": 8,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 16,
+              }
+            }
+          >
+            Close
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

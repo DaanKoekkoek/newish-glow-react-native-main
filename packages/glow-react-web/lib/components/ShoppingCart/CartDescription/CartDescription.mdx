@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartDescription from "./CartDescription.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartDescription} />
+
+# CartDescription
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartDescription>` atom displays 1-3 `<LineItem>` of which the variant is short description.
+
+### Basic example
+
+<Canvas of={CartDescription.Basic} />
+<Controls of={CartDescription.Basic} />

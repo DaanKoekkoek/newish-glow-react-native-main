@@ -1,0 +1,35 @@
+@use "@odido-portals/glow-tokens/lists-definition-list-v1";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/semantics-typography";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    definition-list,
+    (lists-definition-list-v1, paragraph, typography)
+) {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--components-lists-definition-list-v1-gap-vertical);
+    margin: 0;
+    flex: 1;
+}
+
+.definition-list-title {
+    font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-xs);
+    font-weight: var(--semantics-typography-font-weight-medium);
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-xs);
+    line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-xs);
+}
+
+.definition-list-text {
+    color: var(--components-lists-definition-list-v1-color-text-default);
+
+    &.inverted {
+        color: var(--components-lists-definition-list-v1-color-text-inverted);
+    }
+}
+
+dd.definition-list-text {
+    margin-inline-start: 0;
+}

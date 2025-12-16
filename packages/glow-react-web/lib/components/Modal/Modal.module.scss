@@ -1,0 +1,308 @@
+@use "@odido-portals/glow-tokens/overlay-modal-v1";
+@use "@odido-portals/glow-tokens/overlay-color";
+@use "@odido-portals/glow-tokens/overlay-padding";
+@use "@odido-portals/glow-tokens/overlay-gap";
+@use "@odido-portals/glow-tokens/primitives-typography-font";
+@use "@odido-portals/glow-tokens/semantics-typography";
+@use "@odido-portals/glow-tokens/button-button-v2";
+@use "@odido-portals/glow-tokens/button-icon-action-button-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  dialog-root,
+  (
+    overlay-modal-v1,
+    overlay-color,
+    overlay-padding,
+    overlay-gap,
+    typography-font,
+    typography,
+    button-button-v2,
+    button-icon-action-button-v1
+  )
+) {
+  max-height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  border: none;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  border: none;
+  padding: 0;
+  max-height: calc(100vh - var(--components-overlay-modal-v1-padding-default-vertical) * 2);
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--components-overlay-modal-v1-color-background-default);
+  border-radius: var(--components-overlay-modal-v1-radius-default);
+  font-family: var(--primitives-typography-font-family-otypical-text);
+  font-weight: var(--semantics-typography-font-weight-medium);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-default);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-default);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-default);
+  color: var(--components-overlay-color-text-default);
+
+  .scrollable & {
+    position: relative;
+    margin: var(--components-overlay-modal-v1-padding-default-vertical) auto;
+    overflow: initial;
+  }
+}
+
+.dialog-wrapper {
+  align-self: center;
+  width: 100%;
+  max-width: min(var(--components-overlay-modal-v1-size-max-width-default), 100vw - var(--components-overlay-modal-v1-padding-right-left));
+
+  &.width-wide {
+    max-width: min(var(--components-overlay-modal-v1-size-max-width-wide), 100vw - var(--components-overlay-modal-v1-padding-right-left));
+  }
+
+  &.width-narrow {
+    max-width: min(var(--components-overlay-modal-v1-size-max-width-narrow), 100vw - var(--components-overlay-modal-v1-padding-right-left));
+  }
+
+  .scrollable & {
+    max-height: none;
+  }
+
+  .dialog-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.scroll-container {
+  margin: var(--components-overlay-modal-v1-padding-default-vertical) var(--components-overlay-modal-v1-padding-default-horizontal);
+  position: fixed;
+}
+
+.scroll-container-bottom {
+  padding-top: var(--components-overlay-modal-v1-padding-default-vertical);
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.scroll-container-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  visibility: hidden;
+
+  .open & {
+    visibility: visible;
+    transition: visibility 0s linear 0.2s;
+  }
+}
+
+.backdrop {
+  &::backdrop {
+    display: flex;
+    justify-content: center;
+    background-color: var(--components-overlay-color-backdrop-default);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+  }
+
+  &.backdrop-opened::backdrop {
+    opacity: 1;
+  }
+
+  &.backdrop-subtle::backdrop {
+    background-color: var(--components-overlay-color-backdrop-subtle);
+  }
+
+  &.scrollable::backdrop {
+    flex-wrap: wrap;
+  }
+}
+
+.header-background {
+  overflow: hidden;
+  border-top-left-radius: var(--components-overlay-modal-v1-radius-default);
+  border-top-right-radius: var(--components-overlay-modal-v1-radius-default);
+}
+
+.position-default {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  transition-property: opacity, transform;
+  position: fixed;
+
+  .open & {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.position-right {
+  position: fixed;
+  margin: 0 0 0 auto;
+  border-radius: 0;
+  inset: 0 0 0 auto;
+  min-width: min(300px, 100vw - var(--components-overlay-modal-v1-padding-right-left));
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  opacity: 1;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-out;
+  align-self: stretch;
+
+  .open & {
+    transform: translateX(0);
+  }
+
+  .header-background {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.position-bottom {
+  position: fixed;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: translateY(100%);
+  transition: transform 0.2s ease-out;
+  align-self: end;
+  margin-bottom: 0;
+  max-height: calc(100vh - var(--components-overlay-modal-v1-padding-default-vertical));
+
+  .open & {
+    transform: translateY(0);
+  }
+}
+
+.dialog-gap {
+  row-gap: var(--components-overlay-modal-v1-gap-body-vertical);
+}
+
+.header {
+  padding: var(--components-overlay-modal-v1-padding-body-top) var(--components-overlay-modal-v1-padding-body-horizontal) var(--components-overlay-modal-v1-gap-body-vertical);
+}
+
+.header-right-offset {
+  padding-right: calc(var(--components-overlay-modal-v1-padding-body-horizontal) + var(--components-overlay-padding-title-right));
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 0 var(--components-overlay-modal-v1-padding-body-horizontal) var(--components-overlay-modal-v1-padding-body-bottom-default);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scrollable {
+  flex-shrink: 1;
+  overflow: hidden auto;
+  scrollbar-width: none;
+  max-height: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  background-color: var(--components-overlay-modal-v1-color-background-default);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--components-overlay-padding-footer-vertical) var(--components-overlay-padding-footer-horizontal);
+  row-gap: var(--components-overlay-gap-footer-vertical);
+  box-sizing: border-box;
+}
+
+.footer-padding-none {
+  padding-top: 0;
+}
+
+.footer-padding-default {
+  padding-top: var(--components-overlay-padding-footer-vertical);
+}
+
+.footer-buttons {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  flex-flow: column wrap;
+  gap: var(--components-overlay-gap-footer-2-buttons-horizontal);
+  justify-content: flex-start;
+
+  @include mixins.above("tablet") {
+    flex-direction: row;
+  }
+
+  .width-narrow & {
+    justify-content: space-between;
+  }
+}
+
+.footer-button {
+  align-self: stretch;
+  flex: 1;
+
+  .width-wide & {
+    flex: unset;
+  }
+}
+
+.footer-border-subtle {
+  position: relative;
+
+  /* Ensure pseudo-element is positioned correctly */
+  background: var(--components-overlay-modal-v1-color-background-default)
+}
+
+.footer-border-subtle::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--components-overlay-padding-footer-vertical));
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: var(--components-overlay-padding-footer-vertical);
+
+  /* Thickness of the shadow */
+  background-image: linear-gradient(0deg, var(--components-overlay-color-background-footer-subtle-100) 5%, var(--components-overlay-color-background-footer-subtle-0));
+  pointer-events: none;
+
+  /* Ensures it doesn't block interactions */
+}
+
+.modal-close-button {
+  position: absolute;
+  z-index: 2;
+
+  /* Close button should be above footer gradient */
+  top: var(--components-overlay-padding-close-button-top);
+  right: var(--components-overlay-padding-close-button-right);
+  padding-inline: var(--components-button-icon-action-button-v1-padding-horizontal-sm);
+  padding-block: var(--components-button-button-v2-padding-vertical-sm);
+  transform: scale(0.6667);
+  transform-origin: top right;
+
+  @include mixins.above("laptop") {
+    padding-inline: var(--components-button-icon-action-button-v1-padding-horizontal-default);
+    padding-block: var(--components-button-button-v2-padding-vertical-default);
+    transform: scale(1);
+  }
+}

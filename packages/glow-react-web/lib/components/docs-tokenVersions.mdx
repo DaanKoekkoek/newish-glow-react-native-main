@@ -1,0 +1,57 @@
+import { Meta } from "@storybook/addon-docs";
+import { useEffect } from 'react';
+
+{/* <Meta title="Docs/Token Versions" /> */}
+
+<Meta title="Docs/Token Versions/Latest" />
+
+{/* Auto generation below the 3 lines at the bottom */}
+
+### Components Token Versions
+
+{(() => {
+  useEffect(() => {
+    const handleLinkClick = () => {
+      const links = document.querySelectorAll('.storybook-link');
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent default anchor behavior
+          const url = this.getAttribute('data-url');
+          if (url) {
+
+            // Get the full parent URL and replace only the query parameter
+            const parentUrl = new URL(window.parent.location.href);
+            const newUrl = `${parentUrl.origin}${parentUrl.pathname}${url}`;
+
+            if (window.parent && window.parent !== window) {
+              window.parent.location.href = newUrl;
+            } else if (window.top && window.top !== window) {
+              window.top.location.href = newUrl;
+            } else {
+              window.location.href = newUrl;
+            }
+          }
+        });
+      });
+    };
+
+    handleLinkClick();
+
+    // Cleanup
+    return () => {
+      const links = document.querySelectorAll('.storybook-link');
+      links.forEach(link => {
+        link.removeEventListener('click', () => {});
+      });
+    };
+  }, []);
+
+  return null;
+})()}
+
+---
+
+<p><strong>🤖 Automatic Generation:</strong></p>
+<p>This timeline is automatically updated when changes are merged to the <code>main</code> branch.<br />
+If you need to update the timeline manually for testing or development:<br /><br />
+<code>pnpm run generate-versions --only-current</code></p>

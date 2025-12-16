@@ -1,0 +1,25 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BadgeStatusStories from "./BadgeStatus.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BadgeStatusStories} />
+
+# BadgeStatus
+
+### Token version: {getComponentVersion("badge-status.v1")}
+
+The Badge Status is a small indicator that gives additional context. To render an icon within BadgeStatus, you need to set the variant to anything but `default`.
+
+## Default
+
+<Canvas of={BadgeStatusStories.Default} />
+<Controls of={BadgeStatusStories.Default} />
+
+## Error
+
+<Canvas of={BadgeStatusStories.Error} />
+
+## Success
+
+<Canvas of={BadgeStatusStories.Success} />

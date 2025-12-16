@@ -1,0 +1,70 @@
+@use "@odido-portals/glow-tokens/card-horizontal-card-v1";
+@use "@odido-portals/glow-tokens/lists-list-item-v2";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  horizontal-card,
+  (card-horizontal-card-v1, lists-list-item-v2)
+) {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  padding: var(--components-card-horizontal-card-v1-padding-vertical-default) var(--components-card-horizontal-card-v1-padding-horizontal-default);
+  gap: var(--components-card-horizontal-card-v1-gap-horizontal);
+  border-radius: var(--components-card-horizontal-card-v1-radius-card-default);
+  background-color: var(--components-card-horizontal-card-v1-color-background-default);
+
+  &.palette {
+    @each $color in config.$odido-palette {
+      &-#{$color} {
+        background-color: var(--components-card-horizontal-card-v1-color-background-color-palette-#{$color}, var(--components-card-horizontal-card-v1-color-background-color));
+      }
+    }
+  }
+
+  &.subtle {
+    background-color: var(--components-card-horizontal-card-v1-color-background-subtle);
+  }
+
+  &.outline {
+    box-sizing: border-box;
+    background-color: var(--components-card-horizontal-card-v1-color-background-outline);
+    padding: calc(var(--components-card-horizontal-card-v1-padding-vertical-default) - var(--components-card-horizontal-card-v1-border-width-outline)) calc(var(--components-card-horizontal-card-v1-padding-horizontal-default) - var(--components-card-horizontal-card-v1-border-width-outline));
+
+    @each $color in config.$odido-palette {
+      &-#{$color} {
+        border: var(--components-card-horizontal-card-v1-border-width-outline) solid var(--components-card-horizontal-card-v1-color-border-outline-palette-#{$color}, var(--components-card-horizontal-card-v1-color-border-outline));
+      }
+    }
+  }
+
+  &.position {
+    justify-content: space-between;
+  }
+
+  .content {
+    gap: var(--components-card-horizontal-card-v1-gap-vertical);
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: flex-start;
+
+    &:has(> *:only-child) {
+      justify-content: center;
+    }
+  }
+}
+
+.horizontal-card-link {
+  margin-top: auto;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}

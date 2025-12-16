@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartButton from "./CartButton.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartButton} />
+
+# CartButton
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartButton>`atom serves as a reusable button within the Shopping Cart feature.
+
+It includes an icon and triggers a callback function when clicked by the user or can be used to trigger a tooltip on hover.
+
+### Basic example
+
+<Canvas of={CartButton.Basic} />
+<Controls of={CartButton.Basic} />

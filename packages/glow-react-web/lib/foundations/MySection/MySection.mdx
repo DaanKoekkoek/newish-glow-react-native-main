@@ -1,0 +1,40 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MySectionStories from "./MySection.stories";
+
+<Meta of={MySectionStories} />
+
+# MySection
+
+The `MySection` component is a layout structure designed for the my. It consists of a **main content area** and an **optional sidebar** for additional content, such as filters or promotions. The component utilizes `Grid` and `Column` from the design system to ensure a responsive and structured layout.
+
+## Migration Guide
+
+- **`<MySection.Container />`**  
+  Removed to simplify the structure. Use `<MySectionGrid />` instead.
+
+- **`<MySection.Title />`**
+  The title has been moved into a property called `title`. Size can be controlled with the `titleSize` property.
+
+  ## Structure
+
+- **`MySection`**: The main wrapper.
+- **`MySectionGrid`**: The primary content that sets up the grid layout.
+
+## Usage
+
+```tsx
+import { MySection, MySectionGrid } from "./MySection";
+
+<>
+  <MySection title={{ text: "Title", size: "xl" }}>
+    <MySectionGrid>
+      <p>My content goes here.</p>
+    </MySectionGrid>
+  </MySection>
+  <MySection title={{ text: "Title 2", size: "lg" }}>
+    <MySectionGrid>
+      <p>My content goes here.</p>
+    </MySectionGrid>
+  </MySection>
+</>;
+```

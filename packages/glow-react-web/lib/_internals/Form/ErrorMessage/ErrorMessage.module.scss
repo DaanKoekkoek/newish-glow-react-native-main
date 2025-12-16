@@ -1,0 +1,26 @@
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/foundations-typography";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  error-message,
+  (
+    input-gap,
+    input-color,
+    foundations-typography
+  )
+) {
+  align-self: stretch;
+  color: var(--components-input-color-text-error);
+  display: flex;
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  font-weight: 400;
+  gap: var(--components-input-gap-horizontal-default);
+  letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+
+  &,
+  [data-icon] {
+    line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  }
+}

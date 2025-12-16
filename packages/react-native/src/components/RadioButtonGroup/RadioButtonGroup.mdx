@@ -1,0 +1,38 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as RadioButtonGroupStories from "./RadioButtonGroup.stories";
+
+<Meta of={RadioButtonGroupStories} />
+
+# RadioButtonGroup
+
+A RadioButtonGroup is an option button that can be checked or unchecked when ticked. Only on radio button can be checked,
+if you check one option, the other option will automatically be unchecked.
+
+## Usage
+
+To use a group of RadioButtons you can provide the following properties, where the `options` and the 'onPress' prop are required:
+
+- `accessibilityLabelledBy`: Accessibility requirement, in web semantics this would be "name". Typically used to group the radio buttons under one topic / name.
+- `direction`: The direction of the appearance in the interface, can be 'horizontal' or 'vertical'.
+- `errorMessage`: The error message to display when there's an error.
+- `helperText`: The text to help the user understand the options and the content of the options.
+- `legend`: The legend, can provide some extra context or information about the RadioButton.
+- `onPress`: Callback function to be called when one of the `<RadioButton />` children is pressed.
+- `options`: The options to display, each option should have an `id`, `value`, `label` and optional `checked` and `testID`. **Note**: The **initial checked radio button** can be set by passing the `checked` property with the value `true` in one of the options.
+- `state`: The state, can be 'default', 'inactive' or 'error'.
+- `testID`: The testID, can be used for unit tests.
+
+## Basic
+
+<Canvas of={RadioButtonGroupStories.Basic} />
+<Controls of={RadioButtonGroupStories.Basic} />
+
+## Inactive
+
+<Canvas of={RadioButtonGroupStories.Inactive} />
+<Controls of={RadioButtonGroupStories.Inactive} />
+
+## Basic
+
+<Canvas of={RadioButtonGroupStories.Error} />
+<Controls of={RadioButtonGroupStories.Error} />

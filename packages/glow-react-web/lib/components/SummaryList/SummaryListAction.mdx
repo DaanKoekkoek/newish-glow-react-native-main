@@ -1,0 +1,31 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SummaryListActionStories from "./SummaryListAction.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SummaryListActionStories} />
+
+# SummaryListAction
+
+### Token version: {getComponentVersion("skip")}
+
+The `SummaryListAction` component allows different action types, including buttons, icons, or a number input. The rendered element depends on the props passed.
+
+## Usage
+
+- **When `children` is provided**: Renders a `<Button />` component.
+- **When only `icon` is provided**: Renders an `<ActionButtonIcon />` component.
+- **When both `icon` and children is provided**: Renders a `<Button />` along with an `<Icon />`.
+
+### As Button
+
+<Canvas of={SummaryListActionStories.AsButton} />
+
+### As ActionButtonIcon
+
+<Canvas of={SummaryListActionStories.AsActionButtonIcon} />
+
+### As NumberInput
+
+You can pass in `NumberInputProps` from the [NumberInput component](/docs/designsystem-components-input-numberinput--docs). This is a controlled component, so it requires you to pass in both a `value` and `onChange` handler.
+
+<Canvas of={SummaryListActionStories.AsNumberInput} />

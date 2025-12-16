@@ -1,0 +1,46 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as NumberInputStories from "./NumberInput.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={NumberInputStories} />
+
+# NumberInput
+
+### Token version: {getComponentVersion("number-input.v1")}
+
+`NumberInput` is a controlled component for numeric input with optional stepper controls.
+It handles increment/decrement logic, validation against min/max bounds, and supports different states and sizes.
+
+## Usage
+
+This component is **fully controlled** — you must pass both `value` and `onChange` to update its state.
+
+```tsx
+const [value, setValue] = useState(1);
+
+<NumberInput value={value} onChange={(v) => setValue(v)} min={1} max={10} />;
+```
+
+## Usage
+
+### Default example
+
+<Canvas of={NumberInputStories.Default} />
+<Controls of={NumberInputStories.Default} />
+
+### Small size
+
+<Canvas of={NumberInputStories.Small} />
+
+### Inactive
+
+<Canvas of={NumberInputStories.Inactive} />
+
+### Error
+
+<Canvas of={NumberInputStories.Error} />
+
+### Valid
+
+<Canvas of={NumberInputStories.Valid} />

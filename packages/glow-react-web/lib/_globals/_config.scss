@@ -1,0 +1,521 @@
+@use "sass:map";
+@use "@odido-portals/glow-tokens/odido-light.scss" as *;
+
+/* Base viewport breakpoints. Some notes:
+ * - !default: assuming this value might be overwritten for other brands.  
+ * - Using the global .scss files here since we only import the raw viewport max/min width values.
+ * - css variables (--var) CANNOT be combined with @media.
+ */ 
+$global-max-width: (
+  "mobile-small": $viewport-max-width-mobile-small,
+  "mobile": $viewport-max-width-mobile,
+  "tablet": $viewport-max-width-tablet,
+  "laptop": $viewport-max-width-laptop,
+  "desktop": $viewport-max-width-desktop,
+) !default;
+$global-min-width: (
+"mobile-small": $viewport-min-width-mobile-small,
+"mobile": $viewport-min-width-mobile,
+"tablet": $viewport-min-width-tablet,
+"laptop": $viewport-min-width-laptop,
+"desktop": $viewport-min-width-desktop,
+) !default; 
+
+// Base sizing
+$aspect-ratios: (
+  "1-1": "1/1",
+  "2-1": "2/1",
+  "3-1": "3/1",
+  "3-4": "3/4",
+  "4-3": "4/3",
+  "16-9": "16/9",
+  "9-16": "9/16",
+);
+$gap-presets: "default", "sm", "lg";
+$gap-semantics: 0, 50, 100, 150, 200, 300, 400, 500, 600, 800, 1000;
+
+// Base color collections
+$odido-palette: 
+  "default",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "purple",
+  "pink";
+$simwallet-palette: 
+  "default",
+  "basic",
+  "neutral",
+  "fast",
+  "fastest";
+$odido-glows: (
+  1: "glow-1",
+  2: "glow-2",
+  3: "glow-3",
+  4: "glow-4",
+);
+
+// Mapping palette to X
+$odido-palette-to-simwallet-palette: (
+  "default": "neutral",
+  "red": "neutral",
+  "orange": "neutral",
+  "yellow": "neutral",
+  "green": "neutral",
+  "blue": "neutral",
+  "purple": "neutral",
+  "pink": "neutral"
+);
+$odido-palette-to-glow: (
+  "pink": map.get($odido-glows, 1),
+  "orange": map.get($odido-glows, 1),
+  "red": map.get($odido-glows, 1),
+  "yellow": map.get($odido-glows, 2),
+  "green": map.get($odido-glows, 3),
+  "default": map.get($odido-glows, 4),
+  "blue": map.get($odido-glows, 4),
+  "purple": map.get($odido-glows, 4),
+);
+
+/* Stops used in GlowGradient. Some notes:
+ * - Both simwallet-stops and odido-glow-stops are used in GlowGradient (see configuration).
+ * - Replaces hardcoded fill values with dynamic values from css vars.
+ * - Allows us to have better control over what sets of gradients are loading in, for things like hover-interaction,
+ *   and [data-theme] gradient intensity.
+ */
+$simwallet-stops: (
+  neutral: (
+    linear: (
+      1: var(--semantics-color-gradient-base-default-glow-1-stop-1), 
+      2: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      3: var(--semantics-color-gradient-base-default-glow-1-stop-1), 
+      4: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+    ),
+    radial: (
+      1: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      2: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      3: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      4: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      5: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      6: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      7: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      8: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      9: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      10: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      11: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      12: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      13: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      14: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      15: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      16: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+      17: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+    )
+  ),
+  neutral-hover: (
+    linear: (
+      1: var(--semantics-color-gradient-base-hover-glow-1-stop-1), 
+      2: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      3: var(--semantics-color-gradient-base-hover-glow-1-stop-1), 
+      4: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+    ),
+    radial: (
+      1: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      2: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      3: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      4: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      5: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      6: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      7: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      8: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      9: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      10: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      11: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      12: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      13: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      14: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      15: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      16: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+      17: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+    )
+  ),
+);
+$odido-glow-stops: (
+  glow1: (
+    light: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-1-stop-4), 
+        2: var(--semantics-color-gradient-base-default-glow-1-stop-4),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        2: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        3: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-1-stop-4),
+        5: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        6: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        7: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        8: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        9: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        10: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        11: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        14: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+      )
+    ),
+    light-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-1-stop-4), 
+        2: var(--semantics-color-gradient-base-hover-glow-1-stop-4),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        3: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-1-stop-4),
+        5: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        6: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        7: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        8: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        9: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        10: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        11: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        14: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+      )
+    ),
+    dark: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-1-stop-4), 
+        2: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        2: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        3: var(--semantics-color-gradient-base-default-glow-1-stop-2),
+        4: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        5: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        6: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        7: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        8: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        9: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        10: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        11: var(--semantics-color-gradient-base-default-glow-1-stop-1),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        14: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-default-glow-4-stop-4),
+        16: var(--semantics-color-gradient-base-default-glow-4-stop-4),
+      )
+    ),
+    dark-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-1-stop-4), 
+        2: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        3: var(--semantics-color-gradient-base-hover-glow-1-stop-2),
+        4: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        5: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        6: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        7: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        8: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        9: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        10: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        11: var(--semantics-color-gradient-base-hover-glow-1-stop-1),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        14: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-hover-glow-4-stop-4),
+        16: var(--semantics-color-gradient-base-hover-glow-4-stop-4),
+      )
+    )
+  ),
+  glow2: (
+    light: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        3: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        5: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        6: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        7: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        8: var(--semantics-color-gradient-base-default-glow-2-stop-4),
+        9: var(--semantics-color-gradient-base-default-glow-2-stop-4),
+      )
+    ),
+    light-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        3: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        5: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        6: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        7: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        8: var(--semantics-color-gradient-base-hover-glow-2-stop-4),
+        9: var(--semantics-color-gradient-base-hover-glow-2-stop-4),
+      )
+    ),
+    dark: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-2-stop-4),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        5: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        6: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        7: var(--semantics-color-gradient-base-default-glow-2-stop-2),
+        8: var(--semantics-color-gradient-base-default-glow-2-stop-4),
+        9: var(--semantics-color-gradient-base-default-glow-2-stop-4),
+      )
+    ),
+    dark-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-2-stop-4),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        2: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        3: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        5: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        6: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        7: var(--semantics-color-gradient-base-hover-glow-2-stop-2),
+        8: var(--semantics-color-gradient-base-hover-glow-2-stop-4),
+        9: var(--semantics-color-gradient-base-hover-glow-2-stop-4),
+      )
+    )
+  ),
+  glow3: (
+    light: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        2: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        2: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        3: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        4: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        5: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        6: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        7: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        8: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        9: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        10: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        11: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        13: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        14: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        15: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        16: var(--semantics-color-gradient-base-default-glow-1-stop-4),
+        17: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+      )
+    ),
+    light-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        2: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        2: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        3: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        4: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        5: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        6: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        7: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        8: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        9: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        10: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        11: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        13: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        14: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        15: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        16: var(--semantics-color-gradient-base-hover-glow-1-stop-4),
+        17: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+      )
+    ),
+    dark: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-1-stop-4),
+        2: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        2: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        3: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        4: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        5: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        6: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        7: var(--semantics-color-gradient-base-default-glow-2-stop-3),
+        8: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        9: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        10: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        11: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        13: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        14: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        15: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        16: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+        17: var(--semantics-color-gradient-base-default-glow-3-stop-3),
+      )
+    ),
+    dark-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-1-stop-4),
+        2: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        2: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        3: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        4: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        5: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        6: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        7: var(--semantics-color-gradient-base-hover-glow-2-stop-3),
+        8: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        9: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        10: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        11: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        13: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        14: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        15: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        16: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+        17: var(--semantics-color-gradient-base-hover-glow-3-stop-3),
+      )
+    )
+  ),
+  glow4: (
+    light: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+      ),
+      radial: (
+        1: var(--odido-gradient-glow-4-stop-1, var(--semantics-color-gradient-base-default-glow-3-stop-1)),
+        2: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        3: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-4-stop-4),
+        5: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        6: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        7: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        8: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        9: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        10: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        11: var(--odido-gradient-glow-4-stop-11, var(--semantics-color-gradient-base-default-glow-4-stop-4)),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        14: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+      )
+    ),
+    light-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        3: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-4-stop-4),
+        5: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        6: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        7: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        8: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        9: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        10: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        11: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        14: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+      )
+    ),
+    dark: (
+      linear: (
+        1: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        3: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        4: var(--semantics-color-gradient-base-default-glow-4-stop-4),
+        5: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        6: var(--semantics-color-gradient-base-default-glow-3-stop-1),
+        7: var(--semantics-color-gradient-base-default-glow-4-stop-1),
+        8: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        9: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        10: var(--semantics-color-gradient-base-default-glow-4-stop-3),
+        11: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        12: var(--semantics-color-gradient-base-default-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        14: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-default-glow-1-stop-3),
+      )
+    ),
+    dark-hover: (
+      linear: (
+        1: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+      ),
+      radial: (
+        1: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        2: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        3: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        4: var(--semantics-color-gradient-base-hover-glow-4-stop-4),
+        5: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        6: var(--semantics-color-gradient-base-hover-glow-3-stop-1),
+        7: var(--semantics-color-gradient-base-hover-glow-4-stop-1),
+        8: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        9: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        10: var(--semantics-color-gradient-base-hover-glow-4-stop-3),
+        11: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        12: var(--semantics-color-gradient-base-hover-glow-3-stop-4),
+        13: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        14: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        15: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+        16: var(--semantics-color-gradient-base-hover-glow-1-stop-3),
+      )
+    )
+  )
+);

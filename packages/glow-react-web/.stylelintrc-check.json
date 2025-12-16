@@ -1,0 +1,16 @@
+{
+  "plugins": ["stylelint-value-no-unknown-custom-properties"],
+  "ignoreFiles": ["coverage/**/*", "lib/**/*", "storybook-static/**/*"],
+  "rules": {
+    "csstools/value-no-unknown-custom-properties": [
+      true,
+      {
+        "importFrom": [
+          "dist/assets/odido-light.css",
+          "dist/assets/odido-dark.css",
+          "lib/_globals/stylelint-vars.css"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Carousel /> renders a stable snapshot 1`] = `
+<body>
+  <div>
+    <main
+      class="main"
+      id="main-content"
+    >
+      <section
+        class="section section-subtle section-palette-default section-subtle"
+        data-section-type="default"
+        data-testid="section"
+      >
+        <div
+          class="container container-width-default container-fluid no-gutters"
+          data-no-gutters="true"
+          data-testid="grid-container"
+        >
+          <div
+            class="grid grid-direction-row"
+            data-testid="grid-grid"
+          >
+            <div
+              class="column grid-column-12"
+              data-testid="column"
+            >
+              <div
+                class="carousel"
+              >
+                <div
+                  class="carousel-slides-controller"
+                >
+                  <p
+                    class="paragraph paragraph-size-lg carousel-slides-legend"
+                    data-testid="legend"
+                  >
+                    <span
+                      class="carousel-slides-indicator"
+                      data-direction="down"
+                    >
+                      1
+                    </span>
+                    <span>
+                      /
+                    </span>
+                    <span
+                      class="carousel-slides-indicator"
+                    >
+                      2
+                    </span>
+                  </p>
+                  <div
+                    class="carousel-slides-buttons"
+                  >
+                    <button
+                      aria-label="Vorige slide"
+                      class="button button-size-default button-prominence-default has-icon-only"
+                      data-testid="carousel-slide-prev"
+                      disabled=""
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="icon icon-size-default outline button-icon button-icon-size-default"
+                        data-icon="arrow-left"
+                        data-testid="button-icon-left"
+                      >
+                        
+                      </span>
+                      <span
+                        class="button-label"
+                      />
+                    </button>
+                    <button
+                      aria-label="Volgende slide"
+                      class="button button-size-default button-prominence-secondary has-icon-only"
+                      data-testid="carousel-slide-next"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="icon icon-size-default outline button-icon button-icon-size-default"
+                        data-icon="arrow-right"
+                        data-testid="button-icon-left"
+                      >
+                        
+                      </span>
+                      <span
+                        class="button-label"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="slick-slider carousel-track is-equal-size is-centered slick-initialized"
+                  dir="ltr"
+                >
+                  <div
+                    class="slick-list"
+                  >
+                    <div
+                      class="slick-track"
+                      style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+                    >
+                      <div
+                        aria-hidden="false"
+                        class="slick-slide slick-active slick-current"
+                        data-index="0"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="false"
+                        class="slick-slide slick-active"
+                        data-index="1"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="false"
+                        class="slick-slide slick-active"
+                        data-index="2"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="false"
+                        class="slick-slide slick-active"
+                        data-index="3"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="false"
+                        class="slick-slide slick-active"
+                        data-index="4"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="slick-slide"
+                        data-index="5"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="slick-slide"
+                        data-index="6"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="slick-slide"
+                        data-index="7"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="slick-slide"
+                        data-index="8"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="slick-slide"
+                        data-index="9"
+                        style="outline: none; width: 0px;"
+                        tabindex="-1"
+                      >
+                        <div>
+                          <div
+                            class="carousel-slide"
+                            style="width: 100%; display: inline-block;"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="carousel-slide-content"
+                            >
+                              <picture
+                                class="picture"
+                                data-testid="image-picture"
+                              >
+                                <img
+                                  alt="image"
+                                  class="image image-position-top ratio-9-16"
+                                  data-testid="image-img"
+                                  loading="lazy"
+                                  src="test-file-stub"
+                                  style="object-fit: contain;"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+`;

@@ -1,0 +1,84 @@
+@use "@odido-portals/glow-tokens/lists-summary-list-v1";
+@use "@odido-portals/glow-tokens/lists-atoms-summary";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    (summary-list, summary-list-item-wrapper)
+    (lists-summary-list-v1, lists-atoms-summary)
+) {
+    padding-inline: 0;
+    margin: 0;
+}
+
+.summary-list-item {
+    display: block;
+}
+
+.summary-list-item-wrapper {
+    display: flex;
+    column-gap: var(--components-lists-summary-list-v1-gap-horizontal);
+    padding-block: var(--components-lists-summary-list-v1-gap-vertical);
+}
+
+.summary-list-heading {
+    p {
+        color: var(--components-lists-summary-list-v1-color-text-subheading-default);
+    }
+
+    h3 {
+        color: var(--components-lists-summary-list-v1-color-text-heading-default);
+    }
+    
+    .is-inactive & h3,
+    .is-inactive & p {
+        color: var(--components-lists-summary-list-v1-color-text-inactive);
+    }
+}
+
+.summary-list-support-text {
+    color: var(--components-lists-summary-list-v1-color-text-supporting-text-default);
+
+    .is-inactive & {
+        color: var(--components-lists-summary-list-v1-color-text-inactive);
+    }
+}
+
+.summary-list-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--components-lists-summary-list-v1-gap-text-vertical-default);
+    flex: 1;
+}
+
+.summary-list-product-image {
+    width: var(--components-lists-summary-list-v1-size-image-width);
+    height: var(--components-lists-summary-list-v1-size-image-height);
+    opacity: calc(var(--components-lists-summary-list-v1-opacity-image-default) / 100);
+
+    .is-inactive & {
+        opacity: calc(var(--components-lists-summary-list-v1-opacity-image-inactive) / 100);
+    }
+}
+
+.summary-list-actions {
+    align-items: center;
+    display: flex;
+    gap: var(--components-lists-atoms-summary-list-actions-gap-horizontal);
+    flex-wrap: wrap;
+}
+
+.summary-list-price-and-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--components-lists-summary-list-v1-gap-horizontal);
+}
+
+.summary-list-extra-content {
+    padding-bottom: var(--components-lists-summary-list-v1-gap-vertical);
+    
+    .is-inactive & {
+        color: var(--components-lists-summary-list-v1-color-text-inactive);
+    }
+}

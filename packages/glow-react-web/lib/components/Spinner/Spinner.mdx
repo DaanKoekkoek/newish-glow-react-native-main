@@ -1,0 +1,23 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SpinnerStories from "./Spinner.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SpinnerStories} />
+
+# Spinner
+
+### Token version: {getComponentVersion("spinner.v1")}
+
+When the state of a component is `loading`, you should use this component to give additional context to the user. Comes in two different sizes, along with the option to customize the text style of the indicator, for example, to match the loading icon style to that of text label style.
+
+## Color
+
+### Default
+
+<Canvas of={SpinnerStories.Basic} />
+<Controls of={SpinnerStories.Basic} />
+
+### Inverted
+
+<Canvas of={SpinnerStories.Inverted} />

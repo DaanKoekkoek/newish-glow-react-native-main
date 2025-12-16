@@ -1,0 +1,78 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@odido-portals/glow-tokens/assets-logos-and-visuals-logos-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    store-button,
+    (assets-logos-and-visuals-logos-v1, assets-logos)
+) {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--components-assets-logos-and-visuals-store-button-radius-default);
+    padding: var(--store-button-padding-vertical) var(--store-button-padding-horizontal);
+}
+
+.store-button-default {
+    --svg-background-color: var(--components-assets-logos-and-visuals-store-button-color-background-default);
+    --svg-foreground-color: var(--components-assets-logos-and-visuals-store-button-color-fill-default);
+
+    /* Google triangles */
+    --google-red-triangle: #EA4335;
+    --google-yellow-triangle: #FBBC04;
+    --google-blue-triangle: #4285F4;
+    --google-green-triangle: #34A853;
+    --google-mono-triangle: transparent;
+
+    background: var(--components-assets-logos-and-visuals-store-button-color-background-default);
+    border: var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default) solid var(--components-assets-logos-and-visuals-store-button-color-border-secondary-default);
+}
+
+.store-button-secondary,
+.store-button-inverted,
+.is-inverted {
+    /* Hide Google color triangles */
+    --google-red-triangle: transparent;
+    --google-yellow-triangle: transparent;
+    --google-blue-triangle: transparent;
+    --google-green-triangle: transparent;
+}
+
+.store-button-secondary {
+    --svg-background-color: var(--components-assets-logos-and-visuals-store-button-color-background-secondary-default);
+    --svg-foreground-color: var(--components-assets-logos-and-visuals-store-button-color-fill-secondary-default);
+    --google-mono-triangle: var(--svg-foreground-color);
+
+    border: var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default) solid var(--components-assets-logos-and-visuals-store-button-color-border-secondary-default);
+}
+
+.store-button-inverted {
+    --svg-background-color: var(--components-assets-logos-and-visuals-store-button-color-background-secondary-inverted);
+    --svg-foreground-color: var(--components-assets-logos-and-visuals-store-button-color-fill-secondary-inverted);
+    --google-mono-triangle: var(--svg-foreground-color);
+
+    border: var(--components-assets-logos-and-visuals-store-button-border-width-secondary-inverted) solid var(--components-assets-logos-and-visuals-store-button-color-border-secondary-inverted);
+}
+
+.is-inverted {
+    /* Apply the always inverted state */
+    --svg-background-color: transparent;
+    --svg-foreground-color: var(--components-assets-logos-and-visuals-logos-v1-color-inverted);
+    --google-mono-triangle: var(--svg-foreground-color);
+
+    background: var(--svg-background-color);
+    border: var(--components-assets-logos-and-visuals-store-button-border-width-secondary-inverted) solid var(--svg-foreground-color);
+}
+
+/* Apple Specific style */
+.store-button-apple {
+    --store-button-padding-vertical: calc(var(--components-assets-logos-and-visuals-store-button-size-padding-apple-vertical) - var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default));
+    --store-button-padding-horizontal: calc(var(--components-assets-logos-and-visuals-store-button-size-padding-apple-horizontal) - var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default));
+}
+
+/* Google Specific style */
+.store-button-google {
+    --store-button-padding-vertical: calc(var(--components-assets-logos-and-visuals-store-button-size-padding-google-vertical) - var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default));
+    --store-button-padding-horizontal: calc(var(--components-assets-logos-and-visuals-store-button-size-padding-google-horizontal) - var(--components-assets-logos-and-visuals-store-button-border-width-secondary-default));
+}

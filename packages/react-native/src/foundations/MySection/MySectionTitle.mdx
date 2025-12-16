@@ -1,0 +1,36 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MySectionTitleStories from "./MySectionTitle.stories";
+
+<Meta of={MySectionTitleStories} />
+
+# MySection.Title
+
+## Purpose
+
+`MySection.Title` is a subcomponent of `MySection` designed to add a heading element. It helps provide a clear structure and contextual meaning to the accompanying `MySection.Content` blocks.
+
+## Features
+
+- **Customizable Heading Size**: Adjust the heading size using the `size` prop, which accepts standard options like `md`, `lg`, and `xl`.
+- **Semantic HTML Support**: Renders as an `<h2>` element by default, ensuring proper accessibility and SEO compliance.
+
+## Usage
+
+Within `<MySection>`, include a `<MySection.Title />` block. Use the `size` property to control the heading's visual hierarchy.
+
+### Default Example
+
+<Canvas of={MySectionTitleStories.Default} />
+<Controls of={MySectionTitleStories.Default} />
+
+### Variants
+
+#### Large Size Heading
+
+<Canvas of={MySectionTitleStories.LargeSize} />
+<Controls of={MySectionTitleStories.LargeSize} />
+
+#### Extra Large Size Heading
+
+<Canvas of={MySectionTitleStories.ExtraLargeSize} />
+<Controls of={MySectionTitleStories.ExtraLargeSize} />

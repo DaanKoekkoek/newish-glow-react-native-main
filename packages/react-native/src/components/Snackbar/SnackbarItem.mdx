@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SnackbarItem from "./SnackbarItem.stories";
+
+<Meta of={SnackbarItem} />
+
+# SnackbarItem
+
+The `<SnackbarItem />` component is in internal component only and is used to display a message inside a "snack".
+
+## Purpose
+
+The `<SnackbarItem />` can be used to give the user feedback on an action they performed.
+
+## Usage
+
+The props explained:
+
+- **dismissSnack**: Can be used to pass a callback into the component which will be triggered when the cancel button is pressed.
+- **onLayout**: Can be used to call a function which is triggered onLayout change (LayoutChangeEvent).
+- **snack**: The content which will be shown inside the snack.
+- **windowWidth**: Is needed to calculate the maxWidth of the component on mobile devices.
+- **testID**: Can be used for testing purposes.
+
+<Canvas of={SnackbarItem.Default} />
+
+<Canvas of={SnackbarItem.Loading} />
+
+<Canvas of={SnackbarItem.Error} />
+
+<Canvas of={SnackbarItem.Success} />

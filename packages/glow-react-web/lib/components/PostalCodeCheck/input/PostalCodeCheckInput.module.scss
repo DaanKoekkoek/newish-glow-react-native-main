@@ -1,0 +1,113 @@
+@use "@odido-portals/glow-tokens/postal-code-check-input-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$post-code-state: "warning", "error";
+
+@include mixins.token-scope(
+  postal-code-check-input,
+  postal-code-check-input-v1 
+) {
+  display: flex;
+  min-width: var(--components-postal-code-check-input-v1-size-min-width-main);
+  max-width: var(--components-postal-code-check-input-v1-size-max-width-main);
+  box-sizing: border-box;
+  padding: var(--components-postal-code-check-input-v1-padding-vertical) var(--components-postal-code-check-input-v1-padding-horizontal);
+  border-radius: var(--components-postal-code-check-input-v1-radius-default);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--components-postal-code-check-input-v1-gap-vertical-responsive);
+  align-self: stretch;
+
+  @each $color in config.$odido-palette {
+    &.palette-#{$color} {
+      background-color: var(--components-postal-code-check-input-v1-color-background-default-palette-#{$color}, var(--components-postal-code-check-input-v1-color-background-default));
+    }
+  }
+
+  @each $state in $post-code-state {
+    &.state-#{$state} {
+      background-color: var(--components-postal-code-check-input-v1-color-background-#{$state});
+    }
+  }
+
+  &.overlay {
+    background-color: var(--components-postal-code-check-input-v1-color-background-none);
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    gap: var(--components-postal-code-check-input-v1-gap-vertical-default);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: var(--components-postal-code-check-input-v1-gap-horizontal);
+    }
+  }
+
+  .postal-code-input-button {
+    width: 100%;
+
+    @include mixins.above("tablet") {
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  .postal-code-check-callout.prominence-subtle {
+    @each $state in $post-code-state {
+      &.status-#{$state} {
+        background-color: var(--components-postal-code-check-input-v1-color-background-#{$state});
+      }
+    }
+  }
+
+  .postal-code-check-callout-container {
+    width: 100%
+  }
+}
+
+.input-fields {
+  [data-input-container]:first-of-type {
+    flex: 1 0 100%;
+  }
+
+  @include mixins.above("tablet") {
+    flex-direction: row;
+
+    [data-input-container]:first-of-type {
+      flex: 1;
+    }
+  }
+}
+
+.tv-section {
+  border-radius: var(--components-postal-code-check-input-v1-radius-tv-check);
+  display: flex;
+  padding: var(--components-postal-code-check-input-v1-padding-tv-check-vertical) var(--components-postal-code-check-input-v1-padding-tv-check-horizontal);
+  align-items: center;
+  align-content: center;
+  gap: var(--components-postal-code-check-input-v1-gap-tv-check-vertical) var(--components-postal-code-check-input-v1-gap-tv-check-horizontal);
+  background-color: var(--components-postal-code-check-input-v1-color-tv-check-background-default);
+  align-self: stretch;
+  flex-direction: column;
+
+  @include mixins.above("tablet") {
+    flex-direction: row;
+    min-width: initial;
+  }
+}
+
+.segmented-tab-wrapper {
+  width: 100%;
+  min-width: var(--components-postal-code-check-input-v1-size-min-width-tv-check-segmented-tab);
+    max-width: var(--components-postal-code-check-input-v1-size-max-width-tv-check-segmented-tab);
+}

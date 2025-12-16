@@ -1,0 +1,16 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SliderStories from "./Slider.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SliderStories} />
+
+# Slider
+
+### Token version: {getComponentVersion("slider.v1")}
+
+The `<Slider />` component is a versatile UI element that allows users to select a value from a range by sliding a handle along a track.
+It supports various configurations, including vertical and horizontal orientations, and can be customized with labels, tooltips, and more.
+
+<Canvas of={SliderStories.Default} />
+<Controls of={SliderStories.Default} />

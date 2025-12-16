@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddOns Component should apply the correct styles when inactive 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 12,
+        "height": 64,
+        "overflow": "hidden",
+        "width": 64,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="addon"
+>
+  <View
+    style={
+      {
+        "borderColor": "#999999",
+        "borderRadius": 12,
+        "borderWidth": 2,
+        "flexBasis": "100%",
+        "height": "100%",
+        "pointerEvents": "none",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  />
+  <DeezerSmall
+    fillOverride="#999999"
+  />
+</View>
+`;
+
+exports[`AddOns Component should apply the correct styles when variant is default 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 12,
+        "overflow": "hidden",
+        "width": "100%",
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="addon"
+>
+  <Deezer
+    fillOverride=""
+  />
+</View>
+`;
+
+exports[`AddOns Component should render null when the addOn is not recognized 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 12,
+        "overflow": "hidden",
+        "width": "100%",
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="addon"
+/>
+`;
+
+exports[`AddOns Component should render the correct default icon based on the addOn prop 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 12,
+        "overflow": "hidden",
+        "width": "100%",
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="addon"
+>
+  <AmazonPrime
+    fillOverride=""
+  />
+</View>
+`;
+
+exports[`AddOns Component should render the correct small icon when variant is small 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 12,
+        "height": 64,
+        "overflow": "hidden",
+        "width": 64,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="addon"
+>
+  <NetflixSmall
+    fillOverride=""
+  />
+</View>
+`;

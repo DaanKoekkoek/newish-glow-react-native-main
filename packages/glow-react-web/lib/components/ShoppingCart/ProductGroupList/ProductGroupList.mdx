@@ -1,0 +1,17 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ProductGroupList from "./ProductGroupList.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ProductGroupList} />
+
+# ProductGroupList & ProductGroup
+
+### Token version: {getComponentVersion("skip")}
+
+The `<ProductGroupList>` atom is a list composed of `<ProductGroup>` atoms and is used to organize and render grouped collections of `<Product>` components.
+
+### Basic Example
+
+<Canvas of={ProductGroupList.Basic} />
+<Controls of={ProductGroupList.Basic} />

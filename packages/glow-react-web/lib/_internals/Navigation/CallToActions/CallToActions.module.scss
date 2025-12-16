@@ -1,0 +1,55 @@
+@use "@odido-portals/glow-tokens/card-atoms-call";
+@use "@globals/mixins";
+@use "@globals/config";
+
+@include mixins.token-scope(
+    call-to-actions,
+    card-atoms-call
+) {
+    display: flex;
+    gap: var(--components-card-atoms-call-to-action-gap-vertical-default);
+
+    &:has(a) {
+        gap: var(--components-card-atoms-call-to-action-gap-vertical-lg);
+    }
+
+    &.has-one-trigger {
+        align-items: flex-start;
+    }
+
+    &.fill {
+        width: 100%;
+        flex-direction: column;
+
+        a,
+        button {
+            flex: 1;
+            width: 100%;
+        }
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+      @include mixins.above($breakpoint) {
+        &.fill-#{$breakpoint} {
+            width: 100%;
+            flex-direction: column;
+            
+            a,
+            button {
+                flex: 1;
+                width: 100%;
+            }
+        }
+  
+        &.fill-#{$breakpoint}-reset {
+            width: auto;
+            flex-direction: row;
+
+            a,
+            button {
+                width: min-content;
+            }
+        }
+      }
+    }
+}

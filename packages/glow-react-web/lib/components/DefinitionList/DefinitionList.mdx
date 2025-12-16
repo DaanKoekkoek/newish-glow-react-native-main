@@ -1,0 +1,31 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefinitionListStories from "./DefinitionList.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DefinitionListStories} />
+
+# Definition List
+
+### Token version: {getComponentVersion("definition-list.v1")}
+
+## Purpose
+
+The `DefinitionList` component is used to present information in a structured format, where a title is paired with a description. This is particularly useful for displaying definitions.
+
+## Usage
+
+The `DefinitionList` component can be used in various scenarios, such as:
+
+- Displaying product specifications in the e-commerce checkout flow
+- Presenting key-value pairs in a form or summary
+- Showing user profile details
+
+### Default
+
+<Canvas of={DefinitionListStories.Default} />
+<Controls of={DefinitionListStories.Default} />
+
+### Multiple Items Example
+
+<Canvas of={DefinitionListStories.Multiple} />

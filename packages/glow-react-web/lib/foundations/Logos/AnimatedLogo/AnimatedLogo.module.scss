@@ -1,0 +1,41 @@
+@use "@globals/mixins";
+
+.logo-svg {
+  position: relative;
+  width: 110px;
+  height: 100%;
+  display: flex;
+  overflow: visible;
+  
+  @include mixins.above("desktop") {
+    width: 162px;
+  }
+
+  path:nth-of-type(2),
+  path:nth-of-type(3),
+  path:nth-of-type(4) {
+    // Required to make sure that the I of ODIDO stays in the middle (broken in Firefox) when using scaleX.
+    transform-origin: center !important; 
+  }
+}
+
+.logo-inverted {
+  background-color: var(--components-navigation-atoms-header-nav-icon-color-icon-primary-default);
+}
+
+.logo-inverted,
+.logo-video {
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+  display: block;
+  mask-type: alpha;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  clip-path: var(--clip-path-mobile);
+
+  @include mixins.above("desktop") {
+    clip-path: var(--clip-path-desktop);
+  }
+}

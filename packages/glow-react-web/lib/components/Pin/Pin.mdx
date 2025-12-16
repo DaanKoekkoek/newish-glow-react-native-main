@@ -1,0 +1,32 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PinStories from "./Pin.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PinStories} />
+
+# Pincode
+
+### Token version: {getComponentVersion("skip")}
+
+The `Pincode` component is used for one-time verification codes. This is an extension of [guilhermerodz/input-otp](https://github.com/guilhermerodz/input-otp).
+
+## Usage
+
+Each `PinSlot` component represent one digit and they have to be wrapped by a `Pincode` component. The only required props on each are `maxLength` for the `Pincode` component, and a zero-based index on the `PinSlot` component. This makes creating a simple 4-digit pin component very easy, as shown below.
+
+```ts
+const maxLength = 4;
+
+<Pincode maxLength={maxLength}>
+  {[...Array(maxLength).keys()].map((_, index) => (
+    <PinSlot key={`pinslot-${index}`} index={index} />
+  ))}
+</Pincode>
+```
+
+### Default Example
+
+In this demonstration the `onComplete` handler has a 50% of yielding an error. This allows you to test both success and failure cases.
+
+<Canvas of={PinStories.Default} sourceState="shown" />
+<Controls of={PinStories.Default} />

@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SummaryListItemStories from "./SummaryListItem.stories";
+
+<Meta of={SummaryListItemStories} />
+
+# Summary.Item
+
+The `<SummaryList.Item />` has additional properties, along with the option to set the state of list item. This will take presedence over the state set in `<SummaryList>`.
+
+<Canvas of={SummaryListItemStories.Basic} />
+<Controls of={SummaryListItemStories.Basic} />

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SkeletonLoader /> renders default skeleton loader 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton-loader skeleton-loader-size-default"
+  >
+    <div
+      class="skeleton-loader-gradient"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<SkeletonLoader /> renders large skeleton loader 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton-loader skeleton-loader-size-lg"
+  >
+    <div
+      class="skeleton-loader-gradient"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<SkeletonLoader /> renders small skeleton loader 1`] = `
+<DocumentFragment>
+  <div
+    class="skeleton-loader skeleton-loader-size-sm"
+  >
+    <div
+      class="skeleton-loader-gradient"
+    />
+  </div>
+</DocumentFragment>
+`;

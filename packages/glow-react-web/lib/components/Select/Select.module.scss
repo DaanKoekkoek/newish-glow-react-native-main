@@ -1,0 +1,71 @@
+
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/input-border";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/input-atoms-dropdown";
+@use "@internals/Form/InputIcon/mixins" as input-icon;
+@use "@components/InputField/mixins" as input-field;
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  select,
+  (
+    assets-icons,
+    input-color,
+    input-gap,
+    input-atoms-field,
+    input-atoms-dropdown,
+    input-border,
+    paragraph
+  )
+) {
+  width: 100%;
+}
+
+.select-input {
+    @include input-field.base-input-styles;
+
+    opacity: 1;
+    justify-content: space-between;
+    padding-inline-end: calc(var(--components-assets-icons-font-size-default) + calc(var(--components-input-atoms-field-padding-horizontal-default) * 2) - var(--components-input-border-width-default));
+
+    &.placeholder-active {
+      color: var(--components-input-color-text-subtle);
+    }
+
+    &:disabled {
+      &.placeholder-active {
+        color: var(--components-input-color-text-value-inactive);
+        background-color: var(--components-input-color-background-inactive);
+      }
+    }
+
+    option {
+      background-color: var(--components-input-color-background-default);
+      color: var(--components-input-atoms-dropdown-color-text-default);
+    }
+
+    optgroup {
+      margin-top: var(--components-input-gap-vertical-default);
+    }
+}
+
+.select-suffix-icon-container {
+    align-items: center;
+    column-gap: var(--components-input-gap-horizontal-default);
+    display: flex;
+    right: var(--components-input-atoms-field-padding-horizontal-default);
+    position: absolute;
+    pointer-events: none;
+
+    .suffix-inactive {
+      color: var(--components-input-color-icon-inactive);
+    }
+
+    .select-suffix-icon {
+      @include input-icon.base-input-icon-styles;
+    }
+}

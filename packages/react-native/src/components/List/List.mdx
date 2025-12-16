@@ -1,0 +1,11 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ListStories from "./List.stories";
+
+<Meta of={ListStories} />
+
+# List
+
+The `<List />` only allows `<List.item />` children.
+
+<Canvas of={ListStories.Basic} />
+<Controls of={ListStories.Basic} />

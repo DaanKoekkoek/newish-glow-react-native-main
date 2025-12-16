@@ -1,0 +1,13 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CheckboxGroupStories from "./CheckboxGroup.stories";
+
+<Meta of={CheckboxGroupStories} />
+
+# CheckboxGroup
+
+A CheckboxGroup a collection of [`Checkbox`](?path=/docs/checkbox--docs) components that can be checked or unchecked when ticked.
+The `helperText`, `errorMessage` & `legend` properties should not be passed down into the [`Checkbox`](?path=/docs/checkbox--docs) components
+as props in case of using them as children.
+
+<Canvas of={CheckboxGroupStories.Basic} />
+<Controls of={CheckboxGroupStories.Basic} />

@@ -1,0 +1,2799 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <Section
+              variant="subtle"
+            >
+              <Grid>
+                <Grid.Column>
+                  <Paragraph>
+                    Section content
+                  </Paragraph>
+                </Grid.Column>
+              </Grid>
+            </Section>,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ecf2ff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "100%",
+                          "maxWidth": "100%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <Text
+                      allowFontScaling={true}
+                      style={
+                        [
+                          {
+                            "fontFamily": "odido_Paragraph_Regular",
+                          },
+                          {
+                            "color": "#000000",
+                            "fontSize": 18,
+                            "letterSpacing": 0.27000001072883606,
+                            "lineHeight": 28,
+                            "textAlign": "left",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="paragraph"
+                    >
+                      Section content
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "rowGap": 12,
+                },
+                {
+                  "paddingHorizontal": 2,
+                },
+                undefined,
+              ]
+            }
+            testID="container"
+          >
+            <View
+              style={
+                [
+                  {
+                    "flexGrow": 1,
+                    "rowGap": 12,
+                    "width": "100%",
+                  },
+                  {
+                    "maxWidth": undefined,
+                  },
+                  {
+                    "maxWidth": 355,
+                  },
+                  {
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  },
+                  undefined,
+                ]
+              }
+              testID="grid"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexBasis": "auto",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                    {
+                      "paddingHorizontal": 6,
+                    },
+                    {
+                      "flexBasis": "100%",
+                      "maxWidth": "100%",
+                    },
+                    {
+                      "alignItems": "center",
+                      "columnGap": 16,
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                      "paddingVertical": 16,
+                    },
+                  ]
+                }
+                testID="column"
+              >
+                <View>
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Regular",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 16,
+                          "letterSpacing": 0.23999999463558197,
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="paragraph"
+                  >
+                    Initial
+                  </Text>
+                </View>
+                <Text
+                  allowFontScaling={true}
+                  style={
+                    [
+                      {
+                        "fontFamily": "Icons_Outline_SM_odido",
+                        "fontSize": 16,
+                        "lineHeight": 16,
+                        "width": 16,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <View>
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#000",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 16,
+                        "letterSpacing": 0.23999999463558197,
+                        "lineHeight": 24,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 16,
+                            "letterSpacing": 0.23999999463558197,
+                            "lineHeight": 24,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#000",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Breadcrumb link
+                    </Text>
+                  </Text>
+                </View>
+                <Text
+                  allowFontScaling={true}
+                  style={
+                    [
+                      {
+                        "fontFamily": "Icons_Outline_SM_odido",
+                        "fontSize": 16,
+                        "lineHeight": 16,
+                        "width": 16,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <View>
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#000",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 16,
+                        "letterSpacing": 0.23999999463558197,
+                        "lineHeight": 24,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 16,
+                            "letterSpacing": 0.23999999463558197,
+                            "lineHeight": 24,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#000",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Breadcrumb link
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "backgroundColor": "#000",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#000",
+                "paddingTop": 48,
+                "rowGap": 48,
+              }
+            }
+            testID="footer-top"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "rowGap": 12,
+                  },
+                  {
+                    "paddingHorizontal": 2,
+                  },
+                  undefined,
+                ]
+              }
+              testID="container"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexGrow": 1,
+                      "rowGap": 12,
+                      "width": "100%",
+                    },
+                    {
+                      "maxWidth": undefined,
+                    },
+                    {
+                      "maxWidth": 355,
+                    },
+                    {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    },
+                    undefined,
+                  ]
+                }
+                testID="grid"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "auto",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "paddingHorizontal": 6,
+                      },
+                      {
+                        "flexBasis": "100%",
+                        "maxWidth": "100%",
+                      },
+                      [
+                        {
+                          "justifyContent": undefined,
+                        },
+                        {
+                          "flexDirection": "column",
+                          "flexWrap": "wrap",
+                          "gap": 32,
+                          "paddingVertical": 0,
+                        },
+                      ],
+                    ]
+                  }
+                  testID="column"
+                >
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        accessibilityLabel="Column title 1"
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "flex-start",
+                            "columnGap": 8,
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "userSelect": "none",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityRole="header"
+                          allowFontScaling={true}
+                          style={
+                            {
+                              "color": "#fff",
+                              "fontFamily": "odido_Heading_Medium",
+                              "fontSize": 24,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.23999999463558197,
+                              "lineHeight": 28,
+                              "marginVertical": 0,
+                              "paddingBottom": 32,
+                              "textAlign": "left",
+                            }
+                          }
+                          testID="heading"
+                        >
+                          Column title 1
+                        </Text>
+                        <View
+                          style={
+                            {
+                              "height": 24,
+                              "width": 24,
+                            }
+                          }
+                        >
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 1,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 1,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 0,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                      <View
+                        testID="footer-column-collapsible"
+                      />
+                    </View>
+                    <View
+                      style={
+                        {
+                          "backgroundColor": "#dddddd",
+                          "height": 1,
+                          "width": "100%",
+                        }
+                      }
+                      testID="divider"
+                    />
+                  </View>
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        accessibilityLabel="Column title 2"
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "flex-start",
+                            "columnGap": 8,
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "userSelect": "none",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityRole="header"
+                          allowFontScaling={true}
+                          style={
+                            {
+                              "color": "#fff",
+                              "fontFamily": "odido_Heading_Medium",
+                              "fontSize": 24,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.23999999463558197,
+                              "lineHeight": 28,
+                              "marginVertical": 0,
+                              "paddingBottom": 32,
+                              "textAlign": "left",
+                            }
+                          }
+                          testID="heading"
+                        >
+                          Column title 2
+                        </Text>
+                        <View
+                          style={
+                            {
+                              "height": 24,
+                              "width": 24,
+                            }
+                          }
+                        >
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 1,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 1,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 0,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                      <View
+                        testID="footer-column-collapsible"
+                      />
+                    </View>
+                    <View
+                      style={
+                        {
+                          "backgroundColor": "#dddddd",
+                          "height": 1,
+                          "width": "100%",
+                        }
+                      }
+                      testID="divider"
+                    />
+                  </View>
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        accessibilityLabel="Column title 3"
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "flex-start",
+                            "columnGap": 8,
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "userSelect": "none",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityRole="header"
+                          allowFontScaling={true}
+                          style={
+                            {
+                              "color": "#fff",
+                              "fontFamily": "odido_Heading_Medium",
+                              "fontSize": 24,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.23999999463558197,
+                              "lineHeight": 28,
+                              "marginVertical": 0,
+                              "paddingBottom": 32,
+                              "textAlign": "left",
+                            }
+                          }
+                          testID="heading"
+                        >
+                          Column title 3
+                        </Text>
+                        <View
+                          style={
+                            {
+                              "height": 24,
+                              "width": 24,
+                            }
+                          }
+                        >
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 1,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 1,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 0,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                      <View
+                        testID="footer-column-collapsible"
+                      />
+                    </View>
+                    <View
+                      style={
+                        {
+                          "backgroundColor": "#dddddd",
+                          "height": 1,
+                          "width": "100%",
+                        }
+                      }
+                      testID="divider"
+                    />
+                  </View>
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        accessibilityLabel="Column title 4"
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "flex-start",
+                            "columnGap": 8,
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "userSelect": "none",
+                          }
+                        }
+                      >
+                        <Text
+                          accessibilityRole="header"
+                          allowFontScaling={true}
+                          style={
+                            {
+                              "color": "#fff",
+                              "fontFamily": "odido_Heading_Medium",
+                              "fontSize": 24,
+                              "fontWeight": "500",
+                              "letterSpacing": 0.23999999463558197,
+                              "lineHeight": 28,
+                              "marginVertical": 0,
+                              "paddingBottom": 32,
+                              "textAlign": "left",
+                            }
+                          }
+                          testID="heading"
+                        >
+                          Column title 4
+                        </Text>
+                        <View
+                          style={
+                            {
+                              "height": 24,
+                              "width": 24,
+                            }
+                          }
+                        >
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 1,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 1,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                          <View
+                            collapsable={false}
+                            jestAnimatedStyle={
+                              {
+                                "value": {
+                                  "opacity": 0,
+                                  "transform": [
+                                    {
+                                      "rotate": "0deg",
+                                    },
+                                  ],
+                                },
+                              }
+                            }
+                            style={
+                              {
+                                "left": 0,
+                                "opacity": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "transform": [
+                                  {
+                                    "rotate": "0deg",
+                                  },
+                                ],
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#fff",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                      <View
+                        testID="footer-column-collapsible"
+                      />
+                    </View>
+                    <View
+                      style={
+                        {
+                          "backgroundColor": "#dddddd",
+                          "height": 1,
+                          "width": "100%",
+                        }
+                      }
+                      testID="divider"
+                    />
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "backgroundColor": "#000",
+                "paddingTop": 48,
+              }
+            }
+            testID="footer-bottom"
+          >
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "rowGap": 12,
+                  },
+                  {
+                    "paddingHorizontal": 2,
+                  },
+                  undefined,
+                ]
+              }
+              testID="container"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexGrow": 1,
+                      "rowGap": 12,
+                      "width": "100%",
+                    },
+                    {
+                      "maxWidth": undefined,
+                    },
+                    {
+                      "maxWidth": 355,
+                    },
+                    {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    },
+                    undefined,
+                  ]
+                }
+                testID="grid"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "auto",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "paddingHorizontal": 6,
+                      },
+                      {
+                        "flexBasis": "100%",
+                        "maxWidth": "100%",
+                      },
+                      [
+                        {
+                          "justifyContent": undefined,
+                        },
+                        {
+                          "flexDirection": "column",
+                          "flexWrap": "wrap",
+                          "gap": 32,
+                          "paddingVertical": 0,
+                        },
+                      ],
+                    ]
+                  }
+                  testID="column"
+                >
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          {
+                            "columnGap": 12,
+                            "rowGap": 16,
+                          }
+                        }
+                        testID="footer-column"
+                      >
+                        <View
+                          style={
+                            [
+                              {
+                                "height": 29,
+                                "width": 109,
+                              },
+                              {
+                                "maxHeight": 367,
+                              },
+                            ]
+                          }
+                          testID="logo"
+                        >
+                          <RNSVGSvgView
+                            align="xMidYMid"
+                            bbHeight={30}
+                            bbWidth={109}
+                            fill="none"
+                            focusable={false}
+                            height={30}
+                            meetOrSlice={0}
+                            minX={0}
+                            minY={0}
+                            style={
+                              [
+                                {
+                                  "backgroundColor": "transparent",
+                                  "borderWidth": 0,
+                                },
+                                {
+                                  "flex": 0,
+                                  "height": 30,
+                                  "width": 109,
+                                },
+                              ]
+                            }
+                            vbHeight={30}
+                            vbWidth={109}
+                            width={109}
+                          >
+                            <RNSVGGroup
+                              fill={null}
+                              propList={
+                                [
+                                  "fill",
+                                ]
+                              }
+                            >
+                              <RNSVGRect
+                                fill={
+                                  {
+                                    "payload": 4278190080,
+                                    "type": 0,
+                                  }
+                                }
+                                height="100%"
+                                width="100%"
+                                x={0}
+                                y={0}
+                              />
+                              <RNSVGGroup
+                                clipRule={1}
+                                fill={
+                                  {
+                                    "payload": 4278190080,
+                                    "type": 0,
+                                  }
+                                }
+                                fillRule={0}
+                                propList={
+                                  [
+                                    "fillRule",
+                                  ]
+                                }
+                              >
+                                <RNSVGPath
+                                  d="M14.4528 29C22.4554 29 28.9057 22.5095 28.9057 14.5C28.9057 6.49048 22.4554 0 14.4528 0C6.45032 0 0 6.49048 0 14.5C0 22.5095 6.48481 29 14.4528 29ZM94.5471 29C102.55 29 109 22.5095 109 14.5C109 6.49048 102.515 0 94.5471 0C86.5791 0 80.0943 6.49048 80.0943 14.5C80.0943 22.5095 86.5791 29 94.5471 29ZM45.3247 14.5C45.3247 22.5095 38.8399 29 30.8718 29V0C38.8744 0 45.3247 6.49048 45.3247 14.5ZM78.1282 29C70.1256 29 63.6753 22.5095 63.6753 14.5C63.6753 6.49048 70.1256 0 78.1282 0V29ZM47.2563 0H61.7092V29H47.2563V0Z"
+                                  fill={
+                                    {
+                                      "payload": 4294967295,
+                                      "type": 0,
+                                    }
+                                  }
+                                  propList={
+                                    [
+                                      "fill",
+                                    ]
+                                  }
+                                />
+                              </RNSVGGroup>
+                            </RNSVGGroup>
+                          </RNSVGSvgView>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          {
+                            "columnGap": 12,
+                            "rowGap": 16,
+                          }
+                        }
+                        testID="footer-column"
+                      >
+                        <View
+                          style={
+                            {
+                              "alignSelf": undefined,
+                              "flexDirection": "row",
+                              "flexWwrap": "wrap",
+                              "gap": 8,
+                            }
+                          }
+                        >
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "Icons_Outline_MD_odido",
+                                        "fontSize": 32,
+                                        "lineHeight": 32,
+                                        "width": 32,
+                                      },
+                                      {
+                                        "color": "#fff",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  
+                                </Text>
+                              </View>
+                            </View>
+                          </Text>
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "Icons_Solid_MD_odido",
+                                        "fontSize": 32,
+                                        "lineHeight": 32,
+                                        "width": 32,
+                                      },
+                                      {
+                                        "color": "#fff",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  
+                                </Text>
+                              </View>
+                            </View>
+                          </Text>
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "Icons_Solid_MD_odido",
+                                        "fontSize": 32,
+                                        "lineHeight": 32,
+                                        "width": 32,
+                                      },
+                                      {
+                                        "color": "#fff",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  
+                                </Text>
+                              </View>
+                            </View>
+                          </Text>
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Text
+                                  allowFontScaling={true}
+                                  style={
+                                    [
+                                      {
+                                        "fontFamily": "Icons_Solid_MD_odido",
+                                        "fontSize": 32,
+                                        "lineHeight": 32,
+                                        "width": 32,
+                                      },
+                                      {
+                                        "color": "#fff",
+                                      },
+                                    ]
+                                  }
+                                >
+                                  
+                                </Text>
+                              </View>
+                            </View>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View>
+                      <View
+                        style={
+                          {
+                            "columnGap": 12,
+                            "rowGap": 16,
+                          }
+                        }
+                        testID="footer-column"
+                      >
+                        <View
+                          style={
+                            {
+                              "alignSelf": undefined,
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "gap": 8,
+                            }
+                          }
+                        >
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <View
+                                  style={
+                                    {
+                                      "alignItems": "center",
+                                      "alignSelf": "flex-start",
+                                      "backgroundColor": undefined,
+                                      "borderColor": "#ffffff",
+                                      "borderRadius": 4.5,
+                                      "borderWidth": 2,
+                                      "justifyContent": "center",
+                                      "minWidth": 118,
+                                      "paddingHorizontal": 7,
+                                      "paddingVertical": 5,
+                                    }
+                                  }
+                                >
+                                  <RNSVGSvgView
+                                    align="xMidYMid"
+                                    bbHeight="26"
+                                    bbWidth="100"
+                                    fill="none"
+                                    focusable={false}
+                                    height="26"
+                                    meetOrSlice={0}
+                                    minX={0}
+                                    minY={0}
+                                    style={
+                                      [
+                                        {
+                                          "backgroundColor": "transparent",
+                                          "borderWidth": 0,
+                                        },
+                                        {
+                                          "flex": 0,
+                                          "height": 26,
+                                          "width": 100,
+                                        },
+                                      ]
+                                    }
+                                    vbHeight={26}
+                                    vbWidth={100}
+                                    width="100"
+                                  >
+                                    <RNSVGGroup
+                                      fill={null}
+                                      propList={
+                                        [
+                                          "fill",
+                                        ]
+                                      }
+                                    >
+                                      <RNSVGPath
+                                        d="M15.446 12.0424C15.4687 10.2783 16.3937 8.64874 17.8967 7.72472C16.9442 6.36443 15.406 5.53289 13.746 5.48096C11.9997 5.29766 10.3066 6.52588 9.4167 6.52588C8.50956 6.52588 7.13939 5.49916 5.66394 5.52951C3.72264 5.59223 1.95669 6.66913 1.01221 8.36621C-0.999055 11.8482 0.501171 16.9656 2.42783 19.7802C3.39178 21.1584 4.51836 22.6979 5.99249 22.6434C7.435 22.5835 7.97375 21.7236 9.71497 21.7236C11.44 21.7236 11.9455 22.6434 13.4495 22.6086C14.9974 22.5835 15.9726 21.2243 16.9028 19.833C17.5954 18.851 18.1284 17.7656 18.4819 16.6171C16.6435 15.8396 15.4481 14.0384 15.446 12.0424Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M12.6052 3.62989C13.4491 2.61682 13.8649 1.31468 13.7642 0C12.4748 0.135415 11.2838 0.751614 10.4284 1.72582C9.5838 2.68701 9.15591 3.9445 9.23901 5.22132C10.5457 5.23477 11.7863 4.64822 12.6052 3.62989Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M32.7526 19.2928H28.0188L26.882 22.6492H24.877L29.3607 10.2312H31.4439L35.9276 22.6492H33.8884L32.7526 19.2928ZM28.5091 17.7439H32.2614L30.4116 12.2967H30.3598L28.5091 17.7439Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M45.611 18.1229C45.611 20.9363 44.105 22.7439 41.8324 22.7439C40.6577 22.8054 39.5511 22.1902 38.9835 21.16H38.9405V25.6443H37.082V13.5955H38.8809V15.1014H38.9151C39.508 14.0776 40.6157 13.4626 41.7981 13.5008C44.0962 13.5008 45.611 15.3172 45.611 18.1229ZM43.7007 18.1229C43.7007 16.2899 42.7533 15.0848 41.3079 15.0848C39.8879 15.0848 38.9327 16.3152 38.9327 18.1229C38.9327 19.9471 39.8879 21.1688 41.3079 21.1688C42.7533 21.1688 43.7007 19.9725 43.7007 18.1229Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M55.5771 18.1229C55.5771 20.9363 54.0706 22.7439 51.798 22.7439C50.6233 22.8054 49.5168 22.1902 48.9491 21.16H48.9061V25.6443H47.0476V13.5955H48.8465V15.1014H48.8807C49.4736 14.0776 50.5813 13.4626 51.7638 13.5008C54.0618 13.5008 55.5771 15.3172 55.5771 18.1229ZM53.6663 18.1229C53.6663 16.2899 52.7189 15.0848 51.2735 15.0848C49.8535 15.0848 48.8983 16.3152 48.8983 18.1229C48.8983 19.9471 49.8535 21.1688 51.2735 21.1688C52.7189 21.1688 53.6663 19.9725 53.6663 18.1229Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M62.1625 19.1893C62.3003 20.4207 63.4967 21.2293 65.1315 21.2293C66.6981 21.2293 67.8251 20.4207 67.8251 19.3103C67.8251 18.3464 67.1454 17.7693 65.5359 17.3738L63.9264 16.9861C61.6459 16.4353 60.5872 15.3689 60.5872 13.6384C60.5872 11.4958 62.4546 10.0242 65.1052 10.0242C67.7304 10.0242 69.5293 11.4958 69.5899 13.6384H67.7137C67.6014 12.3992 66.5769 11.6511 65.0798 11.6511C63.5826 11.6511 62.5581 12.408 62.5581 13.5095C62.5581 14.3875 63.2124 14.9041 64.8131 15.2995L66.1814 15.6355C68.7294 16.238 69.7871 17.2615 69.7871 19.0779C69.7871 21.4011 67.9374 22.8562 64.9938 22.8562C62.2397 22.8562 60.3801 21.4353 60.26 19.1892L62.1625 19.1893Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M73.8002 11.4529V13.5955H75.5219V15.0672H73.8002V20.0584C73.8002 20.8338 74.1449 21.1951 74.9018 21.1951C75.1062 21.1916 75.3103 21.1772 75.5132 21.1521V22.615C75.1729 22.6786 74.827 22.7074 74.4809 22.701C72.6477 22.701 71.9328 22.0125 71.9328 20.2566V15.0672H70.6163V13.5955H71.9328V11.4529H73.8002Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M76.5182 18.1229C76.5182 15.2742 78.196 13.4842 80.8124 13.4842C83.4376 13.4842 85.1077 15.2742 85.1077 18.1229C85.1077 20.9793 83.4464 22.7615 80.8124 22.7615C78.1794 22.7615 76.5182 20.9793 76.5182 18.1229ZM83.214 18.1229C83.214 16.1688 82.3184 15.0154 80.8124 15.0154C79.3064 15.0154 78.4109 16.1775 78.4109 18.1229C78.4109 20.0848 79.3064 21.2293 80.8124 21.2293C82.3184 21.2293 83.214 20.0848 83.214 18.1229Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M86.64 13.5955H88.4126V15.1365H88.4556C88.7028 14.1445 89.6119 13.4618 90.6335 13.5008C90.8477 13.5 91.0613 13.5233 91.2703 13.5701V15.3084C90.9999 15.2258 90.7178 15.1878 90.4352 15.1961C89.8888 15.1739 89.36 15.3917 88.9877 15.7921C88.6154 16.1926 88.4367 16.7358 88.4986 17.2791V22.6492H86.64V13.5955Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M99.8393 19.99C99.5893 21.6336 97.9886 22.7615 95.9406 22.7615C93.3066 22.7615 91.6717 20.9969 91.6717 18.1658C91.6717 15.326 93.3153 13.4842 95.8624 13.4842C98.3675 13.4842 99.9428 15.2049 99.9428 17.95V18.5867H93.5478V18.699C93.4881 19.3731 93.7208 20.0402 94.1869 20.5309C94.6529 21.0215 95.3073 21.2884 95.9835 21.2635C96.8854 21.348 97.7358 20.8301 98.0745 19.99L99.8393 19.99ZM93.5566 17.2879H98.0833C98.117 16.6822 97.8965 16.09 97.475 15.6538C97.0534 15.2176 96.4689 14.977 95.8624 14.99C95.2511 14.9864 94.6637 15.2271 94.2307 15.6586C93.7977 16.0901 93.555 16.6766 93.5566 17.2879Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M28.2765 0.884045C29.0655 0.827421 29.8384 1.12758 30.3823 1.70189C30.9262 2.27621 31.1839 3.06415 31.0844 3.84884C31.0844 5.75509 30.054 6.85084 28.2766 6.85084H26.1211V0.884045H28.2765ZM27.0479 6.00704H28.173C28.7369 6.04075 29.2859 5.8186 29.6677 5.4023C30.0494 4.98599 30.2233 4.41984 30.1409 3.86104C30.2173 3.30457 30.0409 2.74309 29.6601 2.33018C29.2793 1.91727 28.7339 1.69613 28.173 1.72725H27.0479V6.00704Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M32.1313 4.59738C32.0541 3.79027 32.4411 3.00916 33.1301 2.58164C33.8191 2.15413 34.6909 2.15413 35.3799 2.58164C36.0689 3.00916 36.4559 3.79027 36.3787 4.59738C36.4574 5.40537 36.0707 6.18799 35.3811 6.61643C34.6915 7.04486 33.8185 7.04486 33.1289 6.61643C32.4393 6.18799 32.0526 5.40537 32.1313 4.59738ZM35.4646 4.59738C35.4646 3.62131 35.0261 3.05051 34.2565 3.05051C33.484 3.05051 33.0494 3.62131 33.0494 4.59739C33.0494 5.58128 33.484 6.14768 34.2565 6.14768C35.0261 6.14768 35.4646 5.57736 35.4646 4.59738Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M42.0247 6.85079H41.1027L40.172 3.53438H40.1017L39.1748 6.85079H38.2617L37.0204 2.34786H37.9218L38.7285 5.78386H38.7949L39.7208 2.34786H40.5734L41.4992 5.78386H41.5696L42.3724 2.34786H43.2611L42.0247 6.85079Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M44.3051 2.34786H45.1606V3.06319H45.2271C45.458 2.53652 45.9977 2.21435 46.5709 2.26094C47.0148 2.22758 47.4497 2.39783 47.7529 2.72365C48.0562 3.04946 48.1948 3.49547 48.1296 3.93574V6.85075H47.2409V4.1589C47.2409 3.43527 46.9264 3.0754 46.2691 3.0754C45.9681 3.06138 45.6759 3.17953 45.4692 3.39886C45.2625 3.6182 45.162 3.91685 45.1938 4.21651V6.85079H44.3051V2.34786Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M49.5458 0.590045H50.4345V6.85078H49.5458V0.590045Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M51.67 4.59738C51.5928 3.79022 51.9799 3.00908 52.669 2.58156C53.358 2.15404 54.2299 2.15404 54.9189 2.58156C55.6079 3.00908 55.995 3.79022 55.9179 4.59738C55.9965 5.4054 55.6097 6.188 54.9201 6.61642C54.2304 7.04483 53.3574 7.04483 52.6678 6.61642C51.9782 6.188 51.5914 5.4054 51.67 4.59738ZM55.0032 4.59738C55.0032 3.62131 54.5647 3.05051 53.7952 3.05051C53.0226 3.05051 52.5881 3.62131 52.5881 4.59739C52.5881 5.58128 53.0227 6.14768 53.7952 6.14768C54.5647 6.14768 55.0032 5.57736 55.0032 4.59738Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M56.8535 5.57736C56.8535 4.76681 57.457 4.29953 58.5284 4.23312L59.7482 4.16281V3.77414C59.7482 3.29855 59.4337 3.03 58.8263 3.03C58.3301 3.03 57.9864 3.21213 57.8877 3.53049H57.0273C57.1181 2.75705 57.8457 2.26096 58.8673 2.26096C59.9963 2.26096 60.633 2.82296 60.633 3.77414V6.8508H59.7775V6.21799H59.7072C59.4166 6.68012 58.8999 6.95021 58.3545 6.92499C57.9723 6.96476 57.591 6.84095 57.305 6.5842C57.019 6.32744 56.855 5.96169 56.8535 5.57736ZM59.7482 5.19259V4.81613L58.6485 4.88644C58.0284 4.92794 57.7471 5.13888 57.7471 5.53585C57.7471 5.94112 58.0987 6.17696 58.5822 6.17696C58.8684 6.20593 59.1541 6.11751 59.3739 5.93195C59.5937 5.74639 59.7288 5.47958 59.7482 5.19259Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M61.8011 4.59738C61.8011 3.17453 62.5326 2.27316 63.6704 2.27316C64.2449 2.24669 64.783 2.55452 65.0513 3.06316H65.1178V0.590045H66.0065V6.85078H65.1549V6.13935H65.0846C64.7959 6.64378 64.2512 6.9464 63.6704 6.92499C62.5248 6.92504 61.8011 6.02365 61.8011 4.59738ZM62.7192 4.59738C62.7192 5.55246 63.1694 6.12717 63.9224 6.12717C64.6714 6.12717 65.1344 5.54417 65.1344 4.60129C65.1344 3.66281 64.6666 3.0715 63.9224 3.0715C63.1742 3.0715 62.7192 3.65011 62.7192 4.59738Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M69.791 1.01632C69.7769 0.780811 69.9081 0.560577 70.1218 0.460615C70.3355 0.360652 70.5886 0.401194 70.7604 0.562915C70.9322 0.724635 70.9879 0.974797 70.901 1.19414C70.8141 1.41349 70.6022 1.55762 70.3662 1.55782C70.2173 1.56542 70.0717 1.51193 69.9631 1.40972C69.8545 1.30751 69.7924 1.16543 69.791 1.01632ZM69.9228 2.34786H70.8086V6.85079H69.9228V2.34786Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M72.2423 2.34786H73.0979V3.06319H73.1643C73.3952 2.53652 73.9349 2.21435 74.5081 2.26094C74.952 2.22758 75.3869 2.39783 75.6902 2.72365C75.9934 3.04946 76.132 3.49547 76.0668 3.93574V6.85075H75.1781V4.1589C75.1781 3.43527 74.8636 3.0754 74.2064 3.0754C73.9053 3.06138 73.6131 3.17953 73.4064 3.39886C73.1998 3.6182 73.0992 3.91685 73.1311 4.21651V6.85079H72.2423V2.34786Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M79.6619 4.59738C79.6619 3.17453 80.3934 2.27316 81.5311 2.27316C82.1057 2.24669 82.6438 2.55452 82.9121 3.06316H82.9785V0.590045H83.8673V6.85078H83.0156V6.13935H82.9453C82.6567 6.64378 82.112 6.9464 81.5311 6.92499C80.3855 6.92504 79.6619 6.02365 79.6619 4.59738ZM80.5799 4.59738C80.5799 5.55246 81.0302 6.12717 81.7831 6.12717C82.5322 6.12717 82.9952 5.54417 82.9952 4.60129C82.9952 3.66281 82.5273 3.0715 81.7831 3.0715C81.035 3.0715 80.5799 3.65011 80.5799 4.59738Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M89.1333 5.63497C88.8841 6.48435 88.0621 7.03315 87.182 6.9377C86.5815 6.95356 86.0044 6.70467 85.6038 6.2571C85.2032 5.80952 85.0196 5.20849 85.1017 4.61348C85.0218 4.01682 85.2047 3.41484 85.6031 2.96348C86.0014 2.51212 86.576 2.25581 87.1781 2.26094C88.4311 2.26094 89.187 3.11694 89.187 4.53094V4.84104H86.0071V4.89084C85.9789 5.22498 86.0931 5.55549 86.3214 5.80109C86.5497 6.04668 86.8711 6.18457 87.2064 6.18084C87.6412 6.23304 88.0644 6.01738 88.2778 5.63494L89.1333 5.63497ZM86.007 4.1838H88.2816C88.3043 3.8782 88.1968 3.57725 87.9857 3.3551C87.7746 3.13296 87.4795 3.01028 87.1731 3.0173C86.8626 3.0134 86.5637 3.13507 86.3441 3.35469C86.1246 3.57432 86.003 3.8733 86.007 4.1838Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                    </RNSVGGroup>
+                                  </RNSVGSvgView>
+                                </View>
+                              </View>
+                            </View>
+                          </Text>
+                          <Text
+                            onPress={[Function]}
+                            role="link"
+                            style={
+                              {
+                                "color": "#fff",
+                                "fontFamily": "odido_Paragraph_Link",
+                                "fontSize": 16,
+                                "letterSpacing": 0.23999999463558197,
+                                "lineHeight": 24,
+                                "overflow": "visible",
+                                "textDecorationLine": "none",
+                              }
+                            }
+                            testID="link"
+                          >
+                            <View
+                              style={
+                                [
+                                  {
+                                    "alignItems": "center",
+                                    "columnGap": 8,
+                                    "flexDirection": "row",
+                                    "gap": 8,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                style={
+                                  {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <View
+                                  style={
+                                    {
+                                      "alignItems": "center",
+                                      "alignSelf": "flex-start",
+                                      "backgroundColor": undefined,
+                                      "borderColor": "#ffffff",
+                                      "borderRadius": 4.5,
+                                      "borderWidth": 2,
+                                      "justifyContent": "center",
+                                      "minWidth": 134,
+                                      "paddingHorizontal": 7,
+                                      "paddingVertical": 4,
+                                    }
+                                  }
+                                >
+                                  <RNSVGSvgView
+                                    align="xMidYMid"
+                                    bbHeight="28"
+                                    bbWidth="116"
+                                    fill="none"
+                                    focusable={false}
+                                    height="28"
+                                    meetOrSlice={0}
+                                    minX={0}
+                                    minY={0}
+                                    style={
+                                      [
+                                        {
+                                          "backgroundColor": "transparent",
+                                          "borderWidth": 0,
+                                        },
+                                        {
+                                          "flex": 0,
+                                          "height": 28,
+                                          "width": 116,
+                                        },
+                                      ]
+                                    }
+                                    vbHeight={28}
+                                    vbWidth={116}
+                                    width="116"
+                                  >
+                                    <RNSVGGroup
+                                      fill={null}
+                                      propList={
+                                        [
+                                          "fill",
+                                        ]
+                                      }
+                                    >
+                                      <RNSVGPath
+                                        d="M0.0751953 23.3712L9.94783 13.57L0.0751953 3.76888V23.3712Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M0.262105 2.60779L10.6261 12.8967L15.8616 7.69905L4.5876 1.13085C2.92176 0.160334 0.881449 0.984889 0.262105 2.60779Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M16.7164 8.19707L11.3043 13.57L16.7164 18.943L21.6391 16.075C23.5806 14.9439 23.5806 12.1961 21.6391 11.065L16.7164 8.19707Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M15.8616 19.441L10.6261 14.2434L0.262125 24.5323C0.881493 26.1551 2.92178 26.9797 4.5876 26.0092L15.8616 19.441Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M58.2449 15.325C55.8949 15.325 53.9749 17.115 53.9749 19.575C53.9749 22.035 55.8949 23.825 58.2449 23.825C60.5949 23.825 62.5149 22.025 62.5149 19.575C62.5149 17.125 60.5949 15.325 58.2449 15.325ZM58.2449 22.155C56.9549 22.155 55.8449 21.095 55.8449 19.575C55.8449 18.055 56.9549 16.995 58.2449 16.995C59.5349 16.995 60.6449 18.045 60.6449 19.575C60.6449 21.105 59.5349 22.155 58.2449 22.155ZM48.9249 15.325C46.5749 15.325 44.6549 17.115 44.6549 19.575C44.6549 22.035 46.5749 23.825 48.9249 23.825C51.2749 23.825 53.1949 22.025 53.1949 19.575C53.1949 17.125 51.2749 15.325 48.9249 15.325ZM48.9249 22.155C47.6349 22.155 46.5249 21.095 46.5249 19.575C46.5249 18.055 47.6349 16.995 48.9249 16.995C50.2149 16.995 51.3249 18.045 51.3249 19.575C51.3249 21.105 50.2149 22.155 48.9249 22.155ZM37.8449 16.635V18.435H42.1649C42.0349 19.455 41.6949 20.195 41.1849 20.705C40.5549 21.335 39.5749 22.025 37.8549 22.025C35.1949 22.025 33.1149 19.885 33.1149 17.225C33.1149 14.565 35.1949 12.425 37.8549 12.425C39.2849 12.425 40.3349 12.985 41.1049 13.715L42.3749 12.445C41.2949 11.415 39.8649 10.625 37.8449 10.625C34.2049 10.625 31.1449 13.585 31.1449 17.235C31.1449 20.885 34.2049 23.845 37.8449 23.845C39.8149 23.845 41.2949 23.205 42.4549 21.995C43.6449 20.805 44.0149 19.125 44.0149 17.775C44.0149 17.355 43.9849 16.965 43.9149 16.645H37.8449V16.635ZM83.1549 18.035C82.8049 17.085 81.7249 15.325 79.5149 15.325C77.3049 15.325 75.5049 17.045 75.5049 19.575C75.5049 21.955 77.3049 23.825 79.7249 23.825C81.6749 23.825 82.8049 22.635 83.2649 21.945L81.8149 20.975C81.3349 21.685 80.6749 22.155 79.7249 22.155C78.7749 22.155 78.0949 21.715 77.6649 20.865L83.3549 18.515L83.1649 18.035H83.1549ZM77.3549 19.455C77.3049 17.815 78.6249 16.975 79.5749 16.975C80.3149 16.975 80.9449 17.345 81.1549 17.875L77.3549 19.455ZM72.7349 23.575H74.6049V11.075H72.7349V23.575ZM69.6749 16.275H69.6149C69.1949 15.775 68.3949 15.325 67.3749 15.325C65.2449 15.325 63.2949 17.195 63.2949 19.595C63.2949 21.995 65.2449 23.835 67.3749 23.835C68.3949 23.835 69.1949 23.385 69.6149 22.865H69.6749V23.475C69.6749 25.105 68.8049 25.975 67.4049 25.975C66.2649 25.975 65.5549 25.155 65.2649 24.465L63.6349 25.145C64.1049 26.275 65.3449 27.655 67.4049 27.655C69.5949 27.655 71.4449 26.365 71.4449 23.225V15.585H69.6749V16.275ZM67.5249 22.155C66.2349 22.155 65.1549 21.075 65.1549 19.595C65.1549 18.115 66.2349 17.005 67.5249 17.005C68.8149 17.005 69.7949 18.105 69.7949 19.595C69.7949 21.085 68.7949 22.155 67.5249 22.155ZM87.4449 11.075V23.575H89.3149V18.835H91.9249C93.9949 18.835 96.0249 17.335 96.0249 14.955C96.0249 12.575 93.9949 11.075 91.9249 11.075H87.4449ZM91.9549 17.095H89.3049V12.805H91.9549C93.3549 12.805 94.1449 13.965 94.1449 14.945C94.1449 15.925 93.3549 17.085 91.9549 17.085V17.095ZM103.495 15.305C102.145 15.305 100.745 15.905 100.165 17.215L101.825 17.905C102.175 17.215 102.835 16.985 103.525 16.985C104.485 16.985 105.475 17.565 105.485 18.595V18.725C105.145 18.535 104.425 18.245 103.535 18.245C101.745 18.245 99.9349 19.225 99.9349 21.055C99.9349 22.725 101.395 23.805 103.035 23.805C104.285 23.805 104.985 23.245 105.415 22.585H105.475V23.555H107.275V18.765C107.275 16.545 105.615 15.305 103.475 15.305H103.495ZM103.265 22.155C102.655 22.155 101.805 21.845 101.805 21.095C101.805 20.135 102.865 19.765 103.785 19.765C104.605 19.765 104.995 19.945 105.485 20.185C105.345 21.345 104.345 22.165 103.265 22.165V22.155ZM113.845 15.575L111.705 20.995H111.645L109.425 15.575H107.415L110.745 23.155L108.845 27.365H110.795L115.925 15.575H113.845ZM97.0449 23.575H98.9149V11.075H97.0449V23.575Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M34.1248 0.345001C33.2248 0.345001 32.4548 0.665001 31.8548 1.285C31.2548 1.905 30.9448 2.675 30.9448 3.575C30.9448 4.475 31.2548 5.245 31.8548 5.865C32.4648 6.485 33.2248 6.805 34.1248 6.805C35.0248 6.805 35.7948 6.485 36.3948 5.865C36.9948 5.245 37.3048 4.465 37.3048 3.575C37.3048 2.685 36.9948 1.905 36.3848 1.285C35.7748 0.655001 35.0148 0.345001 34.1148 0.345001H34.1248ZM36.3148 3.575C36.3148 4.245 36.1048 4.795 35.6748 5.225C35.2548 5.655 34.7248 5.865 34.1148 5.865C33.5048 5.865 32.9748 5.645 32.5548 5.225C32.1348 4.795 31.9148 4.245 31.9148 3.575C31.9148 2.905 32.1248 2.355 32.5548 1.925C32.9748 1.495 33.5048 1.285 34.1148 1.285C34.7248 1.285 35.2548 1.505 35.6748 1.925C36.0948 2.355 36.3148 2.905 36.3148 3.575Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M42.0448 4.085L42.0648 4.935L39.2848 0.475001H38.1848V6.675H39.1548V2.835L39.1348 1.995L42.0248 6.625L42.0548 6.675H43.0148V0.475001H42.0448V4.085Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M43.7848 1.415H45.4648V6.675H46.4348V1.415H48.1048V0.475001H43.7848V1.415Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M50.8148 0.475001H48.8748V6.675H50.8148C51.7548 6.675 52.5248 6.385 53.0948 5.815C53.6648 5.245 53.9548 4.495 53.9548 3.575C53.9548 2.655 53.6648 1.915 53.0948 1.335C52.5248 0.765001 51.7548 0.475001 50.8148 0.475001ZM50.8148 5.735H49.8548V1.405H50.8148C51.4748 1.405 52.0048 1.595 52.3948 1.975C52.7748 2.355 52.9748 2.885 52.9748 3.565C52.9748 4.245 52.7848 4.785 52.3948 5.165C52.0148 5.545 51.4848 5.735 50.8148 5.735Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M54.8348 6.675H58.5448V5.735H55.8048V4.035H58.2748V3.115H55.8048V1.415H58.5448V0.475001H54.8348V6.675Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M64.1849 0.645001V0.475001H63.0448L60.5148 3.435V0.475001H59.5448V6.675H60.5148V4.875L61.3348 3.935L63.2148 6.635L63.2448 6.675H64.3448V6.505L61.9848 3.185L64.1849 0.645001Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M70.7149 3.045H67.9049V0.475001H66.9349V6.675H67.9049V3.965H70.7149V6.675H71.6849V0.475001H70.7149V3.045Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M72.8549 6.675H76.5549V5.735H73.8249V4.035H76.2949V3.115H73.8249V1.415H76.5549V0.475001H72.8549V6.675Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M77.1649 1.415H78.8448V6.675H79.8148V1.415H81.4848V0.475001H77.1649V1.415Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M86.9949 0.345001C86.0949 0.345001 85.3249 0.665001 84.7249 1.285C84.1149 1.905 83.8148 2.675 83.8148 3.575C83.8148 4.475 84.1249 5.245 84.7249 5.865C85.3249 6.485 86.0949 6.805 86.9949 6.805C87.8949 6.805 88.6649 6.485 89.2649 5.865C89.8649 5.245 90.1749 4.465 90.1749 3.575C90.1749 2.685 89.8649 1.905 89.2549 1.285C88.6449 0.655001 87.8848 0.345001 86.9848 0.345001H86.9949ZM86.9949 5.875C86.3849 5.875 85.8549 5.655 85.4349 5.235C85.0149 4.805 84.7949 4.255 84.7949 3.585C84.7949 2.915 85.0049 2.365 85.4349 1.935C85.8549 1.505 86.3849 1.295 86.9949 1.295C87.6049 1.295 88.1349 1.515 88.5549 1.935C88.9749 2.365 89.1949 2.915 89.1949 3.585C89.1949 4.255 88.9849 4.805 88.5549 5.235C88.1349 5.665 87.6049 5.875 86.9949 5.875Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                      <RNSVGPath
+                                        d="M94.5849 1.005C94.1949 0.655001 93.7349 0.475001 93.1949 0.475001H91.0549V6.675H92.0249V4.245H93.1949C93.7249 4.245 94.1949 4.065 94.5849 3.715C94.9749 3.355 95.1749 2.905 95.1749 2.365C95.1749 1.825 94.9749 1.365 94.5849 1.015V1.005ZM94.1949 2.365C94.1949 2.605 94.1049 2.815 93.9249 3.015C93.7449 3.215 93.5149 3.305 93.2149 3.305H92.0249V1.415H93.2149C93.5149 1.415 93.7449 1.515 93.9249 1.705C94.1049 1.905 94.1949 2.115 94.1949 2.355V2.365Z"
+                                        fill={
+                                          {
+                                            "payload": 4294967295,
+                                            "type": 0,
+                                          }
+                                        }
+                                        propList={
+                                          [
+                                            "fill",
+                                          ]
+                                        }
+                                      />
+                                    </RNSVGGroup>
+                                  </RNSVGSvgView>
+                                </View>
+                              </View>
+                            </View>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "rowGap": 12,
+                  },
+                  {
+                    "paddingHorizontal": 2,
+                  },
+                  undefined,
+                ]
+              }
+              testID="container"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexGrow": 1,
+                      "rowGap": 12,
+                      "width": "100%",
+                    },
+                    {
+                      "maxWidth": undefined,
+                    },
+                    {
+                      "maxWidth": 355,
+                    },
+                    {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    },
+                    undefined,
+                  ]
+                }
+                testID="grid"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "auto",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "paddingHorizontal": 6,
+                      },
+                      {
+                        "flexBasis": "100%",
+                        "maxWidth": "100%",
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "gap": 8,
+                        "paddingTop": 48,
+                      },
+                    ]
+                  }
+                  testID="column"
+                >
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#fff",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 14,
+                        "letterSpacing": 0.20999999344348907,
+                        "lineHeight": 20,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 14,
+                            "letterSpacing": 0.20999999344348907,
+                            "lineHeight": 20,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#fff",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Assorted link
+                    </Text>
+                  </Text>
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#fff",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 14,
+                        "letterSpacing": 0.20999999344348907,
+                        "lineHeight": 20,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 14,
+                            "letterSpacing": 0.20999999344348907,
+                            "lineHeight": 20,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#fff",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Assorted link
+                    </Text>
+                  </Text>
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#fff",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 14,
+                        "letterSpacing": 0.20999999344348907,
+                        "lineHeight": 20,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 14,
+                            "letterSpacing": 0.20999999344348907,
+                            "lineHeight": 20,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#fff",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Assorted link
+                    </Text>
+                  </Text>
+                  <Text
+                    onPress={[Function]}
+                    role="link"
+                    style={
+                      {
+                        "color": "#fff",
+                        "fontFamily": "odido_Paragraph_Link",
+                        "fontSize": 14,
+                        "letterSpacing": 0.20999999344348907,
+                        "lineHeight": 20,
+                        "overflow": "visible",
+                        "textDecorationLine": "none",
+                      }
+                    }
+                    testID="link"
+                  >
+                    <Text
+                      style={
+                        [
+                          {
+                            "textDecorationLine": "underline",
+                            "textDecorationStyle": "solid",
+                          },
+                          {
+                            "color": "#1b5ee4",
+                          },
+                          {
+                            "fontSize": 14,
+                            "letterSpacing": 0.20999999344348907,
+                            "lineHeight": 20,
+                          },
+                          false,
+                          false,
+                          {
+                            "color": "#fff",
+                            "textDecorationLine": "none",
+                          },
+                        ]
+                      }
+                      testID="link-text"
+                    >
+                      Assorted link
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "alignItems": "center",
+                    "rowGap": 12,
+                  },
+                  {
+                    "paddingHorizontal": 2,
+                  },
+                  undefined,
+                ]
+              }
+              testID="container"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "flexGrow": 1,
+                      "rowGap": 12,
+                      "width": "100%",
+                    },
+                    {
+                      "maxWidth": undefined,
+                    },
+                    {
+                      "maxWidth": 355,
+                    },
+                    {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    },
+                    undefined,
+                  ]
+                }
+                testID="grid"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "auto",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "paddingHorizontal": 6,
+                      },
+                      {
+                        "flexBasis": "100%",
+                        "maxWidth": "100%",
+                      },
+                      {
+                        "paddingBottom": 48,
+                        "paddingTop": 24,
+                      },
+                    ]
+                  }
+                  testID="column"
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Regular",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 14,
+                          "letterSpacing": 0.20999999344348907,
+                          "lineHeight": 20,
+                          "textAlign": "left",
+                        },
+                        {
+                          "color": "#fff",
+                        },
+                      ]
+                    }
+                    testID="paragraph"
+                  >
+                    © Copyright text
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

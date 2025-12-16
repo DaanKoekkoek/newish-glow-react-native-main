@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Ben2024";
+  src: url("./fonts/Ben2024-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter2024";
+  src: url("./fonts/Inter2024-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter2024";
+  src: url("./fonts/Inter2024-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}

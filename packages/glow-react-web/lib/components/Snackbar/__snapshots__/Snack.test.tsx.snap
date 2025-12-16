@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Snack renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="stack direction-column align-center justify-center gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+    style="height: 100vh;"
+  >
+    <div
+      aria-busy="false"
+      class="snackbar"
+      role="alert"
+    >
+      <div
+        class="snackbar-message-wrapper"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default solid snackbar-icon"
+          data-icon="chat"
+          data-testid="chat-icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Default Snack
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Error Snack renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="stack direction-column align-center justify-center gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+    style="height: 100vh;"
+  >
+    <div
+      aria-busy="false"
+      class="snackbar"
+      role="alert"
+    >
+      <div
+        class="snackbar-message-wrapper"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default solid snackbar-icon-error"
+          data-icon="status-error"
+          data-testid="status-error-icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Payment error occurred
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Loading Snack renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="stack direction-column align-center justify-center gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+    style="height: 100vh;"
+  >
+    <div
+      aria-busy="true"
+      class="snackbar"
+      role="alert"
+    >
+      <div
+        class="snackbar-message-wrapper"
+      >
+        <span
+          aria-busy="true"
+          aria-live="polite"
+          class="spinner"
+          role="status"
+        >
+          <span
+            class="glow-icon default spinner-icon spinner-icon-color-default spinner-icon-size-default snackbar-icon-loading no-hover"
+          >
+            <span>
+              <svg
+                data-testid="icon-outline-svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <defs>
+                  <mask
+                    fill="white"
+                    id="iconMask_:r6:_24x24_outline_loading"
+                    maskUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="m6.245 37.408-2.493-.182c.564-7.76 3.564-15.004 8.676-20.95l1.895 1.63c-4.76 5.536-7.553 12.28-8.078 19.502m70.003 2.538c0-18.912-14.75-34.81-33.582-36.194l-.183 2.493c17.532 1.289 31.265 16.092 31.265 33.7 0 18.64-15.164 33.804-33.802 33.804a33.74 33.74 0 0 1-22.038-8.18l-1.633 1.893a36.24 36.24 0 0 0 23.67 8.787c20.018 0 36.303-16.286 36.303-36.303m-38.84-33.7-.182-2.494c-7.76.564-15.005 3.565-20.95 8.676l1.63 1.896c5.536-4.76 12.279-7.553 19.502-8.079m-23.085 55.74c-4.76-5.537-7.553-12.28-8.078-19.502l-2.493.181c.564 7.76 3.564 15.005 8.676 20.95z"
+                      transform="scale(0.3, 0.3)"
+                    />
+                  </mask>
+                </defs>
+                <g
+                  mask="url(#iconMask_:r6:_24x24_outline_loading)"
+                >
+                  <g
+                    transform="scale(0.03)"
+                  >
+                    <g>
+                      <g
+                        clip-path="url(#clip:r7:)"
+                      >
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_linear_1_214-:r7:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_215-:r7:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_216-:r7:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_217-:r7:)"
+                        />
+                        <path
+                          d="M960 0H0v1080h960V0z"
+                          fill="url(#paint0_radial_1_218-:r7:)"
+                        />
+                      </g>
+                      <defs>
+                        <lineargradient
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_linear_1_214-:r7:"
+                          x1="960"
+                          x2="3.57628e-05"
+                          y1="2.86102e-05"
+                          y2="1080"
+                        >
+                          <stop
+                            offset="0.777327"
+                            stop-color="var(--linear-stop-1)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--linear-stop-2)"
+                          />
+                        </lineargradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_215-:r7:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.66"
+                            stop-color="var(--radial-stop-1)"
+                          />
+                          <stop
+                            offset="0.84"
+                            stop-color="var(--radial-stop-2)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-3)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_216-:r7:"
+                          r="1"
+                        >
+                          <stop
+                            stop-color="var(--radial-stop-4)"
+                          />
+                          <stop
+                            offset="0.33941"
+                            stop-color="var(--radial-stop-5)"
+                          />
+                          <stop
+                            offset="0.739171"
+                            stop-color="var(--radial-stop-6)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-7)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_217-:r7:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.578582"
+                            stop-color="var(--radial-stop-8)"
+                          />
+                          <stop
+                            offset="0.697843"
+                            stop-color="var(--radial-stop-9)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-10)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <radialgradient
+                          cx="0"
+                          cy="0"
+                          gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+                          gradientUnits="userSpaceOnUse"
+                          id="paint0_radial_1_218-:r7:"
+                          r="1"
+                        >
+                          <stop
+                            offset="0.00787439"
+                            stop-color="var(--radial-stop-11)"
+                          />
+                          <stop
+                            offset="0.565"
+                            stop-color="var(--radial-stop-12)"
+                          />
+                          <stop
+                            offset="0.708535"
+                            stop-color="var(--radial-stop-13)"
+                          />
+                          <stop
+                            offset="1"
+                            stop-color="var(--radial-stop-14)"
+                            stop-opacity="0"
+                          />
+                        </radialgradient>
+                        <clippath
+                          id="clip:r7:"
+                        >
+                          <path
+                            d="M0 0H960V1080H0z"
+                            fill="#fff"
+                          />
+                        </clippath>
+                      </defs>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </span>
+        </span>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Loading...
+        </p>
+        <button
+          class="button button-size-sm button-prominence-secondary"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            Cancel
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Success Snack renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="stack direction-column align-center justify-center gap-default wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+    style="height: 100vh;"
+  >
+    <div
+      aria-busy="false"
+      class="snackbar"
+      role="alert"
+    >
+      <div
+        class="snackbar-message-wrapper"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default solid snackbar-icon-success"
+          data-icon="status-success"
+          data-testid="status-success-icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Your profile changes are saved!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

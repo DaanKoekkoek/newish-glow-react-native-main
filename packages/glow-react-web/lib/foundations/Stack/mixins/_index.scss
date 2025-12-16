@@ -1,0 +1,117 @@
+@use "sass:map";
+@use "sass:math";
+@use "@globals/config";
+
+// preset = lg, default, sm. semantic = 50, 100, 200, etc.
+$gap-variants: (
+  presets: config.$gap-presets,
+  semantics: config.$gap-semantics,
+);
+
+/**
+  @mixin responsive-width($breakpoint: null, $gap-name, $gap-token)
+
+  Generates responsive column width utility classes for the Stack component.
+  - Iterates from 1 through 12 to provide `.stack-column-N` and `.stack-size-N` classes.
+  - Adjusts `flex` and `max-width` based on the column fraction (N/12).
+  - Subtracts half the configured gap token to ensure consistent spacing.
+  - Appends a breakpoint suffix (e.g. `-md`, `-lg`) when $breakpoint is provided.
+  - Skips generating the class for 12 columns (full width is the default).
+*/
+@mixin responsive-width($breakpoint: null, $gap-name, $gap-token) {
+    @for $i from 1 through 12 {
+        $percentage: math.percentage(math.div($i, 12));
+        $class-suffix: if($breakpoint, -#{$breakpoint}, "");
+
+        @if $i != 12 {
+          &.gap-#{$gap-name}.stack-size-#{$i}#{$class-suffix} {
+            flex: 0 0 calc(#{$percentage} - var(--#{$gap-token}) / 2);
+            max-width: calc(#{$percentage} - var(--#{$gap-token}) / 2);
+          }
+          
+          &.gap-#{$gap-name}.stack-column-#{$i}#{$class-suffix} {
+            display: flex;
+
+             > * {
+              flex: 1 0 calc(#{$percentage} - var(--#{$gap-token}) / 2);
+              max-width: calc(#{$percentage} - var(--#{$gap-token}) / 2);
+            }
+          } 
+        }
+    }
+}
+
+/**
+  @mixin flex-stack-utils($prefix: "")
+
+  Generates utility classes for the Stack component,
+  exposing common flexbox properties (direction, wrap, justify,
+  align, grow, shrink) and semantic gaps. The optional $suffix
+  allows modifier-specific class naming.
+*/
+@mixin flex-stack-utils($suffix: "", $gap-name: "", $gap-token: "") {
+    &.grow#{$suffix} {
+      flex-grow: var(--flex-grow);
+      width: 100%;
+    }
+  
+    &.shrink#{$suffix} {
+      flex-shrink: var(--flex-shrink);
+    }
+  
+    // Flex-direction utilities
+    @each $direction in column, column-reverse, row, row-reverse {
+      &.direction-#{$direction}#{$suffix} {
+        flex-direction: var(--direction-#{$direction});
+      }
+    }
+  
+    // Flex-wrap utilities
+    @each $wrap in nowrap, wrap, wrap-reverse {
+      &.wrap-#{$wrap}#{$suffix} {
+        flex-wrap: var(--#{$wrap});
+      }
+    }
+  
+    // Justify-content utilities
+    @each $justify in flex-start, center, flex-end, space-between, space-around, stretch {
+      &.justify-#{$justify}#{$suffix} {
+        @if $justify == stretch {
+          > * {
+            flex: 1;
+          }
+        } @else {
+          justify-content: var(--justify-#{$justify});
+        }
+      }
+    }
+  
+    // Align-items utilities
+    @each $align in flex-start, center, flex-end, stretch {
+      &.align-#{$align}#{$suffix} {
+        align-items: var(--align-#{$align});
+      }
+
+      &.align-self-#{$align}#{$suffix} {
+        align-self: var(--align-self-#{$align});
+      }
+    }
+  
+    // Gap utilities (semantic values from config)
+    @if $gap-name != "" and $gap-token != "" {
+      &.gap-#{$gap-name}#{$suffix} {
+        gap: var(--#{$gap-token});
+      }
+    } @else {
+      @each $type, $gaps in $gap-variants {
+        @each $gap-name in $gaps {
+          $is-semantic: $type == semantics;
+          $gap-token: if($is-semantic, "semantics-gap-#{$gap-name}", "responsive-gap-#{$gap-name}");
+
+          &.gap-#{$gap-name} {
+            gap: var(--#{$gap-token});
+          }
+        }
+      }
+    }
+  }

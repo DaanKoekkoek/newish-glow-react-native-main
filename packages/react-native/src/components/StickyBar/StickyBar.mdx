@@ -1,0 +1,90 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as StickyBarStories from "./StickyBar.stories";
+
+<Meta of={StickyBarStories} />
+
+# StickyBar Component
+
+The `<StickyBar />` component is a container that sticks to the bottom or top of the screen. It is used to display a message or a call to action that is always visible to the user.
+
+## Usage
+
+Must be used within [`<Main />`](?path=/story/designsystem-layout-main--basic) component.
+
+Please look at the `<StickyBar />` [example page](?path=/story/designsystem-layout-main--basic) to see the component in action with `<Header />` and `<Footer />`.
+
+### Pre requirements
+
+To be sure that the `<StickyBar />` works as expected, you need to wrap your `<App />` with the `<SafeAreaProvider />` at root level.
+To do so you need to install the [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) package.
+The SafeAreaProvider takes into account system elements (status bar, notches, etc.), these values will be provided to descendent consumers.
+To make sure the `<StickyBar />` takes the safe areas into account you need to use `useSafeAreaContext()` hook to retrieve the safe inset values,
+and you need to pass the insets as `safeAreaInsets` prop into the `<StickyBar />` or if you are using the `<Main />` component, then you can pass it into the `<Main />`.
+The initial state of the `<StickyBar />` can be set by passing props and can be updated with the `const { setStickyBarContent } = useStickyBar()` hook.
+
+**Example:**
+
+```jsx
+import { SafeAreaProvider, useSafeAreaContext } from "react-native-safe-area-context";
+
+export default function App({ children }) {
+  return (
+    <SafeAreaProvider>
+        <View>{children}</View>
+    </SafeAreaProvider>
+  );
+}
+
+export default function YourPage() {
+ const insets = useSafeAreaContext()
+
+  return (
+    <App>
+      <Main safeAreaInsets={insets}>
+        // Other content
+        <StickyBar
+          position="bottom"
+          width="default"
+          layout="default"
+          button={{
+            text: 'Button text',
+            onPress: () => {},
+          }}
+          modal={{
+            title: 'Cart title',
+            children: (
+              <View>
+                <Text>Test</Text>
+              </View>
+            ),
+          }}
+        >
+        // Your "children" content goes here
+        </StickyBar>
+      </Main>
+    </App>
+  );
+}
+```
+
+### Props:
+
+- position: The vertical position of the sticky bar which can be 'top' or 'bottom'.
+- width: The width of the content inside the sticky bar which can be `default` or `narrow`. The narrow option will make the content more compact.
+- layout: The direction of the the content and button. Which can be `default` or `stacked`. Stacked will display the button stacked under the content (children);
+- modal: The modal which can be opened from inside the sticky bar. When the modal is passes as a prop, then there will be a chevron icon rendered which can trigger a `<Modal />` open event.
+- button: The button to make the component interactive. The button accepts two props: `text` to display inside the button and `onPress` to trigger a callback function.
+- children: This is the custom content that can be positioned inside the sticky bar.
+
+## Basic
+
+<Canvas of={StickyBarStories.Basic} />
+<Controls of={StickyBarStories.Basic} />
+
+## With sticky Header
+
+The `<StickyBar />` can stick, along with the `headerComponent` of `<Main />`. When `hasStickyHeader` (of `Main`) is set to `true`, and when the `position` of `top` is set (of StickyBar),
+the bar will move underneath the `headerComponent` and the content will shift further down.
+
+<Canvas of={StickyBarStories.WithStickyHeader} />
+<Controls of={StickyBarStories.WithStickyHeader} />

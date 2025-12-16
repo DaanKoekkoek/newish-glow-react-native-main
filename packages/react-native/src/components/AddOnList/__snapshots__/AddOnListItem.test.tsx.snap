@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddOnListItem /> applies styles when isFirstChild is true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="addon-list-item"
+>
+  <View
+    aria-labelledby="listitem"
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderBottomWidth": 1,
+        "borderColor": "#dddddd",
+        "borderLeftWidth": 1,
+        "borderRightWidth": 1,
+        "borderTopLeftRadius": 24,
+        "borderTopRightRadius": 24,
+        "borderTopWidth": 1,
+        "columnGap": 16,
+        "flexDirection": "row",
+        "paddingBottom": 15,
+        "paddingHorizontal": 15,
+        "paddingTop": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Strong",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+            },
+            {
+              "color": "#000000",
+              "fontSize": 20,
+              "letterSpacing": 0.20000000298023224,
+              "lineHeight": 24,
+            },
+          ]
+        }
+        testID="strong"
+      >
+        Item 1
+      </Text>
+      <View
+        style={
+          {
+            "gap": 4,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        role="button"
+        style={
+          [
+            {
+              "alignSelf": "flex-start",
+              "pointerEvents": "none",
+            },
+            undefined,
+          ]
+        }
+        testID="button"
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "rgba(27, 94, 228, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+              },
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "alignSelf": "flex-start",
+              "backgroundColor": "rgba(27, 94, 228, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+              "borderRadius": 100,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+          testID="button-visual"
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "gap": 8,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)",
+                  },
+                }
+              }
+              style={
+                {
+                  "color": "rgba(255, 255, 255, 1)",
+                  "display": "flex",
+                  "fontFamily": "odido_Paragraph_Strong",
+                  "fontSize": 14,
+                  "gap": 8,
+                  "letterSpacing": 0.20999999344348907,
+                  "lineHeight": 16,
+                }
+              }
+            >
+              button
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<AddOnListItem /> applies styles when isLastChild is true 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="addon-list-item"
+>
+  <View
+    aria-labelledby="listitem"
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderBottomWidth": 1,
+        "borderColor": "#dddddd",
+        "borderLeftWidth": 1,
+        "borderRightWidth": 1,
+        "borderTopLeftRadius": 24,
+        "borderTopRightRadius": 24,
+        "borderTopWidth": 1,
+        "columnGap": 16,
+        "flexDirection": "row",
+        "paddingBottom": 15,
+        "paddingHorizontal": 15,
+        "paddingTop": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Strong",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 18,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 28,
+            },
+            {
+              "color": "#000000",
+              "fontSize": 20,
+              "letterSpacing": 0.20000000298023224,
+              "lineHeight": 24,
+            },
+          ]
+        }
+        testID="strong"
+      >
+        Item 1
+      </Text>
+      <View
+        style={
+          {
+            "gap": 4,
+          }
+        }
+      />
+    </View>
+    <View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        role="button"
+        style={
+          [
+            {
+              "alignSelf": "flex-start",
+              "pointerEvents": "none",
+            },
+            undefined,
+          ]
+        }
+        testID="button"
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "rgba(27, 94, 228, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+              },
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "alignSelf": "flex-start",
+              "backgroundColor": "rgba(27, 94, 228, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+              "borderRadius": 100,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+          testID="button-visual"
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "gap": 8,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)",
+                  },
+                }
+              }
+              style={
+                {
+                  "color": "rgba(255, 255, 255, 1)",
+                  "display": "flex",
+                  "fontFamily": "odido_Paragraph_Strong",
+                  "fontSize": 14,
+                  "gap": 8,
+                  "letterSpacing": 0.20999999344348907,
+                  "lineHeight": 16,
+                }
+              }
+            >
+              button
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,27 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as TextLinkStories from "./TextLink.stories";
+
+<Meta of={TextLinkStories} />
+
+# TextLink
+
+A TextLink is an extension on `Pressable` and accepts a URL and an `Icon`, and/or a `string`.
+
+<Canvas of={TextLinkStories.Basic} />
+<Controls of={TextLinkStories.Basic} />
+
+## Icon only
+
+<Canvas of={TextLinkStories.IconOnly} />
+
+## Textlink with left icon
+
+<Canvas of={TextLinkStories.IconLeft} />
+
+## Textlink with right icon
+
+<Canvas of={TextLinkStories.IconRight} />
+
+## Textlink within text
+
+<Canvas of={TextLinkStories.WithText} />

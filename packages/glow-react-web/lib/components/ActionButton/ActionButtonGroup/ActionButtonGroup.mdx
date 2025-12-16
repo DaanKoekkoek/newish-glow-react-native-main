@@ -1,0 +1,26 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ActionButtonGroupStories from "./ActionButtonGroup.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ActionButtonGroupStories} />
+
+# ActionButtonGroup
+
+#### Token version: {getComponentVersion("action-button-group.v1")}
+
+The Action Button Group renders a group of [**Action Buttons** ↗️](?path=/docs/designsystem-components-button-actionbutton-actionbutton--docs) in an evenly spaced row.
+
+Action Button Group must be passed one or many Action Buttons as children.
+
+> As always, when rendering an array of children,
+> ensure that you provide each child with a unique `key` prop to enable React to consistently perform equality checks between renders.
+>
+> **_Warning:_** Due to React's bottom-up rendering flow,
+> we cannot stop you from passing something other than an Action Button.
+> This is not recommended nor supported.
+
+## Basic
+
+<Canvas of={ActionButtonGroupStories.Basic} />
+<Controls of={ActionButtonGroupStories.Basic} />

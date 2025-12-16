@@ -1,0 +1,24 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BoxStories from "./Box.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BoxStories} />
+
+# Box
+
+### Token version: {getComponentVersion("box.v1")}
+
+The `Box` component is a fundamental building block for creating flexible and responsive layouts. It can hold one or multiple `React.ReactElement` instances and adapts to various content needs and layout structures. It also provides extensive customization options for styling through predefined properties and custom styles.
+
+### Basic example
+
+<Canvas of={BoxStories.Basic} />
+<Controls of={BoxStories.Basic} />
+
+### Flex Grow
+
+By default, the `Box` component has `flexGrow: 1`, allowing it to expand and fill the available space within its parent's height. When using it with the `Stack` component, it's better to disable this property by default, as `Stack` has options to scale the components across all breakpoints.
+
+<Canvas of={BoxStories.GrowEnabled} />
+<Controls of={BoxStories.GrowEnabled} />

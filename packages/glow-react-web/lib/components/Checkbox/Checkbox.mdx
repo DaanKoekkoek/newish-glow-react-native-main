@@ -1,0 +1,59 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CheckboxStories from "./Checkbox.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+#### Token version: {getComponentVersion("checkbox.v1")}
+
+A Checkbox is an option button that can be checked or unchecked when ticked.
+
+To use a group of Checkboxes use the [CheckboxGroup ↗️](?path=/docs/designsystem-components-input-checkboxgroup--docs) to wrap around
+your multiple checkbox options. The `helperText`, `errorMessage` & `legend` properties should only be passed into
+the checkbox as props if it's used **without** the [CheckboxGroup ↗️](?path=/docs/designsystem-components-input-checkboxgroup--docs) component.
+
+## Basic Usage
+
+The Basic checkbox example shows a simple, non-interactive checkbox that maintains a static state.
+It's ideal for displaying checkbox options in mockups or design concepts.
+
+<Canvas of={CheckboxStories.Default} />
+<Controls of={CheckboxStories.Default} />
+
+## Variants
+
+### Without Legend
+
+A checkbox can be used without a legend when a simple label is sufficient.
+
+<Canvas of={CheckboxStories.WithoutLegend} />
+
+### Inactive State
+
+Checkboxes can be set to an inactive state when they should be visible but not interactive.
+
+<Canvas of={CheckboxStories.Inactive} />
+
+### Indeterminate State
+
+The indeterminate state is useful when a checkbox represents a group of sub-options where some,
+but not all, options are selected.
+
+<Canvas of={CheckboxStories.Indeterminate} />
+
+### Error State
+
+Checkboxes can display an error state with an error message, useful for form validation feedback.
+
+<Canvas of={CheckboxStories.Error} />
+
+## Advanced Usage
+
+### With React Element as Label
+
+Checkboxes support rich content in labels, allowing you to include additional UI elements like links.
+
+<Canvas of={CheckboxStories.ReactElementLabel} />

@@ -1,0 +1,30 @@
+node_modules/
+.expo/
+.env
+.idea/
+.pnpm-store
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+storybook-static/
+
+# macOS
+.DS_Store
+
+# Storybook logs
+examples/storybook-react-native/build-storybook.log
+examples/storybook-react-native/chromatic.log
+examples/storybook-react-native/chromatic-build-*.xml
+examples/storybook-react-native/chromatic-diagnostics.json
+
+#coverage files
+**/coverage/**
+
+#Status Reports
+.scripts/reports/*

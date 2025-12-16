@@ -1,0 +1,1004 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders compact variant 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+    }
+  }
+  testID="wrapper"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "width": "100%",
+      }
+    }
+    testID="selector"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#dddddd",
+          "borderRadius": 24,
+          "padding": 2,
+        }
+      }
+      testID="defaultContainer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 22,
+            "padding": 2,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "borderRadius": 22,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingBottom": 12,
+              "paddingHorizontal": 20,
+              "paddingTop": 12,
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "gap": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "columnGap": 8,
+                    "flexDirection": "row",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Strong",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                          "flexShrink": 1,
+                          "flexWrap": "wrap",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                      ]
+                    }
+                    testID="strong"
+                  >
+                    <Text>
+                      Test Selector
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders extended variant with list 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+    }
+  }
+  testID="wrapper"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "width": "100%",
+      }
+    }
+    testID="selector"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#dddddd",
+          "borderRadius": 24,
+          "padding": 2,
+        }
+      }
+      testID="defaultContainer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 22,
+            "padding": 2,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "baseline",
+              "backgroundColor": "#ffffff",
+              "borderRadius": 22,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "gap": 24,
+              "justifyContent": "center",
+              "paddingBottom": 28,
+              "paddingHorizontal": 20,
+              "paddingTop": 20,
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "gap": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "columnGap": 12,
+                    "flexDirection": "row",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Strong",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "flexDirection": "row",
+                          "flexShrink": 1,
+                          "flexWrap": "wrap",
+                          "fontSize": 28,
+                          "gap": 8,
+                          "letterSpacing": 0.2800000011920929,
+                          "lineHeight": 32,
+                        },
+                      ]
+                    }
+                    testID="strong"
+                  >
+                    <Text>
+                      Test Selector
+                    </Text>
+                  </Text>
+                </View>
+                <View
+                  style={
+                    {
+                      "alignSelf": "flex-end",
+                    }
+                  }
+                >
+                  <Text
+                    size="lg"
+                    state="default"
+                  >
+                    Price
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "100%",
+              }
+            }
+          >
+            <Text
+              inactive={false}
+            >
+              List Item
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders most default selector 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+    }
+  }
+  testID="wrapper"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "width": "100%",
+      }
+    }
+    testID="selector"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#dddddd",
+          "borderRadius": 24,
+          "padding": 2,
+        }
+      }
+      testID="defaultContainer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 22,
+            "padding": 2,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "borderRadius": 22,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingHorizontal": 20,
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "gap": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "columnGap": 8,
+                    "flexDirection": "row",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Strong",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "flexDirection": "row",
+                          "flexShrink": 1,
+                          "flexWrap": "wrap",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                      ]
+                    }
+                    testID="strong"
+                  >
+                    <Text>
+                      Test Selector
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders selector with all boolean options 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+    }
+  }
+  testID="wrapper"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "width": "100%",
+      }
+    }
+    testID="selector"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#999999",
+          "borderRadius": 24,
+          "padding": 2,
+        }
+      }
+      testID="defaultContainer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#dddddd",
+            "borderRadius": 22,
+            "padding": 2,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#dddddd",
+              "borderColor": "transparent",
+              "borderRadius": 22,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingHorizontal": 20,
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "gap": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "columnGap": 8,
+                    "flexDirection": "row",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "alignSelf": "center",
+                    }
+                  }
+                >
+                  <View
+                    style={{}}
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "flex-start",
+                          "flexDirection": "column",
+                        }
+                      }
+                      testID="checkbox"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "gap": 8,
+                          }
+                        }
+                      >
+                        <View
+                          accessibilityLabel="input"
+                          accessibilityLabelledBy="checkbox"
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": true,
+                              "disabled": true,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={true}
+                          id="input-checkbox-checkbox"
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          pointerEvents="box-only"
+                          role="checkbox"
+                          style={
+                            [
+                              {
+                                "alignItems": "center",
+                                "alignSelf": "stretch",
+                                "display": "flex",
+                                "flexDirection": "row",
+                                "gap": 8,
+                                "paddingVertical": 8,
+                              },
+                              {
+                                "paddingVertical": 0,
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={
+                              {
+                                "backgroundColor": "#dddddd",
+                                "borderColor": "#999999",
+                                "borderRadius": 4,
+                                "borderWidth": 2,
+                                "height": 24,
+                                "overflow": "hidden",
+                                "width": 24,
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                {
+                                  "alignItems": "center",
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                  "position": "absolute",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <Text
+                                allowFontScaling={false}
+                                style={
+                                  [
+                                    {
+                                      "fontFamily": "Icons_Solid_SM_odido",
+                                      "fontSize": 16,
+                                      "lineHeight": 16,
+                                      "width": 16,
+                                    },
+                                    {
+                                      "color": "#999999",
+                                    },
+                                  ]
+                                }
+                                testID="checkmark-icon"
+                              >
+                                
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Strong",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "color": "#999999",
+                          "flexDirection": "row",
+                          "flexShrink": 1,
+                          "flexWrap": "wrap",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                      ]
+                    }
+                    testID="strong"
+                  >
+                    <Text>
+                      Test Selector
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders selector with badge and promotion 1`] = `
+<View
+  style={
+    {
+      "alignItems": "flex-start",
+    }
+  }
+  testID="wrapper"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "width": "100%",
+      }
+    }
+    testID="selector"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#dddddd",
+          "borderRadius": 24,
+          "padding": 2,
+        }
+      }
+      testID="defaultContainer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#ffffff",
+            "borderRadius": 22,
+            "padding": 2,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#ffffff",
+              "borderRadius": 22,
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "gap": 8,
+              "justifyContent": "center",
+              "paddingHorizontal": 20,
+              "paddingVertical": 20,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "gap": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "display": "flex",
+                    "justifyContent": "flex-start",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View>
+                  <View>
+                    <Text
+                      inactive={false}
+                    >
+                      Badge
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "columnGap": 8,
+                    "flexDirection": "row",
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flex": 1,
+                        "flexDirection": "row",
+                        "justifyContent": "flex-start",
+                      },
+                      false,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "odido_Paragraph_Strong",
+                        },
+                        {
+                          "color": "#000000",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                        {
+                          "flexDirection": "row",
+                          "flexShrink": 1,
+                          "flexWrap": "wrap",
+                          "fontSize": 18,
+                          "letterSpacing": 0.27000001072883606,
+                          "lineHeight": 28,
+                        },
+                      ]
+                    }
+                    testID="strong"
+                  >
+                    <Text>
+                      Test Selector
+                    </Text>
+                    <Text
+                      allowFontScaling={true}
+                      style={
+                        [
+                          {
+                            "fontFamily": "odido_Paragraph_Regular",
+                          },
+                          {
+                            "color": "#000000",
+                            "fontSize": 16,
+                            "letterSpacing": 0.23999999463558197,
+                            "lineHeight": 24,
+                            "textAlign": "left",
+                          },
+                          {
+                            "color": "#2f9a92",
+                            "display": "flex",
+                            "fontSize": 16,
+                            "justifyContent": "flex-start",
+                            "letterSpacing": 0.23999999463558197,
+                            "lineHeight": 24,
+                            "width": "100%",
+                          },
+                        ]
+                      }
+                      testID="paragraph"
+                    >
+                      <Text
+                        numberOfLines={1}
+                      >
+                        Special Offer
+                      </Text>
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

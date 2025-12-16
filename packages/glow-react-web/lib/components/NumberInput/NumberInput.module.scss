@@ -1,0 +1,48 @@
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/input-number-input-v1";
+@use "@odido-portals/glow-tokens/button-button-v2";
+@use "@odido-portals/glow-tokens/button-number-input-button-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  number-input,
+  (
+    input-gap,
+    input-number-input-v1,
+    button-number-input-button-v1,
+    button-button-v2
+  )
+) {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  &.size-default {
+    width: var(--components-input-number-input-v1-size-width-default);
+    gap: var(--components-input-gap-horizontal-default);
+  }
+
+  &.size-sm {
+    width: var(--components-input-number-input-v1-size-width-sm);
+  }
+}
+
+@layer component {
+  .small-button-action {
+    border: 0;
+    box-shadow: none;
+    background-color: var(--components-button-number-input-button-v1-color-background-default);
+    color: var(--components-button-number-input-button-v1-color-icon-default);
+
+    &:disabled {
+        background-color: var(--components-button-number-input-button-v1-color-background-inactive);
+        color: var(--components-button-number-input-button-v1-color-icon-inactive);
+    }
+  }
+
+  .small-button {
+    position: absolute;
+    z-index: 1;
+  }
+}
+

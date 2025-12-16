@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Status /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="status"
+    data-testid=""
+  >
+    <div
+      class="status-indicator success"
+      data-testid="-indicator"
+    />
+    <span
+      class="paragraph paragraph-size-sm status-text"
+      data-testid="paragraph"
+    >
+      Status
+    </span>
+  </div>
+</div>
+`;

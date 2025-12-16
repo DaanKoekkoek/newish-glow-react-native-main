@@ -1,0 +1,35 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as HorizontalCardStories from "./HorizontalCard.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={HorizontalCardStories} />
+
+# Horizontal Card
+
+#### Token version: {getComponentVersion("horizontal-card.v1")}
+
+The `HorizontalCard` component is a component that can display title, paragraph and text link with icon on left or right side.
+
+> **Note:**
+> The `palette` prop only affects the appearance when `variant`= `color` or `outline`.
+>
+> **Demo:**
+> Gray background only shown on variant `default` for demo purposes.
+
+<Canvas of={HorizontalCardStories.Basic} />
+<Controls of={HorizontalCardStories.Basic} />
+
+# Horizontal Card: with Colors
+
+<Canvas of={HorizontalCardStories.Color} />
+
+# Horizontal Card: without icon
+
+<Canvas of={HorizontalCardStories.WithoutIcon} />
+
+# Horizontal Card: Outline
+
+### with DefaultList component as a 'ReactNode'
+
+<Canvas of={HorizontalCardStories.Outline} />

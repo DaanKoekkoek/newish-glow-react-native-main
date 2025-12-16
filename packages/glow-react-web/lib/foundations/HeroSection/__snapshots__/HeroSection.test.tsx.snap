@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroSection renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+    id="main-content"
+  >
+    <section
+      class="section section-default section-palette-red hero-section has-palette-red"
+      data-section-type="default"
+      data-testid="section"
+    >
+      <div
+        class="container container-width-narrow"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="stack direction-column align-flex-start justify-flex-start gap-150 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+              data-testid="stack"
+            >
+              <h2
+                class="heading heading-size-xl align-left"
+                data-testid="heading"
+                lang="nl"
+              >
+                Title 
+                <span
+                  class="hero-section-title-highlight"
+                >
+                  highlight
+                </span>
+              </h2>
+              <p
+                class="paragraph paragraph-size-lg"
+                data-testid="paragraph"
+              >
+                Short description
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="hero has-palette-red is-variant-default is-order-inverted"
+              data-testid="hero"
+            >
+              <div
+                class="hero-content"
+              >
+                <div
+                  class="hero-content-copy"
+                >
+                  <div
+                    class="hero-content-copy-title"
+                  >
+                    <h3
+                      class="heading heading-size-xl align-left"
+                      data-testid="hero-heading-title"
+                      lang="nl"
+                    >
+                      Title 
+                      <span
+                        class="hero-content-copy-title-highlight"
+                      >
+                        highlight
+                      </span>
+                    </h3>
+                    <h4
+                      class="heading heading-size-lg align-left"
+                      data-testid="hero-heading-subtitle"
+                      lang="nl"
+                    >
+                      Subtitle
+                    </h4>
+                  </div>
+                  <div
+                    class="hero-content-copy-description"
+                  >
+                    <p
+                      class="paragraph paragraph-size-default"
+                      data-testid="hero-description"
+                    >
+                      contents
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hero-image"
+              >
+                <div
+                  class="visual visual-ratio-default fill-height fill-width no-padding-all hero-image-visual"
+                  data-testid="hero-image"
+                >
+                  <picture
+                    class="picture"
+                    data-testid="image-picture"
+                  >
+                    <img
+                      alt="Alt text"
+                      class="image image-position-center ratio-16-9"
+                      data-testid="image-img"
+                      loading="lazy"
+                      src="test-file-stub"
+                      style="object-fit: contain;"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="hero-image-sticker"
+                >
+                  <div
+                    class="large-sticker large-sticker-palette-red hero-sticker"
+                    data-testid="large-sticker"
+                  >
+                    <h3
+                      class="heading heading-size-xs align-left large-sticker-text"
+                      data-testid="heading"
+                      lang="nl"
+                    >
+                      Sticker description
+                    </h3>
+                    <div
+                      class="price price"
+                    >
+                      <div
+                        aria-hidden="true"
+                        class="price-wrapper"
+                      >
+                        <div
+                          class="price"
+                        >
+                          <div
+                            class="price-text lg currency large-sticker-price"
+                            data-testid="currency"
+                          >
+                            €
+                          </div>
+                          <div
+                            class="price-value-wrapper"
+                          >
+                            <div
+                              class="price-text lg large-sticker-price"
+                              data-testid="whole"
+                            >
+                              10
+                            </div>
+                            <div
+                              class="decimal-wrapper"
+                            >
+                              <div
+                                class="comma-text price-text lg comma-text-position large-sticker-price"
+                              >
+                                ,
+                              </div>
+                              <div
+                                class="price-text lg large-sticker-price"
+                                data-testid="decimals"
+                              >
+                                ⁰⁰
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="price-sr-only"
+                      >
+                        <span
+                          data-value="true"
+                        >
+                          Voor: 10,00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="hero has-palette-purple is-variant-solid is-layout-uneven"
+              data-testid="hero"
+            >
+              <div
+                class="hero-content"
+              >
+                <div
+                  class="hero-content-copy"
+                >
+                  <div
+                    class="hero-content-copy-title"
+                  >
+                    <h3
+                      class="heading heading-size-xl align-left"
+                      data-testid="hero-heading-title"
+                      lang="nl"
+                    >
+                      Title 
+                      <span
+                        class="hero-content-copy-title-highlight"
+                      >
+                        highlight
+                      </span>
+                    </h3>
+                    <h4
+                      class="heading heading-size-lg align-left"
+                      data-testid="hero-heading-subtitle"
+                      lang="nl"
+                    >
+                      Subtitle
+                    </h4>
+                  </div>
+                  <div
+                    class="hero-content-copy-description"
+                  >
+                    <p
+                      class="paragraph paragraph-size-default"
+                      data-testid="hero-description"
+                    >
+                      contents
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="hero-image hero-content-image"
+                >
+                  <div
+                    class="visual visual-ratio-default fill-height fill-width no-padding-all hero-image-visual"
+                    data-testid="hero-inner-image"
+                  >
+                    <picture
+                      class="picture"
+                      data-testid="image-picture"
+                    >
+                      <img
+                        alt="Alt text"
+                        class="image image-position-bottom ratio-4-3-mobile-small ratio-1-1-tablet"
+                        data-testid="image-img"
+                        loading="lazy"
+                        src="test-file-stub"
+                        style="object-fit: contain;"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="hero-image-sticker is-solid"
+                  >
+                    <div
+                      class="large-sticker large-sticker-palette-purple hero-sticker"
+                      data-testid="large-sticker"
+                    >
+                      <h3
+                        class="heading heading-size-xs align-left large-sticker-text"
+                        data-testid="heading"
+                        lang="nl"
+                      >
+                        Sticker description
+                      </h3>
+                      <div
+                        class="price price"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="price-wrapper"
+                        >
+                          <div
+                            class="price"
+                          >
+                            <div
+                              class="price-text lg currency large-sticker-price"
+                              data-testid="currency"
+                            >
+                              €
+                            </div>
+                            <div
+                              class="price-value-wrapper"
+                            >
+                              <div
+                                class="price-text lg large-sticker-price"
+                                data-testid="whole"
+                              >
+                                10
+                              </div>
+                              <div
+                                class="decimal-wrapper"
+                              >
+                                <div
+                                  class="comma-text price-text lg comma-text-position large-sticker-price"
+                                >
+                                  ,
+                                </div>
+                                <div
+                                  class="price-text lg large-sticker-price"
+                                  data-testid="decimals"
+                                >
+                                  ⁰⁰
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="price-sr-only"
+                        >
+                          <span
+                            data-value="true"
+                          >
+                            Voor: 10,00
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                class="hero-sticker-order visible-above-laptop"
+                data-testid="visible"
+              >
+                <div
+                  class="large-sticker large-sticker-palette-purple hero-sticker"
+                  data-testid="hero-sticker"
+                >
+                  <h3
+                    class="heading heading-size-xs align-left large-sticker-text"
+                    data-testid="heading"
+                    lang="nl"
+                  >
+                    Sticker description
+                  </h3>
+                  <div
+                    class="price price"
+                  >
+                    <div
+                      aria-hidden="true"
+                      class="price-wrapper"
+                    >
+                      <div
+                        class="price"
+                      >
+                        <div
+                          class="price-text lg currency large-sticker-price"
+                          data-testid="currency"
+                        >
+                          €
+                        </div>
+                        <div
+                          class="price-value-wrapper"
+                        >
+                          <div
+                            class="price-text lg large-sticker-price"
+                            data-testid="whole"
+                          >
+                            10
+                          </div>
+                          <div
+                            class="decimal-wrapper"
+                          >
+                            <div
+                              class="comma-text price-text lg comma-text-position large-sticker-price"
+                            >
+                              ,
+                            </div>
+                            <div
+                              class="price-text lg large-sticker-price"
+                              data-testid="decimals"
+                            >
+                              ⁰⁰
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="price-sr-only"
+                    >
+                      <span
+                        data-value="true"
+                      >
+                        Voor: 10,00
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container container-width-default"
+        data-testid="grid-container"
+      >
+        <div
+          class="grid grid-direction-row"
+          data-testid="grid-grid"
+        >
+          <div
+            class="column grid-column-12"
+            data-testid="column"
+          >
+            <div
+              class="hero has-palette-green is-variant-default is-layout-no-padding is-order-inverted"
+              data-testid="hero"
+            >
+              <div
+                class="hero-content"
+              >
+                <div
+                  class="hero-content-copy"
+                >
+                  <div
+                    class="hero-content-copy-title"
+                  >
+                    <h3
+                      class="heading heading-size-xl align-left"
+                      data-testid="hero-heading-title"
+                      lang="nl"
+                    >
+                      Title 
+                      <span
+                        class="hero-content-copy-title-highlight"
+                      >
+                        highlight
+                      </span>
+                    </h3>
+                    <h4
+                      class="heading heading-size-lg align-left"
+                      data-testid="hero-heading-subtitle"
+                      lang="nl"
+                    >
+                      Subtitle
+                    </h4>
+                  </div>
+                  <div
+                    class="hero-content-copy-description"
+                  >
+                    <p
+                      class="paragraph paragraph-size-default"
+                      data-testid="hero-description"
+                    >
+                      contents
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hero-image"
+              >
+                <div
+                  class="visual visual-ratio-default fill-height fill-width no-padding-all hero-image-visual"
+                  data-testid="hero-image"
+                >
+                  <picture
+                    class="picture"
+                    data-testid="image-picture"
+                  >
+                    <img
+                      alt="Alt text"
+                      class="image image-position-center ratio-4-3-mobile-small ratio-1-1-tablet"
+                      data-testid="image-img"
+                      loading="lazy"
+                      src="test-file-stub"
+                      style="object-fit: cover;"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="hero-image-sticker"
+                >
+                  <div
+                    class="large-sticker large-sticker-palette-green hero-sticker"
+                    data-testid="large-sticker"
+                  >
+                    <h3
+                      class="heading heading-size-xs align-left large-sticker-text"
+                      data-testid="heading"
+                      lang="nl"
+                    >
+                      Sticker description
+                    </h3>
+                    <div
+                      class="price price"
+                    >
+                      <div
+                        aria-hidden="true"
+                        class="price-wrapper"
+                      >
+                        <div
+                          class="price"
+                        >
+                          <div
+                            class="price-text lg currency large-sticker-price"
+                            data-testid="currency"
+                          >
+                            €
+                          </div>
+                          <div
+                            class="price-value-wrapper"
+                          >
+                            <div
+                              class="price-text lg large-sticker-price"
+                              data-testid="whole"
+                            >
+                              10
+                            </div>
+                            <div
+                              class="decimal-wrapper"
+                            >
+                              <div
+                                class="comma-text price-text lg comma-text-position large-sticker-price"
+                              >
+                                ,
+                              </div>
+                              <div
+                                class="price-text lg large-sticker-price"
+                                data-testid="decimals"
+                              >
+                                ⁰⁰
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="price-sr-only"
+                      >
+                        <span
+                          data-value="true"
+                        >
+                          Voor: 10,00
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;

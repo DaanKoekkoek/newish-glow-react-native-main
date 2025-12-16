@@ -1,0 +1,19 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BadgeStatus from "./BadgeStatus.stories";
+
+<Meta of={BadgeStatus} />
+
+# BadgeStatus Component
+
+This file contains the documentation for the BadgeStatus component.
+
+## Basic BadgeStatus
+
+<Canvas of={BadgeStatus.Basic} />
+<Controls of={BadgeStatus.Basic} />
+
+## Icon BadgeStatus
+
+To use the icon BadgeStatus, you need to pass both the `iconVariant` property to `true`, and one of the two possible icon variants `success` or `error`.
+
+<Canvas of={BadgeStatus.IconStory} />

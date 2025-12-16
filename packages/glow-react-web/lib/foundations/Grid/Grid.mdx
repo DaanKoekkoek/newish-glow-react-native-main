@@ -1,0 +1,62 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Grid from "./Grid.stories";
+
+<Meta title="DesignSystem/Foundations/Layout/Grid" of={Grid} />
+
+# Grid
+
+The `<Grid>` component creates a grid layout for organizing and aligning elements in a web page or application. It provides a flexible grid system that adjusts the layout based on different breakpoints, essential for creating structured and consistent interfaces.
+
+## Properties
+
+### Grid
+
+```markdown
+| Prop         | Type                               | Default                                                                             | Description                                                                                                                                                                                                     |
+| ------------ | ---------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `direction`  | `"row" \| "row-reverse" \| Object` | `"row"`                                                                             | Defines the flex direction for the grid layout. Accepts a string value applied to all breakpoints or an object specifying the direction per breakpoint. E.g., `{ mobileSmall: "row", desktop: "row-reverse" }`. |
+| `children`   | `React.ReactNode`                  | `null`                                                                              | Accepts `Column` components as children.                                                                                                                                                                        |
+| `className`  | `string`                           | `""`                                                                                | Additional class names to apply custom styles to the grid container row.                                                                                                                                        |
+| `columnSize` | `Object \| number`                 | Defaults to assigning `12` as the column size for all breakpoints if not specified. | Specifies the size each column child occupies per breakpoint in the grid. E.g., `{ mobileSmall: 6, desktop: 4 }`. also possible to just pass a specific size, and it will be spreaded to all breakpoiints.      |
+```
+
+### Column
+
+```markdown
+| Prop                | Type              | Default | Description                                                                                                                                                                       |
+| ------------------- | ----------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `children`          | `React.ReactNode` | `null`  | The content to render inside the column.                                                                                                                                          |
+| `className`         | `string`          | `""`    | Additional class names to apply custom styles to the column.                                                                                                                      |
+| `size`              | `Object`          | `null`  | Specifies the size or space a column occupies in the Grid per breakpoint. E.g., `{ mobileSmall: 6, desktop: 4 }`. (Maximum total grid size is 12.) Overrides `columnSizeClasses`. |
+| `columnSizeClasses` | `string`          | `""`    | Receives specific size classes from the parent Grid, determining the column’s space in the row per breakpoint.                                                                    |
+```
+
+## Key Features
+
+- **Responsive Layout:**
+  It is possible through `columnSize` Grid property to define the wanted sizes for the Grid columns per breakpoint. Also possible to give specifi sizes per breakpoint to individual Columns of the Grid.
+
+```jsx
+  <Grid columnSize= {mobileSmall: "4", desktop: "6"}>
+  <Column></Column> ...
+  </Grid>
+```
+
+`or`
+
+```jsx
+<Grid>
+  <Column size= {mobileSmall: "4", desktop: "6"}></Column>
+  <Column size= {mobileSmall: "2", desktop: "12"}></Column>
+</Grid>
+```
+
+- **Customizable Directions:**
+  Choose between `row` or `row-reverse` flex directions using the `direction` prop. Although it is also possible to define the Grid direction per breakpoint.
+
+```jsx
+<Grid direction={mobileSmall: "row", desktop: "row-reverse"} />
+```
+
+- **Reusable Children:**
+  Only `Column` components should be allowed as Grid children, ensuring a consistent layout structure.

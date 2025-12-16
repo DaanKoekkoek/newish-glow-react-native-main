@@ -1,0 +1,45 @@
+@use "@odido-portals/glow-tokens/navigation-agent-bar-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    agent-bar,
+    (navigation-agent-bar-v1)
+) {
+    background-color: var(--components-navigation-agent-bar-v1-color-background-default);
+    padding-top: var(--components-navigation-agent-bar-v1-padding-default-top);
+    padding-bottom: var(--components-navigation-agent-bar-v1-padding-default-bottom);
+
+    .agent-bar-column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .agent-bar-content {
+        display: flex;
+        align-items: center;
+        gap: var(--components-navigation-agent-bar-v1-gap-horizontal-default);
+        color: var(--components-navigation-agent-bar-v1-color-text-default);
+    }
+
+    .agent-bar-data {
+        display: flex;
+        gap: var(--components-navigation-agent-bar-v1-gap-horizontal-xs)
+    }
+
+    .agent-bar-icon {
+        color: var(--components-navigation-agent-bar-v1-color-text-default);
+    }
+}
+
+@layer component {
+    .agent-bar-link {
+        .agent-bar-link-text {
+            color: var(--components-navigation-agent-bar-v1-color-text-default);
+        }
+
+        &:hover .agent-bar-link-text {
+            text-decoration: underline;
+        }
+    }
+}

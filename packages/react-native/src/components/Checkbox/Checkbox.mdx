@@ -1,0 +1,15 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CheckboxStories from "./Checkbox.stories";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+A Checkbox is an option button that can be checked or unchecked when ticked.
+
+To use a group of Checkboxes use the [`CheckboxGroup`](?path=/docs/checkboxgroup--docs) to wrap around
+your multiple checkbox options. The `helperText`, `errorMessage` & `legend` properties should only be passed into
+the checkbox as props if it's used **without** the [`CheckboxGroup`](?path=/docs/checkboxgroup--docs) component.
+
+<Canvas of={CheckboxStories.Basic} />
+<Controls of={CheckboxStories.Basic} />

@@ -1,0 +1,24 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as MainStories from "./Main.stories";
+
+<Meta of={MainStories} />
+
+# Main
+
+The `<Main>` component serves as a top-level container for rendering a list of sections, headers, and footers. It provides a structured layout, ensuring that content is organized into distinct sections and can be efficiently rendered and managed.
+
+## Key features
+
+1. The `<Main>` component is used to render children inside the main element.
+2. **Header and Footer Support**: Includes support for `Header` and `Footer` components to display content at the top and bottom of the list.
+3. **Web Compatibility**: Wraps content in a `<main>` tag for web applications, enhancing accessibility and semantics.
+
+**Note: Since there is a `min-width` applied on the `<Grid>`, it is recommended to preview the grid on their respective pages instead of the Docs.**
+
+## Basic example
+
+<Canvas of={MainStories.Basic} />
+<Controls of={MainStories.Basic} />
+
+<Canvas of={MainStories.WithHeaderAndFooter} />
+<Controls of={MainStories.WithHeaderAndFooter} />

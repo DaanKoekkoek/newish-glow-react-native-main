@@ -1,0 +1,36 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "ignoreFiles": ["coverage/**/*", "dist/**/*", "storybook-static/**/*"],
+  "plugins": ["stylelint-value-no-unknown-custom-properties"],
+  "rules": {
+    "block-no-empty": null,
+    "selector-attribute-quotes": null,
+    "custom-property-pattern": null,
+    "scss/at-mixin-argumentless-call-parentheses": "never",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "csstools/value-no-unknown-custom-properties": [
+      null,
+      {
+        "importFrom": ["lib/_globals/stylelint-vars.css"]
+      }
+    ],
+    "selector-class-pattern": [
+      "^[a-z0-9\\-]+$|^react-datepicker__.*$",
+      {
+        "message": "Expected class selector to be kebab-case or a known exception"
+      }
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "at-rule-no-vendor-prefix": null
+  }
+}

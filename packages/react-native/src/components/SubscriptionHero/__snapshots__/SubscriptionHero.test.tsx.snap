@@ -1,0 +1,1040 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscriptionHero component renders a subscription hero correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRadius": 0,
+        "marginHorizontal": -8,
+        "maxWidth": 343,
+        "minWidth": 304,
+        "overflow": "hidden",
+        "paddingBottom": 16,
+        "paddingHorizontal": 8,
+        "paddingTop": 24,
+        "rowGap": 24,
+      },
+      {
+        "backgroundColor": "#ffc8a6",
+      },
+    ]
+  }
+  testID="subscription-hero"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "minHeight": 200,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignSelf": "center",
+          "flex": 1,
+          "gap": 24,
+          "maxWidth": 199,
+          "minWidth": 224,
+          "position": "relative",
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "rowGap": 8,
+          }
+        }
+      >
+        <Text
+          accessibilityRole="header"
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Heading_Medium",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "letterSpacing": 0.2800000011920929,
+              "lineHeight": 32,
+              "marginVertical": 0,
+              "textAlign": "left",
+            }
+          }
+          testID="heading"
+        >
+          Internet
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            {
+              "color": "#000000",
+              "fontFamily": "odido_Display",
+              "fontSize": 42,
+              "letterSpacing": 0,
+              "lineHeight": 42,
+              "marginBottom": 0,
+              "marginTop": 0,
+              "marginVertical": 32,
+              "textAlign": "left",
+            }
+          }
+          testID="display"
+        >
+          TV + Bellen
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "column",
+            "gap": 12,
+          }
+        }
+        testID="default-list"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 12,
+            }
+          }
+          testID="default-list-item"
+        >
+          <View
+            style={
+              {
+                "alignSelf": "flex-start",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 18,
+                  "height": 24,
+                  "paddingTop": 2,
+                  "width": 24,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+                "paddingRight": 18,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "odido_Paragraph_Regular",
+                  },
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "letterSpacing": 0.27000001072883606,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              list item 1
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 12,
+            }
+          }
+          testID="default-list-item"
+        >
+          <View
+            style={
+              {
+                "alignSelf": "flex-start",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 18,
+                  "height": 24,
+                  "paddingTop": 2,
+                  "width": 24,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+                "paddingRight": 18,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "odido_Paragraph_Regular",
+                  },
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "letterSpacing": 0.27000001072883606,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              list item 2
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 12,
+            }
+          }
+          testID="default-list-item"
+        >
+          <View
+            style={
+              {
+                "alignSelf": "flex-start",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 18,
+                  "height": 24,
+                  "paddingTop": 2,
+                  "width": 24,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+                "paddingRight": 18,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "odido_Paragraph_Regular",
+                  },
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "letterSpacing": 0.27000001072883606,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              list item 3
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 12,
+            }
+          }
+          testID="default-list-item"
+        >
+          <View
+            style={
+              {
+                "alignSelf": "flex-start",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 18,
+                  "height": 24,
+                  "paddingTop": 2,
+                  "width": 24,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+                "paddingRight": 18,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "odido_Paragraph_Regular",
+                  },
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "letterSpacing": 0.27000001072883606,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              list item 4
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "gap": 12,
+            }
+          }
+          testID="default-list-item"
+        >
+          <View
+            style={
+              {
+                "alignSelf": "flex-start",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#000000",
+                  "fontSize": 18,
+                  "height": 24,
+                  "paddingTop": 2,
+                  "width": 24,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+                "paddingRight": 18,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "odido_Paragraph_Regular",
+                  },
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "letterSpacing": 0.27000001072883606,
+                    "lineHeight": 28,
+                  },
+                ]
+              }
+            >
+              list item 5
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <Text
+      allowFontScaling={true}
+      style={
+        [
+          {
+            "fontFamily": "odido_Paragraph_Regular",
+          },
+          {
+            "color": "#000000",
+            "fontSize": 18,
+            "letterSpacing": 0.27000001072883606,
+            "lineHeight": 28,
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+      testID="paragraph"
+    >
+      image alt text
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "maxWidth": 343,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "columnGap": 4,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "alignSelf": "flex-start",
+              "flexGrow": 1,
+              "minWidth": 96,
+              "paddingVertical": 4,
+              "rowGap": 8,
+            },
+            {
+              "flex": 1,
+            },
+          ]
+        }
+        testID="action-button"
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+              },
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "rgba(0, 0, 0, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+              "borderRadius": 100,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "color": "#ffffff",
+              "flexDirection": "row",
+              "gap": 12,
+              "justifyContent": "center",
+              "paddingHorizontal": 12,
+              "paddingVertical": 12,
+            }
+          }
+          testID="button-visual"
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)",
+                  },
+                }
+              }
+              style={
+                {
+                  "color": "rgba(255, 255, 255, 1)",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    {
+                      "color": "#ffffff",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          baseStyle={
+            [
+              {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "justifyContent": "center",
+              },
+              {
+                "paddingHorizontal": 12,
+                "paddingVertical": 12,
+              },
+              undefined,
+            ]
+          }
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          stretched={true}
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "auto",
+              "zIndex": 0,
+            }
+          }
+          testID="button"
+        />
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Regular",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "textAlign": "center",
+                "zIndex": -1,
+              },
+            ]
+          }
+          testID="paragraph"
+        >
+          action 1
+        </Text>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "alignSelf": "flex-start",
+              "flexGrow": 1,
+              "minWidth": 96,
+              "paddingVertical": 4,
+              "rowGap": 8,
+            },
+            {
+              "flex": 1,
+            },
+          ]
+        }
+        testID="action-button"
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+              },
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "rgba(0, 0, 0, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+              "borderRadius": 100,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "color": "#ffffff",
+              "flexDirection": "row",
+              "gap": 12,
+              "justifyContent": "center",
+              "paddingHorizontal": 12,
+              "paddingVertical": 12,
+            }
+          }
+          testID="button-visual"
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)",
+                  },
+                }
+              }
+              style={
+                {
+                  "color": "rgba(255, 255, 255, 1)",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    {
+                      "color": "#ffffff",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          baseStyle={
+            [
+              {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "justifyContent": "center",
+              },
+              {
+                "paddingHorizontal": 12,
+                "paddingVertical": 12,
+              },
+              undefined,
+            ]
+          }
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          stretched={true}
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "auto",
+              "zIndex": 0,
+            }
+          }
+          testID="button"
+        />
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Regular",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "textAlign": "center",
+                "zIndex": -1,
+              },
+            ]
+          }
+          testID="paragraph"
+        >
+          action 2
+        </Text>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "alignSelf": "flex-start",
+              "flexGrow": 1,
+              "minWidth": 96,
+              "paddingVertical": 4,
+              "rowGap": 8,
+            },
+            {
+              "flex": 1,
+            },
+          ]
+        }
+        testID="action-button"
+      >
+        <View
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+              },
+            }
+          }
+          style={
+            {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "rgba(0, 0, 0, 1)",
+              "borderColor": "rgba(0, 0, 0, 0)",
+              "borderRadius": 100,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "color": "#ffffff",
+              "flexDirection": "row",
+              "gap": 12,
+              "justifyContent": "center",
+              "paddingHorizontal": 12,
+              "paddingVertical": 12,
+            }
+          }
+          testID="button-visual"
+        >
+          <View
+            onLayout={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              jestAnimatedStyle={
+                {
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)",
+                  },
+                }
+              }
+              style={
+                {
+                  "color": "rgba(255, 255, 255, 1)",
+                }
+              }
+            >
+              <Text
+                allowFontScaling={true}
+                style={
+                  [
+                    {
+                      "fontFamily": "Icons_Outline_DEFAULT_odido",
+                      "fontSize": 24,
+                      "lineHeight": 24,
+                      "width": 24,
+                    },
+                    {
+                      "color": "#ffffff",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          baseStyle={
+            [
+              {
+                "alignSelf": "center",
+                "color": "#ffffff",
+                "justifyContent": "center",
+              },
+              {
+                "paddingHorizontal": 12,
+                "paddingVertical": 12,
+              },
+              undefined,
+            ]
+          }
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          stretched={true}
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": "auto",
+              "zIndex": 0,
+            }
+          }
+          testID="button"
+        />
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Regular",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 14,
+                "letterSpacing": 0.20999999344348907,
+                "lineHeight": 20,
+                "textAlign": "left",
+              },
+              {
+                "textAlign": "center",
+                "zIndex": -1,
+              },
+            ]
+          }
+          testID="paragraph"
+        >
+          action 3
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

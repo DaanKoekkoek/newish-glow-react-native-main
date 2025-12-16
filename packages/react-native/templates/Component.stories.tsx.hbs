@@ -1,0 +1,29 @@
+import type { Meta, StoryObj } from "@storybook/react";
+import React from "react";
+import { View } from "react-native";
+
+import { {{pascalCase name}} } from "./{{pascalCase name}}";
+
+const meta: Meta<typeof {{pascalCase name}}> = {
+  title: "DesignSystem/Components/{{pascalCase name}}",
+  component: {{pascalCase name}},
+  argTypes: {
+
+  },
+  args: {
+
+  },
+  decorators: [
+    (Story) => (
+      <View>
+        <Story />
+      </View>
+    ),
+  ],
+};
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};

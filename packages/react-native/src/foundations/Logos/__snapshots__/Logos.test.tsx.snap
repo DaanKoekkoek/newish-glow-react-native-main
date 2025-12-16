@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logos Component renders the Ben logo 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Ben
+    fillOverride=""
+  />
+</View>
+`;
+
+exports[`Logos Component renders the Ben logo inverted 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Ben
+    fillOverride="#ffffff"
+  />
+</View>
+`;
+
+exports[`Logos Component renders the Odido logo 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Odido
+    fillOverride=""
+  />
+</View>
+`;
+
+exports[`Logos Component renders the Odido logo inverted 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Odido
+    fillOverride="#ffffff"
+  />
+</View>
+`;
+
+exports[`Logos Component renders the Simpel logo 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Simpel
+    fillOverride=""
+  />
+</View>
+`;
+
+exports[`Logos Component renders the Simpel logo inverted 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 29,
+        "width": 109,
+      },
+      {
+        "maxHeight": 367,
+      },
+    ]
+  }
+  testID="logo"
+>
+  <Simpel
+    fillOverride="#ffffff"
+  />
+</View>
+`;

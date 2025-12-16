@@ -1,0 +1,31 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PostalCodeCheckInputStories from "./PostalCodeCheckInput.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PostalCodeCheckInputStories} />
+
+# PostalCodeCheckInput
+
+#### Token version: {getComponentVersion("postal-code-check-input.v1")}
+
+A PostalCodeCheckInput is a component to gather information from user. Call out is displayed only when state on Postal Code Input is `warning` or `error` and accepts `title` and `description`.
+
+It acccepts form as children along with `tvSectionProps` which represents Tab section for TV section - it's based on props `title`, `description` and from SegmentedTab `onTabChange` and `options`.
+
+<Canvas of={PostalCodeCheckInputStories.Default} />
+<Controls of={PostalCodeCheckInputStories.Default} />
+
+### State Overlay
+
+In this state the `Marker` and `Title` are only visible on Laptop and Desktop breakpoints.
+
+<Canvas of={PostalCodeCheckInputStories.Overlay} />
+
+### Warning
+
+<Canvas of={PostalCodeCheckInputStories.Warning} />
+
+### Error
+
+<Canvas of={PostalCodeCheckInputStories.Error} />

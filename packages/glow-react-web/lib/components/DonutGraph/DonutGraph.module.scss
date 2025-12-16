@@ -1,0 +1,96 @@
+@use "@odido-portals/glow-tokens/graph-donut-graph-v1";
+@use "@odido-portals/glow-tokens/graph-donut-graph-v2";
+@use "@globals/mixins";
+@use "@globals/config";
+
+$donut-graph-sizes: sm, md, lg;
+
+@include mixins.token-scope(donut-graph, (graph-donut-graph-v1)) {
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: auto;
+
+  @each $size in $donut-graph-sizes {
+    &.size-#{$size} {
+      width: var(--components-graph-donut-graph-v2-size-container-#{$size});
+      height: var(--components-graph-donut-graph-v2-size-container-#{$size});
+    }
+  }
+}
+
+.donut-graph-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--components-graph-donut-graph-v2-gap-default);
+}
+
+.donut-graph-svg {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.donut-graph-text-container {
+  display: flex;
+  z-index: 2;
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.donut-base {
+  fill: none;
+  stroke: var(--components-graph-donut-graph-v2-color-donut-base);
+
+   @each $size in $donut-graph-sizes {
+     &.size-#{$size} {
+      stroke-width: var(--components-graph-donut-graph-v2-border-width-base-#{$size});
+    }
+   }
+}
+
+.donut-progress {
+  fill: none;
+  stroke-linecap: round;
+
+  @each $color in config.$simwallet-palette {
+    &.palette-#{$color} {
+      stroke: var(
+        --components-graph-donut-graph-v2-color-donut-percentage-palette-#{$color},
+        var(--components-graph-donut-graph-v2-color-donut-percentage)
+      );
+    }
+  }
+
+  @each $size in $donut-graph-sizes {
+     &.size-#{$size} {
+      stroke-width: var(--components-graph-donut-graph-v2-border-width-percentage-#{$size});
+    }
+   }
+}
+
+@each $size in $donut-graph-sizes {
+  .donut-graph-number-#{$size} {
+    color: var(--components-graph-donut-graph-v2-color-text-default);
+    font-family: var(--components-graph-donut-graph-v2-typography-number-font-family);
+    font-size: var(--components-graph-donut-graph-v2-typography-number-#{$size}-font-size);
+    line-height: var(--components-graph-donut-graph-v2-typography-number-#{$size}-line-height);
+    font-style: normal;
+    font-weight: 500;
+  }
+} 
+
+.donut-graph-label {
+  letter-spacing: var(--components-graph-donut-graph-v2-typography-label-letter-spacing);
+  line-height: var(--components-graph-donut-graph-v2-typography-label-line-height);
+  color: var(--components-graph-donut-graph-v2-color-text-default);
+  font-size: var(--components-graph-donut-graph-v2-typography-label-font-size);
+  font-family: var(--components-graph-donut-graph-v2-typography-label-font-family);
+
+  &.size-lg{
+    line-height: var(--components-graph-donut-graph-v2-typography-label-lg-line-height);
+    font-size: var(--components-graph-donut-graph-v2-typography-label-lg-font-size)
+  }
+}

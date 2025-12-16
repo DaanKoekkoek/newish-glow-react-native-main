@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# this pre-push hook is only configured to work in comparison with the main branch.
+pnpm lint-staged --diff="main..." && pnpm run test

@@ -1,0 +1,42 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as StackStories from "./Stack.stories";
+
+<Meta of={StackStories} />
+
+# Stack Component
+
+The `Stack` component is intended as an utility component for stackable components. It allows you to stack elements vertically or horizontally with consistent spacing and alignment. You can set the properties either for each breakpoint or by providing a property with a string or number (depending on what the property accepts as a value).
+
+## Purpose
+
+The Stack component is designed to simplify the layout process by providing a consistent way to stack elements with specified gaps and alignments. This ensures a cohesive and responsive design across different screen sizes and devices.
+
+### Breakpoints
+
+Like the `Grid`, the `Stack` also supports breakpoints. Only difference here is that you pass in an object (as property value) containing the breakpoint you want to apply changes for.
+
+## Usage
+
+You can set properties for specific breakpoints or use a single value for all breakpoints. For example, both **`<Stack gap={{ mobileSmall: 50 }} />`** and **`<Stack gap={50} />`** set a gap of 50, but the first example allows you to define the value for specific breakpoints.
+When using Stack in combination with a component that has an `alignment` property, the Stack alignment will have precedence over these components.
+
+### Basic Example
+
+<Canvas of={StackStories.Basic} />
+<Controls of={StackStories.Basic} />
+
+### Align end
+
+<Canvas of={StackStories.AlignEnd} />
+
+### Align center
+
+<Canvas of={StackStories.AlignCenter} />
+
+### Justify center
+
+<Canvas of={StackStories.JustifyCenter} />
+
+### Justify end
+
+<Canvas of={StackStories.JustifyEnd} />

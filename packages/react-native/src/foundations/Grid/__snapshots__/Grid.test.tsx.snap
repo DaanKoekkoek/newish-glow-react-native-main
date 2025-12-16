@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> renders correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "auto",
+      "maxHeight": "100%",
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      [
+        {
+          "data": [
+            <Section>
+              <Grid
+                desktop={6}
+                mobileSmall={6}
+              >
+                <Grid.Column>
+                  <Box
+                    prominence="color"
+                    size="sm"
+                  >
+                    <Paragraph
+                      alignment="center"
+                    >
+                      Column
+                       
+                      1
+                    </Paragraph>
+                  </Box>
+                </Grid.Column>
+                <Grid.Column>
+                  <Box
+                    prominence="color"
+                    size="sm"
+                  >
+                    <Paragraph
+                      alignment="center"
+                    >
+                      Column
+                       
+                      2
+                    </Paragraph>
+                  </Box>
+                </Grid.Column>
+              </Grid>
+            </Section>,
+          ],
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={64}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    style={{}}
+    testID="section-list"
+    windowSize={2}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <View
+            collapsable={false}
+            forwardedRef={[Function]}
+            jestAnimatedStyle={
+              {
+                "value": {},
+              }
+            }
+            onLayout={[Function]}
+          >
+            <View
+              role="summary"
+              style={
+                {
+                  "aspectRatio": "auto",
+                  "backgroundColor": "#ffffff",
+                  "paddingBottom": 32,
+                  "paddingTop": 32,
+                  "rowGap": 12,
+                }
+              }
+              testID="section"
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "rowGap": 12,
+                    },
+                    {
+                      "paddingHorizontal": 2,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="container"
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexGrow": 1,
+                        "rowGap": 12,
+                        "width": "100%",
+                      },
+                      {
+                        "maxWidth": undefined,
+                      },
+                      {
+                        "maxWidth": 355,
+                      },
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                      },
+                      undefined,
+                    ]
+                  }
+                  testID="grid"
+                >
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "50%",
+                          "maxWidth": "50%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#00000000",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#ecf2ff",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Column
+                         
+                        1
+                      </Text>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      [
+                        {
+                          "flexBasis": "auto",
+                          "flexGrow": 1,
+                          "flexShrink": 1,
+                        },
+                        {
+                          "paddingHorizontal": 6,
+                        },
+                        {
+                          "flexBasis": "50%",
+                          "maxWidth": "50%",
+                        },
+                        undefined,
+                      ]
+                    }
+                    testID="column"
+                  >
+                    <View
+                      style={
+                        [
+                          {
+                            "borderColor": "#00000000",
+                            "borderRadius": 24,
+                            "borderStyle": "solid",
+                            "borderWidth": 0,
+                            "flexGrow": 1,
+                            "flexShrink": 1,
+                            "overflow": "hidden",
+                            "padding": 24,
+                            "position": "relative",
+                          },
+                          false,
+                          {
+                            "backgroundColor": "#ecf2ff",
+                          },
+                          undefined,
+                        ]
+                      }
+                      testID="box"
+                    >
+                      <Text
+                        allowFontScaling={true}
+                        style={
+                          [
+                            {
+                              "fontFamily": "odido_Paragraph_Regular",
+                            },
+                            {
+                              "color": "#000000",
+                              "fontSize": 18,
+                              "letterSpacing": 0.27000001072883606,
+                              "lineHeight": 28,
+                              "textAlign": "center",
+                            },
+                            undefined,
+                          ]
+                        }
+                        testID="paragraph"
+                      >
+                        Column
+                         
+                        2
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

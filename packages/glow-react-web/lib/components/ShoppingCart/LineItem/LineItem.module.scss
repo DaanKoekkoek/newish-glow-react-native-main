@@ -1,0 +1,86 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  line-item,
+  shopping-cart-shopping-cart-v1
+) {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+  
+.remove-button {
+  display: flex;
+  width: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-container);
+  height: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-container);
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--components-shopping-cart-shopping-cart-v1-gap-vertical-sm);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--components-shopping-cart-shopping-cart-v1-gap-horizontal-default);
+  flex: 1;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: var(--components-shopping-cart-shopping-cart-v1-size-line-item-currency-width) 1fr;
+  place-items: center end;
+  min-width: var(--components-shopping-cart-shopping-cart-v1-size-line-item-price-min-width);
+  max-width: var(--components-shopping-cart-shopping-cart-v1-size-line-item-price-max-width);
+}
+
+.price {
+  text-align: right;
+}
+
+.currency {
+  padding-right: var(--components-shopping-cart-shopping-cart-v1-padding-line-item-currency-right);
+}
+
+.free-item {
+  display: grid;
+  place-items: center;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+
+  &.text-inactive {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-inactive);
+  }
+}
+
+.text-tooltip {
+  width: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-container);
+}
+
+.description {
+  align-items: center;
+  flex-direction: row;
+  color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-description);
+
+  &.inactive {
+    color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-inactive);
+  }
+}
+
+.short-description {
+  color: var(--components-shopping-cart-shopping-cart-v1-color-line-item-text-description);
+}

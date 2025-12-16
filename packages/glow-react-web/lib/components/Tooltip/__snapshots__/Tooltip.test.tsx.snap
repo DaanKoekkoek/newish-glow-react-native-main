@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="stack direction-row align-center justify-flex-start gap-50 wrap-nowrap grow shrink stack-size-12 stack-column-12"
+    data-testid="stack"
+  >
+    <p
+      class="paragraph paragraph-size-sm"
+      data-testid="paragraph"
+    >
+      Hover over me
+    </p>
+    <span
+      class="tooltip"
+      data-testid="tooltip"
+    >
+      <button
+        aria-describedby=":r1:"
+        aria-label="Show tooltip information"
+        class="tooltip-button"
+        data-testid="tooltip-button"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-sm outline"
+          data-icon="status-info"
+          data-testid="icon"
+        >
+          
+        </span>
+      </button>
+      <div
+        class="tooltip-popup hidden"
+        data-testid="tooltip-tooltip"
+        style="position: absolute; top: 0px; left: 0px; transform: translate(0px, 0px);"
+      >
+        <span
+          class="tooltip-box bottom"
+          data-testid="tooltip-tooltip-box"
+          id=":r1:"
+          role="tooltip"
+        >
+          <span
+            class="paragraph paragraph-size-sm tooltip-description"
+            data-testid="tooltip-description"
+          >
+            This is a tooltip
+          </span>
+        </span>
+      </div>
+    </span>
+  </div>
+</div>
+`;

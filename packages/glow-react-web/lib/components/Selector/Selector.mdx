@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as SelectorStories from "./Selector.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={SelectorStories} />
+
+# Selector
+
+### Token version: {getComponentVersion("selector.v1")}
+
+The `Selector` component is a versatile UI element used to represent a selectable card. It supports three variants:
+
+- **default**: Standard layout with optional price, badge, and description.
+- **compact**: Minimal layout without price, badge, or list.
+- **extended**: Rich layout with optional price, badge, title strikethrough, and a list.
+
+### Default Example
+
+<Canvas of={SelectorStories.Default} />
+<Controls of={SelectorStories.Default} />
+
+### Compact Example
+
+<Canvas of={SelectorStories.Compact} />
+
+### Extended Example
+
+<Canvas of={SelectorStories.Extended} />

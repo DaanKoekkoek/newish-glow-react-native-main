@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PriceStories from "./Price.stories";
+
+<Meta of={PriceStories} />
+
+# Price
+
+The price component is used to display a products price in a selector or product list component.
+
+<Canvas of={PriceStories.Basic} />
+<Controls of={PriceStories.Basic} />
+
+## With all enabled
+
+The price component with all options enabled. Includes a VAT disclaimer, price over frequency and a before text + value.
+
+<Canvas of={PriceStories.WithAllEnabled} />
+<Controls of={PriceStories.WithAllEnabled} />

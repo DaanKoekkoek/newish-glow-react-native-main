@@ -1,0 +1,23 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as DefaultStickerStories from "./DefaultSticker.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={DefaultStickerStories} />
+
+# DefaultSticker
+
+### Token version: {getComponentVersion("default-sticker.v1")}
+
+The `<DefaultSticker>` component is a visually distinctive element designed to highlight and communicate special information.
+
+### Default example
+
+<Canvas of={DefaultStickerStories.Default} />
+<Controls of={DefaultStickerStories.Default} />
+
+<Canvas of={DefaultStickerStories.Emphasised} />
+
+<Canvas of={DefaultStickerStories.Image} />
+
+<Canvas of={DefaultStickerStories.ImageEmphasised} />

@@ -1,0 +1,37 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AccordionStories from "./Accordion.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={AccordionStories} />
+
+# Accordion
+
+### Token version: {getComponentVersion("accordion.v2")}
+
+The Accordion component is used to display collapsible content sections and allows users to select multiple items at once. It consists of a header and a content section that can be expanded or collapsed.
+
+> #### Dev Usage
+>
+> Note: When using `typography` components such as `<Paragraph />` and `<Strong />`, make sure to pass
+> the `size="sm"` property to match it with the original Figma implementation.
+
+```jsx
+<AccordionPanel title="Example">
+  <Paragraph size="sm">
+    This is a paragraph with small text and <Strong size="sm">bold</Strong>.
+  </Paragraph>
+  <Strong size="sm">Small string</Strong>
+</AccordionPanel>
+```
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- `<Accordion.Step />` became `<AccordionPanel />` instead to provide for SSR support.
+
+## Default
+
+<Canvas of={AccordionStories.Default} />
+<Controls of={AccordionStories.Default} />

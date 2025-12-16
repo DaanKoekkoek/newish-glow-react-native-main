@@ -1,0 +1,88 @@
+@use "@odido-portals/glow-tokens/input-color";
+@use "@odido-portals/glow-tokens/input-gap";
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/primitives-color";
+@use "@globals/mixins";
+@use "@internals/Form/InputIcon/mixins" as input-icon;
+
+@mixin input-icon-styles {
+    display: flex;
+    align-items: center;
+
+    &.input-icon {
+        color: var(--components-input-color-icon-default);
+    }
+
+    &.input-icon-valid {
+        color: var(--components-input-color-icon-success);
+    }
+
+    &.input-icon-inactive {
+        color: var(--components-input-color-icon-inactive);
+    }
+}
+
+@include mixins.token-scope((suffix-container, prefix-container),
+    (input-gap,
+        input-color,
+        input-atoms-field,
+        color)) {}
+
+@layer main.internals {
+    .prefix-container {
+        position: absolute;
+        left: var(--components-input-atoms-field-padding-horizontal-default);
+    }
+
+    .suffix-container {
+        position: absolute;
+        right: var(--components-input-atoms-field-padding-horizontal-default);
+    }
+
+    .suffix,
+    .prefix {
+        @include input-icon.base-input-icon-styles;
+    }
+
+    .suffix-container-file-only {
+        right: var(--components-input-atoms-field-padding-horizontal-sm);
+    }
+
+    .suffix-group {
+        display: flex;
+        flex-direction: row;
+        gap: var(--components-input-gap-horizontal-default);
+        align-items: center;
+    }
+
+    .suffix-toggle {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        &:focus-visible {
+            @include mixins.outline-focus;
+        }
+    }
+
+    input:not([disabled])+.suffix-container .suffix-toggle {
+        cursor: pointer;
+    }
+
+    .suffix-clear-input {
+        align-items: center;
+        justify-content: center;
+        background-color: var(--components-input-color-background-default);
+        color: var(--components-input-color-icon-default);
+
+        &:hover {
+            color: var(--components-input-color-icon-hover);
+        }
+    }
+}
+
+.suffix,
+.prefix {
+    @include input-icon.base-input-icon-styles;
+}

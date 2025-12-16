@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "_utility": ["./lib/_utility/index"],
+      "_global-hooks": ["./lib/_hooks/index"],
+      "_internals/*": ["./lib/_internals/*"],
+      "_theming/*": ["./lib/_theming/*"],
+      ".examples/*": ["./lib/.examples/*"],
+      "@types": ["./lib/@types/*"],
+      "utilities/*": ["./lib/utilities/*"],
+      "components/*": ["./lib/components/*"],
+      "foundations/*": ["./lib/foundations/*"],
+      "@storybook/utils/*": ["./.storybook/utils/*"]
+    }
+  },
+  "include": ["src", "lib", "@types/**/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

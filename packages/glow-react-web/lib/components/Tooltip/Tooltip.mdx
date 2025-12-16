@@ -1,0 +1,31 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as TooltipStories from "./Tooltip.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+### Token version: {getComponentVersion("tooltip.v1")}
+
+## Tooltip Component
+
+This component is used to display additional information when a user hovers over or focuses on a target element.
+It provides a small popup box that contains helpful text or guidance related to the target element.
+
+Wrap the target element with the Tooltip component and provide the desired content and configuration.
+
+Example:
+
+```
+
+<Tooltip description="This is a tooltip">
+  <button>Hover me</button>
+</Tooltip>
+```
+
+### Default
+
+<Canvas of={TooltipStories.Default} />
+<Controls of={TooltipStories.Default} />

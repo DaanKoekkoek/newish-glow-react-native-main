@@ -1,0 +1,34 @@
+@use "@odido-portals/glow-tokens/assets-logos";
+@use "@odido-portals/glow-tokens/assets-logos-and-visuals-logos-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+$logo-sizes: default, lg, xl;
+
+@include mixins.token-scope(
+    logos,
+    (assets-logos-and-visuals-logos-v1, assets-logos)
+) {
+    display: inline-block;
+    overflow: visible;
+
+    &.is-inverted path {
+        fill: var(--components-assets-logos-and-visuals-logos-v1-color-inverted);
+    }
+}
+
+@each $size in $logo-sizes {
+    .logo-size-#{$size} {
+        width: min-content;
+        height: var(--components-assets-logos-and-visuals-logos-v1-size-height-#{$size});
+    }
+
+    @each $breakpoint, $width in config.$global-min-width {
+        @media (min-width: $width) {
+            .logo-size-#{$size}-#{$breakpoint} {
+                width: min-content;
+                height: var(--components-assets-logos-and-visuals-logos-v1-size-height-#{$size});
+            }
+        }
+    }
+}

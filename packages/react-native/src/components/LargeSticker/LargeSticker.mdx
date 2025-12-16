@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as LargeSticker from "./LargeSticker.stories";
+
+<Meta of={LargeSticker} />
+
+# LargeSticker
+
+## Purpose
+
+The `LargeSticker` component is large version of default `Sticker` component, it can accept `Price` or `DefaultList` as components.
+
+`Default` variant accepts description with `description` property.
+
+## Price component
+
+`Price` component props that are overriden from basic component are:
+
+- `size=lg`
+- `inverted` controlled by palette of `LargeSticker`
+
+### Default
+
+<Canvas of={LargeSticker.Default} />
+<Controls of={LargeSticker.Default} />
+
+### USP
+
+<Canvas of={LargeSticker.USP} />
+<Controls of={LargeSticker.USP} />

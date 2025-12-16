@@ -1,0 +1,158 @@
+@use "@odido-portals/glow-tokens/tabs-segmented-tab-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+/* Tab Selector classes */
+@keyframes move-shadow {
+  0% {
+    box-shadow: var(--box-shadow-color) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-x) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-y) var(--components-tabs-segmented-tab-v1-drop-shadow-blur) var(--components-tabs-segmented-tab-v1-drop-shadow-spread);
+  }
+
+  33.33% {
+    box-shadow: var(--box-shadow-color) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-2-x) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-2-y) var(--components-tabs-segmented-tab-v1-drop-shadow-blur) var(--components-tabs-segmented-tab-v1-drop-shadow-spread);
+  }
+
+  66.66% {
+    box-shadow: var(--box-shadow-color) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-3-x) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-3-y) var(--components-tabs-segmented-tab-v1-drop-shadow-blur) var(--components-tabs-segmented-tab-v1-drop-shadow-spread);
+  }
+
+  100% {
+    box-shadow: var(--box-shadow-color) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-x) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-y) var(--components-tabs-segmented-tab-v1-drop-shadow-blur) var(--components-tabs-segmented-tab-v1-drop-shadow-spread);
+  }
+}
+
+@include mixins.token-scope(
+  segmented-tab
+  tabs-segmented-tab-v1
+) {
+  position: relative;
+  width: 100%;
+
+  @each $variant in subtle, default {
+    @each $palette in config.$odido-palette {
+      &.segmented-tab-variant-#{$variant}-palette-#{$palette} {
+        --segmented-tab-container-background-color: var(--components-tabs-segmented-tab-v1-color-background-#{$variant}-palette-#{$palette}, var(--components-tabs-segmented-tab-v1-color-background-#{$variant}));
+      }
+    }
+  }
+
+  &.segmented-tab-bg-inactive {
+    --segmented-tab-container-background-color: var(--components-tabs-segmented-tab-v1-color-background-inactive);
+  }
+
+  .tab-background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--components-tabs-segmented-tab-v1-radius-default);
+    background-color: var(--segmented-tab-container-background-color);
+    box-sizing: border-box;
+
+    .tab-background-sliding {
+      position: absolute;
+      margin: var(--components-tabs-segmented-tab-v1-padding-horizontal);
+      top: 0;
+      left: calc((var(--button-width) - var(--components-tabs-segmented-tab-v1-padding-horizontal) / (var(--tab-count) - 1)) * var(--active-tab, 0));
+      width: calc(var(--button-width) - var(--components-tabs-segmented-tab-v1-padding-horizontal));
+      height: calc(100% - 2 * var(--components-tabs-segmented-tab-v1-padding-horizontal));
+      transition: all 0.3s cubic-bezier(0.17, 0.42, 0.66, 1.11);
+      box-sizing: border-box;
+      background-color: var(--tab-background-sliding-color);
+      border-radius: var(--components-tabs-segmented-tab-v1-radius-default);
+      box-shadow: var(--box-shadow-color) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-x) var(--components-tabs-segmented-tab-v1-drop-shadow-stop-1-y) var(--components-tabs-segmented-tab-v1-drop-shadow-blur) var(--components-tabs-segmented-tab-v1-drop-shadow-spread);
+      animation: move-shadow 20s infinite;
+    }
+  }
+}
+
+/* Tab container classes */
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--components-tabs-segmented-tab-v1-padding-horizontal);
+  justify-content: space-between;
+  padding: var(--components-tabs-segmented-tab-v1-padding-horizontal);
+  flex-grow: 1;
+  
+  /* Tab button classes */
+  .button-base.button-base-segmented-tab {
+    position: relative;
+    padding: var(--components-tabs-segmented-tab-v1-padding-vertical);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: calc(var(--button-width));
+  
+    &.bg-color {
+      background-color: transparent;
+  
+      &:hover.bg-color {
+        background-color: transparent;
+      }
+  
+      &:disabled.bg-color {
+        background-color: transparent;
+        cursor: auto;
+      }
+    }
+  }
+}
+
+
+/* Tab item classes */
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-color-default.bg-color {
+  color: var(--components-tabs-segmented-tab-v1-color-text-default);
+}
+
+.tab-color-selected-inactive.bg-color {
+  color: var(--components-tabs-segmented-tab-v1-color-text-selected-inactive);
+}
+
+.tab-color-inactive.bg-color {
+  color: var(--components-tabs-segmented-tab-v1-color-icon-inactive);
+}
+
+/* Panel classes */
+.panel {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.panel-show {
+  display: flex;
+}
+
+.panel-hide {
+  display: none;
+}
+
+@for $i from 2 through 3 {
+  .tab-count-#{$i} {
+    --button-width: calc(100% / #{$i});
+    --tab-count: #{$i};
+
+    width: 100%;
+  }
+}
+
+@each $variant in subtle, default, inactive {
+  .tab-variant-#{$variant} {
+    --tab-background-sliding-color: var(--components-tabs-segmented-tab-v1-color-background-selected-#{$variant});
+  }
+}
+
+@each $palette in config.$odido-palette {
+  .tab-palette-#{$palette} {
+    --box-shadow-color: var(--components-tabs-segmented-tab-v1-drop-shadow-color-palette-#{$palette}, var(--components-tabs-segmented-tab-v1-drop-shadow-color));
+  }
+}

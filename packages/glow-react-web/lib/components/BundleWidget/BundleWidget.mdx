@@ -1,0 +1,21 @@
+import { Canvas, Meta, Controls, Story } from "@storybook/blocks";
+import * as BundleWidgetStories from "./BundleWidget.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BundleWidgetStories} />
+
+# BundleWidget
+
+### Token version: {getComponentVersion("bundle-widget.v2")}
+
+The `BundleWidget` component displays usage or pricing information in a compact, styled widget format. It supports two visual types: a default progress-based usage display and a "budget" display with pricing.
+
+## Purpose
+
+`BundleWidget` is designed for showing remaining usage (e.g., data or minutes), as well as pricing information, often in a dashboard or product bundle view. It optionally includes a call-to-action button, an icon, and contextual information for accessibility.
+
+### Default Example
+
+<Canvas of={BundleWidgetStories.Default} />
+<Controls of={BundleWidgetStories.Default} />

@@ -1,0 +1,46 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as StoreButtonStories from "./StoreButton.stories";
+
+<Meta of={StoreButtonStories} />
+
+# StoreButton
+
+The `StoreButton` component is used to display a button that links to either the Apple App Store or Google Play Store.
+
+## Usage
+
+It supports different styles based on the `prominence` and `variant` props.
+
+Use the `inverted` prop to make the button always inverted, useful for placements like footers.
+
+#### Default
+
+<Canvas of={StoreButtonStories.Default} />
+<Controls of={StoreButtonStories.Default} />
+
+#### Secondary
+
+The `StoreButton` with secondary prominence.
+
+<Canvas of={StoreButtonStories.SecondaryApple} />
+
+#### Inverted
+
+Added `blue background color` to be able to show the inverted states in `light` and `dark` mode.
+
+<Canvas of={StoreButtonStories.InvertedApple} />
+<Controls of={StoreButtonStories.InvertedApple} />
+
+### Google Play Store
+
+<Canvas of={StoreButtonStories.DefaultGoogle} />
+
+#### Secondary
+
+<Canvas of={StoreButtonStories.SecondaryGoogle} />
+
+#### Inverted + Has inverted prop
+
+Having `inverted` prop will make the button always inverted regardless of the theme.
+
+<Canvas of={StoreButtonStories.InvertedGoogle} />

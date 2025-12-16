@@ -1,0 +1,35 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AddonStories from "./Addon.stories";
+
+<Meta of={AddonStories} />
+
+# Addon
+
+An `Addon` is a component that displays an offering, such as an image or other content, typically related to an external service or feature. It is designed to adjust its size based on the breakpoint, ensuring it looks good across different screen sizes.
+
+## Migration Guide
+
+When migrating from the React Native implementation, the following changes should be made to ensure compatibility and improve SSR (Server-Side Rendering) support:
+
+- The `size` property now only accepts `"sm" | "xs" | "default"`, and does not accept an object containing breakpoints. This simplification improves SSR performance.
+- To manage visibility at different breakpoints, use utility components like `<Hide />` and `<Show />` for conditionally rendering components based on screen size.
+
+## Usage
+
+The `Addon` component can be used in various scenarios to render content conditionally based on screen size or other criteria.
+
+### Default Example
+
+Use this example to render the `Addon` with the default settings.
+
+<Canvas of={AddonStories.Default} />
+<Controls of={AddonStories.Default} />
+
+### Per Breakpoint
+
+To apply a different sized `Addon` based on the viewport size, wrap the component with the `<Hide />` and `<Show />` components.
+
+For example, to hide an addon on small screens and show a different sized addon on larger screens:
+
+<Canvas of={AddonStories.AddonPerBreakpoint} />
+<Controls of={AddonStories.AddonPerBreakpoint} />

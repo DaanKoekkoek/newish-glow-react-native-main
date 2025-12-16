@@ -1,0 +1,20 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as Stepper from "./Stepper.vertical.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={Stepper} />
+
+# Stepper Component
+
+### Token version: {getComponentVersion("vertical-stepper.v1")}
+
+This file contains the implementation of the Stepper component. Steppers typically show the user’s progress through a series of distinct steps.
+
+## Vertical stepper
+
+The vertical stepper component allows you to create a step-by-step process
+with a title and state for each step.
+
+<Canvas of={Stepper.Vertical} />
+<Controls of={Stepper.Vertical} />

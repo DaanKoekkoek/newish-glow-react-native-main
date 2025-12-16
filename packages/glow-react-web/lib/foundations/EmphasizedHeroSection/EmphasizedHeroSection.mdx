@@ -1,0 +1,37 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as EmphasizedHeroSectionStories from "./EmphasizedHeroSection.stories";
+
+<Meta of={EmphasizedHeroSectionStories} />
+
+# EmphasizedHeroSection component
+
+The `EmphasizedHeroSection` is a visually rich section layout intended for the `<EmphasizedHero />` component.
+
+## Purpose
+
+Use the `EmphasizedHeroSection` component to:
+
+- Wrap the `<EmphasizedHero />` component and automatically pass down props such as `glow`, `theme`, `order`, and `palette`.
+- Apply branded gradient backgrounds or provide a fully custom background.
+- Align visuals and copy with flexible layout direction (`default` or `inverted`).
+
+## Usage
+
+Use `EmphasizedHeroSection` when you want to:
+
+- Use the `<EmphasizedHero />` component.
+- Apply gradient or custom backgrounds to enhance the visual hierarchy.
+- Render a fully custom section (via `background="custom"`) when total layout control is needed.
+
+## Default
+
+The default story demonstrates a standard use case with a title, subtitle, footnote, and visual.
+
+<Canvas of={EmphasizedHeroSectionStories.Default} />
+<Controls of={EmphasizedHeroSectionStories.Default} />
+
+## Custom Layout
+
+Demonstrates usage of the `custom` background with user-defined layout and content.
+
+<Canvas of={EmphasizedHeroSectionStories.Custom} />

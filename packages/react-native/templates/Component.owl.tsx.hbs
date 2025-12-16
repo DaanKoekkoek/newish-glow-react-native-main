@@ -1,0 +1,9 @@
+import { press, takeScreenshot } from "react-native-owl";
+
+describe("<{{pascalCase name}} />", () => {
+  it("baseline matches {{pascalCase name}} component screen", async () => {
+    await press("{{pascalCase name}}");
+    const screen = await takeScreenshot("{{pascalCase name}}");
+    expect(screen).toMatchBaseline();
+  });
+});

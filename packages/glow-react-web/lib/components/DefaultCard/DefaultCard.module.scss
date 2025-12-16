@@ -1,0 +1,306 @@
+@use "@odido-portals/glow-tokens/card-default-card-v1";
+@use "@odido-portals/glow-tokens/card-atoms-paragraph";
+@use "@odido-portals/glow-tokens/card-atoms-color";
+@use "@odido-portals/glow-tokens/card-atoms-text";
+@use "@odido-portals/glow-tokens/highlight-v1";
+@use "@globals/mixins";
+@use "@globals/config";
+
+@include mixins.token-scope(
+    default-card,
+    (
+        card-default-card-v1, 
+        card-atoms-paragraph, 
+        card-atoms-text, 
+        card-atoms-color, 
+        highlight-v1
+    )
+) {}
+
+.default-card {
+    border-radius: var(--components-card-default-card-v1-radius-default);
+    box-shadow: 0 0 0 var(--components-card-default-card-v1-border-width-outline-outline) var(--components-card-default-card-v1-color-border-default-default);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .default-card-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: var(--components-card-default-card-v1-gap-title-vertical);
+        color: var(--components-card-atoms-color-text-default);
+    }
+
+    .default-card-content {
+        background-color: var(--components-card-default-card-v1-color-background-default);
+        display: flex; 
+        padding: var(--components-card-default-card-v1-padding-vertical-default) var(--components-card-default-card-v1-padding-horizontal-default);
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--components-card-default-card-v1-gap-vertical);
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        z-index: 1;
+    }
+
+    .default-card-content-children {
+        display: flex;
+        flex-direction: column;
+        gap: var(--components-card-default-card-v1-gap-vertical);
+    }
+
+    .default-card-image-style picture {
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .default-card-highlight .default-card-highlight-text {
+        color: var(--components-highlight-v1-color-text-selected);
+    }
+
+    &.default-card-variant-emphasised {
+        border-radius: calc(var(--components-card-default-card-v1-radius-default) - var(--components-card-default-card-v1-border-width-outline-selected));
+
+        &::after {
+            content: "";
+            border-radius: inherit;
+            position: absolute;
+            inset: 0;
+            mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+            mask-composite: exclude;
+            z-index: 1;
+            pointer-events: none;
+            padding: var(--components-card-default-card-v1-border-width-outline-selected);
+        }
+
+        @each $palette in config.$odido-palette {
+            &.has-#{$palette}-palette {
+                .default-card-highlight {
+                    @include mixins.glow-gradient-image(
+                        $palette: $palette, 
+                        // TODO: There's no emphasised border color (yet)
+                        $fallback-color: var(--components-card-atoms-color-text-attention-text-success),
+                    );
+                }
+
+                &::after {
+                     @include mixins.glow-gradient-image(
+                        $palette: $palette,
+                        $reverted: true,
+                        // TODO: There's no emphasised border color (yet)
+                        $fallback-color: var(--components-card-atoms-color-text-attention-text-success),
+                    );
+                }
+            }
+        }
+    }
+
+    &.default-card-variant-outline .default-card-content {
+        border-style: solid;
+        border-width: 0;
+        background-color: var(--components-card-default-card-v1-color-background-outline);
+        border-radius: 0 0 var(--components-card-default-card-v1-radius-default) var(--components-card-default-card-v1-radius-default);
+        border-top: 0;
+    }
+
+    &.default-card-type-mini .default-card-content {
+        display: flex;
+        padding: var(--components-card-default-card-v1-padding-vertical-xxs) var(--components-card-default-card-v1-padding-horizontal-xxs);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+        transition: border-color 100ms ease-in-out;
+
+        &:has(.default-card-price) {
+            justify-content: space-between;
+        }
+    }
+
+    &.default-card-variant-outline.default-card-no-content-above .default-card-content {
+        border-top-width: var(--components-card-default-card-v1-border-width-outline-outline);
+        border-top-style: solid;
+        border-radius: var(--components-card-default-card-v1-radius-default);
+    }
+
+    @each $palette in config.$odido-palette {
+        &.has-#{$palette}-palette {
+            .default-card-image,
+            &.default-card-variant-alternate .default-card-content {
+                background-color: var(--components-card-default-card-v1-color-background-alternate-palette-#{$palette}, var(--components-card-default-card-v1-color-background-alternate));
+            }
+
+            &.default-card-variant-outline .default-card-content {
+                border-color: var(--components-card-default-card-v1-color-border-outline-default-palette-#{$palette}, var(--components-card-default-card-v1-color-border-outline-default));
+            }
+
+            &.default-card-variant-outline  {
+                &::after {
+                    box-shadow: inset 0 0 0 var(--components-card-default-card-v1-border-width-outline-hover) var(--components-card-default-card-v1-color-border-outline-default-palette-#{$palette}, var(--components-card-default-card-v1-color-border-outline-default));
+                }
+
+                border-color: var(--components-card-default-card-v1-color-border-outline-default-palette-#{$palette}, var(--components-card-default-card-v1-color-border-outline-default));
+            }
+        }
+    }
+
+    &.default-card-type-mini {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        min-height: var(--components-card-default-card-v1-size-max-height-xxs);
+        max-height: min-content;
+        max-width: var(--components-card-default-card-v1-size-max-width-xxs);
+        background: var(--components-card-default-card-v1-color-background-outline);
+
+        &::after {
+            border-radius: inherit;
+        }
+
+        .default-card-title h3 {
+            font-family: var(--components-card-atoms-text-typography-xxs-font-family);
+            font-size: var(--components-card-atoms-text-typography-xxs-font-size);
+            letter-spacing: var(--components-card-atoms-text-typography-xxs-letter-spacing);
+            line-height: var(--components-card-atoms-text-typography-xxs-line-height);
+        }
+
+        .default-card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+    }
+
+    &:not(.default-card-variant-emphasised, [data-theme$="dark"] &) .default-card-highlight-text {
+        color: var(--components-highlight-v1-color-text-hover);
+    }
+
+    &:not(:has(.default-card-image)) .default-card-content:has(.default-card-call-to-action) {
+        justify-content: space-between;
+    }
+
+    &.default-card-highlight-outline {
+        border-radius: var(--components-card-default-card-v1-radius-default);
+        border-top-left-radius: var(--components-card-default-card-v1-radius-none);
+
+        &::after {
+            border-radius: inherit;
+            border-top-left-radius: var(--components-card-default-card-v1-radius-default);
+            border-bottom-left-radius: var(--components-card-default-card-v1-radius-none);
+        }
+    }
+
+ 
+     &.default-card-variant-outline {
+        border-color: transparent;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            border-radius: inherit;
+        }
+    }
+
+    &:hover {
+        &.default-card-variant-emphasised .default-card-highlight-text {
+            color: var(--components-highlight-v1-color-text-hover);
+        }
+
+        .default-card-image-style picture {
+            transform: scale(1.1);
+            transition: transform 300ms ease-in-out;
+        }
+
+        &.default-card-variant-emphasised {
+            @each $palette in config.$odido-palette {
+                &.has-#{$palette}-palette {
+
+                    &::after,
+                    .default-card-highlight {
+                        @include mixins.glow-gradient-image(
+                            $palette: $palette, 
+                            $hover: true, 
+                            // TODO: There's no emphasised border color (yet)
+                            $fallback-color: var(--components-card-atoms-color-text-attention-text-success),
+                        );
+                    }
+                }
+            }
+        }
+
+        &.default-card-variant-default,
+        &.default-card-variant-alternate,
+        &.default-card-variant-outline {
+            border-color: transparent;
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                z-index: 3;
+                box-shadow: inset 0 0 0 var(--components-card-default-card-v1-border-width-outline-hover) var(--components-card-default-card-v1-color-border-outline-hover);
+                pointer-events: none;
+                border-radius: inherit;
+            }
+        }
+    }
+}
+
+.default-card-gradient,
+.default-card-gradient-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.default-card-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+
+    .default-card-image-content {
+        padding: var(--components-card-default-card-v1-padding-vertical-default) var(--components-card-default-card-v1-padding-horizontal-default);
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+    }
+
+    .default-card-variant-emphasised-highlight & {
+        border-top-left-radius: var(--components-card-default-card-v1-radius-none);
+        border-top-right-radius: var(--components-card-default-card-v1-radius-none);
+    }
+
+    .default-card-type-mini & {
+        border-top-left-radius: calc(var(--components-card-default-card-v1-radius-sm) - var(--components-card-default-card-v1-border-width-outline-selected));
+        border-top-right-radius: calc(var(--components-card-default-card-v1-radius-sm) - var(--components-card-default-card-v1-border-width-outline-selected));
+    }
+}
+
+.default-card-gradient {
+    position: absolute;
+    inset: 0;
+}
+
+.default-card-image-illustration {
+    display: flex;
+    justify-content: center;
+}
+
+.default-card-highlight {
+    z-index: 2; 
+
+    .default-card-variant-emphasised & {
+        border-top-right-radius: calc(var(--components-card-default-card-v1-radius-default) - var(--components-card-default-card-v1-border-width-outline-selected));
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,1015 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> renders default slider 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+  testID="slider-handle"
+>
+  <View
+    collapsable={false}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "backgroundColor": "#ecf2ff",
+        },
+        {
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#ff7621",
+          "borderRadius": 16,
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            {
+              "zIndex": -1,
+            },
+          ]
+        }
+        testID="glow-gradient"
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="100%"
+          bbWidth="100%"
+          fill="none"
+          focusable={false}
+          height="100%"
+          meetOrSlice={1}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": "100%",
+                "width": "100%",
+              },
+            ]
+          }
+          vbHeight={1080}
+          vbWidth={960}
+          width="100%"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
+              <RNSVGGroup
+                clipPath="clip0"
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "lightLinear4",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGLinearGradient
+                  gradient={
+                    [
+                      0.1,
+                      -8344833,
+                      0.5,
+                      -5659649,
+                      0.8,
+                      -21126,
+                    ]
+                  }
+                  gradientTransform={null}
+                  gradientUnits={0}
+                  name="lightLinear4"
+                  x1="0"
+                  x2="100%"
+                  y1="100%"
+                  y2="0"
+                />
+                <RNSVGClipPath
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  name="clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0H960V1080H0z"
+                    fill={
+                      {
+                        "payload": 4294967295,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        collapsable={false}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          style={
+            [
+              {
+                "alignSelf": "flex-start",
+              },
+              undefined,
+            ]
+          }
+          testID="button"
+        >
+          <View
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "backgroundColor": "rgba(0, 0, 0, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                },
+              }
+            }
+            style={
+              {
+                "alignItems": "center",
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+                "borderRadius": 100,
+                "borderStyle": "solid",
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+                "paddingHorizontal": 24,
+                "paddingVertical": 12,
+              }
+            }
+            testID="button-visual"
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text>
+                <Text
+                  collapsable={false}
+                  jestAnimatedStyle={
+                    {
+                      "value": {
+                        "color": "rgba(255, 255, 255, 1)",
+                      },
+                    }
+                  }
+                  style={
+                    {
+                      "color": "rgba(255, 255, 255, 1)",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "Icons_Outline_DEFAULT_odido",
+                          "fontSize": 24,
+                          "lineHeight": 24,
+                          "width": 24,
+                        },
+                        [
+                          {
+                            "display": "flex",
+                          },
+                          false,
+                        ],
+                      ]
+                    }
+                    testID="base-button-icon"
+                  >
+                    
+                  </Text>
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Slider /> renders slider when a value is provided 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+  testID="slider-handle"
+>
+  <View
+    collapsable={false}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "backgroundColor": "#ecf2ff",
+        },
+        {
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#ff7621",
+          "borderRadius": 16,
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            {
+              "zIndex": -1,
+            },
+          ]
+        }
+        testID="glow-gradient"
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="100%"
+          bbWidth="100%"
+          fill="none"
+          focusable={false}
+          height="100%"
+          meetOrSlice={1}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": "100%",
+                "width": "100%",
+              },
+            ]
+          }
+          vbHeight={1080}
+          vbWidth={960}
+          width="100%"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
+              <RNSVGGroup
+                clipPath="clip0"
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "lightLinear4",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGLinearGradient
+                  gradient={
+                    [
+                      0.1,
+                      -8344833,
+                      0.5,
+                      -5659649,
+                      0.8,
+                      -21126,
+                    ]
+                  }
+                  gradientTransform={null}
+                  gradientUnits={0}
+                  name="lightLinear4"
+                  x1="0"
+                  x2="100%"
+                  y1="100%"
+                  y2="0"
+                />
+                <RNSVGClipPath
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  name="clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0H960V1080H0z"
+                    fill={
+                      {
+                        "payload": 4294967295,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        collapsable={false}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          style={
+            [
+              {
+                "alignSelf": "flex-start",
+              },
+              undefined,
+            ]
+          }
+          testID="button"
+        >
+          <View
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "backgroundColor": "rgba(0, 0, 0, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                },
+              }
+            }
+            style={
+              {
+                "alignItems": "center",
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+                "borderRadius": 100,
+                "borderStyle": "solid",
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+                "paddingHorizontal": 24,
+                "paddingVertical": 12,
+              }
+            }
+            testID="button-visual"
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text>
+                <Text
+                  collapsable={false}
+                  jestAnimatedStyle={
+                    {
+                      "value": {
+                        "color": "rgba(255, 255, 255, 1)",
+                      },
+                    }
+                  }
+                  style={
+                    {
+                      "color": "rgba(255, 255, 255, 1)",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "Icons_Outline_DEFAULT_odido",
+                          "fontSize": 24,
+                          "lineHeight": 24,
+                          "width": 24,
+                        },
+                        [
+                          {
+                            "display": "flex",
+                          },
+                          false,
+                        ],
+                      ]
+                    }
+                    testID="base-button-icon"
+                  >
+                    
+                  </Text>
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Slider /> renders slider when position is provided and is the maximum value 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+  testID="slider-handle"
+>
+  <View
+    collapsable={false}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "backgroundColor": "#ecf2ff",
+        },
+        {
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "width": 0,
+          },
+        }
+      }
+      style={
+        {
+          "backgroundColor": "#ff7621",
+          "borderRadius": 16,
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 0,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            {
+              "zIndex": -1,
+            },
+          ]
+        }
+        testID="glow-gradient"
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="100%"
+          bbWidth="100%"
+          fill="none"
+          focusable={false}
+          height="100%"
+          meetOrSlice={1}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": "100%",
+                "width": "100%",
+              },
+            ]
+          }
+          vbHeight={1080}
+          vbWidth={960}
+          width="100%"
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+            >
+              <RNSVGGroup
+                clipPath="clip0"
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGPath
+                  d="M960 0H0v1080h960V0z"
+                  fill={
+                    {
+                      "brushRef": "lightLinear4",
+                      "type": 1,
+                    }
+                  }
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGLinearGradient
+                  gradient={
+                    [
+                      0.1,
+                      -8344833,
+                      0.5,
+                      -5659649,
+                      0.8,
+                      -21126,
+                    ]
+                  }
+                  gradientTransform={null}
+                  gradientUnits={0}
+                  name="lightLinear4"
+                  x1="0"
+                  x2="100%"
+                  y1="100%"
+                  y2="0"
+                />
+                <RNSVGClipPath
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                  name="clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0H960V1080H0z"
+                    fill={
+                      {
+                        "payload": 4294967295,
+                        "type": 0,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      style={
+        {
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        collapsable={false}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          style={
+            [
+              {
+                "alignSelf": "flex-start",
+              },
+              undefined,
+            ]
+          }
+          testID="button"
+        >
+          <View
+            collapsable={false}
+            jestAnimatedStyle={
+              {
+                "value": {
+                  "backgroundColor": "rgba(0, 0, 0, 1)",
+                  "borderColor": "rgba(0, 0, 0, 0)",
+                },
+              }
+            }
+            style={
+              {
+                "alignItems": "center",
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgba(0, 0, 0, 1)",
+                "borderColor": "rgba(0, 0, 0, 0)",
+                "borderRadius": 100,
+                "borderStyle": "solid",
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "gap": 12,
+                "justifyContent": "center",
+                "paddingHorizontal": 24,
+                "paddingVertical": 12,
+              }
+            }
+            testID="button-visual"
+          >
+            <View
+              onLayout={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 12,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text>
+                <Text
+                  collapsable={false}
+                  jestAnimatedStyle={
+                    {
+                      "value": {
+                        "color": "rgba(255, 255, 255, 1)",
+                      },
+                    }
+                  }
+                  style={
+                    {
+                      "color": "rgba(255, 255, 255, 1)",
+                    }
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      [
+                        {
+                          "fontFamily": "Icons_Outline_DEFAULT_odido",
+                          "fontSize": 24,
+                          "lineHeight": 24,
+                          "width": 24,
+                        },
+                        [
+                          {
+                            "display": "flex",
+                          },
+                          false,
+                        ],
+                      ]
+                    }
+                    testID="base-button-icon"
+                  >
+                    
+                  </Text>
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

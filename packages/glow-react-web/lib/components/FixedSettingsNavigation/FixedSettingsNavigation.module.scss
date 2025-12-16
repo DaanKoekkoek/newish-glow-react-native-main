@@ -1,0 +1,44 @@
+@use "@globals/mixins";
+
+.fixed-settings-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-links {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.emphasised-stack {
+  padding-inline: var(--components-box-v1-padding-sm);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-avatar {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: var(--semantics-padding-100) 7px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.user-profile-link {
+  text-decoration: none;
+  color: inherit;
+
+  :hover {
+    .user-account-label {
+      text-decoration: underline;
+    }
+  }
+}

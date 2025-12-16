@@ -1,0 +1,47 @@
+@use "@odido-portals/glow-tokens/button-icon-action-button-v1";
+@use "@odido-portals/glow-tokens/button-action-button-v1";
+@use "@globals/mixins";
+
+$action-button-sizes: sm, default;
+$action-button-states: loading, inactive;
+
+@include mixins.token-scope(
+  action-button-icon,
+  (button-action-button-v1, button-icon-action-button-v1)
+) {
+  display: flex;
+  justify-content: center;
+
+  @each $state in $action-button-states {
+    &.state-#{$state} {
+      background-color: var(--components-button-action-button-v1-color-background-default-#{$state});
+      color: var(--components-button-action-button-v1-color-icon-default-#{$state});
+    }
+  }
+
+  &.prominence-emphasised {
+    background-color: var(--components-button-action-button-v1-color-background-emphasised-default);
+    color: var(--components-button-action-button-v1-color-icon-emphasised-default);
+
+    /*
+    * Default styles
+    * States: default, loading, inactive.
+    */
+    @each $state in $action-button-states {
+      &.state-#{$state} {
+        background-color: var(--components-button-action-button-v1-color-background-emphasised-#{$state});
+        color: var(--components-button-action-button-v1-color-icon-emphasised-#{$state});
+      }
+    }
+  }
+
+  @each $size in $action-button-sizes {
+    &.size-#{$size} {
+      padding: var(--components-button-icon-action-button-v1-padding-vertical-#{$size}) var(--components-button-icon-action-button-v1-padding-horizontal-#{$size});
+    }
+  }
+}
+
+.block {
+  display: block;
+}

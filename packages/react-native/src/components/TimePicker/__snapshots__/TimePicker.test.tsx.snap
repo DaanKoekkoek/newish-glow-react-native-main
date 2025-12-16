@@ -1,0 +1,1813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic TimePicker renders a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "gap": 8,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "column",
+        "position": "relative",
+        "rowGap": 8,
+      }
+    }
+    testID="timePicker"
+  >
+    <View
+      style={
+        {
+          "alignSelf": "stretch",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 24,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 24,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          Label
+        </Text>
+      </Text>
+      <View
+        style={
+          {
+            "columnGap": 8,
+            "display": "flex",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View>
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_DEFAULT_odido",
+                  "fontSize": 24,
+                  "lineHeight": 24,
+                  "width": 24,
+                },
+                {
+                  "color": "#000000",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "gap": 8,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "#ffffff",
+                          "borderColor": "#dddddd",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-hours_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Hours"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-hours_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "backgroundColor": "#ffffff",
+                          "borderColor": "#dddddd",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-minutes_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Minutes"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-minutes_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 24,
+              "textAlign": "left",
+            },
+            {
+              "color": "#666666",
+            },
+          ]
+        }
+        testID="paragraph"
+      >
+        Helper text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Error TimePicker renders a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "gap": 8,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "column",
+        "position": "relative",
+        "rowGap": 8,
+      }
+    }
+    testID="timePicker"
+  >
+    <View
+      style={
+        {
+          "alignSelf": "stretch",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 24,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 24,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          Label
+        </Text>
+      </Text>
+      <View
+        style={
+          {
+            "columnGap": 8,
+            "display": "flex",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View>
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_DEFAULT_odido",
+                  "fontSize": 24,
+                  "lineHeight": 24,
+                  "width": 24,
+                },
+                {
+                  "color": "#000000",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "gap": 8,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#2f9a92",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-hours_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Hours"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-hours_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <Text
+                          style={
+                            {
+                              "alignItems": "center",
+                              "color": "#2f9a92",
+                              "display": "flex",
+                            }
+                          }
+                        >
+                          <Text
+                            allowFontScaling={true}
+                            style={
+                              [
+                                {
+                                  "fontFamily": "Icons_Outline_SM_odido",
+                                  "fontSize": 16,
+                                  "lineHeight": 16,
+                                  "width": 16,
+                                },
+                                {
+                                  "color": "#000000",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </Text>
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#2f9a92",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-minutes_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Minutes"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-minutes_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <Text
+                          style={
+                            {
+                              "alignItems": "center",
+                              "color": "#2f9a92",
+                              "display": "flex",
+                            }
+                          }
+                        >
+                          <Text
+                            allowFontScaling={true}
+                            style={
+                              [
+                                {
+                                  "fontFamily": "Icons_Outline_SM_odido",
+                                  "fontSize": 16,
+                                  "lineHeight": 16,
+                                  "width": 16,
+                                },
+                                {
+                                  "color": "#000000",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </Text>
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 24,
+              "textAlign": "left",
+            },
+            {
+              "color": "#666666",
+            },
+          ]
+        }
+        testID="paragraph"
+      >
+        Helper text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Success TimePicker renders a stable snapshot 1`] = `
+<View
+  style={
+    {
+      "gap": 8,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "display": "flex",
+        "flexDirection": "column",
+        "position": "relative",
+        "rowGap": 8,
+      }
+    }
+    testID="timePicker"
+  >
+    <View
+      style={
+        {
+          "alignSelf": "stretch",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 16,
+              "letterSpacing": 0.23999999463558197,
+              "lineHeight": 24,
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+        testID="paragraph"
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Strong",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 24,
+              },
+              undefined,
+            ]
+          }
+          testID="strong"
+        >
+          Label
+        </Text>
+      </Text>
+      <View
+        style={
+          {
+            "columnGap": 8,
+            "display": "flex",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View>
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_DEFAULT_odido",
+                  "fontSize": 24,
+                  "lineHeight": 24,
+                  "width": 24,
+                },
+                {
+                  "color": "#000000",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "stretch",
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "gap": 8,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#f5463b",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-hours_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Hours"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-hours_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              pointerEvents="box-only"
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "display": "flex",
+                      "flexDirection": "column",
+                      "position": "relative",
+                      "rowGap": 8,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "gap": 8,
+                      }
+                    }
+                  >
+                    <View
+                      onPointerDown={[Function]}
+                      style={
+                        {
+                          "alignItems": "center",
+                          "borderColor": "#f5463b",
+                          "borderRadius": 8,
+                          "borderStyle": "solid",
+                          "borderWidth": 2,
+                          "flex": 1,
+                          "flexDirection": "row",
+                          "gap": 8,
+                          "overflow": "hidden",
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 10,
+                          "position": "relative",
+                        }
+                      }
+                      testID="timePicker-minutes_select_input-container"
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flex": 1,
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <TextInput
+                          accessible={true}
+                          aria-disabled={false}
+                          editable={false}
+                          importantForAccessibility="auto"
+                          onBlur={[Function]}
+                          onChangeText={[Function]}
+                          onFocus={[Function]}
+                          onKeyPress={[Function]}
+                          onPointerEnter={[Function]}
+                          onPointerLeave={[Function]}
+                          onSelectionChange={[Function]}
+                          placeholder="Minutes"
+                          placeholderTextColor="#666666"
+                          readOnly={false}
+                          secureTextEntry={false}
+                          showSoftInputOnFocus={false}
+                          style={
+                            [
+                              {
+                                "fontFamily": "odido_Paragraph_Regular",
+                              },
+                              {
+                                "flex": 1,
+                                "fontSize": 16,
+                                "lineHeight": 20,
+                                "position": "relative",
+                              },
+                              {
+                                "color": "#000000",
+                              },
+                              {
+                                "backgroundColor": "#ffffff",
+                              },
+                            ]
+                          }
+                          testID="timePicker-minutes_select_input-field"
+                        />
+                      </View>
+                      <View
+                        style={{}}
+                      >
+                        <View
+                          accessibilityState={
+                            {
+                              "busy": undefined,
+                              "checked": undefined,
+                              "disabled": false,
+                              "expanded": undefined,
+                              "selected": undefined,
+                            }
+                          }
+                          accessibilityValue={
+                            {
+                              "max": undefined,
+                              "min": undefined,
+                              "now": undefined,
+                              "text": undefined,
+                            }
+                          }
+                          accessible={true}
+                          collapsable={false}
+                          focusable={false}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          role="button"
+                          style={
+                            {
+                              "alignItems": "center",
+                              "borderWidth": 0,
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignItems": "center",
+                                "color": "#000000",
+                                "display": "flex",
+                                "userSelect": "none",
+                              }
+                            }
+                          >
+                            <Text
+                              allowFontScaling={true}
+                              style={
+                                [
+                                  {
+                                    "fontFamily": "Icons_Outline_DEFAULT_odido",
+                                    "fontSize": 24,
+                                    "lineHeight": 24,
+                                    "width": 24,
+                                  },
+                                  {
+                                    "color": "#000000",
+                                  },
+                                ]
+                              }
+                            >
+                              
+                            </Text>
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      testID="error-text"
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "columnGap": 8,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "Icons_Outline_SM_odido",
+                "fontSize": 16,
+                "lineHeight": 16,
+                "width": 16,
+              },
+              {
+                "color": "#f5463b",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          allowFontScaling={true}
+          style={
+            [
+              {
+                "fontFamily": "odido_Paragraph_Regular",
+              },
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "letterSpacing": 0.23999999463558197,
+                "lineHeight": 24,
+                "textAlign": "left",
+              },
+              {
+                "color": "#f5463b",
+              },
+            ]
+          }
+          testID="paragraph"
+        >
+          Something went wrong!
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

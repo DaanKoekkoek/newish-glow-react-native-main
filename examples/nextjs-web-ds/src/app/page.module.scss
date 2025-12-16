@@ -1,0 +1,91 @@
+.page {
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 80px;
+  gap: 64px;
+  min-width: 100%;
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    font-family: "Otypical Headline";
+    font-weight: 500;
+  }
+
+  .headerRegular {
+    font-family: "Otypical Headline";
+    font-weight: 400;
+  }
+
+  .paragraphRegular {
+    font-family: "Otypical Text";
+    font-weight: 400;
+  }
+
+  .paragraphRegularItalic {
+    font-family: "Otypical Text";
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .paragraphSemiBold {
+    font-family: "Otypical Text";
+    font-weight: 500;
+  }
+
+  .paragraphSemiBoldItalic {
+    font-family: "Otypical Text";
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+.page .main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  grid-row-start: 2;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+}
+
+.example-sidebar-trigger {
+  --sidebar-trigger-offset: 20px;
+
+  position: fixed;
+  z-index: 9997;
+  bottom: var(--sidebar-trigger-offset);
+  right: 20px;
+  transition: bottom 0.25s ease-in-out;
+
+  &:has(+ main [class*="sticky-bar-position-bottom"]:not([class*="sticky-bar-hide"])) {
+    --sidebar-trigger-offset: 165px;
+
+    @media (min-width: 530px) {
+      --sidebar-trigger-offset: 100px;
+    }
+
+    @media (min-width: 960px) {
+      --sidebar-trigger-offset: 165px;
+    }
+  }
+
+  &:has(+ main [class*="sticky-bar-hide-bottom"]) {
+    --sidebar-trigger-offset: 15px;
+  }
+}

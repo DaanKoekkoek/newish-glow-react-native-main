@@ -1,0 +1,43 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as BannerCardStories from "./BannerCard.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={BannerCardStories} />
+
+# BannerCard
+
+### Token version: {getComponentVersion("bannerCard.v1")}
+
+The `BannerCard` component consists of title and paragraph which can be flexbile `children`, image and action button.
+Background can be changed with `palette` and `variant` props.
+
+## Purpose
+
+The `BannerCard` component creates informative card with image, title, description and action button.
+
+## Usage
+
+```tsx
+import { BannerCard } from "@odido-portals/glow-react-web/banner-card";
+
+<BannerCard
+  title="Title"
+  paragraph="Paragraph"
+  image={{
+    src: "/path/to/image.png",
+    ratio: { mobileSmall: "1/1", tablet: "16/9" },
+  }}
+  callToAction={{
+    onClick: () => {},
+    "aria-label": "Banner card button",
+  }}
+/>;
+```
+
+The `BannerCard`
+
+### Default Example
+
+<Canvas of={BannerCardStories.Default} />
+<Controls of={BannerCardStories.Default} />

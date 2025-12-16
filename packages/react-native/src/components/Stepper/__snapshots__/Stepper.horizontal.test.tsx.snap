@@ -1,0 +1,7375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepperHorizontal renders correctly 1`] = `
+<View
+  style={
+    {
+      "minHeight": 40,
+    }
+  }
+  testID="stepper"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "gap": 4,
+        "justifyContent": "center",
+        "paddingHorizontal": 0,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "backgroundColor": "#2f9a92",
+            "borderRadius": 100,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "width": 32,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "#2f9a92",
+              "borderRadius": 100,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+              "zIndex": 3,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFF",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              allowFontScaling={true}
+              style={
+                [
+                  {
+                    "fontFamily": "Icons_Outline_SM_odido",
+                    "fontSize": 16,
+                    "lineHeight": 16,
+                    "width": 16,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "maxWidth": 37.75,
+          "minWidth": 20,
+          "overflow": "hidden",
+          "position": "relative",
+          "zIndex": -1,
+        }
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={4}
+        bbWidth="100%"
+        focusable={false}
+        height={4}
+        preserveaspectration="xMinYMid"
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "position": "absolute",
+            },
+            {
+              "flex": 0,
+              "height": 4,
+              "width": "100%",
+            },
+          ]
+        }
+        viewbox="0 0 100% 100%"
+        width="100%"
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGCircle
+            cx={4}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={12}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={20}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={28}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={36}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={44}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={52}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={60}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={68}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={76}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={84}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={92}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={100}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={108}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={116}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={124}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={132}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={140}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={148}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={156}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={164}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={172}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={180}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={188}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={196}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={204}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={212}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={220}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={228}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={236}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={244}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={252}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={260}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={268}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={276}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={284}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={292}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={300}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={308}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={316}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={324}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={332}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={340}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={348}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={356}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={364}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={372}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={380}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={388}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={396}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={404}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={412}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={420}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={428}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={436}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={444}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={452}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={460}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={468}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={476}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={484}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={492}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={500}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={508}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={516}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={524}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={532}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={540}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={548}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={556}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={564}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={572}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={580}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={588}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={596}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={604}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={612}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={620}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={628}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={636}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={644}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={652}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={660}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={668}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={676}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={684}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={692}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={700}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={708}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={716}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={724}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={732}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={740}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={748}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={756}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={764}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={772}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={780}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={788}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={796}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "backgroundColor": "#2f9a92",
+            "borderRadius": 100,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "width": 32,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "#2f9a92",
+              "borderRadius": 100,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+              "zIndex": 3,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFF",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              allowFontScaling={true}
+              style={
+                [
+                  {
+                    "fontFamily": "Icons_Outline_SM_odido",
+                    "fontSize": 16,
+                    "lineHeight": 16,
+                    "width": 16,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "maxWidth": 37.75,
+          "minWidth": 20,
+          "overflow": "hidden",
+          "position": "relative",
+          "zIndex": -1,
+        }
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={4}
+        bbWidth="100%"
+        focusable={false}
+        height={4}
+        preserveaspectration="xMinYMid"
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "position": "absolute",
+            },
+            {
+              "flex": 0,
+              "height": 4,
+              "width": "100%",
+            },
+          ]
+        }
+        viewbox="0 0 100% 100%"
+        width="100%"
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGCircle
+            cx={4}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={12}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={20}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={28}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={36}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={44}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={52}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={60}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={68}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={76}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={84}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={92}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={100}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={108}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={116}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={124}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={132}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={140}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={148}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={156}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={164}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={172}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={180}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={188}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={196}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={204}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={212}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={220}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={228}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={236}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={244}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={252}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={260}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={268}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={276}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={284}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={292}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={300}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={308}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={316}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={324}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={332}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={340}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={348}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={356}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={364}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={372}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={380}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={388}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={396}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={404}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={412}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={420}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={428}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={436}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={444}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={452}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={460}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={468}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={476}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={484}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={492}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={500}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={508}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={516}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={524}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={532}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={540}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={548}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={556}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={564}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={572}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={580}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={588}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={596}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={604}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={612}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={620}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={628}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={636}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={644}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={652}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={660}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={668}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={676}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={684}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={692}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={700}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={708}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={716}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={724}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={732}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={740}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={748}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={756}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={764}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={772}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={780}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={788}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={796}
+            cy={2}
+            fill={
+              {
+                "payload": 4281309842,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "borderRadius": 100,
+              "height": 40,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": 40,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              [
+                {
+                  "borderRadius": 100,
+                  "height": 40,
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "width": 40,
+                },
+              ],
+              {
+                "zIndex": 1,
+              },
+            ]
+          }
+          testID="glow-gradient"
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="100%"
+            bbWidth="100%"
+            fill="none"
+            focusable={false}
+            height="100%"
+            meetOrSlice={1}
+            minX={0}
+            minY={0}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": "100%",
+                  "width": "100%",
+                },
+              ]
+            }
+            vbHeight={1080}
+            vbWidth={960}
+            width="100%"
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGGroup
+                  clipPath="clip0"
+                  fill={
+                    {
+                      "payload": 4278190080,
+                      "type": 0,
+                    }
+                  }
+                >
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_linear_1_220",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_radial_1_221",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_radial_1_222",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_radial_1_223",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_radial_1_224",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                  <RNSVGPath
+                    d="M960 0H0v1080h960V0z"
+                    fill={
+                      {
+                        "brushRef": "paint0_radial_1_225",
+                        "type": 1,
+                      }
+                    }
+                    propList={
+                      [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGGroup>
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      [
+                        0.777327,
+                        -11498753,
+                        1,
+                        -13798401,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="paint0_linear_1_220"
+                    x1={960}
+                    x2="3.57628e-05"
+                    y1="2.86102e-05"
+                    y2={1080}
+                  />
+                  <RNSVGRadialGradient
+                    cx={0}
+                    cy={0}
+                    fx={0}
+                    fy={0}
+                    gradient={
+                      [
+                        0.665,
+                        -8477697,
+                        0.81,
+                        -9266945,
+                        0.885,
+                        -2139184129,
+                        1,
+                        8299519,
+                      ]
+                    }
+                    gradientTransform={
+                      [
+                        185.29044965962717,
+                        1245.7859002914317,
+                        -681.3706738363603,
+                        101.34283789091515,
+                        512.887,
+                        -51.8359,
+                      ]
+                    }
+                    gradientUnits={1}
+                    name="paint0_radial_1_221"
+                    rx={1}
+                    ry={1}
+                  />
+                  <RNSVGRadialGradient
+                    cx={0}
+                    cy={0}
+                    fx={0}
+                    fy={0}
+                    gradient={
+                      [
+                        0,
+                        -7765505,
+                        0.33941,
+                        -8094977,
+                        0.739171,
+                        -7568129,
+                        1,
+                        9209087,
+                      ]
+                    }
+                    gradientTransform={
+                      [
+                        123.21784666591678,
+                        862.5251797988362,
+                        -503.2685466425023,
+                        71.89548556302717,
+                        694.036,
+                        444.213,
+                      ]
+                    }
+                    gradientUnits={1}
+                    name="paint0_radial_1_222"
+                    rx={1}
+                    ry={1}
+                  />
+                  <RNSVGRadialGradient
+                    cx={0}
+                    cy={0}
+                    fx={0}
+                    fy={0}
+                    gradient={
+                      [
+                        0.578582,
+                        -9279489,
+                        0.697843,
+                        -428709889,
+                        1,
+                        7497727,
+                      ]
+                    }
+                    gradientTransform={
+                      [
+                        232.59958647478993,
+                        1009.243242420655,
+                        -487.48777556826667,
+                        112.35096777733294,
+                        639.043,
+                        117.686,
+                      ]
+                    }
+                    gradientUnits={1}
+                    name="paint0_radial_1_223"
+                    rx={1}
+                    ry={1}
+                  />
+                  <RNSVGRadialGradient
+                    cx={0}
+                    cy={0}
+                    fx={0}
+                    fy={0}
+                    gradient={
+                      [
+                        0.00787439,
+                        -33501,
+                        0.565,
+                        -819376,
+                        0.708535,
+                        -420511650,
+                        1,
+                        15695966,
+                      ]
+                    }
+                    gradientTransform={
+                      [
+                        26.255273739945604,
+                        824.818232277173,
+                        -548.3952396141386,
+                        17.45629105942685,
+                        682.708,
+                        -34.0676,
+                      ]
+                    }
+                    gradientUnits={1}
+                    name="paint0_radial_1_224"
+                    rx={1}
+                    ry={1}
+                  />
+                  <RNSVGRadialGradient
+                    cx={0}
+                    cy={0}
+                    fx={0}
+                    fy={0}
+                    gradient={
+                      [
+                        0.651831,
+                        -33501,
+                        1,
+                        16743715,
+                      ]
+                    }
+                    gradientTransform={
+                      [
+                        3.65332959181241e-14,
+                        596.634,
+                        -349.9,
+                        2.1425195751082944e-14,
+                        480,
+                        -56.6343,
+                      ]
+                    }
+                    gradientUnits={1}
+                    name="paint0_radial_1_225"
+                    rx={1}
+                    ry={1}
+                  />
+                  <RNSVGClipPath
+                    fill={
+                      {
+                        "payload": 4278190080,
+                        "type": 0,
+                      }
+                    }
+                    name="clip0"
+                  >
+                    <RNSVGPath
+                      d="M0 0H960V1080H0z"
+                      fill={
+                        {
+                          "payload": 4294967295,
+                          "type": 0,
+                        }
+                      }
+                      propList={
+                        [
+                          "fill",
+                        ]
+                      }
+                    />
+                  </RNSVGClipPath>
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignContent": "center",
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 100,
+                "justifyContent": "center",
+                "zIndex": 3,
+              },
+              {
+                "backgroundColor": "#ffffff",
+                "borderRadius": 100,
+                "position": "absolute",
+                "zIndex": 2,
+              },
+              {
+                "height": 32,
+                "left": 4,
+                "top": 4,
+                "width": 32,
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "odido_Heading_Medium",
+                },
+                {
+                  "color": "#000000",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.23999999463558197,
+                  "lineHeight": 28,
+                  "marginVertical": 0,
+                  "textAlign": "left",
+                },
+                {
+                  "alignContent": "center",
+                  "alignItems": "center",
+                  "color": "#000000",
+                  "flex": 1,
+                  "fontSize": 18,
+                  "justifyContent": "center",
+                  "letterSpacing": 0.18000000715255737,
+                  "lineHeight": 22,
+                  "paddingVertical": 5,
+                  "verticalAlign": "middle",
+                },
+              ]
+            }
+            testID="heading"
+          >
+            3
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "maxWidth": 37.75,
+          "minWidth": 20,
+          "overflow": "hidden",
+          "position": "relative",
+          "zIndex": -1,
+        }
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={4}
+        bbWidth="100%"
+        focusable={false}
+        height={4}
+        preserveaspectration="xMinYMid"
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "position": "absolute",
+            },
+            {
+              "flex": 0,
+              "height": 4,
+              "width": "100%",
+            },
+          ]
+        }
+        viewbox="0 0 100% 100%"
+        width="100%"
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGCircle
+            cx={4}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={12}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={20}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={28}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={36}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={44}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={52}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={60}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={68}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={76}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={84}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={92}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={100}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={108}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={116}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={124}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={132}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={140}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={148}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={156}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={164}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={172}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={180}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={188}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={196}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={204}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={212}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={220}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={228}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={236}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={244}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={252}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={260}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={268}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={276}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={284}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={292}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={300}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={308}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={316}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={324}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={332}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={340}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={348}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={356}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={364}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={372}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={380}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={388}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={396}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={404}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={412}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={420}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={428}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={436}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={444}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={452}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={460}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={468}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={476}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={484}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={492}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={500}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={508}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={516}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={524}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={532}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={540}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={548}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={556}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={564}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={572}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={580}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={588}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={596}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={604}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={612}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={620}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={628}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={636}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={644}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={652}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={660}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={668}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={676}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={684}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={692}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={700}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={708}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={716}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={724}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={732}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={740}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={748}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={756}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={764}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={772}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={780}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={788}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={796}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "backgroundColor": undefined,
+              "borderRadius": 100,
+              "flexDirection": "row",
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+            },
+            {
+              "backgroundColor": "#ecf2ff",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "borderRadius": 100,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+              "zIndex": 3,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "odido_Heading_Medium",
+                },
+                {
+                  "color": "#000000",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.23999999463558197,
+                  "lineHeight": 28,
+                  "marginVertical": 0,
+                  "textAlign": "left",
+                },
+                {
+                  "alignContent": "center",
+                  "alignItems": "center",
+                  "color": "#999999",
+                  "flex": 1,
+                  "fontSize": 18,
+                  "justifyContent": "center",
+                  "letterSpacing": 0.18000000715255737,
+                  "lineHeight": 22,
+                  "paddingVertical": 5,
+                  "verticalAlign": "middle",
+                },
+              ]
+            }
+            testID="heading"
+          >
+            4
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+    <View
+      style={
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "maxWidth": 37.75,
+          "minWidth": 20,
+          "overflow": "hidden",
+          "position": "relative",
+          "zIndex": -1,
+        }
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={4}
+        bbWidth="100%"
+        focusable={false}
+        height={4}
+        preserveaspectration="xMinYMid"
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "position": "absolute",
+            },
+            {
+              "flex": 0,
+              "height": 4,
+              "width": "100%",
+            },
+          ]
+        }
+        viewbox="0 0 100% 100%"
+        width="100%"
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGCircle
+            cx={4}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={12}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={20}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={28}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={36}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={44}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={52}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={60}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={68}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={76}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={84}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={92}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={100}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={108}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={116}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={124}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={132}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={140}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={148}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={156}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={164}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={172}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={180}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={188}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={196}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={204}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={212}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={220}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={228}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={236}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={244}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={252}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={260}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={268}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={276}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={284}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={292}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={300}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={308}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={316}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={324}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={332}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={340}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={348}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={356}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={364}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={372}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={380}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={388}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={396}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={404}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={412}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={420}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={428}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={436}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={444}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={452}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={460}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={468}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={476}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={484}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={492}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={500}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={508}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={516}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={524}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={532}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={540}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={548}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={556}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={564}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={572}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={580}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={588}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={596}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={604}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={612}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={620}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={628}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={636}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={644}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={652}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={660}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={668}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={676}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={684}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={692}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={700}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={708}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={716}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={724}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={732}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={740}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={748}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={756}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={764}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={772}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={780}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={788}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+          <RNSVGCircle
+            cx={796}
+            cy={2}
+            fill={
+              {
+                "payload": 4292730333,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+            r={2}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "backgroundColor": undefined,
+              "borderRadius": 100,
+              "flexDirection": "row",
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+            },
+            {
+              "backgroundColor": "#ecf2ff",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "center",
+              "alignItems": "center",
+              "borderRadius": 100,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+              "zIndex": 3,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "odido_Heading_Medium",
+                },
+                {
+                  "color": "#000000",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.23999999463558197,
+                  "lineHeight": 28,
+                  "marginVertical": 0,
+                  "textAlign": "left",
+                },
+                {
+                  "alignContent": "center",
+                  "alignItems": "center",
+                  "color": "#999999",
+                  "flex": 1,
+                  "fontSize": 18,
+                  "justifyContent": "center",
+                  "letterSpacing": 0.18000000715255737,
+                  "lineHeight": 22,
+                  "paddingVertical": 5,
+                  "verticalAlign": "middle",
+                },
+              ]
+            }
+            testID="heading"
+          >
+            5
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      />
+    </View>
+  </View>
+</View>
+`;

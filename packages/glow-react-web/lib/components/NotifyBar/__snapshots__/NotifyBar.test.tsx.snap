@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotifyBar /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    aria-live="assertive"
+    class="notifybar state-default"
+    data-testid="notify-bar"
+    role="alert"
+  >
+    <div
+      class="notifybar-message"
+    >
+      <p
+        class="paragraph paragraph-size-sm notifybar-text"
+        data-testid="paragraph"
+      >
+        This is a default notification.
+      </p>
+    </div>
+    <div
+      class="notifybar-actions"
+    >
+      <button
+        class="button button-size-sm button-prominence-default is-inverted"
+        data-testid="notify-bar-action-button"
+      >
+        <span
+          class="button-label"
+        >
+          Call to action
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,85 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CarouselStories from "./Carousel.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CarouselStories} />
+
+# Carousel
+
+### Token version: {getComponentVersion("carousel.carousel")}
+
+The `Carousel` component allows you to horizontally scroll through a collection of items, with optional responsiveness, pagination controls, variable slide sizing, and center-slide looping.
+
+---
+
+## Purpose
+
+The `Carousel` component is designed to present items such as cards or images in a scrollable, responsive container. It is useful for organizing horizontally overflowing content like featured products, articles, or promotions in a compact and user-friendly way.
+
+---
+
+## Usage
+
+Import and use the `Carousel` component to wrap any number of children. The carousel will adjust based on breakpoints provided through the `slidesToShow` prop.
+
+### Basic usage
+
+```tsx
+<Carousel>
+  <Component />
+  <Component />
+  <Component />
+</Carousel>
+```
+
+<Canvas of={CarouselStories.Default} />
+<Controls of={CarouselStories.Default} />
+
+### Responsive behavior
+
+By passing an object to `slidesToShow`, you can define how many slides appear at different breakpoints.
+
+> **Note**: Make sure that the amount of slides to show is lower than the amount of children.
+
+```tsx
+<Carousel
+  slidesToShow={{
+    tablet: 1, // Applies to tablet and below
+    desktop: 3, // Applies above tablet (laptop and desktop)
+  }}
+>
+  <Component />
+  <Component />
+  <Component />
+  <Component />
+  <Component />
+  <Component />
+</Carousel>
+```
+
+### Three slides
+
+When the total number of slides is 3 or fewer—and the `slidesToShow` configuration for the desktop breakpoint is greater than or equal to the number of slides—the carousel track is not rendered. Instead, slides are displayed in a static row layout, except on smaller breakpoints where the carousel behavior resumes.
+
+<Canvas of={CarouselStories.ThreeSlides} />
+
+### Edge to edge
+
+To make the carousel stretch to the full width of the viewport (edge-to-edge), wrap it in a `<Grid />` with both `fluid` and `noGutters` set to `true`. This layout applies to the slide track only; the navigation controls remain inset.
+
+<Canvas of={CarouselStories.SlidesPerBreakpoint} />
+
+### Variable size
+
+By default, all slides have equal width, and the height is automatically adjusted to match the tallest slide. When `variableSize` is enabled, slides can have dynamic widths and heights, based on their content.
+
+> **Note**: It is recommended to set `centerSlide` to `true` when using `variableSize` on slides that don't have a fixed width. Without it, slides may be partially cut off on the edges, especially if their widths exceed the viewport.
+
+<Canvas of={CarouselStories.VariableSlideSize} />
+
+### Centered slide
+
+Setting `centerSlide` to `true` [centers the active slide](/story/designsystem-components-carousel--centered-slide) in the carousel. You can control the spacing around the centered slide using the `slideOffset` prop. Enabling `centerSlide` also activates infinite scrolling by cloning slides.
+
+> **Note**: When `slidesToShow` is set to `1`, it's recommended to explicitly set `centerSlide` to `true`

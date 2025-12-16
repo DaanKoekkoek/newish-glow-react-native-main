@@ -1,0 +1,655 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Price /> a stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays VAT 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tax-text default"
+      data-testid="after"
+    >
+      excl. btw
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays before value 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        Van
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays currency despite value not containing currency 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-text default currency"
+          data-testid="currency"
+        >
+          €
+        </div>
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁹⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: 100,99
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays frequency 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="frequency default"
+      >
+        <div
+          class="price-text default"
+          data-testid="frequency"
+        >
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays frequency with asterix 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="frequency default"
+      >
+        <div
+          class="price-text default"
+          data-testid="frequency"
+        >
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays negative value 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            5
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁹⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: €5,99
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> displays properly with only value prop provided 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default"
+            data-testid="whole"
+          >
+            5
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default"
+              data-testid="decimals"
+            >
+              ⁹⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: €5,99
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Price /> sets inverted text color when inverted prop is provided 1`] = `
+<DocumentFragment>
+  <div
+    class="price"
+  >
+    <div>
+      <div
+        class="before-text before-text-wrapper before-text-display before-text-size-default inverted"
+        data-testid="before"
+      >
+        <span
+          class="from-value"
+        >
+          € 100,59
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="price-wrapper"
+    >
+      <div
+        class="price"
+      >
+        <div
+          class="price-value-wrapper"
+        >
+          <div
+            class="price-text default inverted"
+            data-testid="whole"
+          >
+            100
+          </div>
+          <div
+            class="decimal-wrapper"
+          >
+            <div
+              class="comma-text price-text default comma-text-position inverted"
+            >
+              ,
+            </div>
+            <div
+              class="price-text default inverted"
+              data-testid="decimals"
+            >
+              ⁵⁹
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="price-sr-only"
+    >
+      <span
+        data-from-value="true"
+      >
+        Van: € 100,59
+      </span>
+      <span
+        data-value="true"
+      >
+        Voor: € 100,59
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

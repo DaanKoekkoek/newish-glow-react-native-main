@@ -1,0 +1,75 @@
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@odido-portals/glow-tokens/input-atoms-field";
+@use "@odido-portals/glow-tokens/input-border";
+@use "@odido-portals/glow-tokens/input-color";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  number-field,
+  (
+    paragraph,
+    color-text,
+    input-atoms-field,
+    input-border,
+    input-color
+  )
+) {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  font-family: var(--components-foundations-typography-text-styles-v1-paragraph-font-family-default);
+  font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+  line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+  border-width: var(--components-input-border-width-default);
+  border-radius: var(--components-input-atoms-field-radius-number);
+  color: var(--components-input-color-text-value-default);
+  background-color: var(--components-input-color-background-default);
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &:focus {
+    outline-width: 0;
+  }
+
+  &.size-default {
+    padding: calc(var(--components-input-atoms-field-padding-vertical-default) - var(--components-input-border-width-default)) var(--components-input-atoms-field-padding-horizontal-default) calc(var(--components-input-atoms-field-padding-vertical-default) - var(--components-input-border-width-default)) var(--components-input-atoms-field-padding-horizontal-default);
+  }
+
+  &.size-sm {
+    height: 30px;
+    padding: 0 var(--components-input-atoms-field-padding-horizontal-default) 0 var(--components-input-atoms-field-padding-horizontal-default);
+    border-width: var(--components-input-number-input-v1-border-width-default-sm);
+  }
+
+  &.state-default {
+    border-color: var(--components-input-color-border-default);
+  }
+
+  &.state-valid {
+    border-color: var(--components-input-color-border-success);
+  }
+
+  &.state-error {
+    border-color: var(--components-input-color-border-error);
+  }
+
+  &:disabled {
+    border-color: var(--components-input-color-border-inactive);
+    background-color: var(--components-input-color-background-inactive);
+    color: var(--components-input-color-text-value-inactive);
+  }
+
+  &:hover:not(:disabled) {
+    border-color: var(--components-input-color-border-hover);
+  }
+
+  &:focus:not(:disabled) {
+    border-color: var(--components-input-color-border-active);
+    outline: none;
+  }
+}

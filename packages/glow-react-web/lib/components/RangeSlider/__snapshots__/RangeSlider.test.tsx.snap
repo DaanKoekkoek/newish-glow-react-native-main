@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RangeSlider /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="range-slider has-range has-buttons is-near-min"
+  >
+    <div
+      class="range-slider-container"
+    >
+      <button
+        aria-label="Minder"
+        class="button button-size-sm button-prominence-secondary action-button-icon size-sm prominence-secondary state-inactive range-slider-button"
+        data-testid="button"
+        disabled=""
+      >
+        <span
+          class="button-label"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline block"
+            data-icon="min"
+            data-testid="icon"
+          >
+            
+          </span>
+        </span>
+      </button>
+      <div
+        class="range-slider-tooltip-and-input"
+      >
+        <label
+          class="range-slider-tooltip"
+          for="range-slider"
+        >
+          <div
+            class="range-slider-tooltip-content"
+          >
+            <span
+              class="paragraph paragraph-size-sm range-slider-tooltip-price"
+              data-testid="paragraph"
+            >
+              <span>
+                Eenmalig
+              </span>
+              <span>
+                € 10,00
+              </span>
+            </span>
+            <span
+              class="range-slider-tooltip-divider"
+            />
+            <span
+              class="paragraph paragraph-size-sm range-slider-tooltip-price"
+              data-testid="paragraph"
+            >
+              <span>
+                Per maand
+              </span>
+              <span>
+                € 10,00
+              </span>
+            </span>
+          </div>
+        </label>
+        <div
+          class="slider range-slider-slide"
+        >
+          <div
+            class="rail-wrapper"
+          >
+            <input
+              class="slider-input slider-palette-default slider-track-default"
+              id="range-slider"
+              max="10"
+              min="0"
+              step="0.1"
+              style="--progress: 0%;"
+              tabindex="-1"
+              type="range"
+              value="0"
+            />
+            <button
+              aria-hidden="true"
+              class="button button-size-default button-prominence-default has-icon-only custom-thumb"
+              data-testid="button"
+              style="left: 0px;"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline button-icon button-icon-size-default"
+                data-icon="slider"
+                data-testid="button-icon-left"
+              >
+                
+              </span>
+              <span
+                class="button-label"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-label="Meer"
+        class="button button-size-sm button-prominence-secondary action-button-icon size-sm prominence-secondary range-slider-button"
+        data-testid="button"
+      >
+        <span
+          class="button-label"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-sm outline block"
+            data-icon="plus"
+            data-testid="icon"
+          >
+            
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="range-slider-range"
+    >
+      <span
+        class="paragraph paragraph-size-sm"
+        data-testid="paragraph"
+      >
+        <span>
+          Min.
+        </span>
+        <span>
+          € 0,00
+        </span>
+      </span>
+      <span
+        class="paragraph paragraph-size-sm"
+        data-testid="paragraph"
+      >
+        <span>
+          Max.
+        </span>
+        <span>
+          € 10,00
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AgentBar /> renders correctly 1`] = `
+<div>
+  <div
+    aria-label="agent bar"
+    class="agent-bar"
+  >
+    <div
+      class="container container-width-default"
+      data-testid="grid-container"
+    >
+      <div
+        class="grid grid-direction-row"
+        data-testid="grid-grid"
+      >
+        <div
+          class="column grid-column-12 agent-bar-column"
+          data-testid="column"
+        >
+          <div
+            class="agent-bar-content"
+          >
+            <a
+              class="text-link size-inherit text-and-icon columnGap agent-bar-link"
+              data-testid="text-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline agent-bar-icon"
+                data-icon="arrow-left"
+                data-testid="icon"
+              >
+                
+              </span>
+              <span
+                class="visible-above-laptop"
+                data-testid="visible"
+              >
+                <span
+                  class="base-text base-paragraph agent-bar-link-text"
+                >
+                  Telesales
+                </span>
+              </span>
+            </a>
+            <a
+              class="text-link size-inherit text-and-icon columnGap agent-bar-link"
+              data-testid="text-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline agent-bar-icon"
+                data-icon="fixed-phone"
+                data-testid="icon"
+              >
+                
+              </span>
+              <span
+                class="visible-above-laptop"
+                data-testid="visible"
+              >
+                <span
+                  class="base-text base-paragraph agent-bar-link-text"
+                >
+                  Terugbelafspraak
+                </span>
+              </span>
+            </a>
+          </div>
+          <div
+            class="agent-bar-content"
+          >
+            <div
+              class="agent-bar-data"
+            >
+              <strong
+                class="strong strong-size-sm"
+                data-testid="strong"
+              >
+                [99505]
+              </strong>
+              <span
+                class="visible-above-tablet"
+                data-testid="visible"
+              >
+                <strong
+                  class="strong strong-size-sm"
+                  data-testid="strong"
+                >
+                  Inbound Renewal Care
+                </strong>
+              </span>
+            </div>
+            <strong
+              class="strong strong-size-sm"
+              data-testid="strong"
+            >
+              ID017517
+            </strong>
+            <a
+              class="text-link size-inherit text-and-icon columnGap agent-bar-link"
+              data-testid="text-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline agent-bar-icon"
+                data-icon="logout"
+                data-testid="icon"
+              >
+                
+              </span>
+              <span
+                class="visible-above-laptop"
+                data-testid="visible"
+              >
+                <span
+                  class="base-text base-paragraph agent-bar-link-text"
+                >
+                  Uitloggen
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

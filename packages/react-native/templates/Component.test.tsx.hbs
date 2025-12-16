@@ -1,0 +1,14 @@
+import { composeStory } from "@storybook/react";
+import { render } from "_test-utils";
+import React from "react";
+
+import meta, { Default } from "./{{pascalCase name}}.stories";
+
+const {{pascalCase name}}Story = composeStory(Default, meta);
+
+describe("<{{pascalCase name}} />", () => {
+  it("renders a stable snapshot", () => {
+    const { toJSON } = render(<{{pascalCase name}}Story {...{{pascalCase name}}Story.args} />);
+    expect(toJSON()).toMatchSnapshot();
+  });
+});

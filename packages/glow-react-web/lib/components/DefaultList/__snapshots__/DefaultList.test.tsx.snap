@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultList component renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="default-list default-list-size-default"
+    data-testid="default-list"
+  >
+    <li
+      class="list-variant-icon"
+      data-testid="default-list-list-item"
+    >
+      <span
+        aria-hidden="true"
+        class="icon icon-size-default outline default-list-icon-root default-list-icon"
+        data-icon="checkmark"
+        data-testid="icon"
+      >
+        
+      </span>
+      <p
+        class="paragraph paragraph-size-default default-list-text-root default-list-text"
+        data-testid="paragraph"
+      >
+        Link item
+      </p>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

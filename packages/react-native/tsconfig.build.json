@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "outDir": "./dist",
+    "paths": {
+      "_test-utils": ["./src/_test-utils/index"],
+      "_utility": ["./src/_utility/index"],
+      "_global-hooks": ["./src/_hooks/index"],
+      "_internals/*": ["./src/_internals/*"],
+      "_theming/*": ["./src/_theming/*"],
+      ".examples/*": ["./src/.examples/*"],
+      "components/*": ["./src/components/*"],
+      "foundations/*": ["./src/foundations/*"]
+    },
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "include": ["src", "/assets/**/*.ts"],
+  "exclude": [
+    "android",
+    "ios",
+    "assets",
+    "docs",
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.ts",
+    "./src/**/*.stories.ts",
+    "./src/**/*.stories.tsx",
+    "**/__mocks__/*",
+    "**/__tests__/*",
+    "./src/scripts/icon-generation/*"
+  ]
+}

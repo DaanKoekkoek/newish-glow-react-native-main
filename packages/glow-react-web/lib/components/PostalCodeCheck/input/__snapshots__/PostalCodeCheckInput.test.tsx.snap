@@ -1,0 +1,969 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostalCodeCheckInput /> snapshot should match default state 1`] = `
+<DocumentFragment>
+  <div
+    class="postal-code-check-input palette-default state-none"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="title"
+      >
+        <div
+          class="marker is-state-default marker-palette-default"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <h4
+          class="heading heading-size-md align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Postcodecheck
+        </h4>
+      </div>
+      <p
+        class="paragraph paragraph-size-default"
+        data-testid="paragraph"
+      >
+        We hebben je postcode en huisnummer nodig om te zien wat er beschikbaar is.
+      </p>
+      <div
+        class="input-fields"
+      >
+        <div
+          class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+          data-testid="stack"
+        >
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-1"
+                  placeholder="Postcode"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-2"
+                  placeholder="Huisnummer"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-3"
+                  placeholder="Toevoeging"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tv-section"
+      data-testid="tv-section"
+    >
+      <span
+        class="visible-above-laptop"
+        data-testid="visible"
+      >
+        <img
+          alt="icon-tv-internet"
+          class="icon"
+          src="icons/tv-internet.svg"
+        />
+      </span>
+      <div
+        class="header"
+      >
+        <h3
+          class="heading heading-size-sm align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Wil je TV van Odido?
+        </h3>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Met Odido TV ontvang je standaard 65 tv-zenders, waarvan 60 in HD. Kijk televisie zoals jij dat wilt: dus ook via je smartphone, computer of tablet.
+        </p>
+      </div>
+      <div
+        class="segmented-tab-wrapper"
+      >
+        <div
+          class="tab-count-2"
+        >
+          <div
+            class="segmented-tab segmented-tab-variant-subtle-palette-default"
+          >
+            <div
+              class="tab-background-container"
+            >
+              <div
+                class="tab-background-sliding tab-variant-default"
+                style="--active-tab: 0;"
+              />
+            </div>
+            <div
+              class="tab-container"
+            >
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Ja"
+                    aria-selected="true"
+                    class="tab"
+                    data-testid="Ja"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Ja
+                    </strong>
+                  </div>
+                </span>
+              </button>
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Nee"
+                    aria-selected="false"
+                    class="tab"
+                    data-testid="Nee"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Nee
+                    </strong>
+                  </div>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button button-size-default button-prominence-emphasised postal-code-input-button"
+      data-testid="button"
+    >
+      <span
+        class="button-label"
+      >
+        Doe de check
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<PostalCodeCheckInput /> snapshot should match warning state 1`] = `
+<DocumentFragment>
+  <div
+    class="postal-code-check-input palette-default state-warning"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="title"
+      >
+        <div
+          class="marker is-state-default marker-palette-orange"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <h4
+          class="heading heading-size-md align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Postcodecheck
+        </h4>
+      </div>
+      <p
+        class="paragraph paragraph-size-default"
+        data-testid="paragraph"
+      >
+        We hebben je postcode en huisnummer nodig om te zien wat er beschikbaar is.
+      </p>
+      <div
+        class="input-fields"
+      >
+        <div
+          class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+          data-testid="stack"
+        >
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-1"
+                  placeholder="Postcode"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-2"
+                  placeholder="Huisnummer"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-3"
+                  placeholder="Toevoeging"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="postal-code-check-callout-container"
+    >
+      <div
+        class="callout status-warning tip-position-top prominence-subtle postal-code-check-callout prominence-subtle"
+        data-testid="callout"
+      >
+        <div
+          class="callout-content"
+        >
+          <div
+            class="callout-header"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default solid callout-header-icon"
+              data-icon="status-warning"
+              data-testid="status-warning-icon"
+            >
+              
+            </span>
+            <div
+              class="heading heading-size-sm align-left callout-header-heading"
+              data-testid="heading"
+              lang="nl"
+            >
+              Title
+            </div>
+          </div>
+          <p
+            class="paragraph paragraph-size-default callout-paragraph"
+            data-testid="paragraph"
+          >
+            Description
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tv-section"
+      data-testid="tv-section"
+    >
+      <span
+        class="visible-above-laptop"
+        data-testid="visible"
+      >
+        <img
+          alt="icon-tv-internet"
+          class="icon"
+          src="icons/tv-internet.svg"
+        />
+      </span>
+      <div
+        class="header"
+      >
+        <h3
+          class="heading heading-size-sm align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Wil je TV van Odido?
+        </h3>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Met het Interactieve TV abonnement van Odido kies je het helemaal zelf.
+        </p>
+      </div>
+      <div
+        class="segmented-tab-wrapper"
+      >
+        <div
+          class="tab-count-2"
+        >
+          <div
+            class="segmented-tab segmented-tab-variant-subtle-palette-default"
+          >
+            <div
+              class="tab-background-container"
+            >
+              <div
+                class="tab-background-sliding tab-variant-default"
+                style="--active-tab: 0;"
+              />
+            </div>
+            <div
+              class="tab-container"
+            >
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Ja"
+                    aria-selected="true"
+                    class="tab"
+                    data-testid="Ja"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Ja
+                    </strong>
+                  </div>
+                </span>
+              </button>
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Nee"
+                    aria-selected="false"
+                    class="tab"
+                    data-testid="Nee"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Nee
+                    </strong>
+                  </div>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button button-size-default button-prominence-emphasised postal-code-input-button"
+      data-testid="button"
+    >
+      <span
+        class="button-label"
+      >
+        Doe de check
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<PostalCodeCheckInput /> snapshot should match warning state 2`] = `
+<DocumentFragment>
+  <div
+    class="postal-code-check-input palette-default state-error"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="title"
+      >
+        <div
+          class="marker is-state-default marker-palette-red"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <h4
+          class="heading heading-size-md align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Postcodecheck
+        </h4>
+      </div>
+      <p
+        class="paragraph paragraph-size-default"
+        data-testid="paragraph"
+      >
+        We hebben je postcode en huisnummer nodig om te zien wat er beschikbaar is.
+      </p>
+      <div
+        class="input-fields"
+      >
+        <div
+          class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+          data-testid="stack"
+        >
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-1"
+                  placeholder="Postcode"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-2"
+                  placeholder="Huisnummer"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-3"
+                  placeholder="Toevoeging"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="postal-code-check-callout-container"
+    >
+      <div
+        class="callout status-error tip-position-top prominence-subtle postal-code-check-callout prominence-subtle"
+        data-testid="callout"
+      >
+        <div
+          class="callout-content"
+        >
+          <div
+            class="callout-header"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default solid callout-header-icon"
+              data-icon="status-error"
+              data-testid="status-error-icon"
+            >
+              
+            </span>
+            <div
+              class="heading heading-size-sm align-left callout-header-heading"
+              data-testid="heading"
+              lang="nl"
+            >
+              Title
+            </div>
+          </div>
+          <p
+            class="paragraph paragraph-size-default callout-paragraph"
+            data-testid="paragraph"
+          >
+            Description
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tv-section"
+      data-testid="tv-section"
+    >
+      <span
+        class="visible-above-laptop"
+        data-testid="visible"
+      >
+        <img
+          alt="icon-tv-internet"
+          class="icon"
+          src="icons/tv-internet.svg"
+        />
+      </span>
+      <div
+        class="header"
+      >
+        <h3
+          class="heading heading-size-sm align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Wil je TV van Odido?
+        </h3>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Met het Interactieve TV abonnement van Odido kies je het helemaal zelf.
+        </p>
+      </div>
+      <div
+        class="segmented-tab-wrapper"
+      >
+        <div
+          class="tab-count-2"
+        >
+          <div
+            class="segmented-tab segmented-tab-variant-subtle-palette-default"
+          >
+            <div
+              class="tab-background-container"
+            >
+              <div
+                class="tab-background-sliding tab-variant-default"
+                style="--active-tab: 0;"
+              />
+            </div>
+            <div
+              class="tab-container"
+            >
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Ja"
+                    aria-selected="true"
+                    class="tab"
+                    data-testid="Ja"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Ja
+                    </strong>
+                  </div>
+                </span>
+              </button>
+              <button
+                class="button button-size-default button-prominence-default button-base button-base-segmented-tab bg-color"
+                data-testid="button"
+              >
+                <span
+                  class="button-label"
+                >
+                  <div
+                    aria-label="Nee"
+                    aria-selected="false"
+                    class="tab"
+                    data-testid="Nee"
+                  >
+                    <strong
+                      class="strong strong-size-sm tab-color-default bg-color"
+                      data-testid="strong"
+                    >
+                      Nee
+                    </strong>
+                  </div>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button button-size-default button-prominence-emphasised postal-code-input-button"
+      data-testid="button"
+    >
+      <span
+        class="button-label"
+      >
+        Doe de check
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<PostalCodeCheckInput /> snapshot should match without TV section 1`] = `
+<DocumentFragment>
+  <div
+    class="postal-code-check-input palette-default state-none"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="title"
+      >
+        <div
+          class="marker is-state-default marker-palette-default"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <h4
+          class="heading heading-size-md align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Postcodecheck
+        </h4>
+      </div>
+      <p
+        class="paragraph paragraph-size-default"
+        data-testid="paragraph"
+      >
+        We hebben je postcode en huisnummer nodig om te zien wat er beschikbaar is.
+      </p>
+      <div
+        class="input-fields"
+      >
+        <div
+          class="stack direction-row align-flex-start justify-flex-start gap-default wrap-wrap grow shrink stack-size-12 stack-column-12"
+          data-testid="stack"
+        >
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-1"
+                  placeholder="Postcode"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-2"
+                  placeholder="Huisnummer"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="input-container"
+          >
+            <div
+              class="group-container"
+              data-input-container="true"
+            >
+              <div
+                class="group"
+                data-testid="input-container"
+              >
+                <input
+                  class="input-field"
+                  id="input-3"
+                  placeholder="Toevoeging"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="input-color suffix-container"
+                >
+                  <div
+                    class="suffix-group"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button button-size-default button-prominence-emphasised postal-code-input-button"
+      data-testid="button"
+    >
+      <span
+        class="button-label"
+      >
+        Doe de check
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;

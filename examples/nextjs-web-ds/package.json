@@ -1,0 +1,37 @@
+{
+  "name": "@odido-portals/nextjs-web-ds",
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.12.3",
+  "private": true,
+  "module": "mjs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env STATIC_EXPORT=true OUT_SERVE=false next build",
+    "build-serve": "cross-env STATIC_EXPORT=true OUT_SERVE=true next build",
+    "start": "cross-env serve out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@odido-portals/glow-tokens": "catalog:current",
+    "@odido-portals/glow-react-web": "workspace:*",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "motion": "catalog:current",
+    "next": "15.3.2",
+    "react": "catalog:current",
+    "react-datepicker": "^8.2.1",
+    "react-dom": "catalog:current"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "catalog:current",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.4",
+    "react-syntax-highlighter": "^15.6.1",
+    "serve": "^14.2.0",
+    "typescript": "catalog:current"
+  }
+}

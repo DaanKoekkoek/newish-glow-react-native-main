@@ -1,0 +1,46 @@
+@use "@odido-portals/glow-tokens/assets-icons";
+@use "@odido-portals/glow-tokens/semantics-color-text";
+@use "@globals/mixins";
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@include mixins.token-scope(
+  spinner,
+  (
+    assets-icons, 
+    color-text
+  )
+) {
+  display: flex;
+}
+
+.spinner-icon {
+  animation: rotate-animation 2s linear infinite;
+
+}
+
+.spinner-icon-color-default {
+  color: var(--semantics-color-text-default);
+}
+
+.spinner-icon-color-inverted {
+  color: var(--semantics-color-text-inverted-default);
+}
+
+.spinner-icon-size-default {
+  font-size: var(--components-assets-icons-font-size-default);
+  width: var(--components-assets-icons-font-size-default);
+}
+
+.spinner-icon-size-sm {
+  font-size: var(--components-assets-icons-font-size-sm);
+  width: var(--components-assets-icons-font-size-sm);
+}

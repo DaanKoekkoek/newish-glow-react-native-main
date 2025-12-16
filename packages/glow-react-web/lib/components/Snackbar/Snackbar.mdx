@@ -1,0 +1,139 @@
+import { Canvas, Meta, Controls, Markdown } from "@storybook/blocks";
+import * as Snackbar from "./Snackbar.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={Snackbar} />
+
+# Snackbar
+
+### Token version: {getComponentVersion("snackbar.v1")}
+
+The `<Snackbar />` can be used to give the user feedback on an action they performed.
+The snackbar is able to show multiple feedback messages at the same time that will stack at the `bottom` or `top` of the page.
+
+You can test the behaviour of the Snack in the [**Playground**](?path=/story/designsystem-components-notifications-snackbar--playground)
+If you are migration from the React Native version, please check the [Migration guide](#migration-guide)
+
+## Usage
+
+1. Place the `<Snackbar />` anywhere in your app:
+
+**Example**:
+
+```jsx
+'use client';
+
+import { Snackbar } from 'glow-react-web';
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Snackbar />
+      </body>
+    </html>
+  );
+}
+```
+
+2. Use the `snackbarHelper` util function to add/update a Snack:
+
+```jsx
+<Button
+  onClick={() => {
+    snackbarHelper({
+      cancelButtonText: "Cancel",
+      position: args.position,
+      id: String(count),
+      type: "loading",
+      message: "Loading...",
+    });
+  }}
+  size="sm"
+>
+  Add Snack!
+</Button>
+```
+
+<Markdown>
+{`
+### snackbarHelper() API
+
+The \`snackbarHelper\` function can be used to **add**, **update** or **dismiss** (leaving the viewport).
+
+#### Adding a Snack:
+
+To add a snack, import \`snackbarHelper\` and call it with an options object. The available options are listed in the table below:
+
+| **Prop**              | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **id**                | The unique identifier for the snack. If not provided, an id is generated automatically based on the current timestamp (\`String(new Date().getTime())\`). This id can be used later to dismiss or remove the snack programmatically.                                                                                                                                                                                                                        |
+| **message**           | The text to display inside the snack.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **type**              | Determines the behavior and appearance of the snack. Options include: <br> - **\`default\`**: A message with an optional icon from the "glow-icon" package. <br> - **\`error\`**: An error message, typically accompanied by the \`status-error\` icon. <br> - **\`loading\`**: Indicates a loading state; displays a \`<Spinner />\` and a cancel \`<Button />\`. <br> - **\`success\`**: Indicates a successful action, with the \`status-success\` icon. |
+| **cancelButtonText?** | The text to display in the cancel button. If set, a Dismiss button will be added to the Snack                                                                                                                                                                                                                                                                                                                                                               |
+| **icon?**             | A custom icon to display when \`type === 'default'\`. This should be an object containing properties such as \`name\` and \`solid\`. Any icon from the [**\`Icon Collection\`**](?path=/docs/designsystem-foundations-assets-icon--docs) can be used.                                                                                                                                                                                                       |
+| **duration?**         | The display duration in milliseconds. Once the duration expires, the exit animation begins.                                                                                                                                                                                                                                                                                                                                                                 |
+| **position?**         | Sets the snackbar's position relative to the viewport. Acceptable values are: <br> - **\`top\`** <br> - **\`bottom\`**                                                                                                                                                                                                                                                                                                                                      |
+| **ariaLabel?**        | The \`aria-label\` to be applied to the snack, enhancing accessibility.                                                                                                                                                                                                                                                                                                                                                                                     |
+
+`}
+
+</Markdown>
+**Example**:
+
+```jsx
+snackbarHelper({
+  position: "bottom",
+  type: "default",
+  message: "Your message goes here...",
+  icon: { name: "chat", solid: true },
+});
+```
+
+#### Updating:
+
+To update a snack which is already present in the `<Snackbar />`, you need to use the `snackbarHelper`.
+To update a snack to the snackbar you can call the function
+with the same object of options which is listed under the **Adding** section above.
+But with the an update action you need pass the snack id explicitly with the options.
+The options that do not require a change. Do not needs to be passed as an option.
+
+**Example**:
+
+```jsx
+snackbarHelper({
+  id: "1",
+  message: "Your UPDATED message goes here...",
+});
+```
+
+#### Dismissing
+
+A dismiss action will make sure the snack will leave the viewport. You can dismiss all snacks at once, by leaving out the `id` parameter.
+
+```jsx
+snackbarHelper.dismiss(id);
+
+// or all at once
+
+snackbarHelper.dismiss();
+```
+
+## <span id="migration-guide">Migration guide</span>
+
+**`<Snackbar />`** component in this web Design System differs from React Native implementation in the following points:
+
+- In this version, you don't have to deal with `SafeAreaProvider`, `GestureHandlerRootView`, or `safeAreaInsets`. Follow the `Usage` guide below to use the component.
+- **`snackbarHelper.remove()`** has been kept for compability reasons, but the implementation is the same as **`snackbarHelper.dismiss()`**.
+
+**Props changes:**
+
+- `accessabilityMessage` becomes `ariaLabel`
+- `context` prop has been dropped
+- `isSwipeable` has been dropped

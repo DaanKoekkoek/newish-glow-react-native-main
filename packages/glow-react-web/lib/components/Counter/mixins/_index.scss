@@ -1,0 +1,39 @@
+@mixin size($size, $breakpoint: null) {
+    $breakpoint-suffix: "";
+  
+    @if $breakpoint {
+      $breakpoint-suffix: "-#{$breakpoint}";
+    }
+  
+    .size-#{$size}#{$breakpoint-suffix} {
+      .counter-digits {
+        column-gap: var(--components-counter-v1-gap-horizontal-#{$size});
+      }
+  
+      .counter-divider {
+        width: var(--components-counter-v1-size-divider-width-#{$size});
+      }
+  
+      .counter-label {
+        width: var(--components-counter-v1-size-label-width-#{$size});
+      }
+  
+      .counter-divider,
+      .counter-digit .counter-digit-heading {
+        @if $size == default {
+          font-size: var(--components-foundations-typography-text-styles-v1-heading-font-size-md);
+          line-height: var(--components-foundations-typography-text-styles-v1-heading-line-height-md);
+          letter-spacing: var(--components-foundations-typography-text-styles-v1-heading-letter-spacing-md);
+        } @else {
+          font-size: var(--components-foundations-typography-text-styles-v1-heading-font-size-#{$size});
+          line-height: var(--components-foundations-typography-text-styles-v1-heading-line-height-#{$size});
+          letter-spacing: var(--components-foundations-typography-text-styles-v1-heading-letter-spacing-#{$size});
+        }
+      }
+  
+      .counter-digit {
+        width: var(--components-counter-v1-size-digit-width-#{$size});
+        border-radius: var(--components-counter-v1-radius-#{$size});
+      }
+    }
+  }

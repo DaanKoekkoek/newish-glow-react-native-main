@@ -1,0 +1,19 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as AfmStories from "./Afm.stories";
+
+<Meta of={AfmStories} />
+
+# AFM (Autoriteit Financiële Markten)
+
+Designed to display warnings, disclaimers, or information mandated or recommended by the AFM.
+
+### AFM Banner
+
+<Canvas of={AfmStories.Basic} />
+<Controls of={AfmStories.Basic} />
+
+### Centered Example
+
+- Aria-Label available if more information is needed.
+
+<Canvas of={AfmStories.CenteredExample} />

@@ -1,0 +1,41 @@
+@use "@odido-portals/glow-tokens/notifications-snackbar-v1";
+@use "@globals/mixins";
+
+
+@include mixins.token-scope(
+  snackbar,
+  notifications-snackbar-v1
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: fit-content;
+  border-radius: var(--components-notifications-snackbar-v1-radius-default);
+  max-width: var(--components-notifications-snackbar-v1-size-max-width);
+  box-shadow: var(--primitives-shadow-drop-shadow-x, 0.001px) var(--primitives-shadow-drop-shadow-y, 16px) var(--primitives-shadow-drop-shadow-blur, 48px) var(--primitives-shadow-drop-shadow-spread, 0.001px) var(--primitives-shadow-drop-shadow-color-web, rgba(0 0 0 / 16%));
+  padding: var(--components-notifications-snackbar-v1-padding-vertical) var(--components-notifications-snackbar-v1-padding-horizontal);
+  gap: var(--components-notifications-snackbar-v1-gap-horizontal-lg);
+  background-color: var(--components-notifications-snackbar-v1-color-background-default);
+}
+
+.snackbar-message-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--components-notifications-snackbar-v1-gap-horizontal-default);
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.snackbar-icon {
+  color: var(--components-notifications-snackbar-v1-color-icon-default);
+
+  &-success {
+    color: var(--components-notifications-snackbar-v1-color-icon-success);
+  }
+
+  &-error {
+    color: var(--components-notifications-snackbar-v1-color-icon-error);
+  }
+}

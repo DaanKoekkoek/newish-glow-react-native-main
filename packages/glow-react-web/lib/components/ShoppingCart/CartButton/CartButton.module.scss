@@ -1,0 +1,46 @@
+@use "@odido-portals/glow-tokens/shopping-cart-shopping-cart-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  cart-button,
+  shopping-cart-shopping-cart-v1 
+) {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    width: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-container);
+    height: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-container);
+    background-color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-background-default);
+    border-radius: var(--components-shopping-cart-shopping-cart-v1-radius-cart-button-default);
+    color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-icon-default);
+  
+    &:hover {
+      background-color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-background-hover);
+    }
+
+    &:active {
+        background-color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-background-active);
+    }
+
+    &.inactive,
+    &:disabled {
+      background-color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-background-inactive);
+      color: var(--components-shopping-cart-shopping-cart-v1-color-cart-button-icon-inactive);
+      cursor: default;
+      pointer-events: none;
+    }
+}
+
+.icon {
+  width: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-icon-default);
+  height: var(--components-shopping-cart-shopping-cart-v1-size-cart-button-icon-default);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  display: flex;
+}
+  

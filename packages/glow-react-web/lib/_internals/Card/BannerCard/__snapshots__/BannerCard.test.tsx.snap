@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BannerCard /> renders a stable snapshot 1`] = `
+<div>
+  <div
+    class="banner-card banner-card-variant-default banner-card-palette-default banner-card-direction-vertical"
+  >
+    <div>
+      <div
+        class="visual visual-ratio-default no-padding-all"
+        data-testid="visual"
+      >
+        <picture
+          class="picture banner-card-image"
+          data-testid="image-picture"
+        >
+          <img
+            alt="Alt text"
+            class="image image-position-center ratio-16-9"
+            data-testid="image-img"
+            loading="lazy"
+            src="test-file-stub"
+            style="object-fit: cover;"
+          />
+        </picture>
+      </div>
+    </div>
+    <div
+      class="banner-card-content"
+    >
+      <div
+        class="banner-card-text"
+      >
+        <div
+          class="heading heading-size-md align-left"
+          data-testid="heading"
+          lang="nl"
+        >
+          Title 
+          <span
+            class="banner-card-heading-highlight"
+          >
+            highlight
+          </span>
+        </div>
+        <p
+          class="paragraph paragraph-size-default"
+          data-testid="paragraph"
+        >
+          Paragraph
+        </p>
+      </div>
+      <div>
+        <button
+          class="button button-size-default button-prominence-default has-icon-only"
+          data-testid="button"
+          title="button"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline button-icon button-icon-size-default"
+            data-icon="arrow-right"
+            data-testid="button-icon-left"
+          >
+            
+          </span>
+          <span
+            class="button-label"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

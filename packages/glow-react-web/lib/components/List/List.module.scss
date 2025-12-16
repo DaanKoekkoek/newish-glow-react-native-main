@@ -1,0 +1,212 @@
+@use "@odido-portals/glow-tokens/lists-list-item-v2";
+@use "@odido-portals/glow-tokens/lists-default-list-v1";
+@use "@odido-portals/glow-tokens/lists-atoms-media";
+@use "@odido-portals/glow-tokens/divider-v1";
+@use "@odido-portals/glow-tokens/lists-atoms-list";
+@use "@odido-portals/glow-tokens/semantics-color-icon";
+@use "@odido-portals/glow-tokens/paragraph";
+@use "@globals/mixins";
+@use "@globals/config";
+
+$list-background: "default", "subtle", "none";
+$list-attention: "information", "success", "warning", "error";
+$list-leading-content-media-sizes: xs, sm, default, lg;
+$list-media-icon-font-size-sizes: sm, default, md;
+
+@include mixins.token-scope(list,
+    (lists-list-item-v2,
+        lists-default-list-v1,
+        lists-atoms-list,
+        lists-atoms-media,
+        divider-v1,
+        paragraph,
+        color-icon)) {
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: var(--components-lists-list-item-v2-radius-default);
+    font-family: var(--components-lists-atoms-list-item-typography-title-font-family);
+    font-size: var(--components-lists-atoms-list-item-typography-title-font-size);
+    line-height: var(--components-lists-atoms-list-item-typography-title-line-height);
+    letter-spacing: var(--components-lists-atoms-list-item-typography-title-letter-spacing);
+
+    &.background {
+        @each $background in $list-background {
+            &-#{$background} {
+                background: var(--components-lists-list-item-v2-color-background-#{$background});
+            }
+        }
+
+        &-subtle,
+        &-none {
+            & .list-item .list-divider {
+                background-color: var(--components-divider-v1-color-background-default);
+            }
+        }
+
+        &-none .list-item {
+            padding: var(--components-lists-list-item-v2-padding-vertical) var(--components-lists-list-item-v2-padding-horizontal-none);
+
+            & .list-divider {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &.palette {
+        @each $color in config.$odido-palette {
+            &-#{$color} {
+                background-color: var(--components-lists-list-item-v2-color-background-default-palette-#{$color}, var(--components-lists-list-item-v2-color-background-default));
+            }
+        }
+    }
+}
+
+.list-icon-right {
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--semantics-color-icon-default);
+    font-family: var(--components-lists-list-item-v2-size-icon-font-family-action-default);
+    font-size: var(--components-lists-list-item-v2-size-icon-font-size-action);
+    line-height: var(--components-lists-list-item-v2-size-icon-line-height-action);
+    width: var(--components-lists-list-item-v2-size-icon-action);
+    height: var(--components-lists-list-item-v2-size-icon-action);
+}
+
+.list-item {
+    color: var(--components-lists-list-item-v2-color-text-title-default);
+    min-height: var(--components-lists-list-item-v2-size-content-min-height);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &[tabindex] {
+        cursor: pointer;
+    }
+
+    .list-divider { 
+        margin-left: var(--components-lists-list-item-v2-padding-horizontal-default);
+        border-color: var(--components-divider-v1-color-background-inverted-strong);
+    }
+
+    &:last-child {
+        :not(.force-bottom-divider).list-divider {
+            display: none;
+        }
+    }
+
+    &:focus-visible .list-icon-right {
+        font-family: var(--components-lists-list-item-v2-size-icon-font-family-action-hover);
+    }
+
+    &:not(:has(.list-item-non-clickable)):hover .list-icon-right {
+        font-family: var(--components-lists-list-item-v2-size-icon-font-family-action-hover);
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--components-lists-list-item-v2-padding-vertical) var(--components-lists-list-item-v2-padding-horizontal-default);
+    gap: var(--components-lists-list-item-v2-gap-horizontal);
+}
+
+@each $size in $list-leading-content-media-sizes {
+    .list-media-#{$size} {
+        overflow: hidden;
+        width: var(--components-lists-atoms-media-size-width-#{$size});
+        height: var(--components-lists-atoms-media-size-height-#{$size});
+        border-radius: var(--components-lists-atoms-media-radius-#{$size});
+        border: var(--components-lists-atoms-media-size-border-default) solid var(--components-lists-atoms-media-color-border-default);
+        box-sizing: border-box;
+    }
+}
+
+@each $size in $list-leading-content-media-sizes {
+    .list-media-icon-#{$size} {
+        overflow: hidden;
+        width: var(--components-lists-atoms-media-size-width-#{$size});
+        height: var(--components-lists-atoms-media-size-height-#{$size});
+        border-radius: var(--components-lists-atoms-media-radius-#{$size});
+        color: var(--components-lists-atoms-media-color-icon-default);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@each $size in $list-media-icon-font-size-sizes {
+    .list-media-icon-font-size-#{$size} {
+        font-size: var(--components-assets-icons-font-size-#{$size});
+        line-height: var(--components-assets-icons-line-height-#{$size});
+    }
+}
+
+.list-media-icon-palette {
+    @each $color in config.$odido-palette {
+        &-#{$color} {
+            background-color: var(--components-lists-atoms-media-color-background-default-palette-#{$color}, var(--components-lists-atoms-media-color-background-default));
+        }
+    }
+}
+
+.list-item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: var(--components-lists-list-item-v2-gap-horizontal);
+    flex: 1 0 0;
+}
+
+.list-item-content-center {
+    align-items: center;
+}
+
+.list-item-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+
+.list-item-description {
+    color: var(--components-lists-list-item-v2-color-text-description);
+}
+
+.list-item-attention {
+    @each $attention in $list-attention {
+        &.attention-#{$attention} {
+            color: var(--components-lists-list-item-v2-color-text-attention-text-#{$attention});
+        }
+    }
+}
+
+.list-item-text-link {
+    text-decoration: none;
+}
+
+.list-item-detail {
+    color: var(--components-lists-list-item-v2-color-text-detail);
+    text-align: right;
+}
+
+.list-icon-left {
+    color: var(--semantics-color-icon-default);
+    text-align: center;
+    font-size: var(--components-assets-icons-font-size-default, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--components-assets-icons-line-height-default, 24px);
+    width: var(--components-lists-list-item-v2-size-icon-default);
+    height: var(--components-lists-list-item-v2-size-icon-default);
+}

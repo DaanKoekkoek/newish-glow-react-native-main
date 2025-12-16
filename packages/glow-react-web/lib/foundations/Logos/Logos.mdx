@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as LogosStories from "./Logos.stories";
+
+<Meta of={LogosStories} />
+
+# Logos
+
+The `Logos` component is used to render brand-specific SVG logos.
+The `Logos` component renders a brand logo as an SVG element. It supports different size and color variations, making it adaptable to various design needs.
+The `Logos` component provides a flexible way to display brand logos, supporting multiple brands and variants. It automatically determines the logo based on the configured brand in `<ThemeProvider />`, but it can also be overridden using the `brand` prop.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly:
+
+- Removed dependency of useTheme() hook to provide better SSR support.
+
+## Default
+
+Displays the logo using the default variant and size.
+
+<Canvas of={LogosStories.Default} />
+<Controls of={LogosStories.Default} />
+
+## Inverted
+
+The inverted variant applies a different color treatment for contrast on dark backgrounds.
+
+<Canvas of={LogosStories.Inverted} />

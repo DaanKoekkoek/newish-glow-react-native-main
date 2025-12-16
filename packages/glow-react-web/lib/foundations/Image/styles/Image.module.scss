@@ -1,0 +1,54 @@
+@use "@globals/functions";
+
+$image-positions: (
+  "left",
+  "center",
+  "right",
+  "top",
+  "bottom",
+  "top left",
+  "top right",
+  "bottom left",
+  "bottom right"
+);
+
+@each $position in $image-positions {
+  $class-name: functions.str-replace($position, " ", "-");
+
+  .image-position-#{$class-name} {
+    object-position: #{$position};
+
+    &[role="img"] {
+      background-position: #{$position};
+    }
+  }
+}
+
+.background-image {
+  align-self: stretch;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  [role="img"] {
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+  }
+}
+
+.picture,
+.image {
+  width: 100%;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}

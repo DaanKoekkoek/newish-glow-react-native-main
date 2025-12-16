@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Marker component renders active marker and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="marker is-state-default marker-palette-default"
+  >
+    <div
+      class="marker-inner"
+    >
+      <span
+        class="heading heading-size-md align-left marker-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Marker component renders completed marker and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="marker is-state-default marker-palette-default"
+  >
+    <div
+      class="marker-inner"
+    >
+      <span
+        class="heading heading-size-md align-left marker-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Marker component renders default marker and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="marker is-state-default marker-palette-default"
+  >
+    <div
+      class="marker-inner"
+    >
+      <span
+        class="heading heading-size-md align-left marker-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Marker component renders inactive marker and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="marker is-state-default marker-palette-default"
+  >
+    <div
+      class="marker-inner"
+    >
+      <span
+        class="heading heading-size-md align-left marker-text"
+        data-testid="heading"
+        lang="nl"
+      >
+        1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

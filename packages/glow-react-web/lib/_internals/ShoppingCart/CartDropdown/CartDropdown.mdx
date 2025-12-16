@@ -1,0 +1,76 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartDropdownStories from "./CartDropdown.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartDropdownStories} />
+
+# CartDropdown
+
+### Token version: {getComponentVersion('navigation-dropdown-panel.v1')}
+
+The `CartDropdown` component renders a small cart preview panel for navigation bars. It supports an **empty** state and a **with items** state, optional totals, and a configurable footer with a primary call-to-action.
+
+<Canvas of={CartDropdownStories.Default} />
+<Controls of={CartDropdownStories.Default} />
+
+## Purpose
+
+Use `CartDropdown` to:
+
+- Preview items currently in the cart without leaving the page.
+- Provide a primary call-to-action (e.g., “Go to cart” / “Checkout”).
+- Show a friendly empty state with a palette background when the cart has no items.
+
+## Features
+
+- **Two states**: `type="empty"` or `type="withItems"`.
+- **Footer control**: show or hide via `footer="default" | "none"`.
+- **Totals block**: optional `total` section for price summary.
+- **Item list**: render multiple products using `CartDropdownProduct`.
+- **Theming**: empty state can use `palette` (e.g., `"default"`, `"blue"`, …).
+- **Composable CTA**: pass a `Button` via `callToAction`.
+
+## Usage
+
+```tsx
+import { CartDropdown } from "@odido-portals/glow-react-web/cart-dropdown";
+import { Button } from "components/Button";
+
+<CartDropdown
+  type="withItems"
+  items={[
+    {
+      image: {
+        src: "url",
+        alt: "Product",
+      },
+      title: "Product Title",
+      description: "Description",
+    },
+    {
+      image: {
+        src: "url",
+        alt: "Product",
+      },
+      title: "Product Title",
+      description: "Description",
+    },
+  ]}
+  total={{
+    totalOneTime: {
+      label: "Totaal eenmalig",
+      value: "123",
+    },
+    totalPerMonth: {
+      label: "Totaal per maand",
+      value: "69",
+    },
+  }}
+  footer="default"
+  callToAction={{
+    children: "Go to cart",
+    onClick: () => console.log("Go to cart"),
+  }}
+/>;
+```

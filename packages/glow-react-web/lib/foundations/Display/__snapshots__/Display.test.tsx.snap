@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display component should apply correct center align 1`] = `
+<DocumentFragment>
+  <p
+    class="display display-size-md display-align-center"
+    lang="nl"
+  >
+    Display component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Display component should apply correct font 1`] = `
+<DocumentFragment>
+  <p
+    class="display display-size-md"
+    lang="nl"
+  >
+    Display component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Display component should apply correct lineheight 1`] = `
+<DocumentFragment>
+  <p
+    class="display display-size-md"
+    lang="nl"
+  >
+    Display component
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Display component should apply correct size 1`] = `
+<DocumentFragment>
+  <p
+    class="display display-size-md"
+    lang="nl"
+  >
+    Display component
+  </p>
+</DocumentFragment>
+`;

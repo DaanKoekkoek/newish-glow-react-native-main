@@ -1,0 +1,16 @@
+.changeset
+.husky
+.turbo
+dist
+pnpm-lock.yaml
+android
+ios
+*.hbs
+**/coverage/*
+.next
+*.css
+*.scss
+**/out/*
+**/docs-tokenVersions.mdx
+**/docs-tokenTimeline.mdx
+**/token-versions-history.json

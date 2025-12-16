@@ -1,0 +1,54 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as VisibleStories from "./Visible.stories";
+
+<Meta of={VisibleStories} />
+
+# Visible
+
+The `Visible` component is used to conditionally display content based on the viewport size. You can specify the breakpoint for when the content should be shown using the `above`, `below`, or `only` properties. This allows you to control visibility based on the screen size or device type.
+
+## Usage
+
+You are only allowed to use one of the breakpoint-specific properties at a time (`above`, `below`, or `only`). This ensures that the content is conditionally displayed based on a single condition, avoiding conflicting rules.
+
+### Props
+
+- **`above`**: This property will make the content visible when the screen width is greater than or equal to the specified breakpoint.
+- **`below`**: This property will make the content visible when the screen width is less than the specified breakpoint.
+- **`only`**: This property will make the content visible exclusively for the specified breakpoint, hiding it on both smaller and larger screens.
+- **`tag`**: This property allows you to specify the HTML tag for the wrapper element.
+
+### Breakpoint Values
+
+The following breakpoints are available:
+
+- **`mobileSmall`**: 0px to 359px (for small mobile devices)
+- **`mobile`**: 360px to 529px (for mobile devices)
+- **`tablet`**: 530px to 959px (for tablets)
+- **`laptop`**: 960px to 1439px (for laptops)
+- **`desktop`**: 1440px and above (for desktop devices)
+
+### Show above
+
+Use this property to display content when the screen width is greater than or equal to the specified breakpoint.
+
+```tsx
+<Visible above="tablet">
+  <YourComponent />
+</Visible>
+```
+
+## Show above and on breakpoint
+
+<Canvas of={VisibleStories.ShowAbove} />
+<Controls of={VisibleStories.ShowAbove} />
+
+## Show below and on breakpoint
+
+<Canvas of={VisibleStories.ShowBelow} />
+<Controls of={VisibleStories.ShowBelow} />
+
+## Show only on breakpoint
+
+<Canvas of={VisibleStories.ShowOnly} />
+<Controls of={VisibleStories.ShowOnly} />

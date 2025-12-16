@@ -1,0 +1,41 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as FooterStories from "./Footer.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={FooterStories} />
+
+# Footer
+
+### Token version: {getComponentVersion("footer.v1")}
+
+The `Footer` component is a versatile and well-structured container designed to organize content efficiently. At the top, it features links arranged in multiple columns. When the screen width falls below the `tablet` breakpoint, these columns transform into an `Accordion`, allowing users to expand or collapse link sections for better accessibility on smaller screens.
+
+This new `Footer` version does not follow the Nested Components pattern. Instead, it retrieves all necessary data solely from props.
+
+The bottom section of the `Footer` consists of a structured row that can include a `logo`, followed by `social media links` and `store links` aligned at the end. Additionally, an extra row can be provided to display a set of `assorted links`. At the very bottom, there is an option to define a `copyright` text.
+
+## Migration guide
+
+When migrating from the react-native implementation, the following props should be altered accordingly.
+
+- The following subcomponents were removed to support SSR. Instead use the properties documented here.
+  - **`Footer.Top`**
+  - **`Footer.Bottom`**
+  - **`Footer.Grid`**
+  - **`Footer.Breadcrumbs`**
+  - **`Footer.Assorted`**
+  - **`Footer.AppStore`**
+  - **`Footer.Socials`**
+  - **`Footer.Link`**
+  - **`Footer.Icon`**
+  - **`Footer.Logo`**
+
+## Purpose
+
+The `Footer` component is designed to organize and display information typically found at the bottom of a page, such as social links, or app store buttons. By breaking the content into distinct sections, it helps create a more navigable and accessible interface.
+
+### Footer properties and basic example
+
+<Controls of={FooterStories.Default} />
+<Canvas of={FooterStories.Default} />

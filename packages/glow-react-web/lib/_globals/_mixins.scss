@@ -1,0 +1,475 @@
+@use "sass:math";
+@use "sass:map";
+@use "sass:list";
+@use "sass:meta";
+@use "sass:string";
+@use "@globals/functions";
+@use "@globals/config";
+
+/**
+  @mixin token-scope
+
+  Builds a selector chain for one or more containers with optional tokens.
+  Useful for scoping component styles to specific token combinations
+  and keeping CSS DRY when multiple containers share the same tokens.
+*/
+@mixin token-scope($containers, $tokens: ()) {
+  $containers-list: if(meta.type-of($containers) == 'list', $containers, ($containers,));
+  $final-selectors: ();
+
+@each $container in $containers-list {
+  $selector: ".#{$container}";
+
+  @if list.length($tokens) > 0 {
+    $tokens-processed: ();
+  $token-chain: "";
+
+  @each $token in $tokens {
+    $prefixed-token: "token-#{$token}";
+    $tokens-processed: list.append($tokens-processed, "#{$prefixed-token}", comma);
+  }
+
+  @for $i from 1 through list.length($tokens-processed) {
+    $token-chain: $token-chain + if($i > 1, ".", "") + list.nth($tokens-processed, $i);
+  }
+
+  $selector: "#{$selector}.#{$token-chain}";
+}
+
+$final-selectors: list.append($final-selectors, $selector, comma);
+}
+
+#{$final-selectors} {
+  @content;
+}
+}
+
+/**
+  @mixin above
+
+  Wraps content in a min-width media query.
+  Useful for targeting styles above a specific breakpoint.
+*/
+@mixin above($breakpoint) {
+  @media (min-width: #{map.get(config.$global-min-width, $breakpoint) + 1}) {
+    @content;
+  }
+}
+
+/**
+  @mixin below
+
+  Wraps content in a max-width media query.
+  Useful for targeting styles below a specific breakpoint.
+*/  
+@mixin below($breakpoint) {
+  @media (max-width: #{map.get(config.$global-min-width, $breakpoint) + 1}) {
+    @content;
+  }
+}
+
+/**
+  @mixin only
+
+  Wraps content in a media query targeting only the specified breakpoint range.
+  Automatically calculates the next breakpoint to define the max-width.
+  Useful for applying styles exclusively within a specific breakpoint interval.
+*/
+@mixin only($breakpoint) {
+  $min: map.get(config.$global-min-width, $breakpoint);
+  $keys: map.keys(config.$global-min-width);
+  $index: list.index($keys, $breakpoint);
+  $next-breakpoint: null;
+
+  @if $index and $index < list.length($keys) {
+    $next-breakpoint: list.nth($keys, $index + 1);
+  }
+
+  $max: if($next-breakpoint,
+      map.get(config.$global-min-width, $next-breakpoint),
+      9999px, // or any high value you want for the max limit
+    );
+
+  @media (min-width: $min) and (width <=calc(#{$max} - 1px)) {
+    @content;
+  }
+}
+
+// Hides an element visually but keeps it accessible to screen readers.
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// Reverts an element hidden by `visually-hidden` back to visible.
+@mixin visually-visible {
+  position: unset;
+  width: unset;
+  height: unset;
+  padding: unset;
+  margin: unset;
+  overflow: unset;
+  clip: unset;
+  white-space: unset;
+  border-width: unset;
+}
+
+/**
+  @mixin grid-no-gutters
+
+  Removes default grid paddings, margins, and column spacing.
+  Useful for full-width components like carousels or edge-to-edge layouts
+  where grid gutters would interfere.
+
+  Also exposes CSS variables that allow a grid structure to be applied
+  when `fluid` is set to true, ensuring layout consistency even without
+  default gutter spacing.
+*/
+@mixin grid-no-gutters {
+  --grid-total-initial-padding: 0 calc(var(--grid-gap) / 2 + calc(var(--grid-margin) - var(--container-gap)));
+  --grid-total-initial-margin: 0 calc(var(--grid-margin) * -1);
+  --grid-total-initial-max-width: var(--responsive-section-row-default);
+  --container-padding: 0;
+  --column-padding: 0;
+  --container-margin: 0;
+}
+
+/**
+  @mixin outline-focus
+
+  Applies a visible focus ring for keyboard accessibility.
+  Intended for use with :focus or :focus-visible states on
+  interactive components to indicate keyboard navigation focus.
+  Includes layered box-shadow and outline for high visibility.
+
+  When $inset is true, the focus ring is rendered inside the element
+  using inset box-shadows and a negative outline offset. This is useful
+  for components with overflow clipping or custom borders where an
+  external ring would be visually disruptive.
+*/
+@mixin outline-focus($inset: false) {
+  outline: 2px solid var(--components-foundations-focus-color-border-default);
+  
+  @if $inset == true {
+    outline-offset: -4px;
+    box-shadow: inset 0 0 0 4px #fff, inset 0 0 0 8px rgba(27 94 228 / 10%);
+  } @else {
+    outline-offset: 0;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgba(27 94 228 / 10%);
+  }
+}
+
+/**
+  @mixin glow-gradient-image($type: "default", $hover: false, $size: 48px)
+
+  Alternative to the `glow-gradient-background` and `gradient-vars` mixins, applying a static glow
+  background image instead of CSS variable-based gradients. Useful for third-party components (e.g., datepicker) where applying
+  style isn't possible. Or for when you need to implement the gradient on pseudo-elements such as ::before or ::after. Only applicable for the Odido brand.
+
+  Usage:
+
+  @use "@globals/mixins";
+  @use "@globals/config";
+
+  @each $palette in config.$odido-palette {
+    @include mixins.glow-gradient-image($as-mask: true, $mask-base: #000); // Applies a linear-gradient mask + base color (applied on the background).
+    @include mixins.glow-gradient-image($palette: $palette); // Renders glow image based on palette color.
+    @include mixins.glow-gradient-image($palette: $palette, $hover: true); // Renders glow image based on palette color. Changes to the darker variant on hover.
+    @include mixins.glow-gradient-image($palette: $palette, $size: cover); // Renders glow image based on palette color. Changes the background-size.
+  }
+*/
+@mixin glow-gradient-image(
+  $palette: "default",
+  $hover: false,
+  $size: cover,
+  $as-mask: false,
+  $reverted: false,
+  $mask-base: null,
+  $fallback-color: null,
+) {
+  $glow-type: map.get(config.$odido-palette-to-glow, $palette);
+
+  & {
+    background-size: $size;
+  }
+
+  @if $fallback-color {
+    :not([data-theme^="odido-"]) & {
+      @if $as-mask {
+        & {
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
+          background-image: linear-gradient(#{$mask-base}, #{$mask-base}, #{$fallback-color});
+        }
+      } @else {
+        & {
+          background-color: #{$fallback-color};
+        }
+      }
+    }
+  }
+
+  @each $theme, $variant in ("odido-light": "light", "odido-dark": "dark") {
+    $glow-file: if($hover != false, 
+                      if($variant == "light", "#{$glow-type}-dark.svg", "#{$glow-type}-light.svg"), 
+                      "#{$glow-type}-#{$variant}.svg");
+
+    [data-theme="#{$theme}"] & {
+      @if $as-mask {
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        background-image: linear-gradient(#{$mask-base}, #{$mask-base}), url("/public/glow/#{$glow-file}");
+      } @else {
+        background-image: url("/public/glow/#{$glow-file}");
+      }
+    }
+    
+    @if $reverted == true {
+      & {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
+
+/**
+  @mixin gradient-vars($theme: default, $hover: true)
+
+  Generates CSS custom properties for gradient stops (glow1–glow4) with optional hover support. 
+  By default, the base state uses light colors and hover uses dark. If `$theme: dark` is set, the colors are swapped: dark base, light hover.
+  Pass `$hover: false` to disable the hover state entirely. Applicable for all brands.
+
+  Usage:
+
+  @use "@globals/mixins";
+
+  @include mixins.gradient-vars; // Light → dark, or dark → light on hover. 
+  @include mixins.gradient-vars($hover: false); // Only light, or dark for dark theme. doesn't change on hover.
+  @include mixins.gradient-vars($theme: inverted); // Light → to only dark, or dark → to only light (depending on the theme)
+*/
+@mixin gradient-vars($theme: default, $hover: true) {
+  // Handle normal glow stops for the other palettes
+  @each $glow-name, $maps in config.$odido-glow-stops {
+    $light-map: map.get($maps, light);
+    $dark-map: map.get($maps, dark);
+    $light-hover-map: map.get($maps, light-hover);
+    $dark-hover-map: map.get($maps, dark-hover);
+
+    &.#{$glow-name} {
+      @include gradient-vars-output(
+        $light-map: $light-map,
+        $dark-map: $dark-map,
+        $light-hover-map: $light-hover-map,
+        $dark-hover-map: $dark-hover-map,
+        $theme: $theme,
+        $hover: $hover,
+      );
+    }
+  }
+
+  // Palette glow stops
+  @each $palette, $glow-name in config.$odido-palette-to-glow {
+    $normalized: functions.str-replace($glow-name, "-", "");
+    $maps: map.get(config.$odido-glow-stops, $normalized);
+    $light-map: map.get($maps, light);
+    $dark-map: map.get($maps, dark);
+    $light-hover-map: map.get($maps, light-hover);
+    $dark-hover-map: map.get($maps, dark-hover);
+
+    &.#{$palette} {
+      @include gradient-vars-output(
+        $light-map: $light-map,
+        $dark-map: $dark-map,
+        $light-hover-map: $light-hover-map,
+        $dark-hover-map: $dark-hover-map,
+        $theme: $theme,
+        $hover: $hover,
+      );
+    }
+  }
+
+  // Simwallet-vars
+  @each $palette in config.$odido-palette {
+    $glow-name: map.get(config.$odido-palette-to-glow, $palette);
+    $normalized-glow-name: functions.str-replace($glow-name, "-", "");
+    $map: map.get(config.$odido-palette-to-simwallet-palette, $palette);
+    $stops-map: map.get(config.$simwallet-stops, $map);
+    $stops-map-hover: map.get(config.$simwallet-stops, #{$map}-hover);
+
+    &.#{$normalized-glow-name},
+    &.#{$palette} {
+      @include gradient-vars-output(
+        $sim-wallet-map: $stops-map,
+        $sim-wallet-hover-map: $stops-map-hover,
+        $theme: $theme,
+        $hover: $hover,
+      );
+    }
+  }
+}
+
+/**
+  @mixin gradient-vars-output($light-map, $dark-map, $light-hover-map: null, $dark-hover-map: null, $theme: default | inverted, $hover: false)
+
+  Helper mixin used by `mixins.gradient-vars`. Checks and filters sets based on data-theme.
+*/
+@mixin gradient-vars-output(
+  $light-map: null, 
+  $dark-map: null,
+  $light-hover-map: null, 
+  $dark-hover-map: null, 
+  $sim-wallet-map: null,
+  $sim-wallet-hover-map: null,
+  $theme: default, 
+  $hover: false,
+) {
+  @if $light-map {
+    [data-theme$="-light"] & {
+      @include gradient-vars-stops($light-map);
+    }
+  }
+
+  @if $dark-map {
+    [data-theme$="-dark"] & {
+      @include gradient-vars-stops($dark-map);
+    }
+  }
+  
+  @if $sim-wallet-map {
+    [data-theme="sim-wallet"] & {
+      @include gradient-vars-stops($sim-wallet-map);
+    }
+  }
+
+  // Load set by theme
+  @if $theme == inverted {
+    [data-theme$="-light"] & {
+      @include gradient-vars-stops($light-hover-map);
+    }
+
+    [data-theme$="-dark"] & {
+      @include gradient-vars-stops($dark-hover-map);
+    }
+  }
+
+  // Load set on hover
+  @if $hover {
+    &:hover {
+      @if $light-hover-map {
+        @if $theme == inverted {
+          [data-theme="odido-light"] & {
+            @include gradient-vars-stops($light-map);
+          }
+        } @else {
+          [data-theme="odido-light"] & {
+            @include gradient-vars-stops($light-hover-map);
+          }
+        }
+      }
+
+      @if $dark-hover-map {
+        @if $theme == inverted {
+          [data-theme="odido-dark"] & {
+            @include gradient-vars-stops($dark-map);
+          }
+        } @else {
+          [data-theme="odido-dark"] & {
+            @include gradient-vars-stops($dark-hover-map);
+          }
+        }
+      }
+
+      @if $sim-wallet-hover-map {
+        [data-theme="sim-wallet"] & {
+          @include gradient-vars-stops($sim-wallet-hover-map);
+        }
+      }
+    }
+  }
+}
+
+/**
+  @mixin gradient-vars-output($map)
+
+  Helper mixin used by `mixins.gradient-vars-output`. Renders the stops as sets of css properties.
+*/
+@mixin gradient-vars-stops($map) {
+  @each $i, $val in map.get($map, linear) {
+    --linear-stop-#{$i}: #{$val};
+  }
+
+  @each $i, $val in map.get($map, radial) {
+    --radial-stop-#{$i}: #{$val};
+  }
+}
+
+/**
+  @mixin glow-gradient-background($pattern, $fallback-pattern: "", $append: null, $percentages, $angle)
+  Generates a background: linear-gradient from CSS variables, optionally with fallback variables.
+  `{i}` in `$pattern` and `$fallback-pattern` is replaced with the stop index.
+
+  Usage:
+
+  @use "@globals/mixins";
+  @use "@globals/config";
+
+  @include mixins.glow-gradient-background($pattern: "token-stop-{i}-color"); // Renders linear-gradient with default stops.
+  @include mixins.glow-gradient-background($pattern: "token-stop-{i}-color", $angle: 90deg, $percentages: (25%, 50%, 75%, 100%)); // Renders linear-gradient with custom stops and angle.
+
+  @each $palette in config.$odido-palette {
+    @include mixins.glow-gradient-background($pattern: "token-stop-{i}-color-$palette", $fallback-pattern: "token-stop-{i}-color); // Renders linear-gradient with default stops and fallback color.
+  }
+*/
+@mixin glow-gradient-background(
+  $pattern,
+  $fallback-pattern: "",
+  $append: null,
+  $percentages: (15%, 30%, 60%, 90%),
+  $angle: 118deg
+) {
+  $stops: ();
+  $n: list.length($percentages);
+
+  @for $i from 1 through $n {
+    $token: "";
+    $pattern-var-name: functions.str-replace($pattern, "{i}", $i);
+    $fallback-var-name: if($fallback-pattern != "", functions.str-replace($fallback-pattern, "{i}", $i), null);
+
+    @if $fallback-var-name {
+      $token: string.unquote("var(#{$pattern-var-name}, var(#{$fallback-var-name}))");
+    } @else {
+      $token: string.unquote("var(#{$pattern-var-name})");
+    }
+
+    $stop: #{$token} #{list.nth($percentages, $i)};
+    $stops: list.append($stops, $stop, comma);
+  }
+
+  $gradient: string.unquote("linear-gradient(#{$angle}, #{$stops})");
+
+  @if $append {
+    background: #{$gradient} #{$append};
+  } @else {
+    background: $gradient;
+  }
+}
+
+/* 
+ * Temporary solution to replace radial-stop-1 and radial-stop-11 from config.$odido-glow-stops with hard coded values.
+ * Reasoning behind is is that the tokens used in config.$odido-glow-stops isn't actually the one used for the GlowGradient
+ * documented in Figma. Thus the gradients coming from GlowGradient do not match 1 on 1 with design. There's currently no tokens
+ * defined for GlowGradient (11 nov 2025).
+ */
+@mixin odido-glow-base {
+  [data-theme="odido-light"] {
+    --odido-gradient-glow-4-stop-1: #AAC6FF;
+    --odido-gradient-glow-4-stop-11: #FF7D23;
+  }
+}

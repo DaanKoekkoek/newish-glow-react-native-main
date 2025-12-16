@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepperInpage renders correctly 1`] = `
+<DocumentFragment>
+  <ol
+    class="inpage-stepper"
+  >
+    <li
+      class="inpage-step inpage-step-state-default"
+    >
+      <div
+        class="inpage-step-label"
+      >
+        <div
+          class="marker is-state-default marker-palette-default"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              1
+            </span>
+          </div>
+        </div>
+        <div
+          class="inpage-step-heading-container"
+        >
+          <h3
+            class="heading heading-size-md align-left inpage-step-heading"
+            data-testid="heading"
+            lang="nl"
+          >
+            Step 1 title default
+          </h3>
+          <div
+            class="badge badge-prominence-default badge-palette-green"
+          >
+            Klantvoordeel
+          </div>
+        </div>
+      </div>
+      <div
+        class="inpage-step-content"
+      >
+        <p
+          class="paragraph paragraph-size-sm"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+        </p>
+      </div>
+      <div>
+        <a
+          class="text-link size-sm text-and-icon columnGap"
+          data-testid="text-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+            class="icon icon-size-default outline icon"
+            data-icon="add"
+            data-testid="icon"
+          >
+            
+          </span>
+          <span
+            class="base-text base-paragraph text-link-text"
+            lang="nl"
+          >
+            Text link
+          </span>
+        </a>
+      </div>
+      <hr
+        class="divider divider-prominence-default divider-variant-default inpage-step-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="inpage-step inpage-step-state-active"
+    >
+      <div
+        class="inpage-step-label"
+      >
+        <div
+          class="marker is-state-active marker-palette-default"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              2
+            </span>
+          </div>
+        </div>
+        <div
+          class="inpage-step-heading-container"
+        >
+          <h3
+            class="heading heading-size-md align-left inpage-step-heading"
+            data-testid="heading"
+            lang="nl"
+          >
+            Step 2 title with extra long title that should wrap
+          </h3>
+        </div>
+      </div>
+      <div
+        class="inpage-step-content"
+      >
+        <p
+          class="paragraph paragraph-size-sm"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+        </p>
+      </div>
+      <div
+        class="inpage-step-button"
+      >
+        <button
+          class="fill button button-size-default button-prominence-emphasised"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            Button text
+          </span>
+        </button>
+      </div>
+      <hr
+        class="divider divider-prominence-default divider-variant-default inpage-step-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="inpage-step inpage-step-state-inactive"
+    >
+      <div
+        class="inpage-step-label"
+      >
+        <div
+          class="marker is-state-inactive marker-palette-default"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              class="heading heading-size-md align-left marker-text"
+              data-testid="heading"
+              lang="nl"
+            >
+              3
+            </span>
+          </div>
+        </div>
+        <div
+          class="inpage-step-heading-container"
+        >
+          <h3
+            class="heading heading-size-md align-left inpage-step-heading"
+            data-testid="heading"
+            lang="nl"
+          >
+            Step 3 title disabled
+          </h3>
+          <div
+            class="badge badge-prominence-default badge-palette-green is-inactive"
+          >
+            Klantvoordeel
+          </div>
+        </div>
+      </div>
+      <div
+        class="callout status-warning tip-position-default prominence-default"
+        data-testid="callout"
+      >
+        <div
+          class="callout-content"
+        >
+          <div
+            class="callout-header"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default solid callout-header-icon"
+              data-icon="status-warning"
+              data-testid="status-warning-icon"
+            >
+              
+            </span>
+            <div
+              class="heading heading-size-sm align-left callout-header-heading"
+              data-testid="heading"
+              lang="nl"
+            >
+              Title
+            </div>
+          </div>
+          <p
+            class="paragraph paragraph-size-default callout-paragraph"
+            data-testid="paragraph"
+          >
+            description
+          </p>
+        </div>
+      </div>
+      <div
+        class="inpage-step-content"
+      >
+        <p
+          class="paragraph paragraph-size-sm"
+          data-testid="paragraph"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit dolor in fermentum dictum. Aenean ac pulvinar sapien. Quisque nec elit placerat, eleifend nisi ac, venenatis velit. Ut et aliquet lorem. Pellentesque ac mollis ligula.
+        </p>
+      </div>
+      <hr
+        class="divider divider-prominence-default divider-variant-default inpage-step-divider"
+        data-testid="divider"
+      />
+    </li>
+    <li
+      class="inpage-step inpage-step-state-completed"
+    >
+      <div
+        class="inpage-step-label"
+      >
+        <div
+          class="marker is-state-completed"
+        >
+          <div
+            class="marker-inner"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline marker-icon"
+              data-icon="checkmark"
+              data-testid="icon"
+            >
+              
+            </span>
+          </div>
+        </div>
+        <div
+          class="inpage-step-heading-container"
+        >
+          <h3
+            class="heading heading-size-md align-left inpage-step-heading"
+            data-testid="heading"
+            lang="nl"
+          >
+            Step 4 title completed
+          </h3>
+        </div>
+        <div>
+          <a
+            class="text-link size-sm text-only columnGap"
+            data-testid="text-link"
+            href="#"
+          >
+            <span
+              class="base-text base-paragraph text-link-text"
+              lang="nl"
+            >
+              Text link
+            </span>
+          </a>
+        </div>
+      </div>
+      <hr
+        class="divider divider-prominence-default divider-variant-default inpage-step-divider"
+        data-testid="divider"
+      />
+    </li>
+  </ol>
+</DocumentFragment>
+`;

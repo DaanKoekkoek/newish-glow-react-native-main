@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Icons-Outline-DEFAULT-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-DEFAULT-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Outline-SM-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-SM-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Outline-MD-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-MD-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Outline-LG-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-LG-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Outline-XL-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-XL-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Outline-XXL-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Outline-XXL-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-Default-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-DEFAULT-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-SM-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-SM-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-MD-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-MD-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-LG-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-LG-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-XL-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-XL-odido.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Icons-Solid-XXL-odido;
+  src: url("@odido-portals/glow-icon/fonts/odido/Icons-Solid-XXL-odido.ttf") format("truetype");
+}

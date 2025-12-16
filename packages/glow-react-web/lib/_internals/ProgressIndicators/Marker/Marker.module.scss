@@ -1,0 +1,101 @@
+@use "@odido-portals/glow-tokens/progress-indicators";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(marker,
+  progress-indicators) {
+  --marker-border-radius: 100px;
+
+  position: relative;
+  border-radius: var(--marker-border-radius);
+  display: inline-block;
+  overflow: hidden;
+
+  &.is-state-active {
+    background-color: var(--components-progress-indicators-atoms-responsive-marker-color-border-active);
+    padding: var(--components-progress-indicators-atoms-responsive-marker-border-width-active);
+
+    @each $palette in config.$odido-palette {
+      &.marker-palette-#{$palette} {
+        @include mixins.glow-gradient-image(
+          $palette: $palette, 
+          $fallback-color: var(--components-progress-indicators-atoms-responsive-marker-color-border-active),
+        );
+      }
+    }
+  }
+}
+
+.marker-inner {
+  background-color: var(--components-progress-indicators-atoms-responsive-marker-color-background-default);
+  position: relative;
+  z-index: 1;
+  place-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--components-progress-indicators-atoms-responsive-marker-size-marker-default);
+  height: var(--components-progress-indicators-atoms-responsive-marker-size-marker-default);
+  box-sizing: border-box;
+  padding: var(--components-progress-indicators-atoms-responsive-marker-padding-vertical) var(--components-progress-indicators-atoms-responsive-marker-padding-horizontal);
+  border-radius: calc(var(--marker-border-radius) - var(--components-progress-indicators-atoms-responsive-marker-border-width-default));
+  border: var(--components-progress-indicators-atoms-responsive-marker-border-width-default) solid var(--components-progress-indicators-atoms-responsive-marker-color-border-default);
+
+  .is-state-default & {
+    padding: calc(var(--components-progress-indicators-atoms-responsive-marker-padding-vertical) - var(--components-progress-indicators-atoms-responsive-marker-border-width-default)) calc(var(--components-progress-indicators-atoms-responsive-marker-padding-horizontal) - var(--components-progress-indicators-atoms-responsive-marker-border-width-default));
+  }
+
+  .is-state-active & {
+    background-color: var(--components-progress-indicators-atoms-responsive-marker-color-background-active);
+    padding: calc(var(--components-progress-indicators-atoms-responsive-marker-padding-vertical) - var(--components-progress-indicators-atoms-responsive-marker-border-width-active)) calc(var(--components-progress-indicators-atoms-responsive-marker-padding-horizontal) - var(--components-progress-indicators-atoms-responsive-marker-border-width-active));
+    border: none;
+  }
+
+  .is-state-inactive & {
+    border: var(--components-progress-indicators-atoms-responsive-marker-border-width-inactive) solid var(--components-progress-indicators-atoms-responsive-marker-color-border-inactive);
+    width: var(--components-progress-indicators-atoms-responsive-marker-size-marker-inactive);
+    height: var(--components-progress-indicators-atoms-responsive-marker-size-marker-inactive);
+  }
+
+  @each $palette in config.$odido-palette {
+    .is-state-inactive.marker-palette-#{$palette} & {
+      background-color: var(--components-progress-indicators-atoms-in-page-marker-color-background-inactive-palette-#{$palette}, var(--components-progress-indicators-atoms-in-page-marker-color-background-inactive));
+      border-color: var(--components-progress-indicators-atoms-in-page-marker-color-background-inactive-palette-#{$palette}, var(--components-progress-indicators-atoms-in-page-marker-color-background-inactive));
+    }
+  }
+
+  .is-state-completed & {
+    background-color: var(--components-progress-indicators-atoms-responsive-marker-color-background-completed);
+    border: var(--components-progress-indicators-atoms-responsive-marker-border-width-completed) solid var(--components-progress-indicators-atoms-responsive-marker-color-border-completed);
+    width: var(--components-progress-indicators-atoms-responsive-marker-size-marker-completed);
+    height: var(--components-progress-indicators-atoms-responsive-marker-size-marker-completed);
+  }
+}
+
+.marker-icon {
+  font-size: var(--components-progress-indicators-atoms-responsive-marker-typography-icon-font-size);
+  line-height: var(--components-progress-indicators-atoms-responsive-marker-typography-icon-line-height);
+  display: flex;
+  align-items: center;
+
+  .is-state-completed & {
+    color: var(--components-progress-indicators-atoms-responsive-marker-color-icon-completed);
+  }
+}
+
+.marker-text {
+  color: var(--components-progress-indicators-atoms-responsive-marker-color-text-default);
+  font-family: var(--components-progress-indicators-atoms-responsive-marker-typography-number-font-family);
+  font-weight: 500;
+  font-size: var(--components-progress-indicators-atoms-responsive-marker-typography-number-font-size);
+  line-height: var(--components-progress-indicators-atoms-responsive-marker-typography-number-line-height);
+  letter-spacing: var(--components-progress-indicators-atoms-responsive-marker-typography-number-letter-spacing);
+
+  .is-state-active & {
+    color: var(--components-progress-indicators-atoms-responsive-marker-color-text-active);
+  }
+
+  .is-state-inactive & {
+    color: var(--components-progress-indicators-atoms-responsive-marker-color-text-inactive);
+  }
+}

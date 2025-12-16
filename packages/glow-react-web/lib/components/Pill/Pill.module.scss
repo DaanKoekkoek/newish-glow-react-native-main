@@ -1,0 +1,110 @@
+@use "@odido-portals/glow-tokens/selector-pill-v1";
+@use "@odido-portals/glow-tokens/selector-border";
+@use "@odido-portals/glow-tokens/selector-color";
+@use "@odido-portals/glow-tokens/selector-typography";
+@use "@odido-portals/glow-tokens/semantics-color-border";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    pill,
+    (
+        selector-pill-v1,
+        selector-border,
+        selector-color,
+        selector-typography,
+        color-border
+    )
+) {
+    display: inline-block;
+}
+
+.pill-title {
+    color: var(--components-selector-color-text-default);
+    font-family: var(--components-selector-typography-font-family-default);
+    font-size: var(--components-selector-typography-font-size-title-default);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--components-selector-typography-line-height-title-default);
+    letter-spacing: var(--components-selector-typography-letter-spacing-title-default);
+    white-space: nowrap;
+}
+
+.pill-label {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: var(--components-selector-pill-v1-color-background-default);
+    border-radius: var(--components-selector-pill-v1-radius-default);
+    border: var(--components-selector-border-width-default) solid var(--components-selector-color-border-default);
+    padding: calc(var(--components-selector-pill-v1-padding-vertical-default) - var(--components-selector-border-width-default)) calc(var(--components-selector-pill-v1-padding-horizontal-default) - var(--components-selector-border-width-default));
+    z-index: 1;
+    box-sizing: border-box;
+    background-clip: padding-box;
+
+    &:hover {
+        background: var(--components-selector-pill-v1-color-background-hover);
+    }
+}
+
+.pill-input {
+    appearance: none;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    
+    &:disabled + .pill-label {
+        background-color: var(--components-selector-pill-v1-color-background-inactive);
+        border: var(--components-selector-border-width-hover) solid var(--components-selector-color-border-default);
+
+        .pill-title {
+            color: var(--components-selector-color-text-inactive);
+        }
+    }
+
+    &:focus-visible + .pill-label {
+        @include mixins.outline-focus;
+    }
+
+    &:not(:disabled):checked + .pill-label {
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background-color: var(--components-selector-color-border-selected-default-palette-default, var(--components-selector-color-border-selected-default));
+            padding: var(--components-selector-border-width-selected-default);
+            mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        &:hover {
+            border-color: transparent;
+        }
+
+        @each $palette in config.$odido-palette {
+            &.pill-label-palette-#{$palette} {
+
+                &::after {
+                    @include mixins.glow-gradient-background(
+                        $pattern: "--semantics-color-border-selected-gradient-default-stop-{i}-palette-#{$palette}",
+                        $fallback-pattern: "--semantics-color-border-selected-gradient-default-stop-{i}");
+                }
+
+                &:hover::after {
+                    @include mixins.glow-gradient-background(
+                        $pattern: "--semantics-color-border-selected-gradient-hover-stop-{i}-palette-#{$palette}",
+                        $fallback-pattern: "--semantics-color-border-selected-gradient-hover-stop-{i}");
+                }
+            }
+        }
+    }
+}
+
+.pill-logo {
+    height: var(--components-selector-pill-v1-size-logo-height-default);
+}

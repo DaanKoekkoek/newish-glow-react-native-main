@@ -1,0 +1,80 @@
+@use "@odido-portals/glow-tokens/logos-and";
+@use "@odido-portals/glow-tokens/lists-add-on-list-v1";
+@use "@odido-portals/glow-tokens/lists-list-item-v2";
+@use "@globals/mixins";
+
+$attention: "information", "success", "warning", "error";
+
+@include mixins.token-scope(
+  addon-list-item,
+  (
+    logos-and,
+    lists-add-on-list-v1,
+    lists-list-item-v2
+  )
+) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  column-gap: var(--components-lists-add-on-list-v1-gap-default);
+  padding: var(--components-lists-add-on-list-v1-padding-vertical) var(--components-lists-add-on-list-v1-padding-horizontal) var(--components-lists-add-on-list-v1-padding-vertical) var(--components-lists-add-on-list-v1-padding-horizontal);
+
+  &[tabindex] {
+    cursor: pointer;
+  }
+
+  &:not(:first-of-type) {
+    border-top: var(--components-lists-add-on-list-v1-border-width-item-default) solid var(--components-lists-add-on-list-v1-color-border-item-default);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.add-on {
+  width: var(--components-logos-and-visuals-add-ons-size-sm),
+}
+
+.title {
+  font-size: var(--components-lists-add-on-list-typography-title-default-font-size);
+  line-height: var(--components-lists-add-on-list-typography-title-default-line-height);
+  letter-spacing: var(--components-lists-add-on-list-typography-title-default-letter-spacing);
+  color: var(--components-lists-add-on-list-v1-color-text-default);
+}
+
+.description-and-promo {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--components-lists-add-on-list-v1-gap-sm);
+}
+
+.list-item-attention {
+  font-size: var(--components-lists-atoms-list-item-typography-title-font-size);
+  line-height: var(--components-lists-atoms-list-item-typography-title-line-height);
+  letter-spacing: var(--components-lists-atoms-list-item-typography-title-letter-spacing);
+
+  @each $color in $attention {
+    &.attention-#{$color} {
+      color: var(--components-lists-list-item-v2-color-text-attention-text-#{$color});
+    }
+  }
+}
+
+.description {
+  margin: 0;
+  display: -webkit-box;
+  color: var(--components-lists-add-on-list-v1-color-text-default);
+  font-size: var(--components-lists-add-on-list-typography-body-default-font-size);
+  line-height: var(--components-lists-add-on-list-typography-body-default-line-height);
+  letter-spacing: var(--components-lists-add-on-list-typography-body-default-letter-spacing);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}

@@ -1,0 +1,37 @@
+@use "@odido-portals/glow-tokens/section-my-section-v1";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  my-section
+  section-my-section-v1
+) {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--components-section-my-section-v1-padding-vertical-default);
+
+  &:not(:first-of-type),
+  &:not(:first-of-type) > *:first-of-type {
+    padding-top: 0;
+  }
+
+  &.has-no-padding-top {
+    padding-top: 0;
+  }
+
+  .my-section-container.has-no-padding-top {
+    padding-top: 0;
+  }
+
+  .my-section-grid {
+    --grid-gap: var(--components-section-my-section-v1-gap-main-vertical);
+  }
+}
+
+.my-section-title {
+  position: relative;
+  z-index: 1;
+
+  .is-emphasised & {
+    margin-bottom: var(--components-section-my-section-v1-gap-main-vertical);
+  }
+}

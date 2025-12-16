@@ -1,0 +1,22 @@
+@use "@odido-portals/glow-tokens/hero-subscription-hero-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    custom-header,
+    hero-subscription-hero-v1
+) {
+    display: flex;
+    flex: 1 1 0%;
+    height: 100%;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+
+    @each $color in config.$odido-palette {
+        &.background-#{$color} {
+            background-color: var(--components-hero-subscription-hero-v1-color-background-default-palette-#{$color}, var(--components-hero-subscription-hero-v1-color-background-default));
+        }
+    }
+}

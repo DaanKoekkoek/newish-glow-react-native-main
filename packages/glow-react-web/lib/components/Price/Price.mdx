@@ -1,0 +1,22 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as PriceStories from "./Price.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={PriceStories} />
+
+# Price
+
+### Token version: {getComponentVersion("price.v2")}
+
+The price component is used to display a products price in a selector or product list component.
+
+<Canvas of={PriceStories.Basic} />
+<Controls of={PriceStories.Basic} />
+
+## With all enabled
+
+The price component with all options enabled. Includes a VAT disclaimer, price over frequency and a before text + value.
+
+<Canvas of={PriceStories.WithAllEnabled} />
+<Controls of={PriceStories.WithAllEnabled} />

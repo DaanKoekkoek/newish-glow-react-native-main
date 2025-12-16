@@ -1,0 +1,24 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ProgressBarStories from "./ProgressBar.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={ProgressBarStories} />
+
+# ProgressBar
+
+### Token version: {getComponentVersion("progress-bar.v1")}
+
+The `ProgressBar` is a component which displays number of steps below progress bar along with active step and current progress.
+
+### Default
+
+<Canvas of={ProgressBarStories.Basic} />
+<Controls of={ProgressBarStories.Basic} />
+
+# Custom step
+
+This is a example to customize the title of a step, in this case `step 2`
+
+<Canvas of={ProgressBarStories.CustomSteps} />
+<Controls of={ProgressBarStories.CustomSteps} />

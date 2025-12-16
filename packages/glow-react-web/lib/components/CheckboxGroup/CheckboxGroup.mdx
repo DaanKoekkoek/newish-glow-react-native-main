@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CheckboxGroupStories from "./CheckboxGroup.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CheckboxGroupStories} />
+
+# CheckboxGroup
+
+### Token version: {getComponentVersion("checkbox-group.v1")}
+
+A CheckboxGroup a collection of [Checkbox ↗️](?path=/docs/designsystem-components-input-checkbox--docs) components that can be checked or unchecked when ticked.
+The `helperText`, `errorMessage` & `legend` properties should not be passed down into the [Checkbox ↗️](?path=/docs/designsystem-components-input-checkbox--docs) components
+as props in case of using them as children.
+
+## Basic
+
+<Canvas of={CheckboxGroupStories.Basic} />
+<Controls of={CheckboxGroupStories.Basic} />
+
+## Inactive
+
+<Canvas of={CheckboxGroupStories.Inactive} />
+<Controls of={CheckboxGroupStories.Inactive} />
+
+## Error
+
+<Canvas of={CheckboxGroupStories.Error} />
+<Controls of={CheckboxGroupStories.Error} />

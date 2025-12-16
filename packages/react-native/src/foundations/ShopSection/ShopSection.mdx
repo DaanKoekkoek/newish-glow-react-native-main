@@ -1,0 +1,34 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ShopSectionStories from "./ShopSection.stories";
+
+<Meta of={ShopSectionStories} />
+
+# ShopSection
+
+The `ShopSection` component organizes content by providing a structured layout for grouping related components or information. It ensures a cohesive design and is especially useful for segmenting content in a meaningful and visually appealing way.
+
+## Purpose
+
+The `ShopSection` component creates distinct sections, allowing for the logical grouping of related elements. This makes the layout more organized and easier to navigate.
+
+## Usage
+
+The `ShopSection` only allows `<ShopSection.Container />` and `<ShopSection.Sidebar />` children.
+
+### Default Example
+
+<Canvas of={ShopSectionStories.Default} />
+<Controls of={ShopSectionStories.Default} />
+
+### Emphasised
+
+<Canvas of={ShopSectionStories.Emphasised} />
+
+### With image
+
+<Canvas of={ShopSectionStories.Image} />
+
+### With palette
+
+<Canvas of={ShopSectionStories.Subtle} />
+<Controls of={ShopSectionStories.Subtle} />

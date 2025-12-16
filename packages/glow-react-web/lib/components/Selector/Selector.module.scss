@@ -1,0 +1,229 @@
+@use "@odido-portals/glow-tokens/selector-padding";
+@use "@odido-portals/glow-tokens/selector-gap";
+@use "@odido-portals/glow-tokens/selector-size";
+@use "@odido-portals/glow-tokens/selector-typography";
+@use "@odido-portals/glow-tokens/badges-badge-v1";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  selector,
+  (
+    selector-padding,
+    selector-gap,
+    selector-size,
+    selector-typography,
+    badges-badge-v1
+  )
+) {
+  height: 100%;
+  display: flex;
+  flex: 1;
+
+  label {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+
+    &::before {
+      grid-column: 1;
+      grid-row: 2;
+      z-index: 2;
+      align-self: center;
+      margin-left: var(--components-selector-padding-horizontal-default);
+    }
+
+    &:has(.is-extended) {
+      &::before {
+        margin-top: var(--components-selector-padding-horizontal-default);
+        align-self: flex-start;
+      }
+      
+      &:has(.badge-container)::before {
+        margin-top: calc(var(--components-selector-padding-vertical-default) + var(--components-badges-badge-v1-typography-font-size) + var(--components-badges-badge-v1-padding-vertical-default) * 2 + var(--components-selector-typography-font-size-title-lg) / 2 + var(--components-selector-gap-vertical-sm));
+      }
+    }
+  }
+
+  input:disabled + label .selector-title .selector-highlighted-text {
+    color: var(--components-selector-color-text-inactive);
+  }
+
+  .selector-container {
+    display: flex;
+  }
+  
+  .selector-body {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default);
+    gap: var(--components-selector-gap-vertical-lg);
+    z-index: 1;
+    box-sizing: border-box;
+    background-clip: padding-box;
+
+    &.is-extended {
+      padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default) var(--components-selector-padding-vertical-lg) var(--components-selector-padding-horizontal-default);
+    }
+
+    &.is-compact {
+      padding: var(--components-selector-padding-vertical-sm) var(--components-selector-padding-horizontal-default);
+    }
+
+    &.is-selected {
+      padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default);
+
+      &.is-compact {
+        padding: var(--components-selector-padding-vertical-sm) var(--components-selector-padding-horizontal-default);
+      }
+
+      &.is-extended {
+        padding: var(--components-selector-padding-vertical-default) var(--components-selector-padding-horizontal-default) var(--components-selector-padding-vertical-lg);
+      }
+    }
+
+    .selector-price-title {
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      column-gap: var(--components-selector-gap-horizontal-sm);
+  
+      &.selector-price-title-extended {
+        gap: var(--components-selector-gap-horizontal-md);
+      }
+    }
+
+    &.is-checkbox .selector-price-title {
+      padding-left: calc(var(--components-input-checkbox-v1-size-default) + var(--components-selector-gap-horizontal-sm));
+    }
+
+    &.is-selected.is-highlighted {
+      padding-top: var(--components-selector-padding-vertical-default);
+
+      &.is-compact {
+        padding-top: var(--components-selector-padding-vertical-sm);
+      }
+
+      &::after {
+        padding-top: 0
+      }
+    }
+  }
+
+  .selector-divider {
+    margin-top: auto;
+  }
+
+  .selector-secondary-action,
+  .selector-list {
+    width: 100%;
+  }
+
+  .selector-secondary-action>a,
+  .selector-secondary-action>button {
+    position: relative;
+  }
+
+  .selector-title {
+    color: var(--components-selector-color-text-default);
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    font-size: var(--components-selector-typography-font-size-title-default);
+    line-height: var(--components-selector-typography-line-height-title-default);
+    letter-spacing: var(--components-selector-typography-letter-spacing-title-default);
+
+    &.is-disabled {
+      color: var(--components-selector-color-text-inactive);
+    }
+
+    &.is-extended {
+      gap: var(--components-selector-gap-vertical-sm);
+      font-size: var(--components-selector-typography-font-size-title-lg);
+      line-height: var(--components-selector-typography-line-height-title-lg);
+      letter-spacing: var(--components-selector-typography-letter-spacing-title-lg);
+    }
+
+    &.is-compact {
+      align-self: center;
+    }
+
+    @each $palette in config.$odido-palette {
+      &.selector-title-palette-#{$palette} .selector-highlighted-text {
+        color: var(--semantics-color-text-strong-palette-#{$palette}, var(--palette-strong-text));
+      }
+    }
+  }
+
+  .selector-label-group {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: var(--components-selector-gap-vertical-sm)
+  }
+
+  .badge-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .selector-checkbox-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .selector-checkbox-extended {
+    padding-top: var(--components-selector-padding-checkbox-top);
+  }
+
+  .selector-promotion {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--components-selector-color-text-promotion);
+    letter-spacing: var(--components-foundations-typography-text-styles-v1-paragraph-letter-spacing-sm);
+    font-size: var(--components-foundations-typography-text-styles-v1-paragraph-font-size-sm);
+    line-height: var(--components-foundations-typography-text-styles-v1-paragraph-line-height-sm);
+
+    &.promotion-is-disabled {
+      color: var(--components-selector-color-text-inactive);
+    }
+  }
+
+  .selector-description {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    &.description-is-disabled {
+      color: var(--components-selector-color-text-inactive);
+    }
+  }
+
+  .selector-checkbox-price {
+    display: flex;
+    align-self: center;
+  }
+
+  .selector-title-price {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    &.selector-title-price-compact {
+      justify-content: center;
+    }
+  }
+
+  .title-strikethrough {
+    text-decoration: line-through;
+    color: var(--components-selector-color-text-strikethrough-default)
+  }
+}

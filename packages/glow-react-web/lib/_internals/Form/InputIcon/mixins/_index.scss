@@ -1,0 +1,17 @@
+@mixin base-input-icon-styles {
+    display: flex;
+    align-items: center;
+
+    &,
+    &.input-icon {
+        color: var(--components-input-color-icon-default);
+    }
+
+    &.input-icon-valid {
+        color: var(--components-input-color-icon-success);
+    }
+
+    &.input-icon-inactive {
+        color: var(--components-input-color-icon-inactive);
+    }
+}

@@ -1,0 +1,39 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as StatusStories from "./Status.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={StatusStories} />
+
+# Status
+
+### Token version: {getComponentVersion("status.v1")}
+
+The `Status` component is a visual indicator that represents different states or outcomes through color-coded markers paired with descriptive text.
+
+## Purpose
+
+The `Status` component creates a consistent way to communicate the status of operations, processes, or information to users across the application.
+It provides immediate visual feedback through color indicators that follow common conventions (green for success, orange for warning, red for error).
+
+## Usage
+
+The `Status` component requires two props:
+
+- `type`: Defines the visual state ("success", "warning", or "error")
+- `statusText`: The descriptive message that accompanies the status indicator
+
+Use it to provide contextual feedback about actions or system states in forms, notifications, or anywhere status information needs to be displayed.
+
+### Default
+
+<Canvas of={StatusStories.Basic} />
+<Controls of={StatusStories.Basic} />
+
+### Examples
+
+<Canvas of={StatusStories.InStock} />
+
+<Canvas of={StatusStories.Limited} />
+
+<Canvas of={StatusStories.OutOfStock} />

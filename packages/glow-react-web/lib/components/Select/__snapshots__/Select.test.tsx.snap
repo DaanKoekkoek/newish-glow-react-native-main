@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component renders a stable snapshot 1`] = `
+<DocumentFragment>
+  <form>
+    <div
+      class="input-container select"
+    >
+      <label
+        class="legend input-container-label"
+        for="default-select"
+      >
+        <span
+          class="base-text base-paragraph legend-label"
+        >
+          Label
+        </span>
+        <span
+          class="info-container"
+        >
+          <p
+            class="paragraph paragraph-size-sm optional-text"
+            data-testid="paragraph"
+          >
+            Extra text
+          </p>
+          <span
+            class="tooltip animated"
+            data-testid="tooltip"
+          >
+            <button
+              aria-describedby=":r0:"
+              aria-label="Show tooltip information"
+              class="tooltip-button"
+              data-testid="tooltip-button"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="icon icon-size-default outline info-icon"
+                data-icon="status-info"
+                data-testid="info-icon"
+              >
+                
+              </span>
+            </button>
+            <div
+              class="tooltip-popup animated hidden"
+              data-testid="tooltip-tooltip"
+              style="position: absolute; top: 0px; left: 0px; transform: translate(0px, 0px);"
+            >
+              <span
+                class="tooltip-box bottom"
+                data-testid="tooltip-tooltip-box"
+                id=":r0:"
+                role="tooltip"
+              >
+                <span
+                  class="paragraph paragraph-size-sm tooltip-description"
+                  data-testid="tooltip-description"
+                >
+                  Info tooltip text
+                </span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </label>
+      <div
+        class="group-container"
+        data-input-container="true"
+      >
+        <div
+          class="group"
+          data-testid="input-container"
+        >
+          <select
+            aria-describedby="default-select-helper"
+            aria-invalid="false"
+            class="select-input placeholder-active"
+            data-testid="select"
+            id="default-select"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Placeholder message
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-tomato"
+              value="tomato"
+            >
+              Tomato
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-orange"
+              value="orange"
+            >
+              Orange
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-grapefruit"
+              value="grapefruit"
+            >
+              Grapefruit
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-long text"
+              value="long text"
+            >
+              Extra long piece of text that should trigger overflow
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-strawberry"
+              value="strawberry"
+            >
+              Strawberry
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-banana"
+              value="banana"
+            >
+              Banana
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-apple"
+              value="apple"
+            >
+              Apple
+            </option>
+            <option
+              class="select-item"
+              data-testid="select-pear"
+              value="pear"
+            >
+              Pear
+            </option>
+          </select>
+          <span
+            aria-hidden="true"
+            class="select-suffix-icon-container"
+          >
+            <span
+              aria-hidden="true"
+              class="icon icon-size-default outline select-suffix-chevron-icon select-suffix-icon"
+              data-icon="chevron-down"
+              data-testid="icon"
+            >
+              
+            </span>
+          </span>
+        </div>
+      </div>
+      <small
+        aria-live="polite"
+        class="base-text base-paragraph helper-message"
+        data-testid="helper-message"
+        id="default-select-helper"
+      >
+        Helper message
+      </small>
+    </div>
+  </form>
+</DocumentFragment>
+`;

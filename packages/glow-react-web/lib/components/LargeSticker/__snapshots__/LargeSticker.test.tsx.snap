@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LargeSticker /> renders stable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="large-sticker large-sticker-palette-default"
+    data-testid="large-sticker"
+  >
+    <h3
+      class="heading heading-size-xs align-left large-sticker-text"
+      data-testid="heading"
+      lang="nl"
+    >
+      Describe your promotion
+    </h3>
+    <div
+      class="price price"
+    >
+      <div>
+        <div
+          class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+          data-testid="before"
+        >
+          vanaf
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="price-wrapper"
+      >
+        <div
+          class="price"
+        >
+          <div
+            class="price-text lg currency large-sticker-price"
+            data-testid="currency"
+          >
+            €
+          </div>
+          <div
+            class="price-value-wrapper"
+          >
+            <div
+              class="price-text lg large-sticker-price"
+              data-testid="whole"
+            >
+              10
+            </div>
+            <div
+              class="decimal-wrapper"
+            >
+              <div
+                class="comma-text price-text lg comma-text-position large-sticker-price"
+              >
+                ,
+              </div>
+              <div
+                class="price-text lg large-sticker-price"
+                data-testid="decimals"
+              >
+                ⁰⁰
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tax-text lg large-sticker-price"
+        data-testid="after"
+      >
+        excl. btw
+      </div>
+      <div
+        class="price-sr-only"
+      >
+        <span
+          data-value="true"
+        >
+          Voor: 10
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LargeSticker /> renders with description 1`] = `
+<DocumentFragment>
+  <div
+    class="large-sticker large-sticker-palette-default"
+    data-testid="large-sticker"
+  >
+    <h3
+      class="heading heading-size-xs align-left large-sticker-text"
+      data-testid="heading"
+      lang="nl"
+    >
+      Describe your promotion
+    </h3>
+    <div
+      class="price price"
+    >
+      <div>
+        <div
+          class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+          data-testid="before"
+        >
+          vanaf
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="price-wrapper"
+      >
+        <div
+          class="price"
+        >
+          <div
+            class="price-text lg currency large-sticker-price"
+            data-testid="currency"
+          >
+            €
+          </div>
+          <div
+            class="price-value-wrapper"
+          >
+            <div
+              class="price-text lg large-sticker-price"
+              data-testid="whole"
+            >
+              10
+            </div>
+            <div
+              class="decimal-wrapper"
+            >
+              <div
+                class="comma-text price-text lg comma-text-position large-sticker-price"
+              >
+                ,
+              </div>
+              <div
+                class="price-text lg large-sticker-price"
+                data-testid="decimals"
+              >
+                ⁰⁰
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tax-text lg large-sticker-price"
+        data-testid="after"
+      >
+        excl. btw
+      </div>
+      <div
+        class="price-sr-only"
+      >
+        <span
+          data-value="true"
+        >
+          Voor: 10
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LargeSticker /> renders with list component 1`] = `
+<DocumentFragment>
+  <div
+    class="large-sticker large-sticker-palette-green"
+    data-testid="large-sticker"
+  >
+    <ul
+      class="default-list default-list-size-default default-list-inverted large-sticker-list"
+      data-testid="default-list"
+    >
+      <li
+        class="list-variant-icon"
+        data-testid="default-list-list-item"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline default-list-icon-root default-list-icon"
+          data-icon="checkmark"
+          data-testid="icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default default-list-text-root default-list-text"
+          data-testid="paragraph"
+        >
+          List item 1
+        </p>
+      </li>
+      <li
+        class="list-variant-icon"
+        data-testid="default-list-list-item"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline default-list-icon-root default-list-icon"
+          data-icon="checkmark"
+          data-testid="icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default default-list-text-root default-list-text"
+          data-testid="paragraph"
+        >
+          List item 2
+        </p>
+      </li>
+      <li
+        class="list-variant-icon"
+        data-testid="default-list-list-item"
+      >
+        <span
+          aria-hidden="true"
+          class="icon icon-size-default outline default-list-icon-root default-list-icon"
+          data-icon="checkmark"
+          data-testid="icon"
+        >
+          
+        </span>
+        <p
+          class="paragraph paragraph-size-default default-list-text-root default-list-text"
+          data-testid="paragraph"
+        >
+          List item 3
+        </p>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LargeSticker /> renders with price component 1`] = `
+<DocumentFragment>
+  <div
+    class="large-sticker large-sticker-palette-default"
+    data-testid="large-sticker"
+  >
+    <h3
+      class="heading heading-size-xs align-left large-sticker-text"
+      data-testid="heading"
+      lang="nl"
+    >
+      Describe your promotion
+    </h3>
+    <div
+      class="price price"
+    >
+      <div>
+        <div
+          class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+          data-testid="before"
+        >
+          vanaf
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="price-wrapper"
+      >
+        <div
+          class="price"
+        >
+          <div
+            class="price-text lg currency large-sticker-price"
+            data-testid="currency"
+          >
+            €
+          </div>
+          <div
+            class="price-value-wrapper"
+          >
+            <div
+              class="price-text lg large-sticker-price"
+              data-testid="whole"
+            >
+              10
+            </div>
+            <div
+              class="decimal-wrapper"
+            >
+              <div
+                class="comma-text price-text lg comma-text-position large-sticker-price"
+              >
+                ,
+              </div>
+              <div
+                class="price-text lg large-sticker-price"
+                data-testid="decimals"
+              >
+                ⁰⁰
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tax-text lg large-sticker-price"
+        data-testid="after"
+      >
+        excl. btw
+      </div>
+      <div
+        class="price-sr-only"
+      >
+        <span
+          data-value="true"
+        >
+          Voor: 10
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LargeSticker /> renders with price component in emphasised variant 1`] = `
+<DocumentFragment>
+  <div
+    class="large-sticker large-sticker-palette-default large-sticker-variant-emphasised"
+    data-testid="large-sticker"
+  >
+    <div
+      aria-hidden="true"
+      class="glow-gradient glow4 large-sticker-gradient no-hover"
+      data-testid="glow-gradient"
+      style="z-index: 0;"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="100%"
+        preserveAspectRatio="none"
+        viewBox="0 0 960 1080"
+        width="100%"
+      >
+        <g>
+          <g
+            clip-path="url(#clip:r0:)"
+          >
+            <path
+              d="M960 0H0v1080h960V0z"
+              fill="url(#paint0_linear_1_214-:r0:)"
+            />
+            <path
+              d="M960 0H0v1080h960V0z"
+              fill="url(#paint0_radial_1_215-:r0:)"
+            />
+            <path
+              d="M960 0H0v1080h960V0z"
+              fill="url(#paint0_radial_1_216-:r0:)"
+            />
+            <path
+              d="M960 0H0v1080h960V0z"
+              fill="url(#paint0_radial_1_217-:r0:)"
+            />
+            <path
+              d="M960 0H0v1080h960V0z"
+              fill="url(#paint0_radial_1_218-:r0:)"
+            />
+          </g>
+          <defs>
+            <lineargradient
+              gradientUnits="userSpaceOnUse"
+              id="paint0_linear_1_214-:r0:"
+              x1="960"
+              x2="3.57628e-05"
+              y1="2.86102e-05"
+              y2="1080"
+            >
+              <stop
+                offset="0.777327"
+                stop-color="var(--linear-stop-1)"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--linear-stop-2)"
+              />
+            </lineargradient>
+            <radialgradient
+              cx="0"
+              cy="0"
+              gradientTransform="translate(512.887 -51.8359) rotate(81.5402) scale(1259.49 688.866)"
+              gradientUnits="userSpaceOnUse"
+              id="paint0_radial_1_215-:r0:"
+              r="1"
+            >
+              <stop
+                offset="0.66"
+                stop-color="var(--radial-stop-1)"
+              />
+              <stop
+                offset="0.84"
+                stop-color="var(--radial-stop-2)"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--radial-stop-3)"
+                stop-opacity="0"
+              />
+            </radialgradient>
+            <radialgradient
+              cx="0"
+              cy="0"
+              gradientTransform="translate(694.036 444.213) rotate(81.8699) scale(871.282 508.378)"
+              gradientUnits="userSpaceOnUse"
+              id="paint0_radial_1_216-:r0:"
+              r="1"
+            >
+              <stop
+                stop-color="var(--radial-stop-4)"
+              />
+              <stop
+                offset="0.33941"
+                stop-color="var(--radial-stop-5)"
+              />
+              <stop
+                offset="0.739171"
+                stop-color="var(--radial-stop-6)"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--radial-stop-7)"
+                stop-opacity="0"
+              />
+            </radialgradient>
+            <radialgradient
+              cx="0"
+              cy="0"
+              gradientTransform="translate(639.043 117.686) rotate(77.0217) scale(1035.7 500.267)"
+              gradientUnits="userSpaceOnUse"
+              id="paint0_radial_1_217-:r0:"
+              r="1"
+            >
+              <stop
+                offset="0.578582"
+                stop-color="var(--radial-stop-8)"
+              />
+              <stop
+                offset="0.697843"
+                stop-color="var(--radial-stop-9)"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--radial-stop-10)"
+                stop-opacity="0"
+              />
+            </radialgradient>
+            <radialgradient
+              cx="0"
+              cy="0"
+              gradientTransform="translate(615.816 -56.5526) rotate(90) scale(835.571 555.545)"
+              gradientUnits="userSpaceOnUse"
+              id="paint0_radial_1_218-:r0:"
+              r="1"
+            >
+              <stop
+                offset="0.00787439"
+                stop-color="var(--radial-stop-11)"
+              />
+              <stop
+                offset="0.565"
+                stop-color="var(--radial-stop-12)"
+              />
+              <stop
+                offset="0.708535"
+                stop-color="var(--radial-stop-13)"
+              />
+              <stop
+                offset="1"
+                stop-color="var(--radial-stop-14)"
+                stop-opacity="0"
+              />
+            </radialgradient>
+            <clippath
+              id="clip:r0:"
+            >
+              <path
+                d="M0 0H960V1080H0z"
+                fill="#fff"
+              />
+            </clippath>
+          </defs>
+        </g>
+      </svg>
+    </div>
+    <h3
+      class="heading heading-size-xs align-left large-sticker-text"
+      data-testid="heading"
+      lang="nl"
+    >
+      Describe your promotion
+    </h3>
+    <div
+      class="price price"
+    >
+      <div>
+        <div
+          class="before-text before-text-wrapper before-text-display before-text-size-lg large-sticker-price"
+          data-testid="before"
+        >
+          vanaf
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        class="price-wrapper"
+      >
+        <div
+          class="price"
+        >
+          <div
+            class="price-text lg currency large-sticker-price"
+            data-testid="currency"
+          >
+            €
+          </div>
+          <div
+            class="price-value-wrapper"
+          >
+            <div
+              class="price-text lg large-sticker-price"
+              data-testid="whole"
+            >
+              10
+            </div>
+            <div
+              class="decimal-wrapper"
+            >
+              <div
+                class="comma-text price-text lg comma-text-position large-sticker-price"
+              >
+                ,
+              </div>
+              <div
+                class="price-text lg large-sticker-price"
+                data-testid="decimals"
+              >
+                ⁰⁰
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tax-text lg large-sticker-price"
+        data-testid="after"
+      >
+        excl. btw
+      </div>
+      <div
+        class="price-sr-only"
+      >
+        <span
+          data-value="true"
+        >
+          Voor: 10
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

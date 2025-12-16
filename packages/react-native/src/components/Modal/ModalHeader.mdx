@@ -1,0 +1,21 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as ModalHeaderStories from "./ModalHeader.stories";
+
+<Meta of={ModalHeaderStories} />
+
+# Custom header
+
+The modal also offers an option to apply a custom component into the header.
+For example, properties like `palette` and `glow` will work along with this `headerComponent` prop, applying
+a background color to the component.
+
+<Canvas of={ModalHeaderStories.WithRatio3To1} />
+<Controls of={ModalHeaderStories.WithRatio3To1} />
+
+## With a 2:1 header ratio
+
+<Canvas of={ModalHeaderStories.WithRatio2To1} />
+
+## With a 16:9 header ratio
+
+<Canvas of={ModalHeaderStories.WithRatio16To9} />

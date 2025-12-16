@@ -1,0 +1,60 @@
+@use "@odido-portals/glow-tokens/semantics-padding";
+@use "@odido-portals/glow-tokens/semantics-color-border";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    user-navigation,
+    (padding, color-border)
+) {}
+
+.user-navigation {
+    @include mixins.glow-gradient-background(
+        $pattern: "--semantics-color-border-selected-gradient-default-stop-{i}");
+
+    .user-navigation-column {
+        padding-block: var(--semantics-padding-400);
+    }
+
+    .user-navigation-stack {
+        height: 100%;
+    }
+}
+
+@layer component {
+    .user-navigation-link {
+        display: flex;
+        align-items: center;
+
+        &,
+        > span,
+        &:visited > span {
+            color: #000;
+        }
+
+        .user-navigation-link-text {
+            text-decoration: underline;
+        }
+
+        .user-navigation-avatar-initials + * {
+            text-decoration: underline;
+        }
+        
+        &.user-navigation-avatar {
+            text-decoration: none;
+        }
+
+        &:hover {
+            .user-navigation-link-text,
+            .user-navigation-avatar-initials + * {
+                text-decoration: none;
+            }
+        }
+
+        &:active {
+            .user-navigation-link-text,
+            .user-navigation-avatar-initials + * {
+                text-decoration: underline;
+            }
+        }
+    }
+}

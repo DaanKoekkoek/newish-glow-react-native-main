@@ -1,0 +1,91 @@
+name: Build and Test Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - "**" # Ignore all branches
+  pull_request:
+    branches:
+      - "**" # Run on PRs targeting any branch
+    types: [opened, synchronize, reopened, ready_for_review]
+
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref == 'refs/heads/' && '' || github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  GITHUB_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  pr-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "pnpm"
+          cache-dependency-path: "**/pnpm-lock.yaml"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Packages
+        run: |
+          pnpm run grn:build
+          pnpm run grw:build
+          pnpm run grw:example-build
+
+      - name: Lint
+        run: pnpm run lint:ci
+
+      - name: Clear test cache
+        run: pnpm run test:clear
+
+      - name: Run test coverage
+        run: |
+          git fetch origin main
+          CHANGED_REPOS=$(git diff --name-only origin/main..HEAD | awk -F '/' '{print $2}' | sort -u)
+          echo "Changed Repos: $CHANGED_REPOS"
+
+          for repo in $CHANGED_REPOS; do
+            if [ "$repo" = "glow-react-web" ]; then
+              echo "Running test coverage for glow-react-web..."
+              pnpm run grw:test-coverage
+            elif [ "$repo" = "react-native" ]; then
+              echo "Running test coverage for react-native..."
+              pnpm run grn:test-coverage
+            else
+              echo "No test coverage command defined for $repo. Skipping..."
+            fi
+          done
+
+      - name: Post Coverage Comment
+        uses: MishaKav/jest-coverage-comment@main
+        with:
+          coverage-summary-path: ${{ github.workspace }}/packages/glow-react-web/coverage/coverage-summary.json
+          title: Jest Coverage Report
+          summary-title: Coverage Summary
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: true
+          multiple-junitxml-files: |
+            Glow React Native, ${{ github.workspace }}/packages/react-native/coverage/junit.xml
+            Glow React Web, ${{ github.workspace }}/packages/glow-react-web/coverage/junit.xml
+          junitxml-title: Glow React Web JUnit XML Report
+          multiple-files: |
+            Glow React Native, ${{ github.workspace }}/packages/react-native/coverage/coverage-summary.json
+            Glow React Web, ${{ github.workspace }}/packages/glow-react-web/coverage/coverage-summary.json
+          coverage-title: Glow React Web Coverage Report
+
+      - name: Build VRT types
+        run: pnpm run vrt:build

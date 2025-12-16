@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddonListItem /> applies styles when isFirstChild is true 1`] = `
+<DocumentFragment>
+  <li
+    class="addon-list-item"
+  >
+    <div
+      class="content"
+    >
+      <strong
+        class="strong title"
+        data-testid="strong"
+      >
+        Item 1
+      </strong>
+      <div
+        class="description-and-promo"
+      />
+    </div>
+    <div>
+      <span
+        class="visible-below-laptop"
+        data-testid="visible"
+      >
+        <button
+          class="button button-size-sm button-prominence-emphasised button-stretched"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            button
+          </span>
+        </button>
+      </span>
+      <span
+        class="visible-above-laptop"
+        data-testid="visible"
+      >
+        <button
+          class="button button-size-default button-prominence-emphasised button-stretched"
+          data-testid="button"
+        >
+          <span
+            class="button-label"
+          >
+            button
+          </span>
+        </button>
+      </span>
+    </div>
+  </li>
+</DocumentFragment>
+`;

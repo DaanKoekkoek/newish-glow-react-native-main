@@ -1,0 +1,117 @@
+@use "@globals/mixins";
+@use "@globals/config";
+
+.emphasised-hero {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+
+    .emphasised-hero-container {
+        display: grid;
+        overflow: hidden;
+    }
+
+    .emphasised-children {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        position: relative;
+        width: 100%;
+    }
+
+    &.is-emphasised .emphasised-hero-container {
+        place-items: center;
+        height: 100%;
+    }
+}
+
+@layer component {
+    .emphasised-gradient-container {
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        flex-direction: column;
+        display: none;
+
+        .emphasised-gradient-grid {
+            width: auto;
+            row-gap: 0;
+        }
+
+        .emphasised-gradient-column {
+            position: relative;
+        }
+
+        .emphasised-gradient {
+            height: 100%;
+        }
+
+        .emphasised-gradient-left {
+            transform: rotate(180deg);
+        }
+
+        @include mixins.above("laptop") {
+            flex-direction: row;
+            display: flex;
+
+            .emphasised-gradient {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+            }
+
+            .emphasised-gradient-left {
+                transform: none;
+                left: -100%;
+                right: 0;
+            }
+
+            .emphasised-gradient-right {
+                transform: rotate(180deg);
+                left: 0;
+                right: -100%;
+            }
+
+            .is-inverted & {
+                .emphasised-gradient-left {
+                    transform: rotate(180deg);
+                    right: -100%;
+                    left: 0;
+                }
+
+                .emphasised-gradient-right {
+                    transform: rotate(0);
+                    left: -100%;
+                    right: 0;
+                }
+            }
+        }
+
+        @include mixins.below("laptop") {
+            max-width: none;
+        }
+
+        // NOTE: This is used as a fallback for when the user zooms out, or when the component
+        // is viewed on a larger screen. Otherwise you'll end up with gradients that are cut off
+        // after the viewport is higher than 1920px (the max viewbox size of the gradient).
+        @media screen and (width >= 1921px) {
+            .emphasised-gradient-left {
+                left: -100vw;
+            }
+
+            .emphasised-gradient-right {
+                right: -100vw;
+            }
+
+            .is-inverted & {
+                .emphasised-gradient-left {
+                    right: -100vw;
+                }
+
+                .emphasised-gradient-right {
+                    left: -100vw;
+                }
+            }
+        }
+    }
+}

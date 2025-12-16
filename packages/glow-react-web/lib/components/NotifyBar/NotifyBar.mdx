@@ -1,0 +1,37 @@
+import { Canvas, Meta, Controls, Story } from "@storybook/blocks";
+import * as NotifyBarStories from "./NotifyBar.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={NotifyBarStories} />
+
+# NotifyBar
+
+### Token version: {getComponentVersion("notify-bar.v1")}
+
+The `NotifyBar` is a component used to display notifications or alerts to users. It can be configured to show different types of messages such as success, error, or default informational messages. It also supports an optional action button that users can interact with, and an icon that can be configured by the developer in case of default state.
+
+## Basic
+
+This example shows the basic usage of the `NotifyBar` for displaying a simple notification message with a close button.
+
+<Canvas of={NotifyBarStories.Basic} />
+<Controls of={NotifyBarStories.Basic} />
+
+## Success
+
+This variant of the `NotifyBar` is used to indicate a successful operation or feedback.
+
+<Canvas of={NotifyBarStories.Success} />
+
+## Error
+
+Use this variant to inform users of an error or a problem that needs attention.
+
+<Canvas of={NotifyBarStories.Error} />
+
+## Full Example
+
+This is a comprehensive example showing a `NotifyBar` with all features, including an action button, close button, and a custom icon.
+
+<Canvas of={NotifyBarStories.FullExample} />

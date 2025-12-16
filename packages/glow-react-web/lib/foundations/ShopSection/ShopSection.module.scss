@@ -1,0 +1,41 @@
+@use "@odido-portals/glow-tokens/section-shop-section-v1";
+@use "@odido-portals/glow-tokens/section-default-section-v1";
+@use "@globals/mixins";
+
+$shop-section-padding: none, default, lg;
+
+@include mixins.token-scope(
+    shop-section,
+    (section-shop-section-v1, section-default-section-v1)
+) {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-section-grid {
+    row-gap: var(--components-section-shop-section-v1-gap-wrapper-vertical);
+}
+
+.shop-section-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-section-main {
+    row-gap: var(--components-section-shop-section-v1-gap-main-vertical);
+}
+
+.shop-section-sidebar-sticky {
+    position: sticky;
+    top: var(--components-section-shop-section-v1-gap-aside-vertical);
+
+    > *:not(:last-of-type) {
+        margin-bottom: var(--components-section-shop-section-v1-gap-aside-vertical);
+    }
+}
+
+@each $padding in $shop-section-padding {
+    .shop-section-padding-#{$padding} {
+        padding-block: var(--components-section-shop-section-v1-padding-vertical-#{$padding});
+    }
+}

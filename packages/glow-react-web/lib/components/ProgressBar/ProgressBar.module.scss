@@ -1,0 +1,63 @@
+@use "@odido-portals/glow-tokens/progress-indicators";
+@use "@odido-portals/glow-tokens/responsive-gap";
+@use "@globals/config";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+  progress-bar,
+  (progress-indicators, gap)
+) {
+  --progress-scale: initial;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--responsive-gap-xs);
+
+  .progress-track {
+    position: relative;
+    height: var(--components-progress-indicators-atoms-progress-bar-size-graph-height);
+    border-radius: var(--components-progress-indicators-atoms-progress-bar-radius-default);
+    overflow: hidden;
+
+    @each $color in config.$odido-palette {
+      &.palette-#{$color} {
+        background-color: var(--components-progress-indicators-atoms-progress-bar-color-background-default-palette-#{$color}, var(--components-progress-indicators-atoms-progress-bar-color-background-default));
+      }
+    }
+
+    .progress-fill {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--components-progress-indicators-atoms-progress-bar-radius-completed);
+      transform-origin: left center;
+      transform: scaleX(var(--progress-scale));
+      transition: transform 0.4s ease;
+
+      @each $color in config.$odido-palette {
+        &.palette-active-#{$color} {
+          background-color: var(--components-progress-indicators-atoms-progress-bar-color-background-completed-palette-#{$color});
+        }
+      }
+    }
+  }
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+
+
+    .step {
+      color: var(--components-progress-indicators-atoms-progress-bar-color-text-default);
+      font-weight: 400;
+      font-size: var(--components-progress-indicators-atoms-progress-bar-typography-font-size);
+      line-height: var(--components-progress-indicators-atoms-progress-bar-typography-line-height);
+    }
+
+    .step-active {
+      color: var(--components-progress-indicators-atoms-progress-bar-color-text-active);
+      font-weight: 500;
+    }
+  }
+}

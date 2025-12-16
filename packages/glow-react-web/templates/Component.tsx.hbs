@@ -1,0 +1,11 @@
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
+import styles from "./{{pascalCase name}}.module.scss";
+import { tokenClassNames } from "_utility";
+
+export const {{pascalCase name}} = ({}: {{pascalCase name}}Props) => {
+  return (
+    <div className={tokenClassNames(styles, "{{kebabCase name}}")}>
+      {{pascalCase name}} Component
+    </div>
+  );
+};

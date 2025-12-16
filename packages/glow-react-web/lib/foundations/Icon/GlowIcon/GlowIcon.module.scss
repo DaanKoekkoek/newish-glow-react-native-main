@@ -1,0 +1,15 @@
+@use "@odido-portals/glow-tokens/semantics-color-gradient";
+@use "@globals/mixins";
+
+@include mixins.token-scope(
+    glow-icon,
+    color-gradient
+) {
+    &.no-hover {
+        @include mixins.gradient-vars($hover: false);
+    }
+
+    &:not(.no-hover) {
+        @include mixins.gradient-vars;
+    }
+}

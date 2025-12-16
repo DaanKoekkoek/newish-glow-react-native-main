@@ -1,0 +1,46 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as UserNavigationStories from "./UserNavigation.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={UserNavigationStories} />
+
+# UserNavigation
+
+#### Token version: {getComponentVersion("skip")}
+
+The `UserNavigation` component displays a user-specific navigation area, typically used in a global header or top bar. It supports links for account access, logout, and any custom child elements like modal or text link.
+
+> **Note:**
+> This component is a **temporary solution** created to unblock the **Pay & Login** team.
+> It replicates the behavior and structure of the DS2.5 version as discussed during the Design refinement on **June 25th**.
+> This implementation may be revisited or replaced as part of a future design system update.
+
+## Purpose
+
+The `UserNavigation` component helps organize account-related actions in a clean, responsive layout.
+
+## Usage
+
+The `UserNavigation` component can be implemented as follows:
+
+```tsx
+import { UserNavigation } from "@odido-portals/glow-react-web/user-navigation";
+
+<UserNavigation
+  myAccountLink={{
+    href: "/account",
+    initials: "JD",
+    children: "John Doe",
+  }}
+  logoutLink={{
+    href: "/logout",
+    children: "Log Out",
+  }}
+/>;
+```
+
+### Default
+
+<Canvas of={UserNavigationStories.Default} />
+<Controls of={UserNavigationStories.Default} />

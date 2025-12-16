@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DonutGraph /> renders stable snapshot 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#858585",
+      "padding": 40,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "height": 120,
+        "justifyContent": "center",
+        "position": "relative",
+        "width": 120,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={120}
+      bbWidth={120}
+      focusable={false}
+      height={120}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          {
+            "flex": 0,
+            "height": 120,
+            "width": 120,
+          },
+        ]
+      }
+      vbHeight={120}
+      vbWidth={120}
+      width={120}
+    >
+      <RNSVGGroup
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGCircle
+          cx={60}
+          cy={60}
+          fill={null}
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+            ]
+          }
+          r={56}
+          stroke={
+            {
+              "payload": 4294967295,
+              "type": 0,
+            }
+          }
+          strokeWidth={4}
+        />
+        <RNSVGCircle
+          cx={60}
+          cy={60}
+          fill={null}
+          matrix={
+            [
+              6.123233995736766e-17,
+              -1,
+              1,
+              6.123233995736766e-17,
+              -7.105427357601002e-15,
+              120,
+            ]
+          }
+          propList={
+            [
+              "fill",
+              "stroke",
+              "strokeWidth",
+              "strokeDasharray",
+              "strokeDashoffset",
+              "strokeLinecap",
+            ]
+          }
+          r={56}
+          stroke={
+            {
+              "payload": 4281103103,
+              "type": 0,
+            }
+          }
+          strokeDasharray={
+            [
+              358.1415625092364,
+              358.1415625092364,
+            ]
+          }
+          strokeDashoffset={322.32740625831275}
+          strokeLinecap={1}
+          strokeWidth={6}
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "paddingTop": 6,
+          "position": "absolute",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "odido_Heading_Medium",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 64,
+              "letterSpacing": 0,
+              "margin": 0,
+              "padding": 0,
+            },
+          ]
+        }
+      >
+        20
+      </Text>
+      <Text
+        allowFontScaling={true}
+        style={
+          [
+            {
+              "fontFamily": "odido_Paragraph_Regular",
+            },
+            {
+              "color": "#000000",
+              "fontSize": 12,
+              "letterSpacing": 0.18000000715255737,
+              "lineHeight": 16,
+              "textAlign": "left",
+            },
+            {
+              "color": "#000000",
+              "top": -9,
+            },
+          ]
+        }
+        testID="paragraph"
+      >
+        days left
+      </Text>
+    </View>
+  </View>
+</View>
+`;

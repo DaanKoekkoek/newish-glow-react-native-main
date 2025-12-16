@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as CartAccordion from "./CartAccordion.stories";
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={CartAccordion} />
+
+# CartAccordion
+
+### Token version: {getComponentVersion("skip")}
+
+The `<CartAccordion>` atom is composed of multiple `<CartAccordionRow>` elements, each containing a title, a `<Price>` component, and a `<CartDetails>` component. Each row is individually collapsible, allowing users to expand or collapse content as needed.
+
+This component is used in both the Product Detail Page (PDP) and Extras variants of the Shopping Cart.
+
+### Basic example
+
+<Canvas of={CartAccordion.Basic} />
+<Controls of={CartAccordion.Basic} />

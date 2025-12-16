@@ -1,0 +1,163 @@
+@use "sass:math";
+@use "@odido-portals/glow-tokens/grid-gap";
+@use "@odido-portals/glow-tokens/grid-max-width";
+@use "@odido-portals/glow-tokens/grid-margin";
+@use "@odido-portals/glow-tokens/responsive-section-row";
+@use "@foundations/Grid/mixins" as grid;
+@use "@globals/config";
+@use "@globals/mixins";
+
+$grid-directions: (
+  row: wrap,
+  row-reverse: wrap-reverse,
+);
+
+@for $i from 1 through 12 {
+  $percentage: math.percentage(math.div($i, 12));
+
+  .grid-column-#{$i} {
+    flex: 0 0 $percentage;
+    max-width: $percentage;
+  }
+}
+
+@for $i from 1 through 12 {
+  $percentage: math.percentage(math.div($i, 12));
+
+  @each $breakpoint, $width in config.$global-min-width {
+    @media screen and (min-width: $width) {
+      .grid-column-#{$i}-#{$breakpoint} {
+        flex: 0 0 $percentage;
+        max-width: $percentage;
+      }
+    }
+  }
+}
+
+@each $direction, $wrap in $grid-directions {
+  .grid-direction-#{$direction} {
+    flex-flow: $direction $wrap;
+  }
+
+  @each $breakpoint, $width in config.$global-min-width {
+    @include mixins.above($breakpoint) {
+      .grid-direction-#{$direction}-#{$breakpoint} {
+        flex-flow: $direction $wrap;
+      }
+    }
+  }
+}
+
+.column {
+  box-sizing: border-box;
+}
+
+@layer main.foundation {
+  @include mixins.token-scope(container,
+    (
+      gap,
+      max-width,
+      margin,
+      section-row
+      )
+    ) {
+    --container-gutter: calc(var(--grid-margin) - var(--container-gap));
+    --container-gap: calc(var(--grid-gap) / 2);
+    --container-margin: 0 calc(var(--grid-margin) * -1);
+    --container-padding: 0 var(--container-gutter);
+    --column-padding: 0 var(--container-gap);
+    --container-max-width: var(--responsive-section-row-default);
+
+    display: flex;
+    margin: 0 auto;
+    max-width: var(--container-max-width);
+
+
+    @include mixins.below("desktop") {
+      --container-margin: 0;
+      --container-padding: 0 var(--container-gutter);
+    }
+
+    .grid {
+      display: flex;
+      flex-grow: 1;
+      max-width: var(--grid-max-width);
+      width: 100%;
+      row-gap: var(--grid-gap);
+      padding: var(--container-padding);
+      margin: var(--container-margin);
+    }
+
+    .column {
+      padding: var(--column-padding);
+    }
+
+    /* Override max-width for specific sections */
+    [data-section-type="my"] & {
+      max-width: var(--responsive-section-row-narrow);
+    }
+
+    /* Ensure full width for certain sections */
+    [data-section-type="my"] &,
+    [data-section-type="my-sidebar"] & {
+      width: 100%;
+
+      @include mixins.below("laptop") {
+        width: auto;
+        margin: 0;
+      }
+    }
+
+    [data-section-type="shop"] & {
+      width: 100%;
+
+      @include mixins.below("desktop") {
+        width: auto;
+        margin: 0;
+      }
+    }
+
+    &.container-fluid {
+      max-width: 100%;
+
+      .grid {
+        max-width: 100%;
+      }
+    }
+
+    &.container-width-narrow {
+      max-width: var(--responsive-section-row-narrow);
+    }
+
+    &.container-width-box {
+      max-width: var(--responsive-section-row-box);
+    }
+
+    &.no-gutters {
+      @include grid.no-gutters;
+    }
+
+    @each $breakpoint,
+    $width in config.$global-min-width {
+      @media (min-width: $width) {
+
+        &.no-gutters-#{$breakpoint} {
+          @include grid.no-gutters;
+        }
+
+        &.no-gutters-#{$breakpoint}-reset {
+          margin: 0 auto;
+          padding: var(--container-padding);
+
+          .grid {
+            margin: var(--container-margin);
+          }
+
+          .column {
+            padding: var(--column-padding);
+          }
+        }
+      }
+    }
+  }
+}

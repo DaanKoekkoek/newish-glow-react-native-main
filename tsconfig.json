@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "paths": {
+      "@odido-portals/glow-react-native": ["./packages/react-native/src/index"],
+      "_test-utils": ["./packages/react-native/src/_test-utils/index"],
+      "_utility": ["./packages/react-native/src/_utility/index"],
+      "_global-hooks": ["./packages/react-native/src/_hooks/index"],
+      "_internals/*": ["./packages/react-native/src/_internals/*"],
+      "_theming/*": ["./packages/react-native/src/_theming/*"],
+      ".examples/*": ["./packages/react-native/src/.examples/*"],
+      "components/*": ["./packages/react-native/src/components/*"],
+      "foundations/*": ["./packages/react-native/src/foundations/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext"
+  }
+}

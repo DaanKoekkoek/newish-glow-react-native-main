@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays a button and a text link if they are passed as props 1`] = `
+<View
+  style={
+    {
+      "gap": 8,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+          "pointerEvents": "none",
+        },
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "flex-start",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Button
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {},
+        undefined,
+      ]
+    }
+    testID="button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(0, 0, 0, 1)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgba(0, 0, 0, 1)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 18,
+          "paddingVertical": 10,
+        }
+      }
+      testID="button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(0, 0, 0, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(0, 0, 0, 1)",
+              "display": "flex",
+              "fontFamily": "odido_Paragraph_Strong",
+              "fontSize": 18,
+              "gap": 12,
+              "letterSpacing": 0.27000001072883606,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Text link
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

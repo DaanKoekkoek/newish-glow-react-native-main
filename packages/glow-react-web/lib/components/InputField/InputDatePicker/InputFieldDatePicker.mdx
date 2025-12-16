@@ -1,0 +1,142 @@
+import { Canvas, Meta, Controls } from "@storybook/blocks";
+import * as InputFieldDatePicker from "./InputFieldDatePicker.stories";
+
+import { getComponentVersion } from "@odido-portals/glow-tokens/component-versions";
+
+<Meta of={InputFieldDatePicker} />
+
+# InputFieldDatePicker
+
+### Token version: {getComponentVersion("date-picker.v1")}
+
+The `InputFieldDatePicker` component extends the `InputField` by integrating a calendar picker via [`react-datepicker`](https://www.npmjs.com/package/react-datepicker).
+
+> **Note:** This component relies on external libraries that are not bundled by default. You must install them separately in your project:
+
+```bash
+pnpm add react-datepicker date-fns
+```
+
+> **Note:** If you plan to use localization other than `nl`, you will also need to import a locale package (e.g. [date-fns/locale](https://date-fns.org/)). For example:
+
+```ts
+// Optional: if you need to override the `nl` locale
+import { enGB } from "date-fns/locale";
+import { registerLocale } from "react-datepicker";
+import "dayjs/locale/en-gb";
+registerLocale("en-gb", enGB);
+<InputFieldDatePicker locale={{ code: "en-gb", object: enGB }} />
+```
+
+## Default example
+
+Date format is a way to specify how dates should be displayed and interpreted in a user interface.
+It defines the arrangement of day, month, and year components in a date string.
+
+`dd/MM/yyyy`
+`MM/dd/yyyy`
+`yyyy-MM-dd`
+`MMMM d, yyyy`
+
+<Canvas of={InputFieldDatePicker.Basic} />
+<Controls of={InputFieldDatePicker.Basic} />
+
+## Migration Guide
+
+Previously, date input functionality was handled manually inside `InputField`. Moving to a dedicated `InputFieldDatePicker` brings major improvements:
+
+### Why It Didn't Work Well Inside `InputField`
+
+- **Tight coupling**: Managing dates added complexity to the base `InputField`, which should remain a simple styled input.
+- **UI/UX limitations**: Positioning calendars, handling mobile responsiveness, and managing date formatting were difficult inside a general input.
+- **Responsibility split**: InputField should not manage complex behaviors like calendar interactions.
+
+### Why a Separate Component Works Better
+
+- **Separation of concerns**: `InputFieldDatePicker` composes `InputField` and adds specialized calendar logic without polluting `InputField`.
+- **Better UX**: Native calendar behavior (month switching, date boundaries) is easier to implement and manage.
+- **Customization**: Developers can configure date formats, min/max limits, and calendar behavior directly.
+
+## Features
+
+- Select a date via a popup calendar.
+- Customize date format via `format` prop.
+- Define `min` and `max` date boundaries.
+- Custom calendar header with month navigation.
+- Fully keyboard accessible.
+- Portal-based rendering for better positioning (especially useful in modals).
+- Integrates with existing `InputField` styles.
+
+## Behavior
+
+- Calendar opens when the input is focused or the icon is clicked.
+- Selecting a date updates the input value in the specified format.
+- You can navigate months using arrow buttons.
+- If a `min` or `max` date is set, users cannot select outside those bounds.
+- The selected date is highlighted in the calendar.
+
+## Accessibility
+
+Supports keyboard navigation.
+
+- Tab - Moves focus between interactive elements (e.g., month navigation buttons and day grid).
+- Arrow keys - for day navigation inside the calendar.
+- Enter - to select a date.
+- Escape - to close the calendar.
+
+## Usage
+
+```tsx
+import { InputFieldDatePicker } from "@odido-portals/glow-react-web/input-field-datepicker";
+
+const Component = () => {
+  const [date, setDate] = useState<string | undefined>();
+
+  return (
+    <InputFieldDatePicker
+      id="datepicker"
+      placeholder="Select delivery date"
+      value={date}
+      onChange={(newDate) => setDate(newDate)}
+      format="DD-MM-YYYY"
+      min="2024-01-01"
+      max="2025-12-31"
+    />
+  );
+};
+```
+
+## Maximum and minimum days
+
+The `InputFieldDatePicker` component allows you to specify both minimum and maximum dates, ensuring that the user can only select dates within a specific range.
+
+### Minimum
+
+The `min` prop sets the earliest date that the user can select. If you set a minimum date, the date picker will disable any earlier dates, preventing the user from selecting a date that is too early.
+
+<Canvas of={InputFieldDatePicker.MinDate} />
+
+### Max
+
+The `max` prop defines the latest date that the user can select. This prop ensures that the user cannot pick a date beyond the specified maximum
+
+<Canvas of={InputFieldDatePicker.MaxDate} />
+
+## Excluding days
+
+The `excludeDaysOfWeek` prop in the `InputFieldDatePicker` component allows you to specify which days of the week should be excluded (i.e., disabled) in the date picker. This can be particularly useful when you want to disable certain days, such as weekends or specific weekdays, for user selection. The `excludeDaysOfWeek` prop expects an array of numbers representing the days of the week that should be disabled. The days are represented by the following numbers:
+
+- `0` = Sunday
+- `1` = Monday
+- `2` = Tuesday
+- `3` = Wednesday
+- `4` = Thursday
+- `5` = Friday
+- `6` = Saturday
+
+For example:
+
+- `[0, 6]` disables Sundays (0) and Saturdays (6), effectively excluding weekends.
+- `[1, 3, 5]` disables Mondays (1), Wednesdays (3), and Fridays (5).
+
+<Canvas of={InputFieldDatePicker.ExcludeDays} />

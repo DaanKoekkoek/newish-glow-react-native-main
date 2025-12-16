@@ -1,0 +1,613 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberInput /> renders correctly a Number input 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "gap": 8,
+      "position": "relative",
+      "width": 184,
+    }
+  }
+  testID="number-input"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    baseStyle={
+      [
+        {
+          "alignSelf": "center",
+          "color": "#dddddd",
+          "justifyContent": "center",
+        },
+        {
+          "paddingHorizontal": 12,
+          "paddingVertical": 12,
+        },
+        undefined,
+      ]
+    }
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="number-input_button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(153, 153, 153, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "rgba(153, 153, 153, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "color": "#dddddd",
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 12,
+        }
+      }
+      testID="number-input_button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(221, 221, 221, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(221, 221, 221, 1)",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_DEFAULT_odido",
+                  "fontSize": 24,
+                  "lineHeight": 24,
+                  "width": 24,
+                },
+                {
+                  "color": "#ffffff",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+  <TextInput
+    allowFontScaling={true}
+    aria-disabled={false}
+    editable={true}
+    inputMode="numeric"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    onPointerEnter={[Function]}
+    onPointerLeave={[Function]}
+    secureTextEntry={false}
+    style={
+      {
+        "borderColor": "#dddddd",
+        "borderRadius": 100,
+        "borderStyle": "solid",
+        "borderWidth": 2,
+        "color": "#000000",
+        "flex": 1,
+        "fontFamily": "odido_Paragraph_Regular",
+        "fontSize": 16,
+        "lineHeight": 19,
+        "minWidth": 61.333333333333336,
+        "paddingHorizontal": 14,
+        "paddingVertical": 10,
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+    testID="number-input_number-field"
+    value="1"
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    baseStyle={
+      [
+        {
+          "alignSelf": "center",
+          "color": "#ffffff",
+          "justifyContent": "center",
+        },
+        {
+          "paddingHorizontal": 12,
+          "paddingVertical": 12,
+        },
+        undefined,
+      ]
+    }
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    role="button"
+    style={
+      [
+        {
+          "alignSelf": "flex-start",
+        },
+        undefined,
+      ]
+    }
+    testID="number-input_button"
+  >
+    <View
+      collapsable={false}
+      jestAnimatedStyle={
+        {
+          "value": {
+            "backgroundColor": "rgba(0, 0, 0, 1)",
+            "borderColor": "rgba(0, 0, 0, 0)",
+          },
+        }
+      }
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "rgba(0, 0, 0, 1)",
+          "borderColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": 100,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "color": "#ffffff",
+          "flexDirection": "row",
+          "gap": 12,
+          "justifyContent": "center",
+          "paddingHorizontal": 12,
+          "paddingVertical": 12,
+        }
+      }
+      testID="number-input_button-visual"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(255, 255, 255, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(255, 255, 255, 1)",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_DEFAULT_odido",
+                  "fontSize": 24,
+                  "lineHeight": 24,
+                  "width": 24,
+                },
+                {
+                  "color": "#ffffff",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<NumberInput /> renders small size 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "position": "relative",
+      "width": 96,
+    }
+  }
+  testID="number-input"
+>
+  <View
+    style={
+      {
+        "left": 0,
+        "position": "absolute",
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      baseStyle={
+        {
+          "alignSelf": "center",
+          "borderRadius": 100,
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        }
+      }
+      collapsable={false}
+      focusable={true}
+      isHovered={false}
+      isPressed={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="number-input_number-input-button_button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "#00000000",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+            "paddingHorizontal": 8,
+            "paddingVertical": 8,
+          }
+        }
+        testID="number-input_number-input-button_button-visual"
+      >
+        <Text
+          allowFontScaling={false}
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(0, 0, 0, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(0, 0, 0, 1)",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_SM_odido",
+                  "fontSize": 16,
+                  "lineHeight": 16,
+                  "width": 16,
+                },
+                undefined,
+              ]
+            }
+          >
+            
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+  <TextInput
+    allowFontScaling={false}
+    aria-disabled={false}
+    editable={true}
+    inputMode="numeric"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    onPointerEnter={[Function]}
+    onPointerLeave={[Function]}
+    secureTextEntry={false}
+    style={
+      {
+        "borderColor": "#dddddd",
+        "borderRadius": 100,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "color": "#000000",
+        "flex": 1,
+        "fontFamily": "odido_Paragraph_Regular",
+        "fontSize": 16,
+        "height": 32,
+        "lineHeight": 19,
+        "minWidth": 61.333333333333336,
+        "paddingHorizontal": 16,
+        "paddingVertical": 6,
+        "textAlign": "center",
+        "width": "100%",
+      }
+    }
+    testID="number-input_number-field"
+    value="1"
+  />
+  <View
+    style={
+      {
+        "position": "absolute",
+        "right": 0,
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      baseStyle={
+        {
+          "alignSelf": "center",
+          "borderRadius": 100,
+          "borderWidth": 0,
+          "justifyContent": "center",
+          "paddingHorizontal": 8,
+          "paddingVertical": 8,
+        }
+      }
+      collapsable={false}
+      focusable={true}
+      isHovered={false}
+      isPressed={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      role="button"
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+          },
+          undefined,
+        ]
+      }
+      testID="number-input_number-input-button_button"
+    >
+      <View
+        collapsable={false}
+        jestAnimatedStyle={
+          {
+            "value": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+            },
+          }
+        }
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "#00000000",
+            "borderRadius": 100,
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "gap": 12,
+            "justifyContent": "center",
+            "paddingHorizontal": 8,
+            "paddingVertical": 8,
+          }
+        }
+        testID="number-input_number-input-button_button-visual"
+      >
+        <Text
+          allowFontScaling={false}
+          collapsable={false}
+          jestAnimatedStyle={
+            {
+              "value": {
+                "color": "rgba(0, 0, 0, 1)",
+              },
+            }
+          }
+          style={
+            {
+              "color": "rgba(0, 0, 0, 1)",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={true}
+            style={
+              [
+                {
+                  "fontFamily": "Icons_Outline_SM_odido",
+                  "fontSize": 16,
+                  "lineHeight": 16,
+                  "width": 16,
+                },
+                undefined,
+              ]
+            }
+          >
+            
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
