@@ -41,6 +41,10 @@ const variantOptions: ComplexOption<DefaultListProps["variant"]>[] = [
     label: "bullet",
     value: "bullet",
   },
+  {
+    label: "media",
+    value: "media",
+  },
 ];
 
 const meta: Meta<typeof DefaultList> = {
@@ -57,7 +61,7 @@ const meta: Meta<typeof DefaultList> = {
     items: {
       ...itemsControl,
       description:
-        "Accepts an array of objects with a `text` for the list item content and an optional `icon` for the list item prefix. If variant is set to `icon`, and there is no icon provided in items props, the default icon will be `checkmark`.",
+        "Accepts an array of objects with a `text` for the list item content and an optional `icon` for the list item prefix. If variant is set to `icon`, and there is no icon provided in items props, the default icon will be `checkmark`. For the `media` variant, it accepts a `media` object with either an `icon` or an `image` property.",
     },
     variant: {
       ...createComplexControl(variantOptions, "select"),
@@ -100,6 +104,12 @@ export const Basic: Story = {
   },
 };
 
+export const OneItem: Story = {
+  args: {
+    items: [{ text: "List item" }],
+  },
+};
+
 export const WithIcon: Story = {
   args: {
     variant: "icon",
@@ -110,6 +120,59 @@ export const WithIcon: Story = {
 export const WithIconColored: Story = {
   args: {
     variant: "iconColored",
+  },
+};
+
+export const Media: Story = {
+  args: {
+    variant: "media",
+    items: [
+      {
+        text: "List item with media image",
+        media: {
+          image: {
+            alt: "placeholder",
+            src: "https://media.odido.nl/static/images/acc/balance-bike.png",
+          },
+        },
+      },
+      {
+        text: "List item with media image",
+        media: {
+          image: {
+            alt: "placeholder",
+            src: "https://media.odido.nl/static/images/acc/balance-bike.png",
+          },
+        },
+      },
+      {
+        text: "List item with media image",
+        media: {
+          image: {
+            alt: "placeholder",
+            src: "https://media.odido.nl/static/images/acc/balance-bike.png",
+          },
+        },
+      },
+      {
+        text: "List item with media image",
+        media: {
+          image: {
+            alt: "placeholder",
+            src: "https://media.odido.nl/static/images/acc/balance-bike.png",
+          },
+        },
+      },
+      {
+        text: "List item with media image",
+        media: {
+          image: {
+            alt: "placeholder",
+            src: "https://media.odido.nl/static/images/acc/balance-bike.png",
+          },
+        },
+      },
+    ],
   },
 };
 

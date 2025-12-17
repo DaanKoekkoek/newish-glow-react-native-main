@@ -1,5 +1,6 @@
 import type { IconNames } from "foundations/Icon";
 import type { OdidoPalette } from "_internals/Color";
+import type { ImageProps } from "foundations/Image";
 
 /**
  * Defines the list variant for `DefaultList`.
@@ -8,8 +9,14 @@ import type { OdidoPalette } from "_internals/Color";
  * @property {"iconColored"} - Displays an icon with palette-based coloring
  * @property {"numbered"} - Displays a numbered (ordered) list
  * @property {"bullet"} - Displays a bulleted (unordered) list
+ * @property {"media"} - Displays a media object (icon or image)
  */
-export type DefaultListVariant = "icon" | "iconColored" | "numbered" | "bullet";
+export type DefaultListVariant =
+  | "icon"
+  | "iconColored"
+  | "numbered"
+  | "bullet"
+  | "media";
 
 /**
  * Defines the size options for `DefaultList`.
@@ -18,6 +25,8 @@ export type DefaultListVariant = "icon" | "iconColored" | "numbered" | "bullet";
  * @property {"sm"} - Small size for text and spacing
  */
 export type DefaultListSize = "default" | "sm";
+
+export type DefaultListMedia = { icon: IconNames } | { image: ImageProps };
 
 /**
  * Represents a single item within the `DefaultList`.
@@ -29,6 +38,7 @@ export type DefaultListItemProps = {
   text: React.ReactNode;
   icon?: IconNames;
   palette?: OdidoPalette;
+  media?: DefaultListMedia;
 };
 
 /**

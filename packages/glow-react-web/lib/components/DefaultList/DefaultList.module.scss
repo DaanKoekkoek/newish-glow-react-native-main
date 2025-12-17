@@ -1,4 +1,5 @@
 @use "@odido-portals/glow-tokens/lists-default-list-v1";
+@use "@odido-portals/glow-tokens/lists-atoms-media";
 @use "@odido-portals/glow-tokens/paragraph";
 @use "@globals/config";
 @use "@globals/mixins";
@@ -7,7 +8,7 @@ $default-list-sizes: default, sm;
 
 @include mixins.token-scope(
     default-list,
-    (paragraph, lists-default-list-v1)
+    (paragraph, lists-default-list-v1, lists-atoms-media)
 ) {
     --left-column-item-color: var(--components-lists-default-list-v1-color-icon-default);
     --right-column-color: var(--components-lists-default-list-v1-color-text-default);
@@ -63,6 +64,20 @@ $default-list-sizes: default, sm;
             display: flex;
             justify-content: center;
         }
+
+        &.list-variant-media {
+            &.list-size-default {
+                .default-list-text {
+                    padding-top: var(--components-lists-default-list-v1-padding-container-text-media-default-top);
+                }
+            }
+
+            &.list-size-sm {
+                .default-list-text {
+                    padding-top: var(--components-lists-default-list-v1-padding-container-text-media-sm-top);
+                }
+            }
+        }
     }
 
     &.default-list-inverted {
@@ -106,6 +121,27 @@ $default-list-sizes: default, sm;
     .list-state-inactive & {
         color: var(--components-lists-default-list-v1-color-icon-inactive);
     }
+}
+
+.default-list-media {
+    opacity: var(--components-lists-default-list-v1-opacity-media-default);
+
+    &.default-list-media-size-xs {
+        width: var(--components-lists-atoms-media-size-width-xs);
+        height: var(--components-lists-atoms-media-size-height-xs);
+        border-radius: var(--components-lists-atoms-media-radius-xs);
+    }
+    
+    &.default-list-media-size-sm {
+        width: var(--components-lists-atoms-media-size-width-sm);
+        height: var(--components-lists-atoms-media-size-height-sm);
+        border-radius: var(--components-lists-atoms-media-radius-sm);
+    }
+}
+
+.list-state-inactive .default-list-media {
+    opacity: var(--components-lists-default-list-v1-opacity-media-inactive);
+    border: 0.5px solid var(--components-lists-atoms-media-color-border-inactive);
 }
 
 .default-list-text {

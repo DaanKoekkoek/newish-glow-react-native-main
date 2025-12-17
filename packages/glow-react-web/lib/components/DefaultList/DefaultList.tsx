@@ -1,4 +1,5 @@
 import { Icon } from "foundations/Icon";
+import { Image } from "foundations/Image";
 import { Paragraph } from "foundations/Paragraph";
 import styles from "./DefaultList.module.scss";
 import classNames from "classnames";
@@ -31,7 +32,7 @@ export const DefaultList = ({
         {
           [styles["default-list-inverted"]]: inverted,
         },
-        className,
+        className
       )}
     >
       {items.map((item, index) => (
@@ -42,6 +43,7 @@ export const DefaultList = ({
           variant={variant}
           state={state}
           palette={palette}
+          size={size}
         />
       ))}
     </Tag>
@@ -54,12 +56,14 @@ const DefaultListItem = ({
   state,
   palette,
   testID,
+  size,
 }: {
   item: DefaultListItemProps;
   variant: DefaultListProps["variant"];
   state: DefaultListProps["state"];
   palette: DefaultListProps["palette"];
   testID: string;
+  size: DefaultListProps["size"];
 }) => {
   if (!item.text) return null;
 
@@ -68,6 +72,7 @@ const DefaultListItem = ({
       data-testid={`${testID}-list-item`}
       className={classNames(styles[`list-variant-${variant}`], {
         [styles[`list-state-inactive`]]: state === "inactive",
+        [styles[`list-size-${size}`]]: variant === "media",
       })}
     >
       {(variant === "icon" || variant === "iconColored") && (
@@ -77,6 +82,7 @@ const DefaultListItem = ({
           palette={item.palette || palette}
         />
       )}
+      {variant === "media" && <DefaultListMedia item={item} size={size} />}
       <DefaultListText item={item} />
     </li>
   );
@@ -99,17 +105,55 @@ const DefaultListIcon = ({
         {
           [styles[`default-list-icon-palette-${palette ?? "default"}`]]:
             variant === "iconColored",
-        },
+        }
       )}
       name={item.icon ?? "checkmark"}
     />
   );
 };
 
+const DefaultListMedia = ({
+  item,
+  size,
+}: {
+  item: DefaultListItemProps;
+  size: DefaultListProps["size"];
+}) => {
+  if (!item.media) return null;
+
+  const mediaSize = size === "default" ? "sm" : "xs";
+
+  if ("icon" in item.media) {
+    return (
+      <Icon
+        className={classNames(
+          styles["default-list-media"],
+          styles[`default-list-media-size-${mediaSize}`]
+        )}
+        name={item.media.icon}
+      />
+    );
+  }
+
+  if ("image" in item.media) {
+    return (
+      <Image
+        className={classNames(
+          styles["default-list-media"],
+          styles[`default-list-media-size-${mediaSize}`]
+        )}
+        {...item.media.image}
+      />
+    );
+  }
+
+  return null;
+};
+
 const DefaultListText = ({ item }: { item: DefaultListItemProps }) => {
   const textClasses = classNames(
     styles["default-list-text-root"],
-    styles["default-list-text"],
+    styles["default-list-text"]
   );
 
   if (React.isValidElement(item.text))
